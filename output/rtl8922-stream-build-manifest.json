@@ -1,0 +1,42 @@
+{
+  "kernel": "6.8.0-124-generic",
+  "host": "beastmode",
+  "branch": "codex/streaming-throughput",
+  "base_commit": "14b047fb93d380857d3a024ca57dd9d48f2cec64",
+  "files": {
+    "driver/patches/driver.patch": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+    "vendor/rtw89-streaming/rtw89_core_git.ko": "03958aee746ff33722d057b9f9b86c633f027234bdc73674707535d240eafbab",
+    "research/streaming/raw-stream.cpp": "a2aaf6cc4f08829f8e2cee9282ad724c89d4f86b32d20ac65f3af31463096e53",
+    "build-streaming/raw-stream": "8bf460d9be1bf1956c50e3a8fb25602a3337dd014c35121e9b3d151da9377dc6",
+    "research/streaming/endurance.py": "e636d5bcb3506b4d5cad597b3f448798a93576c12e08a938ad952426f0fcb68d",
+    "research/streaming/stream-matrix.py": "c39130ef6756838ee799a69b3ce74d1eb806abf67eef3a1b28035400e5421aac",
+    "research/streaming/hardware.py": "4cdba200448b5b98929304ba790f491e807637955e7dd1835ad18c5549f8f64b",
+    "research/streaming/run-session.py": "d61c13d801c9caabf5b6e592469ed134d48f084c85945d0753da958237453771",
+    "research/streaming/copybench.c": "202e5e22e6cb3c22613da89af0357e4eccdface1ed767157bbf1e4b2f71b1a47",
+    "research/streaming/prepare-experiment.py": "bd5771691dc799fc98d4b6bc72dd0c5f30dea1dc4d073b143e86bc84fd21914f"
+  },
+  "working_driver_module_sha256": "27c42b65a4aab23c0b643bd78c5aa3ef6db1349682d48073ec92af8c3ab12eb1",
+  "driver_diff_sha256": "c33ee44608b98a335f2ce3688ae47d70250f5ab8e41b259b0c84d164fd5a97d7",
+  "note": "Module and raw reader shared by matrix and endurance runs. run-session.py later gained more robust error recording; matrix gained import guard. All data files are ignored. Python scripts were subsequently formatted, and the preparation script gained an optional isolated target; driver and reader unchanged.",
+  "pcie": {
+    "endpoint": "0000:0d:00.0",
+    "link_cap_gtps": 5,
+    "link_status_gtps": 5,
+    "max_lanes": 1,
+    "negotiated_lanes": 1,
+    "encoded_payload_ceiling_MBps": 500,
+    "checked_command": "sudo -n lspci -s 0d:00.0 -vv"
+  },
+  "experimental_loaded_srcversion_checked_during_endurance": "A3E6776BA2E09EBFE849F0E",
+  "experimental_built_srcversion": "A3E6776BA2E09EBFE849F0E",
+  "alternative_patch_sha256": "707c0127c6aba27e5d2c036ccb40b4f050586d11719e5c289d28ac449eecae46",
+  "offline_checks": {
+    "driver_built": true,
+    "raw_reader_built_no_warnings": true,
+    "alternative_patch_applies_to_pristine_pin": true,
+    "prepare_script_reproduces_tested_driver_source": true,
+    "python_ruff": true,
+    "bash_syntax": true,
+    "working_patch_unchanged": true
+  }
+}

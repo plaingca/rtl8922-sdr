@@ -9,8 +9,10 @@ test "$EUID" -eq 0
 test "$#" -gt 0
 test -f "$firmware"
 test -x "$iw"
-test -d "/sys/bus/pci/devices/$pci/net"
+test -d "/sys/bus/pci/devices/$pci"
 test ! -e "/sys/bus/pci/devices/$pci/driver"
+test "$(cat "/sys/bus/pci/devices/$pci/vendor")" = 0x10ec
+test "$(cat "/sys/bus/pci/devices/$pci/device")" = 0x8922
 cd "$driver"
 conf=/run/NetworkManager/conf.d/90-rtl8922-iq-test.conf
 fw=/lib/firmware/rtw89/rtw8922a_fw-4.bin

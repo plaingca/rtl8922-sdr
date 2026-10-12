@@ -1,0 +1,62 @@
+{
+  "tests": [
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 536870912,
+      "physical": 0,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9318049,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 671096832,
+      "busy": 0,
+      "monitor": 0,
+      "valid_copy": true,
+      "MBps": 87.9153994575474
+    },
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 536870912,
+      "physical": 1,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6082906,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 671096832,
+      "busy": 0,
+      "monitor": 0,
+      "valid_copy": true,
+      "MBps": 134.67247397872003
+    }
+  ],
+  "started_utc": "2026-10-12T20:10:52Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "reference_sha256": "547c8e6bcd36727003fa056bdec793b4ad43bd5996697c40ec3120c342eec363",
+  "rf_scope": "Passive frozen samples; copy fidelity only, no TX or RF qualification",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": null
+}

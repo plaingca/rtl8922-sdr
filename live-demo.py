@@ -11,6 +11,7 @@ from pathlib import Path
 
 import numpy as np
 from pluto_tone import PlutoTone
+from demo_http import allowed_host, allowed_origin
 
 BASE = Path(__file__).resolve().parent
 state_lock = threading.Lock()
@@ -20,7 +21,7 @@ command_lock = threading.Lock()
 stopping = threading.Event()
 tone = PlutoTone()
 proc = subprocess.Popen([os.environ.get('RTL8922_BRIDGE', str(BASE / 'build' / 'live-bridge'))], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-window = np.hanning(4096)
+window = np.hanning(262144)
 
 
 def read_exact(n):
@@ -41,17 +42,26 @@ def receive():
             if not line:
                 raise EOFError('Hardware receiver ended')
             meta = json.loads(line)
-            if meta['bytes'] != 32768:
+            if meta['bytes'] != len(window)*8:
                 raise ValueError('Invalid I/Q frame length')
             x = np.frombuffer(read_exact(meta['bytes']), dtype='<f4').reshape(-1, 2)
             z = x[:, 0] + 1j*x[:, 1]
             p = np.abs(np.fft.fftshift(np.fft.fft(z*window)))**2 / window.sum()**2
-            # Pair adjacent bins by peak, preserving narrow signals on screen.
-            db = 10*np.log10(np.maximum(p.reshape(2048, 2).max(axis=1), 1e-14))
+            # Overview bins preserve peaks; zoom retains the native FFT resolution.
+            db = 10*np.log10(np.maximum(p.reshape(2048, -1).max(axis=1), 1e-14))
+            tx = tone.snapshot()
+            zoom_center = (tx['rf_hz']-meta['frequency']) if tx['rf_hz'] is not None else 750000
+            zoom_center = max(-meta['rate']/2+750000, min(meta['rate']/2-750000, zoom_center))
+            frequencies = np.fft.fftshift(np.fft.fftfreq(len(window), 1/meta['rate']))
+            selection = np.flatnonzero(np.abs(frequencies-zoom_center) <= 750000)
+            selection = selection[:len(selection)//4*4]
+            zoom = 10*np.log10(np.maximum(p[selection].reshape(-1, 4).max(axis=1), 1e-14))
             meta.update(live=True, received_at=time.time(), fft=db.round(2).tolist(),
+                        zoom_fft=zoom.round(2).tolist(), zoom_start_hz=float(frequencies[selection[0]]),
+                        zoom_bin_hz=4*meta['rate']/len(window), fft_size=len(window),
                         rms=float(np.sqrt(np.mean(np.abs(z)**2))),
-                        peak_dbfs=float(db.max()), peak_hz=float((np.argmax(p)-2048)*20e6/4096),
-                        message='Captured I/Q · 20 MS/s · 4096-point Hann FFT' +
+                        peak_dbfs=float(db.max()), peak_hz=float((np.argmax(p)-len(window)//2)*meta['rate']/len(window)),
+                        message='Captured I/Q · 40 MS/s · 262144-point Hann FFT' +
                         (f" · {meta['recoveries']} receiver restart(s) after capture gaps" if meta.get('recoveries') else ''))
             with state_lock:
                 latest = meta
@@ -69,7 +79,7 @@ def logs():
 
 
 def tone_watchdog():
-    while not stopping.wait(.1):
+    while not stopping.wait(.025):
         with state_lock:
             hz = latest.get('frequency')
             live = latest.get('live', False) and time.time()-latest.get('received_at', 0) < 2
@@ -89,8 +99,8 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def do_GET(self):
-        if self.headers.get('Host') not in ('127.0.0.1:8732', 'localhost:8732'):
-            return self.reply(403, b'{}')
+        if not allowed_host(self.headers.get('Host')):
+            return self.reply(403, b'{"error":"Open this demo through a localhost or loopback address"}')
         if self.path == '/':
             return self.reply(200, (BASE / 'live-demo.html').read_bytes(), 'text/html; charset=utf-8')
         if self.path == '/api/frame':
@@ -105,11 +115,11 @@ class Handler(BaseHTTPRequestHandler):
         self.reply(404, b'{}')
 
     def do_POST(self):
-        if self.headers.get('Host') not in ('127.0.0.1:8732', 'localhost:8732'):
-            return self.reply(403, b'{}')
+        if not allowed_host(self.headers.get('Host')):
+            return self.reply(403, b'{"error":"Open this demo through a localhost or loopback address"}')
         # Reject cross-origin browser commands; this controls real hardware.
         origin = self.headers.get('Origin')
-        if origin and origin != 'http://' + self.headers.get('Host', ''):
+        if not allowed_origin(self.headers.get('Host'), origin):
             return self.reply(403, b'{"error":"Origin rejected"}')
         try:
             length = int(self.headers.get('Content-Length', '0'))
@@ -127,8 +137,8 @@ class Handler(BaseHTTPRequestHandler):
                 return self.reply(200, json.dumps(tone.command(cmd, hz)).encode())
             if self.path == '/api/tune':
                 hz = float(cmd['mhz'])*1e6
-                if not np.isfinite(hz):
-                    raise ValueError('Invalid frequency')
+                if not np.isfinite(hz) or not 2422e6 <= hz <= 2462e6:
+                    raise ValueError('40 MS/s mode supports receiver centers from 2422 to 2462 MHz')
                 if proc.poll() is not None:
                     raise ValueError('Receiver stopped; restart the demo')
                 with command_lock:

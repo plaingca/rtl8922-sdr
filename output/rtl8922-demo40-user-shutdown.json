@@ -1,0 +1,38 @@
+{
+  "pluto_off": {
+    "enabled": false,
+    "follow": true,
+    "center_hz": 2426999998,
+    "rf_hz": 2427749998.0,
+    "offset_hz": 750000.0,
+    "requested_offset_hz": 750000.0,
+    "gain_db": 0.0,
+    "mode": "text",
+    "text": "VA7EET",
+    "bandwidth_hz": 1000000,
+    "row": 6,
+    "row_seconds": 0.3,
+    "remaining_seconds": 0,
+    "error": "",
+    "restored": true,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  },
+  "stop": {
+    "stopping": true
+  },
+  "pluto_readback": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75,
+    "tx_powerdown": "1"
+  },
+  "service_state": "inactive",
+  "card_released": true,
+  "driver_modules_unloaded": true,
+  "temporary_files_removed": true,
+  "http_stopped": true
+}

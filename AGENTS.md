@@ -19,6 +19,10 @@ At migration, the running demo still uses
 /home/plaing/rtl8922-iq-research/soapy and rtl8922-live-demo.service.
 The new independent checkout is /home/plaing/rtl8922-sdr. Do not run both
 receivers at once or overwrite the working driver while it is loaded.
+The 40 MS/s demo uses the service launcher from /home/plaing/rtl8922-sdr,
+using the original working modules in /home/plaing/rtl8922-iq-research/la-driver.
+The user has shut the demo down: Pluto TX is off and the card is released.
+Do not restart it automatically.
 Read the loopback demo status before taking the card. Keep the demo restored
 after experiments when feasible. Long captures require checking free disk space.
 

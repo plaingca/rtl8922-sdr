@@ -1,0 +1,11 @@
+{
+  "localhost:52862": 200,
+  "127.0.0.1:52862": 200,
+  "evil.example:52862": 403,
+  "browser_url": "http://localhost:41175/",
+  "title": "RTL8922 \u00b7 40 MS/s radio canvas",
+  "live": "\u25cf Live \u00b7 40 MS/s",
+  "controls_reach_validation": true,
+  "javascript_errors": [],
+  "cross_origin_status": 403
+}

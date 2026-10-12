@@ -1,0 +1,26 @@
+{
+  "stall_seconds": 2,
+  "before": {
+    "frame": 1875,
+    "samples": 5895356416,
+    "errors": 0,
+    "recoveries": 0,
+    "display_skipped": 35,
+    "live": true,
+    "received_at": 1791837144.55609
+  },
+  "after": {
+    "frame": 1908,
+    "samples": 5999165440,
+    "errors": 0,
+    "recoveries": 0,
+    "display_skipped": 59,
+    "live": true,
+    "received_at": 1791837147.1487463
+  },
+  "samples_added": 103809024,
+  "capture_errors_added": 0,
+  "recoveries_added": 0,
+  "display_skips_added": 24,
+  "passed": true
+}

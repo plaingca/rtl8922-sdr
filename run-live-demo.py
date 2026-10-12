@@ -35,7 +35,8 @@ try:
     info = subprocess.check_output([iw, 'phy'], text=True)
     channels = [int(m[1]) for m in re.finditer(r'\* (\d+) MHz \[\d+\]([^\n]*)', info)
                 if 'disabled' not in m[2] and 2412 <= int(m[1]) <= 7115]
-    (base / 'live-channels.json').write_text(json.dumps(channels))
+    centers = sorted({c for c in channels if 2422 <= c <= 2462 and c-10 in channels and c+10 in channels})
+    (base / 'live-channels.json').write_text(json.dumps(centers))
     child = subprocess.Popen([sys.executable, str(base / 'live-demo.py')])
     child.wait()
 finally:

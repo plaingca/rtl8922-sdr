@@ -7930,5 +7930,138 @@
       "output/rtl8922-pll-followup-live.json"
     ],
     "firmware_scope": "RAM firmware log dictionary and ROM printable-symbol search; RF sequencer implementation unresolved"
+  },
+  "streaming_throughput_2026_10_12": {
+    "date": "2026-10-12",
+    "working_driver_changed": false,
+    "new_rate_promoted": false,
+    "raw_40msps_endurance": {
+      "name": "endurance40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 900.0,
+      "producer_seconds": 900.000129856,
+      "bytes": 71999397888,
+      "complex_samples": 35999698944,
+      "payload_MBps": 79.9993194440093,
+      "sequence_counter_wraps": 2,
+      "max_backlog_records": 4707,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    "new_coded_waveform_gate_passed": false,
+    "coded_gate_limitation": "Low coherence; sample-level continuity is inconclusive despite the passing transport counters.",
+    "continuous_80msps": false,
+    "continuous_160msps": false,
+    "higher_rate_failure": "Source ring overwrite after approximately 4.14ms at 80MS/s and 1.43ms at 160MS/s; zero host sequence gaps do not override producer EOVERFLOW.",
+    "paxi_path": "Firmware TX0/1 descriptor/submission/completion trace identified; direct LA payload and throughput unverified. Earlier TX2 probe was outside this firmware selector supported contexts.",
+    "320msps": "Uncompressed 8-bit I plus 8-bit Q needs 640MB/s, above verified PCIe Gen2 x1 ceiling of 500MB/s before overhead. Reduced precision packing and a 320MS/s source are unverified.",
+    "findings": "docs/streaming-throughput.md",
+    "summary": "output/rtl8922-stream-throughput-summary.json",
+    "evidence": [
+      "output/rtl8922-copy-control-bench.json",
+      "output/rtl8922-copy-channel-bench.json",
+      "output/rtl8922-stream-matrix-v1.json",
+      "output/rtl8922-stream-matrix-analysis.json",
+      "output/rtl8922-stream-endurance-v1.json",
+      "output/rtl8922-stream-coded40-analysis.json",
+      "output/rtl8922-stream-firmware-trace.json",
+      "output/rtl8922-stream-build-manifest.json",
+      "output/rtl8922-copy-control29-bench.json",
+      "output/rtl8922-stream-final-restoration.json"
+    ],
+    "restoration": {
+      "live": true,
+      "frequency_hz": 2312000000,
+      "rate": 20000000,
+      "samples_added": 40562688,
+      "errors_added": 0,
+      "recoveries_added": 0,
+      "tone_enabled": false,
+      "loaded_srcversion": "071571FF11683534D38F0D4",
+      "working_srcversion": "071571FF11683534D38F0D4",
+      "pluto_independent_readback": {
+        "sample_rate": 4000000,
+        "rx_lo": 2399999996,
+        "tx_lo": 2312000000,
+        "rx_rf_bandwidth": 18000000,
+        "tx_rf_bandwidth": 3000000,
+        "tx_hardwaregain_chan0": -89.75,
+        "tx_powerdown": "1"
+      }
+    }
+  },
+  "live_demo_40msps_waterfall_text_2026_10_12": {
+    "receive_rate": 40000000,
+    "initial_frequency_hz": 2422000000,
+    "center_range_mhz": [
+      2422,
+      2462
+    ],
+    "text": "RTL8922",
+    "text_canvas_hz": 1000000,
+    "default_offset_hz": 750000,
+    "fft_size": 262144,
+    "working_driver_changed": false,
+    "service_checkout": "/home/plaing/rtl8922-sdr",
+    "publisher": "bounded separate thread; skips display snapshots without blocking capture",
+    "offline_tests_passed": 11,
+    "rf_check_passed": true,
+    "tone_movement_hz": 1499938.96484375,
+    "timer_restoration_verified": true,
+    "rf_check_added_capture_errors": 0,
+    "rf_check_added_recoveries": 0,
+    "display_stall_check": {
+      "stall_seconds": 2,
+      "before": {
+        "frame": 1875,
+        "samples": 5895356416,
+        "errors": 0,
+        "recoveries": 0,
+        "display_skipped": 35,
+        "live": true,
+        "received_at": 1791837144.55609
+      },
+      "after": {
+        "frame": 1908,
+        "samples": 5999165440,
+        "errors": 0,
+        "recoveries": 0,
+        "display_skipped": 59,
+        "live": true,
+        "received_at": 1791837147.1487463
+      },
+      "samples_added": 103809024,
+      "capture_errors_added": 0,
+      "recoveries_added": 0,
+      "display_skips_added": 24,
+      "passed": true
+    },
+    "indefinite_drop_free_qualified": false,
+    "sample_level_continuity_qualified": false,
+    "findings": "docs/demo40-waterfall.md",
+    "evidence": [
+      "output/rtl8922-demo40-live-check.json",
+      "output/rtl8922-demo40-backpressure-check.json",
+      "output/rtl8922-demo40-blocking-display-failure.json",
+      "output/rtl8922-demo40-deployment.json",
+      "output/rtl8922-demo40-browser-check.json"
+    ],
+    "browser_controls_verified": true,
+    "forwarded_browser_ports": {
+      "passed": true,
+      "direct_and_forwarded_hosts": true,
+      "mismatched_origin_rejected": true,
+      "report": "output/rtl8922-demo40-forwarding-check.json"
+    }
   }
 }

@@ -1,0 +1,171 @@
+{
+  "inputs": {
+    "firmware": {
+      "bytes": 1849226,
+      "sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea"
+    },
+    "rom": {
+      "bytes": 524288,
+      "sha256": "d133bbe8b31273f27d9eeae992ce5cccd8001eaf816ebbeca240ce84e07a6ee4"
+    },
+    "table": {
+      "bytes": 16384,
+      "sha256": "d9a5d721e0af55f6aceacea9ef272548d485469373072d95aa3433dbd851630f"
+    }
+  },
+  "firmware_code_file_offset": 256,
+  "firmware_code_address": "0x20100000",
+  "table_snapshot_address": "0x20201000",
+  "functions": [
+    {
+      "name": "iddma_start",
+      "historical_pointer_slot": "0x2020206c",
+      "start": "0x20008904",
+      "end_exclusive": "0x20008a26",
+      "instruction_count": 108,
+      "code_sha256": "a0d562b8e81ec99617f7858ec2f5df8f4bdf7afcbbce2669efa5dbac9143c41c",
+      "evidence_excerpt": []
+    },
+    {
+      "name": "iddma_wait",
+      "historical_pointer_slot": "0x20202068",
+      "start": "0x20008a26",
+      "end_exclusive": "0x20008a8a",
+      "instruction_count": 37,
+      "code_sha256": "3089bd171df0e4b727161665726083adfc750bdea619a504b498358be1b8f361",
+      "evidence_excerpt": []
+    },
+    {
+      "name": "paxi_context_selector",
+      "historical_pointer_slot": "0x2020217c",
+      "start": "0x20122bac",
+      "end_exclusive": "0x20122cfe",
+      "instruction_count": 116,
+      "code_sha256": "b4e6284ee7b7a359ad04a1eb60acd0c759528dce67f9d45c59031096166dfdb5",
+      "evidence_excerpt": [
+        "20122bce c.beqz a1, 0x1e",
+        "20122bd0 c.li a5, 1",
+        "20122bd2 beq a1, a5, 0x54",
+        "20122bd6 lui a5, 0x20202",
+        "20122bda addi a5, a5, 0x3f4",
+        "20122bde lbu a4, 3(a5)",
+        "20122be2 c.li a0, 4",
+        "20122be4 c.addi a4, 1",
+        "20122be6 sb a4, 3(a5)",
+        "20122bea c.jr ra",
+        "20122c02 addi a5, zero, 0x620",
+        "20122c06 c.sw a5, 4(a2)",
+        "20122c08 addi a5, zero, 0x420",
+        "20122c0c c.sw a5, 8(a2)",
+        "20122c0e addi a5, zero, 0x1ff",
+        "20122c12 c.sw a5, 0x10(a2)",
+        "20122c14 c.sw a5, 0x18(a2)",
+        "20122c16 addi a5, zero, 0x20",
+        "20122c1a sh a5, 0x1e(a2)",
+        "20122c1e c.li a5, 2",
+        "20122c20 sb a5, 0x20(a2)",
+        "20122c24 c.jr ra",
+        "20122c40 addi a5, zero, 0x624",
+        "20122c44 c.sw a5, 4(a2)",
+        "20122c46 addi a5, zero, 0x424",
+        "20122c4a c.sw a5, 8(a2)",
+        "20122c4c addi a5, zero, 0x1ff",
+        "20122c50 c.sw a5, 0x10(a2)",
+        "20122c52 c.sw a5, 0x18(a2)",
+        "20122c54 addi a5, zero, 0x20",
+        "20122c58 sh a5, 0x1e(a2)",
+        "20122c5c sb zero, 0x20(a2)",
+        "20122c60 c.li a0, 0",
+        "20122c62 c.jr ra"
+      ]
+    },
+    {
+      "name": "paxi_descriptor_writer",
+      "historical_pointer_slot": "0x202021dc",
+      "start": "0x20004dc2",
+      "end_exclusive": "0x20004ea6",
+      "instruction_count": 79,
+      "code_sha256": "43faa416f2426e7aefedb87dbc2a68fa1527e9866d81d0c91d796ee30db4e24c",
+      "evidence_excerpt": [
+        "20004e46 c.lw a1, 0(a3)",
+        "20004e48 sub a3, t1, a2",
+        "20004e4c lhu t4, 0(a0)",
+        "20004e50 seqz a3, a3",
+        "20004e54 c.slli a3, 6",
+        "20004e56 andi a7, a7, 0x3f",
+        "20004e5a or a3, a3, a7",
+        "20004e5e sb a3, 3(a4)",
+        "20004e62 sh t4, 0(a4)",
+        "20004e66 bltu a1, t3, 8",
+        "20004e6a and a1, a1, a6",
+        "20004e6e add a3, s1, a2",
+        "20004e72 c.sw a1, 4(a4)",
+        "20004e74 c.andi a3, 0x1f",
+        "20004e76 c.addi a4, 8"
+      ]
+    },
+    {
+      "name": "paxi_submit",
+      "historical_pointer_slot": "0x202021d4",
+      "start": "0x20004f52",
+      "end_exclusive": "0x200051e6",
+      "instruction_count": 228,
+      "code_sha256": "18c5bdf063e5e76962864af83a8a599304048156869da3464c0e6560b957d80d",
+      "evidence_excerpt": [
+        "20005196 lui a5, 0x20202",
+        "2000519a lw a5, 0x1dc(a5)",
+        "2000519e c.mv a1, s2",
+        "200051a0 c.mv a0, s1",
+        "200051a2 c.jalr a5",
+        "200051a4 lhu a5, 0x26(sp)",
+        "200051a8 add a1, s5, s2",
+        "200051ac sub a4, a5, s5",
+        "200051b0 bltu s2, a4, 0xa",
+        "200051b4 sub a1, s5, a5",
+        "200051b8 c.add a1, s2",
+        "200051ba c.lwsp a4, 0x18(sp)",
+        "200051bc lui a5, 0x20201",
+        "200051c0 lw a5, 0x750(a5)",
+        "200051c4 c.and a1, a4",
+        "200051c6 c.lwsp a4, 0x14(sp)",
+        "200051c8 lui a0, 0xb8006",
+        "200051cc c.li s0, 0",
+        "200051ce sll a1, a1, a4",
+        "200051d2 c.lwsp a4, 0x10(sp)",
+        "200051d4 c.slli a1, 0x10",
+        "200051d6 c.srli a1, 0x10",
+        "200051d8 c.add a0, a4",
+        "200051da c.jalr a5",
+        "200051dc lw a5, 0x130(s6)",
+        "200051e0 c.mv a0, s4",
+        "200051e2 c.jalr a5"
+      ]
+    },
+    {
+      "name": "paxi_completion",
+      "historical_pointer_slot": "0x20202140",
+      "start": "0x2000548c",
+      "end_exclusive": "0x20005592",
+      "instruction_count": 103,
+      "code_sha256": "70766b0e5183bdfa634a8a293b81f4f9fec90cd217829e18e5a545557243ce94",
+      "evidence_excerpt": []
+    },
+    {
+      "name": "paxi_flow_control_init",
+      "historical_pointer_slot": "0x202021d0",
+      "start": "0x20123078",
+      "end_exclusive": "0x201232fc",
+      "instruction_count": 220,
+      "code_sha256": "e9c3353184ef57cd37ca9f833970a22c56d7970f9f7d5c439c5fbff40a555727",
+      "evidence_excerpt": []
+    }
+  ],
+  "interpretation": [
+    "The patched context selector accepts transmit contexts 0 and 1; argument 2 returns error 4.",
+    "TX0 uses base/index offsets 0x620/0x420; TX1 uses 0x624/0x424, relative to 0x18006000.",
+    "The descriptor writer stores 16-bit lengths, payload addresses, and bit30 on the last segment; ring size is 32 descriptors.",
+    "Submission and completion use shared firmware state as well as hardware indices. An idle hardware index does not grant exclusive ownership.",
+    "Direct LA SRAM reads through this engine and sustained throughput are still unverified."
+  ],
+  "hardware_access": false
+}

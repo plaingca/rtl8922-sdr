@@ -1,0 +1,242 @@
+{
+  "tests": [
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 60.0,
+      "tone_offset_hz": 250000,
+      "returncode": 0,
+      "host": {
+        "packets": 585933,
+        "bytes": 4799963136,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 60.100685,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,3399a,1,800,d24957f,2801,700000 packets=585933 produced=599996768 consumed=599995392 max_backlog=3178 elapsed_ns=60000226515 loss=0x0 stages_ns=1523098928,26245600,50192094881,2217695469 policy=6 reason=0 gap_ns=213418,97236 yield_ns=118276,53773\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nelapsed=10.0 bytes=800014336 sequence_gaps=0\nelapsed=20.0 bytes=1600004096 sequence_gaps=0\nelapsed=30.0 bytes=2400002048 sequence_gaps=0\nelapsed=40.0 bytes=3200008192 sequence_gaps=0\nelapsed=50.0 bytes=4000006144 sequence_gaps=0\nret=0 pipeline=1 snap=40b01,3399a,1,800,d24957f,2801,700000 packets=585933 produced=599996768 consumed=599995392 max_backlog=3178 elapsed_ns=60000226515 loss=0x0 stages_ns=1523098928,26245600,50192094881,2217695469 policy=6 reason=0 gap_ns=213418,97236 yield_ns=118276,53773\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.64871404047231
+      }
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 2,
+      "tone_offset_hz": -250000,
+      "returncode": 0,
+      "host": {
+        "packets": 19531,
+        "bytes": 159997952,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 2.100639,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,32fea,1,800,d24957f,2801,700000 packets=19531 produced=20000688 consumed=19999744 max_backlog=3044 elapsed_ns=2000116644 loss=0x0 stages_ns=53433117,914265,1659727979,76091130 policy=6 reason=0 gap_ns=188982,94841 yield_ns=93439,53322\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=0 pipeline=1 snap=40b01,32fea,1,800,d24957f,2801,700000 packets=19531 produced=20000688 consumed=19999744 max_backlog=3044 elapsed_ns=2000116644 loss=0x0 stages_ns=53433117,914265,1659727979,76091130 policy=6 reason=0 gap_ns=188982,94841 yield_ns=93439,53322\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.91823733580539
+      }
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "requested_seconds": 60.0,
+      "tone_offset_hz": 250000,
+      "returncode": 0,
+      "host": {
+        "packets": 585931,
+        "bytes": 4799946752,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 60.100484,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,330ce,1,800,d24957f,2801,700000 packets=585931 produced=599994512 consumed=599993344 max_backlog=5001 elapsed_ns=60000023802 loss=0x0 stages_ns=1544276423,26547460,49974045790,2229861892 policy=6 reason=0 gap_ns=312207,94792 yield_ns=309853,54784\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nelapsed=10.0 bytes=800014336 sequence_gaps=0\nelapsed=20.0 bytes=1600004096 sequence_gaps=0\nelapsed=30.0 bytes=2400002048 sequence_gaps=0\nelapsed=40.0 bytes=3200000000 sequence_gaps=0\nelapsed=50.0 bytes=3999989760 sequence_gaps=0\nret=0 pipeline=1 snap=40b01,330ce,1,800,d24957f,2801,700000 packets=585931 produced=599994512 consumed=599993344 max_backlog=5001 elapsed_ns=60000023802 loss=0x0 stages_ns=1544276423,26547460,49974045790,2229861892 policy=6 reason=0 gap_ns=312207,94792 yield_ns=309853,54784\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.738387643769286
+      }
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "tone_offset_hz": -250000,
+      "returncode": 0,
+      "host": {
+        "packets": 19531,
+        "bytes": 159997952,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 2.100591,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,33139,1,800,d24957f,2801,700000 packets=19531 produced=20001022 consumed=19999744 max_backlog=2896 elapsed_ns=2000151799 loss=0x0 stages_ns=51044542,891647,1664650862,73931924 policy=6 reason=0 gap_ns=102015,97586 yield_ns=95874,54955\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=0 pipeline=1 snap=40b01,33139,1,800,d24957f,2801,700000 packets=19531 produced=20001022 consumed=19999744 max_backlog=2896 elapsed_ns=2000151799 loss=0x0 stages_ns=51044542,891647,1664650862,73931924 policy=6 reason=0 gap_ns=102015,97586 yield_ns=95874,54955\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 32.479765083501974
+      }
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "tone_offset_hz": 250000,
+      "returncode": 1,
+      "host": {
+        "packets": 40,
+        "bytes": 327680,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": -75,
+        "seconds": 0.104488,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=-75 pipeline=1 snap=40b01,3013f,1,800,924957f,2801,700000 packets=40 produced=82167 consumed=40960 max_backlog=41207 elapsed_ns=4136507 loss=0x0 stages_ns=103019,2144,3499679,149456 policy=6 reason=4 gap_ns=97627,97507 yield_ns=56408,56408\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=-75 pipeline=1 snap=40b01,3013f,1,800,924957f,2801,700000 packets=40 produced=82167 consumed=40960 max_backlog=41207 elapsed_ns=4136507 loss=0x0 stages_ns=103019,2144,3499679,149456 policy=6 reason=4 gap_ns=97627,97507 yield_ns=56408,56408\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": 227661.1328125,
+        "peak_median_db": 26.358986804945626
+      }
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "tone_offset_hz": -250000,
+      "returncode": 1,
+      "host": {
+        "packets": 40,
+        "bytes": 327680,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": -75,
+        "seconds": 0.104356,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=-75 pipeline=1 snap=40b01,30154,1,800,924957f,2801,700000 packets=40 produced=82187 consumed=40960 max_backlog=41227 elapsed_ns=4138240 loss=0x0 stages_ns=105976,2222,3493458,151016 policy=6 reason=4 gap_ns=97727,94651 yield_ns=56207,56207\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=-75 pipeline=1 snap=40b01,30154,1,800,924957f,2801,700000 packets=40 produced=82187 consumed=40960 max_backlog=41227 elapsed_ns=4138240 loss=0x0 stages_ns=105976,2222,3493458,151016 policy=6 reason=4 gap_ns=97727,94651 yield_ns=56207,56207\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 131072,
+        "peak_hz": -272216.796875,
+        "peak_median_db": 25.88988961460752
+      }
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "tone_offset_hz": 250000,
+      "returncode": 1,
+      "host": {
+        "packets": 13,
+        "bytes": 106496,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": -75,
+        "seconds": 0.101681,
+        "capture_bytes": 106496
+      },
+      "producer": "ret=-75 pipeline=1 snap=40b01,33aa1,1,800,524957f,2801,700000 packets=13 produced=55822 consumed=13312 max_backlog=42510 elapsed_ns=1424372 loss=0x0 stages_ns=34907,850,1200112,49224 policy=6 reason=4 gap_ns=97526,97526 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=-75 pipeline=1 snap=40b01,33aa1,1,800,524957f,2801,700000 packets=13 produced=55822 consumed=13312 max_backlog=42510 elapsed_ns=1424372 loss=0x0 stages_ns=34907,850,1200112,49224 policy=6 reason=4 gap_ns=97526,97526 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 53248,
+        "peak_hz": 228365.38461538465,
+        "peak_median_db": 22.153332647330515
+      }
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "tone_offset_hz": -250000,
+      "returncode": 1,
+      "host": {
+        "packets": 13,
+        "bytes": 106496,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": -75,
+        "seconds": 0.10162,
+        "capture_bytes": 106496
+      },
+      "producer": "ret=-75 pipeline=1 snap=40b01,33b36,1,800,524957f,2801,700000 packets=13 produced=55966 consumed=13312 max_backlog=42654 elapsed_ns=1428530 loss=0x0 stages_ns=35134,1103,1203110,49729 policy=6 reason=4 gap_ns=97376,94961 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "stderr": "elapsed=0.0 bytes=8192 sequence_gaps=0\nret=-75 pipeline=1 snap=40b01,33b36,1,800,524957f,2801,700000 packets=13 produced=55966 consumed=13312 max_backlog=42654 elapsed_ns=1428530 loss=0x0 stages_ns=35134,1103,1203110,49729 policy=6 reason=4 gap_ns=97376,94961 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\n",
+      "host_drops": 0,
+      "fft": {
+        "samples": 53248,
+        "peak_hz": 30000000.000000004,
+        "peak_median_db": 20.16730105667976
+      }
+    }
+  ],
+  "started_utc": "2026-10-12T19:50:06Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": null
+}
