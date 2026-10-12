@@ -1,0 +1,15 @@
+/vendor/
+/build*/
+/.venv/
+__pycache__/
+*.pyc
+*.ko
+*.o
+*.so
+*.bin
+*.cf32
+*.log
+/live-bridge
+/live-channels.json
+.env
+.env.*

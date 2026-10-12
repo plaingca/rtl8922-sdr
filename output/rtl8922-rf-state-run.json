@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "\tifindex 921\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\nDEBUGFS=/sys/kernel/debug/ieee80211/phy0/rtw89/read_reg\n{\"transport_pass\": true, \"rf_pass\": false, \"stages\": 36, \"bad\": [10, 11, 12, 13]}\nCLEANUP_DONE\n0d:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. Device [10ec:8922] (rev 01)\n\tSubsystem: Realtek Semiconductor Co., Ltd. Device [10ec:8922]\ndefault via 10.0.10.1 dev enp14s0 proto dhcp metric 104 \n",
+  "stderr": ""
+}

@@ -1,0 +1,94 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "clock": 0,
+      "chunk": 8192,
+      "status": "clock=0 original_afe=1fffff1f selected_afe=1fffff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9122206\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9200786\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9347607\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9464131\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6615012\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6782392\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7137651\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7559187\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5886588\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6107010\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5904151\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7540732\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5884814\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6122409\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5905554\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7557644\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5887220\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6122971\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5904583\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7537836\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9117858\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9194214\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9365382\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9486233\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 1,
+      "chunk": 8192,
+      "status": "clock=1 original_afe=1fffff1f selected_afe=1f3fff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9116606\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9196619\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9344792\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9475572\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6604993\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6773615\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7110950\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7582642\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5882971\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6106258\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5896488\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7541163\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5882901\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6104735\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5898781\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7552515\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5887099\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6109444\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5892059\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7515142\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9111666\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9191298\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9370482\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9471685\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 2,
+      "chunk": 8192,
+      "status": "clock=2 original_afe=1fffff1f selected_afe=1f7fff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9120984\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9189084\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9368528\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9470342\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6631233\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6790487\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7111060\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7576099\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5902208\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6118302\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5915504\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7562253\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5903772\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6132118\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5917137\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7564577\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5902478\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6132378\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5910193\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7563956\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9122567\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9193703\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9380009\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9492053\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 3,
+      "chunk": 8192,
+      "status": "clock=3 original_afe=1fffff1f selected_afe=1fbfff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9120152\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9197080\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9370762\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9474340\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6635681\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6790968\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7126660\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7565519\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5908139\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6122790\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5912628\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7563125\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5907939\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6129943\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5908420\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7565239\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5906006\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6127860\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5912577\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7542876\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9117408\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9200085\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9375030\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9491833\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 4,
+      "chunk": 8192,
+      "status": "clock=4 original_afe=1fffff1f selected_afe=1fffff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9137065\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9224312\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9280329\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9437299\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6630190\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6788934\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=6965672\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7580418\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5888923\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6053117\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5976821\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7539870\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5947224\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6024762\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5920282\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7540601\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5986249\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6117900\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5962313\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7593332\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9129571\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9235994\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9365041\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9489208\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 5,
+      "chunk": 8192,
+      "status": "clock=5 original_afe=1fffff1f selected_afe=1fcfff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9129651\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9197901\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9347076\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9487795\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6667492\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6803482\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7067256\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7592330\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5912388\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6089897\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5975228\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7562423\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5945982\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6080679\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5912157\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7575689\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5953917\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6131016\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5945541\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7579255\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9113309\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9281761\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9379508\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9531920\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 6,
+      "chunk": 8192,
+      "status": "clock=6 original_afe=1fffff1f selected_afe=1fdfff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9123590\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9277673\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9403134\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9558040\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6674515\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6770879\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=6965992\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7613160\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5880827\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6039610\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=6211119\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7517377\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5949358\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6029882\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=6198304\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7547465\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5975037\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6030895\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5902248\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7392318\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9122977\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9246114\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9498586\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9531068\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 7,
+      "chunk": 8192,
+      "status": "clock=7 original_afe=1fffff1f selected_afe=1fefff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9124120\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9199635\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9385731\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9495300\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6648545\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6813511\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7132391\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7580468\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5933728\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6046605\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=6083515\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7538438\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5922457\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6045912\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=6195479\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7517017\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5924861\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6064008\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=6257658\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7534590\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9126255\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9216317\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9275369\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9466495\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "clock": 8,
+      "chunk": 8192,
+      "status": "clock=8 original_afe=1fffff1f selected_afe=1fffff1f\nsource=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9128859\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9206207\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9351815\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9471374\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6665858\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6801167\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=7103515\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7566661\nsource=0 physical=2 delay=0 bytes=8192 copies=100 elapsed_ns=5905484\nsource=0 physical=2 delay=1 bytes=8192 copies=100 elapsed_ns=6107360\nsource=0 physical=2 delay=4 bytes=8192 copies=100 elapsed_ns=5924851\nsource=0 physical=2 delay=16 bytes=8192 copies=100 elapsed_ns=7546322\nsource=0 physical=3 delay=0 bytes=8192 copies=100 elapsed_ns=5934570\nsource=0 physical=3 delay=1 bytes=8192 copies=100 elapsed_ns=6078084\nsource=0 physical=3 delay=4 bytes=8192 copies=100 elapsed_ns=5924170\nsource=0 physical=3 delay=16 bytes=8192 copies=100 elapsed_ns=7570609\nsource=0 physical=4 delay=0 bytes=8192 copies=100 elapsed_ns=5945531\nsource=0 physical=4 delay=1 bytes=8192 copies=100 elapsed_ns=6106489\nsource=0 physical=4 delay=4 bytes=8192 copies=100 elapsed_ns=5913751\nsource=0 physical=4 delay=16 bytes=8192 copies=100 elapsed_ns=7593072\nsource=0 physical=5 delay=0 bytes=8192 copies=100 elapsed_ns=9132646\nsource=0 physical=5 delay=1 bytes=8192 copies=100 elapsed_ns=9239670\nsource=0 physical=5 delay=4 bytes=8192 copies=100 elapsed_ns=9384558\nsource=0 physical=5 delay=16 bytes=8192 copies=100 elapsed_ns=9506020\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

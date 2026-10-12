@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('rtl8922-sdr/live-demo.html')
+s=p.read_text(encoding='utf-8')
+s=s.replace('Center frequency · MHz','Free frequency · MHz').replace('step="0.1" value="2412"','step="0.000001" value="2412"')
+s=s.replace('<p id="notice"','<p style="font-size:12px">Free tuning: 2412–2484 MHz or 5005–7115 MHz. Enter decimals down to 1 Hz, or click the spectrum to tune.</p><p id="notice"')
+s=s.replace("m<5900?'5'","m<5955?'5'")
+s=s.replace('toFixed(3)','toFixed(6)')
+s=s.replace("$('tune').onclick", "$('fft').style.cursor='crosshair'; $('fft').onclick=e=>{if(lastFrequency!==null){const r=$('fft').getBoundingClientRect();tune(((lastFrequency+((e.clientX-r.left)/r.width-.5)*20e6)/1e6).toFixed(6))}};\n$('tune').onclick")
+s=s.replace('Only currently enabled channel centers are offered. Fine tuning uses the nearest channel and a digital oscillator.', 'Free tuning programs the receive synthesizer below the Wi-Fi channel API. The channel selector remains a convenient preset list; direct frequency entry is not restricted to that list. Fine tuning uses a digital oscillator. Full output bandwidth near a tuning boundary is not guaranteed.')
+s=s.replace('Receive only · CA channel plan','Receive only · Free tuning')
+p.write_bytes(s.encode())

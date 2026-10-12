@@ -1,0 +1,22 @@
+{
+  "injected_fault": "Stop only this demo producer via iq_stop; no RF transmitter active",
+  "recovered": true,
+  "recovery_ms": 109.12,
+  "interruptions_delta": 1,
+  "recoveries_delta": 1,
+  "frequency_preserved": true,
+  "events": [
+    "TUNED 5005000000.000000",
+    "TUNED 5400123456.000000",
+    "TUNED 5400123457.000000",
+    "TUNED 5600123456.000000",
+    "TUNED 5945123456.000000",
+    "TUNED 6001234567.000000",
+    "TUNED 7115000000.000000",
+    "TUNED 5400123456.000000",
+    "TUNE_ERROR Frequency unavailable in this sample-rate mode or regulatory domain; query getFrequencyRange",
+    "TUNED 5400123456.000000",
+    "RECOVERY readStream=-2; capture gap, restarting receiver",
+    "RECOVERED interruption=9"
+  ]
+}

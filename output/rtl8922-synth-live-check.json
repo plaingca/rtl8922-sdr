@@ -1,0 +1,106 @@
+{
+  "tunes": [
+    {
+      "frequency_hz": 2312000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 45.940000000000005,
+      "errors": 1,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2347123456,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 42.370000000000005,
+      "errors": 2,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2382000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 46.970000000000006,
+      "errors": 3,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2412000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 45.370000000000005,
+      "errors": 4,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2500000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 29.260000000000005,
+      "errors": 5,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2505123456,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 29.799999999999997,
+      "errors": 6,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2515000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 35.9,
+      "errors": 7,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 4900000000,
+      "peak_offset_hz": 478515.625,
+      "above_median_db": 22.64,
+      "errors": 8,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 4940123456,
+      "peak_offset_hz": 478515.625,
+      "above_median_db": 49.209999999999994,
+      "errors": 9,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 5000000000,
+      "peak_offset_hz": 478515.625,
+      "above_median_db": 38.9,
+      "errors": 10,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 5400123456,
+      "peak_offset_hz": 468750.0,
+      "above_median_db": 25.25,
+      "errors": 11,
+      "recoveries": 0
+    },
+    {
+      "frequency_hz": 2312000000,
+      "peak_offset_hz": 488281.25,
+      "above_median_db": 45.599999999999994,
+      "errors": 12,
+      "recoveries": 0
+    }
+  ],
+  "rejected_gap_preserved_stream": true,
+  "fixed_5s_samples": 99176448,
+  "fixed_5s_interruptions": 0,
+  "fixed_5s_recoveries": 0,
+  "tone_off": {
+    "enabled": false,
+    "follow": true,
+    "center_hz": 2312000000,
+    "rf_hz": 2312500000.0,
+    "offset_hz": 500000.0,
+    "requested_offset_hz": 500000.0,
+    "gain_db": 0.0,
+    "remaining_seconds": 0,
+    "error": "",
+    "restored": true,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  }
+}

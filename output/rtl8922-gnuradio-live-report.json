@@ -1,0 +1,26 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [],
+  "live_control": {
+    "code": 0,
+    "stdout": "{\"application\": \"GNU Radio gr-soapy\", \"stage\": \"retune20\", \"initial_rate\": 20000000, \"final_rate\": 20000000, \"final_frequency\": 2427000000, \"samples\": 65536, \"peak_hz\": -4888610.83984375, \"peak_median_db\": 41.025047273143386, \"setting_ms\": 143.78004334867}\n{\"application\": \"GNU Radio gr-soapy\", \"stage\": \"rate20to40\", \"initial_rate\": 20000000, \"final_rate\": 40000000, \"final_frequency\": 2422000000, \"samples\": 65536, \"peak_hz\": 111694.3359375, \"peak_median_db\": 57.55502416250457, \"setting_ms\": 142.38810166716576}\n{\"application\": \"GNU Radio gr-soapy\", \"stage\": \"rate40to5\", \"initial_rate\": 40000000, \"final_rate\": 5000000, \"final_frequency\": 2422000000, \"samples\": 65536, \"peak_hz\": 111846.923828125, \"peak_median_db\": 64.7397343627941, \"setting_ms\": 142.11812615394592}\n",
+    "stderr": "RTL8922 producer: ret=0 packets=745 produced=763382 consumed=762880 max_backlog=1045 elapsed_ns=152682381 loss=0x0 monitor=0x0 stages_ns=1526172,96836,69899863,2075257 physical=0 validation_ns=0\n\nsORTL8922 producer: ret=0 packets=2206 produced=2259806 consumed=2258944 max_backlog=1057 elapsed_ns=451968732 loss=0x0 monitor=0x0 stages_ns=4560804,274951,207289653,6146925 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=743 produced=761333 consumed=760832 max_backlog=1077 elapsed_ns=152272587 loss=0x0 monitor=0x0 stages_ns=1550586,96648,69859555,2078301 physical=0 validation_ns=0\n\nsORTL8922 producer: ret=0 pipeline=1 snap=40b01,30ff3,1,800,d24957f,2801,700000 packets=4163 produced=4263865 consumed=4262912 max_backlog=2155 elapsed_ns=426420255 loss=0x0 stages_ns=11201690,185809,357101807,15825786 policy=6 reason=0 gap_ns=109950,92317 yield_ns=14888,2895\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\nRTL8922 producer: ret=0 pipeline=1 snap=40b01,39c0f,1,800,d24957f,2801,700000 packets=1478 produced=1514453 consumed=1513472 max_backlog=2059 elapsed_ns=151477919 loss=0x0 stages_ns=3975189,66979,127484577,5568646 policy=6 reason=0 gap_ns=100602,95883 yield_ns=4098,2916\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\nsORTL8922 producer: ret=0 packets=5896 produced=6038014 consumed=6037504 max_backlog=1059 elapsed_ns=1207615511 loss=0x0 monitor=0x0 stages_ns=12226864,748131,554210248,16484154 physical=0 validation_ns=0\n\n"
+  },
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

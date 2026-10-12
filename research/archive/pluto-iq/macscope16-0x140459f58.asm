@@ -1,0 +1,83 @@
+0000000140459f24 mov      rax, rsp
+0000000140459f27 mov      qword ptr [rax + 8], rbx
+0000000140459f2b mov      qword ptr [rax + 0x10], rdi
+0000000140459f2f mov      qword ptr [rax + 0x18], r12
+0000000140459f33 mov      qword ptr [rax + 0x20], r13
+0000000140459f37 push     r15
+0000000140459f39 sub      rsp, 0x20
+0000000140459f3d mov      ebx, edx
+0000000140459f3f mov      r13d, 0xc468
+0000000140459f45 mov      edx, r13d
+0000000140459f48 mov      r9d, 2
+0000000140459f4e mov      r8d, 0xff
+0000000140459f54 mov      rdi, rcx
+0000000140459f57 call     0x140458dbc
+0000000140459f5c mov      r9d, 2
+0000000140459f62 mov      r15d, 0x8018
+0000000140459f68 mov      edx, r15d
+0000000140459f6b mov      rcx, rdi
+0000000140459f6e lea      r12d, [r9 + 4]
+0000000140459f72 mov      r8d, r12d
+0000000140459f75 call     0x140458dbc
+0000000140459f7a mov      r8d, ebx
+0000000140459f7d xor      edx, edx
+0000000140459f7f mov      rcx, rdi
+0000000140459f82 call     0x14045d518
+0000000140459f87 lea      r9d, [r12 - 4]
+0000000140459f8c mov      r8d, 0xff
+0000000140459f92 mov      edx, r13d
+0000000140459f95 mov      rcx, rdi
+0000000140459f98 call     0x140458dbc
+0000000140459f9d lea      r9d, [r12 - 5]
+0000000140459fa2 mov      r8d, r12d
+0000000140459fa5 mov      edx, r15d
+0000000140459fa8 mov      rcx, rdi
+0000000140459fab call     0x140458dbc
+0000000140459fb0 mov      r8d, ebx
+0000000140459fb3 mov      dl, 1
+0000000140459fb5 mov      rcx, rdi
+0000000140459fb8 call     0x14045d518
+0000000140459fbd lea      r9d, [r12 - 3]
+0000000140459fc2 mov      r8d, 0xff
+0000000140459fc8 mov      edx, r13d
+0000000140459fcb mov      rcx, rdi
+0000000140459fce call     0x140458dbc
+0000000140459fd3 lea      r9d, [r12 - 4]
+0000000140459fd8 mov      r8d, r12d
+0000000140459fdb mov      edx, r15d
+0000000140459fde mov      rcx, rdi
+0000000140459fe1 call     0x140458dbc
+0000000140459fe6 mov      r8d, ebx
+0000000140459fe9 mov      dl, 2
+0000000140459feb mov      rcx, rdi
+0000000140459fee call     0x14045d518
+0000000140459ff3 lea      r9d, [r12 - 3]
+0000000140459ff8 mov      r8d, 0xff
+0000000140459ffe mov      edx, r13d
+000000014045a001 mov      rcx, rdi
+000000014045a004 call     0x140458dbc
+000000014045a009 lea      r9d, [r12 - 5]
+000000014045a00e mov      r8d, r12d
+000000014045a011 mov      edx, r15d
+000000014045a014 mov      rcx, rdi
+000000014045a017 call     0x140458dbc
+000000014045a01c mov      r8d, ebx
+000000014045a01f mov      dl, 3
+000000014045a021 mov      rcx, rdi
+000000014045a024 call     0x14045d518
+000000014045a029 xor      r9d, r9d
+000000014045a02c mov      r8d, 0xff
+000000014045a032 mov      edx, r13d
+000000014045a035 mov      rcx, rdi
+000000014045a038 call     0x140458dbc
+000000014045a03d xor      r9d, r9d
+000000014045a040 mov      r8d, r12d
+000000014045a043 mov      edx, r15d
+000000014045a046 mov      rcx, rdi
+000000014045a049 mov      rbx, qword ptr [rsp + 0x30]
+000000014045a04e mov      rdi, qword ptr [rsp + 0x38]
+000000014045a053 mov      r12, qword ptr [rsp + 0x40]
+000000014045a058 mov      r13, qword ptr [rsp + 0x48]
+000000014045a05d add      rsp, 0x20
+000000014045a061 pop      r15
+000000014045a063 jmp      0x140458dbc

@@ -1,0 +1,4 @@
+from pathlib import Path
+s=Path('tmp/pluto-iq/run-live-drain.py').read_text().replace("write_text('30000')","write_text('1000')").replace("'duration_ms':30000","'duration_ms':1000").replace('setup(2,0,4);','setup(2,0,RATE);').replace("'rate_selector':4","'rate_selector':RATE").replace('>=4120','>=8216').replace('h[0]==4096 and h[3]==4096','h[0]==8192 and h[3]==8192').replace('pending[24:4120]','pending[24:8216]').replace('pending[:4120]','pending[:8216]').replace('expected=h[1]+512','expected=h[1]+1024').replace('total+=4096','total+=8192').replace('chunk,4088','chunk,8184').replace('+4096]','+8192]').replace('1/5000000','1/SAMPLE_RATE')
+s=s.replace('rtl8922-live-drain-run','rtl8922-chunk8192-rateRATE-run')
+for rate in [4,3,2]:Path(f'tmp/pluto-iq/run-8k-rate{rate}.py').write_text(s.replace('RATE',str(rate)).replace('SAMPLE_'+str(rate),str(1250000*2**(6-rate))))

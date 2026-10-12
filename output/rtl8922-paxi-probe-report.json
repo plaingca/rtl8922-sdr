@@ -1,0 +1,29 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "chunk": 8192,
+      "status": "ret=-110 index=0 busy=0 id=224 physical=1876d000 configured=1 elapsed_ns=6557230\n",
+      "host_bytes": 0,
+      "reference_match": false,
+      "host_drops": "0\n"
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

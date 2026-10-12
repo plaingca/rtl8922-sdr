@@ -1,0 +1,142 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "bandwidth": 40,
+      "rawrate": 10000000,
+      "chunk": 8192,
+      "host": "{\"packets\":9765,\"bytes\":79994880,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=0 pipeline=1 snap=40b01,318dd,1,800,d24957f,2801,700000 packets=9765 produced=10000546 consumed=9999360 max_backlog=2614 elapsed_ns=1000095563 loss=0x0 stages_ns=25340511,435545,840249255,37012505 policy=6 reason=0 gap_ns=153604,97597 yield_ns=55757,53392\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 111328.125,
+        "peak_median_db": 56.18691185273435,
+        "image_db": 51.274133176946954
+      },
+      "tail_fft": {
+        "global_peak_hz": 107421.875,
+        "peak_median_db": 44.583859250765684,
+        "image_db": 34.48811421035919
+      }
+    },
+    {
+      "bandwidth": 40,
+      "rawrate": 10000000,
+      "chunk": 10240,
+      "host": "{\"packets\":7812,\"bytes\":79994880,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=0 pipeline=1 snap=40b01,318d4,1,800,d24957f,2801,700000 packets=7812 produced=10000539 consumed=9999360 max_backlog=3392 elapsed_ns=1000093116 loss=0x0 stages_ns=195282410,349098,661410701,29524280 policy=6 reason=0 gap_ns=171929,114970 yield_ns=91946,53582\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 111328.125,
+        "peak_median_db": 56.18691185273435,
+        "image_db": 51.274133176946954
+      },
+      "tail_fft": {
+        "global_peak_hz": 109375.0,
+        "peak_median_db": 46.36767301609951,
+        "image_db": 48.09154124199115
+      }
+    },
+    {
+      "bandwidth": 80,
+      "rawrate": 20000000,
+      "chunk": 8192,
+      "host": "{\"packets\":40,\"bytes\":327680,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=-75 pipeline=1 snap=40b01,304af,1,800,924957f,2801,700000 packets=40 produced=83046 consumed=40960 max_backlog=42086 elapsed_ns=4180710 loss=0x0 stages_ns=103167,1833,3495087,148962 policy=6 reason=4 gap_ns=152462,148404 yield_ns=54885,53953\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96191.40625,
+        "peak_median_db": 43.38793043945607,
+        "image_db": 43.070485653254984
+      },
+      "tail_fft": {
+        "global_peak_hz": 97656.25,
+        "peak_median_db": 28.567578387304696,
+        "image_db": 21.536265226552402
+      }
+    },
+    {
+      "bandwidth": 80,
+      "rawrate": 20000000,
+      "chunk": 10240,
+      "host": "{\"packets\":33,\"bytes\":337920,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=-75 pipeline=1 snap=40b01,30ad2,1,800,924957f,2801,700000 packets=33 produced=84617 consumed=42240 max_backlog=42377 elapsed_ns=4259330 loss=0x0 stages_ns=830848,1490,2900372,123278 policy=6 reason=4 gap_ns=173512,170897 yield_ns=54825,53692\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96191.40625,
+        "peak_median_db": 43.38793043945607,
+        "image_db": 43.070485653254984
+      },
+      "tail_fft": {
+        "global_peak_hz": 93750.0,
+        "peak_median_db": 28.73634507060895,
+        "image_db": 16.84701881931429
+      }
+    },
+    {
+      "bandwidth": 160,
+      "rawrate": 40000000,
+      "chunk": 8192,
+      "host": "{\"packets\":13,\"bytes\":106496,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=-75 pipeline=1 snap=40b01,33d83,1,800,524957f,2801,700000 packets=13 produced=56554 consumed=13312 max_backlog=43242 elapsed_ns=1443753 loss=0x0 stages_ns=36741,1432,1209995,49967 policy=6 reason=4 gap_ns=100773,94461 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.14868344948525,
+        "image_db": 39.783637510893335
+      },
+      "tail_fft": {
+        "global_peak_hz": 78125.0,
+        "peak_median_db": 26.90255783139618,
+        "image_db": 27.07202212540343
+      }
+    },
+    {
+      "bandwidth": 160,
+      "rawrate": 40000000,
+      "chunk": 10240,
+      "host": "{\"packets\":10,\"bytes\":102400,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=-75 pipeline=1 snap=40b01,33355,1,800,524957f,2801,700000 packets=10 produced=53944 consumed=12800 max_backlog=41144 elapsed_ns=1378889 loss=0x0 stages_ns=250061,581,958230,38543 policy=6 reason=4 gap_ns=119057,116443 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.14868344948525,
+        "image_db": 39.783637510893335
+      },
+      "tail_fft": {
+        "global_peak_hz": 93750.0,
+        "peak_median_db": 29.328419685458137,
+        "image_db": 17.790319089211515
+      }
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

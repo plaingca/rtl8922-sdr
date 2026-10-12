@@ -1,0 +1,20 @@
+from pathlib import Path
+p=Path('tmp/pluto-iq/debug-current.c')
+s=p.read_text()
+s=s.replace('iq_cpuio_result[512]','iq_cpuio_result[1024]')
+s=s.replace('static u64 iq_stream_yield(', 'struct iq_stalls { u64 max_gap, last_gap, max_yield, last_yield; u32 reason; };\nstatic u64 iq_stream_yield(')
+s=s.replace('u64 *deadline)\n{','u64 *deadline, struct iq_stalls *stats)\n{')
+s=s.replace('    now=ktime_get_ns(); *deadline=now+2000000;', '    if(stats) { stats->last_yield=ktime_get_ns()-now; stats->max_yield=max(stats->max_yield,stats->last_yield); }\n    now=ktime_get_ns(); *deadline=now+2000000;')
+s=s.replace('iq_stream_yield(rtwdev,&filter,&yield_at);','iq_stream_yield(rtwdev,&filter,&yield_at,NULL);',1)
+a=s.index('static ssize_t iq_stream_pipeline(');b=s.index('static ssize_t iq_stream_write(',a)
+t=s[a:b]
+t=t.replace('    u32 snap[7]={};','    u32 snap[7]={};\n    struct iq_stalls stats={};')
+t=t.replace('iq_stream_yield(rtwdev,&filter,&yield_at);','iq_stream_yield(rtwdev,&filter,&yield_at,&stats);\n        stats.last_gap=now-last_poll; stats.max_gap=max(stats.max_gap,stats.last_gap);')
+t=t.replace('if(now-last_poll>=poll_limit) { ret=-EOVERFLOW; break; }','if(now-last_poll>=poll_limit) { stats.reason=1; ret=-EOVERFLOW; break; }',1)
+t=t.replace('if(backlog>=40960) { ret=-EOVERFLOW; break; }','if(backlog>=40960) { stats.reason=2; ret=-EOVERFLOW; break; }',1)
+t=t.replace('if(now-last_poll>=poll_limit) { ret=-EOVERFLOW; break; }','if(now-last_poll>=poll_limit) { stats.reason=3; ret=-EOVERFLOW; break; }',1)
+t=t.replace('if(backlog>=40960) { ret=-EOVERFLOW; break; }','if(backlog>=40960) { stats.reason=4; ret=-EOVERFLOW; break; }',1)
+t=t.replace('stages_ns=%llu,%llu,%llu,%llu\\n', 'stages_ns=%llu,%llu,%llu,%llu policy=%u reason=%u gap_ns=%llu,%llu yield_ns=%llu,%llu\\n')
+t=t.replace('timing[0],timing[1],timing[2],timing[3]);','timing[0],timing[1],timing[2],timing[3],current->policy,stats.reason,stats.max_gap,stats.last_gap,stats.max_yield,stats.last_yield);')
+s=s[:a]+t+s[b:]
+Path('tmp/pluto-iq/debug-instrumented.c').write_bytes(s.encode())

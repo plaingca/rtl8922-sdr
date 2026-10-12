@@ -1,0 +1,93 @@
+0000000140291fa8 mov      qword ptr [rsp + 8], rbx
+0000000140291fad push     rdi
+0000000140291fae sub      rsp, 0x40
+0000000140291fb2 lea      rdi, [rdx + 0x20]
+0000000140291fb6 mov      rbx, rcx
+0000000140291fb9 movzx    r10d, byte ptr [rdi + 4]
+0000000140291fbe test     r10b, r10b
+0000000140291fc1 je       0x140292065
+0000000140291fc7 movzx    r8d, word ptr [rdx + 0x42c]
+0000000140291fcf cmp      r10b, 1
+0000000140291fd3 jne      0x140291ff4
+0000000140291fd5 mov      al, byte ptr [rdx + 0x22]
+0000000140291fd8 cmp      al, 3
+0000000140291fda jne      0x140291fe6
+0000000140291fdc call     0x140291694
+0000000140291fe1 jmp      0x140292166
+0000000140291fe6 cmp      al, 2
+0000000140291fe8 jne      0x140291ff4
+0000000140291fea call     0x1402913a8
+0000000140291fef jmp      0x140292166
+0000000140291ff4 mov      rcx, qword ptr [rip + 0x68e005]
+0000000140291ffb lea      rax, [rip + 0x68dffe]
+0000000140292002 cmp      rcx, rax
+0000000140292005 je       0x140292166
+000000014029200b cmp      byte ptr [rcx + 0x169], 2
+0000000140292012 jb       0x140292166
+0000000140292018 test     dword ptr [rcx + 0x16c], 0x400000
+0000000140292022 je       0x140292166
+0000000140292028 movzx    eax, byte ptr [rdx + 0x22]
+000000014029202c lea      r9, [rip + 0x37c35d]
+0000000140292033 mov      rcx, qword ptr [rcx + 0x158]
+000000014029203a lea      r8, [rip + 0x406eff]
+0000000140292041 mov      dword ptr [rsp + 0x30], eax
+0000000140292045 mov      edx, 0x26
+000000014029204a lea      rax, [rip + 0x38b6af]
+0000000140292051 mov      dword ptr [rsp + 0x28], r10d
+0000000140292056 mov      qword ptr [rsp + 0x20], rax
+000000014029205b call     0x1400aa578
+0000000140292060 jmp      0x140292166
+0000000140292065 movzx    r8d, byte ptr [rdi + 2]
+000000014029206a cmp      r8b, 2
+000000014029206e jne      0x140292082
+0000000140292070 movzx    r8d, word ptr [rdx + 0x42c]
+0000000140292078 call     0x140291c8c
+000000014029207d jmp      0x140292166
+0000000140292082 cmp      r8b, 1
+0000000140292086 jne      0x14029210e
+000000014029208c cmp      byte ptr [rdx + 0x170], 0
+0000000140292093 movzx    ecx, word ptr [rdx + 0x42c]
+000000014029209a jne      0x1402920fd
+000000014029209c mov      rcx, qword ptr [rip + 0x68df5d]
+00000001402920a3 lea      rax, [rip + 0x68df56]
+00000001402920aa cmp      rcx, rax
+00000001402920ad je       0x140292166
+00000001402920b3 cmp      byte ptr [rcx + 0x169], 3
+00000001402920ba jb       0x140292166
+00000001402920c0 test     dword ptr [rcx + 0x16c], 0x400000
+00000001402920ca je       0x140292166
+00000001402920d0 mov      rcx, qword ptr [rcx + 0x158]
+00000001402920d7 lea      rax, [rip + 0x38b5f2]
+00000001402920de mov      edx, 0x1c
+00000001402920e3 mov      qword ptr [rsp + 0x20], rax
+00000001402920e8 lea      r9, [rip + 0x37c2a1]
+00000001402920ef lea      r8, [rip + 0x406e4a]
+00000001402920f6 call     0x14003c968
+00000001402920fb jmp      0x140292166
+00000001402920fd mov      word ptr [rdx + 0x32], cx
+0000000140292101 mov      rax, qword ptr [rdx]
+0000000140292104 mov      word ptr [rax + 0x14], cx
+0000000140292108 mov      byte ptr [rdx + 0x23], 1
+000000014029210c jmp      0x140292166
+000000014029210e mov      rcx, qword ptr [rip + 0x68deeb]
+0000000140292115 lea      rax, [rip + 0x68dee4]
+000000014029211c cmp      rcx, rax
+000000014029211f je       0x140292166
+0000000140292121 cmp      byte ptr [rcx + 0x169], 3
+0000000140292128 jb       0x140292166
+000000014029212a test     dword ptr [rcx + 0x16c], 0x400000
+0000000140292134 je       0x140292166
+0000000140292136 mov      rcx, qword ptr [rcx + 0x158]
+000000014029213d lea      rax, [rip + 0x38bb5c]
+0000000140292144 mov      dword ptr [rsp + 0x28], r8d
+0000000140292149 lea      r9, [rip + 0x37c240]
+0000000140292150 lea      r8, [rip + 0x406de9]
+0000000140292157 mov      qword ptr [rsp + 0x20], rax
+000000014029215c mov      edx, 0x83
+0000000140292161 call     0x14003ca14
+0000000140292166 mov      rdx, rdi
+0000000140292169 mov      rcx, rbx
+000000014029216c mov      rbx, qword ptr [rsp + 0x50]
+0000000140292171 add      rsp, 0x40
+0000000140292175 pop      rdi
+0000000140292176 jmp      0x140295cc8

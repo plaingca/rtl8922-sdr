@@ -1,0 +1,10 @@
+from pathlib import Path
+s=Path('tmp/pluto-iq/run-live-control.py').read_text()
+for a,b in [('live-control-test','nco-live-test'),('live-control.py','nco-live.py'),('live-control.sh','nco-live.sh'),('rtl8922-live-control-run','rtl8922-nco-live-run')]:s=s.replace(a,b)
+Path('tmp/pluto-iq/run-nco-live.py').write_text(s)
+s=Path('tmp/pluto-iq/run-gnuradio-live.py').read_text()
+for a,b in [('gnuradio-live-test','gnuradio-fine-test'),('gnuradio-live.py','gnuradio-fine.py'),('gnuradio-live.sh','gnuradio-fine.sh'),('rtl8922-gnuradio-live-run','rtl8922-gnuradio-fine-run')]:s=s.replace(a,b)
+Path('tmp/pluto-iq/run-gnuradio-fine.py').write_text(s)
+s=Path('tmp/pluto-iq/run-soapy40-deadline65.py').read_text().replace('deadline65','fine65')
+s=s.replace("RTL8922_TRACE='1'","RTL8922_TRACE='1',RTL8922_TEST_FREQUENCY='2422250000'")
+Path('tmp/pluto-iq/run-soapy40-fine65.py').write_text(s)

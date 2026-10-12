@@ -1,0 +1,107 @@
+2001927c lui a5, 0x20201
+20019280 lw a5, 0x668(a5)
+20019284 c.addi sp, -0x10
+20019286 c.swsp s0, 8(sp)
+20019288 c.swsp ra, 0xc(sp)
+2001928a c.mv s0, a0
+2001928c c.li a0, 1
+2001928e c.jalr a5
+20019290 beqz a0, 0x1a4
+20019294 c.bnez s0, 0x26
+20019296 lui a5, 0x20201
+2001929a lw a5, 0x6b8(a5)
+2001929e c.li a4, 0
+200192a0 addi a3, zero, 0x265
+200192a4 c.li a2, 2
+200192a6 lui a0, 0x200
+200192aa c.li a1, 0
+200192ac c.jalr a5
+200192ae c.li s0, 0xd
+200192b0 c.lwsp ra, 0xc(sp)
+200192b2 c.mv a0, s0
+200192b4 c.lwsp s0, 8(sp)
+200192b6 c.addi sp, 0x10
+200192b8 c.jr ra
+200192ba c.lw a4, 8(s0)
+200192bc c.li a3, 3
+200192be srli a5, a4, 8
+200192c2 c.andi a5, 0xf
+200192c4 bgeu a3, a5, 0x20
+200192c8 lui a4, 0x20201
+200192cc lw a6, 0x6b8(a4)
+200192d0 addi a3, zero, 0x266
+200192d4 c.li a4, 1
+200192d6 c.li a2, 2
+200192d8 lui a0, 0x200
+200192dc c.li a1, 0
+200192de c.jalr a6
+200192e0 c.li s0, 1
+200192e2 c.j -0x32
+200192e4 srli a3, a4, 0xc
+200192e8 c.andi a3, 0xf
+200192ea c.li a2, 1
+200192ec bgeu a2, a3, 0x22
+200192f0 lui a5, 0x20201
+200192f4 lw a6, 0x6b8(a5)
+200192f8 c.li a4, 1
+200192fa c.mv a5, a3
+200192fc c.li a2, 2
+200192fe addi a3, zero, 0x267
+20019302 lui a0, 0x200
+20019306 c.li a1, 0
+20019308 c.jalr a6
+2001930a c.li s0, 2
+2001930c c.j -0x5c
+2001930e c.li a2, 0xc
+20019310 mul a2, a5, a2
+20019314 lui a3, 0x20203
+20019318 lw a3, 0x584(a3)
+2001931c c.lw a3, 0x3c(a3)
+2001931e c.add a3, a2
+20019320 lhu a3, 0(a3)
+20019324 lui a2, 0xf0
+20019328 c.and a2, a4
+2001932a andi a3, a3, 0x100
+2001932e c.bnez a2, 0x20
+20019330 c.beqz a3, 0x3c
+20019332 lui a4, 0x20201
+20019336 lw a6, 0x6b8(a4)
+2001933a addi a3, zero, 0x268
+2001933e c.li a4, 1
+20019340 c.li a2, 2
+20019342 lui a0, 0x200
+20019346 c.li a1, 0
+20019348 c.jalr a6
+2001934a c.li s0, 9
+2001934c c.j -0x9c
+2001934e c.bnez a3, 0x1e
+20019350 lui a4, 0x20201
+20019354 lw a6, 0x6b8(a4)
+20019358 addi a3, zero, 0x269
+2001935c c.li a4, 1
+2001935e c.li a2, 2
+20019360 lui a0, 0x200
+20019364 c.li a1, 0
+20019366 c.jalr a6
+20019368 c.li s0, 8
+2001936a c.j -0xba
+2001936c srli a5, a4, 0x10
+20019370 c.andi a5, 0xf
+20019372 c.li a4, 2
+20019374 addi a0, s0, 8
+20019378 beq a5, a4, 0x78
+2001937c bltu a4, a5, 0x30
+20019380 c.bnez a5, 0x4e
+20019382 lui a5, 0x20201
+20019386 lw a5, 0x638(a5)
+2001938a c.jalr a5
+2001938c c.mv s0, a0
+2001938e c.beqz a0, -0xde
+20019390 lui a5, 0x20201
+20019394 lw a6, 0x6b8(a5)
+20019398 c.li a4, 1
+2001939a c.mv a5, a0
+2001939c addi a3, zero, 0x26a
+200193a0 c.li a2, 2
+200193a2 lui a0, 0x200
+200193a6 c.li a1, 0

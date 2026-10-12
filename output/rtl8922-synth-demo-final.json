@@ -1,0 +1,23 @@
+{
+  "live": true,
+  "frequency": 2312000000,
+  "samples": 2703503360,
+  "errors": 12,
+  "recoveries": 0,
+  "peak_hz": 493164.0625,
+  "peak_dbfs": -39.27715016649485,
+  "tone": {
+    "enabled": true,
+    "follow": true,
+    "center_hz": 2312000000,
+    "rf_hz": 2312500000.0,
+    "offset_hz": 500000.0,
+    "requested_offset_hz": 500000.0,
+    "gain_db": -10.0,
+    "remaining_seconds": 33.9,
+    "error": "",
+    "restored": false,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  }
+}

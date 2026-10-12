@@ -1,0 +1,231 @@
+{
+  "single_tones": [
+    {
+      "file": "test-0.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 2,
+      "tone_hz": 500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": 0.02432949968003017,
+      "peak_to_median_db": 38.82762949538164
+    },
+    {
+      "file": "test-1.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 2,
+      "tone_hz": 1000000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": 0.04933438175178682,
+      "peak_to_median_db": 37.325133594404726
+    },
+    {
+      "file": "test-2.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 2,
+      "tone_hz": -500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": -0.02565709772104077,
+      "peak_to_median_db": 39.24109450715167
+    },
+    {
+      "file": "test-3.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 1,
+      "tone_hz": 500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": 0.012175096928639325,
+      "peak_to_median_db": 44.45873388506627
+    },
+    {
+      "file": "test-4.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 0,
+      "tone_hz": 500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": 0.006088989449195917,
+      "peak_to_median_db": 49.733098462331625
+    },
+    {
+      "file": "test-5.bin",
+      "source": 2,
+      "receiver_mhz": 2417,
+      "rate_selector": 2,
+      "tone_hz": 500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": -0.2256349670877741,
+      "peak_to_median_db": 36.16421096558608
+    },
+    {
+      "file": "test-6.bin",
+      "source": 3,
+      "receiver_mhz": 2412,
+      "rate_selector": 2,
+      "tone_hz": 500000,
+      "tx_gain_db": -10,
+      "peak_cycles_per_sample_refined": 0.024374540092215187,
+      "peak_to_median_db": 36.63094029959852
+    },
+    {
+      "file": "test-7.bin",
+      "source": 2,
+      "receiver_mhz": 2412,
+      "rate_selector": 2,
+      "tone_hz": 0,
+      "tx_gain_db": null,
+      "peak_cycles_per_sample_refined": 0.40371030135140806,
+      "peak_to_median_db": 26.55557563085575
+    }
+  ],
+  "approximate_20Msps_from_separate_tones_hz": 20002272.39873978,
+  "relative_frequency_offset_hz": -13354.720074984245,
+  "rates": [
+    {
+      "selector": 6,
+      "tested_rate_hz": 1250000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 1250005.1834402536,
+      "difference_ppm": 4.146752202949244,
+      "tone1_cycles_per_sample": 0.08875049617322922,
+      "tone2_cycles_per_sample": -0.21124825980626857,
+      "peak_to_median_db": [
+        32.258272191957154,
+        32.198825997645955
+      ],
+      "cfo_hz": -14061.419750569083,
+      "status": "0x50b07",
+      "note": ""
+    },
+    {
+      "selector": 5,
+      "tested_rate_hz": 2500000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 2500019.124132811,
+      "difference_ppm": 7.649653124497391,
+      "tone1_cycles_per_sample": 0.044423352542317336,
+      "tone2_cycles_per_sample": -0.10557550001849153,
+      "peak_to_median_db": [
+        31.751717973619634,
+        31.131163839377596
+      ],
+      "cfo_hz": -13940.76908611272,
+      "status": "0x7298f",
+      "note": ""
+    },
+    {
+      "selector": 4,
+      "tested_rate_hz": 5000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 5000105.612763094,
+      "difference_ppm": 21.12255261876861,
+      "tone1_cycles_per_sample": 0.02224328279386203,
+      "tone2_cycles_per_sample": -0.052755133048153026,
+      "peak_to_median_db": [
+        32.23221375194137,
+        32.096413544993496
+      ],
+      "cfo_hz": -13781.236856133706,
+      "status": "0x7533a",
+      "note": ""
+    },
+    {
+      "selector": 3,
+      "tested_rate_hz": 10000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 10000462.928616678,
+      "difference_ppm": 46.292861667796004,
+      "tone1_cycles_per_sample": 0.011141869886023194,
+      "tone2_cycles_per_sample": -0.026356394212024126,
+      "peak_to_median_db": [
+        30.725774134911163,
+        31.37515738551592
+      ],
+      "cfo_hz": -13576.143249354514,
+      "status": "0x726d3",
+      "note": ""
+    },
+    {
+      "selector": 2,
+      "tested_rate_hz": 20000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 20001315.151826903,
+      "difference_ppm": 65.75759134519465,
+      "tone1_cycles_per_sample": 0.0055786564633715325,
+      "tone2_cycles_per_sample": -0.013170110662861554,
+      "peak_to_median_db": [
+        32.33751065605283,
+        31.925817452855068
+      ],
+      "cfo_hz": -13419.533952329875,
+      "status": "0x74d4d",
+      "note": ""
+    },
+    {
+      "selector": 1,
+      "tested_rate_hz": 40000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 39864432.65488093,
+      "difference_ppm": -3389.1836279766885,
+      "tone1_cycles_per_sample": 0.0028021537980427577,
+      "tone2_cycles_per_sample": -0.006604727851233282,
+      "peak_to_median_db": [
+        36.3072049823673,
+        34.40123438147018
+      ],
+      "cfo_hz": -13293.728629305653,
+      "status": "0x50402",
+      "note": ""
+    },
+    {
+      "selector": 0,
+      "tested_rate_hz": 80000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 79993118.0273386,
+      "difference_ppm": -86.02465826756944,
+      "tone1_cycles_per_sample": 0.0013978264966969624,
+      "tone2_cycles_per_sample": -0.003290076778580285,
+      "peak_to_median_db": [
+        44.794339303944014,
+        44.276405249540716
+      ],
+      "cfo_hz": -13183.50006797866,
+      "status": "0x7373a",
+      "note": ""
+    },
+    {
+      "selector": 7,
+      "tested_rate_hz": 160000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 160090335.10731214,
+      "difference_ppm": 564.5944207008924,
+      "tone1_cycles_per_sample": 0.0006989576324473662,
+      "tone2_cycles_per_sample": -0.0016434698460673681,
+      "peak_to_median_db": [
+        47.68810381861848,
+        48.56680672037893
+      ],
+      "cfo_hz": -13103.638395687623,
+      "status": "0x763f3",
+      "note": ""
+    },
+    {
+      "selector": 8,
+      "tested_rate_hz": 80000000.0,
+      "estimated_rate_relative_to_pluto_clock_hz": 79998408.29772426,
+      "difference_ppm": -19.896278446673854,
+      "tone1_cycles_per_sample": 0.001402806164553332,
+      "tone2_cycles_per_sample": -0.0032847871011075264,
+      "peak_to_median_db": [
+        44.75300264602211,
+        43.59662738899928
+      ],
+      "cfo_hz": -12777.739685497974,
+      "status": "0x50bf5",
+      "note": "selector 8 behaves as 80 MS/s in this setup; 320 MS/s is not validated"
+    }
+  ],
+  "interpretation": {
+    "format0": "LE64: signed I14 bits0:13, signed Q14 bits14:27; upper36 original-header bits zero in these tests",
+    "format1": "LE64: signed I12 bits0:11,Q12 bits12:23, second stream I12 bits24:35,Q12 bits36:47; upper16 original-header bits zero",
+    "orientation": "I+jQ with those fields maps higher RF frequency to positive baseband frequency",
+    "absolute_polarity": "Global complex phase/sign cannot be calibrated uniquely over an unreferenced RF path. No absolute I/Q sign claim.",
+    "clock_reference": "Frequency spacing is relative to the Pluto clock; neither oscillator was compared with a calibrated external reference.",
+    "frequency_offset": "Approximately -13 kHz at 2.412 GHz between these two radios, varies during experiments; do not interpret entirely as Realtek error."
+  }
+}

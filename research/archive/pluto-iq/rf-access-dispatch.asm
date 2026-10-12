@@ -1,0 +1,16 @@
+00000001402ee410 jmp      0x140304ff0
+00000001402ee415 int3     
+00000001402ee416 int3     
+00000001402ee417 int3     
+00000001402ee418 mov      qword ptr [rsp + 8], rbx
+00000001402ee41d mov      qword ptr [rsp + 0x10], rsi
+00000001402ee422 mov      qword ptr [rsp + 0x18], rdi
+00000001402ee427 push     r15
+00000001402ee429 sub      rsp, 0x30
+00000001402ee42d mov      edx, 0x35
+00000001402ee432 mov      rbx, rcx
+00000001402ee435 mov      dil, 1
+00000001402ee438 call     0x140316dd4
+00000001402ee43d mov      edx, 0x35
+00000001402ee442 mov      rcx, rbx
+00000001402ee445 call     0x1403171d0

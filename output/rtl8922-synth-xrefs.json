@@ -1,0 +1,62 @@
+[
+  {
+    "name": "rtw_hal_set_syn_sel",
+    "start": "0x1402dcca8",
+    "end": "0x1402dcdee",
+    "file": "tmp\\pluto-iq\\rtw_hal_set_syn_sel-0x1402dcca8.asm"
+  },
+  {
+    "name": "halrf_ops_check_fw_chlk",
+    "start": "0x140378ef4",
+    "end": "0x140378f9c",
+    "file": "tmp\\pluto-iq\\halrf_ops_check_fw_chlk-0x140378ef4.asm"
+  },
+  {
+    "name": "rtw_hal_mp_reg_read_rf_syn",
+    "start": "0x1403baed8",
+    "end": "0x1403bafe3",
+    "file": "tmp\\pluto-iq\\rtw_hal_mp_reg_read_rf_syn-0x1403baed8.asm"
+  },
+  {
+    "name": "rtw_hal_mp_reg_write_rf_syn",
+    "start": "0x1403bbb18",
+    "end": "0x1403bbc71",
+    "file": "tmp\\pluto-iq\\rtw_hal_mp_reg_write_rf_syn-0x1403bbb18.asm"
+  },
+  {
+    "name": "halrf_ctl_band_ch_bw_8922a",
+    "start": "0x140461bfc",
+    "end": "0x140461ee3",
+    "file": "tmp\\pluto-iq\\halrf_ctl_band_ch_bw_8922a-0x140461bfc.asm"
+  },
+  {
+    "name": "halrf_chlk_reload_check_8922a",
+    "start": "0x140465d90",
+    "end": "0x14046615f",
+    "file": "tmp\\pluto-iq\\halrf_chlk_reload_check_8922a-0x140465d90.asm"
+  },
+  {
+    "name": "halrf_config_8922a_radio_a_reg",
+    "start": "0x140477144",
+    "end": "0x140477691",
+    "file": "tmp\\pluto-iq\\halrf_config_8922a_radio_a_reg-0x140477144.asm"
+  },
+  {
+    "name": "halrf_config_8922a_radio_a_reg",
+    "start": "0x140477144",
+    "end": "0x140477691",
+    "file": "tmp\\pluto-iq\\halrf_config_8922a_radio_a_reg-0x140477144.asm"
+  },
+  {
+    "name": "halrf_config_8922a_radio_b_reg",
+    "start": "0x140477694",
+    "end": "0x140477be3",
+    "file": "tmp\\pluto-iq\\halrf_config_8922a_radio_b_reg-0x140477694.asm"
+  },
+  {
+    "name": "halrf_config_8922a_radio_b_reg",
+    "start": "0x140477694",
+    "end": "0x140477be3",
+    "file": "tmp\\pluto-iq\\halrf_config_8922a_radio_b_reg-0x140477694.asm"
+  }
+]

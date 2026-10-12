@@ -1,0 +1,758 @@
+{
+  "date": "2026-10-12",
+  "target_MBps": 320,
+  "target_achieved": false,
+  "measurement_scope": "Stopped LA SRAM to one producer-owned PLE allocation; excludes page validation, allocation, PCIe submission and host delivery. Every final block in the72 test combinations was compared word-for-word to frozen LA SRAM; three subsequent host packets also matched.",
+  "mode_key": {
+    "0": "virtual payload offset24",
+    "1": "physical offset24",
+    "2": "physical offset32",
+    "3": "physical offset64",
+    "4": "physical offset128",
+    "5": "virtual offset128"
+  },
+  "best_isolated_copy": {
+    "source": 0,
+    "physical": 2,
+    "delay": 0,
+    "bytes": 10240,
+    "copies": 100,
+    "elapsed_ns": 7282046,
+    "mismatched_words": 0,
+    "MBps": 140.6198203087429
+  },
+  "copy_benchmarks": [
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4772978,
+      "mismatched_words": 0,
+      "MBps": 85.816444157086
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4719716,
+      "mismatched_words": 0,
+      "MBps": 86.78488281922048
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4801211,
+      "mismatched_words": 0,
+      "MBps": 85.31180987463371
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 5775405,
+      "mismatched_words": 0,
+      "MBps": 70.9214332155061
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3513299,
+      "mismatched_words": 0,
+      "MBps": 116.58557953649832
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3506796,
+      "mismatched_words": 0,
+      "MBps": 116.80177575199698
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3982175,
+      "mismatched_words": 0,
+      "MBps": 102.85836257823928
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3912231,
+      "mismatched_words": 0,
+      "MBps": 104.69729420374206
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3153491,
+      "mismatched_words": 0,
+      "MBps": 129.88779736488863
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3198397,
+      "mismatched_words": 0,
+      "MBps": 128.06415213621074
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3388591,
+      "mismatched_words": 0,
+      "MBps": 120.87619898654043
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3903795,
+      "mismatched_words": 0,
+      "MBps": 104.92354234789481
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3154132,
+      "mismatched_words": 0,
+      "MBps": 129.86140085449816
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3195461,
+      "mismatched_words": 0,
+      "MBps": 128.18181789732373
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3387167,
+      "mismatched_words": 0,
+      "MBps": 120.92701658937986
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3907533,
+      "mismatched_words": 0,
+      "MBps": 104.82317103911855
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3153340,
+      "mismatched_words": 0,
+      "MBps": 129.89401713738448
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3195601,
+      "mismatched_words": 0,
+      "MBps": 128.17620222299342
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3390514,
+      "mismatched_words": 0,
+      "MBps": 120.80764155523322
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 3906060,
+      "mismatched_words": 0,
+      "MBps": 104.86270052175338
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 0,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4771935,
+      "mismatched_words": 0,
+      "MBps": 85.83520102432242
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 1,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4713885,
+      "mismatched_words": 0,
+      "MBps": 86.8922343247661
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 4,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 4797716,
+      "mismatched_words": 0,
+      "MBps": 85.37395710792386
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 16,
+      "bytes": 4096,
+      "copies": 100,
+      "elapsed_ns": 5777038,
+      "mismatched_words": 0,
+      "MBps": 70.90138579666605
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9117506,
+      "mismatched_words": 0,
+      "MBps": 89.8491319885065
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9188132,
+      "mismatched_words": 0,
+      "MBps": 89.15849271647382
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9354980,
+      "mismatched_words": 0,
+      "MBps": 87.56833258863193
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9467075,
+      "mismatched_words": 0,
+      "MBps": 86.53147883586007
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6607205,
+      "mismatched_words": 0,
+      "MBps": 123.98586088974082
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6779675,
+      "mismatched_words": 0,
+      "MBps": 120.831750784514
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 7130907,
+      "mismatched_words": 0,
+      "MBps": 114.88019686696236
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 7562453,
+      "mismatched_words": 0,
+      "MBps": 108.32464016635872
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5879734,
+      "mismatched_words": 0,
+      "MBps": 139.326030735404
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6110916,
+      "mismatched_words": 0,
+      "MBps": 134.05518910749223
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5906506,
+      "mismatched_words": 0,
+      "MBps": 138.6945175371023
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 7556090,
+      "mismatched_words": 0,
+      "MBps": 108.41586058397928
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5884494,
+      "mismatched_words": 0,
+      "MBps": 139.21332913246238
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6122499,
+      "mismatched_words": 0,
+      "MBps": 133.8015735078111
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5943336,
+      "mismatched_words": 0,
+      "MBps": 137.83504752213236
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 7546442,
+      "mismatched_words": 0,
+      "MBps": 108.55446845016499
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5880225,
+      "mismatched_words": 0,
+      "MBps": 139.31439698310865
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6116657,
+      "mismatched_words": 0,
+      "MBps": 133.92936697284154
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 5903961,
+      "mismatched_words": 0,
+      "MBps": 138.75430410194105
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 7554077,
+      "mismatched_words": 0,
+      "MBps": 108.4447510926881
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9116344,
+      "mismatched_words": 0,
+      "MBps": 89.86058446236781
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9187079,
+      "mismatched_words": 0,
+      "MBps": 89.16871183974797
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 4,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9355522,
+      "mismatched_words": 0,
+      "MBps": 87.56325943116804
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 16,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9464830,
+      "mismatched_words": 0,
+      "MBps": 86.55200357534156
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11376306,
+      "mismatched_words": 0,
+      "MBps": 90.01164349833769
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11428716,
+      "mismatched_words": 0,
+      "MBps": 89.59886657433783
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11630442,
+      "mismatched_words": 0,
+      "MBps": 88.04480517593399
+    },
+    {
+      "source": 0,
+      "physical": 0,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11351458,
+      "mismatched_words": 0,
+      "MBps": 90.20867627753192
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 8220170,
+      "mismatched_words": 0,
+      "MBps": 124.57163294676387
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 8357703,
+      "mismatched_words": 0,
+      "MBps": 122.52170243426932
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 8399513,
+      "mismatched_words": 0,
+      "MBps": 121.9118298882328
+    },
+    {
+      "source": 0,
+      "physical": 1,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 9357656,
+      "mismatched_words": 0,
+      "MBps": 109.42911344464896
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7282046,
+      "mismatched_words": 0,
+      "MBps": 140.6198203087429
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7483331,
+      "mismatched_words": 0,
+      "MBps": 136.83745914753737
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7754739,
+      "mismatched_words": 0,
+      "MBps": 132.04828686046042
+    },
+    {
+      "source": 0,
+      "physical": 2,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7564186,
+      "mismatched_words": 0,
+      "MBps": 135.37477793380543
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7288418,
+      "mismatched_words": 0,
+      "MBps": 140.49688149060606
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7433395,
+      "mismatched_words": 0,
+      "MBps": 137.75670470895196
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7623038,
+      "mismatched_words": 0,
+      "MBps": 134.32964652675219
+    },
+    {
+      "source": 0,
+      "physical": 3,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7553084,
+      "mismatched_words": 0,
+      "MBps": 135.57376033418933
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7324417,
+      "mismatched_words": 0,
+      "MBps": 139.8063490923578
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7409981,
+      "mismatched_words": 0,
+      "MBps": 138.19198726690394
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7451600,
+      "mismatched_words": 0,
+      "MBps": 137.4201513768855
+    },
+    {
+      "source": 0,
+      "physical": 4,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 7549667,
+      "mismatched_words": 0,
+      "MBps": 135.63512139012224
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 0,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11395532,
+      "mismatched_words": 0,
+      "MBps": 89.85978013137078
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 1,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11535640,
+      "mismatched_words": 0,
+      "MBps": 88.76837349293147
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 4,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11409339,
+      "mismatched_words": 0,
+      "MBps": 89.75103640973417
+    },
+    {
+      "source": 0,
+      "physical": 5,
+      "delay": 16,
+      "bytes": 10240,
+      "copies": 100,
+      "elapsed_ns": 11393178,
+      "mismatched_words": 0,
+      "MBps": 89.87834649822902
+    }
+  ],
+  "other_tests": {
+    "clock_selectors": "AFE_CTRL1 exposed DMAC and DCPU clock selectors0..3 read back, but did not improve copy speed. Original0x1fffff1f restored. Actual selected frequency not established.",
+    "direct_BAR": "32-bit CPU reads matched frozen320KiB twice at2.17MB/s. 64/128/256/512-bit reads returned0xffffffff data and failed comparisons. Their apparent throughput is invalid.",
+    "GPU": "cudaHostRegisterIoMemory|Mapped|ReadOnly returned801 operation not supported; no GPU transfer occurred.",
+    "PAXIDMA": "Located live engine at0x18006000 and8-byte TXBDs in firmware SRAM. Uninitialized channel2 probe using producer-owned descriptor memory timed out with index0,busy0 and zero host bytes. This is not a working bypass. Firmware-owned channels0/1 were not replaced."
+  },
+  "limitations": [
+    "140MB/s is an isolated copy result, not continuous host receive.",
+    "No demonstrated320MB/s route yet.",
+    "A faster packet AXI path or a ring-to-PCIe route avoiding IDDMA remains unresolved."
+  ],
+  "cleanup": "Temporary driver modules, firmware and NM configuration removed; Pluto settings restored and TX powered down; original working driver/plugin unchanged."
+}

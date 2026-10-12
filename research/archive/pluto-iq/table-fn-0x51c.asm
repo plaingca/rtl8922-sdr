@@ -1,0 +1,126 @@
+20028146 c.jr ra
+20028148 c.jr ra
+2002814a c.unimp 
+2002814c c.unimp 
+2002814e c.unimp 
+20028150 c.unimp 
+20028152 c.unimp 
+20028154 c.unimp 
+20028156 c.unimp 
+20028158 c.unimp 
+2002815a c.unimp 
+2002815c c.unimp 
+2002815e c.unimp 
+20028160 c.unimp 
+20028162 c.unimp 
+20028164 c.unimp 
+20028166 c.unimp 
+20028168 c.unimp 
+2002816a c.unimp 
+2002816c c.unimp 
+2002816e c.unimp 
+20028170 c.unimp 
+20028172 c.unimp 
+20028174 c.unimp 
+20028176 c.unimp 
+20028178 c.unimp 
+2002817a c.unimp 
+2002817c c.unimp 
+2002817e c.unimp 
+20028180 c.unimp 
+20028182 c.unimp 
+20028184 c.unimp 
+20028186 c.unimp 
+20028188 c.unimp 
+2002818a c.unimp 
+2002818c c.unimp 
+2002818e c.unimp 
+20028190 c.unimp 
+20028192 c.unimp 
+20028194 c.unimp 
+20028196 c.unimp 
+20028198 c.unimp 
+2002819a c.unimp 
+2002819c c.unimp 
+2002819e nop 
+200281a2 nop 
+200281a6 nop 
+200281aa nop 
+200281ae nop 
+200281b2 nop 
+200281b6 nop 
+200281ba nop 
+200281be nop 
+200281c2 nop 
+200281c6 nop 
+200281ca nop 
+200281ce nop 
+200281d2 nop 
+200281d6 nop 
+200281da nop 
+200281de nop 
+200281e2 nop 
+200281e6 nop 
+200281ea nop 
+200281ee nop 
+200281f2 nop 
+200281f6 nop 
+200281fa nop 
+200281fe c.nop 
+20028200 c.j 0x286
+20028202 c.nop 
+20028204 c.j 0x7c
+20028206 c.nop 
+20028208 c.j 0x80
+2002820a c.nop 
+2002820c c.j 0x84
+2002820e c.nop 
+20028210 c.j 0x88
+20028212 c.nop 
+20028214 c.j 0x8c
+20028216 c.nop 
+20028218 c.j 0x90
+2002821a c.nop 
+2002821c c.j 0x94
+2002821e c.nop 
+20028220 c.j 0x98
+20028222 c.nop 
+20028224 c.j 0x9c
+20028226 c.nop 
+20028228 c.j 0xa0
+2002822a c.nop 
+2002822c c.j 0xa4
+2002822e c.nop 
+20028230 c.j 0xa8
+20028232 c.nop 
+20028234 c.j 0xac
+20028236 c.nop 
+20028238 c.j 0xb0
+2002823a c.nop 
+2002823c c.j 0xb4
+2002823e c.nop 
+20028240 c.j 0xb8
+20028242 c.nop 
+20028244 c.j 0xbc
+20028246 c.nop 
+20028248 c.j 0xc0
+2002824a c.nop 
+2002824c c.j 0xc4
+2002824e c.nop 
+20028250 c.j 0xc8
+20028252 c.nop 
+20028254 c.j 0xcc
+20028256 c.nop 
+20028258 c.j 0xd0
+2002825a c.nop 
+2002825c c.j 0xd4
+2002825e c.nop 
+20028260 c.j 0xd8
+20028262 c.nop 
+20028264 c.j 0xdc
+20028266 c.nop 
+20028268 c.j 0xe0
+2002826a c.nop 
+2002826c c.j 0xe4
+2002826e c.nop 
+20028270 c.j 0xe8

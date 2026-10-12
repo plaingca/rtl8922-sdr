@@ -1,0 +1,3 @@
+from pathlib import Path
+s=Path('tmp/pluto-iq/run-soapy.py').read_text().replace('n=np.arange(16384);s.tx(24576*np.exp(2j*np.pi*125000/fs*n))', '''rng=np.random.default_rng(8922);symbols=(2*rng.integers(0,2,32768)-1)+1j*(2*rng.integers(0,2,32768)-1);wave=np.repeat(symbols,4);n=np.arange(len(wave));wave=wave/np.sqrt(2)*np.exp(2j*np.pi*250000/fs*n);s.tx(22000*wave);(root/'soapy/coded-tx.cf32').write_bytes(wave.astype('<c8').tobytes())''')
+s=s.replace("[['SoapySDRUtil','--probe=driver=rtl8922'],[str(root/'soapy/stream-check')]]", "[[str(root/'soapy/capture-check')]]");a=s.index('    for fmt,ty in');b=s.index("'''+s[b:]",a);s=s[:a]+s[b:];s=s.replace('rtl8922-soapy-first-run','rtl8922-coded-capture-run');Path('tmp/pluto-iq/run-coded-capture.py').write_text(s)

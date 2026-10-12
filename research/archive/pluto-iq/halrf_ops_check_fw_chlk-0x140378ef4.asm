@@ -1,0 +1,39 @@
+0000000140378ef4 push     rbx
+0000000140378ef6 sub      rsp, 0x20
+0000000140378efa mov      rax, qword ptr [rcx + 0x176980]
+0000000140378f01 xor      ebx, ebx
+0000000140378f03 test     rax, rax
+0000000140378f06 je       0x140378f4d
+0000000140378f08 mov      rax, qword ptr [rax + 0x90]
+0000000140378f0f test     rax, rax
+0000000140378f12 je       0x140378f1e
+0000000140378f14 call     qword ptr [rip + 0x30b3de]
+0000000140378f1a mov      bl, al
+0000000140378f1c jmp      0x140378f94
+0000000140378f1e mov      rcx, qword ptr [rip + 0x5a70db]
+0000000140378f25 lea      rax, [rip + 0x5a70d4]
+0000000140378f2c cmp      rcx, rax
+0000000140378f2f je       0x140378f94
+0000000140378f31 cmp      byte ptr [rcx + 0x169], 3
+0000000140378f38 jb       0x140378f94
+0000000140378f3a test     dword ptr [rcx + 0x16c], 0x2000
+0000000140378f44 je       0x140378f94
+0000000140378f46 mov      edx, 0x56
+0000000140378f4b jmp      0x140378f7a
+0000000140378f4d mov      rcx, qword ptr [rip + 0x5a70ac]
+0000000140378f54 lea      rax, [rip + 0x5a70a5]
+0000000140378f5b cmp      rcx, rax
+0000000140378f5e je       0x140378f94
+0000000140378f60 cmp      byte ptr [rcx + 0x169], 3
+0000000140378f67 jb       0x140378f94
+0000000140378f69 test     dword ptr [rcx + 0x16c], 0x2000
+0000000140378f73 je       0x140378f94
+0000000140378f75 mov      edx, 0x57
+0000000140378f7a mov      rcx, qword ptr [rcx + 0x158]
+0000000140378f81 lea      r9, [rip + 0x2c6508]
+0000000140378f88 lea      r8, [rip + 0x359481]
+0000000140378f8f call     0x140008874
+0000000140378f94 mov      al, bl
+0000000140378f96 add      rsp, 0x20
+0000000140378f9a pop      rbx
+0000000140378f9b ret      

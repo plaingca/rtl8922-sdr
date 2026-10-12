@@ -1,0 +1,99 @@
+20009448 sb a1, 0(a0)
+2000944c c.jr ra
+2000944e sh a1, 0(a0)
+20009452 c.jr ra
+20009454 c.sw a1, 0(a0)
+20009456 c.jr ra
+20009458 c.lui a5, 0x10
+2000945a bgeu a0, a5, 0x14
+2000945e lui a5, 0x20201
+20009462 lw a5, 0x758(a5)
+20009466 lui a4, 0xb8600
+2000946a c.add a0, a4
+2000946c c.jr a5
+2000946e c.addi sp, -0x20
+20009470 c.swsp ra, 0x1c(sp)
+20009472 c.lui a5, 0x14
+20009474 bgeu a0, a5, 0x52
+20009478 lui a5, 0x20205
+2000947c lbu a5, -0x1e7(a5)
+20009480 c.beqz a5, 0x16
+20009482 lui a5, 0x20201
+20009486 lui a4, 0xb8600
+2000948a c.lwsp ra, 0x1c(sp)
+2000948c lw a5, 0x758(a5)
+20009490 c.add a0, a4
+20009492 c.addi16sp sp, 0x20
+20009494 c.j -0x28
+20009496 c.li a5, 0x1e
+20009498 sb a5, 0(sp)
+2000949c lui a5, 0x20209
+200094a0 addi a5, a5, -0x668
+200094a4 c.swsp a5, 4(sp)
+200094a6 addi a5, zero, 0x161
+200094aa c.swsp a5, 8(sp)
+200094ac lui a5, 0x20202
+200094b0 lw a5, 0x348(a5)
+200094b4 c.mv a0, sp
+200094b6 c.jalr a5
+200094b8 c.lwsp ra, 0x1c(sp)
+200094ba lui a0, 0xeaeaf
+200094be addi a0, a0, -0x516
+200094c2 c.addi16sp sp, 0x20
+200094c4 c.jr ra
+200094c6 c.lui a5, 0x18
+200094c8 bgeu a0, a5, 0x24
+200094cc lui a5, 0x20205
+200094d0 lbu a5, -0x1e6(a5)
+200094d4 c.bnez a5, -0x52
+200094d6 c.li a5, 0x1e
+200094d8 sb a5, 0(sp)
+200094dc lui a5, 0x20209
+200094e0 addi a5, a5, -0x668
+200094e4 c.swsp a5, 4(sp)
+200094e6 addi a5, zero, 0x166
+200094ea c.j -0x40
+200094ec c.lui a5, 0x1c
+200094ee bgeu a0, a5, 0x24
+200094f2 lui a5, 0x20205
+200094f6 lbu a5, -0x1e5(a5)
+200094fa c.bnez a5, -0x78
+200094fc c.li a5, 0x1e
+200094fe sb a5, 0(sp)
+20009502 lui a5, 0x20209
+20009506 addi a5, a5, -0x668
+2000950a c.swsp a5, 4(sp)
+2000950c addi a5, zero, 0x16b
+20009510 c.j -0x66
+20009512 c.li a5, 0x1e
+20009514 sb a5, 0(sp)
+20009518 lui a5, 0x20209
+2000951c addi a5, a5, -0x668
+20009520 c.swsp a5, 4(sp)
+20009522 addi a5, zero, 0x16e
+20009526 c.j -0x7c
+20009528 c.lui a5, 0x10
+2000952a bgeu a0, a5, 0x14
+2000952e lui a5, 0x20201
+20009532 lw a5, 0x75c(a5)
+20009536 lui a4, 0xb8600
+2000953a c.add a0, a4
+2000953c c.jr a5
+2000953e c.addi sp, -0x20
+20009540 c.swsp ra, 0x1c(sp)
+20009542 c.lui a5, 0x14
+20009544 bgeu a0, a5, 0x50
+20009548 lui a5, 0x20205
+2000954c lbu a5, -0x1e7(a5)
+20009550 c.beqz a5, 0x16
+20009552 lui a5, 0x20201
+20009556 lui a4, 0xb8600
+2000955a c.lwsp ra, 0x1c(sp)
+2000955c lw a5, 0x75c(a5)
+20009560 c.add a0, a4
+20009562 c.addi16sp sp, 0x20
+20009564 c.j -0x28
+20009566 c.li a5, 0x1e
+20009568 sb a5, 0(sp)
+2000956c lui a5, 0x20209
+20009570 addi a5, a5, -0x668

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "host": "beastmode",
+  "pci_device": "0000:0d:00.0",
+  "pci_id": "10ec:8922",
+  "chip": "RTL8922AE",
+  "kernel": "6.8.0-124-generic",
+  "driver_repository": "https://github.com/morrownr/rtw89",
+  "driver_commit": "8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356",
+  "firmware": "rtw8922a_fw-4.bin",
+  "firmware_version": "0.35.80.3",
+  "chip_revision_report": {"CID": 71, "CV": 2, "AID": 6933, "ACV": 1, "RFE": 1},
+  "driver_build": "passed",
+  "temporary_driver_initialization": "passed",
+  "monitor_mode": {"frequency_mhz": 2412, "bandwidth_mhz": 20, "interface": "wlp13s0"},
+  "packet_smoke_test": {"seconds": 4, "packets": 3, "valid_radiotap_headers": 3, "bytes": 146, "raw_iq": false},
+  "register_reads_hex": {"3098": "00000001", "309c": "00000800", "9660": "00000000", "9664": "00000000", "9668": "ffffffff", "966c": "00000000"},
+  "register_interpretation": "Supporting MAC diagnostic reads only. 9660/9664 are exploratory addresses adjacent to named LA error registers; not verified BE1 capture control/status. No values constitute IQ samples.",
+  "iq_capture_triggered": false,
+  "iq_samples_obtained": false,
+  "blocker": "Missing verified BE1 capture-register addresses/masks, Wi-Fi 7 MAC capture-buffer setup, and sample packing. The generic vendor source references RTL8922A register headers absent from the packages searched.",
+  "missing_header": "phl/hal_g6/phy/bb/halbb_8922a_2/halbb_cr_info_8922a_2.h",
+  "research_sources": [
+    "https://github.com/josephnef/rtl8852cu/tree/1530c38e5b1be6d1e96a31cf4f3602a9c23f2465/phl/hal_g6/phy/bb",
+    "https://github.com/morrownr/rtl8852bu-20250826/tree/b6a299b4fe95cb6a37eec27a6c3b21cbaa6abfa8/phl/hal_g6/phy/bb",
+    "https://github.com/OpenIPC/devourer/blob/5be2b72001c1af19e44519074a7dac2f986492d5/docs/la-capture.md"
+  ],
+  "cleanup": "Temporary Realtek modules unloaded; temporary firmware and NetworkManager rule removed. Build source and logs retained under /home/plaing/rtl8922-iq-research. No module installation, boot configuration, or association performed."
+}

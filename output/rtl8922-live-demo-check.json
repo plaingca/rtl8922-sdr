@@ -1,0 +1,124 @@
+{
+  "cross_band_tunes": [
+    {
+      "frequency": 5180000000,
+      "rf_center": 5180000000.0,
+      "generation": 5,
+      "frame": 678,
+      "samples": 1013305344,
+      "errors": 5,
+      "age_ms": 35,
+      "peak_dbfs": -46.62001439147785,
+      "rms": 0.011135864071547985,
+      "tune_ms": 235.47
+    },
+    {
+      "frequency": 5180250000,
+      "rf_center": 5180000000.0,
+      "generation": 6,
+      "frame": 683,
+      "samples": 1020829696,
+      "errors": 5,
+      "age_ms": 23,
+      "peak_dbfs": -44.455435693509884,
+      "rms": 0.011713026091456413,
+      "tune_ms": 99.67
+    },
+    {
+      "frequency": 5825000000,
+      "rf_center": 5825000000.0,
+      "generation": 7,
+      "frame": 687,
+      "samples": 1026633728,
+      "errors": 6,
+      "age_ms": 21,
+      "peak_dbfs": -46.61949106731326,
+      "rms": 0.01513671875,
+      "tune_ms": 164.7
+    },
+    {
+      "frequency": 5955000000,
+      "rf_center": 5955000000.0,
+      "generation": 8,
+      "frame": 692,
+      "samples": 1032695808,
+      "errors": 7,
+      "age_ms": 14,
+      "peak_dbfs": -44.945933833723956,
+      "rms": 0.013966252095997334,
+      "tune_ms": 188.67
+    },
+    {
+      "frequency": 5995000000,
+      "rf_center": 5995000000.0,
+      "generation": 9,
+      "frame": 697,
+      "samples": 1039314944,
+      "errors": 8,
+      "age_ms": 7,
+      "peak_dbfs": -47.12071901891834,
+      "rms": 0.013368789106607437,
+      "tune_ms": 238.06
+    },
+    {
+      "frequency": 6415000000,
+      "rf_center": 6415000000.0,
+      "generation": 10,
+      "frame": 702,
+      "samples": 1045426176,
+      "errors": 9,
+      "age_ms": 31,
+      "peak_dbfs": -45.99564269827749,
+      "rms": 0.02305610664188862,
+      "tune_ms": 217.65
+    },
+    {
+      "frequency": 7115000000,
+      "rf_center": 7115000000.0,
+      "generation": 11,
+      "frame": 707,
+      "samples": 1052454912,
+      "errors": 10,
+      "age_ms": 23,
+      "peak_dbfs": -46.40218641860792,
+      "rms": 0.028572537004947662,
+      "tune_ms": 231.6
+    },
+    {
+      "frequency": 2437000000,
+      "rf_center": 2437000000.0,
+      "generation": 12,
+      "frame": 712,
+      "samples": 1058832384,
+      "errors": 11,
+      "age_ms": 10,
+      "peak_dbfs": -35.23077689227393,
+      "rms": 0.21261200308799744,
+      "tune_ms": 192.41
+    }
+  ],
+  "invalid_preserves_stream": {
+    "requested_mhz": 5600,
+    "preserved_frequency": true,
+    "live": true,
+    "events": [
+      "TUNED 5180000000.000000",
+      "TUNED 2412000000.000000",
+      "TUNED 2432000000.000000",
+      "TUNED 5180000000.000000",
+      "TUNED 5180250000.000000",
+      "TUNED 5825000000.000000",
+      "TUNED 5955000000.000000",
+      "TUNED 5995000000.000000",
+      "TUNED 6415000000.000000",
+      "TUNED 7115000000.000000",
+      "TUNED 2437000000.000000",
+      "TUNE_ERROR Frequency unavailable in this sample-rate mode or regulatory domain; query getFrequencyRange"
+    ]
+  },
+  "five_second_stream_check": {
+    "sample_delta": 99147776,
+    "error_delta": 0
+  },
+  "note": "Live received noise/signals; no Pluto transmitter enabled. Does not further qualify upper6GHz RF."
+}

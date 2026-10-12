@@ -1,0 +1,142 @@
+[
+  {
+    "probe": 0,
+    "latency_seconds": 0.3160908999852836,
+    "exit_code": 0,
+    "stdout": "3309776 S         52\n3309896 3309896  TS 38.6 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 1,
+    "latency_seconds": 0.23265359993092716,
+    "exit_code": 0,
+    "stdout": "3309776 S         82\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 2,
+    "latency_seconds": 0.2517400998622179,
+    "exit_code": 0,
+    "stdout": "3309776 S        112\n3309896 3309896  TS 39.3 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 3,
+    "latency_seconds": 0.23859329987317324,
+    "exit_code": 0,
+    "stdout": "3309776 S        142\n3309896 3309896  TS 39.1 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 4,
+    "latency_seconds": 0.2600940999109298,
+    "exit_code": 0,
+    "stdout": "3309776 S        173\n3309896 3309896  TS 39.0 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 5,
+    "latency_seconds": 0.2279628999531269,
+    "exit_code": 0,
+    "stdout": "3309776 S        203\n3309896 3309896  TS 39.0 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 6,
+    "latency_seconds": 0.2546993000432849,
+    "exit_code": 0,
+    "stdout": "3309776 S        233\n3309896 3309896  TS 39.0 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 7,
+    "latency_seconds": 0.22586779994890094,
+    "exit_code": 0,
+    "stdout": "3309776 S        263\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 8,
+    "latency_seconds": 0.3942534001544118,
+    "exit_code": 0,
+    "stdout": "3309776 S        294\n3309896 3309896  TS 39.1 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 9,
+    "latency_seconds": 0.3219996001571417,
+    "exit_code": 0,
+    "stdout": "3309776 S        324\n3309896 3309896  TS 39.1 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 10,
+    "latency_seconds": 0.24102679989300668,
+    "exit_code": 0,
+    "stdout": "3309776 S        354\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 11,
+    "latency_seconds": 0.2588794999755919,
+    "exit_code": 0,
+    "stdout": "3309776 S        385\n3309896 3309896  TS 39.0 stream-check\n3309896 3309898 DLN 99.9 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 12,
+    "latency_seconds": 0.3161825998686254,
+    "exit_code": 0,
+    "stdout": "3309776 S        415\n3309896 3309896  TS 39.0 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 13,
+    "latency_seconds": 0.2270940002053976,
+    "exit_code": 0,
+    "stdout": "3309776 S        445\n3309896 3309896  TS 39.1 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 14,
+    "latency_seconds": 0.24308420019224286,
+    "exit_code": 0,
+    "stdout": "3309776 S        475\n3309896 3309896  TS 39.1 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 15,
+    "latency_seconds": 0.22128470009192824,
+    "exit_code": 0,
+    "stdout": "3309776 S        506\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN 99.9 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 16,
+    "latency_seconds": 0.25752860005013645,
+    "exit_code": 0,
+    "stdout": "3309776 S        536\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 17,
+    "latency_seconds": 0.2466772000771016,
+    "exit_code": 0,
+    "stdout": "3309776 S        566\n3309896 3309896  TS 39.2 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 18,
+    "latency_seconds": 0.24042190006002784,
+    "exit_code": 0,
+    "stdout": "3309776 S        596\n3309896 3309896  TS 39.3 stream-check\n3309896 3309898 DLN  100 stream-check\n\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 19,
+    "latency_seconds": 0.25787459989078343,
+    "exit_code": 0,
+    "stdout": "{\"format\": \"CF32\", \"peak_hz\": 115356.4453125, \"peak_median_db\": 56.54624725634051, \"rms\": [0.0308713149279356, 0.030444763600826263], \"min\": [-0.0859375, -0.0859375], \"max\": [0.078125, 0.0859375]}\nCLEANUP_DONE\n0d:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. Device [10ec:8922] (rev 01)\n\tSubsystem: Realtek Semiconductor Co., Ltd. Device [10ec:8922]\ndefault via 10.0.10.1 dev enp14s0 proto dhcp metric 104 \n",
+    "stderr": ""
+  }
+]

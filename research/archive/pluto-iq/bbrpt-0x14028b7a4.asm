@@ -1,0 +1,61 @@
+000000014028b7a4 mov      qword ptr [rsp + 8], rbx
+000000014028b7a9 push     rdi
+000000014028b7aa sub      rsp, 0x20
+000000014028b7ae mov      rax, qword ptr [rcx + 8]
+000000014028b7b2 mov      rbx, rcx
+000000014028b7b5 mov      r8, qword ptr [rax + 0x798]
+000000014028b7bc mov      r10, qword ptr [r8 + 0x10330]
+000000014028b7c3 mov      r8d, dword ptr [rdx + 0x14]
+000000014028b7c7 sub      r8d, 1
+000000014028b7cb je       0x14028b881
+000000014028b7d1 sub      r8d, 1
+000000014028b7d5 je       0x14028b85b
+000000014028b7db sub      r8d, 1
+000000014028b7df je       0x14028b7f0
+000000014028b7e1 cmp      r8d, 1
+000000014028b7e5 je       0x14028b881
+000000014028b7eb jmp      0x14028b886
+000000014028b7f0 movzx    eax, byte ptr [rdx + 0x18]
+000000014028b7f4 cmp      al, 8
+000000014028b7f6 jae      0x14028b886
+000000014028b7fc imul     rdi, rax, 0x98
+000000014028b803 add      rdi, 0x1bd0
+000000014028b80a add      rdi, rbx
+000000014028b80d mov      dl, byte ptr [rdi + 0x11]
+000000014028b810 mov      al, dl
+000000014028b812 or       al, 4
+000000014028b814 mov      byte ptr [rdi + 0x11], al
+000000014028b817 test     dl, 1
+000000014028b81a je       0x14028b852
+000000014028b81c lea      rdx, [rcx + 0x2090]
+000000014028b823 mov      r9d, 1
+000000014028b829 mov      rcx, r10
+000000014028b82c mov      r8, rdi
+000000014028b82f call     0x1401fbcc0
+000000014028b834 mov      rax, qword ptr [rdi + 0x38]
+000000014028b838 mov      rcx, rbx
+000000014028b83b mov      rdx, qword ptr [rdi + 0x20]
+000000014028b83f call     qword ptr [rip + 0x3f8ab3]
+000000014028b845 mov      rdx, rdi
+000000014028b848 mov      rcx, rbx
+000000014028b84b call     0x14028fd6c
+000000014028b850 jmp      0x14028b886
+000000014028b852 test     dl, 2
+000000014028b855 je       0x14028b886
+000000014028b857 mov      dl, 1
+000000014028b859 jmp      0x14028b879
+000000014028b85b movzx    eax, byte ptr [rdx + 0x18]
+000000014028b85f cmp      al, 8
+000000014028b861 jae      0x14028b886
+000000014028b863 imul     rcx, rax, 0x98
+000000014028b86a test     byte ptr [rcx + rbx + 0x1be1], 2
+000000014028b872 je       0x14028b886
+000000014028b874 xor      edx, edx
+000000014028b876 mov      rcx, rbx
+000000014028b879 call     0x14028bde8
+000000014028b87e mov      rcx, rbx
+000000014028b881 call     0x14028d6f8
+000000014028b886 mov      rbx, qword ptr [rsp + 0x30]
+000000014028b88b add      rsp, 0x20
+000000014028b88f pop      rdi
+000000014028b890 ret      

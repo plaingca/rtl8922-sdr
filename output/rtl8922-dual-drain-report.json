@@ -1,0 +1,142 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "bandwidth": 40,
+      "rawrate": 10000000,
+      "chunk": 8192,
+      "host": "{\"packets\":9765,\"bytes\":79994880,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=0 pipeline=1 snap=40b01,31a2a,1,800,d24957f,2801,700000 packets=9765 produced=10000880 consumed=9999360 max_backlog=4821 elapsed_ns=1000130679 loss=0x0 stages_ns=25101085,702699,838150009,46680548 policy=6 reason=0 gap_ns=174404,147823 yield_ns=74703,53543\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 111816.40625,
+        "peak_median_db": 61.434386321560595,
+        "image_db": 43.801195222999596
+      },
+      "tail_fft": {
+        "global_peak_hz": 117187.5,
+        "peak_median_db": 39.696319163443015,
+        "image_db": 50.04514017995659
+      }
+    },
+    {
+      "bandwidth": 40,
+      "rawrate": 10000000,
+      "chunk": 10240,
+      "host": "{\"packets\":7812,\"bytes\":79994880,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+      "stderr": "",
+      "returncode": 0,
+      "producer": "ret=0 pipeline=1 snap=40b01,318e5,1,800,d24957f,2801,700000 packets=7812 produced=10000555 consumed=9999360 max_backlog=3922 elapsed_ns=1000097603 loss=0x0 stages_ns=194318389,573820,672319263,37533672 policy=6 reason=0 gap_ns=263053,116794 yield_ns=89962,53383\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 111816.40625,
+        "peak_median_db": 61.434386321560595,
+        "image_db": 43.801195222999596
+      },
+      "tail_fft": {
+        "global_peak_hz": 109375.0,
+        "peak_median_db": 40.43486154196393,
+        "image_db": 40.758881218750176
+      }
+    },
+    {
+      "bandwidth": 80,
+      "rawrate": 20000000,
+      "chunk": 8192,
+      "host": "{\"packets\":39,\"bytes\":319488,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":-75}\n",
+      "stderr": "",
+      "returncode": 1,
+      "producer": "ret=-75 pipeline=1 snap=40b01,39ef6,1,800,924957f,2801,700000 packets=39 produced=81582 consumed=39936 max_backlog=41646 elapsed_ns=4110024 loss=0x0 stages_ns=101925,2815,3444543,185796 policy=6 reason=4 gap_ns=151720,97346 yield_ns=54595,54595\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 97167.96875,
+        "peak_median_db": 43.74596788055507,
+        "image_db": 38.931847008269955
+      },
+      "tail_fft": {
+        "global_peak_hz": 97656.25,
+        "peak_median_db": 27.838780262439165,
+        "image_db": 23.83992818381977
+      }
+    },
+    {
+      "bandwidth": 80,
+      "rawrate": 20000000,
+      "chunk": 10240,
+      "host": "{\"packets\":32,\"bytes\":327680,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":-75}\n",
+      "stderr": "",
+      "returncode": 1,
+      "producer": "ret=-75 pipeline=1 snap=40b01,308ff,1,800,924957f,2801,700000 packets=32 produced=84149 consumed=40960 max_backlog=43189 elapsed_ns=4239252 loss=0x0 stages_ns=787286,2494,2889019,154566 policy=6 reason=4 gap_ns=174854,174854 yield_ns=54805,53572\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 97167.96875,
+        "peak_median_db": 43.74596788055507,
+        "image_db": 38.931847008269955
+      },
+      "tail_fft": {
+        "global_peak_hz": 93750.0,
+        "peak_median_db": 28.95764268944559,
+        "image_db": 26.190296548195153
+      }
+    },
+    {
+      "bandwidth": 160,
+      "rawrate": 40000000,
+      "chunk": 8192,
+      "host": "{\"packets\":13,\"bytes\":106496,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":-75}\n",
+      "stderr": "",
+      "returncode": 1,
+      "producer": "ret=-75 pipeline=1 snap=40b01,33ded,1,800,524957f,2801,700000 packets=13 produced=56669 consumed=13312 max_backlog=43357 elapsed_ns=1447309 loss=0x0 stages_ns=36571,990,1211969,61417 policy=6 reason=4 gap_ns=99550,97206 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.56215437233108,
+        "image_db": 43.79016800444424
+      },
+      "tail_fft": {
+        "global_peak_hz": 78125.0,
+        "peak_median_db": 27.76183393335853,
+        "image_db": 25.552467215946084
+      }
+    },
+    {
+      "bandwidth": 160,
+      "rawrate": 40000000,
+      "chunk": 10240,
+      "host": "{\"packets\":10,\"bytes\":102400,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":-75}\n",
+      "stderr": "",
+      "returncode": 1,
+      "producer": "ret=-75 pipeline=1 snap=40b01,3376e,1,800,524957f,2801,700000 packets=10 produced=55005 consumed=12800 max_backlog=42205 elapsed_ns=1406100 loss=0x0 stages_ns=248256,831,981247,47780 policy=6 reason=4 gap_ns=121432,119980 yield_ns=0,0\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "drops": "0\n",
+      "frozen_fft": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.56215437233108,
+        "image_db": 43.79016800444424
+      },
+      "tail_fft": {
+        "global_peak_hz": 93750.0,
+        "peak_median_db": 28.132625147518027,
+        "image_db": 22.0769613938465
+      }
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

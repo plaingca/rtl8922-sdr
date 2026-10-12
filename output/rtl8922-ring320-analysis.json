@@ -1,0 +1,155 @@
+[
+  {
+    "file": "capture-0.bin",
+    "bytes": 327680,
+    "blocks": [
+      {
+        "start_record": 0,
+        "peak_hz_at_nominal_rate": 111236.572265625,
+        "peak_to_median_db": 32.58899351878329,
+        "std_iq": [
+          65.7170023266299,
+          65.04456433185707
+        ]
+      },
+      {
+        "start_record": 8192,
+        "peak_hz_at_nominal_rate": 111236.572265625,
+        "peak_to_median_db": 30.167982943850063,
+        "std_iq": [
+          68.66751574327756,
+          66.02150234446403
+        ]
+      },
+      {
+        "start_record": 16384,
+        "peak_hz_at_nominal_rate": 111236.572265625,
+        "peak_to_median_db": 33.02129873268525,
+        "std_iq": [
+          64.35968977519401,
+          64.86498049170346
+        ]
+      },
+      {
+        "start_record": 24576,
+        "peak_hz_at_nominal_rate": 111236.572265625,
+        "peak_to_median_db": 32.57687884542272,
+        "std_iq": [
+          64.41094358167635,
+          64.43329636804941
+        ]
+      },
+      {
+        "start_record": 32768,
+        "peak_hz_at_nominal_rate": 111236.572265625,
+        "peak_to_median_db": 31.849446763311686,
+        "std_iq": [
+          69.87730499451091,
+          67.92297264109061
+        ]
+      }
+    ]
+  },
+  {
+    "file": "capture-1.bin",
+    "bytes": 327680,
+    "blocks": [
+      {
+        "start_record": 0,
+        "peak_hz_at_nominal_rate": 111389.16015625,
+        "peak_to_median_db": 32.97934951198353,
+        "std_iq": [
+          64.30235395854008,
+          62.664830468378476
+        ]
+      },
+      {
+        "start_record": 8192,
+        "peak_hz_at_nominal_rate": 111389.16015625,
+        "peak_to_median_db": 33.5576287986578,
+        "std_iq": [
+          57.44235815811426,
+          57.40568488003291
+        ]
+      },
+      {
+        "start_record": 16384,
+        "peak_hz_at_nominal_rate": 111389.16015625,
+        "peak_to_median_db": 33.45452523371676,
+        "std_iq": [
+          57.784247799768885,
+          57.33819003474802
+        ]
+      },
+      {
+        "start_record": 24576,
+        "peak_hz_at_nominal_rate": 111389.16015625,
+        "peak_to_median_db": 33.850020865712274,
+        "std_iq": [
+          60.50130607637533,
+          60.44049677081041
+        ]
+      },
+      {
+        "start_record": 32768,
+        "peak_hz_at_nominal_rate": 111389.16015625,
+        "peak_to_median_db": 32.661459052591056,
+        "std_iq": [
+          64.20893366056696,
+          63.45612867470179
+        ]
+      }
+    ]
+  },
+  {
+    "file": "capture-2.bin",
+    "bytes": 327680,
+    "blocks": [
+      {
+        "start_record": 0,
+        "peak_hz_at_nominal_rate": 111541.748046875,
+        "peak_to_median_db": 32.526994634417875,
+        "std_iq": [
+          64.30676059859431,
+          64.1620680971545
+        ]
+      },
+      {
+        "start_record": 8192,
+        "peak_hz_at_nominal_rate": 111541.748046875,
+        "peak_to_median_db": 33.15213903081115,
+        "std_iq": [
+          64.52482457719063,
+          63.76772681214288
+        ]
+      },
+      {
+        "start_record": 16384,
+        "peak_hz_at_nominal_rate": 111694.3359375,
+        "peak_to_median_db": 25.323444610398095,
+        "std_iq": [
+          74.19026347173843,
+          74.33657731599232
+        ]
+      },
+      {
+        "start_record": 24576,
+        "peak_hz_at_nominal_rate": 111541.748046875,
+        "peak_to_median_db": 32.33698661473329,
+        "std_iq": [
+          66.57093758810583,
+          66.3745103789265
+        ]
+      },
+      {
+        "start_record": 32768,
+        "peak_hz_at_nominal_rate": 111541.748046875,
+        "peak_to_median_db": 32.71329234797193,
+        "std_iq": [
+          64.77674910996974,
+          64.24411290839386
+        ]
+      }
+    ]
+  }
+]

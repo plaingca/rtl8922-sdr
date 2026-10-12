@@ -1,0 +1,253 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_powerdown": "1",
+  "tests": [
+    {
+      "frequency_hz": 5005000000,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5005000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": 222167.96875,
+          "peak_median_db": 51.761378422900506
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5005000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -277622.7678571429,
+          "peak_median_db": 52.935333670062306
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5400123456,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": 220075.33482142858,
+          "peak_median_db": 41.731313525419374
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -279715.4017857143,
+          "peak_median_db": 42.49696176944199
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5600123456,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5600000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": 219029.01785714287,
+          "peak_median_db": 41.481788947347276
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5600000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -280761.71875,
+          "peak_median_db": 43.07193481495623
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5945123456,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5945000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -123465.40178571429,
+          "peak_median_db": 39.77056428387221
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5945000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -123465.40178571429,
+          "peak_median_db": 39.67133152576142
+        }
+      ],
+      "pass": false
+    },
+    {
+      "frequency_hz": 2478123456,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 2484000000.000000 OFFSET -5876544.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": 5876464.84375,
+          "peak_median_db": 43.48384320084313
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 2484000000.000000 OFFSET -5876544.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -263671.875,
+          "peak_median_db": 44.49571714933265
+        }
+      ],
+      "pass": false
+    },
+    {
+      "frequency_hz": 2484000000,
+      "rate": 20000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 2484000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": 236467.63392857145,
+          "peak_median_db": 45.78584780999634
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 2484000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+          "stderr": "",
+          "peak_hz": -263671.875,
+          "peak_median_db": 42.58581544340343
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5400123456,
+      "rate": 1250000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":1.25e+06}\n",
+          "stderr": "",
+          "peak_hz": 220707.48465401787,
+          "peak_median_db": 53.654851371097436
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":1.25e+06}\n",
+          "stderr": "",
+          "peak_hz": -279192.2433035714,
+          "peak_median_db": 52.50725711496201
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5400123456,
+      "rate": 2500000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2.5e+06}\n",
+          "stderr": "",
+          "peak_hz": -123465.40178571429,
+          "peak_median_db": 50.031756995421006
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":2.5e+06}\n",
+          "stderr": "",
+          "peak_hz": -123465.40178571429,
+          "peak_median_db": 49.91253316696263
+        }
+      ],
+      "pass": false
+    },
+    {
+      "frequency_hz": 5400123456,
+      "rate": 5000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":5e+06}\n",
+          "stderr": "",
+          "peak_hz": 220860.07254464287,
+          "peak_median_db": 47.45122390984929
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":5e+06}\n",
+          "stderr": "",
+          "peak_hz": -279017.85714285716,
+          "peak_median_db": 48.656869766928295
+        }
+      ],
+      "pass": true
+    },
+    {
+      "frequency_hz": 5400123456,
+      "rate": 10000000,
+      "tones": [
+        {
+          "offset_hz": 250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":1e+07}\n",
+          "stderr": "",
+          "peak_hz": 220947.265625,
+          "peak_median_db": 45.87968234771124
+        },
+        {
+          "offset_hz": -250000,
+          "returncode": 0,
+          "stdout": "RF_CENTER 5400000000.000000 OFFSET 123456.000000\n{\"coded_samples\":65536,\"rate\":1e+07}\n",
+          "stderr": "",
+          "peak_hz": -279017.85714285716,
+          "peak_median_db": 46.01343370092687
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "restored_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "restored_powerdown": "1",
+  "restored_country": "00"
+}

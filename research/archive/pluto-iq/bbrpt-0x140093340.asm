@@ -1,0 +1,52 @@
+0000000140093340 push     rbx
+0000000140093342 sub      rsp, 0x20
+0000000140093346 mov      rax, qword ptr [rcx + 0xaf3b8]
+000000014009334d mov      rbx, r8
+0000000140093350 mov      r11, rdx
+0000000140093353 mov      r10, rcx
+0000000140093356 mov      r9b, 0x1e
+0000000140093359 mov      rax, qword ptr [rax]
+000000014009335c cmp      rax, rcx
+000000014009335f jne      0x1400933fb
+0000000140093365 mov      rax, qword ptr [rax + 0x20710]
+000000014009336c cmp      dword ptr [rax + 0xed78], 4
+0000000140093373 jge      0x1400933fb
+0000000140093379 cmp      dword ptr [rax + 0xeda0], 4
+0000000140093380 jge      0x1400933fb
+0000000140093382 mov      r8, qword ptr [rdx]
+0000000140093385 mov      cl, byte ptr [r8]
+0000000140093388 mov      al, cl
+000000014009338a and      al, 0xc
+000000014009338c cmp      al, 8
+000000014009338e jne      0x14009339f
+0000000140093390 test     cl, cl
+0000000140093392 movzx    r9d, r9b
+0000000140093396 mov      eax, 0x20
+000000014009339b cmovs    r9d, eax
+000000014009339f bt       word ptr [r8], 0xe
+00000001400933a5 jae      0x1400933ae
+00000001400933a7 add      r9b, byte ptr [r10 + 0xc15a9]
+00000001400933ae movzx    ecx, word ptr [r11 + 8]
+00000001400933b3 movzx    edx, r9b
+00000001400933b7 lea      eax, [rdx + 0xb]
+00000001400933ba cmp      ecx, eax
+00000001400933bc jbe      0x1400933fb
+00000001400933be movzx    eax, r9b
+00000001400933c2 cmp      byte ptr [rax + r8], 8
+00000001400933c7 jne      0x1400933fb
+00000001400933c9 cmp      byte ptr [rdx + r8 + 1], 0
+00000001400933cf jne      0x1400933fb
+00000001400933d1 cmp      byte ptr [rdx + r8 + 0xb], 0x11
+00000001400933d7 jne      0x1400933fb
+00000001400933d9 mov      r8b, byte ptr [rdx + r8 + 2]
+00000001400933de add      r9b, 2
+00000001400933e2 and      r8b, 0xf
+00000001400933e6 mov      rdx, r11
+00000001400933e9 shl      r8b, 2
+00000001400933ed mov      rcx, r10
+00000001400933f0 add      r8b, r9b
+00000001400933f3 mov      r9, rbx
+00000001400933f6 call     0x140093404
+00000001400933fb add      rsp, 0x20
+00000001400933ff pop      rbx
+0000000140093400 ret      

@@ -1,0 +1,19 @@
+000000014004de92 test     byte ptr [rsi - 0x7d000000], dl
+000000014004de98 stc      
+000000014004de99 xor      eax, 0x4a745577
+000000014004de9e sub      ecx, 0x2f
+000000014004dea1 je       0x14004dedf
+000000014004dea3 sub      ecx, 1
+000000014004dea6 je       0x14004ded6
+000000014004dea8 sub      ecx, 1
+000000014004deab je       0x14004decd
+000000014004dead sub      ecx, 2
+000000014004deb0 je       0x14004dec4
+000000014004deb2 cmp      ecx, 1
+000000014004deb5 jne      0x14004f018
+000000014004debb lea      rax, [rip + 0x642106]
+000000014004dec2 ret      
+000000014004dec3 int3     
+000000014004dec4 lea      rax, [rip + 0x6420dd]
+000000014004decb ret      
+000000014004decc int3     

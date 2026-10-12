@@ -1,0 +1,51 @@
+00000001404e8468 sub      rsp, 0x38
+00000001404e846c mov      rax, qword ptr [rcx + 0x258]
+00000001404e8473 movzx    r9d, byte ptr [rax + 0x2e]
+00000001404e8478 mov      edx, r9d
+00000001404e847b sub      edx, 8
+00000001404e847e je       0x1404e8535
+00000001404e8484 sub      edx, 1
+00000001404e8487 je       0x1404e8525
+00000001404e848d sub      edx, 1
+00000001404e8490 je       0x1404e8547
+00000001404e8496 sub      edx, 1
+00000001404e8499 je       0x1404e8525
+00000001404e849f sub      edx, 1
+00000001404e84a2 je       0x1404e8547
+00000001404e84a8 sub      edx, 1
+00000001404e84ab je       0x1404e8547
+00000001404e84b1 sub      edx, 2
+00000001404e84b4 je       0x1404e8547
+00000001404e84ba cmp      edx, 1
+00000001404e84bd je       0x1404e8547
+00000001404e84c3 mov      r10, qword ptr [rip + 0x437b36]
+00000001404e84ca lea      rax, [rip + 0x437b2f]
+00000001404e84d1 cmp      r10, rax
+00000001404e84d4 je       0x1404e8547
+00000001404e84d6 cmp      byte ptr [r10 + 0x169], 1
+00000001404e84de jb       0x1404e8547
+00000001404e84e0 mov      eax, dword ptr [r10 + 0x16c]
+00000001404e84e7 test     al, 8
+00000001404e84e9 je       0x1404e8547
+00000001404e84eb mov      rax, qword ptr [rcx + 0x140]
+00000001404e84f2 mov      edx, 0xa
+00000001404e84f7 mov      rcx, qword ptr [r10 + 0x158]
+00000001404e84fe movzx    r8d, byte ptr [rax + 0xd8]
+00000001404e8506 mov      dword ptr [rsp + 0x28], r8d
+00000001404e850b lea      r8, [rip + 0x401c86]
+00000001404e8512 mov      dword ptr [rsp + 0x20], r9d
+00000001404e8517 lea      r9, [rip + 0x174902]
+00000001404e851e call     0x140002b04
+00000001404e8523 jmp      0x1404e8547
+00000001404e8525 mov      rax, qword ptr [rcx + 0x140]
+00000001404e852c movzx    ecx, byte ptr [rax + 0xd8]
+00000001404e8533 jmp      0x1404e8547
+00000001404e8535 mov      rax, qword ptr [rcx + 0x140]
+00000001404e853c movzx    ecx, byte ptr [rax + 0xd8]
+00000001404e8543 test     ecx, ecx
+00000001404e8545 je       0x1404e854b
+00000001404e8547 xor      al, al
+00000001404e8549 jmp      0x1404e854d
+00000001404e854b mov      al, 1
+00000001404e854d add      rsp, 0x38
+00000001404e8551 ret      

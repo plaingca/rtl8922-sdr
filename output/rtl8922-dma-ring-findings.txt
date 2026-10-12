@@ -1,0 +1,104 @@
+RTL8922AE PCIe sample extraction — 2026-10-12
+
+Result
+The capture reservation was enlarged from 256 KiB to 320 KiB and tested on
+beastmode. Three full 327680-byte I/Q snapshots were retrieved. Pluto's
+125 kHz baseband tone appears in every 8192-record block, including the extra
+64 KiB. Its received frequency is approximately 111.2–111.7 kHz because of
+the previously measured receiver/transmitter oscillator offset. No clipping
+was observed; the MAC LA data-loss indicator was zero.
+
+The normal PCIe receive DMA infrastructure can also deliver scope reports:
+the relocated MAC scope control at 0x11460 produces type-3 reports, which
+the temporary driver's instrumented RX path captures. Those reports contain
+packet/debug data and timestamps, including recognizable Wi-Fi frame bytes.
+They do NOT establish a raw ADC/DFIR I/Q DMA stream. A continuous Pluto tone
+did not turn this path into a sustained sample stream.
+
+Ring layout and validation
+WDE: 0x00000..0x16000, unchanged 1408 x 64-byte pages.
+LA:  0x16000..0x66000, 320 KiB, 40960 eight-byte records.
+PLE: 0x66000..0x8f800, 1089 linked + 239 unlinked 128-byte pages.
+Firmware tail: 0x8f800..0x90000, unchanged.
+Both SCC and DBCC initialization tables use the experimental layout.
+PLE cma0_tx and cma1_tx minimum quotas were reduced from 320 to 128 pages
+each. Other minimum quotas and reserved firmware quotas were preserved.
+Their sum is now 987 linked pages, leaving 102 shared pages. Per-queue maxima
+were adjusted accordingly. This is a diagnostic receive layout, not a tested
+general Wi-Fi configuration. The card remains unbound outside experiments.
+Readbacks: WDE 0x8c08=0x05800000; PLE 0x9008=0x04413301.
+LA size selector 4 in 0x9660 selects 320 KiB. Start bound remains 11.
+The pointer wrapped at approximately 32.8 ms at nominal 1.25 MS/s, versus
+26.2 ms for the previous 256 KiB ring. State remained running until stopped.
+This establishes 320 KiB operation, not the largest physically possible ring.
+
+Transfer bottleneck
+The verified 32-bit MMIO binary readout previously measured about 2.19 MB/s.
+Minimum verified sample production is 1.25 million records/s x 8 = 10 MB/s.
+A 320 KiB copy at that readout speed takes approximately 150 ms, while the
+ring fills in 32.8 ms. A bigger ring alone cannot sustain lossless reception.
+The chip's complete 0x90000-byte shared SRAM is finite and also holds WDE,
+PLE and firmware reservations; enlarging it does not change this rate deficit.
+
+Linux x86 memcpy_fromio uses 32-bit transactions. Explicit 64-bit readq was
+tested as a possible optimization. It returned all-ones data and failed
+byte-for-byte comparison against the existing verified 32-bit dump. Its
+apparent 4.3 MB/s is invalid and must not be quoted as sample throughput.
+That change was reverted; the saved final patch uses memcpy_fromio.
+Reference: https://raw.githubusercontent.com/torvalds/linux/v6.8/arch/x86/lib/iomem.c
+
+DMA investigation
+Instrumentation counts descriptors immediately after parsing their DMA RX
+descriptor, counts delivery into core RX, and preserves type-3 scope payloads
+with a six-u32 little-endian header: payload length, free-run count,
+seq|bb_sel<<16, descriptor packet size, monotonic nanoseconds low/high.
+Normal descriptor counters were nonzero (65–74 during bring-up), validating
+that the observation path executes. A 16 MiB bounded host buffer stores reports.
+
+Known controls tested:
+0x8938 bits11:10=1: dispatcher type-3 forwarding to host.
+0x8924 bit3: type-3 RXBD tagging; bit19: CPU enqueue selection.
+0x210bc bits28/29: BB scope enable / automatic LA configuration.
+0x21094 bits26:25: r_dma_rdrdy choices.
+0x9660: normal LA enable/start with correctly reserved ring.
+
+Old vendor scope addresses 0xce60/0xee60 were not suitable for this chip.
+The relocated 0x11460 (band 0), 0x15460 (band 1) candidates were derived from
+multiple matched neighboring RX-register relocations: CE20->11420,
+CE4A->1144A, CE4B->1144B, CE64->11464. This was an inference from source,
+then tested on hardware. 0x11460 writes read back and produced scope DMA.
+Value 0x211 delivered reports; 0x212 delivered timestamp-interleaved reports.
+The old enum's exact semantic labels do not reliably describe the observed
+RTL8922 behavior. Values 0..7, auto mode, both bands, segment choices and
+ready choices were bounded-tested; only sparse packet-related reports were
+observed. Counts can include reports already in flight across a mode change.
+The official Windows 6102.24.143.0 image contains no direct 0x11460/0x15460
+or old 0xce60/0xee60 constants. Its BB scope helper sets only the two BB bits.
+
+Remaining technical requirement
+Find and enable the hardware producer/routing that sends raw LA ADC/DFIR
+records to the scope/PCIe RX DMA queue, or implement a card-internal transfer
+from reserved LA SRAM into correctly formed DMA receive buffers. The PCIe
+RX queue itself is functional; a host RX-ring size increase alone cannot
+route raw LA samples into it. Internal DMA and DLE CPU enqueue helpers exist
+in source, but their existence does not establish an arbitrary SRAM-to-host
+copy path. No speculative host physical-address DMA was programmed.
+Gapless receive remains unqualified. Realtek I/Q transmit testing remains
+pending the user's receive qualification gate.
+
+Evidence
+rtl8922-ring320-captures/report.json and capture-{0,1,2}.bin
+rtl8922-ring320-analysis.json: per-block tone checks.
+rtl8922-dma-evidence/report.json and scope-*.bin: successful scope reports.
+rtl8922-dma-evidence/dma-probes.json: failed readq and RX counters.
+rtl8922-scope-relocated-run.json, rtl8922-scope-modes-run.json,
+rtl8922-scope-encodings-run.json: tested register configurations.
+rtl8922-dma-ring320.patch: complete experimental source diff from driver HEAD.
+Experiment scripts: D:/Meta-Orchestrator/tmp/pluto-iq/.
+Remote workspace: /home/plaing/rtl8922-iq-research/.
+
+Cleanup verified
+Experimental modules and dependency modules unloaded; PCI function unbound
+with COMMAND=0000; temporary firmware/config removed by EXIT trap.
+Default route remains enp14s0 via 10.0.10.1. Pluto cyclic TX buffer destroyed,
+gain restored to -89.75 dB, original settings restored and TX LO powered down.

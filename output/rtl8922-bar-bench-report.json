@@ -1,0 +1,27 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "returncode": 0,
+      "stdout": "cpu_width=32 bytes=327680 copies=2 seconds=0.302224619 MBps=2.168 mismatch=0\nfirst_ref=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601 first_read=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601\ncpu_width=64 bytes=327680 copies=2 seconds=0.138005857 MBps=4.749 mismatch=2\nfirst_ref=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601 first_read=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\ncpu_width=128 bytes=327680 copies=2 seconds=0.068998696 MBps=9.498 mismatch=2\nfirst_ref=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601 first_read=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\ncpu_width=256 bytes=327680 copies=2 seconds=0.034541122 MBps=18.973 mismatch=2\nfirst_ref=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601 first_read=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\ncpu_width=512 bytes=327680 copies=2 seconds=0.017790055 MBps=36.839 mismatch=2\nfirst_ref=05fe05fe050105fe04fd02fe02fd05fe06fe04fd05fe05fe06fe050007fd0601 first_read=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\ncuda_register=801 operation not supported\n",
+      "stderr": ""
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

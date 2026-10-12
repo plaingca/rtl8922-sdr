@@ -1,0 +1,65 @@
+[
+  {
+    "probe": 0,
+    "latency_seconds": 0.1980284999590367,
+    "exit_code": 0,
+    "stdout": "3296362 S         78\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 1,
+    "latency_seconds": 0.17938659992069006,
+    "exit_code": 0,
+    "stdout": "3296362 S        108\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 2,
+    "latency_seconds": 0.17693940014578402,
+    "exit_code": 0,
+    "stdout": "3296362 S        139\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 3,
+    "latency_seconds": 0.18372200010344386,
+    "exit_code": 0,
+    "stdout": "3296362 S        169\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 4,
+    "latency_seconds": 0.2747230001259595,
+    "exit_code": 0,
+    "stdout": "3296362 S        199\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 5,
+    "latency_seconds": 0.26958879991434515,
+    "exit_code": 0,
+    "stdout": "3296362 S        229\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 6,
+    "latency_seconds": 0.18644049996510148,
+    "exit_code": 0,
+    "stdout": "3296362 S        260\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 7,
+    "latency_seconds": 0.19505219999700785,
+    "exit_code": 0,
+    "stdout": "3296362 S        290\n\n\n\n{\"producer\": \"\", \"pipeline\": \"N\\n\", \"packets\": \"0\\n\", \"dropped\": \"0\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "probe": 8,
+    "latency_seconds": 0.186809099977836,
+    "exit_code": 0,
+    "stdout": "CLEANUP_DONE\n0d:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. Device [10ec:8922] (rev 01)\n\tSubsystem: Realtek Semiconductor Co., Ltd. Device [10ec:8922]\ndefault via 10.0.10.1 dev enp14s0 proto dhcp metric 104 \n",
+    "stderr": ""
+  }
+]

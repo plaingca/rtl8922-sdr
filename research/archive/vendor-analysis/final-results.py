@@ -1,0 +1,108 @@
+from pathlib import Path
+import json,numpy as np,difflib
+folder=Path('output/rtl8922-iq-captures')
+r=json.loads((folder/'analysis.json').read_text())
+iq=np.fromfile(folder/'capture-3-src3-fmt0-pair0-candidate-sc16.bin',dtype='<i2').reshape(-1,2)
+z=iq[:,0]+1j*iq[:,1]; z-=z.mean()
+segments=z.reshape(-1,1024)*np.hanning(1024)
+power=np.mean(np.abs(np.fft.fftshift(np.fft.fft(segments,axis=1),axes=1))**2,axis=0)
+freq=np.fft.fftshift(np.fft.fftfreq(1024,d=1/80e6))
+spectral={'nominal_sample_rate_hz':80000000,'power_fraction_within_10MHz':float(power[np.abs(freq)<=1e7].sum()/power.sum()),'method':'mean periodogram, Hann 1024, DC removed; rate from vendor selector, not independently measured'}
+(folder/'spectral-check.json').write_text(json.dumps(spectral,indent=2))
+reservation=json.loads(Path('output/rtl8922-la-reservation.json').read_text())
+reservation.update({'source':'Official ASUS RTL8922AE Windows driver 6102.24.143.0, statically analyzed; no Windows code executed','chip_mac_id':8,'interface':'PCIe','layout_table_va':'0x1408ea1c0','get_dle_mem_cfg_va':'0x14041b254','copy_layout_fields_va':'0x14041b9d4','adapter_la_start_offset':'0x3c8','adapter_la_size_offset':'0x3cc','record_la_start_pointer_offset':'0x48','record_la_size_pointer_offset':'0x58','hardware_test':{'wde_pktbuf_cfg':'0x05800000','ple_pktbuf_cfg':'0x06412b01','la_control':'0x64230b21'},'linux_test_changes':'Apply reservation to both SCC and DBCC tables: RTL8922A initialization selects DBCC. Fix debugfs memory dump end bound to include start residue, use 2048 byte reads to avoid ASCII truncation.'})
+Path('output/rtl8922-la-reservation.json').write_text(json.dumps(reservation,indent=2))
+text='''RTL8922AE raw receive sample experiment — 2026-10-12
+
+Result: bounded receive-buffer captures work. Controlled RF-path selection
+strongly validates the sample readout and 12-bit field packing. This is not yet
+a calibrated SDR interface or a demonstration of continuous streaming.
+
+Windows buffer reservation trace
+-------------------------------
+Official ASUS Windows driver 6102.24.143.0, rtwlane711.sys. Package SHA-256:
+4f1b9e5ea65fd6d4a3f04fdeee77fba83b3c423ee40f4e620c97f148f005e21b
+RTL8922A MAC chip ID 8; PCIe layout table 0x1408ea1c0; mode 8 record
+0x1408ea3f0. get_dle_mem_cfg at 0x14041b254 selects the record.
+Leaf function 0x14041b9d4 copies record+0x48's start into adapter+0x3c8
+and record+0x58's size into adapter+0x3cc.
+
+Recovered layout, shared-memory offsets, end exclusive:
+  WDE:       0x00000 .. 0x16000, 1408 pages x 64 bytes
+  LA:        0x16000 .. 0x56000, 262144 bytes
+  PLE:       0x56000 .. 0x8f800, (1601+239) pages x 128 bytes
+  FW tail:   0x8f800 .. 0x90000, 2048 bytes
+Associated min/max/reserved quotas are in rtl8922-la-reservation.json.
+
+Temporary Linux driver
+----------------------
+morrownr/rtw89 commit 8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356.
+Separate la-driver build; reservation applied before normal MAC initialization.
+Both SCC and DBCC layout entries need the reservation: this device uses DBCC.
+Verified hardware WDE config 0x05800000, PLE config 0x06412b01.
+Fixed the existing debugfs memory dump's nonzero-start end-bound calculation.
+Read 2048 bytes per request to avoid truncated textual debugfs results.
+
+Readout path
+------------
+Windows memory region 3 maps to shared memory 0x18700000. Indirect target
+register 0xc04 and aperture 0x80000 expose it. Linux shared-buffer selector is 1.
+LA MAC control 0x9660: enable bit0, start bit3, timeout bit5, start boundary
+bits14:8 (8 KiB units), size selector bits19:16. Selector3 reserves 256 KiB.
+Status 0x9664: write pointer bits15:0 (8-byte records), wrap bit16,
+state bits19:17. Captures reached state3 (timeout), with wrap set and
+zero reported data-loss status at 0x966c. They did not reach normal state2.
+All sample files contain the entire reserved 256 KiB ring; converted files
+rotate the ring at the final write pointer to put it in time order.
+
+Actual receive test
+-------------------
+2412 MHz, 20 MHz channel width, monitor interface; no test transmission.
+Four main captures and three controlled path captures, 256 KiB each.
+Format1 has four signed 12-bit values at bit positions 0,12,24,36;
+bits63:48 are zero with original-header selection. Two complex pairs per
+8-byte record, 32768 records. At nominal 20 MS/s this is 1.6384 ms per path.
+Routing both DMA streams to RF path0 produced identical lower and upper
+24-bit pairs in 32768/32768 records. Routing both to path1 also produced
+32768/32768 identical pairs. Different paths matched in only 2/32768 records.
+This is direct hardware-controlled evidence for the lane and buffer mapping.
+
+ADC format1 captures changed between runs, with roughly 32720 distinct
+records each. Signed lane standard deviations were about 16-17 counts,
+with DC offsets between -27 and -62 counts and no clipping.
+At the DFIR source, lane means were 0.03, 0.01, 0.16 and -0.23 counts,
+with standard deviations 13.8-17.8 counts and no clipping.
+Format0 yielded two signed 14-bit fields at bits0 and14; upper36 bits zero.
+At nominal 80 MS/s its adjacent-sample correlation was about0.797,
+consistent with a receive signal narrower than the sample rate.
+'''
+text+=f"DC-removed spectral power inside +/-10 MHz: {spectral['power_fraction_within_10MHz']:.2%} at the nominal 80 MS/s rate.\n"
+text+='''
+Remaining limits
+----------------
+No known injected RF tone was used. Exact I versus Q order, polarity,
+frequency orientation, absolute sample clock and amplitude calibration
+remain unverified. Noise-like captures and path duplication strongly support
+real receive I/Q; they do not establish packet demodulation or RF sensitivity.
+Trigger setup still needs work: these captures stopped on the approximately
+one-second hardware timeout, rather than the configured 400 us post-trigger
+delay. The stored ring itself contains only the durations stated above.
+No continuous host DMA streaming has been demonstrated.
+
+Cleanup verified
+----------------
+Temporary modules/dependencies unloaded, temporary firmware and NetworkManager
+configuration removed. WiFi restored to unbound, PCI COMMAND=0000.
+Wired default route remains on enp14s0. No persistent driver installation.
+
+Files
+-----
+rtl8922-iq-captures/: raw rings, candidate signed-int16 I/Q conversions,
+report.json, analysis.json and spectral-check.json.
+rtl8922-iq-controls/: controlled-path raw rings and duplication measurements.
+rtl8922-la-reservation.json: Windows table values and code addresses.
+rtl8922-la-capture-run.json and rtl8922-la-controls-run.json: test/cleanup logs.
+tmp/rtl8922-vendor/: extraction, capture, analysis scripts and driver patch.
+'''
+Path('output/rtl8922-iq-results.txt').write_text(text,encoding='utf-8')
+print(json.dumps(spectral,indent=2))

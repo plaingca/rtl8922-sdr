@@ -1,0 +1,30 @@
+{
+  "image_observation": {
+    "stage": "before-concurrent20 in first priority-lock fine test",
+    "desired_peak_hz": -138854.98046875,
+    "desired_peak_median_db": 56.32262597025903,
+    "image_peak_hz": -361328.125,
+    "image_peak_median_db": 58.43226903273496,
+    "raw_capture_overwritten_by_rerun": true
+  },
+  "large_amplitude_observation": {
+    "file": "output/rtl8922-nco-mode40-saturation.cf32",
+    "rate": 40000000,
+    "format": "interleaved little-endian CF32",
+    "rms": 0.49364790320396423,
+    "min_iq": [
+      -1.0,
+      -1.0
+    ],
+    "max_iq": [
+      0.9921875,
+      0.9375
+    ],
+    "strongest_spur_hz": -10000000.0,
+    "strongest_spur_peak_median_db": 27.040078581089166,
+    "desired_tone_peak_hz": 111083.984375,
+    "desired_tone_peak_median_db": 19.773068713823946
+  },
+  "status": "Unresolved intermittent receive-quality failure after hardware mode changes. Could involve gain, calibration, tap/format or clock state; physical ADC saturation is not yet established.",
+  "api_pass_rf_failed_log": "output/rtl8922-nco-live-yield-api-pass-rf-failed.json"
+}

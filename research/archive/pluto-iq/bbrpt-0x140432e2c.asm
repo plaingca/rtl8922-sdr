@@ -1,0 +1,207 @@
+0000000140432e2c mov      qword ptr [rsp + 8], rbx
+0000000140432e31 mov      qword ptr [rsp + 0x10], rbp
+0000000140432e36 mov      qword ptr [rsp + 0x18], rsi
+0000000140432e3b push     rdi
+0000000140432e3c push     r12
+0000000140432e3e push     r13
+0000000140432e40 push     r14
+0000000140432e42 push     r15
+0000000140432e44 sub      rsp, 0x40
+0000000140432e48 mov      rax, qword ptr [rcx]
+0000000140432e4b xor      edi, edi
+0000000140432e4d mov      rsi, rdx
+0000000140432e50 mov      r14d, r9d
+0000000140432e53 mov      r12, r8
+0000000140432e56 mov      rbx, rcx
+0000000140432e59 mov      r13, qword ptr [rax]
+0000000140432e5c and      dword ptr [rdx], edi
+0000000140432e5e lea      edx, [rdi + 8]
+0000000140432e61 call     0x14036c07c
+0000000140432e66 mov      r15, qword ptr [rsp + 0x90]
+0000000140432e6e test     al, al
+0000000140432e70 jne      0x140432ea3
+0000000140432e72 lea      edx, [rdi + 0xa]
+0000000140432e75 mov      rcx, rbx
+0000000140432e78 call     0x14036c07c
+0000000140432e7d test     al, al
+0000000140432e7f jne      0x140432ea3
+0000000140432e81 lea      edx, [rdi + 9]
+0000000140432e84 mov      rcx, rbx
+0000000140432e87 call     0x14036c07c
+0000000140432e8c test     al, al
+0000000140432e8e jne      0x140432ea3
+0000000140432e90 lea      edx, [rdi + 0xf]
+0000000140432e93 mov      rcx, rbx
+0000000140432e96 call     0x14036c07c
+0000000140432e9b test     al, al
+0000000140432e9d je       0x140432f39
+0000000140432ea3 inc      dword ptr [rsi]
+0000000140432ea5 mov      edx, 0x11020
+0000000140432eaa mov      rax, qword ptr [r13 + 0x20]
+0000000140432eae mov      rcx, rbx
+0000000140432eb1 call     qword ptr [rip + 0x251441]
+0000000140432eb7 mov      ebp, eax
+0000000140432eb9 test     al, 1
+0000000140432ebb je       0x140432f39
+0000000140432ebd mov      rax, qword ptr [rbx + 0x18]
+0000000140432ec1 lea      rdi, [rbx + 0x1320]
+0000000140432ec8 mov      rcx, qword ptr [rbx + 8]
+0000000140432ecc mov      rdx, rdi
+0000000140432ecf mov      rax, qword ptr [rax + 0x108]
+0000000140432ed6 call     qword ptr [rip + 0x25141c]
+0000000140432edc mov      edx, dword ptr [r15]
+0000000140432edf cmp      edx, r14d
+0000000140432ee2 jae      0x140432f1c
+0000000140432ee4 mov      rcx, qword ptr [rbx + 0x18]
+0000000140432ee8 lea      r9, [rip + 0x222c51]
+0000000140432eef mov      r8d, r14d
+0000000140432ef2 mov      dword ptr [rsp + 0x28], ebp
+0000000140432ef6 sub      r8d, edx
+0000000140432ef9 add      rdx, r12
+0000000140432efc mov      rax, qword ptr [rcx + 0x128]
+0000000140432f03 lea      rcx, [rip + 0x222c06]
+0000000140432f0a mov      qword ptr [rsp + 0x20], rcx
+0000000140432f0f mov      rcx, qword ptr [rbx + 8]
+0000000140432f13 call     qword ptr [rip + 0x2513df]
+0000000140432f19 add      dword ptr [r15], eax
+0000000140432f1c mov      rax, qword ptr [rbx + 0x18]
+0000000140432f20 mov      rdx, rdi
+0000000140432f23 mov      rcx, qword ptr [rbx + 8]
+0000000140432f27 mov      rax, qword ptr [rax + 0x110]
+0000000140432f2e call     qword ptr [rip + 0x2513c4]
+0000000140432f34 mov      edi, 1
+0000000140432f39 mov      edx, 8
+0000000140432f3e mov      rcx, rbx
+0000000140432f41 call     0x14036c07c
+0000000140432f46 test     al, al
+0000000140432f48 jne      0x140432f81
+0000000140432f4a mov      edx, 0xa
+0000000140432f4f mov      rcx, rbx
+0000000140432f52 call     0x14036c07c
+0000000140432f57 test     al, al
+0000000140432f59 jne      0x140432f81
+0000000140432f5b mov      edx, 9
+0000000140432f60 mov      rcx, rbx
+0000000140432f63 call     0x14036c07c
+0000000140432f68 test     al, al
+0000000140432f6a jne      0x140432f81
+0000000140432f6c mov      edx, 0xf
+0000000140432f71 mov      rcx, rbx
+0000000140432f74 call     0x14036c07c
+0000000140432f79 test     al, al
+0000000140432f7b je       0x14043302e
+0000000140432f81 mov      r8d, 1
+0000000140432f87 mov      rcx, rbx
+0000000140432f8a mov      dl, r8b
+0000000140432f8d call     0x140429fcc
+0000000140432f92 test     eax, eax
+0000000140432f94 jne      0x14043302e
+0000000140432f9a inc      dword ptr [rsi]
+0000000140432f9c mov      edx, 0x15020
+0000000140432fa1 mov      rax, qword ptr [r13 + 0x20]
+0000000140432fa5 mov      rcx, rbx
+0000000140432fa8 call     qword ptr [rip + 0x25134a]
+0000000140432fae mov      ebp, eax
+0000000140432fb0 test     al, 1
+0000000140432fb2 je       0x14043302e
+0000000140432fb4 mov      rax, qword ptr [rbx + 0x18]
+0000000140432fb8 lea      rsi, [rbx + 0x1320]
+0000000140432fbf mov      rcx, qword ptr [rbx + 8]
+0000000140432fc3 mov      rdx, rsi
+0000000140432fc6 mov      rax, qword ptr [rax + 0x108]
+0000000140432fcd call     qword ptr [rip + 0x251325]
+0000000140432fd3 mov      ecx, dword ptr [r15]
+0000000140432fd6 cmp      ecx, r14d
+0000000140432fd9 jae      0x140433014
+0000000140432fdb mov      rax, qword ptr [rbx + 0x18]
+0000000140432fdf lea      rdx, [r12 + rcx]
+0000000140432fe3 sub      r14d, ecx
+0000000140432fe6 mov      dword ptr [rsp + 0x28], ebp
+0000000140432fea lea      rcx, [rip + 0x222b1f]
+0000000140432ff1 mov      r8d, r14d
+0000000140432ff4 mov      qword ptr [rsp + 0x20], rcx
+0000000140432ff9 lea      r9, [rip + 0x222b70]
+0000000140433000 mov      rax, qword ptr [rax + 0x128]
+0000000140433007 mov      rcx, qword ptr [rbx + 8]
+000000014043300b call     qword ptr [rip + 0x2512e7]
+0000000140433011 add      dword ptr [r15], eax
+0000000140433014 mov      rax, qword ptr [rbx + 0x18]
+0000000140433018 mov      rdx, rsi
+000000014043301b mov      rcx, qword ptr [rbx + 8]
+000000014043301f mov      rax, qword ptr [rax + 0x110]
+0000000140433026 call     qword ptr [rip + 0x2512cc]
+000000014043302c inc      edi
+000000014043302e xor      edx, edx
+0000000140433030 mov      rcx, rbx
+0000000140433033 call     0x14036c07c
+0000000140433038 test     al, al
+000000014043303a jne      0x14043310b
+0000000140433040 mov      edx, 1
+0000000140433045 mov      rcx, rbx
+0000000140433048 call     0x14036c07c
+000000014043304d test     al, al
+000000014043304f jne      0x14043310b
+0000000140433055 mov      edx, 4
+000000014043305a mov      rcx, rbx
+000000014043305d call     0x14036c07c
+0000000140433062 test     al, al
+0000000140433064 jne      0x14043310b
+000000014043306a mov      edx, 6
+000000014043306f mov      rcx, rbx
+0000000140433072 call     0x14036c07c
+0000000140433077 test     al, al
+0000000140433079 jne      0x14043310b
+000000014043307f mov      edx, 2
+0000000140433084 mov      rcx, rbx
+0000000140433087 call     0x14036c07c
+000000014043308c test     al, al
+000000014043308e jne      0x14043310b
+0000000140433090 mov      edx, 5
+0000000140433095 mov      rcx, rbx
+0000000140433098 call     0x14036c07c
+000000014043309d test     al, al
+000000014043309f jne      0x14043310b
+00000001404330a1 mov      edx, 3
+00000001404330a6 mov      rcx, rbx
+00000001404330a9 call     0x14036c07c
+00000001404330ae test     al, al
+00000001404330b0 jne      0x14043310b
+00000001404330b2 mov      edx, 8
+00000001404330b7 mov      rcx, rbx
+00000001404330ba call     0x14036c07c
+00000001404330bf test     al, al
+00000001404330c1 jne      0x14043310b
+00000001404330c3 mov      edx, 0xa
+00000001404330c8 mov      rcx, rbx
+00000001404330cb call     0x14036c07c
+00000001404330d0 test     al, al
+00000001404330d2 jne      0x14043310b
+00000001404330d4 mov      edx, 9
+00000001404330d9 mov      rcx, rbx
+00000001404330dc call     0x14036c07c
+00000001404330e1 test     al, al
+00000001404330e3 jne      0x14043310b
+00000001404330e5 mov      edx, 0xf
+00000001404330ea mov      rcx, rbx
+00000001404330ed call     0x14036c07c
+00000001404330f2 test     al, al
+00000001404330f4 jne      0x14043310b
+00000001404330f6 mov      edx, 0x11
+00000001404330fb mov      rcx, rbx
+00000001404330fe call     0x14036c07c
+0000000140433103 neg      al
+0000000140433105 sbb      eax, eax
+0000000140433107 and      eax, edi
+0000000140433109 jmp      0x14043310d
+000000014043310b mov      eax, edi
+000000014043310d lea      r11, [rsp + 0x40]
+0000000140433112 mov      rbx, qword ptr [r11 + 0x30]
+0000000140433116 mov      rbp, qword ptr [r11 + 0x38]
+000000014043311a mov      rsi, qword ptr [r11 + 0x40]
+000000014043311e mov      rsp, r11
+0000000140433121 pop      r15
+0000000140433123 pop      r14
+0000000140433125 pop      r13
+0000000140433127 pop      r12
+0000000140433129 pop      rdi
+000000014043312a ret      

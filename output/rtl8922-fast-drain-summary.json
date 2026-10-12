@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-12",
+  "result": "80 and160 MS/s continuous reception failed;40 MS/s control passed",
+  "experiments": [
+    "C++ raw reader with SCHED_DEADLINE producer",
+    "8KiB versus10KiB packets",
+    "CPU packet quota maximum230 to394",
+    "two idle IDDMA channels copying disjoint halves of each packet"
+  ],
+  "interpretation": "No useful throughput increase. Host FIFOs had zero drops, but source backlog exceeded40960 records. Parallel-channel timings suggest a shared bottleneck, not proof of its physical location. Short native80/160 RF captures contain the Pluto tone; these do not qualify full-band fidelity or continuity.",
+  "rows": [
+    {
+      "variant": "fast-drain",
+      "rate_msps": 40,
+      "packet_bytes": 8192,
+      "driver_ret": 0,
+      "elapsed_ms": 1000.095563,
+      "delivered_MBps": 79.98723617974896,
+      "required_MBps": 80,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 111328.125,
+        "peak_median_db": 56.18691185273435,
+        "image_db": 51.274133176946954
+      },
+      "pass": true
+    },
+    {
+      "variant": "fast-drain",
+      "rate_msps": 40,
+      "packet_bytes": 10240,
+      "driver_ret": 0,
+      "elapsed_ms": 1000.093116,
+      "delivered_MBps": 79.9874318902921,
+      "required_MBps": 80,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 111328.125,
+        "peak_median_db": 56.18691185273435,
+        "image_db": 51.274133176946954
+      },
+      "pass": true
+    },
+    {
+      "variant": "fast-drain",
+      "rate_msps": 80,
+      "packet_bytes": 8192,
+      "driver_ret": -75,
+      "elapsed_ms": 4.18071,
+      "delivered_MBps": 78.37903131286312,
+      "required_MBps": 160,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96191.40625,
+        "peak_median_db": 43.38793043945607,
+        "image_db": 43.070485653254984
+      },
+      "pass": false
+    },
+    {
+      "variant": "fast-drain",
+      "rate_msps": 80,
+      "packet_bytes": 10240,
+      "driver_ret": -75,
+      "elapsed_ms": 4.25933,
+      "delivered_MBps": 79.33642145595668,
+      "required_MBps": 160,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96191.40625,
+        "peak_median_db": 43.38793043945607,
+        "image_db": 43.070485653254984
+      },
+      "pass": false
+    },
+    {
+      "variant": "fast-drain",
+      "rate_msps": 160,
+      "packet_bytes": 8192,
+      "driver_ret": -75,
+      "elapsed_ms": 1.443753,
+      "delivered_MBps": 73.76330992905297,
+      "required_MBps": 320,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.14868344948525,
+        "image_db": 39.783637510893335
+      },
+      "pass": false
+    },
+    {
+      "variant": "fast-drain",
+      "rate_msps": 160,
+      "packet_bytes": 10240,
+      "driver_ret": -75,
+      "elapsed_ms": 1.378889,
+      "delivered_MBps": 74.26268539382068,
+      "required_MBps": 320,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.14868344948525,
+        "image_db": 39.783637510893335
+      },
+      "pass": false
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 40,
+      "packet_bytes": 8192,
+      "driver_ret": 0,
+      "elapsed_ms": 1000.130679,
+      "delivered_MBps": 79.98442771497064,
+      "required_MBps": 80,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 111816.40625,
+        "peak_median_db": 61.434386321560595,
+        "image_db": 43.801195222999596
+      },
+      "pass": true
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 40,
+      "packet_bytes": 10240,
+      "driver_ret": 0,
+      "elapsed_ms": 1000.097603,
+      "delivered_MBps": 79.98707302171186,
+      "required_MBps": 80,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 111816.40625,
+        "peak_median_db": 61.434386321560595,
+        "image_db": 43.801195222999596
+      },
+      "pass": true
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 80,
+      "packet_bytes": 8192,
+      "driver_ret": -75,
+      "elapsed_ms": 4.110024,
+      "delivered_MBps": 77.73385264903563,
+      "required_MBps": 160,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 97167.96875,
+        "peak_median_db": 43.74596788055507,
+        "image_db": 38.931847008269955
+      },
+      "pass": false
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 80,
+      "packet_bytes": 10240,
+      "driver_ret": -75,
+      "elapsed_ms": 4.239252,
+      "delivered_MBps": 77.29665516463754,
+      "required_MBps": 160,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 97167.96875,
+        "peak_median_db": 43.74596788055507,
+        "image_db": 38.931847008269955
+      },
+      "pass": false
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 160,
+      "packet_bytes": 8192,
+      "driver_ret": -75,
+      "elapsed_ms": 1.447309,
+      "delivered_MBps": 73.58207542411469,
+      "required_MBps": 320,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.56215437233108,
+        "image_db": 43.79016800444424
+      },
+      "pass": false
+    },
+    {
+      "variant": "dual-drain",
+      "rate_msps": 160,
+      "packet_bytes": 10240,
+      "driver_ret": -75,
+      "elapsed_ms": 1.4061,
+      "delivered_MBps": 72.82554583600029,
+      "required_MBps": 320,
+      "host_sequence_gaps": 0,
+      "host_fifo_drops": 0,
+      "frozen_tone": {
+        "global_peak_hz": 96679.6875,
+        "peak_median_db": 43.56215437233108,
+        "image_db": 43.79016800444424
+      },
+      "pass": false
+    }
+  ],
+  "cleanup": "Pluto attributes and original TX powerdown restored by finally; temporary modules, firmware and NM config removed; original working driver hash unchanged."
+}

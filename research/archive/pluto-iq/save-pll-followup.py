@@ -1,0 +1,7 @@
+from pathlib import Path
+import json
+p=Path('rtl8922-sdr/validation-summary.json');r=json.loads(p.read_text())
+cal=json.loads(Path('output/rtl8922-pll-cal-probe.json').read_text());port=json.loads(Path('output/rtl8922-pll-port-probe-v2.json').read_text());live=json.loads(Path('output/rtl8922-pll-followup-live.json').read_text())
+r['pll_override_followup']={'date':'2026-10-12','valid_trials':len(cal['tests'])+len(port['tests']),'calibration_trials':64,'divider_arbitration_trials':12,'new_qualified_ranges':[], 'divider_writes_unchanged':True,'invalid_exploratory_runs':['output/rtl8922-pll-gated-probe.json','output/rtl8922-pll-port-probe.json'],'pluto_restored':all(x['original_pluto']==x['pluto_restored'] and x['tx_powerdown_restored']=='1' for x in [cal,port]),'live_tone_offset_hz':live['on']['non_dc_peak_hz'],'live_samples_added':live['expired']['samples']-live['before']['samples'],'live_errors':live['expired']['errors'],'live_recoveries':live['expired']['recoveries'],'final_tone_off_and_restored':not live['off']['enabled'] and live['off']['restored'],'evidence':['output/rtl8922-pll-cal-probe.json','output/rtl8922-pll-port-probe-v2.json','output/rtl8922-pll-followup-live.json'],'firmware_scope':'RAM firmware log dictionary and ROM printable-symbol search; RF sequencer implementation unresolved'}
+p.write_text(json.dumps(r,indent=2)+'\n')
+print(json.dumps(r['pll_override_followup'],indent=2))

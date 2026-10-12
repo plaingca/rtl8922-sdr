@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+project(SoapyRTL8922 LANGUAGES CXX)
+find_package(SoapySDR CONFIG REQUIRED)
+find_package(Threads REQUIRED)
+SOAPY_SDR_MODULE_UTIL(TARGET RTL8922Support SOURCES SoapyRTL8922.cpp LIBRARIES Threads::Threads)
+target_compile_features(RTL8922Support PRIVATE cxx_std_17)
+target_compile_options(RTL8922Support PRIVATE -Wall -Wextra -Wpedantic)
+
+add_executable(live-bridge live-bridge.cpp)
+target_compile_features(live-bridge PRIVATE cxx_std_17)
+target_include_directories(live-bridge PRIVATE ${SoapySDR_INCLUDE_DIRS})
+target_link_libraries(live-bridge PRIVATE ${SoapySDR_LIBRARIES} Threads::Threads)
+target_compile_options(live-bridge PRIVATE -Wall -Wextra)

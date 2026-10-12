@@ -1,0 +1,125 @@
+{
+  "positive": {
+    "receiver_hz": 2412000000,
+    "tone": {
+      "enabled": true,
+      "follow": true,
+      "center_hz": 2412000000,
+      "rf_hz": 2412500000.0,
+      "offset_hz": 500000.0,
+      "requested_offset_hz": 500000.0,
+      "gain_db": 0.0,
+      "remaining_seconds": 59.2,
+      "error": "",
+      "restored": false,
+      "min_hz": 70000000,
+      "max_hz": 6000000000
+    },
+    "peak_offset_hz": 488281.25,
+    "peak_dbfs": -29.97,
+    "above_median_db": 45.21000000000001
+  },
+  "negative": {
+    "receiver_hz": 2412000000,
+    "tone": {
+      "enabled": true,
+      "follow": true,
+      "center_hz": 2412000000,
+      "rf_hz": 2411500000.0,
+      "offset_hz": -500000.0,
+      "requested_offset_hz": -500000.0,
+      "gain_db": 0.0,
+      "remaining_seconds": 58.8,
+      "error": "",
+      "restored": false,
+      "min_hz": 70000000,
+      "max_hz": 6000000000
+    },
+    "peak_offset_hz": -507812.5,
+    "peak_dbfs": -29.09,
+    "above_median_db": 45.129999999999995
+  },
+  "tone_movement_hz": 996093.75,
+  "follow_5ghz": {
+    "receiver_hz": 5400123456,
+    "tone": {
+      "enabled": true,
+      "follow": true,
+      "center_hz": 5400123456,
+      "rf_hz": 5399623456.0,
+      "offset_hz": -500000.0,
+      "requested_offset_hz": -500000.0,
+      "gain_db": 0.0,
+      "remaining_seconds": 56.6,
+      "error": "",
+      "restored": false,
+      "min_hz": 70000000,
+      "max_hz": 6000000000
+    },
+    "peak_offset_hz": -517578.125,
+    "peak_dbfs": -47.54,
+    "above_median_db": 26.300000000000004
+  },
+  "above_pluto_range": {
+    "enabled": false,
+    "follow": true,
+    "center_hz": 5400123456,
+    "rf_hz": 5399623456.0,
+    "offset_hz": -500000.0,
+    "requested_offset_hz": -500000.0,
+    "gain_db": 0.0,
+    "remaining_seconds": 0,
+    "error": "Pluto center and emitted tone must both be between 70 and 6000 MHz",
+    "restored": true,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  },
+  "timer": {
+    "enabled": false,
+    "follow": true,
+    "center_hz": 2412000000,
+    "rf_hz": 2412500000.0,
+    "offset_hz": 500000.0,
+    "requested_offset_hz": 500000.0,
+    "gain_db": 0.0,
+    "remaining_seconds": 0,
+    "error": "",
+    "restored": true,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  },
+  "fixed": {
+    "receiver_hz": 2412000000,
+    "tone": {
+      "enabled": true,
+      "follow": false,
+      "center_hz": 2412000000,
+      "rf_hz": 2412750000.0,
+      "offset_hz": 750000.0,
+      "requested_offset_hz": 750000.0,
+      "gain_db": 0.0,
+      "remaining_seconds": 59.1,
+      "error": "",
+      "restored": false,
+      "min_hz": 70000000,
+      "max_hz": 6000000000
+    },
+    "peak_offset_hz": 742187.5,
+    "peak_dbfs": -29.29,
+    "above_median_db": 44.86000000000001
+  },
+  "off": {
+    "enabled": false,
+    "follow": false,
+    "center_hz": 2412000000,
+    "rf_hz": 2412750000.0,
+    "offset_hz": 750000.0,
+    "requested_offset_hz": 750000.0,
+    "gain_db": 0.0,
+    "remaining_seconds": 0,
+    "error": "",
+    "restored": true,
+    "min_hz": 70000000,
+    "max_hz": 6000000000
+  }
+}

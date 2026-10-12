@@ -1,0 +1,591 @@
+RTL8922AE SoapySDR receiver — development status, 2026-10-12
+
+CURRENT STATUS (latest results supersede the historical notes below)
+- Synthesizer extension (2026-10-12): RF0x18/0x10018 unused band codes
+  0x200,0x100,0x10200 recovered2312..2382,2500..2515,4900..5000MHz.
+  Real Pluto two-tone checks passed across these new windows. The plugin
+  and demo now expose them; full S/C-band coverage has not been achieved.
+  RF25/26 and C6/C7 have divider-like readbacks, but direct/gated writes
+  did not stick. Wider probes failed reference position/movement checks.
+  See synthesizer-findings.md for encodings, negative results and evidence.
+- All17 installed-plugin RF capture cases passed, including new endpoints,
+  decimal tuning and1.25/5MS/s filtered output. Live tone-follow sweep
+  passed12 frequency changes, rejected2400MHz preserved reception, then
+  5seconds added99,176,448samples with no additional gaps/recoveries.
+  Coarse retunes intentionally count gaps. One earlier startup encountered
+  the existing ret=-110 allocation timeout and exhausted bounded recovery;
+  a clean restart passed. This is not an indefinite gapless qualification.
+  Evidence:output/rtl8922-synth-plugin-analyzed-report.json and
+  output/rtl8922-synth-live-check.json. Pluto restored with TX down.
+- Interactive Pluto tone (2026-10-12): the demo now offers follow-receiver
+  or fixed-center TX, +/-1000kHz tone offset, -89.75..0dB TX gain, and
+  a5..300second timer (default60). Pluto is opened lazily on Start; existing
+  active TX is not taken over. Off/timeout/stale RX/server exit mute TX,
+  destroy its cyclic buffer and restore/read back saved radio settings.
+  Following a center or emitted tone outside70..6000MHz stops and restores.
+  Amber FFT marker uses actual LO readback and coherent waveform offset;
+  measured RF peak remains subject to oscillator error. Browser close alone
+  does not stop TX; timer, Stop tone or Stop demo does.
+- Live reference test: +/-500kHz produced996093.75Hz measured movement
+  (display grouping is9765.625Hz), about45dB above median at2412MHz.
+  Follow retune to5400.123456MHz produced a26dB reference peak. Fixed
+  +750kHz,5second timeout and >6GHz auto-off passed; settings restored.
+  Evidence:output/rtl8922-demo-tone-check.json.
+- Free receive tuning (2026-10-12, supersedes channel-only ranges below):
+  use driver=rtl8922,free_tuning=1. The live demo enables this mode.
+  Exposed requested-center ranges:2312..2382,2412..2484,2500..2515 and4900..7115MHz
+  when a6GHz baseline channel is enabled (otherwise upper range ends5950).
+  This is not continuous coverage through the remaining gaps or proof of
+  the chip's ultimate tuning limits. No full-band edge/sensitivity claim.
+- Normal iw tuning first establishes the nearest enabled baseline in the
+  same radio band. While capture is stopped, RF0x18/0x10018 on both paths
+  select the5MHz synthesizer grid; BB0x26b4c central frequency and
+  BB0x26b50 inverse frequency follow it. Decimal frequency offsets use NCO.
+  Path-B0x18 reads the baseline in this shared-synthesizer configuration;
+  channel/band readback checks cover path-A0x18 and both0x10018 mirrors.
+  On device destruction, baseline RF/central-frequency fields are restored.
+  Wi-Fi TX remains unimplemented; this path is receive only.
+- Free mode captures native20MS/s packed8bit IQ and filters/decimates for
+  output1.25/2.5/5/10MS/s. This allows fine offsets across the gap between
+  2.4GHz channel13 and14. Output20MS/s also available; free40MS/s rejected.
+  Default free_tuning=0 retains previous format/rate/channel behavior.
+- Two-tone Pluto tests recovered non-Wi-Fi centers5005,5100,5175,5340,
+  5400,5480,5600,5845,5885,5900,5910,5945,5980,5995MHz plus2472/2484.
+  Channel0 on2.4/6GHz did not produce the expected LO, and2.4GHz channel14
+  maps2484MHz rather than2477MHz; neither assumption is used in the plugin.
+- Installed plugin tone checks passed at5400.123456,5600.123456,
+  5945.123456,2478.123456MHz, plus5005/2484MHz. All five supported rates
+  passed the5400.123456MHz test. Two tones separated500kHz must move
+  accordingly. Analog DC moves to rf_center-requested_frequency with NCO;
+  analysis preserves the original dominant peak and separately excludes
+  +/-20kHz around that DC and output0. Upper6GHz still lacks an RF reference.
+- UI now accepts1Hz requested increments and spectrum clicks. This is
+  requested tuning precision, not calibrated1Hz RF accuracy. Wi-Fi channel
+  selections are presets; custom values display Free frequency (no preset).
+- Rapid retunes reproduced an existing allocation timeout(ret-110).
+  The bridge now marks and counts receive failures and restarts capture,
+  with a maximum of three recovery attempts per10seconds. A deliberate
+  producer-stop test recovered at the same frequency with one counted gap.
+  This does not repair the underlying timeout or promise gapless retuning.
+  Final cross-band UI/API sweep passed, including1Hz changes, rejected4GHz
+  preserving reception, then5seconds/99,160,064 samples with zero new gaps.
+- Evidence:output/rtl8922-free-probe-report.json,
+  rtl8922-free-plugin-analyzed-report.json,rtl8922-free-live-check.json,
+  rtl8922-live-recovery-check.json. Pluto settings restored with TX down.
+- Higher-band plugin update and live demo (2026-10-12): installed builds for
+  both Soapy ABI0.8 and0.8-3 now discover enabled channels from this card's
+  wiphy at device creation. Recreate the device after regulatory changes.
+  At20MS/s under CA, ranges are2412..2462,5180..5320,5500..5580,
+  5660..5720,5745..5825,5955..7115MHz. Regulatory gaps are not bridged.
+  Fine tuning uses the nearest enabled channel; low-rate modes expose
+  separated5MHz native spans around higher-band centers. Experimental40
+  remains restricted to valid2.4GHz HT40 pairs, with explicit opt-in.
+- Installed-plugin regression passed CF32 and CS16 at2412,5180,5180.25,
+  5955,7115MHz (2,002,944 samples per point per format). Coarse changes
+  reported one intended discontinuity, same-center fine changes zero.
+  Disabled/gap/out-of-range/NaN requests and invalid40MS/s pairing preserved
+  the stream. A5MS/s request halfway between5GHz channels was rejected.
+  Capture at7115MHz does not qualify RF reception above6GHz.
+- Live demo: start-live-demo.ps1 starts a transient beastmode unit and a
+  local-only SSH tunnel. Open http://127.0.0.1:8732. run-receiver.sh loads
+  the original working driver; run-live-demo.py requests CA temporarily,
+  then restores the original regulatory domain when the server exits.
+  Stop demo & release hardware ends capture and runs wrapper cleanup.
+  Close the browser alone does not stop capture. Pluto TX is optional.
+- live-bridge.cpp continuously drains CF32 at20MS/s and forwards4096-sample
+  snapshots at up to13.3fps to live-demo.py. Hann FFTs show2048 display
+  bins using adjacent-bin peak grouping. Waterfall is display snapshots,
+  not a continuous recording. Relative dBFS/bin is not calibrated dBm;
+  coarse retunes interrupt reception, and upper6GHz RF is unqualified.
+  Stale/failed streams are marked rather than replayed as live.
+- Evidence: output/rtl8922-bands-check.log and rtl8922-live-demo-check.json.
+  Browser/API checks covered cross-band changes,5.180250GHz fine tuning,
+  rejected5.600GHz preserving the stream and a5second fixed-frequency
+  run with99,147,776 additional samples and zero additional interruptions.
+- Larger on-card ring experiment: reserved 384KiB by reducing PLE queues,
+  keeping WDE and the firmware reserved tail intact. Hardware still wrapped
+  at 40,960 records (320KiB). All size-field codes4..15 were tested with
+  qualified clock4: observed wrap timing fits5Mrecords/s with a320KiB ring,
+  not a384KiB ring. Only the first five64KiB blocks recovered the Pluto tone;
+  the extra sixth block did not. This suggests a320KiB LA-engine ceiling.
+  No larger ring was achieved; the working320KiB driver is unchanged.
+  See output/rtl8922-ring-size-summary.json. Experimental ring384 modules
+  have incompatible software ring arithmetic and must not be used to stream.
+- Fresh fixed-mode RF watch passed 65 seconds at 40 MS/s using CF32:
+  2,600,000,000 complex samples, zero detected sequence/timestamp gaps or
+  stream errors. All 130 saved 65,536-sample windows (one every 0.5 s)
+  recovered the Pluto tone: peak/median 48.61..57.90 dB, image rejection
+  42.07..52.20 dB. This samples RF quality throughout the run; it is not an
+  exhaustive waveform continuity or full-band qualification.
+- Seven new 36-capture mode-cycle experiments reproduced the unresolved
+  RF fault while transport passed. Strong image failures also occurred
+  at 5/10 MS/s, so the fault is not confined to 8-bit multiphase unpacking.
+  Pluto's own simultaneous RX remained clean during Realtek bad captures
+  (nearest reference measurements generally within 12 ms).
+- Vendor static tracing identified AGC fixed-gain switches at PHY415c/455c
+  bit4 (clear to fix gain); IGI controls: PHY4158/4558[14:12] LNA,
+  PHY4168/4568[18] TIA, PHY4108/4508[29:25] RXBB. Temporary AGC disable
+  did not eliminate the fault. ADC-FIFO reset, alternate source selector3,
+  and restoring SMALLBW before tuning also failed to eliminate it.
+  These experimental changes were NOT adopted in the production plugin.
+- Source selector2 corresponds to DFIR and selector3 to ADC in the older
+  HALBB source enum; do not describe selector2 as an established raw ADC
+  tap. Both selectors recovered the tone and both reproduced RF faults.
+- rf-state-check.cpp preserves separate captures and reads BB/RF registers
+  only after producer stop/join. rf-watch-check.cpp drains continuously and
+  saves periodic RF windows. Reports: output/rtl8922-rf-*-report.json.
+  Pluto settings/powerdown and card/module cleanup were verified afterward.
+- Digital fine tuning is now implemented and verified on Pluto tones across
+  all six sample rates. Frequency setters accept continuous frequencies in
+  the current RF range. The nearest 5 MHz hardware center remains in use;
+  negative complex mixing runs at the native sample rate before decimation.
+  Same-center updates preserve DMA, oscillator phase, FIR history/cadence and
+  software timestamps. A concurrent reader test observed zero gaps and a
+  maximum fine-setting latency of 0.169 ms after fixing reader starvation.
+- GNU Radio fine tuning at 20/40 MS/s passed with approximately 0.16/0.18 ms
+  setting latency. Coarse tuning and rate changes still interrupt capture.
+- Current digital-mixer/driver build passed 65.1258 seconds at 40 MS/s:
+  2,600,001,536 CS16 samples, zero gaps/timeouts, CF32 restart passed,
+  maximum source backlog 3,165 records; both formats recovered the tone.
+- Fine-tuned 20 MS/s with normal scheduling passed 65.1245 seconds:
+  1,300,000,768 CS16 samples, zero detected gaps/timeouts, and CF32 restart.
+  Both long regressions used the current trigger-count and driver changes.
+- IMPORTANT UNRESOLVED RF RESULT: one mode-change capture had a stronger
+  I/Q image than the tone; another produced near-full-scale samples and
+  strong Fs/4 and Fs/2 spurs. The latter raw CF32 file is preserved under
+  output/rtl8922-nco-mode40-saturation.cf32. Gain/calibration, source tap,
+  format and clock state need investigation; transport success alone does
+  not establish valid I/Q. See output/rtl8922-nco-rf-anomalies.json.
+- Deadline producer yielding now includes a 25..50 us sleep outside the
+  wireless mutex every ~2 ms, while internal DMA is inactive. This resolved
+  an observed packet-allocation stall in the short transition regression.
+  Starvation is the current inference; longer qualification is still needed.
+  Serial fault snapshots distinguish allocation, DMA, enqueue and LA state.
+- Trigger count 255 is now used in all modes after an early LA state change
+  also appeared at 20 MS/s with zero count. Exact trigger semantics remain
+  unknown. The old ten-minute test predates these latest changes.
+- Live frequency/rate controls now work through SoapySDR and GNU Radio.
+  Native tests covered all six rates, signed +/-5 MHz retuning, concurrent
+  reader/control threads, invalid settings and recovery from a rejected iw
+  command. GNU Radio retuning, 20->40 MS/s and 40->5 MS/s all recovered the
+  Pluto tone; changes took about 142..144 ms in these flowgraphs.
+- The plugin with live controls passed a fresh 65.1249-second 40 MS/s
+  regression: 2,600,001,536 CS16 samples, zero detected gaps/timeouts, and an
+  80,000,257-sample CF32 restart. Maximum source backlog was 3,239 records.
+  The ten-minute result below predates the live-control plugin changes.
+- After the mutex change, normal20MS/s passed another65.0042second run:
+  1,300,000,768CS16 samples, zero timeouts/gaps, and a CF32 restart passed.
+- Normal modes remain1.25/2.5/5/10/20MS/s.40MS/s is available only with
+  driver=rtl8922,experimental40=1 and actual RF center2422..2462MHz.
+- Trigger count255 suppresses the early LA completion previously seen at
+  40MS/s. Both SoapySDR ABI builds now contain this configuration.
+- With producer_scheduler=deadline, 40 MS/s passed a 600.13-second run:
+  24,000,000,000 CS16 complex samples, zero detected sequence/timestamp gaps,
+  zero timeouts and zero host FIFO drops. The raw 32-bit record sequence
+  wrapped successfully. An 80,000,257-sample CF32 restart also passed.
+- Normal scheduling previously overran the source ring at 298 seconds.
+  Deadline scheduling is optional and 40 MS/s remains experimental.
+  The longest polling pause was 3.058 ms; maximum ring occupancy was
+  31,637 / 40,960 records (77%). This leaves under 1 ms of worst-case
+  source-buffer headroom. A ten-minute pass is not an indefinite guarantee.
+- The driver now briefly releases the wireless mutex between completed DMA
+  operations. This prevents the observed host network-management lockout.
+  SSH checks during the longer test took0.18..0.28seconds.
+- GNU Radio gr-soapy received2million40MS/s samples and the Pluto tone.
+  A nine-point Pluto tone sweep found correct signed frequencies from
+  -17.887 to+18.113MHz, about36MHz of demonstrated receive span. It is not
+  a calibrated gain-flatness or sensitivity measurement.
+- Coded-waveform timing at40MS/s passed after isolating the test signal band.
+  Original and pre-filter one-sample-deletion control both retained all
+  200measurement windows. See validation-summary.json and the report paths.
+- Privileged temporary setup is still required. Longer 40 MS/s operation
+  and robustness under other host workloads still need qualification.
+  Gain/AGC and receive-quality faults, installation/access lifecycle,
+  broader tuning, and actual Gqrx/SDR++
+  application tests remain unfinished. The full receiver goal stays active.
+
+This is an experimental Linux receiver on beastmode's RTL8922AE PCI card
+0000:0d:00.0. The full goal remains active: maximum practical bandwidth,
+strong gapless qualification, and convenient application integration.
+
+IMPLEMENTED
+- Raw LA ring -> internal DMA ch5 -> owned PLE packet -> PCIe RX queue.
+- Continuous acquisition until explicit stop, with no 60-second restart.
+- Consuming 128 MiB host FIFO, 8 KiB packets, exclusive device ownership.
+- Software ring overrun checks and an elapsed-poll guard to reject cases
+  where a full ring wrap could be missed during process descheduling.
+- SoapySDR driver=rtl8922; one RX channel, CS16 and CF32 formats.
+- Native 5 MS/s (14-bit I/Q), 10 MS/s (12-bit I/Q) and 20 MS/s (8-bit I/Q).
+  All three modes transfer 5 million 64-bit records/s (40 MB/s). Formats
+  DMA12 and DMA14 pack two and four consecutive complex samples per record.
+  The plugin preserves packed phase across arbitrary readStream boundaries.
+- 2.5/1.25 MS/s through a continuous 191-tap Hamming FIR
+  decimator. FIR history persists across packet and readStream boundaries.
+- Packet sequence validation; loss surfaces as SOAPY_SDR_OVERFLOW.
+- Sample-relative timestamps. There is no hardware time/PPS clock.
+- Initial and live tuning accepts continuous frequencies at 2412..2472 MHz,
+  or 2422..2462 MHz at 40 MS/s. getFrequencyRange follows the current mode.
+  readSetting("rf_center") and readSetting("bb_offset") expose the chosen
+  hardware center and digital offset. Invalid settings do not stop RX.
+  Digital tuning does not widen or physically move the analogue passband;
+  offset tuning has asymmetric RF edge coverage around the requested center.
+  At decimated rates the FIR filters the translated signal before dropping
+  samples. The receive response near RF filter edges is not yet qualified.
+- Controls take priority over reader iterations. readStream respects its
+  timeout while a setting change owns the lock. Same-hardware-center fine
+  changes update only the oscillator; filter response settles naturally.
+- Hardware setFrequency/setSampleRate serializes with readStream. It stops DMA,
+  flushes the old sample/packet/filter state, configures the new setting,
+  and restarts. The next read reports one SOAPY_SDR_OVERFLOW with HAS_TIME;
+  subsequent reads contain only the new configuration. Software timestamps
+  remain increasing using the measured host pause; timestamps across a
+  change are approximate, not hardware sample timing. A change is therefore
+  an explicit acquisition interruption, not a gapless retune. Unchanged
+  settings are no-ops. Failed reconfiguration attempts restore old settings
+  when possible and still report the interruption. The settled receiver
+  remains continuous until another setting change or a detected overrun.
+- Native modes: SMALLBW=1/selector2/DMA0 for 5 MS/s;
+  SMALLBW=2/selector3/DMA12 for 10 MS/s;
+  SMALLBW=0/selector4/DMA14 for 20 MS/s. Selecting only one phase of HT20
+  at 5 million records/s aliases wider signals; decoding all four phases
+  supplies the full 20 MS/s waveform instead.
+
+FILES
+SoapyRTL8922.cpp, fields.hpp, CMakeLists.txt: plugin source and build.
+driver.patch: complete experimental rtw89 diff, including diagnostic hooks.
+stream-check.cpp: real-device CS16/CF32 and timestamp test.
+overflow-check.cpp: intentionally fills the host FIFO and expects an error.
+gnuradio-check.py: real GNU Radio gr-soapy flowgraph and tone measurement.
+live-control-check.cpp: real-device live tuning/rates, timestamps, invalid
+  controls, concurrent reading, and test-only iw-failure recovery.
+  Its forced-failure test expects the temporary live-test-iw wrapper created
+  by tmp/pluto-iq/run-live-control.py; it is not a production iw replacement.
+gnuradio-live-check.py: running gr-soapy coarse/fine frequency and rate changes.
+fine-control-check.cpp: real-device fine tuning, continuous timestamps,
+  arbitrary read boundaries, concurrent updates and hardware-boundary changes.
+capture-check.cpp: bounded20/40MS/s CF32 capture with timestamp checks;
+  optional RTL8922_CAPTURE_SECONDS controls the test duration.
+coded-continuity.py: repeating QPSK waveform timing and loss-control analysis.
+run-receiver.sh: temporary module/firmware/network setup, command execution,
+then automatic module/firmware/config teardown. This is not an installer.
+
+BUILD
+The driver patch applies to rtw89 commit
+8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356.
+On beastmode the patched tree is already built at:
+  /home/plaing/rtl8922-iq-research/la-driver
+
+Build the plugin against the same SoapySDR ABI as the intended application:
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+  cmake --build build -j2
+
+Beastmode has TWO incompatible SoapySDR ABIs:
+  /usr/local: 0.8-3, used by /usr/local/bin/SoapySDRUtil
+  /usr:       0.8,   used by GNU Radio and distribution applications
+They require separate plugin binaries. The checked builds are:
+  /home/plaing/rtl8922-iq-research/soapy/build
+  /home/plaing/rtl8922-iq-research/soapy/build-distro
+The distro SDK was downloaded/extracted locally, without replacing system
+libraries. Its CMake path is:
+  soapy/distro-sdk/root/usr/share/cmake/SoapySDR
+Select it with -DSoapySDR_DIR=... and a separate build directory.
+
+RUN ON THE VERIFIED HOST
+Place run-receiver.sh in /home/plaing/rtl8922-iq-research/soapy.
+From that directory, a bounded headless GNU Radio test is:
+  sudo -n bash run-receiver.sh env \
+    SOAPY_SDR_PLUGIN_PATH=/home/plaing/rtl8922-iq-research/soapy/build-distro \
+    PYTHONPATH=/usr/lib/python3/dist-packages \
+    /usr/bin/python3 gnuradio-check.py
+
+The PYTHONPATH is intentionally limited to this process: the distribution
+GNU Radio extension needs NumPy1, while the host's normal Python resolves
+NumPy2. No global NumPy package was downgraded.
+
+For native ABI0.8-3 probe, use:
+  sudo -n bash run-receiver.sh env \
+    SOAPY_SDR_PLUGIN_PATH=/home/plaing/rtl8922-iq-research/soapy/build \
+    /usr/local/bin/SoapySDRUtil --probe=driver=rtl8922
+
+An application uses device arguments driver=rtl8922 and antenna PATH1.
+For the ten-minute-tested 40 MS/s configuration use:
+  driver=rtl8922,experimental40=1,producer_scheduler=deadline
+Select 40,000,000 samples/s and an RF center of 2422..2462 MHz in 5 MHz steps.
+The plugin requests SCHED_DEADLINE only for its capture worker, with runtime
+950 us, deadline 1000 us and period 1000 us. The reader retains normal
+scheduling. Failure to obtain the requested policy fails activation and
+prints its reason. Root/CAP_SYS_NICE is needed. No global scheduler settings
+are changed; thread exit releases the reservation. Observed producer CPU
+usage was approximately one core, not a measured hard 95% CPU ceiling.
+producer_scheduler=normal remains the default. Set RTL8922_TRACE=1 to print
+producer timing/overrun counters on each deactivation. The kernel counts
+maximum polling and mutex-yield pauses and distinguishes four overrun sites.
+Policy reference: https://docs.kernel.org/scheduler/sched-deadline.html
+Currently root is required for debugfs/register access and iw tuning.
+The wrapper requires that the Realtek card be unbound and its temporary
+firmware/config paths not already exist; it refuses to overwrite them.
+It leaves wired networking and unrelated services alone. No persistent
+system service or installed kernel module has been created.
+
+VALIDATION COMPLETED
+- PCIe marker blocks and a frozen 4 KiB LA block matched byte for byte.
+- Original raw transport: 5 MS/s,30s,1.20GB,292966packets, no detected loss.
+- Native plugin CS16 and CF32: varied read sizes257/1024/3000, continuous
+  sample-relative timestamps, no stream errors/timeouts at1.25/2.5/5MS/s.
+- Initial HT20-based plugin:65s at5MS/s,325000192samples, no detected gaps.
+  This establishes long transport operation, not valid HT20 decimation.
+- Correct native5MHz mode: in-band tones received at their expected offsets;
+  +3.125MHz blocker attenuated about9dB in RMS relative to an in-band tone,
+  +6.125MHz strongly suppressed. This is an initial response measurement,
+  not a complete calibrated rejection or sensitivity specification.
+- GNU Radio gr-soapy received2000000complex samples and recovered the
+  Pluto tone at~111.5kHz,65.5dB above the median FFT-bin power.
+- Deliberate3.8s reader stall: SOAPY_SDR_OVERFLOW reported after draining
+  16728064samples preceding the missing packet sequence.
+- Kernel allocation/queue operations also tested with bounded atomic polls.
+- Historical normal-scheduler 8 KiB virtual-destination tests overran at
+  10 million raw records/s (80 MB/s). The deadline-producer test above now
+  passed ten minutes at this rate. This is distinct from complex sample rate:
+  20 MS/s works through four-phase packing at5 million raw records/s.
+  Profile: ~94us in IDDMA copy per8KiB versus~2us allocation and~5us queue.
+- A direct physical SRAM destination passed byte comparison with an owned
+  contiguous33-page allocation;4KiB copied in36.95us. This is a candidate
+  for further optimization, not yet the general streaming path. Every page
+  was checked through DLE PAGELLT before that diagnostic physical copy.
+
+REMAINING WORK / DO NOT CLAIM COMPLETE
+- Broader/longer coded RF continuity tests and calibrated passband,
+  stopband, gain, sensitivity, image, and clock-offset measurements.
+- Increase bandwidth beyond20MS/s: investigate physical DMA destinations,
+  safe reusable packet storage and pipelined channels/queues.
+- Qualify40MHz+baseband modes and corresponding sample clocks,5GHz tuning,
+  wider bandwidths and more flexible frequency control.
+- Live retune/rate/gain controls: current plugin requires stopping first.
+- Normal-user permissions or a privileged hardware broker, robust install
+  and device lifecycle/hot-unplug handling, kernel code cleanup.
+- Gqrx and SDR++ end-to-end application tests. GNU Radio is tested; sharing
+  the Soapy API alone does not prove every application's compatibility.
+- Final native5MHz mode:65.005s at5MS/s,325000192CS16samples,476075reads,
+  no reported gaps, errors or timeouts; subsequent CF32 restart also passed.
+  Exact log: output/rtl8922-soapy-native5-long-run.json.
+
+NEW MULTIPHASE VALIDATION
+- 10 and20 MS/s: CS16 andCF32,2 seconds each, varied reads257/1024/3000,
+  with continuous sample timestamps and no reported errors or timeouts.
+- 20 MS/s:65.0046s,1300000768CS16 samples,952149read calls,zero timeouts,
+  no reported sequence/timestamp discontinuities; CF32 restart40,001,536
+  samples also passed. Log: output/rtl8922-soapy-native20-long-run.json.
+- GNU Radio gr-soapy received2,000,000samples at20 MS/s and recovered the
+  Pluto tone56.1dB above median FFT-bin power. This also checks the distro
+  Soapy ABI build. Log: output/rtl8922-gnuradio20-run.json.
+- Frozen native20MHz capture receives a+8.125MHz Pluto offset at~8.111MHz,
+  while native10MHz receives+4.125MHz at~4.111MHz. Consecutive packed phases
+  have the expected phase advance, verifying order and positive frequency
+  polarity. Absolute RF/CFO calibration remains outstanding.
+- Coded RF test:4,000,000CF32 samples at20 MS/s (200ms), repeating seeded
+  QPSK1Msymbol/s,32.768ms period. Repeated received windows have median
+  normalized correlation0.878. Estimated RX/TX relative clock error5.60ppm;
+  timing residual RMS0.266samples. Deleting one complex sample at index
+  2,000,000 changes the fitted step by exactly-1sample (original+0.160,
+  negative control-0.840; fit standard error0.066sample). This demonstrates
+  sensitivity at that location; it is not an exhaustive arbitrary-location
+  loss detector or proof of indefinite gapless operation. Noise/outliers
+  give a2.17sample peak-to-peak residual. Full result:
+  output/rtl8922-coded-continuity.json. RX and TX waveform files remain on
+  beastmode under soapy/coded-cf32.bin and soapy/coded-tx.cf32.
+- Native40MHz frozen test:iw2412HT40+, actual RF center2422MHz,
+  DMA14/selector3 decodes40MS/s and a+16.125MHz offset at~16.112MHz.
+  Selector4 aliases that signal to~-3.888MHz, confirming40MS/s is needed
+  for full40MHz capture. Continuous40MS/s is not yet supported: it requires
+  10million raw records/s and80MB/s, beyond the verified transport rate.
+- Bit depth is storage precision, not a measured effective-number-of-bits
+  specification. Present8-bit tone captures use only~3-4RMS ADC counts;
+  gain control and calibrated dynamic range remain to be qualified.
+
+No Realtek raw I/Q transmit path is enabled. Pluto is used only by the
+separate RF characterization wrappers, which restore its original settings
+and disable TX afterward. Plugin reception itself does not transmit.
+
+40 MS/s DEVELOPMENT FOLLOW-UP
+- An optional packet pipeline now overlaps next-buffer allocation and
+  previous-completed-packet dispatch with the current internal DMA copy.
+  Packet-header writes and changes to indirect memory selector0xc04 MUST
+  wait until the current copy completes. Moving those operations into the
+  active DMA period caused reduced writer progress and invalid continuity.
+- With header writes deferred, a1second40MS/s experiment transferred
+  79,994,880raw bytes in9765packets, zero FIFO drops/sequence gaps, and all
+  last30blocks matched the frozen LA ring byte for byte. Native40MHz tone
+  appeared at~111.7kHz. Log:output/rtl8922-pipeline40-defer-header-run.json.
+- One2second CS16+CF32 plugin test also passed at40MS/s. Longer attempts
+  failed because the LA engine entered its completed state. Extending the
+  post-trigger interval to4.16seconds extended operation correspondingly,
+  establishing an unintended trigger rather than a host FIFO overflow.
+  Watchdog bypass, AND1 comparator changes, explicit PHY0 trigger selection,
+  and the vendor fake-trigger preset did not establish continuous capture.
+  These unsuccessful configuration changes have been removed.
+- 40MS/s is therefore gated behind device argument experimental40=1 and
+  excluded from normal advertised rates. It requires RF center2422..2462MHz
+  in5MHzsteps (HT40+primary is10MHz below that actual center). It remains
+  unqualified for gapless use. The default plugin retains verified modes
+  through20MS/s. Both native and distro ABI builds include the gate.
+- The driver now reports an unexpected LA engine completion as a stream
+  error, and checks source-ring overwrite again after each DMA copy before
+  forwarding that packet. It releases a completed but invalid copy instead
+  of delivering potentially torn samples. The pipeline applies the same
+  check; a timed-out active DMA buffer is retained until device teardown.
+- Checking every link before a physical-destination DMA copy was too slow:
+  ~232us validation per8KiB versus~72us copying. The descriptor FW_RLS bit
+  also failed to retain the tested packets; PKTINFO became zero following
+  PCIe reception with and without that bit. No unsafe page-map cache or
+  overwrite of released packet memory has been introduced.
+- New diagnostics iq_pipeline and iq_physical default to off. Only the
+  explicit40MS/s test mode enables the pipeline; physical DMA remains off.
+- Regression after these driver changes:20MS/s,65.0048seconds,
+  1,300,000,768CS16 samples,zero timeouts, no reported sequence/timestamp
+  discontinuities; CF32 restart40,001,536samples also passed. The default
+  probe advertises only1.25/2.5/5/10/20MS/s. Exact log:
+  output/rtl8922-soapy-native20-postpipeline-long-run.json.
+
+Trigger isolation, 2026-10-12 (additional experiments)
+- At HT40+, format 14 and selector 3, LA completed after 3.342 seconds with
+  no IDDMA copies or PCIe packet submissions at all. Status 0x56a91,
+  control 0x40b01, loss 0. This isolates the completion from the DMA queue.
+  Evidence:output/rtl8922-la40-no-dma-run.json.
+- Added read-only final trigger-register snapshots to pipeline diagnostics.
+  Tested AND8 maskFFFFFFFF/value12345678 remained intact at completion;
+  no change was observed in the sampled BB/MAC trigger controls. Evidence:
+  output/rtl8922-soapy40-and8-run.json. This does not rule out an internal
+  trigger or a separate, as-yet-unidentified control.
+- Clock-enabled debug port IP0/index15 read BB03333F. A full AND1 comparison
+  and a bit 0 comparison against 0 still failed. AND2 enabled with a
+  nonmatching value, AND8 comparison, AND0 inversion, trigger count 255,
+  opposite trigger edge, and alternate MAC PHY selection also failed.
+- Scope mode plus auto-fix held the write pointer at 0 and produced no DMA
+  packets in this LA-ring test. This is not a qualified streaming path.
+  Earlier standalone scope-routing probes remain separate experiments.
+- Data-ready encodings 0..3 each produced about 10M raw records/second with
+  DMA disabled. Encoding 2 survived one 15 second run, but its DMA retest
+  completed after 22.7 ms. It is not a solution. Exact logs:
+  output/rtl8922-la40-ready-matrix-run.json,
+  output/rtl8922-soapy40-ready2-run.json.
+- Removed these speculative settings from the plugin and rebuilt both ABIs.
+  Default operation remains through 20 MS/s; 40 MS/s retains its explicit gate.
+- Final restored-configuration regression passed: 20 MS/s, 65.0043 seconds,
+  1,300,000,768 CS16 samples, zero timeouts and no reported sequence or
+  timestamp discontinuities; CF32 restart also passed. Pluto tone peaks
+  were about 60 dB above median FFT power in the saved startup excerpts.
+  Evidence: output/rtl8922-soapy20-trigger-regression-run.json.
+
+40 MS/s trigger-count result (later on 2026-10-12)
+- Important update: the previous trigger-count255 test also enabled AND0,
+  which forced completion. With AND0 disabled as in the working20MS/s
+  configuration, count255 held HT40 recording for65seconds without DMA.
+  Count0 completed in0.464seconds in the next matrix; every tested nonzero
+  value1,2,3,7,15,31,63,127,255 ran for the full6second observation.
+  Exact counter semantics remain unproven; suppression of brief pulses is
+  a hypothesis, not a recovered hardware specification.
+- Native ABI40MS/s then passed65.1268seconds:2,600,001,536CS16 samples,
+  zero timeouts or reported sequence/timestamp gaps; CF32 restart also
+  passed80,000,257samples. Evidence:output/rtl8922-soapy40-count255-run.json.
+  Source now sets count255 only for the explicitly enabled40MS/s mode.
+- A200ms repeating QPSK capture contained8million samples. Raw correlation
+  had poor windows; these contained strong broadband energy at14..17MHz,
+  outside the test signal. Applying a257tap1.5MHz analysis lowpass to both
+  original samples and a control with one RAW sample deleted, before fitting,
+  retained all200windows: minimum coherence0.957, median0.984. Estimated
+  timing step-0.0379 +/-0.0241samples standard error; injected deletion
+  step-1.0379samples. Timing residual RMS0.096samples, relative clock4.18ppm.
+  This supports timing continuity in the coded signal band; it does not
+  establish full40MHz fidelity or indefinite gapless reception.
+- coded-continuity.py now accepts --rate, --input, --output and optional
+  --analysis-lowpass-hz. It reports quality checks and does not quietly drop
+  low-coherence windows. An unchanged20MS/s input reproduced its earlier fit.
+- A subsequent unprioritized300second attempt failed at31ms with a detected
+  source-ring overwrite (ret-75), not LA completion. A repeat under per-process
+  nice-20 was last verified running at20seconds. SSH then stopped returning
+  banners, although scanner HTTP remained responsive. Its result and cleanup
+  are not yet verified. Do not restart it based only on an SSH timeout.
+- The native binary has count255; distro rebuild and application40MS/s testing
+  remain pending.40MS/s stays gated with experimental40=1. The default20MS/s
+  configuration is unchanged.
+
+
+80/160 MS/s DMA drain experiments (2026-10-12)
+- Tested native HT80 center5210MHz and HT160 center5250MHz with Pluto
+  transmitting a +125kHz baseband tone. Packed format14, path1/source2,
+  LA selectors2/1 respectively. Producer pointer rates agree approximately
+  with20/40 million64-bit records persecond (=80/160 million complex8bitIQ).
+- Frozen captures show the tone about42..45dB above median FFT power with
+  about35..44dB image rejection. Measured ~97kHz at5GHz includes unresolved
+  oscillator offset. These are narrow-tone observations, not full RF qualification.
+- An optimized C++ raw FIFO reader, deadline producer, 10KiB packets,
+  increased CPU packet quota, and simultaneous IDDMA4+5 copying disjoint
+  halves did not enable continuous80 or160 MS/s. Both single/dual variants
+  stopped with ret=-75 on source backlog/overwrite at roughly4.1..4.3ms
+  for80 and1.4ms for160. Host sequence gaps and FIFO drops were zero,
+  which does NOT establish continuity after the source guard fails.
+- 40MS/s control passed the requested1second in all variants. Dual-channel
+  copy timings did not improve; a shared transfer bottleneck is an inference.
+  10KiB allocation remained slower despite increasing the quota maximum.
+- All changes are isolated in la-driver-fast; original driver and shipped
+  Soapy plugin unchanged. Experimental patch: fast-drain-experimental.patch.
+  Raw reader checks the producer status in addition to write()/packet status.
+  Older single-channel logs have process returncode0 even when ret=-75;
+  always use producer ret and summary.pass to assess them.
+- Evidence: output/rtl8922-fast-drain-summary.json and the fast-drain /
+  dual-drain report.json files. Pluto settings restored and TX powered down;
+  temporary firmware/modules/NM configuration removed, wired route unchanged.
+
+
+320MB/s path investigation (2026-10-12, follow-up)
+- PCIe currently negotiates5GT/s x1. No demonstrated320MB/s extraction.
+- Repeated frozen-LA copies into one owned PLE allocation isolate IDDMA:
+  virtual addressing ~90MB/s; physical offset24 ~120MB/s; physical
+  offsets32/64/128 ~140MB/s. Allocation, LLT validation and PCIe delivery
+  are excluded. All72 tested final blocks matched frozen SRAM word-for-word;
+  subsequent4/8/10KiB host packets also matched. This is not a continuous
+  host streaming result and does not qualify any new Soapy sample rate.
+- Poll delay0/1/4/16us and exposed DMAC/DCPU clock selectors did not close
+  the gap. Clock register restored; frequency meanings remain unresolved.
+- Direct sysfs BAR2 reads: only32bit accesses passed the full frozen-ring
+  comparison (~2.17MB/s). Wider accesses returned all-ones and are invalid.
+  CUDA I/O-memory registration returned801/not supported, so no GPU copy.
+- Found separate packet AXI DMA at0x18006000, with live firmware TX rings
+  at0x20300388 and0x20300488,8byte descriptors and32byte first segments.
+  Read-only snapshots saved. A bounded probe of previously uninitialized
+  TXchannel2 with owned scratch memory and report-type3/host target8 made
+  no progress (index0,busy0,ret-110), with zero PCIe host data. Existing
+  firmware-owned TXchannels0/1 were not replaced. No RF TX requested.
+- Changes remain isolated in la-driver-fast. Original working driver hash
+  27c42b65a4aab23c0b643bd78c5aa3ef6db1349682d48073ec92af8c3ab12eb1.
+  Evidence: output/rtl8922-dma-path-summary.json plus dma-bench,clock-bench,
+  bar-bench,paxi-snapshot,paxi-probe report files. Firmware,modules,NM test
+  config removed; Pluto settings restored with TX down; wired route unchanged.
+
+Frequency coverage survey (2026-10-12)
+- Original working driver, native20MS/s path1/source2/format14. Temporarily
+  requested CA regulatory domain and surveyed every advertised20MHz channel.
+  92 channel centers accepted:2412..2462 step5;5180..5320 step20;
+  5500..5580 step20;5660..5720 step20;5745..5825 step20;
+  5955..7115 step20. These are channel centers, not measured RF passband edges
+  or proof of arbitrary off-band tuning. CA disabled2467/2472/2484,
+  5600/5620/5640,5845/5865/5885;5935 also rejected.
+- Genuine RF I/Q verified using Pluto at2412,2437,5180,5240,5320,5500,
+  5720,5745,5805,5825,5955,5975,5995MHz. At each point the dominant
+  FFT tone moved1MHz when Pluto changed +500kHz to -500kHz, within366Hz
+  measurement error. Both tones exceeded30dB peak/median. Oscillator offset
+  grows from roughly-11kHz at2.4GHz to-25kHz at6GHz; this is not a calibrated
+  frequency-accuracy measurement.
+- All13 RF-verified points also passed100ms raw PCIe captures at20MS/s,
+  488 packets each, zero sequence gaps/FIFO errors and driver_ret0. Short
+  captures do not establish full-band fidelity, sensitivity or long duration.
+- At6035,6115,6415,6695,6995,7115MHz the LA produced frozen sample data
+  with Pluto off. RF reception above6GHz remains unqualified because Pluto
+  cannot provide a reference there. No claim of continuous2.4..7.115GHz
+  coverage, and no receive tuning outside the advertised channels tested.
+- Soapy plugin still exposes2.4GHz only. These5/6GHz measurements used
+  low-level capture helpers; no plugin range or sample-rate change made.
+  Continuous80/160MS/s and320MB/s extraction remain unresolved.
+- Regulatory domain restored to original00; Pluto settings restored and
+  TX powered down. Test wrapper removed temporary modules/firmware/NM config.
+  Evidence:output/rtl8922-frequency-coverage-report.json and summary.json.

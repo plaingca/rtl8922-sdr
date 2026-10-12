@@ -1,0 +1,11 @@
+{
+  "upstream": "https://github.com/morrownr/rtw89.git",
+  "commit": "8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356",
+  "working_patch": "patches/driver.patch",
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "experimental_patches": [
+    "patches/fast-drain-experimental.patch",
+    "patches/dma-path-experimental.patch"
+  ],
+  "note": "Experimental patches are alternative snapshots, not a series to apply on top of the working patch."
+}

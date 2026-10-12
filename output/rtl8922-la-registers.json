@@ -1,0 +1,813 @@
+{
+  "source": "ASUS official RTL8922AE driver 6102.24.143.0",
+  "zip_sha256": "4f1b9e5ea65fd6d4a3f04fdeee77fba83b3c423ee40f4e620c97f148f005e21b",
+  "sys_sha256": "6e008520696c20450959babc2d1f04a742c950d9085c3f02207fce2cd9830bbb",
+  "chip_branch_evidence": "0x1402f709c tests IC bit17 and returns cr_type4; 0x1403d586b branches cr_type4 to 0x1403d5f2c",
+  "function": "halbb_cr_cfg_la_init",
+  "function_va": "0x1403d5834",
+  "status": "Static extraction; field names correlated with OSS layout. Register readback performed; capture semantics not hardware validated.",
+  "fields": [
+    {
+      "field": "la_clk_en",
+      "struct_offset": "0x0",
+      "address": "0x14",
+      "mask": "0x1",
+      "instruction": "0x1403d5f31",
+      "mask_instruction": "0x1403d5ff9",
+      "linux_debugfs_address": "0x20014"
+    },
+    {
+      "field": "la_en",
+      "struct_offset": "0x8",
+      "address": "0x1090",
+      "mask": "0x1",
+      "instruction": "0x1403d5f37",
+      "mask_instruction": "0x1403d5ffc",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_dbgport_base_n",
+      "struct_offset": "0x10",
+      "address": "0x1090",
+      "mask": "0x3e",
+      "instruction": "0x1403d5f3f",
+      "mask_instruction": "0x1403d5fff",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_a_path_sel",
+      "struct_offset": "0x18",
+      "address": "0x1090",
+      "mask": "0xc0",
+      "instruction": "0x1403d5f48",
+      "mask_instruction": "0x1403d6006",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_b_path_sel",
+      "struct_offset": "0x20",
+      "address": "0x1090",
+      "mask": "0x300",
+      "instruction": "0x1403d5f51",
+      "mask_instruction": "0x1403d600d",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_c_path_sel",
+      "struct_offset": "0x28",
+      "address": "0x1090",
+      "mask": "0xc00",
+      "instruction": "0x1403d5f59",
+      "mask_instruction": "0x1403d6014",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_d_path_sel",
+      "struct_offset": "0x30",
+      "address": "0x1090",
+      "mask": "0x3000",
+      "instruction": "0x1403d5f5f",
+      "mask_instruction": "0x1403d601b",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_a_src_sel",
+      "struct_offset": "0x38",
+      "address": "0x1090",
+      "mask": "0x1c000",
+      "instruction": "0x1403d5f68",
+      "mask_instruction": "0x1403d6022",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_b_src_sel",
+      "struct_offset": "0x40",
+      "address": "0x1090",
+      "mask": "0xe0000",
+      "instruction": "0x1403d5f6b",
+      "mask_instruction": "0x1403d6029",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_c_src_sel",
+      "struct_offset": "0x48",
+      "address": "0x1090",
+      "mask": "0x700000",
+      "instruction": "0x1403d5f6e",
+      "mask_instruction": "0x1403d6030",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_d_src_sel",
+      "struct_offset": "0x50",
+      "address": "0x1090",
+      "mask": "0x3800000",
+      "instruction": "0x1403d5f71",
+      "mask_instruction": "0x1403d6037",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "la_smp_rt_sel",
+      "struct_offset": "0x58",
+      "address": "0x1090",
+      "mask": "0x3c000000",
+      "instruction": "0x1403d5f74",
+      "mask_instruction": "0x1403d603e",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "rdrdy_3_phase_en",
+      "struct_offset": "0x60",
+      "address": null,
+      "mask": null,
+      "instruction": "0x1403d634a",
+      "mask_instruction": "0x1403d6353"
+    },
+    {
+      "field": "la_trigger_edge",
+      "struct_offset": "0x68",
+      "address": "0x1090",
+      "mask": "0x40000000",
+      "instruction": "0x1403d5f77",
+      "mask_instruction": "0x1403d6045",
+      "linux_debugfs_address": "0x21090"
+    },
+    {
+      "field": "dma_hdr_sel_63",
+      "struct_offset": "0x70",
+      "address": "0x1094",
+      "mask": "0x3f",
+      "instruction": "0x1403d5f7f",
+      "mask_instruction": "0x1403d6049",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "dma_hdr_sel_62",
+      "struct_offset": "0x78",
+      "address": "0x1094",
+      "mask": "0xfc0",
+      "instruction": "0x1403d5f82",
+      "mask_instruction": "0x1403d604c",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "dma_hdr_sel_61",
+      "struct_offset": "0x80",
+      "address": "0x1094",
+      "mask": "0x3f000",
+      "instruction": "0x1403d5f85",
+      "mask_instruction": "0x1403d6053",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "dma_hdr_sel_60",
+      "struct_offset": "0x88",
+      "address": "0x10c4",
+      "mask": "0x3f000000",
+      "instruction": "0x1403d605d",
+      "mask_instruction": "0x1403d6067",
+      "linux_debugfs_address": "0x210c4"
+    },
+    {
+      "field": "dma_a_ck160_dly_en",
+      "struct_offset": "0x90",
+      "address": null,
+      "mask": null,
+      "instruction": "0x1403d635c",
+      "mask_instruction": "0x1403d6368"
+    },
+    {
+      "field": "dma_b_ck160_dly_en",
+      "struct_offset": "0x98",
+      "address": null,
+      "mask": null,
+      "instruction": "0x1403d6374",
+      "mask_instruction": "0x1403d6385"
+    },
+    {
+      "field": "dma_dbgport_phy_sel",
+      "struct_offset": "0xa0",
+      "address": null,
+      "mask": null,
+      "instruction": "0x1403d6391",
+      "mask_instruction": "0x1403d639d"
+    },
+    {
+      "field": "dma_la_phy_sel",
+      "struct_offset": "0xa8",
+      "address": "0x1094",
+      "mask": "0x80000000",
+      "instruction": "0x1403d5f8b",
+      "mask_instruction": "0x1403d6071",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "dma_data_type",
+      "struct_offset": "0xb0",
+      "address": "0x1094",
+      "mask": "0x1f80000",
+      "instruction": "0x1403d5f91",
+      "mask_instruction": "0x1403d6078",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "r_dma_rdrdy",
+      "struct_offset": "0xb8",
+      "address": "0x1094",
+      "mask": "0x6000000",
+      "instruction": "0x1403d5f97",
+      "mask_instruction": "0x1403d6082",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "la_and0_bit_sel",
+      "struct_offset": "0xc0",
+      "address": "0x1098",
+      "mask": "0x1f",
+      "instruction": "0x1403d5fa2",
+      "mask_instruction": "0x1403d608c",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_trigger_cnt",
+      "struct_offset": "0xc8",
+      "address": "0x1098",
+      "mask": "0x1fe0",
+      "instruction": "0x1403d5fa8",
+      "mask_instruction": "0x1403d6096",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "and0_trig_disable",
+      "struct_offset": "0xd0",
+      "address": "0x1098",
+      "mask": "0x2000",
+      "instruction": "0x1403d5fae",
+      "mask_instruction": "0x1403d60a0",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and1_inv",
+      "struct_offset": "0xd8",
+      "address": "0x1098",
+      "mask": "0x4000",
+      "instruction": "0x1403d5fb4",
+      "mask_instruction": "0x1403d60aa",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and2_en",
+      "struct_offset": "0xe0",
+      "address": "0x1098",
+      "mask": "0x8000",
+      "instruction": "0x1403d5fba",
+      "mask_instruction": "0x1403d60b4",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and2_inv",
+      "struct_offset": "0xe8",
+      "address": "0x1098",
+      "mask": "0x10000",
+      "instruction": "0x1403d5fc0",
+      "mask_instruction": "0x1403d60be",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and3_en",
+      "struct_offset": "0xf0",
+      "address": "0x1098",
+      "mask": "0x20000",
+      "instruction": "0x1403d5fc6",
+      "mask_instruction": "0x1403d60c8",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and3_inv",
+      "struct_offset": "0xf8",
+      "address": "0x1098",
+      "mask": "0x40000",
+      "instruction": "0x1403d5fcc",
+      "mask_instruction": "0x1403d60d2",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and4_en",
+      "struct_offset": "0x100",
+      "address": "0x1098",
+      "mask": "0x80000",
+      "instruction": "0x1403d5fd2",
+      "mask_instruction": "0x1403d60d8",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and4_rate",
+      "struct_offset": "0x108",
+      "address": "0x10d0",
+      "mask": "0xfff00000",
+      "instruction": "0x1403d60e2",
+      "mask_instruction": "0x1403d60ec",
+      "linux_debugfs_address": "0x210d0"
+    },
+    {
+      "field": "la_and4_inv",
+      "struct_offset": "0x110",
+      "address": "0x1098",
+      "mask": "0x20000000",
+      "instruction": "0x1403d5fd8",
+      "mask_instruction": "0x1403d60f6",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and1_mask",
+      "struct_offset": "0x118",
+      "address": "0x109c",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d60fd",
+      "mask_instruction": "0x1403d5fe1",
+      "linux_debugfs_address": "0x2109c"
+    },
+    {
+      "field": "la_and1_val",
+      "struct_offset": "0x120",
+      "address": "0x10a0",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d6107",
+      "mask_instruction": "0x1403d5fe7",
+      "linux_debugfs_address": "0x210a0"
+    },
+    {
+      "field": "la_and2_mask",
+      "struct_offset": "0x128",
+      "address": "0x10a4",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d6111",
+      "mask_instruction": "0x1403d5fed",
+      "linux_debugfs_address": "0x210a4"
+    },
+    {
+      "field": "la_and2_val",
+      "struct_offset": "0x130",
+      "address": "0x10a8",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d611b",
+      "mask_instruction": "0x1403d5ff3",
+      "linux_debugfs_address": "0x210a8"
+    },
+    {
+      "field": "la_and3_mask",
+      "struct_offset": "0x138",
+      "address": "0x10ac",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d6125",
+      "mask_instruction": "0x1403d61a1",
+      "linux_debugfs_address": "0x210ac"
+    },
+    {
+      "field": "la_and3_val",
+      "struct_offset": "0x140",
+      "address": "0x10b0",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d61a7",
+      "mask_instruction": "0x1403d61b1",
+      "linux_debugfs_address": "0x210b0"
+    },
+    {
+      "field": "la_and5_sel",
+      "struct_offset": "0x148",
+      "address": "0x10b4",
+      "mask": "0x3f",
+      "instruction": "0x1403d613b",
+      "mask_instruction": "0x1403d612f",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_and5_val",
+      "struct_offset": "0x150",
+      "address": "0x10d4",
+      "mask": "0xffff",
+      "instruction": "0x1403d6166",
+      "mask_instruction": "0x1403d61b7",
+      "linux_debugfs_address": "0x210d4"
+    },
+    {
+      "field": "la_and5_inv",
+      "struct_offset": "0x158",
+      "address": "0x10b4",
+      "mask": "0x200",
+      "instruction": "0x1403d6148",
+      "mask_instruction": "0x1403d61bd",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_and6_sel",
+      "struct_offset": "0x160",
+      "address": "0x10b4",
+      "mask": "0xfc00",
+      "instruction": "0x1403d6154",
+      "mask_instruction": "0x1403d61c7",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_and6_val",
+      "struct_offset": "0x168",
+      "address": "0x10d4",
+      "mask": "0xffff0000",
+      "instruction": "0x1403d6171",
+      "mask_instruction": "0x1403d619a",
+      "linux_debugfs_address": "0x210d4"
+    },
+    {
+      "field": "la_and6_inv",
+      "struct_offset": "0x170",
+      "address": "0x10b4",
+      "mask": "0x80000",
+      "instruction": "0x1403d615b",
+      "mask_instruction": "0x1403d61d1",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_and7_sel",
+      "struct_offset": "0x178",
+      "address": "0x10b4",
+      "mask": "0x3f00000",
+      "instruction": "0x1403d617e",
+      "mask_instruction": "0x1403d61db",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_and7_val",
+      "struct_offset": "0x180",
+      "address": "0x10d8",
+      "mask": "0xffff",
+      "instruction": "0x1403d61e5",
+      "mask_instruction": "0x1403d61ec",
+      "linux_debugfs_address": "0x210d8"
+    },
+    {
+      "field": "la_and7_inv",
+      "struct_offset": "0x188",
+      "address": "0x10b4",
+      "mask": "0x20000000",
+      "instruction": "0x1403d6185",
+      "mask_instruction": "0x1403d61f2",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_brk_sel",
+      "struct_offset": "0x190",
+      "address": "0x414",
+      "mask": "0x1ff",
+      "instruction": "0x1403d61f9",
+      "mask_instruction": "0x1403d6203",
+      "linux_debugfs_address": "0x20414"
+    },
+    {
+      "field": "la_mac_and1_en",
+      "struct_offset": "0x198",
+      "address": "0x10b4",
+      "mask": "0x40000000",
+      "instruction": "0x1403d618c",
+      "mask_instruction": "0x1403d6193",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_mac_and2_en",
+      "struct_offset": "0x1a0",
+      "address": "0x10b4",
+      "mask": "0x80000000",
+      "instruction": "0x1403d620d",
+      "mask_instruction": "0x1403d6214",
+      "linux_debugfs_address": "0x210b4"
+    },
+    {
+      "field": "la_target_frame_type_en",
+      "struct_offset": "0x1a8",
+      "address": "0x4bf4",
+      "mask": "0x1",
+      "instruction": "0x1403d62e5",
+      "mask_instruction": "0x1403d62ec",
+      "linux_debugfs_address": "0x24bf4"
+    },
+    {
+      "field": "la_mac_addr_en",
+      "struct_offset": "0x1b0",
+      "address": "0x4bf4",
+      "mask": "0x2",
+      "instruction": "0x1403d62f2",
+      "mask_instruction": "0x1403d62f9",
+      "linux_debugfs_address": "0x24bf4"
+    },
+    {
+      "field": "la_mac_addr",
+      "struct_offset": "0x1b8",
+      "address": "0x4be4",
+      "mask": "0xff0000",
+      "instruction": "0x1403d6303",
+      "mask_instruction": "0x1403d630a",
+      "linux_debugfs_address": "0x24be4"
+    },
+    {
+      "field": "la_mac_multi_user_uid",
+      "struct_offset": "0x1c0",
+      "address": "0x4be4",
+      "mask": "0xff",
+      "instruction": "0x1403d6314",
+      "mask_instruction": "0x1403d631b",
+      "linux_debugfs_address": "0x24be4"
+    },
+    {
+      "field": "la_mac_and2_frame_sel",
+      "struct_offset": "0x1c8",
+      "address": "0x4be4",
+      "mask": "0xff00",
+      "instruction": "0x1403d621f",
+      "mask_instruction": "0x1403d622b",
+      "linux_debugfs_address": "0x24be4"
+    },
+    {
+      "field": "la_mac_and0_sel",
+      "struct_offset": "0x1d0",
+      "address": "0x10b8",
+      "mask": "0x3800000",
+      "instruction": "0x1403d6235",
+      "mask_instruction": "0x1403d623c",
+      "linux_debugfs_address": "0x210b8"
+    },
+    {
+      "field": "la_mac_and0_en",
+      "struct_offset": "0x1d8",
+      "address": "0x10b8",
+      "mask": "0x4000000",
+      "instruction": "0x1403d6246",
+      "mask_instruction": "0x1403d624d",
+      "linux_debugfs_address": "0x210b8"
+    },
+    {
+      "field": "la_mac_and0_mac_sel",
+      "struct_offset": "0x1e0",
+      "address": "0x10bc",
+      "mask": "0x40000000",
+      "instruction": "0x1403d6257",
+      "mask_instruction": "0x1403d625e",
+      "linux_debugfs_address": "0x210bc"
+    },
+    {
+      "field": "la_mac_and0_crc_src_sel",
+      "struct_offset": "0x1e8",
+      "address": "0x10cc",
+      "mask": "0xc0",
+      "instruction": "0x1403d6269",
+      "mask_instruction": "0x1403d6273",
+      "linux_debugfs_address": "0x210cc"
+    },
+    {
+      "field": "la_and2_sign",
+      "struct_offset": "0x1f0",
+      "address": "0x10b8",
+      "mask": "0x18000000",
+      "instruction": "0x1403d627d",
+      "mask_instruction": "0x1403d6284",
+      "linux_debugfs_address": "0x210b8"
+    },
+    {
+      "field": "la_and3_sign",
+      "struct_offset": "0x1f8",
+      "address": "0x10b8",
+      "mask": "0x60000000",
+      "instruction": "0x1403d628e",
+      "mask_instruction": "0x1403d629a",
+      "linux_debugfs_address": "0x210b8"
+    },
+    {
+      "field": "la_re_trig_edge",
+      "struct_offset": "0x200",
+      "address": "0x10c8",
+      "mask": "0x1000",
+      "instruction": "0x1403d62a4",
+      "mask_instruction": "0x1403d62ab",
+      "linux_debugfs_address": "0x210c8"
+    },
+    {
+      "field": "la_re_and1_sel",
+      "struct_offset": "0x208",
+      "address": "0x10c8",
+      "mask": "0x7e000",
+      "instruction": "0x1403d62b5",
+      "mask_instruction": "0x1403d62bc",
+      "linux_debugfs_address": "0x210c8"
+    },
+    {
+      "field": "la_re_and1_val",
+      "struct_offset": "0x210",
+      "address": "0x10d8",
+      "mask": "0xffff0000",
+      "instruction": "0x1403d62c6",
+      "mask_instruction": "0x1403d62cd",
+      "linux_debugfs_address": "0x210d8"
+    },
+    {
+      "field": "la_re_and1_inv",
+      "struct_offset": "0x218",
+      "address": "0x10c8",
+      "mask": "0x400000",
+      "instruction": "0x1403d62d4",
+      "mask_instruction": "0x1403d62db",
+      "linux_debugfs_address": "0x210c8"
+    },
+    {
+      "field": "la_adc_320up",
+      "struct_offset": "0x220",
+      "address": null,
+      "mask": null,
+      "instruction": "0x1403d63a9",
+      "mask_instruction": "0x1403d63b5"
+    },
+    {
+      "field": "la_scope_mode_en",
+      "struct_offset": "0x228",
+      "address": "0x10bc",
+      "mask": "0x10000000",
+      "instruction": "0x1403d6325",
+      "mask_instruction": "0x1403d632c",
+      "linux_debugfs_address": "0x210bc"
+    },
+    {
+      "field": "la_scope_mode_auto_fix_la",
+      "struct_offset": "0x230",
+      "address": "0x10bc",
+      "mask": "0x20000000",
+      "instruction": "0x1403d6336",
+      "mask_instruction": "0x1403d633d",
+      "linux_debugfs_address": "0x210bc"
+    },
+    {
+      "field": "la_dbg_port_ip_ext",
+      "struct_offset": "0x238",
+      "address": "0x10d0",
+      "mask": "0x600",
+      "instruction": "0x1403d63c0",
+      "mask_instruction": "0x1403d63c6",
+      "linux_debugfs_address": "0x210d0"
+    },
+    {
+      "field": "la_dbg_port_ext",
+      "struct_offset": "0x240",
+      "address": "0x10d0",
+      "mask": "0x7000",
+      "instruction": "0x1403d63d0",
+      "mask_instruction": "0x1403d63d6",
+      "linux_debugfs_address": "0x210d0"
+    },
+    {
+      "field": "dma_dbgport_ext_base_n",
+      "struct_offset": "0x248",
+      "address": "0x10d0",
+      "mask": "0x1f0",
+      "instruction": "0x1403d63e0",
+      "mask_instruction": "0x1403d63eb",
+      "linux_debugfs_address": "0x210d0"
+    },
+    {
+      "field": "dma_hdr_sel_59",
+      "struct_offset": "0x250",
+      "address": "0x10cc",
+      "mask": "0x3f00",
+      "instruction": "0x1403d63f5",
+      "mask_instruction": "0x1403d63fb",
+      "linux_debugfs_address": "0x210cc"
+    },
+    {
+      "field": "dma_hdr_sel_58",
+      "struct_offset": "0x258",
+      "address": "0x10cc",
+      "mask": "0xfc000",
+      "instruction": "0x1403d6405",
+      "mask_instruction": "0x1403d640b",
+      "linux_debugfs_address": "0x210cc"
+    },
+    {
+      "field": "dma_hdr_sel_57",
+      "struct_offset": "0x260",
+      "address": "0x10cc",
+      "mask": "0x3f00000",
+      "instruction": "0x1403d6415",
+      "mask_instruction": "0x1403d641b",
+      "linux_debugfs_address": "0x210cc"
+    },
+    {
+      "field": "dma_hdr_sel_56",
+      "struct_offset": "0x268",
+      "address": "0x10cc",
+      "mask": "0xfc000000",
+      "instruction": "0x1403d6425",
+      "mask_instruction": "0x1403d6430",
+      "linux_debugfs_address": "0x210cc"
+    },
+    {
+      "field": "la_and0_inv",
+      "struct_offset": "0x270",
+      "address": "0x1098",
+      "mask": "0x100000",
+      "instruction": "0x1403d643a",
+      "mask_instruction": "0x1403d6441",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and5_mask",
+      "struct_offset": "0x278",
+      "address": "0x10dc",
+      "mask": "0xffff",
+      "instruction": "0x1403d644b",
+      "mask_instruction": "0x1403d6451",
+      "linux_debugfs_address": "0x210dc"
+    },
+    {
+      "field": "la_and6_mask",
+      "struct_offset": "0x280",
+      "address": "0x10dc",
+      "mask": "0xffff0000",
+      "instruction": "0x1403d6457",
+      "mask_instruction": "0x1403d6462",
+      "linux_debugfs_address": "0x210dc"
+    },
+    {
+      "field": "la_and7_mask",
+      "struct_offset": "0x288",
+      "address": "0x10e0",
+      "mask": "0xffff",
+      "instruction": "0x1403d6469",
+      "mask_instruction": "0x1403d646f",
+      "linux_debugfs_address": "0x210e0"
+    },
+    {
+      "field": "la_and8_base_n",
+      "struct_offset": "0x290",
+      "address": "0x1098",
+      "mask": "0x1fe00000",
+      "instruction": "0x1403d6475",
+      "mask_instruction": "0x1403d647c",
+      "linux_debugfs_address": "0x21098"
+    },
+    {
+      "field": "la_and8_inv",
+      "struct_offset": "0x298",
+      "address": "0x1094",
+      "mask": "0x40000",
+      "instruction": "0x1403d6486",
+      "mask_instruction": "0x1403d6490",
+      "linux_debugfs_address": "0x21094"
+    },
+    {
+      "field": "la_and8_mask",
+      "struct_offset": "0x2a0",
+      "address": "0x10e4",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d6496",
+      "mask_instruction": "0x1403d64a0",
+      "linux_debugfs_address": "0x210e4"
+    },
+    {
+      "field": "la_and8_val",
+      "struct_offset": "0x2a8",
+      "address": "0x10e8",
+      "mask": "0xffffffff",
+      "instruction": "0x1403d64a6",
+      "mask_instruction": "0x1403d64b0",
+      "linux_debugfs_address": "0x210e8"
+    },
+    {
+      "field": "la_re_and1_mask",
+      "struct_offset": "0x2b0",
+      "address": "0x10e0",
+      "mask": "0xffff0000",
+      "instruction": "0x1403d64b6",
+      "mask_instruction": "0x1403d64bc",
+      "linux_debugfs_address": "0x210e0"
+    },
+    {
+      "field": "la_mac_crc_pmac_pkt_sel",
+      "struct_offset": "0x2b8",
+      "address": "0x10c8",
+      "mask": "0x380000",
+      "instruction": "0x1403d64c3",
+      "mask_instruction": "0x1403d64ca",
+      "linux_debugfs_address": "0x210c8"
+    }
+  ],
+  "unlabeled_tail": {},
+  "source_url": "https://dlcdnets.asus.com/pub/ASUS/mb/08WIRELESS/DRV_WiFi_RTK_8922AE_TP_W11_64_V6102241430_20260706R.zip",
+  "cross_check": {
+    "version": "6102.24.129.103",
+    "archive_sha256": "6e61d009e597e015b8d06036a1ae5907b3c104844707a3cd44b86b49f37292a4",
+    "sys_sha256": "aa8ef20beca22e83a4a2ebdcdabe7577e0953ba0373f9d0643d35d99936b153f",
+    "comparison": "88/88 entries identical, including unavailable placeholders"
+  },
+  "linux_translation": "Add0x20000 to baseband addresses for raw rtw89 debugfs IO; rtw8922a selects rtw89_phy_gen_be, whose cr_base is0x20000.",
+  "readback_file": "rtl8922-la-readback.json",
+  "remaining_work": [
+    "Trace reserved LA buffer allocation and corresponding Linux DLE partitioning.",
+    "Verify indirect packet buffer readout and per-format IQ packing.",
+    "Implement bounded capture with save/restore; no IQ obtained this turn."
+  ]
+}

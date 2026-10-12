@@ -1,0 +1,100 @@
+{
+  "tunes": [
+    {
+      "frequency": 2478123456,
+      "rf_center": 2484000000.0,
+      "generation": 1,
+      "samples": 371298304,
+      "errors": 1,
+      "frame": 249,
+      "latency_ms": 214.93
+    },
+    {
+      "frequency": 2484000000,
+      "rf_center": 2484000000.0,
+      "generation": 2,
+      "samples": 372813824,
+      "errors": 1,
+      "frame": 250,
+      "latency_ms": 85.82
+    },
+    {
+      "frequency": 5005000000,
+      "rf_center": 5005000000.0,
+      "generation": 3,
+      "samples": 375234560,
+      "errors": 2,
+      "frame": 252,
+      "latency_ms": 250.17
+    },
+    {
+      "frequency": 5400123456,
+      "rf_center": 5400000000.0,
+      "generation": 4,
+      "samples": 377450496,
+      "errors": 3,
+      "frame": 254,
+      "latency_ms": 242.24
+    },
+    {
+      "frequency": 5400123457,
+      "rf_center": 5400000000.0,
+      "generation": 5,
+      "samples": 380469248,
+      "errors": 3,
+      "frame": 256,
+      "latency_ms": 46.35
+    },
+    {
+      "frequency": 5600123456,
+      "rf_center": 5600000000.0,
+      "generation": 6,
+      "samples": 381419520,
+      "errors": 4,
+      "frame": 257,
+      "latency_ms": 192.62
+    },
+    {
+      "frequency": 5945123456,
+      "rf_center": 5945000000.0,
+      "generation": 7,
+      "samples": 383893504,
+      "errors": 5,
+      "frame": 259,
+      "latency_ms": 204.36
+    },
+    {
+      "frequency": 6001234567,
+      "rf_center": 6000000000.0,
+      "generation": 8,
+      "samples": 385150976,
+      "errors": 6,
+      "frame": 260,
+      "latency_ms": 189.8
+    },
+    {
+      "frequency": 7115000000,
+      "rf_center": 7115000000.0,
+      "generation": 9,
+      "samples": 387698688,
+      "errors": 7,
+      "frame": 262,
+      "latency_ms": 256.71
+    },
+    {
+      "frequency": 5400123456,
+      "rf_center": 5400000000.0,
+      "generation": 10,
+      "samples": 389873664,
+      "errors": 8,
+      "frame": 264,
+      "latency_ms": 224.42
+    }
+  ],
+  "invalid_4000_preserved_stream": true,
+  "five_second_sample_delta": 99160064,
+  "five_second_interruptions_delta": 0,
+  "five_second_recoveries_delta": 0,
+  "final_frequency": 5400123456,
+  "note": "No Pluto TX during interactive-demo checks; RF tone tests saved separately. Any receive restart is counted, not treated as gapless."
+}

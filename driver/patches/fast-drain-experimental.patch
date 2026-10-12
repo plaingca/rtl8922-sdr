@@ -1,0 +1,873 @@
+diff --git a/core.c b/core.c
+index da08d8e..b7319dd 100644
+--- a/core.c
++++ b/core.c
+@@ -4126,7 +4126,11 @@ static void rtw89_core_rx_process_report(struct rtw89_dev *rtwdev,
+ 					 struct sk_buff *skb)
+ {
+ 	switch (desc_info->pkt_type) {
+-	case RTW89_CORE_RX_TYPE_C2H:
++	case RTW89_CORE_RX_TYPE_BB_SCOPE:
++        rtw89_scope_record(skb, desc_info);
++        dev_kfree_skb_any(skb);
++        break;
++    case RTW89_CORE_RX_TYPE_C2H:
+ 		rtw89_fw_c2h_irqsafe(rtwdev, skb);
+ 		break;
+ 	case RTW89_CORE_RX_TYPE_PPDU_STAT:
+@@ -4569,6 +4573,7 @@ void rtw89_core_rx(struct rtw89_dev *rtwdev,
+ 	u8 ppdu_cnt = desc_info->ppdu_cnt;
+ 	u8 band = desc_info->bb_sel ? RTW89_PHY_1 : RTW89_PHY_0;
+ 
++	rtw89_iq_observe(1, desc_info->pkt_type);
+ 	if (desc_info->pkt_type != RTW89_CORE_RX_TYPE_WIFI) {
+ 		rtw89_core_rx_process_report(rtwdev, desc_info, skb);
+ 		return;
+diff --git a/debug.c b/debug.c
+index 82e50ac..a9edbb7 100644
+--- a/debug.c
++++ b/debug.c
+@@ -1,3 +1,4 @@
++#include <linux/sched/signal.h>
+ // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
+ /* Copyright(c) 2019-2020  Realtek Corporation
+  */
+@@ -7,6 +8,203 @@
+ 
+ #include "coex.h"
+ #include "debug.h"
++#include "pci.h"
++static ssize_t iq_memory_read(struct file *file, char __user *buf,
++                             size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev = file->private_data;
++    struct rtw89_pci *rtwpci = (struct rtw89_pci *)rtwdev->priv;
++    u32 filter;
++    void *data;
++    if (rtwdev->hci.type != RTW89_HCI_TYPE_PCIE) return -EINVAL;
++    if (*pos < 0 || *pos >= 0x50000) return 0;
++    count = min_t(size_t, count, 0x50000 - *pos);
++    count = min_t(size_t, count, 0x50000);
++    data = kvmalloc(count, GFP_KERNEL);
++    if (!data) return -ENOMEM;
++    wiphy_lock(rtwdev->hw->wiphy);
++    filter = rtw89_read32(rtwdev, 0xc04);
++    rtw89_write32(rtwdev, 0xc04, 0x18700000);
++    memcpy_fromio(data, rtwpci->mmap + 0x80000 + 0x16000 + *pos, count);
++    rtw89_write32(rtwdev, 0xc04, filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    if (copy_to_user(buf, data, count)) { kvfree(data); return -EFAULT; }
++    kvfree(data); *pos += count; return count;
++}
++static const struct file_operations iq_memory_fops = {
++    .owner = THIS_MODULE, .open = simple_open, .read = iq_memory_read,
++    .llseek = default_llseek,
++};
++static ssize_t iq_rom_read(struct file *file, char __user *buf,
++                             size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev = file->private_data;
++    struct rtw89_pci *rtwpci = (struct rtw89_pci *)rtwdev->priv;
++    u32 filter;
++    void *data;
++    if (rtwdev->hci.type != RTW89_HCI_TYPE_PCIE) return -EINVAL;
++    if (*pos < 0 || *pos >= 0x80000) return 0;
++    count = min_t(size_t, count, 0x80000 - *pos);
++    count = min_t(size_t, count, 0x80000);
++    data = kvmalloc(count, GFP_KERNEL);
++    if (!data) return -ENOMEM;
++    wiphy_lock(rtwdev->hw->wiphy);
++    filter = rtw89_read32(rtwdev, 0xc04);
++    rtw89_write32(rtwdev, 0xc04, 0x20000000);
++    memcpy_fromio(data, rtwpci->mmap + 0x80000 + *pos, count);
++    rtw89_write32(rtwdev, 0xc04, filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    if (copy_to_user(buf, data, count)) { kvfree(data); return -EFAULT; }
++    kvfree(data); *pos += count; return count;
++}
++static const struct file_operations iq_rom_fops = {
++    .owner = THIS_MODULE, .open = simple_open, .read = iq_rom_read,
++    .llseek = default_llseek,
++};static ssize_t iq_table_read(struct file *file, char __user *buf,
++                             size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev = file->private_data;
++    struct rtw89_pci *rtwpci = (struct rtw89_pci *)rtwdev->priv;
++    u32 filter;
++    void *data;
++    if (rtwdev->hci.type != RTW89_HCI_TYPE_PCIE) return -EINVAL;
++    if (*pos < 0 || *pos >= 0x4000) return 0;
++    count = min_t(size_t, count, 0x4000 - *pos);
++    count = min_t(size_t, count, 0x80000);
++    data = kvmalloc(count, GFP_KERNEL);
++    if (!data) return -ENOMEM;
++    wiphy_lock(rtwdev->hw->wiphy);
++    filter = rtw89_read32(rtwdev, 0xc04);
++    rtw89_write32(rtwdev, 0xc04, 0x20201000);
++    memcpy_fromio(data, rtwpci->mmap + 0x80000 + *pos, count);
++    rtw89_write32(rtwdev, 0xc04, filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    if (copy_to_user(buf, data, count)) { kvfree(data); return -EFAULT; }
++    kvfree(data); *pos += count; return count;
++}
++static const struct file_operations iq_table_fops = {
++    .owner = THIS_MODULE, .open = simple_open, .read = iq_table_read,
++    .llseek = default_llseek,
++};
++
++#include <linux/vmalloc.h>
++#include <linux/ktime.h>
++/* Bounded experimental capture of DMA BB-scope reports; no packet injection. */
++#define IQ_SCOPE_LIMIT (128 * 1024 * 1024)
++static u8 *iq_scope_data;
++static u32 iq_scope_used;
++static u64 iq_scope_packets, iq_scope_dropped;
++static u64 iq_desc_total, iq_desc_scope, iq_core_total;
++void rtw89_iq_observe(unsigned int stage, unsigned int type)
++{
++    if (stage == 0) { iq_desc_total++; if (type == 3) iq_desc_scope++; }
++    else iq_core_total++;
++}
++EXPORT_SYMBOL_GPL(rtw89_iq_observe);
++static DEFINE_SPINLOCK(iq_scope_lock);
++static bool iq_live_mode;
++static u32 iq_live_head, iq_live_tail, iq_live_count;
++static void iq_live_append(const void *data, u32 len)
++{
++    u32 first = min_t(u32, len, IQ_SCOPE_LIMIT - iq_live_head);
++    memcpy(iq_scope_data + iq_live_head, data, first);
++    memcpy(iq_scope_data, (const u8 *)data + first, len - first);
++    iq_live_head = (iq_live_head + len) % IQ_SCOPE_LIMIT;
++    iq_live_count += len;
++}
++
++void rtw89_scope_record(struct sk_buff *skb, struct rtw89_rx_desc_info *desc)
++{
++    unsigned long flags;
++    __le32 hdr[6];
++    u64 now = ktime_get_mono_fast_ns();
++    hdr[0] = cpu_to_le32(skb->len);
++    hdr[1] = cpu_to_le32(desc->free_run_cnt);
++    hdr[2] = cpu_to_le32(desc->seq | (desc->bb_sel << 16));
++    hdr[3] = cpu_to_le32(desc->pkt_size);
++    hdr[4] = cpu_to_le32((u32)now);
++    hdr[5] = cpu_to_le32(now >> 32);
++    spin_lock_irqsave(&iq_scope_lock, flags);
++    iq_scope_packets++;
++    if (iq_live_mode) {
++        if (iq_scope_data && iq_live_count + sizeof(hdr) + skb->len <= IQ_SCOPE_LIMIT) {
++            iq_live_append(hdr, sizeof(hdr)); iq_live_append(skb->data, skb->len);
++        } else { iq_scope_dropped++; }
++        spin_unlock_irqrestore(&iq_scope_lock, flags);
++        return;
++    }
++    if (iq_scope_data && iq_scope_used + sizeof(hdr) + skb->len <= IQ_SCOPE_LIMIT) {
++        memcpy(iq_scope_data + iq_scope_used, hdr, sizeof(hdr));
++        iq_scope_used += sizeof(hdr);
++        memcpy(iq_scope_data + iq_scope_used, skb->data, skb->len);
++        iq_scope_used += skb->len;
++    } else {
++        iq_scope_dropped++;
++    }
++    spin_unlock_irqrestore(&iq_scope_lock, flags);
++}
++
++/* Consuming FIFO reader; EAGAIN permits a userspace producer/consumer loop. */
++static ssize_t iq_drain_read(struct file *file, char __user *buf, size_t count, loff_t *pos)
++{
++    unsigned long flags;
++    u32 len, first;
++    u8 *temp;
++    if (!count) return 0;
++    if (!iq_scope_data) return -ENOMEM;
++    count = min_t(size_t, count, 65536);
++    temp = kmalloc(count, GFP_KERNEL);
++    if (!temp) return -ENOMEM;
++    spin_lock_irqsave(&iq_scope_lock, flags);
++    len = min_t(u32, count, iq_live_count);
++    first = min_t(u32, len, IQ_SCOPE_LIMIT - iq_live_tail);
++    memcpy(temp, iq_scope_data + iq_live_tail, first);
++    memcpy(temp + first, iq_scope_data, len - first);
++    iq_live_tail = (iq_live_tail + len) % IQ_SCOPE_LIMIT;
++    iq_live_count -= len;
++    spin_unlock_irqrestore(&iq_scope_lock, flags);
++    if (!len) { kfree(temp); return -EAGAIN; }
++    if (copy_to_user(buf, temp, len)) { kfree(temp); return -EFAULT; }
++    kfree(temp); return len;
++}
++static ssize_t iq_drain_write(struct file *file, const char __user *buf, size_t count, loff_t *pos)
++{
++    unsigned long flags;
++    if (!iq_scope_data) return -ENOMEM;
++    spin_lock_irqsave(&iq_scope_lock, flags);
++    iq_live_head = iq_live_tail = iq_live_count = 0;
++    iq_scope_used = iq_scope_packets = iq_scope_dropped = 0;
++    iq_live_mode = true;
++    spin_unlock_irqrestore(&iq_scope_lock, flags);
++    return count;
++}
++static const struct file_operations iq_drain_fops = {
++    .owner = THIS_MODULE, .read = iq_drain_read, .write = iq_drain_write,
++    .llseek = no_llseek,
++};
++
++static ssize_t iq_scope_read(struct file *file, char __user *buf,
++                            size_t count, loff_t *pos)
++{
++    if (READ_ONCE(iq_live_mode)) return -EBUSY;
++    return simple_read_from_buffer(buf, count, pos, iq_scope_data, READ_ONCE(iq_scope_used));
++}
++static ssize_t iq_scope_reset(struct file *file, const char __user *buf,
++                             size_t count, loff_t *pos)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&iq_scope_lock, flags);
++    iq_scope_used = 0; iq_scope_packets = 0; iq_scope_dropped = 0;
++    spin_unlock_irqrestore(&iq_scope_lock, flags);
++    return count;
++}
++static const struct file_operations iq_scope_fops = {
++    .owner = THIS_MODULE, .read = iq_scope_read, .write = iq_scope_reset,
++    .llseek = default_llseek,
++};
++
++
++
+ #include "fw.h"
+ #include "mac.h"
+ #include "pci.h"
+@@ -15,6 +213,523 @@
+ #include "reg.h"
+ #include "sar.h"
+ #include "util.h"
++/* Diagnostic ownership test: only a newly allocated card PLE buffer. */
++static char iq_cpuio_result[1024];
++static ssize_t iq_cpuio_read(struct file *file, char __user *buf, size_t count, loff_t *pos)
++{
++    return simple_read_from_buffer(buf, count, pos, iq_cpuio_result, strlen(iq_cpuio_result));
++}
++static ssize_t iq_cpuio_write(struct file *file, const char __user *buf, size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev = file->private_data;
++    const struct rtw89_mac_gen_def *mac = rtwdev->chip->mac_def;
++    struct rtw89_cpuio_ctrl ctrl = {};
++    u32 filter, addr, aperture, initial, values[32] = {};
++    struct rtw89_mac_dle_dfi_ctrl dfi = { .type = DLE_CTRL_TYPE_PLE, .target = DLE_DFI_TYPE_PKTINFO };
++    u32 info = 0, link[3] = {}, physical = 0;
++    u64 dma_begin = 0, dma_ns = 0;
++    bool contiguous = false;
++    u32 dma_old[3] = {}, dma_ctrl = 0, dma_monitor = 0, copied = 0;
++    int dma_ret = -999;
++    unsigned int command, i;
++    u16 id;
++    int ret, release_ret;
++    bool verified = true;
++    char text[32];
++    if (count >= sizeof(text)) return -EINVAL;
++    if (copy_from_user(text, buf, count)) return -EFAULT;
++    text[count] = 0;
++    if (kstrtouint(text, 0, &command) || (command > 8192 || command % 8)) return -EINVAL;
++    wiphy_lock(rtwdev->hw->wiphy);
++    ret = mac->dle_buf_req(rtwdev, (command ? command : 104) + 24, false, &id);
++    if (ret) {
++        snprintf(iq_cpuio_result, sizeof(iq_cpuio_result), "allocate=%d\n", ret);
++        goto unlock;
++    }
++    dfi.addr = id;
++    if (!rtw89_mac_dle_dfi_cfg(rtwdev, &dfi)) info = dfi.out_data;
++    dfi.target = DLE_DFI_TYPE_PAGELLT;
++    for (i=0;i<3;i++) { dfi.addr=id+(i==2?32:i); if (!rtw89_mac_dle_dfi_cfg(rtwdev,&dfi)) link[i]=dfi.out_data; }
++    addr = 0x08000000 | (id << 15);
++    aperture = 0x80000 + (addr & 0x7ffff);
++    filter = rtw89_read32(rtwdev, 0xc04);
++    rtw89_write32(rtwdev, 0xc04, addr & ~0x7ffff);
++    initial = rtw89_read32(rtwdev, aperture);
++    if (initial == 0xffffffff || initial == 0xdeadbeef) {
++        verified = false;
++    } else {
++        values[0] = (3 << 24) | (command ? command : 72);
++        values[1] = id | (8 << 16);
++        values[4] = command;
++        values[5] = 0x1234abcd;
++        for (i = 6; i < ARRAY_SIZE(values); ++i) values[i] = 0x49510000 | i;
++        for (i = 0; i < 6; ++i) rtw89_write32(rtwdev, aperture + i * 4, values[i]);
++        for (i = 6; i < ((command ? command : 104) + 24) / 4; ++i) rtw89_write32(rtwdev, aperture + i * 4, 0x49510000 | i);
++        for (i = 0; i < ((command ? command : 104) + 24) / 4; ++i)
++            if (rtw89_read32(rtwdev, aperture + i * 4) != (i < 6 ? values[i] : (0x49510000 | i))) verified = false;
++    }
++    if (verified && command == 4096 && id + 33 <= 1089) {
++        contiguous = true; dfi.target = DLE_DFI_TYPE_PAGELLT;
++        for(i=0;i<33;i++) { dfi.addr=id+i; if(rtw89_mac_dle_dfi_cfg(rtwdev,&dfi) || (dfi.out_data & 0xfff)!=(i==32?0xfff:id+i+1)) contiguous=false; }
++        rtw89_write32(rtwdev,0xc04,0x18700000);
++        physical=0x18766000+id*128+24;
++        if(rtw89_read32(rtwdev,0x80000+0x66000+id*128)!=values[0] || rtw89_read32(rtwdev,0x80000+0x66000+id*128+24)!=0x49510006) contiguous=false;
++    }
++    if (verified && (command == 128 || command == 4096)) {
++        rtw89_write32(rtwdev, 0xc04, 0x18008000);
++        for (i = 0; i < 3; ++i) dma_old[i] = rtw89_read32(rtwdev, 0x80050 + 4 * i);
++        dma_ctrl = dma_old[2];
++        if (dma_ctrl != 0xdeadbeef && !(dma_ctrl & BIT(31)) && !(rtw89_read32(rtwdev, 0x800e8) & BIT(5))) {
++            rtw89_write32(rtwdev, 0x80050, command == 4096 ? 0x18716000 : addr + 96);
++            rtw89_write32(rtwdev, 0x80054, contiguous ? physical : addr + 24);
++            rtw89_write32(rtwdev, 0x80058, command == 4096 ? 4096 : 32);
++            dma_begin = ktime_get_ns();
++            rtw89_write32(rtwdev, 0x80058, BIT(31) | (command == 4096 ? 4096 : 32));
++            dma_ret = read_poll_timeout_atomic(rtw89_read32, dma_ctrl, !(dma_ctrl & BIT(31)), 1, 1000, false, rtwdev, 0x80058);
++            dma_ns = ktime_get_ns()-dma_begin;
++            dma_monitor = rtw89_read32(rtwdev, 0x800fc);
++            if (!dma_ret) {
++                for (i = 0; i < 3; ++i) rtw89_write32(rtwdev, 0x80050 + 4 * i, dma_old[i]);
++                rtw89_write32(rtwdev, 0x800e4, BIT(5));
++            }
++        }
++        rtw89_write32(rtwdev, 0xc04, addr & ~0x7ffff);
++        copied = rtw89_read32(rtwdev, aperture + 24);
++    }
++    rtw89_write32(rtwdev, 0xc04, filter);
++    ctrl.cmd_type = CPUIO_OP_CMD_ENQ_TO_TAIL;
++    ctrl.start_pktid = id; ctrl.end_pktid = id;
++    if (command && verified) {
++        ctrl.dst_pid = PLE_DLE_PORT_ID_DISPATCH;
++        ctrl.dst_qid = 0;
++    } else {
++        ctrl.dst_pid = PLE_DLE_PORT_ID_PLRLS;
++        ctrl.dst_qid = PLE_DLE_QUEID_NO_REPORT;
++    }
++    release_ret = mac->set_cpuio(rtwdev, &ctrl, false);
++    snprintf(iq_cpuio_result, sizeof(iq_cpuio_result),
++             "id=%u virtual=0x%x initial=0x%x verified=%u port=%u queue=%u enqueue=%d dma=%d ctrl=0x%x mon=0x%x copied=0x%x info=0x%x links=%x,%x,%x physical=%u dma_ns=%llu\n",
++             id, addr, initial, verified, ctrl.dst_pid, ctrl.dst_qid, release_ret, dma_ret, dma_ctrl, dma_monitor, copied, info,link[0],link[1],link[2],contiguous,dma_ns);
++unlock:
++    wiphy_unlock(rtwdev->hw->wiphy);
++    return count;
++}
++static const struct file_operations iq_cpuio_fops = {
++    .owner = THIS_MODULE, .open = simple_open, .read = iq_cpuio_read,
++    .write = iq_cpuio_write, .llseek = default_llseek,
++};
++static int iq_dle_req(struct rtw89_dev *rtwdev, u16 buf_len, bool wd, u16 *pkt_id)
++{
++	u32 val, reg;
++	int ret;
++
++	reg = wd ? R_BE_WD_BUF_REQ : R_BE_PL_BUF_REQ;
++	val = buf_len;
++	val |= B_BE_WD_BUF_REQ_EXEC;
++	rtw89_write32(rtwdev, reg, val);
++
++	reg = wd ? R_BE_WD_BUF_STATUS : R_BE_PL_BUF_STATUS;
++
++	ret = read_poll_timeout_atomic(rtw89_read32, val, val & B_BE_WD_BUF_STAT_DONE,
++				1, 2000, false, rtwdev, reg);
++	if (ret)
++		return ret;
++
++	*pkt_id = u32_get_bits(val, B_BE_WD_BUF_STAT_PKTID_MASK);
++	if (*pkt_id == S_WD_BUF_STAT_PKTID_INVALID)
++		return -ENOENT;
++
++	return 0;
++}
++
++static int iq_set_cpuio(struct rtw89_dev *rtwdev,
++			struct rtw89_cpuio_ctrl *ctrl_para, bool wd)
++{
++	u32 val_op0, val_op1, val_op2, val_op3;
++	u32 val, cmd_type, reg;
++	int ret;
++
++	cmd_type = ctrl_para->cmd_type;
++
++	reg = wd ? R_BE_WD_CPUQ_OP_3 : R_BE_PL_CPUQ_OP_3;
++	val_op3 = u32_replace_bits(0, ctrl_para->start_pktid,
++				   B_BE_WD_CPUQ_OP_STRT_PKTID_MASK);
++	val_op3 = u32_replace_bits(val_op3, ctrl_para->end_pktid,
++				   B_BE_WD_CPUQ_OP_END_PKTID_MASK);
++	rtw89_write32(rtwdev, reg, val_op3);
++
++	reg = wd ? R_BE_WD_CPUQ_OP_1 : R_BE_PL_CPUQ_OP_1;
++	val_op1 = u32_replace_bits(0, ctrl_para->src_pid,
++				   B_BE_WD_CPUQ_OP_SRC_PID_MASK);
++	val_op1 = u32_replace_bits(val_op1, ctrl_para->src_qid,
++				   B_BE_WD_CPUQ_OP_SRC_QID_MASK);
++	val_op1 = u32_replace_bits(val_op1, ctrl_para->macid,
++				   B_BE_WD_CPUQ_OP_SRC_MACID_MASK);
++	rtw89_write32(rtwdev, reg, val_op1);
++
++	reg = wd ? R_BE_WD_CPUQ_OP_2 : R_BE_PL_CPUQ_OP_2;
++	val_op2 = u32_replace_bits(0, ctrl_para->dst_pid,
++				   B_BE_WD_CPUQ_OP_DST_PID_MASK);
++	val_op2 = u32_replace_bits(val_op2, ctrl_para->dst_qid,
++				   B_BE_WD_CPUQ_OP_DST_QID_MASK);
++	val_op2 = u32_replace_bits(val_op2, ctrl_para->macid,
++				   B_BE_WD_CPUQ_OP_DST_MACID_MASK);
++	rtw89_write32(rtwdev, reg, val_op2);
++
++	reg = wd ? R_BE_WD_CPUQ_OP_0 : R_BE_PL_CPUQ_OP_0;
++	val_op0 = u32_replace_bits(0, cmd_type,
++				   B_BE_WD_CPUQ_OP_CMD_TYPE_MASK);
++	val_op0 = u32_replace_bits(val_op0, ctrl_para->pkt_num,
++				   B_BE_WD_CPUQ_OP_PKTNUM_MASK);
++	val_op0 |= B_BE_WD_CPUQ_OP_EXEC;
++	rtw89_write32(rtwdev, reg, val_op0);
++
++	reg = wd ? R_BE_WD_CPUQ_OP_STATUS : R_BE_PL_CPUQ_OP_STATUS;
++
++	ret = read_poll_timeout_atomic(rtw89_read32, val, val & B_BE_WD_CPUQ_OP_STAT_DONE,
++				1, 2000, false, rtwdev, reg);
++	if (ret) {
++		rtw89_err(rtwdev, "[ERR]set cpuio wd timeout\n");
++		rtw89_err(rtwdev, "[ERR]op_0=0x%X, op_1=0x%X, op_2=0x%X\n",
++			  val_op0, val_op1, val_op2);
++		return ret;
++	}
++
++	if (cmd_type == CPUIO_OP_CMD_GET_NEXT_PID ||
++	    cmd_type == CPUIO_OP_CMD_GET_1ST_PID)
++		ctrl_para->pktid = u32_get_bits(val, B_BE_WD_CPUQ_OP_PKTID_MASK);
++
++	return 0;
++}
++
++/* Only map an allocation still owned by this producer. Check every link;
++ * packet IDs do not imply physical contiguity. Fall back to virtual DMA. */
++static u32 iq_owned_physical(struct rtw89_dev *rtwdev, u16 id, u32 bytes)
++{
++    struct rtw89_mac_dle_dfi_ctrl dfi = {
++        .type = DLE_CTRL_TYPE_PLE, .target = DLE_DFI_TYPE_PAGELLT,
++    };
++    u32 pages = DIV_ROUND_UP(bytes + 24, 128), i;
++    if (id + pages > 1089) return 0;
++    for (i = 0; i < pages; ++i) {
++        dfi.addr = id + i;
++        if (rtw89_mac_dle_dfi_cfg(rtwdev, &dfi) ||
++            (dfi.out_data & 0xfff) != (i + 1 == pages ? 0xfff : id + i + 1))
++            return 0;
++    }
++    return 0x18766000 + id * 128 + 24;
++}
++
++/* Raw LA -> IDDMA channel 5 -> owned PLE -> host dispatch. */
++static u32 iq_chunk_bytes = 8192, iq_sample_rate = 5000000;
++static atomic_t iq_stream_claimed = ATOMIC_INIT(0);
++static bool iq_stop, iq_running, iq_physical, iq_pipeline, iq_dual;
++/* Release the global wireless mutex only between completed DMA copies.
++ * rfkill/regulatory workers can otherwise hold RTNL while waiting for us,
++ * delaying unrelated network operations for the entire SDR acquisition.
++ * Restore the shared MMIO aperture before unlocking, then sample its new
++ * idle value after reacquiring it. Existing elapsed/ring guards cover waits.
++ */
++struct iq_stalls { u64 max_gap, last_gap, max_yield, last_yield; u32 reason; };
++static u64 iq_stream_yield(struct rtw89_dev *rtwdev, u32 *filter, u64 *deadline, struct iq_stalls *stats)
++{
++    u64 now=ktime_get_ns();
++    if(now<*deadline) return now;
++    rtw89_write32(rtwdev,0xc04,*filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    /* A deadline task can starve CFS ksoftirqd even at cond_resched().
++     * No IDDMA copy is active here; leave a bounded RX-service window. */
++    if(current->policy==SCHED_DEADLINE) usleep_range(25,50);
++    else cond_resched();
++    wiphy_lock(rtwdev->hw->wiphy);
++    *filter=rtw89_read32(rtwdev,0xc04);
++    rtw89_write32(rtwdev,0xc04,0x18008000);
++    if(stats) { stats->last_yield=ktime_get_ns()-now; stats->max_yield=max(stats->max_yield,stats->last_yield); }
++    now=ktime_get_ns(); *deadline=now+2000000;
++    return now;
++}
++static ssize_t iq_stream_serial(struct file *file, const char __user *buf, size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev = file->private_data;
++    struct rtw89_cpuio_ctrl queue = { .cmd_type = CPUIO_OP_CMD_ENQ_TO_TAIL };
++    u32 filter, dma_old[3], ctrl, monitor = 0, addr, aperture, state;
++    u32 last = 0, wp, rp = 0, backlog = 0, max_backlog = 0;
++    u32 produced = 0, consumed = 0, packets = 0, loss, headers[6];
++    u16 id;
++    u32 failure_stage=0, end_la, end_wp, end_dma, end_status;
++    u32 physical = 0, physical_packets = 0;
++    u64 validation_ns = 0;
++    bool use_physical = READ_ONCE(iq_physical);
++    int ret = 0, i;
++    u64 start, elapsed, end, stamp, timing[4] = {}, last_poll, poll_limit, yield_at;
++    u32 sample_rate=READ_ONCE(iq_sample_rate);
++    unsigned int ms, bytes = READ_ONCE(iq_chunk_bytes), records = bytes / 8;
++    char text[24];
++    if (count >= sizeof(text) || copy_from_user(text, buf, count)) return -EINVAL;
++    text[count] = 0;
++    if (kstrtouint(text, 0, &ms) || (ms && ms < 10) || ms > 60000) return -EINVAL;
++    if (bytes != 4096 && bytes != 8192) return -EINVAL;
++    if (!sample_rate || sample_rate > 160000000) return -EINVAL;
++    if (atomic_cmpxchg(&iq_stream_claimed,0,1)) return -EBUSY;
++    wiphy_lock(rtwdev->hw->wiphy);
++    WRITE_ONCE(iq_stop, false); WRITE_ONCE(iq_running, true);
++    filter = rtw89_read32(rtwdev, 0xc04);
++    rtw89_write32(rtwdev, 0xc04, 0x18008000);
++    for (i = 0; i < 3; ++i) dma_old[i] = rtw89_read32(rtwdev, 0x80050 + 4*i);
++    if ((dma_old[2] & BIT(31)) || dma_old[2] == 0xdeadbeef || (rtw89_read32(rtwdev, 0x800e8) & BIT(5))) { ret = -EBUSY; goto finish; }
++    rtw89_write32(rtwdev, 0x9668, 0);
++    rtw89_write32(rtwdev, 0x9660, (4<<16)|(11<<8)|1);
++    start = ktime_get_ns(); end = start + (u64)ms * 1000000;
++    last_poll=start; yield_at=start+2000000; poll_limit=40960ULL*900000000ULL/sample_rate;
++    rtw89_write32(rtwdev, 0x9660, (4<<16)|(11<<8)|9);
++    while (!READ_ONCE(iq_stop) && (!ms || ktime_get_ns() < end)) {
++        stamp=iq_stream_yield(rtwdev,&filter,&yield_at,NULL);
++        if (stamp-last_poll >= poll_limit) { failure_stage=5; ret=-EOVERFLOW; break; }
++        last_poll=stamp;
++        if (fatal_signal_pending(current)) { ret=-EINTR; break; }
++        state = rtw89_read32(rtwdev, 0x9664); wp = state & 0xffff;
++        if (((state >> 17) & 7) != 1) { failure_stage=4; ret = -EIO; break; }
++        if (wp >= 40960) { ret = -ERANGE; break; }
++        produced += (wp + 40960 - last) % 40960; last = wp;
++        backlog = produced - consumed;
++        if (backlog > max_backlog) max_backlog = backlog;
++        if (backlog >= 40960) { failure_stage=6; ret = -EOVERFLOW; break; }
++        if (backlog < records) { udelay(2); cond_resched(); continue; }
++        stamp = ktime_get_ns();
++        ret = iq_dle_req(rtwdev, bytes + 24, false, &id);
++        if (ret) { failure_stage=1; break; }
++        timing[0] += ktime_get_ns()-stamp; stamp = ktime_get_ns();
++        if (use_physical) {
++            physical = iq_owned_physical(rtwdev, id, bytes);
++            validation_ns += ktime_get_ns()-stamp; stamp = ktime_get_ns();
++            if (physical) physical_packets++;
++        }
++        addr = 0x08000000 | (id << 15); aperture = 0x80000 + (addr & 0x7ffff);
++        rtw89_write32(rtwdev, 0xc04, addr & ~0x7ffff);
++        headers[0] = (3<<24)|bytes; headers[1] = id|(8<<16);
++        headers[2] = 0; headers[3] = 0; headers[4] = 0; headers[5] = consumed;
++        for (i=0; i<6; ++i) rtw89_write32(rtwdev, aperture+4*i, headers[i]);
++        rtw89_write32(rtwdev, 0xc04, 0x18008000);
++        rtw89_write32(rtwdev, 0x80050, 0x18716000+rp*8);
++        rtw89_write32(rtwdev, 0x80054, physical ? physical : addr+24);
++        rtw89_write32(rtwdev, 0x80058, BIT(31)|bytes);
++        timing[1] += ktime_get_ns()-stamp; stamp = ktime_get_ns();
++        ret = read_poll_timeout_atomic(rtw89_read32, ctrl, !(ctrl & BIT(31)), 1, 1000, false, rtwdev, 0x80058);
++        timing[2] += ktime_get_ns()-stamp; stamp = ktime_get_ns();
++        monitor = rtw89_read32(rtwdev, 0x800fc);
++        if (ret) { failure_stage=2; break; } /* Keep ownership if DMA has not finished; reset on unload. */
++        /* Do not forward a block that the LA writer lapped during copy. */
++        state = rtw89_read32(rtwdev, 0x9664); wp = state & 0xffff;
++        stamp = ktime_get_ns();
++        if (wp >= 40960 || stamp-last_poll >= poll_limit) ret=-EOVERFLOW;
++        else {
++            produced += (wp+40960-last)%40960; last=wp; last_poll=stamp;
++            if (produced-consumed >= 40960) ret=-EOVERFLOW;
++            else if (((state>>17)&7)!=1) ret=-EIO;
++        }
++        queue.start_pktid = id; queue.end_pktid = id;
++        queue.dst_pid = ret ? PLE_DLE_PORT_ID_PLRLS : PLE_DLE_PORT_ID_DISPATCH;
++        queue.dst_qid = 0;
++        if (!ret) rtw89_write32(rtwdev, 0x800e4, BIT(5));
++        i = iq_set_cpuio(rtwdev, &queue, false);
++        if (ret || i) { failure_stage=ret?7:3; if (!ret) ret = i; break; }
++        timing[3] += ktime_get_ns()-stamp;
++        consumed += records; rp = (rp+records)%40960; packets++;
++        cond_resched();
++    }
++    elapsed = ktime_get_ns()-start;
++    end_la=rtw89_read32(rtwdev,0x9660); end_wp=rtw89_read32(rtwdev,0x9664);
++    end_dma=rtw89_read32(rtwdev,0x80058); end_status=rtw89_read32(rtwdev,0x800e8);
++    rtw89_write32(rtwdev, 0x9660, (4<<16)|(11<<8));
++    loss = rtw89_read32(rtwdev, 0x966c);
++    snprintf(iq_cpuio_result,sizeof(iq_cpuio_result),"ret=%d packets=%u produced=%u consumed=%u max_backlog=%u elapsed_ns=%llu loss=0x%x monitor=0x%x stages_ns=%llu,%llu,%llu,%llu physical=%u validation_ns=%llu fault_stage=%u last_state=%x end_la=%x end_wp=%x end_dma=%x end_status=%x host_packets=%llu host_drops=%llu\n",ret,packets,produced,consumed,max_backlog,elapsed,loss,monitor,timing[0],timing[1],timing[2],timing[3],physical_packets,validation_ns,failure_stage,state,end_la,end_wp,end_dma,end_status,READ_ONCE(iq_scope_packets),READ_ONCE(iq_scope_dropped));
++finish:
++    rtw89_write32(rtwdev, 0xc04, 0x18008000);
++    if (!(rtw89_read32(rtwdev, 0x80058) & BIT(31)))
++        for (i=0; i<3; ++i) rtw89_write32(rtwdev,0x80050+4*i,dma_old[i]);
++    rtw89_write32(rtwdev, 0xc04, filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    WRITE_ONCE(iq_running, false);
++    atomic_set(&iq_stream_claimed,0);
++    return ret == -EBUSY ? ret : count;
++}
++/* Packet preparation and host dispatch overlap IDDMA; never enqueue an
++ * unfinished copy or write a packet after dispatch transfers ownership. */
++static void iq_header_packet(struct rtw89_dev *rtwdev, u32 bytes, u32 seq, u16 id)
++{
++    u32 addr=0x08000000|(id<<15), aperture=0x80000+(addr&0x7ffff), h[6];
++    int i;
++    rtw89_write32(rtwdev,0xc04,addr&~0x7ffff);
++    h[0]=(3<<24)|bytes; h[1]=id|(8<<16); h[2]=h[3]=h[4]=0; h[5]=seq;
++    for(i=0;i<6;i++) rtw89_write32(rtwdev,aperture+4*i,h[i]);
++    rtw89_write32(rtwdev,0xc04,0x18008000);
++}
++static int iq_prepare_packet(struct rtw89_dev *rtwdev, u32 bytes, u32 seq, u16 *id)
++{
++    int ret=iq_dle_req(rtwdev,bytes+24,false,id);
++    if(!ret) iq_header_packet(rtwdev,bytes,seq,*id);
++    return ret;
++}
++
++static int iq_dispatch_packet(struct rtw89_dev *rtwdev, u16 id, bool release)
++{
++    struct rtw89_cpuio_ctrl q = {
++        .cmd_type=CPUIO_OP_CMD_ENQ_TO_TAIL,
++        .start_pktid=id, .end_pktid=id,
++        .dst_pid=release ? PLE_DLE_PORT_ID_PLRLS : PLE_DLE_PORT_ID_DISPATCH,
++        .dst_qid=0,
++    };
++    return iq_set_cpuio(rtwdev,&q,false);
++}
++
++static ssize_t iq_stream_pipeline(struct file *file, const char __user *buf, size_t count, loff_t *pos)
++{
++    struct rtw89_dev *rtwdev=file->private_data;
++    u32 filter, dma4_old[3]={}, dma_old[3], ctrl=0, state, last=0, wp, rp=0;
++    u32 produced=0, consumed=0, packets=0, backlog=0, max_backlog=0;
++    u32 raw_rate=READ_ONCE(iq_sample_rate), bytes=READ_ONCE(iq_chunk_bytes), records=bytes/8;
++    u16 id=0, previous_id=0, next_id=0;
++    bool dual=READ_ONCE(iq_dual), owned=false, previous=false, next_owned=false, dma_active=false, started=false;
++    u64 start=ktime_get_ns(), end, now, last_poll, poll_limit, stamp, yield_at, timing[4]={};
++    int ret=0, next_ret=0, i, queued;
++    u32 snap[7]={};
++    struct iq_stalls stats={};
++    unsigned int ms;
++    char text[24];
++    if(count>=sizeof(text)||copy_from_user(text,buf,count)) return -EINVAL;
++    text[count]=0;
++    if(kstrtouint(text,0,&ms)||(ms&&ms<10)||ms>60000) return -EINVAL;
++    if((bytes!=4096&&bytes!=8192&&bytes!=10240)||!raw_rate||raw_rate>160000000) return -EINVAL;
++    if(atomic_cmpxchg(&iq_stream_claimed,0,1)) return -EBUSY;
++    wiphy_lock(rtwdev->hw->wiphy);
++    WRITE_ONCE(iq_stop,false); WRITE_ONCE(iq_running,true);
++    filter=rtw89_read32(rtwdev,0xc04);
++    rtw89_write32(rtwdev,0xc04,0x18008000);
++    for(i=0;i<3;i++) dma_old[i]=rtw89_read32(rtwdev,0x80050+4*i);
++    if((dma_old[2]&BIT(31))||dma_old[2]==0xdeadbeef||(rtw89_read32(rtwdev,0x800e8)&BIT(5))) {
++        ret=-EBUSY; goto finish;
++    }
++    if (dual) {
++        for(i=0;i<3;i++) dma4_old[i]=rtw89_read32(rtwdev,0x80040+4*i);
++        if ((dma4_old[2]&BIT(31)) || (rtw89_read32(rtwdev,0x800e8)&BIT(4))) { ret=-EBUSY; dual=false; goto finish; }
++    }
++    ret=iq_prepare_packet(rtwdev,bytes,0,&id);
++    if(ret) goto finish;
++    owned=true;
++    rtw89_write32(rtwdev,0x9668,0);
++    rtw89_write32(rtwdev,0x9660,(4<<16)|(11<<8)|1);
++    start=ktime_get_ns(); end=start+(u64)ms*1000000;
++    last_poll=start; yield_at=start+2000000; poll_limit=40960ULL*900000000ULL/raw_rate;
++    rtw89_write32(rtwdev,0x9660,(4<<16)|(11<<8)|9); started=true;
++    while(!READ_ONCE(iq_stop)&&(!ms||ktime_get_ns()<end)) {
++        now=iq_stream_yield(rtwdev,&filter,&yield_at,&stats);
++        stats.last_gap=now-last_poll; stats.max_gap=max(stats.max_gap,stats.last_gap);
++        if(now-last_poll>=poll_limit) { stats.reason=1; ret=-EOVERFLOW; break; }
++        last_poll=now;
++        if(fatal_signal_pending(current)) { ret=-EINTR; break; }
++        state=rtw89_read32(rtwdev,0x9664); wp=state&0xffff;
++        if(((state>>17)&7)!=1) { ret=-EIO; break; }
++        if(wp>=40960) { ret=-ERANGE; break; }
++        produced+=(wp+40960-last)%40960; last=wp;
++        backlog=produced-consumed; max_backlog=max(backlog,max_backlog);
++        if(backlog>=40960) { stats.reason=2; ret=-EOVERFLOW; break; }
++        if(backlog<records) { udelay(2); cond_resched(); continue; }
++        stamp=ktime_get_ns();
++        if (dual) {
++            rtw89_write32(rtwdev,0x80040,0x18716000+rp*8);
++            rtw89_write32(rtwdev,0x80044,(0x08000000|(id<<15))+24);
++            rtw89_write32(rtwdev,0x80048,BIT(31)|(bytes/2));
++        }
++        rtw89_write32(rtwdev,0x80050,0x18716000+rp*8+(dual?bytes/2:0));
++        rtw89_write32(rtwdev,0x80054,(0x08000000|(id<<15))+24+(dual?bytes/2:0));
++        rtw89_write32(rtwdev,0x80058,BIT(31)|(dual?bytes/2:bytes)); dma_active=true;
++        timing[1]+=ktime_get_ns()-stamp; stamp=ktime_get_ns();
++        if(previous) {
++            queued=iq_dispatch_packet(rtwdev,previous_id,false);
++            previous=false; /* On timeout, ownership is uncertain; unload. */
++            if(queued) next_ret=queued; else packets++;
++        }
++        timing[3]+=ktime_get_ns()-stamp; stamp=ktime_get_ns();
++        if(!next_ret) {
++            next_ret=iq_dle_req(rtwdev,bytes+24,false,&next_id);
++            next_owned=!next_ret;
++        }
++        timing[0]+=ktime_get_ns()-stamp; stamp=ktime_get_ns();
++        ret=read_poll_timeout_atomic(rtw89_read32,ctrl,!(ctrl&BIT(31)),1,1000,false,rtwdev,0x80058);
++        if (!ret && dual) ret=read_poll_timeout_atomic(rtw89_read32,ctrl,!(ctrl&BIT(31)),1,1000,false,rtwdev,0x80048);
++        timing[2]+=ktime_get_ns()-stamp;
++        if(ret) break; /* Never free a packet while DMA may still be writing. */
++        dma_active=false; rtw89_write32(rtwdev,0x800e4,BIT(5)|(dual?BIT(4):0));
++        now=iq_stream_yield(rtwdev,&filter,&yield_at,&stats);
++        stats.last_gap=now-last_poll; stats.max_gap=max(stats.max_gap,stats.last_gap);
++        if(now-last_poll>=poll_limit) { stats.reason=3; ret=-EOVERFLOW; break; }
++        last_poll=now;
++        wp=rtw89_read32(rtwdev,0x9664)&0xffff;
++        if(wp>=40960) { ret=-ERANGE; break; }
++        produced+=(wp+40960-last)%40960; last=wp;
++        backlog=produced-consumed; max_backlog=max(backlog,max_backlog);
++        /* Source must not wrap onto a block during the copy itself. */
++        if(backlog>=40960) { stats.reason=4; ret=-EOVERFLOW; break; }
++        consumed+=records; rp=(rp+records)%40960;
++        previous_id=id; previous=true; owned=false;
++        if(next_ret) { ret=next_ret; break; }
++        id=next_id; owned=next_owned; next_owned=false;
++        iq_header_packet(rtwdev,bytes,consumed,id);
++        cond_resched();
++    }
++finish:
++    snap[0]=rtw89_read32(rtwdev,0x9660); snap[1]=rtw89_read32(rtwdev,0x9664);
++    snap[2]=rtw89_read32(rtwdev,0x3098); snap[3]=rtw89_read32(rtwdev,0x309c);
++    snap[4]=rtw89_read32(rtwdev,0x21090); snap[5]=rtw89_read32(rtwdev,0x20014); snap[6]=rtw89_read32(rtwdev,0x21094);
++    if(started) rtw89_write32(rtwdev,0x9660,(4<<16)|(11<<8));
++    if(previous) { queued=iq_dispatch_packet(rtwdev,previous_id,false); if(!queued) packets++; else if(!ret) ret=queued; }
++    if(owned&&!dma_active) iq_dispatch_packet(rtwdev,id,true);
++    if(next_owned) iq_dispatch_packet(rtwdev,next_id,true);
++    rtw89_write32(rtwdev,0xc04,0x18008000);
++    if(!(rtw89_read32(rtwdev,0x80058)&BIT(31)))
++        for(i=0;i<3;i++) rtw89_write32(rtwdev,0x80050+4*i,dma_old[i]);
++    if (dual && !(rtw89_read32(rtwdev,0x80048)&BIT(31)))
++        for(i=0;i<3;i++) rtw89_write32(rtwdev,0x80040+4*i,dma4_old[i]);
++    snprintf(iq_cpuio_result,sizeof(iq_cpuio_result),
++      "ret=%d pipeline=1 snap=%x,%x,%x,%x,%x,%x,%x packets=%u produced=%u consumed=%u max_backlog=%u elapsed_ns=%llu loss=0x%x stages_ns=%llu,%llu,%llu,%llu policy=%u reason=%u gap_ns=%llu,%llu yield_ns=%llu,%llu\n",
++      ret,snap[0],snap[1],snap[2],snap[3],snap[4],snap[5],snap[6],packets,produced,consumed,max_backlog,ktime_get_ns()-start,rtw89_read32(rtwdev,0x966c),timing[0],timing[1],timing[2],timing[3],current->policy,stats.reason,stats.max_gap,stats.last_gap,stats.max_yield,stats.last_yield);
++    {
++        const u32 addresses[]={0x21098,0x2109c,0x210a0,0x210b4,0x210b8,0x210bc,0x210e4,0x210e8,0x210f0,0x8428};
++        size_t used=strlen(iq_cpuio_result);
++        for(i=0;i<ARRAY_SIZE(addresses);i++)
++            used+=scnprintf(iq_cpuio_result+used,sizeof(iq_cpuio_result)-used," %x=%x",addresses[i],rtw89_read32(rtwdev,addresses[i]));
++    }
++    rtw89_write32(rtwdev,0xc04,filter);
++    wiphy_unlock(rtwdev->hw->wiphy);
++    WRITE_ONCE(iq_running,false); atomic_set(&iq_stream_claimed,0);
++    return ret==-EBUSY?ret:count;
++}
++
++static ssize_t iq_stream_write(struct file *file, const char __user *buf, size_t count, loff_t *pos)
++{
++    return READ_ONCE(iq_pipeline) ? iq_stream_pipeline(file,buf,count,pos) : iq_stream_serial(file,buf,count,pos);
++}
++
++static const struct file_operations iq_stream_fops = {
++    .owner=THIS_MODULE, .open=simple_open, .read=iq_cpuio_read,
++    .write=iq_stream_write, .llseek=default_llseek,
++};
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+ 
+ #ifdef CONFIG_RTW89_DEBUGMSG
+ unsigned int rtw89_debug_mask;
+@@ -1264,10 +1979,10 @@ static int rtw89_debug_dump_mac_mem(struct rtw89_dev *rtwdev,
+ 		dump_len = min_t(u32, remain, mem_page_size);
+ 		rtw89_write32(rtwdev, filter_model_addr, base_addr);
+ 		for (i = indir_access_addr + residue;
+-		     i < indir_access_addr + dump_len;) {
++		     i < indir_access_addr + residue + dump_len;) {
+ 			p += scnprintf(p, end - p, "%08xh:", i);
+ 			for (j = 0;
+-			     j < 4 && i < indir_access_addr + dump_len;
++			     j < 4 && i < indir_access_addr + residue + dump_len;
+ 			     j++, i += 4) {
+ 				val = rtw89_read32(rtwdev, i);
+ 				p += scnprintf(p, end - p, "  %08x", val);
+@@ -5719,7 +6434,27 @@ static const struct rtw89_debugfs rtw89_debugfs_templ = {
+ static
+ void rtw89_debugfs_add_sec0(struct rtw89_dev *rtwdev, struct dentry *debugfs_topdir)
+ {
+-	rtw89_debugfs_add_rw(read_reg);
++	debugfs_create_u32("iq_sample_rate", 0600, debugfs_topdir, &iq_sample_rate);
++    debugfs_create_u32("iq_chunk_bytes", 0600, debugfs_topdir, &iq_chunk_bytes);
++    debugfs_create_bool("iq_dual", 0600, debugfs_topdir, &iq_dual);
++    debugfs_create_bool("iq_pipeline", 0600, debugfs_topdir, &iq_pipeline);
++    debugfs_create_bool("iq_physical", 0600, debugfs_topdir, &iq_physical);
++    debugfs_create_bool("iq_stop", 0600, debugfs_topdir, &iq_stop);
++    debugfs_create_bool("iq_running", 0400, debugfs_topdir, &iq_running);
++    debugfs_create_file("iq_drain", 0600, debugfs_topdir, rtwdev, &iq_drain_fops);
++	debugfs_create_file("iq_stream", 0600, debugfs_topdir, rtwdev, &iq_stream_fops);
++	debugfs_create_file("iq_cpuio", 0600, debugfs_topdir, rtwdev, &iq_cpuio_fops);
++	debugfs_create_file("iq_rom", 0400, debugfs_topdir, rtwdev, &iq_rom_fops);
++	debugfs_create_file("iq_table", 0400, debugfs_topdir, rtwdev, &iq_table_fops);
++	debugfs_create_file("iq_memory", 0400, debugfs_topdir, rtwdev, &iq_memory_fops);
++    iq_scope_data = vzalloc(IQ_SCOPE_LIMIT);
++    debugfs_create_file("scope_data", 0600, debugfs_topdir, NULL, &iq_scope_fops);
++    debugfs_create_u64("iq_desc_total", 0400, debugfs_topdir, &iq_desc_total);
++    debugfs_create_u64("iq_desc_scope", 0400, debugfs_topdir, &iq_desc_scope);
++    debugfs_create_u64("iq_core_total", 0400, debugfs_topdir, &iq_core_total);
++    debugfs_create_u64("scope_packets", 0400, debugfs_topdir, &iq_scope_packets);
++    debugfs_create_u64("scope_dropped", 0400, debugfs_topdir, &iq_scope_dropped);
++    rtw89_debugfs_add_rw(read_reg);
+ 	rtw89_debugfs_add_w(write_reg);
+ 	rtw89_debugfs_add_rw(read_rf);
+ 	rtw89_debugfs_add_w(write_rf);
+@@ -5777,6 +6512,7 @@ void rtw89_debugfs_init(struct rtw89_dev *rtwdev)
+ 
+ void rtw89_debugfs_deinit(struct rtw89_dev *rtwdev)
+ {
++	vfree(iq_scope_data); iq_scope_data = NULL;
+ 	kfree(rtwdev->debugfs);
+ }
+ #endif
+diff --git a/debug.h b/debug.h
+index f53d8ac..059a9a4 100644
+--- a/debug.h
++++ b/debug.h
+@@ -6,6 +6,8 @@
+ #define __RTW89_DEBUG_H__
+ 
+ #include "core.h"
++void rtw89_iq_observe(unsigned int stage, unsigned int type);
++void rtw89_scope_record(struct sk_buff *skb, struct rtw89_rx_desc_info *desc);
+ 
+ enum rtw89_debug_mask {
+ 	RTW89_DBG_TXRX = BIT(0),
+diff --git a/pci.c b/pci.c
+index 42d34bc..d803c6c 100644
+--- a/pci.c
++++ b/pci.c
+@@ -365,6 +365,7 @@ static u32 rtw89_pci_rxbd_deliver_skbs(struct rtw89_dev *rtwdev,
+ 		}
+ 
+ 		rtw89_chip_query_rxdesc(rtwdev, desc_info, skb->data, rxinfo_size);
++        rtw89_iq_observe(0, desc_info->pkt_type);
+ 
+ 		new = rtw89_alloc_skb_for_rx(rtwdev, desc_info->pkt_size);
+ 		if (!new)
+diff --git a/rtw8922a.c b/rtw8922a.c
+index 2ea0674..03ff98e 100644
+--- a/rtw8922a.c
++++ b/rtw8922a.c
+@@ -177,17 +177,21 @@ static const struct rtw89_hfc_param_ini rtw8922a_hfc_param_ini_usb3[] = {
+ 	[RTW89_QTA_INVALID] = {NULL},
+ };
+ 
++/* Experimental receive-only LA layout recovered from official RTL8922A mode 8. */
++static const struct rtw89_dle_size iq_wde = {64, 1408, 0, 0};
++static const struct rtw89_dle_size iq_ple = {128, 1089, 239, 0x66000};
++static const struct rtw89_wde_quota iq_wde_q = {1382, 6, 0, 20};
++static const struct rtw89_ple_quota iq_ple_min = {128,128,32,16,19,13,165,292,44,18,128,4,0,0};
++static const struct rtw89_ple_quota iq_ple_max = {128,128,32,118,121,115,394,394,146,120,394,106,0,0};
++static const struct rtw89_rsvd_quota iq_rsvd_q = {1,107,107,6,6,6,6,0,0,0};
++static const struct rtw89_dle_rsvd_size iq_buffer = {0x16000, 0x50000};
+ static const struct rtw89_dle_mem rtw8922a_dle_mem_pcie[] = {
+-	[RTW89_QTA_SCC] = {RTW89_QTA_SCC, &rtw89_mac_size.wde_size0_v1,
+-			   &rtw89_mac_size.ple_size0_v1, &rtw89_mac_size.wde_qt0_v1,
+-			   &rtw89_mac_size.wde_qt0_v1, &rtw89_mac_size.ple_qt0,
+-			   &rtw89_mac_size.ple_qt1, &rtw89_mac_size.ple_rsvd_qt0,
+-			   &rtw89_mac_size.rsvd0_size0, &rtw89_mac_size.rsvd1_size0},
+-	[RTW89_QTA_DBCC] = {RTW89_QTA_DBCC, &rtw89_mac_size.wde_size0_v1,
+-			   &rtw89_mac_size.ple_size0_v1, &rtw89_mac_size.wde_qt0_v1,
+-			   &rtw89_mac_size.wde_qt0_v1, &rtw89_mac_size.ple_qt0,
+-			   &rtw89_mac_size.ple_qt1, &rtw89_mac_size.ple_rsvd_qt0,
+-			   &rtw89_mac_size.rsvd0_size0, &rtw89_mac_size.rsvd1_size0},
++	[RTW89_QTA_SCC] = {RTW89_QTA_SCC, &iq_wde, &iq_ple,
++		&iq_wde_q, &iq_wde_q, &iq_ple_min, &iq_ple_max,
++		&iq_rsvd_q, &iq_buffer, &rtw89_mac_size.rsvd1_size0},
++	[RTW89_QTA_DBCC] = {RTW89_QTA_DBCC, &iq_wde, &iq_ple,
++        &iq_wde_q, &iq_wde_q, &iq_ple_min, &iq_ple_max,
++        &iq_rsvd_q, &iq_buffer, &rtw89_mac_size.rsvd1_size0},
+ 	[RTW89_QTA_DLFW] = {RTW89_QTA_DLFW, &rtw89_mac_size.wde_size3_v1,
+ 			    &rtw89_mac_size.ple_size3_v1, &rtw89_mac_size.wde_qt4,
+ 			    &rtw89_mac_size.wde_qt4, &rtw89_mac_size.ple_qt9,

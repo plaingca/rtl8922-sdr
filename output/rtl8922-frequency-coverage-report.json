@@ -1,0 +1,1389 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "mhz": 2412,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27756",
+          "file": "frozen-2412-500000.bin",
+          "fft": {
+            "peak_hz": 488891.6015625,
+            "peak_median_db": 57.01413297325084,
+            "image_rejection_db": 46.16598396484396,
+            "rms": 5.140184940725436
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x2772e",
+          "file": "frozen-2412--500000.bin",
+          "fft": {
+            "peak_hz": -510864.2578125,
+            "peak_median_db": 56.67001922460195,
+            "image_rejection_db": 46.54238015016987,
+            "rms": 5.387491084209541
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 2412000000,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321fd,1,800,1124957f,2801,700000 packets=488 produced=500192 consumed=499712 max_backlog=1787 elapsed_ns=100070459 loss=0x0 stages_ns=1339815,22387,41587633,1835693 policy=6 reason=0 gap_ns=149526,95403 yield_ns=54675,53533\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -512695.3125,
+          "peak_median_db": 47.34355417549498,
+          "image_rejection_db": 43.19486875067653,
+          "rms": 5.40457876646932
+        }
+      }
+    },
+    {
+      "mhz": 2437,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x276bc",
+          "file": "frozen-2437-500000.bin",
+          "fft": {
+            "peak_hz": 488891.6015625,
+            "peak_median_db": 52.87055087498331,
+            "image_rejection_db": 46.48982554009888,
+            "rms": 4.120117501586374
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x277b5",
+          "file": "frozen-2437--500000.bin",
+          "fft": {
+            "peak_hz": -510864.2578125,
+            "peak_median_db": 54.099227962393726,
+            "image_rejection_db": 47.76963104860998,
+            "rms": 4.21855060836907
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 6 (2437 MHz), width: 20 MHz, center1: 2437 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 2436999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321fb,1,800,1124957f,2801,700000 packets=488 produced=500191 consumed=499712 max_backlog=1782 elapsed_ns=100069968 loss=0x0 stages_ns=1284810,21503,41446953,1836019 policy=6 reason=0 gap_ns=146290,92187 yield_ns=54895,53192\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -512695.3125,
+          "peak_median_db": 44.083919530409155,
+          "image_rejection_db": 37.19228974417974,
+          "rms": 4.362632184089137
+        }
+      }
+    },
+    {
+      "mhz": 2472,
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)",
+      "tones": []
+    },
+    {
+      "mhz": 2484,
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)",
+      "tones": []
+    },
+    {
+      "mhz": 5180,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x277c8",
+          "file": "frozen-5180-500000.bin",
+          "fft": {
+            "peak_hz": 477294.921875,
+            "peak_median_db": 41.87887436402633,
+            "image_rejection_db": 34.57427846781706,
+            "rms": 1.6093238500109999
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x277f9",
+          "file": "frozen-5180--500000.bin",
+          "fft": {
+            "peak_hz": -522460.9375,
+            "peak_median_db": 42.16255476696066,
+            "image_rejection_db": 35.68220290850039,
+            "rms": 1.6785993108978632
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 36 (5180 MHz), width: 20 MHz, center1: 5180 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5179999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321fe,1,800,1124957f,2801,700000 packets=488 produced=500193 consumed=499712 max_backlog=1789 elapsed_ns=100070899 loss=0x0 stages_ns=1276396,22555,41463168,1840301 policy=6 reason=0 gap_ns=148905,93249 yield_ns=79251,53462\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 34.54746144313709,
+          "image_rejection_db": 33.115319535088766,
+          "rms": 1.71048021519851
+        }
+      }
+    },
+    {
+      "mhz": 5240,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x2773d",
+          "file": "frozen-5240-500000.bin",
+          "fft": {
+            "peak_hz": 476684.5703125,
+            "peak_median_db": 43.212048968511105,
+            "image_rejection_db": 33.02330989376462,
+            "rms": 1.767281536647279
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x27795",
+          "file": "frozen-5240--500000.bin",
+          "fft": {
+            "peak_hz": -523071.2890625,
+            "peak_median_db": 43.52834134701129,
+            "image_rejection_db": 37.87322766960323,
+            "rms": 1.7323305902654755
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 48 (5240 MHz), width: 20 MHz, center1: 5240 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5239999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321fc,1,800,1124957f,2801,700000 packets=488 produced=500191 consumed=499712 max_backlog=1796 elapsed_ns=100069809 loss=0x0 stages_ns=1286404,22446,41500377,1849757 policy=6 reason=0 gap_ns=150227,92336 yield_ns=54985,53031\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 34.738830097155706,
+          "image_rejection_db": 38.739818565955574,
+          "rms": 1.7282771231554872
+        }
+      }
+    },
+    {
+      "mhz": 5320,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27759",
+          "file": "frozen-5320-500000.bin",
+          "fft": {
+            "peak_hz": 476684.5703125,
+            "peak_median_db": 43.378066514779775,
+            "image_rejection_db": 33.98249639091566,
+            "rms": 1.713797910491092
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x27797",
+          "file": "frozen-5320--500000.bin",
+          "fft": {
+            "peak_hz": -523071.2890625,
+            "peak_median_db": 42.52902992166335,
+            "image_rejection_db": 40.7940882149592,
+            "rms": 1.6439980276143922
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 64 (5320 MHz), width: 20 MHz, center1: 5320 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5319999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321f0,1,800,1124957f,2801,700000 packets=488 produced=500178 consumed=499712 max_backlog=1784 elapsed_ns=100068237 loss=0x0 stages_ns=1284506,21012,41422691,1835070 policy=6 reason=0 gap_ns=148874,92897 yield_ns=54905,53542\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 33.39815670511295,
+          "image_rejection_db": 29.1303254772864,
+          "rms": 1.6374041776794148
+        }
+      }
+    },
+    {
+      "mhz": 5500,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27709",
+          "file": "frozen-5500-500000.bin",
+          "fft": {
+            "peak_hz": 476074.21875,
+            "peak_median_db": 43.13724575692924,
+            "image_rejection_db": 38.254402570901775,
+            "rms": 1.9169550851776975
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x27786",
+          "file": "frozen-5500--500000.bin",
+          "fft": {
+            "peak_hz": -523681.640625,
+            "peak_median_db": 43.42514933383192,
+            "image_rejection_db": 34.999438683330105,
+            "rms": 1.9103949686284254
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 100 (5500 MHz), width: 20 MHz, center1: 5500 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5499999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321f9,1,800,1124957f,2801,700000 packets=488 produced=500188 consumed=499712 max_backlog=1778 elapsed_ns=100069338 loss=0x0 stages_ns=1330503,21257,41407220,1848084 policy=6 reason=0 gap_ns=149034,93068 yield_ns=66437,54033\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 32.995093442538355,
+          "image_rejection_db": 31.51330528701991,
+          "rms": 1.8100589889060805
+        }
+      }
+    },
+    {
+      "mhz": 5600,
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)",
+      "tones": []
+    },
+    {
+      "mhz": 5720,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27795",
+          "file": "frozen-5720-500000.bin",
+          "fft": {
+            "peak_hz": 475463.8671875,
+            "peak_median_db": 41.867846097274565,
+            "image_rejection_db": 35.25039719541931,
+            "rms": 2.5994947400673056
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x276a0",
+          "file": "frozen-5720--500000.bin",
+          "fft": {
+            "peak_hz": -524291.9921875,
+            "peak_median_db": 40.68718440013814,
+            "image_rejection_db": 35.26149365200864,
+            "rms": 2.544540055140849
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 144 (5720 MHz), width: 20 MHz, center1: 5720 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5719999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,32201,1,800,1124957f,2801,700000 packets=488 produced=500196 consumed=499712 max_backlog=1790 elapsed_ns=100070863 loss=0x0 stages_ns=1284385,21926,41419392,1841279 policy=6 reason=0 gap_ns=148994,92667 yield_ns=56518,53322\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 31.821735362625574,
+          "image_rejection_db": 27.554505836847397,
+          "rms": 2.549180081793495
+        }
+      }
+    },
+    {
+      "mhz": 5745,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27758",
+          "file": "frozen-5745-500000.bin",
+          "fft": {
+            "peak_hz": 475463.8671875,
+            "peak_median_db": 40.565242347092635,
+            "image_rejection_db": 33.329475639629536,
+            "rms": 2.641981218876013
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x276ed",
+          "file": "frozen-5745--500000.bin",
+          "fft": {
+            "peak_hz": -524291.9921875,
+            "peak_median_db": 41.0445638113272,
+            "image_rejection_db": 36.49707948782428,
+            "rms": 2.713454398724572
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 149 (5745 MHz), width: 20 MHz, center1: 5745 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5744999998,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321ee,1,800,1124957f,2801,700000 packets=488 produced=500177 consumed=499712 max_backlog=1790 elapsed_ns=100066846 loss=0x0 stages_ns=1326478,22423,41339788,1837691 policy=6 reason=0 gap_ns=148884,92306 yield_ns=54353,53222\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 31.883807751411503,
+          "image_rejection_db": 35.78311200998646,
+          "rms": 2.730999361580097
+        }
+      }
+    },
+    {
+      "mhz": 5805,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x28519",
+          "file": "frozen-5805-500000.bin",
+          "fft": {
+            "peak_hz": 475463.8671875,
+            "peak_median_db": 37.94634151339391,
+            "image_rejection_db": 30.168323905085273,
+            "rms": 2.222038626966737
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x27732",
+          "file": "frozen-5805--500000.bin",
+          "fft": {
+            "peak_hz": -524902.34375,
+            "peak_median_db": 38.43969300684431,
+            "image_rejection_db": 36.195751427832,
+            "rms": 2.257903646655491
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 161 (5805 MHz), width: 20 MHz, center1: 5805 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5804999998,
+      "tone_delta_hz": 1000366.2109375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321f9,1,800,1124957f,2801,700000 packets=488 produced=500188 consumed=499712 max_backlog=1789 elapsed_ns=100068980 loss=0x0 stages_ns=1301146,22328,41435003,1847259 policy=6 reason=0 gap_ns=149054,92596 yield_ns=79161,53452\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 30.048280626239013,
+          "image_rejection_db": 28.653217765464806,
+          "rms": 2.318333433627966
+        }
+      }
+    },
+    {
+      "mhz": 5825,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x2775b",
+          "file": "frozen-5825-500000.bin",
+          "fft": {
+            "peak_hz": 475463.8671875,
+            "peak_median_db": 38.66516528740896,
+            "image_rejection_db": 32.593525042217955,
+            "rms": 2.1028910781630135
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x276e7",
+          "file": "frozen-5825--500000.bin",
+          "fft": {
+            "peak_hz": -524902.34375,
+            "peak_median_db": 38.49709846571055,
+            "image_rejection_db": 32.81787078949176,
+            "rms": 2.105182900779277
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 165 (5825 MHz), width: 20 MHz, center1: 5825 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5824999998,
+      "tone_delta_hz": 1000366.2109375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321ff,1,800,1124957f,2801,700000 packets=488 produced=500193 consumed=499712 max_backlog=1773 elapsed_ns=100071405 loss=0x0 stages_ns=1302693,22390,41400034,1841494 policy=6 reason=0 gap_ns=146018,94581 yield_ns=57219,53242\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 28.389842341708405,
+          "image_rejection_db": 33.121069338687164,
+          "rms": 2.0447427549130053
+        }
+      }
+    },
+    {
+      "mhz": 5885,
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)",
+      "tones": []
+    },
+    {
+      "mhz": 5935,
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)",
+      "tones": []
+    },
+    {
+      "mhz": 5955,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x276dd",
+          "file": "frozen-5955-500000.bin",
+          "fft": {
+            "peak_hz": 474853.515625,
+            "peak_median_db": 40.545196789050834,
+            "image_rejection_db": 32.51540586374286,
+            "rms": 1.9237930786019477
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x276b0",
+          "file": "frozen-5955--500000.bin",
+          "fft": {
+            "peak_hz": -524902.34375,
+            "peak_median_db": 39.04503871454117,
+            "image_rejection_db": 33.08063962763769,
+            "rms": 1.8761544714153644
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 1 (5955 MHz), width: 20 MHz, center1: 5955 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5955000000,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321f9,1,800,1124957f,2801,700000 packets=488 produced=500187 consumed=499712 max_backlog=1791 elapsed_ns=100069993 loss=0x0 stages_ns=1290531,22096,41470076,1845275 policy=6 reason=0 gap_ns=149015,94510 yield_ns=54655,53032\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 27.768468987371072,
+          "image_rejection_db": 30.999776406484333,
+          "rms": 1.8003413393306065
+        }
+      }
+    },
+    {
+      "mhz": 5975,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x27706",
+          "file": "frozen-5975-500000.bin",
+          "fft": {
+            "peak_hz": 474853.515625,
+            "peak_median_db": 36.50529714035924,
+            "image_rejection_db": 30.185365341185264,
+            "rms": 1.784318781506164
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x277a6",
+          "file": "frozen-5975--500000.bin",
+          "fft": {
+            "peak_hz": -524902.34375,
+            "peak_median_db": 37.81510397576582,
+            "image_rejection_db": 33.376479471134274,
+            "rms": 1.7926731787983385
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 5 (5975 MHz), width: 20 MHz, center1: 5975 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5975000000,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321f3,1,800,1124957f,2801,700000 packets=488 produced=500182 consumed=499712 max_backlog=1785 elapsed_ns=100069352 loss=0x0 stages_ns=1292897,21941,41416487,1850857 policy=6 reason=0 gap_ns=148975,92396 yield_ns=77709,53692\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -522460.9375,
+          "peak_median_db": 26.352026625557553,
+          "image_rejection_db": 27.111758368274494,
+          "rms": 1.7792549170227416
+        }
+      }
+    },
+    {
+      "mhz": 5995,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": 500000,
+          "state": "0x276cc",
+          "file": "frozen-5995-500000.bin",
+          "fft": {
+            "peak_hz": 474853.515625,
+            "peak_median_db": 31.01942861864508,
+            "image_rejection_db": 21.856475288379084,
+            "rms": 1.6676657597485918
+          }
+        },
+        {
+          "offset_hz": -500000,
+          "state": "0x27836",
+          "file": "frozen-5995--500000.bin",
+          "fft": {
+            "peak_hz": -524902.34375,
+            "peak_median_db": 37.032626350209206,
+            "image_rejection_db": 31.865526040153625,
+            "rms": 1.7351901857350127
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 9 (5995 MHz), width: 20 MHz, center1: 5995 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "pluto_actual_lo": 5995000000,
+      "tone_delta_hz": 999755.859375,
+      "rf_tone_pass": true,
+      "transport": {
+        "returncode": 0,
+        "host": "{\"packets\":488,\"bytes\":3997696,\"sequence_gaps\":0,\"pending_bytes\":0,\"producer_errno\":0,\"policy_errno\":0,\"driver_ret\":0}\n",
+        "stderr": "",
+        "producer": "ret=0 pipeline=1 snap=40b01,321fd,1,800,1124957f,2801,700000 packets=488 produced=500192 consumed=499712 max_backlog=1779 elapsed_ns=100069933 loss=0x0 stages_ns=1331921,21975,41372745,1842138 policy=6 reason=0 gap_ns=146640,92697 yield_ns=54815,53472\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+        "fft": {
+          "peak_hz": -527343.75,
+          "peak_median_db": 27.927248021791108,
+          "image_rejection_db": 23.95422272809869,
+          "rms": 1.7487590681581242
+        }
+      }
+    },
+    {
+      "mhz": 6035,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x276ca",
+          "file": "frozen-6035-None.bin",
+          "fft": {
+            "peak_hz": 5000000.0,
+            "peak_median_db": 18.224276773714333,
+            "image_rejection_db": 11.769390895824767,
+            "rms": 1.5992633025439758
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 17 (6035 MHz), width: 20 MHz, center1: 6035 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    },
+    {
+      "mhz": 6115,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x27690",
+          "file": "frozen-6115-None.bin",
+          "fft": {
+            "peak_hz": 5000000.0,
+            "peak_median_db": 21.60969906094735,
+            "image_rejection_db": 14.204888177451096,
+            "rms": 1.613313196330086
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 33 (6115 MHz), width: 20 MHz, center1: 6115 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    },
+    {
+      "mhz": 6415,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x27796",
+          "file": "frozen-6415-None.bin",
+          "fft": {
+            "peak_hz": 5154418.9453125,
+            "peak_median_db": 11.46870572049448,
+            "image_rejection_db": 3.5942570269640726,
+            "rms": 2.913572313478466
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 93 (6415 MHz), width: 20 MHz, center1: 6415 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    },
+    {
+      "mhz": 6695,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x2769d",
+          "file": "frozen-6695-None.bin",
+          "fft": {
+            "peak_hz": -37231.4453125,
+            "peak_median_db": 12.39476187316717,
+            "image_rejection_db": 2.098591211792608,
+            "rms": 2.1571635765509605
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 149 (6695 MHz), width: 20 MHz, center1: 6695 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    },
+    {
+      "mhz": 6995,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x27761",
+          "file": "frozen-6995-None.bin",
+          "fft": {
+            "peak_hz": 5223388.671875,
+            "peak_median_db": 18.234194189058933,
+            "image_rejection_db": 14.699342199311845,
+            "rms": 2.81474109873282
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 209 (6995 MHz), width: 20 MHz, center1: 6995 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    },
+    {
+      "mhz": 7115,
+      "tune_returncode": 0,
+      "tune_error": "",
+      "tones": [
+        {
+          "offset_hz": null,
+          "state": "0x27689",
+          "file": "frozen-7115-None.bin",
+          "fft": {
+            "peak_hz": 5000000.0,
+            "peak_median_db": 22.33722329333301,
+            "image_rejection_db": 16.501739490459013,
+            "rms": 3.655939838915063
+          }
+        }
+      ],
+      "iw_info": "Interface wlp13s0\n\tifindex 950\n\twdev 0x1\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 0\n\tchannel 233 (7115 MHz), width: 20 MHz, center1: 7115 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+      "rf_tone_pass": null,
+      "limitation": "Tuned and captured data only; Pluto reference cannot exceed6GHz."
+    }
+  ],
+  "original_regulatory": "global\ncountry 00: DFS-UNSET\n\t(755 - 928 @ 2), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(2402 - 2472 @ 40), (N/A, 20), (N/A)\n\t(2457 - 2482 @ 20), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(2474 - 2494 @ 20), (N/A, 20), (N/A), NO-OFDM, PASSIVE-SCAN\n\t(5170 - 5250 @ 80), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(5250 - 5330 @ 80), (N/A, 20), (0 ms), DFS, AUTO-BW, PASSIVE-SCAN\n\t(5490 - 5730 @ 160), (N/A, 20), (0 ms), DFS, PASSIVE-SCAN\n\t(5735 - 5835 @ 80), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(57240 - 63720 @ 2160), (N/A, 0), (N/A)\n\n",
+  "world_phy": "Wiphy phy0\n\twiphy index: 0\n\tmax # scan SSIDs: 8\n\tmax scan IEs length: 339 bytes\n\tmax # sched scan SSIDs: 8\n\tmax # match sets: 0\n\tRetry short limit: 7\n\tRetry long limit: 4\n\tCoverage class: 0 (up to 0m)\n\tDevice supports AP-side u-APSD.\n\tDevice supports T-DLS.\n\tSupported Ciphers:\n\t\t* WEP40 (00-0f-ac:1)\n\t\t* WEP104 (00-0f-ac:5)\n\t\t* TKIP (00-0f-ac:2)\n\t\t* CCMP-128 (00-0f-ac:4)\n\t\t* CCMP-256 (00-0f-ac:10)\n\t\t* GCMP-128 (00-0f-ac:8)\n\t\t* GCMP-256 (00-0f-ac:9)\n\t\t* CMAC (00-0f-ac:6)\n\t\t* CMAC-256 (00-0f-ac:13)\n\t\t* GMAC-128 (00-0f-ac:11)\n\t\t* GMAC-256 (00-0f-ac:12)\n\tAvailable Antennas: TX 0x3 RX 0x3\n\tConfigured Antennas: TX 0 RX 0\n\tSupported interface modes:\n\t\t * managed\n\t\t * AP\n\t\t * AP/VLAN\n\t\t * monitor\n\t\t * P2P-client\n\t\t * P2P-GO\n\tBand 1:\n\t\tCapabilities: 0x19ef\n\t\t\tRX LDPC\n\t\t\tHT20/HT40\n\t\t\tSM Power Save disabled\n\t\t\tRX HT20 SGI\n\t\t\tRX HT40 SGI\n\t\t\tTX STBC\n\t\t\tRX STBC 1-stream\n\t\t\tMax AMSDU length: 7935 bytes\n\t\t\tDSSS/CCK HT40\n\t\tMaximum RX AMPDU length 65535 bytes (exponent: 0x003)\n\t\tMinimum RX AMPDU time spacing: No restriction (0x00)\n\t\tHT Max RX data rate: 300 Mbps\n\t\tHT TX/RX MCS rate indexes supported: 0-15, 32\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x02701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/2.4GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x02701e586dc0270e9db900):\n\t\t\t\tHE40/2.4GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 1.0 Mbps\n\t\t\t* 2.0 Mbps\n\t\t\t* 5.5 Mbps\n\t\t\t* 11.0 Mbps\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 2412 MHz [1] (20.0 dBm)\n\t\t\t* 2417 MHz [2] (20.0 dBm)\n\t\t\t* 2422 MHz [3] (20.0 dBm)\n\t\t\t* 2427 MHz [4] (20.0 dBm)\n\t\t\t* 2432 MHz [5] (20.0 dBm)\n\t\t\t* 2437 MHz [6] (20.0 dBm)\n\t\t\t* 2442 MHz [7] (20.0 dBm)\n\t\t\t* 2447 MHz [8] (20.0 dBm)\n\t\t\t* 2452 MHz [9] (20.0 dBm)\n\t\t\t* 2457 MHz [10] (20.0 dBm)\n\t\t\t* 2462 MHz [11] (20.0 dBm)\n\t\t\t* 2467 MHz [12] (20.0 dBm) (no IR)\n\t\t\t* 2472 MHz [13] (20.0 dBm) (no IR)\n\t\t\t* 2484 MHz [14] (20.0 dBm) (no IR)\n\tBand 2:\n\t\tCapabilities: 0x19ef\n\t\t\tRX LDPC\n\t\t\tHT20/HT40\n\t\t\tSM Power Save disabled\n\t\t\tRX HT20 SGI\n\t\t\tRX HT40 SGI\n\t\t\tTX STBC\n\t\t\tRX STBC 1-stream\n\t\t\tMax AMSDU length: 7935 bytes\n\t\t\tDSSS/CCK HT40\n\t\tMaximum RX AMPDU length 65535 bytes (exponent: 0x003)\n\t\tMinimum RX AMPDU time spacing: No restriction (0x00)\n\t\tHT Max RX data rate: 300 Mbps\n\t\tHT TX/RX MCS rate indexes supported: 0-15, 32\n\t\tVHT Capabilities (0x03d071f6):\n\t\t\tMax MPDU length: 11454\n\t\t\tSupported Channel Width: 160 MHz\n\t\t\tRX LDPC\n\t\t\tshort GI (80 MHz)\n\t\t\tshort GI (160/80+80 MHz)\n\t\t\tTX STBC\n\t\t\tSU Beamformee\n\t\t\tMU Beamformee\n\t\t\t+HTC-VHT\n\t\tVHT RX MCS set:\n\t\t\t1 streams: MCS 0-9\n\t\t\t2 streams: MCS 0-9\n\t\t\t3 streams: not supported\n\t\t\t4 streams: not supported\n\t\t\t5 streams: not supported\n\t\t\t6 streams: not supported\n\t\t\t7 streams: not supported\n\t\t\t8 streams: not supported\n\t\tVHT RX highest supported: 1733 Mbps\n\t\tVHT TX MCS set:\n\t\t\t1 streams: MCS 0-9\n\t\t\t2 streams: MCS 0-9\n\t\t\t3 streams: not supported\n\t\t\t4 streams: not supported\n\t\t\t5 streams: not supported\n\t\t\t6 streams: not supported\n\t\t\t7 streams: not supported\n\t\t\t8 streams: not supported\n\t\tVHT TX highest supported: 1733 Mbps\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e586dc0270e9db900):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 5180 MHz [36] (20.0 dBm) (no IR)\n\t\t\t* 5200 MHz [40] (20.0 dBm) (no IR)\n\t\t\t* 5220 MHz [44] (20.0 dBm) (no IR)\n\t\t\t* 5240 MHz [48] (20.0 dBm) (no IR)\n\t\t\t* 5260 MHz [52] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5280 MHz [56] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5300 MHz [60] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5320 MHz [64] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5500 MHz [100] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5520 MHz [104] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5540 MHz [108] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5560 MHz [112] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5580 MHz [116] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5600 MHz [120] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5620 MHz [124] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5640 MHz [128] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5660 MHz [132] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5680 MHz [136] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5700 MHz [140] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5720 MHz [144] (20.0 dBm) (no IR, radar detection)\n\t\t\t* 5745 MHz [149] (20.0 dBm) (no IR)\n\t\t\t* 5765 MHz [153] (20.0 dBm) (no IR)\n\t\t\t* 5785 MHz [157] (20.0 dBm) (no IR)\n\t\t\t* 5805 MHz [161] (20.0 dBm) (no IR)\n\t\t\t* 5825 MHz [165] (20.0 dBm) (no IR)\n\t\t\t* 5845 MHz [169] (disabled)\n\t\t\t* 5865 MHz [173] (disabled)\n\t\t\t* 5885 MHz [177] (disabled)\n\tBand 4:\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e586dc0270e9db900):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 5955 MHz [1] (disabled)\n\t\t\t* 5975 MHz [5] (disabled)\n\t\t\t* 5995 MHz [9] (disabled)\n\t\t\t* 6015 MHz [13] (disabled)\n\t\t\t* 6035 MHz [17] (disabled)\n\t\t\t* 6055 MHz [21] (disabled)\n\t\t\t* 6075 MHz [25] (disabled)\n\t\t\t* 6095 MHz [29] (disabled)\n\t\t\t* 6115 MHz [33] (disabled)\n\t\t\t* 6135 MHz [37] (disabled)\n\t\t\t* 6155 MHz [41] (disabled)\n\t\t\t* 6175 MHz [45] (disabled)\n\t\t\t* 6195 MHz [49] (disabled)\n\t\t\t* 6215 MHz [53] (disabled)\n\t\t\t* 6235 MHz [57] (disabled)\n\t\t\t* 6255 MHz [61] (disabled)\n\t\t\t* 6275 MHz [65] (disabled)\n\t\t\t* 6295 MHz [69] (disabled)\n\t\t\t* 6315 MHz [73] (disabled)\n\t\t\t* 6335 MHz [77] (disabled)\n\t\t\t* 6355 MHz [81] (disabled)\n\t\t\t* 6375 MHz [85] (disabled)\n\t\t\t* 6395 MHz [89] (disabled)\n\t\t\t* 6415 MHz [93] (disabled)\n\t\t\t* 6435 MHz [97] (disabled)\n\t\t\t* 6455 MHz [101] (disabled)\n\t\t\t* 6475 MHz [105] (disabled)\n\t\t\t* 6495 MHz [109] (disabled)\n\t\t\t* 6515 MHz [113] (disabled)\n\t\t\t* 6535 MHz [117] (disabled)\n\t\t\t* 6555 MHz [121] (disabled)\n\t\t\t* 6575 MHz [125] (disabled)\n\t\t\t* 6595 MHz [129] (disabled)\n\t\t\t* 6615 MHz [133] (disabled)\n\t\t\t* 6635 MHz [137] (disabled)\n\t\t\t* 6655 MHz [141] (disabled)\n\t\t\t* 6675 MHz [145] (disabled)\n\t\t\t* 6695 MHz [149] (disabled)\n\t\t\t* 6715 MHz [153] (disabled)\n\t\t\t* 6735 MHz [157] (disabled)\n\t\t\t* 6755 MHz [161] (disabled)\n\t\t\t* 6775 MHz [165] (disabled)\n\t\t\t* 6795 MHz [169] (disabled)\n\t\t\t* 6815 MHz [173] (disabled)\n\t\t\t* 6835 MHz [177] (disabled)\n\t\t\t* 6855 MHz [181] (disabled)\n\t\t\t* 6875 MHz [185] (disabled)\n\t\t\t* 6895 MHz [189] (disabled)\n\t\t\t* 6915 MHz [193] (disabled)\n\t\t\t* 6935 MHz [197] (disabled)\n\t\t\t* 6955 MHz [201] (disabled)\n\t\t\t* 6975 MHz [205] (disabled)\n\t\t\t* 6995 MHz [209] (disabled)\n\t\t\t* 7015 MHz [213] (disabled)\n\t\t\t* 7035 MHz [217] (disabled)\n\t\t\t* 7055 MHz [221] (disabled)\n\t\t\t* 7075 MHz [225] (disabled)\n\t\t\t* 7095 MHz [229] (disabled)\n\t\t\t* 7115 MHz [233] (disabled)\n\tSupported commands:\n\t\t * new_interface\n\t\t * set_interface\n\t\t * new_key\n\t\t * start_ap\n\t\t * new_station\n\t\t * new_mpath\n\t\t * set_mesh_config\n\t\t * set_bss\n\t\t * authenticate\n\t\t * associate\n\t\t * deauthenticate\n\t\t * disassociate\n\t\t * join_ibss\n\t\t * join_mesh\n\t\t * remain_on_channel\n\t\t * set_tx_bitrate_mask\n\t\t * frame\n\t\t * frame_wait_cancel\n\t\t * set_wiphy_netns\n\t\t * set_channel\n\t\t * tdls_mgmt\n\t\t * tdls_oper\n\t\t * probe_client\n\t\t * set_noack_map\n\t\t * register_beacons\n\t\t * start_p2p_device\n\t\t * set_mcast_rate\n\t\t * connect\n\t\t * disconnect\n\t\t * channel_switch\n\t\t * set_qos_map\n\t\t * set_multicast_to_unicast\n\t\t * set_sar_specs\n\tWoWLAN support:\n\t\t * wake up on disconnect\n\t\t * wake up on magic packet\n\t\t * wake up on pattern match, up to 18 patterns of 1-128 bytes,\n\t\t   maximum packet offset 0 bytes\n\t\t * wake up on network detection, up to 8 match sets\n\tsoftware interface modes (can always be added):\n\t\t * AP/VLAN\n\t\t * monitor\n\tvalid interface combinations:\n\t\t * #{ managed } <= 1, #{ AP, P2P-client, P2P-GO } <= 1,\n\t\t   total <= 2, #channels <= 1\n\t\t * #{ managed } <= 1, #{ P2P-client, P2P-GO } <= 1,\n\t\t   total <= 2, #channels <= 2\n\tHT Capability overrides:\n\t\t * MCS: ff ff ff ff ff ff ff ff ff ff\n\t\t * maximum A-MSDU length\n\t\t * supported channel width\n\t\t * short GI for 40 MHz\n\t\t * max A-MPDU length exponent\n\t\t * min MPDU start spacing\n\tDevice supports TX status socket option.\n\tDevice supports HT-IBSS.\n\tDevice supports SAE with AUTHENTICATE command\n\tDevice supports scan flush.\n\tDevice supports per-vif TX power setting\n\tDriver supports full state transitions for AP/GO clients\n\tDriver supports a userspace MPM\n\tDevice supports configuring vdev MAC-addr on create.\n\tDevice supports randomizing MAC-addr in scans.\n\tmax # scan plans: 1\n\tmax scan plan interval: -1\n\tmax scan plan iterations: 0\n\tSupported TX frame types:\n\t\t * IBSS: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * managed: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * AP: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * mesh point: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-client: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-GO: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-device: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\tSupported RX frame types:\n\t\t * IBSS: 0x40 0xb0 0xc0 0xd0\n\t\t * managed: 0x40 0xb0 0xd0\n\t\t * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * mesh point: 0xb0 0xc0 0xd0\n\t\t * P2P-client: 0x40 0xd0\n\t\t * P2P-GO: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * P2P-device: 0x40 0xd0\n\tSupported extended features:\n\t\t* [ RRM ]: RRM\n\t\t* [ SET_SCAN_DWELL ]: scan dwell setting\n\t\t* [ FILS_STA ]: STA FILS (Fast Initial Link Setup)\n\t\t* [ CONTROL_PORT_OVER_NL80211 ]: control port over nl80211\n\t\t* [ TXQS ]: FQ-CoDel-enabled intermediate TXQs\n\t\t* [ SCAN_RANDOM_SN ]: use random sequence numbers in scans\n\t\t* [ CAN_REPLACE_PTK0 ]: can safely replace PTK 0 when rekeying\n\t\t* [ CONTROL_PORT_NO_PREAUTH ]: disable pre-auth over nl80211 control port support\n\t\t* [ SCAN_FREQ_KHZ ]: scan on kHz frequency support\n\t\t* [ CONTROL_PORT_OVER_NL80211_TX_STATUS ]: tx status for nl80211 control port support\n",
+  "regulatory_request_CA": {
+    "returncode": 0,
+    "stderr": ""
+  },
+  "test_regulatory": "global\ncountry CA: DFS-FCC\n\t(2402 - 2472 @ 40), (N/A, 30), (N/A)\n\t(5150 - 5250 @ 80), (N/A, 23), (N/A), NO-OUTDOOR, AUTO-BW\n\t(5250 - 5350 @ 80), (N/A, 24), (0 ms), DFS, AUTO-BW\n\t(5470 - 5600 @ 80), (N/A, 24), (0 ms), DFS\n\t(5650 - 5730 @ 80), (N/A, 24), (0 ms), DFS\n\t(5735 - 5835 @ 80), (N/A, 30), (N/A)\n\t(5925 - 7125 @ 320), (N/A, 12), (N/A), NO-OUTDOOR\n\n",
+  "test_phy": "Wiphy phy0\n\twiphy index: 0\n\tmax # scan SSIDs: 8\n\tmax scan IEs length: 339 bytes\n\tmax # sched scan SSIDs: 8\n\tmax # match sets: 0\n\tRetry short limit: 7\n\tRetry long limit: 4\n\tCoverage class: 0 (up to 0m)\n\tDevice supports AP-side u-APSD.\n\tDevice supports T-DLS.\n\tSupported Ciphers:\n\t\t* WEP40 (00-0f-ac:1)\n\t\t* WEP104 (00-0f-ac:5)\n\t\t* TKIP (00-0f-ac:2)\n\t\t* CCMP-128 (00-0f-ac:4)\n\t\t* CCMP-256 (00-0f-ac:10)\n\t\t* GCMP-128 (00-0f-ac:8)\n\t\t* GCMP-256 (00-0f-ac:9)\n\t\t* CMAC (00-0f-ac:6)\n\t\t* CMAC-256 (00-0f-ac:13)\n\t\t* GMAC-128 (00-0f-ac:11)\n\t\t* GMAC-256 (00-0f-ac:12)\n\tAvailable Antennas: TX 0x3 RX 0x3\n\tConfigured Antennas: TX 0 RX 0\n\tSupported interface modes:\n\t\t * managed\n\t\t * AP\n\t\t * AP/VLAN\n\t\t * monitor\n\t\t * P2P-client\n\t\t * P2P-GO\n\tBand 1:\n\t\tCapabilities: 0x19ef\n\t\t\tRX LDPC\n\t\t\tHT20/HT40\n\t\t\tSM Power Save disabled\n\t\t\tRX HT20 SGI\n\t\t\tRX HT40 SGI\n\t\t\tTX STBC\n\t\t\tRX STBC 1-stream\n\t\t\tMax AMSDU length: 7935 bytes\n\t\t\tDSSS/CCK HT40\n\t\tMaximum RX AMPDU length 65535 bytes (exponent: 0x003)\n\t\tMinimum RX AMPDU time spacing: No restriction (0x00)\n\t\tHT Max RX data rate: 300 Mbps\n\t\tHT TX/RX MCS rate indexes supported: 0-15, 32\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x02701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/2.4GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x02701e586dc0270e9db900):\n\t\t\t\tHE40/2.4GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 1.0 Mbps\n\t\t\t* 2.0 Mbps\n\t\t\t* 5.5 Mbps\n\t\t\t* 11.0 Mbps\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 2412 MHz [1] (30.0 dBm)\n\t\t\t* 2417 MHz [2] (30.0 dBm)\n\t\t\t* 2422 MHz [3] (30.0 dBm)\n\t\t\t* 2427 MHz [4] (30.0 dBm)\n\t\t\t* 2432 MHz [5] (30.0 dBm)\n\t\t\t* 2437 MHz [6] (30.0 dBm)\n\t\t\t* 2442 MHz [7] (30.0 dBm)\n\t\t\t* 2447 MHz [8] (30.0 dBm)\n\t\t\t* 2452 MHz [9] (30.0 dBm)\n\t\t\t* 2457 MHz [10] (30.0 dBm)\n\t\t\t* 2462 MHz [11] (30.0 dBm)\n\t\t\t* 2467 MHz [12] (disabled)\n\t\t\t* 2472 MHz [13] (disabled)\n\t\t\t* 2484 MHz [14] (disabled)\n\tBand 2:\n\t\tCapabilities: 0x19ef\n\t\t\tRX LDPC\n\t\t\tHT20/HT40\n\t\t\tSM Power Save disabled\n\t\t\tRX HT20 SGI\n\t\t\tRX HT40 SGI\n\t\t\tTX STBC\n\t\t\tRX STBC 1-stream\n\t\t\tMax AMSDU length: 7935 bytes\n\t\t\tDSSS/CCK HT40\n\t\tMaximum RX AMPDU length 65535 bytes (exponent: 0x003)\n\t\tMinimum RX AMPDU time spacing: No restriction (0x00)\n\t\tHT Max RX data rate: 300 Mbps\n\t\tHT TX/RX MCS rate indexes supported: 0-15, 32\n\t\tVHT Capabilities (0x03d071f6):\n\t\t\tMax MPDU length: 11454\n\t\t\tSupported Channel Width: 160 MHz\n\t\t\tRX LDPC\n\t\t\tshort GI (80 MHz)\n\t\t\tshort GI (160/80+80 MHz)\n\t\t\tTX STBC\n\t\t\tSU Beamformee\n\t\t\tMU Beamformee\n\t\t\t+HTC-VHT\n\t\tVHT RX MCS set:\n\t\t\t1 streams: MCS 0-9\n\t\t\t2 streams: MCS 0-9\n\t\t\t3 streams: not supported\n\t\t\t4 streams: not supported\n\t\t\t5 streams: not supported\n\t\t\t6 streams: not supported\n\t\t\t7 streams: not supported\n\t\t\t8 streams: not supported\n\t\tVHT RX highest supported: 1733 Mbps\n\t\tVHT TX MCS set:\n\t\t\t1 streams: MCS 0-9\n\t\t\t2 streams: MCS 0-9\n\t\t\t3 streams: not supported\n\t\t\t4 streams: not supported\n\t\t\t5 streams: not supported\n\t\t\t6 streams: not supported\n\t\t\t7 streams: not supported\n\t\t\t8 streams: not supported\n\t\tVHT TX highest supported: 1733 Mbps\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e586dc0270e9db900):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 5180 MHz [36] (23.0 dBm)\n\t\t\t* 5200 MHz [40] (23.0 dBm)\n\t\t\t* 5220 MHz [44] (23.0 dBm)\n\t\t\t* 5240 MHz [48] (23.0 dBm)\n\t\t\t* 5260 MHz [52] (24.0 dBm) (radar detection)\n\t\t\t* 5280 MHz [56] (24.0 dBm) (radar detection)\n\t\t\t* 5300 MHz [60] (24.0 dBm) (radar detection)\n\t\t\t* 5320 MHz [64] (24.0 dBm) (radar detection)\n\t\t\t* 5500 MHz [100] (24.0 dBm) (radar detection)\n\t\t\t* 5520 MHz [104] (24.0 dBm) (radar detection)\n\t\t\t* 5540 MHz [108] (24.0 dBm) (radar detection)\n\t\t\t* 5560 MHz [112] (24.0 dBm) (radar detection)\n\t\t\t* 5580 MHz [116] (24.0 dBm) (radar detection)\n\t\t\t* 5600 MHz [120] (disabled)\n\t\t\t* 5620 MHz [124] (disabled)\n\t\t\t* 5640 MHz [128] (disabled)\n\t\t\t* 5660 MHz [132] (24.0 dBm) (radar detection)\n\t\t\t* 5680 MHz [136] (24.0 dBm) (radar detection)\n\t\t\t* 5700 MHz [140] (24.0 dBm) (radar detection)\n\t\t\t* 5720 MHz [144] (24.0 dBm) (radar detection)\n\t\t\t* 5745 MHz [149] (30.0 dBm)\n\t\t\t* 5765 MHz [153] (30.0 dBm)\n\t\t\t* 5785 MHz [157] (30.0 dBm)\n\t\t\t* 5805 MHz [161] (30.0 dBm)\n\t\t\t* 5825 MHz [165] (30.0 dBm)\n\t\t\t* 5845 MHz [169] (disabled)\n\t\t\t* 5865 MHz [173] (disabled)\n\t\t\t* 5885 MHz [177] (disabled)\n\tBand 4:\n\t\tHE Iftypes: managed\n\t\t\tHE MAC Capabilities (0x0801100a8060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tTrigger Frame MAC Padding Duration: 2\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e1f6dc0270e9dbd00):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation: 3\n\t\t\t\tDCM Max NSS Tx: 1\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tTX 1024-QAM\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tHE Iftypes: AP\n\t\t\tHE MAC Capabilities (0x0001120a0060):\n\t\t\t\t+HTC HE Supported\n\t\t\t\tAll Ack\n\t\t\t\tBSR\n\t\t\t\tOM Control\n\t\t\t\tMaximum A-MPDU Length Exponent: 2\n\t\t\t\tOPS\n\t\t\t\tA-MSDU in A-MPDU\n\t\t\tHE PHY Capabilities: (0x0c701e586dc0270e9db900):\n\t\t\t\tHE40/HE80/5GHz\n\t\t\t\tHE160/5GHz\n\t\t\t\tDevice Class: 1\n\t\t\t\tLDPC Coding in Payload\n\t\t\t\tHE SU PPDU with 1x HE-LTF and 0.8us GI\n\t\t\t\tNDP with 4x HE-LTF and 3.2us GI\n\t\t\t\tSTBC Tx <= 80MHz\n\t\t\t\tSTBC Rx <= 80MHz\n\t\t\t\tDoppler Tx\n\t\t\t\tDCM Max Constellation Rx: 3\n\t\t\t\tRx HE MU PPDU from Non-AP STA\n\t\t\t\tSU Beamformee\n\t\t\t\tBeamformee STS <= 80Mhz: 3\n\t\t\t\tBeamformee STS > 80Mhz: 3\n\t\t\t\tNg = 16 SU Feedback\n\t\t\t\tNg = 16 MU Feedback\n\t\t\t\tCodebook Size SU Feedback\n\t\t\t\tCodebook Size MU Feedback\n\t\t\t\tTriggered SU Beamforming Feedback\n\t\t\t\tPartial Bandwidth Extended Range\n\t\t\t\tPower Boost Factor ar\n\t\t\t\tHE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI\n\t\t\t\tMax NC: 1\n\t\t\t\tHE ER SU PPDU 4x HE-LTF 0.8us GI\n\t\t\t\t20MHz in 160/80+80MHz HE PPDU\n\t\t\t\t80MHz in 160/80+80MHz HE PPDU\n\t\t\t\tHE ER SU PPDU 1x HE-LTF 0.8us GI\n\t\t\t\tDCM Max BW: 2\n\t\t\t\tLonger Than 16HE SIG-B OFDM Symbols\n\t\t\t\tRX 1024-QAM\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Compression SIGB\n\t\t\t\tRX Full BW SU Using HE MU PPDU with Non-Compression SIGB\n\t\t\tHE RX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set <= 80 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE RX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\t\tHE TX MCS and NSS set 160 MHz\n\t\t\t\t1 streams: MCS 0-11\n\t\t\t\t2 streams: MCS 0-11\n\t\t\t\t3 streams: not supported\n\t\t\t\t4 streams: not supported\n\t\t\t\t5 streams: not supported\n\t\t\t\t6 streams: not supported\n\t\t\t\t7 streams: not supported\n\t\t\t\t8 streams: not supported\n\t\tBitrates (non-HT):\n\t\t\t* 6.0 Mbps\n\t\t\t* 9.0 Mbps\n\t\t\t* 12.0 Mbps\n\t\t\t* 18.0 Mbps\n\t\t\t* 24.0 Mbps\n\t\t\t* 36.0 Mbps\n\t\t\t* 48.0 Mbps\n\t\t\t* 54.0 Mbps\n\t\tFrequencies:\n\t\t\t* 5955 MHz [1] (12.0 dBm)\n\t\t\t* 5975 MHz [5] (12.0 dBm)\n\t\t\t* 5995 MHz [9] (12.0 dBm)\n\t\t\t* 6015 MHz [13] (12.0 dBm)\n\t\t\t* 6035 MHz [17] (12.0 dBm)\n\t\t\t* 6055 MHz [21] (12.0 dBm)\n\t\t\t* 6075 MHz [25] (12.0 dBm)\n\t\t\t* 6095 MHz [29] (12.0 dBm)\n\t\t\t* 6115 MHz [33] (12.0 dBm)\n\t\t\t* 6135 MHz [37] (12.0 dBm)\n\t\t\t* 6155 MHz [41] (12.0 dBm)\n\t\t\t* 6175 MHz [45] (12.0 dBm)\n\t\t\t* 6195 MHz [49] (12.0 dBm)\n\t\t\t* 6215 MHz [53] (12.0 dBm)\n\t\t\t* 6235 MHz [57] (12.0 dBm)\n\t\t\t* 6255 MHz [61] (12.0 dBm)\n\t\t\t* 6275 MHz [65] (12.0 dBm)\n\t\t\t* 6295 MHz [69] (12.0 dBm)\n\t\t\t* 6315 MHz [73] (12.0 dBm)\n\t\t\t* 6335 MHz [77] (12.0 dBm)\n\t\t\t* 6355 MHz [81] (12.0 dBm)\n\t\t\t* 6375 MHz [85] (12.0 dBm)\n\t\t\t* 6395 MHz [89] (12.0 dBm)\n\t\t\t* 6415 MHz [93] (12.0 dBm)\n\t\t\t* 6435 MHz [97] (12.0 dBm)\n\t\t\t* 6455 MHz [101] (12.0 dBm)\n\t\t\t* 6475 MHz [105] (12.0 dBm)\n\t\t\t* 6495 MHz [109] (12.0 dBm)\n\t\t\t* 6515 MHz [113] (12.0 dBm)\n\t\t\t* 6535 MHz [117] (12.0 dBm)\n\t\t\t* 6555 MHz [121] (12.0 dBm)\n\t\t\t* 6575 MHz [125] (12.0 dBm)\n\t\t\t* 6595 MHz [129] (12.0 dBm)\n\t\t\t* 6615 MHz [133] (12.0 dBm)\n\t\t\t* 6635 MHz [137] (12.0 dBm)\n\t\t\t* 6655 MHz [141] (12.0 dBm)\n\t\t\t* 6675 MHz [145] (12.0 dBm)\n\t\t\t* 6695 MHz [149] (12.0 dBm)\n\t\t\t* 6715 MHz [153] (12.0 dBm)\n\t\t\t* 6735 MHz [157] (12.0 dBm)\n\t\t\t* 6755 MHz [161] (12.0 dBm)\n\t\t\t* 6775 MHz [165] (12.0 dBm)\n\t\t\t* 6795 MHz [169] (12.0 dBm)\n\t\t\t* 6815 MHz [173] (12.0 dBm)\n\t\t\t* 6835 MHz [177] (12.0 dBm)\n\t\t\t* 6855 MHz [181] (12.0 dBm)\n\t\t\t* 6875 MHz [185] (12.0 dBm)\n\t\t\t* 6895 MHz [189] (12.0 dBm)\n\t\t\t* 6915 MHz [193] (12.0 dBm)\n\t\t\t* 6935 MHz [197] (12.0 dBm)\n\t\t\t* 6955 MHz [201] (12.0 dBm)\n\t\t\t* 6975 MHz [205] (12.0 dBm)\n\t\t\t* 6995 MHz [209] (12.0 dBm)\n\t\t\t* 7015 MHz [213] (12.0 dBm)\n\t\t\t* 7035 MHz [217] (12.0 dBm)\n\t\t\t* 7055 MHz [221] (12.0 dBm)\n\t\t\t* 7075 MHz [225] (12.0 dBm)\n\t\t\t* 7095 MHz [229] (12.0 dBm)\n\t\t\t* 7115 MHz [233] (12.0 dBm)\n\tSupported commands:\n\t\t * new_interface\n\t\t * set_interface\n\t\t * new_key\n\t\t * start_ap\n\t\t * new_station\n\t\t * new_mpath\n\t\t * set_mesh_config\n\t\t * set_bss\n\t\t * authenticate\n\t\t * associate\n\t\t * deauthenticate\n\t\t * disassociate\n\t\t * join_ibss\n\t\t * join_mesh\n\t\t * remain_on_channel\n\t\t * set_tx_bitrate_mask\n\t\t * frame\n\t\t * frame_wait_cancel\n\t\t * set_wiphy_netns\n\t\t * set_channel\n\t\t * tdls_mgmt\n\t\t * tdls_oper\n\t\t * probe_client\n\t\t * set_noack_map\n\t\t * register_beacons\n\t\t * start_p2p_device\n\t\t * set_mcast_rate\n\t\t * connect\n\t\t * disconnect\n\t\t * channel_switch\n\t\t * set_qos_map\n\t\t * set_multicast_to_unicast\n\t\t * set_sar_specs\n\tWoWLAN support:\n\t\t * wake up on disconnect\n\t\t * wake up on magic packet\n\t\t * wake up on pattern match, up to 18 patterns of 1-128 bytes,\n\t\t   maximum packet offset 0 bytes\n\t\t * wake up on network detection, up to 8 match sets\n\tsoftware interface modes (can always be added):\n\t\t * AP/VLAN\n\t\t * monitor\n\tvalid interface combinations:\n\t\t * #{ managed } <= 1, #{ AP, P2P-client, P2P-GO } <= 1,\n\t\t   total <= 2, #channels <= 1\n\t\t * #{ managed } <= 1, #{ P2P-client, P2P-GO } <= 1,\n\t\t   total <= 2, #channels <= 2\n\tHT Capability overrides:\n\t\t * MCS: ff ff ff ff ff ff ff ff ff ff\n\t\t * maximum A-MSDU length\n\t\t * supported channel width\n\t\t * short GI for 40 MHz\n\t\t * max A-MPDU length exponent\n\t\t * min MPDU start spacing\n\tDevice supports TX status socket option.\n\tDevice supports HT-IBSS.\n\tDevice supports SAE with AUTHENTICATE command\n\tDevice supports scan flush.\n\tDevice supports per-vif TX power setting\n\tDriver supports full state transitions for AP/GO clients\n\tDriver supports a userspace MPM\n\tDevice supports configuring vdev MAC-addr on create.\n\tDevice supports randomizing MAC-addr in scans.\n\tmax # scan plans: 1\n\tmax scan plan interval: -1\n\tmax scan plan iterations: 0\n\tSupported TX frame types:\n\t\t * IBSS: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * managed: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * AP: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * mesh point: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-client: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-GO: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\t\t * P2P-device: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0\n\tSupported RX frame types:\n\t\t * IBSS: 0x40 0xb0 0xc0 0xd0\n\t\t * managed: 0x40 0xb0 0xd0\n\t\t * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * mesh point: 0xb0 0xc0 0xd0\n\t\t * P2P-client: 0x40 0xd0\n\t\t * P2P-GO: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0\n\t\t * P2P-device: 0x40 0xd0\n\tSupported extended features:\n\t\t* [ RRM ]: RRM\n\t\t* [ SET_SCAN_DWELL ]: scan dwell setting\n\t\t* [ FILS_STA ]: STA FILS (Fast Initial Link Setup)\n\t\t* [ CONTROL_PORT_OVER_NL80211 ]: control port over nl80211\n\t\t* [ TXQS ]: FQ-CoDel-enabled intermediate TXQs\n\t\t* [ SCAN_RANDOM_SN ]: use random sequence numbers in scans\n\t\t* [ CAN_REPLACE_PTK0 ]: can safely replace PTK 0 when rekeying\n\t\t* [ CONTROL_PORT_NO_PREAUTH ]: disable pre-auth over nl80211 control port support\n\t\t* [ SCAN_FREQ_KHZ ]: scan on kHz frequency support\n\t\t* [ CONTROL_PORT_OVER_NL80211_TX_STATUS ]: tx status for nl80211 control port support\n",
+  "channels": [
+    {
+      "mhz": 2412,
+      "channel": 1,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2417,
+      "channel": 2,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2422,
+      "channel": 3,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2427,
+      "channel": 4,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2432,
+      "channel": 5,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2437,
+      "channel": 6,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2442,
+      "channel": 7,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2447,
+      "channel": 8,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2452,
+      "channel": 9,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2457,
+      "channel": 10,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2462,
+      "channel": 11,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 2467,
+      "channel": 12,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 2472,
+      "channel": 13,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 2484,
+      "channel": 14,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5180,
+      "channel": 36,
+      "flags": "(23.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5200,
+      "channel": 40,
+      "flags": "(23.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5220,
+      "channel": 44,
+      "flags": "(23.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5240,
+      "channel": 48,
+      "flags": "(23.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5260,
+      "channel": 52,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5280,
+      "channel": 56,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5300,
+      "channel": 60,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5320,
+      "channel": 64,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5500,
+      "channel": 100,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5520,
+      "channel": 104,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5540,
+      "channel": 108,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5560,
+      "channel": 112,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5580,
+      "channel": 116,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5600,
+      "channel": 120,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5620,
+      "channel": 124,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5640,
+      "channel": 128,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5660,
+      "channel": 132,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5680,
+      "channel": 136,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5700,
+      "channel": 140,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5720,
+      "channel": 144,
+      "flags": "(24.0 dBm) (radar detection)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5745,
+      "channel": 149,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5765,
+      "channel": 153,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5785,
+      "channel": 157,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5805,
+      "channel": 161,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5825,
+      "channel": 165,
+      "flags": "(30.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5845,
+      "channel": 169,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5865,
+      "channel": 173,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5885,
+      "channel": 177,
+      "flags": "(disabled)",
+      "tune_returncode": 234,
+      "tune_error": "kernel reports: Channel is disabled\ncommand failed: Invalid argument (-22)"
+    },
+    {
+      "mhz": 5955,
+      "channel": 1,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5975,
+      "channel": 5,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 5995,
+      "channel": 9,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6015,
+      "channel": 13,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6035,
+      "channel": 17,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6055,
+      "channel": 21,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6075,
+      "channel": 25,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6095,
+      "channel": 29,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6115,
+      "channel": 33,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6135,
+      "channel": 37,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6155,
+      "channel": 41,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6175,
+      "channel": 45,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6195,
+      "channel": 49,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6215,
+      "channel": 53,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6235,
+      "channel": 57,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6255,
+      "channel": 61,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6275,
+      "channel": 65,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6295,
+      "channel": 69,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6315,
+      "channel": 73,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6335,
+      "channel": 77,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6355,
+      "channel": 81,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6375,
+      "channel": 85,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6395,
+      "channel": 89,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6415,
+      "channel": 93,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6435,
+      "channel": 97,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6455,
+      "channel": 101,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6475,
+      "channel": 105,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6495,
+      "channel": 109,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6515,
+      "channel": 113,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6535,
+      "channel": 117,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6555,
+      "channel": 121,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6575,
+      "channel": 125,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6595,
+      "channel": 129,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6615,
+      "channel": 133,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6635,
+      "channel": 137,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6655,
+      "channel": 141,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6675,
+      "channel": 145,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6695,
+      "channel": 149,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6715,
+      "channel": 153,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6735,
+      "channel": 157,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6755,
+      "channel": 161,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6775,
+      "channel": 165,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6795,
+      "channel": 169,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6815,
+      "channel": 173,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6835,
+      "channel": 177,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6855,
+      "channel": 181,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6875,
+      "channel": 185,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6895,
+      "channel": 189,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6915,
+      "channel": 193,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6935,
+      "channel": 197,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6955,
+      "channel": 201,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6975,
+      "channel": 205,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 6995,
+      "channel": 209,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7015,
+      "channel": 213,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7035,
+      "channel": 217,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7055,
+      "channel": 221,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7075,
+      "channel": 225,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7095,
+      "channel": 229,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    },
+    {
+      "mhz": 7115,
+      "channel": 233,
+      "flags": "(12.0 dBm)",
+      "tune_returncode": 0
+    }
+  ],
+  "restored_regulatory": "global\ncountry 00: DFS-UNSET\n\t(755 - 928 @ 2), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(2402 - 2472 @ 40), (N/A, 20), (N/A)\n\t(2457 - 2482 @ 20), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(2474 - 2494 @ 20), (N/A, 20), (N/A), NO-OFDM, PASSIVE-SCAN\n\t(5170 - 5250 @ 80), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(5250 - 5330 @ 80), (N/A, 20), (0 ms), DFS, AUTO-BW, PASSIVE-SCAN\n\t(5490 - 5730 @ 160), (N/A, 20), (0 ms), DFS, PASSIVE-SCAN\n\t(5735 - 5835 @ 80), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(57240 - 63720 @ 2160), (N/A, 0), (N/A)\n\n",
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

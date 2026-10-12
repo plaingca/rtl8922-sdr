@@ -1,0 +1,203 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "stage": "initial20",
+      "rate": 20000000.0,
+      "frequency": 2422000000.0,
+      "samples": 3067904,
+      "base_ns": 0,
+      "end_ns": 153395200,
+      "peak_hz": 111083.984375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 59.225016139558726
+    },
+    {
+      "stage": "noop20",
+      "rate": 20000000.0,
+      "frequency": 2422000000.0,
+      "samples": 3067904,
+      "base_ns": 0,
+      "end_ns": 306790400,
+      "peak_hz": 111083.984375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 59.05326673063291
+    },
+    {
+      "stage": "retune2427",
+      "rate": 20000000.0,
+      "frequency": 2427000000.0,
+      "samples": 3067904,
+      "base_ns": 451877005,
+      "end_ns": 605272205,
+      "peak_hz": -4888916.015625,
+      "expected_hz_without_cfo": -4875000.0,
+      "peak_median_db": 49.24909194508989
+    },
+    {
+      "stage": "invalid-grid-preserves",
+      "rate": 20000000.0,
+      "frequency": 2427000000.0,
+      "samples": 3067904,
+      "base_ns": 451877005,
+      "end_ns": 758667405,
+      "peak_hz": -4888916.015625,
+      "expected_hz_without_cfo": -4875000.0,
+      "peak_median_db": 49.51177246089977
+    },
+    {
+      "stage": "retune2417",
+      "rate": 20000000.0,
+      "frequency": 2417000000.0,
+      "samples": 3067904,
+      "base_ns": 902333394,
+      "end_ns": 1055728594,
+      "peak_hz": 5111083.984375,
+      "expected_hz_without_cfo": 5125000.0,
+      "peak_median_db": 60.061120706546305
+    },
+    {
+      "stage": "invalid-pair-preserves",
+      "rate": 20000000.0,
+      "frequency": 2417000000.0,
+      "samples": 3067904,
+      "base_ns": 902333394,
+      "end_ns": 1209123794,
+      "peak_hz": 5111083.984375,
+      "expected_hz_without_cfo": 5125000.0,
+      "peak_median_db": 60.131730215795926
+    },
+    {
+      "stage": "back2422",
+      "rate": 20000000.0,
+      "frequency": 2422000000.0,
+      "samples": 3067904,
+      "base_ns": 1350043894,
+      "end_ns": 1503439094,
+      "peak_hz": 111083.984375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 54.59835238542465
+    },
+    {
+      "stage": "rate40000000",
+      "rate": 40000000.0,
+      "frequency": 2422000000.0,
+      "samples": 6066176,
+      "base_ns": 1645686722,
+      "end_ns": 1797341122,
+      "peak_hz": 111694.3359375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 57.022338076949026
+    },
+    {
+      "stage": "rate10000000",
+      "rate": 10000000.0,
+      "frequency": 2422000000.0,
+      "samples": 1565953,
+      "base_ns": 1936352173,
+      "end_ns": 2092947473,
+      "peak_hz": 111236.572265625,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 62.2252783663791
+    },
+    {
+      "stage": "rate5000000",
+      "rate": 5000000.0,
+      "frequency": 2422000000.0,
+      "samples": 816128,
+      "base_ns": 2096208457,
+      "end_ns": 2259434057,
+      "peak_hz": 111312.8662109375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 64.59377847523025
+    },
+    {
+      "stage": "rate2500000",
+      "rate": 2500000.0,
+      "frequency": 2422000000.0,
+      "samples": 440577,
+      "base_ns": 2262295747,
+      "end_ns": 2438526547,
+      "peak_hz": 111312.8662109375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 67.34041908594881
+    },
+    {
+      "stage": "rate1250000",
+      "rate": 1250000.0,
+      "frequency": 2422000000.0,
+      "samples": 253184,
+      "base_ns": 2441842165,
+      "end_ns": 2644389365,
+      "peak_hz": 111389.16015625,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 70.1767993966604
+    },
+    {
+      "stage": "rate20000000",
+      "rate": 20000000.0,
+      "frequency": 2422000000.0,
+      "samples": 3067904,
+      "base_ns": 2647451689,
+      "end_ns": 2800846889,
+      "peak_hz": 111389.16015625,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 53.640035021499315
+    },
+    {
+      "stage": "rate40000000",
+      "rate": 40000000.0,
+      "frequency": 2422000000.0,
+      "samples": 6066176,
+      "base_ns": 2940829087,
+      "end_ns": 3092483487,
+      "peak_hz": 111694.3359375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 57.022338076949026
+    },
+    {
+      "stage": "rollback40",
+      "rate": 40000000.0,
+      "frequency": 2422000000.0,
+      "samples": 6066176,
+      "base_ns": 3096721499,
+      "end_ns": 3248375899,
+      "peak_hz": 111694.3359375,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 54.23675455125665
+    },
+    {
+      "stage": "before-concurrent20",
+      "rate": 20000000.0,
+      "frequency": 2422000000.0,
+      "samples": 3067904,
+      "base_ns": 3388611972,
+      "end_ns": 3542007172,
+      "peak_hz": 111389.16015625,
+      "expected_hz_without_cfo": 125000.0,
+      "peak_median_db": 52.638025666301914
+    }
+  ],
+  "live_control": {
+    "code": 0,
+    "stdout": "{\"stage\":\"initial20\",\"rate\":2e+07,\"frequency\":2422000000.000000,\"samples\":3067904,\"base_ns\":0,\"end_ns\":153395200}\n{\"stage\":\"noop20\",\"rate\":20000000.000000,\"frequency\":2422000000.000000,\"samples\":3067904,\"base_ns\":0,\"end_ns\":306790400}\n{\"stage\":\"retune2427\",\"rate\":20000000.000000,\"frequency\":2427000000.000000,\"samples\":3067904,\"base_ns\":451877005,\"end_ns\":605272205}\n{\"stage\":\"invalid-grid-preserves\",\"rate\":20000000.000000,\"frequency\":2427000000.000000,\"samples\":3067904,\"base_ns\":451877005,\"end_ns\":758667405}\n{\"stage\":\"retune2417\",\"rate\":20000000.000000,\"frequency\":2417000000.000000,\"samples\":3067904,\"base_ns\":902333394,\"end_ns\":1055728594}\n{\"stage\":\"invalid-pair-preserves\",\"rate\":20000000.000000,\"frequency\":2417000000.000000,\"samples\":3067904,\"base_ns\":902333394,\"end_ns\":1209123794}\n{\"stage\":\"back2422\",\"rate\":20000000.000000,\"frequency\":2422000000.000000,\"samples\":3067904,\"base_ns\":1350043894,\"end_ns\":1503439094}\n{\"stage\":\"rate40000000\",\"rate\":40000000.000000,\"frequency\":2422000000.000000,\"samples\":6066176,\"base_ns\":1645686722,\"end_ns\":1797341122}\n{\"stage\":\"rate10000000\",\"rate\":10000000.000000,\"frequency\":2422000000.000000,\"samples\":1565953,\"base_ns\":1936352173,\"end_ns\":2092947473}\n{\"stage\":\"rate5000000\",\"rate\":5000000.000000,\"frequency\":2422000000.000000,\"samples\":816128,\"base_ns\":2096208457,\"end_ns\":2259434057}\n{\"stage\":\"rate2500000\",\"rate\":2500000.000000,\"frequency\":2422000000.000000,\"samples\":440577,\"base_ns\":2262295747,\"end_ns\":2438526547}\n{\"stage\":\"rate1250000\",\"rate\":1250000.000000,\"frequency\":2422000000.000000,\"samples\":253184,\"base_ns\":2441842165,\"end_ns\":2644389365}\n{\"stage\":\"rate20000000\",\"rate\":20000000.000000,\"frequency\":2422000000.000000,\"samples\":3067904,\"base_ns\":2647451689,\"end_ns\":2800846889}\n{\"stage\":\"rate40000000\",\"rate\":40000000.000000,\"frequency\":2422000000.000000,\"samples\":6066176,\"base_ns\":2940829087,\"end_ns\":3092483487}\n{\"stage\":\"rollback40\",\"rate\":40000000.000000,\"frequency\":2422000000.000000,\"samples\":6066176,\"base_ns\":3096721499,\"end_ns\":3248375899}\n{\"stage\":\"before-concurrent20\",\"rate\":20000000.000000,\"frequency\":2422000000.000000,\"samples\":3067904,\"base_ns\":3388611972,\"end_ns\":3542007172}\n{\"concurrent_reads\":7980,\"explicit_gaps\":3,\"max_setting_ms\":385.830025}\n",
+    "stderr": "RTL8922 producer: ret=0 packets=1501 produced=1537558 consumed=1537024 max_backlog=1075 elapsed_ns=307519269 loss=0x0 monitor=0x0 stages_ns=3184115,193192,141344009,4514855 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=1500 produced=1536515 consumed=1536000 max_backlog=1047 elapsed_ns=307311211 loss=0x0 monitor=0x0 stages_ns=3104982,192065,140863901,4267612 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=1500 produced=1536506 consumed=1536000 max_backlog=1056 elapsed_ns=307308436 loss=0x0 monitor=0x0 stages_ns=3103781,189962,140946642,4262575 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=751 produced=769531 consumed=769024 max_backlog=1057 elapsed_ns=153912376 loss=0x0 monitor=0x0 stages_ns=1556048,96755,70523515,2144843 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 pipeline=1 snap=40b01,31e9a,1,800,d24957f,2801,700000 packets=1486 produced=1523296 consumed=1521664 max_backlog=2970 elapsed_ns=152361542 loss=0x0 stages_ns=4120007,66117,126881804,5673707 policy=6 reason=0 gap_ns=193781,94871 yield_ns=97947,97947\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\nRTL8922 producer: ret=0 packets=766 produced=785283 consumed=784384 max_backlog=1047 elapsed_ns=157062107 loss=0x0 monitor=0x0 stages_ns=1568558,96618,71836486,2124564 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=798 produced=818170 consumed=817152 max_backlog=1047 elapsed_ns=163639681 loss=0x0 monitor=0x0 stages_ns=1641153,100296,74872272,2215845 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=863 produced=884237 consumed=883712 max_backlog=1045 elapsed_ns=176853601 loss=0x0 monitor=0x0 stages_ns=1766687,104433,80917376,2389945 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=990 produced=1014451 consumed=1013760 max_backlog=1046 elapsed_ns=202895942 loss=0x0 monitor=0x0 stages_ns=2036470,126355,92899799,2744889 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=751 produced=769548 consumed=769024 max_backlog=1048 elapsed_ns=153915502 loss=0x0 monitor=0x0 stages_ns=1546514,97060,70467581,2089105 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 pipeline=1 snap=40b01,31c1e,1,800,d24957f,2801,700000 packets=1486 produced=1522660 consumed=1521664 max_backlog=2064 elapsed_ns=152298531 loss=0x0 stages_ns=4003149,67126,127525217,5616196 policy=6 reason=0 gap_ns=101965,95373 yield_ns=6442,3015\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\nIntentional test-only iw rejection\nRTL8922 producer: ret=0 pipeline=1 snap=40b01,31be7,1,800,d24957f,2801,700000 packets=1486 produced=1522604 consumed=1521664 max_backlog=2053 elapsed_ns=152293101 loss=0x0 stages_ns=3951995,67212,127786310,5614406 policy=6 reason=0 gap_ns=100593,95232 yield_ns=4559,2956\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0\nRTL8922 producer: ret=0 packets=1912 produced=1958396 consumed=1957888 max_backlog=1187 elapsed_ns=391686732 loss=0x0 monitor=0x0 stages_ns=3920081,239679,179548063,5296293 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=639 produced=655248 consumed=654336 max_backlog=1059 elapsed_ns=131055483 loss=0x0 monitor=0x0 stages_ns=1326624,84119,60050780,1826609 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=1699 produced=1740301 consumed=1739776 max_backlog=1218 elapsed_ns=348068060 loss=0x0 monitor=0x0 stages_ns=3471338,219820,159501033,4697943 physical=0 validation_ns=0\n\nRTL8922 producer: ret=0 packets=494 produced=506372 consumed=505856 max_backlog=1051 elapsed_ns=101279815 loss=0x0 monitor=0x0 stages_ns=1013070,61514,46341462,1374530 physical=0 validation_ns=0\n\n"
+  },
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

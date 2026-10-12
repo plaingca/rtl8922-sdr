@@ -1,0 +1,94 @@
+{
+  "record_va": "0x1408ea3f0",
+  "mode": 8,
+  "wde": [
+    64,
+    1408,
+    0
+  ],
+  "ple": [
+    128,
+    1601,
+    239,
+    352256
+  ],
+  "wde_min": [
+    1382,
+    6,
+    0,
+    0,
+    20,
+    0
+  ],
+  "ple_min": [
+    320,
+    320,
+    32,
+    16,
+    19,
+    13,
+    292,
+    292,
+    44,
+    18,
+    1,
+    4,
+    0,
+    0
+  ],
+  "ple_max": [
+    320,
+    320,
+    32,
+    246,
+    249,
+    243,
+    522,
+    522,
+    274,
+    248,
+    1,
+    234,
+    0,
+    0
+  ],
+  "rsvd_quota": [
+    1,
+    107,
+    107,
+    6,
+    6,
+    6,
+    6,
+    0,
+    0,
+    0
+  ],
+  "la_region": [
+    90112,
+    262144
+  ],
+  "la_size": [
+    262144
+  ],
+  "tail": [
+    587776,
+    2048
+  ],
+  "source": "Official ASUS RTL8922AE Windows driver 6102.24.143.0, statically analyzed; no Windows code executed",
+  "chip_mac_id": 8,
+  "interface": "PCIe",
+  "layout_table_va": "0x1408ea1c0",
+  "get_dle_mem_cfg_va": "0x14041b254",
+  "copy_layout_fields_va": "0x14041b9d4",
+  "adapter_la_start_offset": "0x3c8",
+  "adapter_la_size_offset": "0x3cc",
+  "record_la_start_pointer_offset": "0x48",
+  "record_la_size_pointer_offset": "0x58",
+  "hardware_test": {
+    "wde_pktbuf_cfg": "0x05800000",
+    "ple_pktbuf_cfg": "0x06412b01",
+    "la_control": "0x64230b21"
+  },
+  "linux_test_changes": "Apply reservation to both SCC and DBCC tables: RTL8922A initialization selects DBCC. Fix debugfs memory dump end bound to include start residue, use 2048 byte reads to avoid ASCII truncation."
+}

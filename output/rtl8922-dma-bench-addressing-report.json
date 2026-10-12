@@ -1,0 +1,43 @@
+{
+  "original_pluto": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "tests": [
+    {
+      "chunk": 4096,
+      "status": "source=0 physical=0 delay=0 bytes=4096 copies=100 elapsed_ns=4776447\nsource=0 physical=0 delay=1 bytes=4096 copies=100 elapsed_ns=4718476\nsource=0 physical=0 delay=4 bytes=4096 copies=100 elapsed_ns=4796726\nsource=0 physical=0 delay=16 bytes=4096 copies=100 elapsed_ns=5779566\nsource=0 physical=1 delay=0 bytes=4096 copies=100 elapsed_ns=3511508\nsource=0 physical=1 delay=1 bytes=4096 copies=100 elapsed_ns=3510967\nsource=0 physical=1 delay=4 bytes=4096 copies=100 elapsed_ns=3954104\nsource=0 physical=1 delay=16 bytes=4096 copies=100 elapsed_ns=3900572\nsource=1 physical=0 delay=0 bytes=4096 copies=100 elapsed_ns=9145354\nsource=1 physical=0 delay=1 bytes=4096 copies=100 elapsed_ns=9262318\nsource=1 physical=0 delay=4 bytes=4096 copies=100 elapsed_ns=9452933\nsource=1 physical=0 delay=16 bytes=4096 copies=100 elapsed_ns=9540361\nsource=1 physical=1 delay=0 bytes=4096 copies=100 elapsed_ns=5176272\nsource=1 physical=1 delay=1 bytes=4096 copies=100 elapsed_ns=5340005\nsource=1 physical=1 delay=4 bytes=4096 copies=100 elapsed_ns=5391143\nsource=1 physical=1 delay=16 bytes=4096 copies=100 elapsed_ns=5809624\nret=0\n",
+      "host_bytes": 4120,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "chunk": 8192,
+      "status": "source=0 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=9121890\nsource=0 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=9228644\nsource=0 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=9379763\nsource=0 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=9433506\nsource=0 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=6669609\nsource=0 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=6822080\nsource=0 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=6653608\nsource=0 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=7560453\nsource=1 physical=0 delay=0 bytes=8192 copies=100 elapsed_ns=18225215\nsource=1 physical=0 delay=1 bytes=8192 copies=100 elapsed_ns=18245623\nsource=1 physical=0 delay=4 bytes=8192 copies=100 elapsed_ns=18207099\nsource=1 physical=0 delay=16 bytes=8192 copies=100 elapsed_ns=18899034\nsource=1 physical=1 delay=0 bytes=8192 copies=100 elapsed_ns=10051468\nsource=1 physical=1 delay=1 bytes=8192 copies=100 elapsed_ns=10112415\nsource=1 physical=1 delay=4 bytes=8192 copies=100 elapsed_ns=10181347\nsource=1 physical=1 delay=16 bytes=8192 copies=100 elapsed_ns=11331898\nret=0\n",
+      "host_bytes": 8216,
+      "reference_match": true,
+      "host_drops": "0\n"
+    },
+    {
+      "chunk": 10240,
+      "status": "source=0 physical=0 delay=0 bytes=10240 copies=100 elapsed_ns=11382354\nsource=0 physical=0 delay=1 bytes=10240 copies=100 elapsed_ns=11526500\nsource=0 physical=0 delay=4 bytes=10240 copies=100 elapsed_ns=11365642\nsource=0 physical=0 delay=16 bytes=10240 copies=100 elapsed_ns=11651920\nsource=0 physical=1 delay=0 bytes=10240 copies=100 elapsed_ns=8197882\nsource=0 physical=1 delay=1 bytes=10240 copies=100 elapsed_ns=8261734\nsource=0 physical=1 delay=4 bytes=10240 copies=100 elapsed_ns=8566146\nsource=0 physical=1 delay=16 bytes=10240 copies=100 elapsed_ns=9371687\nsource=1 physical=0 delay=0 bytes=10240 copies=100 elapsed_ns=22789746\nsource=1 physical=0 delay=1 bytes=10240 copies=100 elapsed_ns=23152219\nsource=1 physical=0 delay=4 bytes=10240 copies=100 elapsed_ns=22844380\nsource=1 physical=0 delay=16 bytes=10240 copies=100 elapsed_ns=22751233\nsource=1 physical=1 delay=0 bytes=10240 copies=100 elapsed_ns=12407295\nsource=1 physical=1 delay=1 bytes=10240 copies=100 elapsed_ns=12487468\nsource=1 physical=1 delay=4 bytes=10240 copies=100 elapsed_ns=12495704\nsource=1 physical=1 delay=16 bytes=10240 copies=100 elapsed_ns=13192196\nret=0\n",
+      "host_bytes": 10264,
+      "reference_match": true,
+      "host_drops": "0\n"
+    }
+  ],
+  "pluto_restored": {
+    "sample_rate": 2399999,
+    "rx_lo": 2399999996,
+    "tx_lo": 438900000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 600000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown_restored": "1"
+}

@@ -1,0 +1,844 @@
+000000014058ddf8 mov      qword ptr [rsp + 0x10], rbx
+000000014058ddfd mov      qword ptr [rsp + 0x18], rsi
+000000014058de02 mov      qword ptr [rsp + 0x20], rdi
+000000014058de07 push     rbp
+000000014058de08 push     r14
+000000014058de0a push     r15
+000000014058de0c mov      rbp, rsp
+000000014058de0f sub      rsp, 0x30
+000000014058de13 mov      rax, qword ptr [rcx]
+000000014058de16 lea      r15, [rcx + 0x1208]
+000000014058de1d mov      ebx, edx
+000000014058de1f mov      rdi, rcx
+000000014058de22 xor      r14d, r14d
+000000014058de25 mov      rdx, r15
+000000014058de28 mov      rsi, qword ptr [rax]
+000000014058de2b mov      rax, qword ptr [rcx + 0x18]
+000000014058de2f and      dword ptr [rbp + 0x20], r14d
+000000014058de33 mov      rcx, qword ptr [rcx + 8]
+000000014058de37 mov      rax, qword ptr [rax + 0x108]
+000000014058de3e call     qword ptr [rip + 0xf64b4]
+000000014058de44 mov      ecx, dword ptr [rdi + 0xef8]
+000000014058de4a inc      ecx
+000000014058de4c mov      dword ptr [rdi + 0xef8], ecx
+000000014058de52 cmp      ecx, 1
+000000014058de55 je       0x14058dea5
+000000014058de57 mov      rax, qword ptr [rdi + 0x18]
+000000014058de5b lea      r8, [rip + 0xd769e]
+000000014058de62 mov      dword ptr [rsp + 0x20], ecx
+000000014058de66 lea      edx, [r14 + 2]
+000000014058de6a mov      rcx, qword ptr [rdi + 8]
+000000014058de6e mov      r9d, ebx
+000000014058de71 mov      rax, qword ptr [rax + 0x118]
+000000014058de78 call     qword ptr [rip + 0xf647a]
+000000014058de7e mov      rax, qword ptr [rdi + 0x18]
+000000014058de82 mov      rdx, r15
+000000014058de85 dec      dword ptr [rdi + 0xef8]
+000000014058de8b mov      rcx, qword ptr [rdi + 8]
+000000014058de8f mov      rax, qword ptr [rax + 0x110]
+000000014058de96 call     qword ptr [rip + 0xf645c]
+000000014058de9c lea      eax, [r14 + 0x10]
+000000014058dea0 jmp      0x14058e616
+000000014058dea5 mov      eax, 0x10a
+000000014058deaa cmp      ebx, eax
+000000014058deac ja       0x14058e524
+000000014058deb2 je       0x14058e51a
+000000014058deb8 mov      eax, 0x98
+000000014058debd cmp      ebx, eax
+000000014058debf ja       0x14058e177
+000000014058dec5 je       0x14058e16d
+000000014058decb cmp      ebx, 0x5c
+000000014058dece ja       0x14058e028
+000000014058ded4 je       0x14058e01e
+000000014058deda cmp      ebx, 0x33
+000000014058dedd ja       0x14058dfa2
+000000014058dee3 je       0x14058df62
+000000014058dee5 cmp      ebx, 0x29
+000000014058dee8 ja       0x14058df31
+000000014058deea je       0x14058df1d
+000000014058deec sub      ebx, 0x20
+000000014058deef je       0x14058df27
+000000014058def1 sub      ebx, 1
+000000014058def4 je       0x14058df27
+000000014058def6 sub      ebx, 1
+000000014058def9 je       0x14058df27
+000000014058defb sub      ebx, 1
+000000014058defe je       0x14058df1d
+000000014058df00 sub      ebx, 1
+000000014058df03 je       0x14058df1d
+000000014058df05 sub      ebx, 1
+000000014058df08 je       0x14058df1d
+000000014058df0a sub      ebx, 1
+000000014058df0d je       0x14058df1d
+000000014058df0f sub      ebx, 1
+000000014058df12 je       0x14058df1d
+000000014058df14 cmp      ebx, 1
+000000014058df17 jne      0x14058e5f5
+000000014058df1d mov      ebx, 0x114f4
+000000014058df22 jmp      0x14058e5d5
+000000014058df27 mov      ebx, 0x11442
+000000014058df2c jmp      0x14058e5d5
+000000014058df31 sub      ebx, 0x2a
+000000014058df34 je       0x14058df1d
+000000014058df36 sub      ebx, 1
+000000014058df39 je       0x14058df76
+000000014058df3b sub      ebx, 1
+000000014058df3e je       0x14058df76
+000000014058df40 sub      ebx, 1
+000000014058df43 je       0x14058df6c
+000000014058df45 sub      ebx, 1
+000000014058df48 je       0x14058df6c
+000000014058df4a sub      ebx, 1
+000000014058df4d je       0x14058df6c
+000000014058df4f sub      ebx, 1
+000000014058df52 je       0x14058df62
+000000014058df54 sub      ebx, 1
+000000014058df57 je       0x14058df62
+000000014058df59 cmp      ebx, 1
+000000014058df5c jne      0x14058e5f5
+000000014058df62 mov      ebx, 0x154f4
+000000014058df67 jmp      0x14058e5d5
+000000014058df6c mov      ebx, 0x15442
+000000014058df71 jmp      0x14058e5d5
+000000014058df76 mov      ebx, 0x114f4
+000000014058df7b mov      rax, qword ptr [rsi + 0x10]
+000000014058df7f mov      edx, ebx
+000000014058df81 mov      rcx, rdi
+000000014058df84 call     qword ptr [rip + 0xf636e]
+000000014058df8a mov      edx, ebx
+000000014058df8c mov      rcx, rdi
+000000014058df8f movzx    r8d, ax
+000000014058df93 mov      rax, qword ptr [rsi + 0x18]
+000000014058df97 call     qword ptr [rip + 0xf635b]
+000000014058df9d jmp      0x14058e5f5
+000000014058dfa2 cmp      ebx, 0x53
+000000014058dfa5 ja       0x14058dff2
+000000014058dfa7 je       0x14058dfe8
+000000014058dfa9 sub      ebx, 0x34
+000000014058dfac je       0x14058df62
+000000014058dfae sub      ebx, 1
+000000014058dfb1 je       0x14058df62
+000000014058dfb3 sub      ebx, 1
+000000014058dfb6 je       0x14058df62
+000000014058dfb8 sub      ebx, 1
+000000014058dfbb je       0x14058df62
+000000014058dfbd sub      ebx, 1
+000000014058dfc0 je       0x14058dfe1
+000000014058dfc2 sub      ebx, 1
+000000014058dfc5 je       0x14058dfe1
+000000014058dfc7 sub      ebx, 0x17
+000000014058dfca je       0x14058dfda
+000000014058dfcc sub      ebx, 1
+000000014058dfcf je       0x14058dfda
+000000014058dfd1 cmp      ebx, 1
+000000014058dfd4 jne      0x14058e5f5
+000000014058dfda mov      ebx, 0x110c0
+000000014058dfdf jmp      0x14058df7b
+000000014058dfe1 mov      ebx, 0x154f4
+000000014058dfe6 jmp      0x14058df7b
+000000014058dfe8 mov      ebx, 0x110c0
+000000014058dfed jmp      0x14058e5d5
+000000014058dff2 sub      ebx, 0x54
+000000014058dff5 je       0x14058dfe8
+000000014058dff7 sub      ebx, 1
+000000014058dffa je       0x14058dfe8
+000000014058dffc sub      ebx, 1
+000000014058dfff je       0x14058dfe8
+000000014058e001 sub      ebx, 1
+000000014058e004 je       0x14058dfe8
+000000014058e006 sub      ebx, 1
+000000014058e009 je       0x14058dfe8
+000000014058e00b sub      ebx, 1
+000000014058e00e je       0x14058dfe8
+000000014058e010 sub      ebx, 1
+000000014058e013 je       0x14058dfe8
+000000014058e015 cmp      ebx, 1
+000000014058e018 jne      0x14058e5f5
+000000014058e01e mov      ebx, 0x110fc
+000000014058e023 jmp      0x14058e5d5
+000000014058e028 mov      eax, 0x85
+000000014058e02d cmp      ebx, eax
+000000014058e02f ja       0x14058e0eb
+000000014058e035 je       0x14058e0cd
+000000014058e03b cmp      ebx, 0x66
+000000014058e03e ja       0x14058e0a1
+000000014058e040 je       0x14058e073
+000000014058e042 sub      ebx, 0x5d
+000000014058e045 je       0x14058e01e
+000000014058e047 sub      ebx, 1
+000000014058e04a je       0x14058e01e
+000000014058e04c sub      ebx, 1
+000000014058e04f je       0x14058e01e
+000000014058e051 sub      ebx, 1
+000000014058e054 je       0x14058e01e
+000000014058e056 sub      ebx, 1
+000000014058e059 je       0x14058e073
+000000014058e05b sub      ebx, 1
+000000014058e05e je       0x14058e073
+000000014058e060 sub      ebx, 1
+000000014058e063 je       0x14058e073
+000000014058e065 sub      ebx, 1
+000000014058e068 je       0x14058e073
+000000014058e06a cmp      ebx, 1
+000000014058e06d jne      0x14058e5f5
+000000014058e073 mov      ebx, 0x111a4
+000000014058e078 mov      rax, qword ptr [rsi + 0x20]
+000000014058e07c mov      edx, ebx
+000000014058e07e mov      rcx, rdi
+000000014058e081 call     qword ptr [rip + 0xf6271]
+000000014058e087 mov      dword ptr [rbp + 0x20], eax
+000000014058e08a mov      edx, ebx
+000000014058e08c mov      r8d, eax
+000000014058e08f mov      rcx, rdi
+000000014058e092 mov      rax, qword ptr [rsi + 0x28]
+000000014058e096 call     qword ptr [rip + 0xf625c]
+000000014058e09c jmp      0x14058e5f5
+000000014058e0a1 sub      ebx, 0x67
+000000014058e0a4 je       0x14058e073
+000000014058e0a6 sub      ebx, 1
+000000014058e0a9 je       0x14058e073
+000000014058e0ab sub      ebx, 1
+000000014058e0ae je       0x14058e0e1
+000000014058e0b0 sub      ebx, 1
+000000014058e0b3 je       0x14058e0d7
+000000014058e0b5 sub      ebx, 1
+000000014058e0b8 je       0x14058e0d7
+000000014058e0ba sub      ebx, 1
+000000014058e0bd je       0x14058e0d7
+000000014058e0bf sub      ebx, 1
+000000014058e0c2 je       0x14058e0d7
+000000014058e0c4 cmp      ebx, 0x17
+000000014058e0c7 jne      0x14058e5f5
+000000014058e0cd mov      ebx, 0x150c0
+000000014058e0d2 jmp      0x14058df7b
+000000014058e0d7 mov      ebx, 0x11270
+000000014058e0dc jmp      0x14058df7b
+000000014058e0e1 mov      ebx, 0x11228
+000000014058e0e6 jmp      0x14058e5d5
+000000014058e0eb mov      eax, 0x8f
+000000014058e0f0 cmp      ebx, eax
+000000014058e0f2 ja       0x14058e13e
+000000014058e0f4 je       0x14058e134
+000000014058e0f6 sub      ebx, 0x86
+000000014058e0fc je       0x14058e0cd
+000000014058e0fe sub      ebx, 1
+000000014058e101 je       0x14058e12a
+000000014058e103 sub      ebx, 1
+000000014058e106 je       0x14058e12a
+000000014058e108 sub      ebx, 1
+000000014058e10b je       0x14058e12a
+000000014058e10d sub      ebx, 1
+000000014058e110 je       0x14058e12a
+000000014058e112 sub      ebx, 1
+000000014058e115 je       0x14058e12a
+000000014058e117 sub      ebx, 1
+000000014058e11a je       0x14058e12a
+000000014058e11c sub      ebx, 1
+000000014058e11f je       0x14058e12a
+000000014058e121 cmp      ebx, 1
+000000014058e124 jne      0x14058e5f5
+000000014058e12a mov      ebx, 0x150c0
+000000014058e12f jmp      0x14058e5d5
+000000014058e134 mov      ebx, 0x150fc
+000000014058e139 jmp      0x14058e5d5
+000000014058e13e sub      ebx, 0x90
+000000014058e144 je       0x14058e134
+000000014058e146 sub      ebx, 1
+000000014058e149 je       0x14058e134
+000000014058e14b sub      ebx, 1
+000000014058e14e je       0x14058e134
+000000014058e150 sub      ebx, 1
+000000014058e153 je       0x14058e134
+000000014058e155 sub      ebx, 1
+000000014058e158 je       0x14058e134
+000000014058e15a sub      ebx, 1
+000000014058e15d je       0x14058e16d
+000000014058e15f sub      ebx, 1
+000000014058e162 je       0x14058e16d
+000000014058e164 cmp      ebx, 1
+000000014058e167 jne      0x14058e5f5
+000000014058e16d mov      ebx, 0x151a4
+000000014058e172 jmp      0x14058e078
+000000014058e177 mov      eax, 0xd8
+000000014058e17c cmp      ebx, eax
+000000014058e17e ja       0x14058e346
+000000014058e184 je       0x14058e2f6
+000000014058e18a mov      eax, 0xac
+000000014058e18f cmp      ebx, eax
+000000014058e191 ja       0x14058e256
+000000014058e197 je       0x14058e22e
+000000014058e19d mov      eax, 0xa2
+000000014058e1a2 cmp      ebx, eax
+000000014058e1a4 ja       0x14058e1fa
+000000014058e1a6 je       0x14058e1f0
+000000014058e1a8 sub      ebx, 0x99
+000000014058e1ae je       0x14058e16d
+000000014058e1b0 sub      ebx, 1
+000000014058e1b3 je       0x14058e16d
+000000014058e1b5 sub      ebx, 1
+000000014058e1b8 je       0x14058e16d
+000000014058e1ba sub      ebx, 1
+000000014058e1bd je       0x14058e16d
+000000014058e1bf sub      ebx, 1
+000000014058e1c2 je       0x14058e1e6
+000000014058e1c4 sub      ebx, 1
+000000014058e1c7 je       0x14058e1dc
+000000014058e1c9 sub      ebx, 1
+000000014058e1cc je       0x14058e1dc
+000000014058e1ce sub      ebx, 1
+000000014058e1d1 je       0x14058e1dc
+000000014058e1d3 cmp      ebx, 1
+000000014058e1d6 jne      0x14058e5f5
+000000014058e1dc mov      ebx, 0x15270
+000000014058e1e1 jmp      0x14058df7b
+000000014058e1e6 mov      ebx, 0x15228
+000000014058e1eb jmp      0x14058e5d5
+000000014058e1f0 mov      ebx, 0x960c
+000000014058e1f5 jmp      0x14058e5d5
+000000014058e1fa sub      ebx, 0xa3
+000000014058e200 je       0x14058e1f0
+000000014058e202 sub      ebx, 1
+000000014058e205 je       0x14058e24c
+000000014058e207 sub      ebx, 1
+000000014058e20a je       0x14058e24c
+000000014058e20c sub      ebx, 1
+000000014058e20f je       0x14058e242
+000000014058e211 sub      ebx, 1
+000000014058e214 je       0x14058e238
+000000014058e216 sub      ebx, 1
+000000014058e219 je       0x14058e22e
+000000014058e21b sub      ebx, 1
+000000014058e21e je       0x14058e22e
+000000014058e220 sub      ebx, 1
+000000014058e223 je       0x14058e22e
+000000014058e225 cmp      ebx, 1
+000000014058e228 jne      0x14058e5f5
+000000014058e22e mov      ebx, 0x968c
+000000014058e233 jmp      0x14058e5d5
+000000014058e238 mov      ebx, 0x966c
+000000014058e23d jmp      0x14058e5d5
+000000014058e242 mov      ebx, 0x963c
+000000014058e247 jmp      0x14058e5d5
+000000014058e24c mov      ebx, 0x962c
+000000014058e251 jmp      0x14058e5d5
+000000014058e256 mov      eax, 0xb6
+000000014058e25b cmp      ebx, eax
+000000014058e25d ja       0x14058e2b3
+000000014058e25f je       0x14058e295
+000000014058e261 sub      ebx, 0xad
+000000014058e267 je       0x14058e2a9
+000000014058e269 sub      ebx, 1
+000000014058e26c je       0x14058e2a9
+000000014058e26e sub      ebx, 1
+000000014058e271 je       0x14058e2a9
+000000014058e273 sub      ebx, 1
+000000014058e276 je       0x14058e2a9
+000000014058e278 sub      ebx, 1
+000000014058e27b je       0x14058e29f
+000000014058e27d sub      ebx, 1
+000000014058e280 je       0x14058e29f
+000000014058e282 sub      ebx, 1
+000000014058e285 je       0x14058e295
+000000014058e287 sub      ebx, 1
+000000014058e28a je       0x14058e295
+000000014058e28c cmp      ebx, 1
+000000014058e28f jne      0x14058e5f5
+000000014058e295 mov      ebx, 0xb714
+000000014058e29a jmp      0x14058e5d5
+000000014058e29f mov      ebx, 0x968c
+000000014058e2a4 jmp      0x14058e078
+000000014058e2a9 mov      ebx, 0x968c
+000000014058e2ae jmp      0x14058df7b
+000000014058e2b3 sub      ebx, 0xb7
+000000014058e2b9 je       0x14058e2ec
+000000014058e2bb sub      ebx, 1
+000000014058e2be je       0x14058e2ec
+000000014058e2c0 sub      ebx, 1
+000000014058e2c3 je       0x14058e2ec
+000000014058e2c5 sub      ebx, 1
+000000014058e2c8 je       0x14058e2ec
+000000014058e2ca sub      ebx, 1
+000000014058e2cd je       0x14058e2ec
+000000014058e2cf sub      ebx, 1
+000000014058e2d2 je       0x14058e2e2
+000000014058e2d4 sub      ebx, 1
+000000014058e2d7 je       0x14058e2e2
+000000014058e2d9 cmp      ebx, 1
+000000014058e2dc jne      0x14058e5f5
+000000014058e2e2 mov      ebx, 0xb028
+000000014058e2e7 jmp      0x14058df7b
+000000014058e2ec mov      ebx, 0xb028
+000000014058e2f1 jmp      0x14058e5d5
+000000014058e2f6 cmp      byte ptr [rdi + 0x105], 5
+000000014058e2fd jne      0x14058e5f5
+000000014058e303 or       dword ptr [rbp + 0x20], 1
+000000014058e307 mov      ebx, 2
+000000014058e30c mov      esi, 0x780
+000000014058e311 lea      r8, [rbp + 0x20]
+000000014058e315 mov      r9d, ebx
+000000014058e318 mov      edx, esi
+000000014058e31a mov      rcx, rdi
+000000014058e31d call     0x1403695ac
+000000014058e322 mov      r14d, eax
+000000014058e325 test     eax, eax
+000000014058e327 jne      0x14058e5f5
+000000014058e32d mov      r8d, dword ptr [rbp + 0x20]
+000000014058e331 mov      r9d, ebx
+000000014058e334 mov      edx, esi
+000000014058e336 mov      rcx, rdi
+000000014058e339 call     0x1403695cc
+000000014058e33e mov      r14d, eax
+000000014058e341 jmp      0x14058e5f5
+000000014058e346 mov      eax, 0xf7
+000000014058e34b cmp      ebx, eax
+000000014058e34d ja       0x14058e492
+000000014058e353 je       0x14058e3a4
+000000014058e355 mov      eax, 0xee
+000000014058e35a cmp      ebx, eax
+000000014058e35c ja       0x14058e451
+000000014058e362 je       0x14058e3a4
+000000014058e364 sub      ebx, 0xd9
+000000014058e36a je       0x14058e437
+000000014058e370 sub      ebx, 1
+000000014058e373 je       0x14058e421
+000000014058e379 sub      ebx, 1
+000000014058e37c je       0x14058e40b
+000000014058e382 sub      ebx, 1
+000000014058e385 je       0x14058e3f8
+000000014058e387 sub      ebx, 1
+000000014058e38a je       0x14058e3e1
+000000014058e38c sub      ebx, 1
+000000014058e38f je       0x14058e3ce
+000000014058e391 sub      ebx, 1
+000000014058e394 je       0x14058e3ae
+000000014058e396 sub      ebx, 0xd
+000000014058e399 je       0x14058e3a4
+000000014058e39b cmp      ebx, 1
+000000014058e39e jne      0x14058e5f5
+000000014058e3a4 mov      ebx, 0x8804
+000000014058e3a9 jmp      0x14058e078
+000000014058e3ae cmp      byte ptr [rdi + 0x105], 5
+000000014058e3b5 jne      0x14058e5f5
+000000014058e3bb or       dword ptr [rbp + 0x20], 8
+000000014058e3bf mov      ebx, 2
+000000014058e3c4 mov      esi, 0x504
+000000014058e3c9 jmp      0x14058e311
+000000014058e3ce cmp      byte ptr [rdi + 0x105], 5
+000000014058e3d5 jne      0x14058e5f5
+000000014058e3db or       dword ptr [rbp + 0x20], 4
+000000014058e3df jmp      0x14058e3bf
+000000014058e3e1 cmp      byte ptr [rdi + 0x105], 5
+000000014058e3e8 jne      0x14058e5f5
+000000014058e3ee mov      ebx, 2
+000000014058e3f3 or       dword ptr [rbp + 0x20], ebx
+000000014058e3f6 jmp      0x14058e3c4
+000000014058e3f8 cmp      byte ptr [rdi + 0x105], 5
+000000014058e3ff jne      0x14058e5f5
+000000014058e405 or       dword ptr [rbp + 0x20], 1
+000000014058e409 jmp      0x14058e3bf
+000000014058e40b cmp      byte ptr [rdi + 0x105], 5
+000000014058e412 jne      0x14058e5f5
+000000014058e418 or       dword ptr [rbp + 0x20], 8
+000000014058e41c jmp      0x14058e307
+000000014058e421 cmp      byte ptr [rdi + 0x105], 5
+000000014058e428 jne      0x14058e5f5
+000000014058e42e or       dword ptr [rbp + 0x20], 4
+000000014058e432 jmp      0x14058e307
+000000014058e437 cmp      byte ptr [rdi + 0x105], 5
+000000014058e43e jne      0x14058e5f5
+000000014058e444 mov      ebx, 2
+000000014058e449 or       dword ptr [rbp + 0x20], ebx
+000000014058e44c jmp      0x14058e30c
+000000014058e451 sub      ebx, 0xef
+000000014058e457 je       0x14058e3a4
+000000014058e45d sub      ebx, 1
+000000014058e460 je       0x14058e3a4
+000000014058e466 sub      ebx, 1
+000000014058e469 je       0x14058e3a4
+000000014058e46f sub      ebx, 1
+000000014058e472 je       0x14058e3a4
+000000014058e478 sub      ebx, 1
+000000014058e47b je       0x14058e3a4
+000000014058e481 sub      ebx, 1
+000000014058e484 je       0x14058e3a4
+000000014058e48a sub      ebx, 1
+000000014058e48d jmp      0x14058e399
+000000014058e492 mov      eax, 0x101
+000000014058e497 cmp      ebx, eax
+000000014058e499 ja       0x14058e4eb
+000000014058e49b je       0x14058e4e1
+000000014058e49d sub      ebx, 0xf8
+000000014058e4a3 je       0x14058e3a4
+000000014058e4a9 sub      ebx, 1
+000000014058e4ac je       0x14058e3a4
+000000014058e4b2 sub      ebx, 1
+000000014058e4b5 je       0x14058e3a4
+000000014058e4bb sub      ebx, 1
+000000014058e4be je       0x14058e3a4
+000000014058e4c4 sub      ebx, 1
+000000014058e4c7 je       0x14058e4e1
+000000014058e4c9 sub      ebx, 1
+000000014058e4cc je       0x14058e4e1
+000000014058e4ce sub      ebx, 1
+000000014058e4d1 je       0x14058e4e1
+000000014058e4d3 sub      ebx, 1
+000000014058e4d6 je       0x14058e4e1
+000000014058e4d8 cmp      ebx, 1
+000000014058e4db jne      0x14058e5f5
+000000014058e4e1 mov      ebx, 0x8804
+000000014058e4e6 jmp      0x14058df7b
+000000014058e4eb sub      ebx, 0x102
+000000014058e4f1 je       0x14058e4e1
+000000014058e4f3 sub      ebx, 1
+000000014058e4f6 je       0x14058e4e1
+000000014058e4f8 sub      ebx, 1
+000000014058e4fb je       0x14058e51a
+000000014058e4fd sub      ebx, 1
+000000014058e500 je       0x14058e51a
+000000014058e502 sub      ebx, 1
+000000014058e505 je       0x14058e51a
+000000014058e507 sub      ebx, 1
+000000014058e50a je       0x14058e51a
+000000014058e50c sub      ebx, 1
+000000014058e50f je       0x14058e51a
+000000014058e511 cmp      ebx, 1
+000000014058e514 jne      0x14058e5f5
+000000014058e51a mov      ebx, 0x8804
+000000014058e51f jmp      0x14058e5d5
+000000014058e524 add      ebx, 0xfffffef5
+000000014058e52a cmp      ebx, 0xb3
+000000014058e530 ja       0x14058e5f5
+000000014058e536 lea      rdx, [rip - 0x58e53d]
+000000014058e53d mov      ecx, dword ptr [rdx + rbx*4 + 0x58e630]
+000000014058e544 add      rcx, rdx
+000000014058e547 jmp      rcx
+000000014058e549 mov      ebx, 0x8808
+000000014058e54e jmp      0x14058e078
+000000014058e553 mov      ebx, 0x8808
+000000014058e558 jmp      0x14058df7b
+000000014058e55d mov      ebx, 0x8808
+000000014058e562 jmp      0x14058e5d5
+000000014058e564 mov      ebx, 0x880c
+000000014058e569 jmp      0x14058e078
+000000014058e56e mov      ebx, 0x880c
+000000014058e573 jmp      0x14058df7b
+000000014058e578 mov      ebx, 0x880c
+000000014058e57d jmp      0x14058e5d5
+000000014058e57f mov      ebx, 0x1187c
+000000014058e584 jmp      0x14058df7b
+000000014058e589 mov      ebx, 0x1187c
+000000014058e58e jmp      0x14058e5d5
+000000014058e590 mov      ebx, 0x11880
+000000014058e595 jmp      0x14058e078
+000000014058e59a mov      ebx, 0x11880
+000000014058e59f jmp      0x14058df7b
+000000014058e5a4 mov      ebx, 0x11880
+000000014058e5a9 jmp      0x14058e5d5
+000000014058e5ab mov      ebx, 0x1587c
+000000014058e5b0 jmp      0x14058df7b
+000000014058e5b5 mov      ebx, 0x1587c
+000000014058e5ba jmp      0x14058e5d5
+000000014058e5bc mov      ebx, 0x15880
+000000014058e5c1 jmp      0x14058e078
+000000014058e5c6 mov      ebx, 0x15880
+000000014058e5cb jmp      0x14058df7b
+000000014058e5d0 mov      ebx, 0x15880
+000000014058e5d5 mov      rax, qword ptr [rsi]
+000000014058e5d8 mov      edx, ebx
+000000014058e5da mov      rcx, rdi
+000000014058e5dd call     qword ptr [rip + 0xf5d15]
+000000014058e5e3 mov      edx, ebx
+000000014058e5e5 mov      rcx, rdi
+000000014058e5e8 mov      r8b, al
+000000014058e5eb mov      rax, qword ptr [rsi + 8]
+000000014058e5ef call     qword ptr [rip + 0xf5d03]
+000000014058e5f5 mov      rax, qword ptr [rdi + 0x18]
+000000014058e5f9 mov      rdx, r15
+000000014058e5fc dec      dword ptr [rdi + 0xef8]
+000000014058e602 mov      rcx, qword ptr [rdi + 8]
+000000014058e606 mov      rax, qword ptr [rax + 0x110]
+000000014058e60d call     qword ptr [rip + 0xf5ce5]
+000000014058e613 mov      eax, r14d
+000000014058e616 mov      rbx, qword ptr [rsp + 0x58]
+000000014058e61b mov      rsi, qword ptr [rsp + 0x60]
+000000014058e620 mov      rdi, qword ptr [rsp + 0x68]
+000000014058e625 add      rsp, 0x30
+000000014058e629 pop      r15
+000000014058e62b pop      r14
+000000014058e62d pop      rbp
+000000014058e62e ret      
+000000014058e62f nop      
+000000014058e630 sbb      ah, ch
+000000014058e632 pop      rax
+000000014058e633 add      byte ptr [rcx - 0x1b], cl
+000000014058e636 pop      rax
+000000014058e637 add      byte ptr [rcx - 0x1b], cl
+000000014058e63a pop      rax
+000000014058e63b add      byte ptr [rcx - 0x1b], cl
+000000014058e63e pop      rax
+000000014058e63f add      byte ptr [rcx - 0x1b], cl
+000000014058e642 pop      rax
+000000014058e643 add      byte ptr [rcx - 0x1b], cl
+000000014058e646 pop      rax
+000000014058e647 add      byte ptr [rcx - 0x1b], cl
+000000014058e64a pop      rax
+000000014058e64b add      byte ptr [rcx - 0x1b], cl
+000000014058e64e pop      rax
+000000014058e64f add      byte ptr [rcx - 0x1b], cl
+000000014058e652 pop      rax
+000000014058e653 add      byte ptr [rcx - 0x1b], cl
+000000014058e656 pop      rax
+000000014058e657 add      byte ptr [rcx - 0x1b], cl
+000000014058e65a pop      rax
+000000014058e65b add      byte ptr [rcx - 0x1b], cl
+000000014058e65e pop      rax
+000000014058e65f add      byte ptr [rcx - 0x1b], cl
+000000014058e662 pop      rax
+000000014058e663 add      byte ptr [rcx - 0x1b], cl
+000000014058e666 pop      rax
+000000014058e667 add      byte ptr [rbx - 0x1b], dl
+000000014058e66a pop      rax
+000000014058e66b add      byte ptr [rbx - 0x1b], dl
+000000014058e66e pop      rax
+000000014058e66f add      byte ptr [rbx - 0x1b], dl
+000000014058e672 pop      rax
+000000014058e673 add      byte ptr [rbx - 0x1b], dl
+000000014058e676 pop      rax
+000000014058e677 add      byte ptr [rbx - 0x1b], dl
+000000014058e67a pop      rax
+000000014058e67b add      byte ptr [rbx - 0x1b], dl
+000000014058e67e pop      rax
+000000014058e67f add      byte ptr [rbx - 0x1b], dl
+000000014058e682 pop      rax
+000000014058e683 add      byte ptr [rbp - 0x1b], bl
+000000014058e686 pop      rax
+000000014058e687 add      byte ptr [rbp - 0x1b], bl
+000000014058e68a pop      rax
+000000014058e68b add      byte ptr [rbp - 0x1b], bl
+000000014058e68e pop      rax
+000000014058e68f add      byte ptr [rbp - 0x1b], bl
+000000014058e692 pop      rax
+000000014058e693 add      byte ptr [rbp - 0x1b], bl
+000000014058e696 pop      rax
+000000014058e697 add      byte ptr [rbp - 0x1b], bl
+000000014058e69a pop      rax
+000000014058e69b add      byte ptr [rbp - 0x1b], bl
+000000014058e69e pop      rax
+000000014058e69f add      byte ptr [rbp - 0x1b], bl
+000000014058e6a2 pop      rax
+000000014058e6a3 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6a7 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6ab add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6af add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6b3 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6b7 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6bb add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6bf add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6c3 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6c7 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6cb add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6cf add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6d3 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6d7 add      byte ptr [rbp + riz*8 + 0x58], ah
+000000014058e6db add      byte ptr [rsi - 0x1b], ch
+000000014058e6de pop      rax
+000000014058e6df add      byte ptr [rsi - 0x1b], ch
+000000014058e6e2 pop      rax
+000000014058e6e3 add      byte ptr [rsi - 0x1b], ch
+000000014058e6e6 pop      rax
+000000014058e6e7 add      byte ptr [rsi - 0x1b], ch
+000000014058e6ea pop      rax
+000000014058e6eb add      byte ptr [rsi - 0x1b], ch
+000000014058e6ee pop      rax
+000000014058e6ef add      byte ptr [rsi - 0x1b], ch
+000000014058e6f2 pop      rax
+000000014058e6f3 add      byte ptr [rsi - 0x1b], ch
+000000014058e6f6 pop      rax
+000000014058e6f7 add      byte ptr [rsi - 0x1b], ch
+000000014058e6fa pop      rax
+000000014058e6fb add      byte ptr [rax - 0x1b], bh
+000000014058e6fe pop      rax
+000000014058e6ff add      byte ptr [rax - 0x1b], bh
+000000014058e702 pop      rax
+000000014058e703 add      byte ptr [rax - 0x1b], bh
+000000014058e706 pop      rax
+000000014058e707 add      byte ptr [rax - 0x1b], bh
+000000014058e70a pop      rax
+000000014058e70b add      byte ptr [rax - 0x1b], bh
+000000014058e70e pop      rax
+000000014058e70f add      byte ptr [rax - 0x1b], bh
+000000014058e712 pop      rax
+000000014058e713 add      byte ptr [rax - 0x1b], bh
+000000014058e716 pop      rax
+000000014058e717 add      ch, dh
+000000014058e719 in       eax, 0x58
+000000014058e71b add      ch, dh
+000000014058e71d in       eax, 0x58
+000000014058e71f add      ch, dh
+000000014058e721 in       eax, 0x58
+000000014058e723 add      ch, dh
+000000014058e725 in       eax, 0x58
+000000014058e727 add      ch, dh
+000000014058e729 in       eax, 0x58
+000000014058e72b add      ch, dh
+000000014058e72d in       eax, 0x58
+000000014058e72f add      ch, dh
+000000014058e731 in       eax, 0x58
+000000014058e733 add      ch, dh
+000000014058e735 in       eax, 0x58
+000000014058e737 add      ch, dh
+000000014058e739 in       eax, 0x58
+000000014058e73b add      ch, dh
+000000014058e73d in       eax, 0x58
+000000014058e73f add      ch, dh
+000000014058e741 in       eax, 0x58
+000000014058e743 add      ch, dh
+000000014058e745 in       eax, 0x58
+000000014058e747 add      ch, dh
+000000014058e749 in       eax, 0x58
+000000014058e74b add      ch, dh
+000000014058e74d in       eax, 0x58
+000000014058e74f add      ch, dh
+000000014058e751 in       eax, 0x58
+000000014058e753 add      ch, dh
+000000014058e755 in       eax, 0x58
+000000014058e757 add      ch, dh
+000000014058e759 in       eax, 0x58
+000000014058e75b add      ch, dh
+000000014058e75d in       eax, 0x58
+000000014058e75f add      ch, dh
+000000014058e761 in       eax, 0x58
+000000014058e763 add      ch, dh
+000000014058e765 in       eax, 0x58
+000000014058e767 add      ch, dh
+000000014058e769 in       eax, 0x58
+000000014058e76b add      ch, dh
+000000014058e76d in       eax, 0x58
+000000014058e76f add      ch, dh
+000000014058e771 in       eax, 0x58
+000000014058e773 add      ch, dh
+000000014058e775 in       eax, 0x58
+000000014058e777 add      ch, dh
+000000014058e779 in       eax, 0x58
+000000014058e77b add      ch, dh
+000000014058e77d in       eax, 0x58
+000000014058e77f add      ch, dh
+000000014058e781 in       eax, 0x58
+000000014058e783 add      byte ptr [rdi - 0x1b], bh
+000000014058e786 pop      rax
+000000014058e787 add      byte ptr [rdi - 0x1b], bh
+000000014058e78a pop      rax
+000000014058e78b add      byte ptr [rdi - 0x1b], bh
+000000014058e78e pop      rax
+000000014058e78f add      byte ptr [rdi - 0x1b], bh
+000000014058e792 pop      rax
+000000014058e793 add      byte ptr [rdi - 0x1b], bh
+000000014058e796 pop      rax
+000000014058e797 add      byte ptr [rdi - 0x1b], bh
+000000014058e79a pop      rax
+000000014058e79b add      byte ptr [rdi - 0x1b], bh
+000000014058e79e pop      rax
+000000014058e79f add      byte ptr [rcx - 0x76ffa71b], cl
+000000014058e7a5 in       eax, 0x58
+000000014058e7a7 add      byte ptr [rcx - 0x76ffa71b], cl
+000000014058e7ad in       eax, 0x58
+000000014058e7af add      byte ptr [rcx - 0x76ffa71b], cl
+000000014058e7b5 in       eax, 0x58
+000000014058e7b7 add      byte ptr [rcx - 0x76ffa71b], cl
+000000014058e7bd in       eax, 0x58
+000000014058e7bf add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7c5 in       eax, 0x58
+000000014058e7c7 add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7cd in       eax, 0x58
+000000014058e7cf add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7d5 in       eax, 0x58
+000000014058e7d7 add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7dd in       eax, 0x58
+000000014058e7df add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7e5 in       eax, 0x58
+000000014058e7e7 add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7ed in       eax, 0x58
+000000014058e7ef add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7f5 in       eax, 0x58
+000000014058e7f7 add      byte ptr [rax - 0x6fffa71b], dl
+000000014058e7fd in       eax, 0x58
+000000014058e7ff add      byte ptr [rdx - 0x65ffa71b], bl
+000000014058e805 in       eax, 0x58
+000000014058e807 add      byte ptr [rdx - 0x65ffa71b], bl
+000000014058e80d in       eax, 0x58
+000000014058e80f add      byte ptr [rdx - 0x65ffa71b], bl
+000000014058e815 in       eax, 0x58
+000000014058e817 add      byte ptr [rdx - 0x65ffa71b], bl
+000000014058e81d in       eax, 0x58
+000000014058e81f add      byte ptr [rbp + riz*8 - 0x1a5bffa8], ah
+000000014058e826 pop      rax
+000000014058e827 add      byte ptr [rbp + riz*8 - 0x1a5bffa8], ah
+000000014058e82e pop      rax
+000000014058e82f add      byte ptr [rbp + riz*8 - 0x1a5bffa8], ah
+000000014058e836 pop      rax
+000000014058e837 add      byte ptr [rbp + riz*8 - 0x1a5bffa8], ah
+000000014058e83e pop      rax
+000000014058e83f add      ch, dh
+000000014058e841 in       eax, 0x58
+000000014058e843 add      byte ptr [rbx - 0x54ffa71b], ch
+000000014058e849 in       eax, 0x58
+000000014058e84b add      byte ptr [rbx - 0x54ffa71b], ch
+000000014058e851 in       eax, 0x58
+000000014058e853 add      byte ptr [rbx - 0x54ffa71b], ch
+000000014058e859 in       eax, 0x58
+000000014058e85b add      byte ptr [rbx - 0x4affa71b], ch
+000000014058e861 in       eax, 0x58
+000000014058e863 add      byte ptr [rbp - 0x4affa71b], dh
+000000014058e869 in       eax, 0x58
+000000014058e86b add      byte ptr [rbp - 0x4affa71b], dh
+000000014058e871 in       eax, 0x58
+000000014058e873 add      byte ptr [rbp - 0x4affa71b], dh
+000000014058e879 in       eax, 0x58
+000000014058e87b add      byte ptr [rbp - 0x43ffa71b], dh
+000000014058e881 in       eax, 0x58
+000000014058e883 add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e88a pop      rax
+000000014058e88b add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e892 pop      rax
+000000014058e893 add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e89a pop      rax
+000000014058e89b add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e8a2 pop      rax
+000000014058e8a3 add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e8aa pop      rax
+000000014058e8ab add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e8b2 pop      rax
+000000014058e8b3 add      byte ptr [rbp + riz*8 - 0x1a43ffa8], bh
+000000014058e8ba pop      rax
+000000014058e8bb add      byte ptr [rbp + riz*8 - 0x1a39ffa8], bh
+000000014058e8c2 pop      rax
+000000014058e8c3 add      dh, al
+000000014058e8c5 in       eax, 0x58
+000000014058e8c7 add      dh, al
+000000014058e8c9 in       eax, 0x58
+000000014058e8cb add      dh, al
+000000014058e8cd in       eax, 0x58
+000000014058e8cf add      dh, al
+000000014058e8d1 in       eax, 0x58
+000000014058e8d3 add      dh, al
+000000014058e8d5 in       eax, 0x58
+000000014058e8d7 add      dh, al
+000000014058e8d9 in       eax, 0x58
+000000014058e8db add      dh, al
+000000014058e8dd in       eax, 0x58
+000000014058e8df add      al, dl
+000000014058e8e1 in       eax, 0x58
+000000014058e8e3 add      al, dl
+000000014058e8e5 in       eax, 0x58
+000000014058e8e7 add      al, dl
+000000014058e8e9 in       eax, 0x58
+000000014058e8eb add      al, dl
+000000014058e8ed in       eax, 0x58
+000000014058e8ef add      al, dl
+000000014058e8f1 in       eax, 0x58
+000000014058e8f3 add      al, dl
+000000014058e8f5 in       eax, 0x58
+000000014058e8f7 add      al, dl
+000000014058e8f9 in       eax, 0x58
+000000014058e8fb add      al, dl
+000000014058e8fd in       eax, 0x58
