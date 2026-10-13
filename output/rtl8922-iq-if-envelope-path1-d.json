@@ -1,0 +1,658 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T05:21:06Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "1a7f80ff8f89eeb203895fb0e8046a98ea509abd43290a713a1f4326931757c7",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0a4f1023f87364f49fe2e609c5c7b7aaa5e3e0934a724938e3769f1f109f25b3",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205",
+    "dac_phase_probe.py": "e288ea2adbf744d392fc03d66c79d6acc71f54ca39893b9773f235d0231c7c08",
+    "iq_if_probe.py": "5c7ed5f029edacd25eaafdbad1d66b6935c7c652f78603fab77acc630af5fbb5",
+    "decode_iq_if.py": "4ab5afb09d81441c43da8a02c30b84d7fc6d08964396c72c277658290a486608"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-iq-if-envelope-path1-d.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": "/tmp/rtl8922-iq-if-payload-d.json",
+    "probe_iq_rf": false,
+    "probe_dac_phases": false,
+    "native_dac_clock4": false,
+    "probe_dif5": false,
+    "probe_iq_if": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1070\n\twdev 0x4c00000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 76\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1608703.61328125,
+        "above_median_db": 12.170844881342875,
+        "power": 322361.44040318066
+      },
+      {
+        "hz": -309753.41796875,
+        "above_median_db": 11.862986266619115,
+        "power": 300301.3096297598
+      },
+      {
+        "hz": 245300.29296875,
+        "above_median_db": 11.59581646160482,
+        "power": 282384.1039818905
+      },
+      {
+        "hz": 735900.87890625,
+        "above_median_db": 11.275230021675188,
+        "power": 262289.9206305657
+      },
+      {
+        "hz": -360534.66796875,
+        "above_median_db": 11.134280469110076,
+        "power": 253913.99959111112
+      },
+      {
+        "hz": 1432739.2578125,
+        "above_median_db": 11.109235481161972,
+        "power": 252453.93686315432
+      },
+      {
+        "hz": -107543.9453125,
+        "above_median_db": 11.108414612586666,
+        "power": 252406.22455532316
+      },
+      {
+        "hz": -93933.10546875,
+        "above_median_db": 11.014139422332704,
+        "power": 246986.11662748133
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0802670636055407,
+    "mean_real": -0.0045318603515625,
+    "mean_imag": -0.017791748046875,
+    "clip_fraction": 0.0
+  },
+  "iq_if_modulation": {
+    "offset_source": "iqc_if",
+    "if_schedule": {
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          -512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          -512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          439,
+          29
+        ],
+        [
+          394,
+          195
+        ],
+        [
+          290,
+          331
+        ],
+        [
+          141,
+          417
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          -29,
+          439
+        ],
+        [
+          -195,
+          394
+        ],
+        [
+          -331,
+          290
+        ],
+        [
+          -417,
+          141
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          -439,
+          -29
+        ],
+        [
+          -394,
+          -195
+        ],
+        [
+          -290,
+          -331
+        ],
+        [
+          -141,
+          -417
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          29,
+          -439
+        ],
+        [
+          195,
+          -394
+        ],
+        [
+          331,
+          -290
+        ],
+        [
+          417,
+          -141
+        ],
+        [
+          512,
+          0
+        ]
+      ],
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "reference_indices": [
+        3,
+        11,
+        17,
+        22,
+        27,
+        32,
+        37
+      ],
+      "payload_indices": [
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36
+      ],
+      "dwell_seconds": 0.04,
+      "initial_pilot_seconds": 0.2
+    },
+    "private_decimated_trace_path": "/tmp/rtl8922-iq-if-envelope-d.npz",
+    "carrier_hz_relative_pluto": 1264762.411755989,
+    "image_hz_relative_pluto": 764762.4117559891,
+    "if_envelope_mapping": "A=2*I-1024, B=2*Q; desired m=(I+jQ)/1024; image=m-1",
+    "pilot_spectrum": {
+      "hz": 1264648.4375,
+      "above_local_median_db": 30.188444269037653,
+      "blocks": 64,
+      "fft_size": 4096
+    },
+    "discarded_clipped_fraction": 0.0,
+    "events": [
+      [
+        0.20020076259970665,
+        0,
+        0
+      ],
+      [
+        0.24010339193046093,
+        -512,
+        0
+      ],
+      [
+        0.28014471754431725,
+        0,
+        0
+      ],
+      [
+        0.320133151486516,
+        512,
+        0
+      ],
+      [
+        0.3601341787725687,
+        0,
+        0
+      ],
+      [
+        0.40009273402392864,
+        0,
+        -512
+      ],
+      [
+        0.44014112278819084,
+        0,
+        0
+      ],
+      [
+        0.48012284375727177,
+        0,
+        512
+      ],
+      [
+        0.5200950261205435,
+        0,
+        0
+      ],
+      [
+        0.5601242184638977,
+        -512,
+        0
+      ],
+      [
+        0.6001048777252436,
+        0,
+        0
+      ],
+      [
+        0.6401381753385067,
+        512,
+        0
+      ],
+      [
+        0.6801187545061111,
+        0,
+        0
+      ],
+      [
+        0.7201220374554396,
+        0,
+        -512
+      ],
+      [
+        0.7601348161697388,
+        0,
+        0
+      ],
+      [
+        0.8005684614181519,
+        0,
+        512
+      ],
+      [
+        0.8401441350579262,
+        0,
+        0
+      ],
+      [
+        0.8801286220550537,
+        512,
+        0
+      ],
+      [
+        0.9200914278626442,
+        439,
+        29
+      ],
+      [
+        0.9600766748189926,
+        394,
+        195
+      ],
+      [
+        1.0001147016882896,
+        290,
+        331
+      ],
+      [
+        1.0400978457182646,
+        141,
+        417
+      ],
+      [
+        1.0801224894821644,
+        512,
+        0
+      ],
+      [
+        1.1201378647238016,
+        -29,
+        439
+      ],
+      [
+        1.1602053884416819,
+        -195,
+        394
+      ],
+      [
+        1.2001708671450615,
+        -331,
+        290
+      ],
+      [
+        1.2401091158390045,
+        -417,
+        141
+      ],
+      [
+        1.2802195120602846,
+        512,
+        0
+      ],
+      [
+        1.3201154805719852,
+        -439,
+        -29
+      ],
+      [
+        1.360125944018364,
+        -394,
+        -195
+      ],
+      [
+        1.4001264218240976,
+        -290,
+        -331
+      ],
+      [
+        1.4400936551392078,
+        -141,
+        -417
+      ],
+      [
+        1.4801187198609114,
+        512,
+        0
+      ],
+      [
+        1.520185962319374,
+        29,
+        -439
+      ],
+      [
+        1.5601695664227009,
+        195,
+        -394
+      ],
+      [
+        1.6002455074340105,
+        331,
+        -290
+      ],
+      [
+        1.6401593293994665,
+        417,
+        -141
+      ],
+      [
+        1.6801404692232609,
+        512,
+        0
+      ]
+    ],
+    "qualified": false,
+    "finite_complex_if_sequence_demonstrated": false,
+    "reason": "Insufficient clean samples in state: minimum 1"
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": -1954467.7734375,
+        "above_median_db": 18.09978714800117,
+        "power": 15808943.46775464
+      },
+      {
+        "hz": -1003784.1796875,
+        "above_median_db": 16.485166770822783,
+        "power": 10900359.180382393
+      },
+      {
+        "hz": -1944458.0078125,
+        "above_median_db": 16.35819146988168,
+        "power": 10586277.611671574
+      },
+      {
+        "hz": 1991699.21875,
+        "above_median_db": 15.712079586208853,
+        "power": 9122882.687822
+      },
+      {
+        "hz": -1882995.60546875,
+        "above_median_db": 15.371833621549719,
+        "power": 8435435.20423546
+      },
+      {
+        "hz": -1816162.109375,
+        "above_median_db": 15.176884633993042,
+        "power": 8065152.711206313
+      },
+      {
+        "hz": -1964782.71484375,
+        "above_median_db": 15.175819881132917,
+        "power": 8063175.632937648
+      },
+      {
+        "hz": -1869567.87109375,
+        "above_median_db": 14.826062427310214,
+        "power": 7439270.9102687845
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 4.646544717057739,
+    "mean_real": -0.0412445068359375,
+    "mean_imag": -0.0548095703125,
+    "clip_fraction": 0.0
+  },
+  "status": "iq_if_envelope_probe_complete",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

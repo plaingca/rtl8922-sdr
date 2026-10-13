@@ -1,0 +1,581 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T03:45:05Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "fac3cb4a5735d5e6dd5cbcf2743f2a6a2075283bc245d5c98bfda03ea3d77ff5",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "fc79cc703403446a4f53b485b2ae34b5101e2f0da7ca174550196327c0c3a844",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "2334dce90ba20b5544a90b5f6069a8c6e87e83ee2dbd2a953e536b66ccd613dc"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-dac-followup-tone-control-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": true,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1056\n\twdev 0x3e00000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 62\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 70,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1026184.08203125,
+        "above_median_db": 21.14879743028534,
+        "power": 2293121.91313373
+      },
+      {
+        "hz": 891174.31640625,
+        "above_median_db": 13.610751799506334,
+        "power": 404224.45242471225
+      },
+      {
+        "hz": -1364868.1640625,
+        "above_median_db": 11.535508891108767,
+        "power": 250667.65058326846
+      },
+      {
+        "hz": 1395996.09375,
+        "above_median_db": 11.46290053643293,
+        "power": 246511.6536813215
+      },
+      {
+        "hz": -1552368.1640625,
+        "above_median_db": 11.250125157953477,
+        "power": 234725.3078077668
+      },
+      {
+        "hz": 1609497.0703125,
+        "above_median_db": 11.168691179549572,
+        "power": 230365.01231644966
+      },
+      {
+        "hz": 976257.32421875,
+        "above_median_db": 11.105134499938082,
+        "power": 227018.291770473
+      },
+      {
+        "hz": 1634338.37890625,
+        "above_median_db": 10.997406276379213,
+        "power": 221456.29462551328
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0326916414725102,
+    "mean_real": -0.0024871826171875,
+    "mean_imag": 0.02520751953125,
+    "clip_fraction": 0.0
+  },
+  "digital_tone_verification": {
+    "rows": [
+      {
+        "tone_index": null,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1241210.9375,
+              "power": 12555.347014341834,
+              "local_median_power": 6436.783751393685,
+              "above_local_median_db": 2.901598016566116
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1541992.1875,
+              "power": 11602.200779157269,
+              "local_median_power": 6216.8143811111595,
+              "above_local_median_db": 2.709724761880908
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1794921.875,
+              "power": 13685.977993616621,
+              "local_median_power": 5635.243665093332,
+              "above_local_median_db": 3.8536313787412224
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            1.0755247742562988,
+            1.0713527107630685,
+            1.0451244692619153,
+            149.1083447603549,
+            1.0468385604665542,
+            1.0710322055622616,
+            106.71391755049858,
+            1.0537394465849053
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "tone_index": 1,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1265625.0,
+              "power": 6132192.442329964,
+              "local_median_power": 6362.5872985008045,
+              "above_local_median_db": 29.83982021392262
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1546142.578125,
+              "power": 11655.259618472453,
+              "local_median_power": 5770.29022639066,
+              "above_local_median_db": 3.053242945112994
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1710937.5,
+              "power": 10239.367939778203,
+              "local_median_power": 5728.765571413209,
+              "above_local_median_db": 2.522120984313194
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            1.110832009759464,
+            153.80905019773542,
+            1.1099869021081117,
+            1.0924378289661385,
+            27.34189335214513,
+            79.65951800760598,
+            1.0748009785791448,
+            1.0722851916475218
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tx_dac_debug": {
+          "status": "0x32509",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1413.639133583957,
+          "imag_std": 1461.8727714818415,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1998,
+          "real_max": 1998,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 287524.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 255.0180158811603
+        }
+      },
+      {
+        "tone_index": 2,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1231201.171875,
+              "power": 18120.914134105107,
+              "local_median_power": 8508.518174630717,
+              "above_local_median_db": 3.28326171598066
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1515625.0,
+              "power": 5584380.021527326,
+              "local_median_power": 8239.841254254756,
+              "above_local_median_db": 28.31056119887359
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1719726.5625,
+              "power": 15623.49003323191,
+              "local_median_power": 7901.704260108632,
+              "above_local_median_db": 2.960572835372133
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            1.1202155205584325,
+            135.3289063266723,
+            5.474058528410245,
+            1.0742684647586933,
+            92.52079118640205,
+            28.953389561325004,
+            1.093373261009535,
+            9.01730378650542
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tx_dac_debug": {
+          "status": "0x32558",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1414.0438465620505,
+          "imag_std": 1462.3479750045815,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1990,
+          "real_max": 1990,
+          "imag_min": -2062,
+          "imag_max": 2062,
+          "iq_covariance": 287318.4,
+          "unique_words": 10,
+          "peak_cycles_per_record": 0.1,
+          "peak_above_median_db": 253.5194834389607
+        }
+      },
+      {
+        "tone_index": 3,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1251464.84375,
+              "power": 16594.487018550793,
+              "local_median_power": 8611.937223274166,
+              "above_local_median_db": 2.848629763367189
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1468017.578125,
+              "power": 15090.40474760082,
+              "local_median_power": 8185.760584366606,
+              "above_local_median_db": 2.6564185004100866
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1765625.0,
+              "power": 3701532.458988118,
+              "local_median_power": 7901.675121759187,
+              "above_local_median_db": 26.70662392445407
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            151.92710267821948,
+            1.1056757756677305,
+            1.0807825037039136,
+            1.1081295275393972,
+            121.63703035642831,
+            1.1080400198309062,
+            1.0847706185742103,
+            85.58073165291954
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tx_dac_debug": {
+          "status": "0x324b7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1414.8647991946086,
+          "imag_std": 1461.8318644768967,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1978,
+          "real_max": 1978,
+          "imag_min": -2066,
+          "imag_max": 2066,
+          "iq_covariance": 287990.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.15000000000000002,
+          "peak_above_median_db": 247.66427920926233
+        }
+      },
+      {
+        "tone_index": 1,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1265380.859375,
+              "power": 6009403.292954783,
+              "local_median_power": 7689.234369626143,
+              "above_local_median_db": 28.92948252130237
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1493896.484375,
+              "power": 15947.337604950904,
+              "local_median_power": 7346.454491359932,
+              "above_local_median_db": 3.3661039569107216
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1752685.546875,
+              "power": 13794.951144170718,
+              "local_median_power": 6893.5641835427305,
+              "above_local_median_db": 3.0127634322533847
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            105.60107056913145,
+            1.095381038333522,
+            1.1024140657942176,
+            126.82629668424309,
+            1.1362085409962435,
+            1.1118343118960554,
+            1.0864362051817342,
+            134.60478989579317
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tx_dac_debug": {
+          "status": "0x324c9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1414.1458199209867,
+          "imag_std": 1461.9942544346748,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1990,
+          "real_max": 1990,
+          "imag_min": -2066,
+          "imag_max": 2066,
+          "iq_covariance": 288690.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.52650825093957
+        }
+      },
+      {
+        "tone_index": null,
+        "rf": {
+          "targets": [
+            {
+              "expected_hz": 1250000,
+              "hz": 1296142.578125,
+              "power": 14675.97338981226,
+              "local_median_power": 6192.96486864096,
+              "above_local_median_db": 3.7470829927309017
+            },
+            {
+              "expected_hz": 1500000,
+              "hz": 1497558.59375,
+              "power": 13116.337416874934,
+              "local_median_power": 6013.5633354984475,
+              "above_local_median_db": 3.386806909699373
+            },
+            {
+              "expected_hz": 1750000,
+              "hz": 1778564.453125,
+              "power": 11139.478593071455,
+              "local_median_power": 5672.931764611815,
+              "above_local_median_db": 2.930573034412424
+            }
+          ],
+          "blocks": 32,
+          "fft_size": 16384,
+          "rms_per_buffer": [
+            1.0541810126453024,
+            1.0474214408750127,
+            1.041021121584926,
+            152.47542311445036,
+            1.033444929762376,
+            1.0450149637273443,
+            1.0417537398503485,
+            95.63782753270685
+          ],
+          "clip_fraction_per_buffer": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "qualification": {
+      "passed": true,
+      "gates": {
+        "all_on_peaks_above_local_floor_20db": true,
+        "all_on_peaks_above_both_off_controls_15db": true,
+        "all_frequency_residuals_within_3000hz": true,
+        "no_clipped_buffers": true
+      },
+      "measured_movements_hz": [
+        250000.0,
+        250000.0,
+        -500244.140625
+      ],
+      "common_carrier_offset_hz": 15625.0,
+      "on_above_off_db": [
+        26.210088599274677,
+        26.29162384371009,
+        24.321057247559974,
+        26.12224435000877
+      ],
+      "scope": "Finite calibration-tone RF route only; no arbitrary-I/Q or replay qualification"
+    }
+  },
+  "status": "digital_tone_verification_complete",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:0:0": {
+      "saved": "0x337e0",
+      "actual": "0x3b7e0"
+    }
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

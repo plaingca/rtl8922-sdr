@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_firmware_sha256": "bffa3cad4e4b41687e363328365c1d3da1515e1af6bd9b930e39afed095e4480",
+  "hook": "0x10010214",
+  "stub": "0x10017000",
+  "stub_bytes": 140,
+  "copy_source_local": "0x10000028",
+  "copy_bytes": 96,
+  "output_local": "0x10017b00",
+  "output_host_hypothesis": "0x1863fb00",
+  "marker_started": "0x524f4d31",
+  "marker_finished": "0x524f4d32",
+  "changed_regions": [
+    {
+      "file_offset": "0xd4084",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xdae70",
+      "bytes": 140
+    }
+  ],
+  "section_digest_refreshed": false,
+  "bb_security_sections_omitted": true,
+  "container_repacked": true,
+  "patched_bb_section_file_offset": "0xd3e50",
+  "container_bytes_removed": 6512,
+  "acceptance": "untested; no signatures generated or hardware security settings changed",
+  "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed",
+  "changed_regions_coordinates": "original container before optional header/security repacking"
+}

@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "rf_report": "output/rtl8922-bb-nco-lora-narrow-fast-confirm-a.json",
+  "source": {
+    "schema_version": 1,
+    "hardware_access": false,
+    "kind": "meshtastic-lora-frequency-dither",
+    "parameters": {
+      "preset": "NARROW_FAST",
+      "wide_lora": false,
+      "sf": 7,
+      "bandwidth_hz": 62500,
+      "coding_rate_denominator": 6,
+      "preamble_symbols": 16,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "frame_samples": 21659648,
+    "stream_blocks": 5288,
+    "carrier_offset_hz": 500000,
+    "sources": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "symbol_count": 74,
+        "symbol_sha256": "ec7fbd79b1298396bbc93fc48f223768e798799c583db68897109a24a9daeec4",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 53333,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031",
+        "symbol_count": 74,
+        "symbol_sha256": "2949e4b097e6a44edee0b1c73b932367521647a3be58f93f3a843b84d5be33f3",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 2213751,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f5261203032",
+        "symbol_count": 74,
+        "symbol_sha256": "fd6eea4884d2c9bbafb64f49e69883d8429be0e1c32afbc5101ef7d89b157939",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 4374169,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f803002289000000000801120f52544c38393232204c6f5261203033",
+        "symbol_count": 74,
+        "symbol_sha256": "d11647380e0eb6407f01ad84d5b9dd3205a4f512954de805e7da5d8bef2a106f",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 6534587,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f804002289000000000801120f52544c38393232204c6f5261203034",
+        "symbol_count": 74,
+        "symbol_sha256": "47249a715f1a301b840215c55a403d73d010614b8667638ab260b0714d677003",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 8695005,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035",
+        "symbol_count": 74,
+        "symbol_sha256": "82ba78c013d7a6286226410752212f76d4c611d0b372e1ceaf43accbcd12521e",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 10855423,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036",
+        "symbol_count": 74,
+        "symbol_sha256": "cae12c777464b65a46fb6ac15619232bd2b8ce108ffe9cfc865c70fdd12e5a5c",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 13015841,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f807002289000000000801120f52544c38393232204c6f5261203037",
+        "symbol_count": 74,
+        "symbol_sha256": "5e9a20388f9f84f6d98b3570c721921a41ea1bcdff8ff625b2e3b481a0fac944",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 15176259,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f5261203038",
+        "symbol_count": 74,
+        "symbol_sha256": "16eda84877ee54a63da9a659d508157cbed0c5d15fbe00f2e424ee13117cb0c8",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 17336677,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      },
+      {
+        "payload_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f5261203039",
+        "symbol_count": 74,
+        "symbol_sha256": "08f6cfc6ed2ce224ae7873fccb3ed8cfc36e7169d3c3b4866b09855999443197",
+        "nominal_airtime_seconds": 0.193024,
+        "first_native_command": 19497095,
+        "native_commands": 2053752,
+        "ideal_crc_packets": 1
+      }
+    ],
+    "packet_count": 10,
+    "body_bytes": 35,
+    "table_sha256": "1c3c428183bdaf08a6437fd56e2cc1f150f0886000b800235bd2793bbe2b585f",
+    "native_rate_hz": 10666666.666666666,
+    "chirp_playback_rate_hz": 10639878.95,
+    "buffer_hold_phase_compensation": true,
+    "modeled_buffer_service_gap_seconds": 9.667857358471314e-07,
+    "nco_command_max": 9,
+    "nco_codebook": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "scope": "Offline phase-accumulation frequency dithering; no amplitude compiler. Stock LoRa header/FEC/CRC, Meshtastic sync and preamble. RF carrier is in WiFi band, not sub-GHz."
+  },
+  "receiver_sample_rate_hz": 500000,
+  "receiver_mixing_offset_hz": -491453.078125,
+  "decode": {
+    "packets": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f5261203032",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f803002289000000000801120f52544c38393232204c6f5261203033",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f804002289000000000801120f52544c38393232204c6f5261203034",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f807002289000000000801120f52544c38393232204c6f5261203037",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f5261203038",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f5261203039",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 2
+        }
+      }
+    ],
+    "crc_valid_packets": 10,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "off_control": {
+    "packets": [],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "wrong_sync_control": {
+    "packets": [],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "exact_crc_packets": 10,
+  "transmitted_packets": 10,
+  "distinct_exact_payloads": [
+    "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+    "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031",
+    "ffffffff012092f802002289000000000801120f52544c38393232204c6f5261203032",
+    "ffffffff012092f803002289000000000801120f52544c38393232204c6f5261203033",
+    "ffffffff012092f804002289000000000801120f52544c38393232204c6f5261203034",
+    "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035",
+    "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036",
+    "ffffffff012092f807002289000000000801120f52544c38393232204c6f5261203037",
+    "ffffffff012092f808002289000000000801120f52544c38393232204c6f5261203038",
+    "ffffffff012092f809002289000000000801120f52544c38393232204c6f5261203039"
+  ],
+  "scope": "Stock LoRa per-packet acquisition/header/FEC/CRC; no known-payload fit, packet averaging or inter-packet phase correction. WiFi-band RF, not demonstrated commercial Meshtastic receiver interoperability.",
+  "packet_decode_demonstrated": true
+}

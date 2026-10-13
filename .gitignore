@@ -8,8 +8,22 @@ __pycache__/
 *.so
 *.bin
 *.cf32
+*.cs16
+*.iq
+*.raw
+*.npy
+*.npz
+*.wav
+*.mp3
+*.flac
+*.sys
+*.zip
+*.tar.gz
 *.log
 /live-bridge
 /live-channels.json
 .env
 .env.*
+
+# Local received/generated audio artifacts; reports retain provenance.
+/output/audio/

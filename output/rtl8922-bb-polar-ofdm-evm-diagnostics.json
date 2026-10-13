@@ -1,0 +1,63 @@
+{
+  "hardware_access": false,
+  "scope": "Offline model ablations, not measurements of individual physical error sources. Ideal controls retain the existing sample holds, interpolation, filtering and receiver.",
+  "sample_period_ns": 187.5,
+  "rows": [
+    {
+      "case": "current model",
+      "evm_rms": 0.184219739756468,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.5
+    },
+    {
+      "case": "remove envelope quantization",
+      "evm_rms": 0.12427508964835605,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.5
+    },
+    {
+      "case": "remove NCO quantization",
+      "evm_rms": 0.16499381228958987,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.5
+    },
+    {
+      "case": "remove both quantizers",
+      "evm_rms": 0.1009274086971602,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.5
+    },
+    {
+      "case": "timing sensitivity",
+      "evm_rms": 0.2794771465252833,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0
+    },
+    {
+      "case": "timing sensitivity",
+      "evm_rms": 0.21265204827867434,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.25
+    },
+    {
+      "case": "timing sensitivity",
+      "evm_rms": 0.20415214883510835,
+      "crc_valid": 7,
+      "candidates": 7,
+      "model_amp_delay_samples": 0.75
+    },
+    {
+      "case": "timing sensitivity",
+      "evm_rms": 0.3330107979985013,
+      "crc_valid": 0,
+      "candidates": 7,
+      "model_amp_delay_samples": 1.0
+    }
+  ]
+}

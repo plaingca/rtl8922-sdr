@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "status": "finite_paired_pattern_rate_measured",
+  "fft_size": 262144,
+  "period_samples": 32,
+  "comb_spacing_hz": 166667.62437683268,
+  "rf_measured_paired_update_rate_hz": 5333363.980058646,
+  "fitted_carrier_hz": 284116.7152964115,
+  "static_control_carrier_offset_hz": 34057.6171875,
+  "qualified_lines": [
+    {
+      "order": -18,
+      "hz": -2715902.450742115,
+      "above_local_floor_db": 21.921188615392403,
+      "power": 1421421504.277514,
+      "fit_error_hz": -1.9272555378265679
+    },
+    {
+      "order": -11,
+      "hz": -1549227.6916546694,
+      "above_local_floor_db": 20.058311696954956,
+      "power": 941454263.9016203,
+      "fit_error_hz": -0.5388059213291854
+    },
+    {
+      "order": -7,
+      "hz": -882556.8848610489,
+      "above_local_floor_db": 21.48066909522376,
+      "power": 1412859111.9619448,
+      "fit_error_hz": -0.22951963159721345
+    },
+    {
+      "order": -4,
+      "hz": -382546.5518062251,
+      "above_local_floor_db": 19.728445207375596,
+      "power": 950929197.0800742,
+      "fit_error_hz": 7.230404694157187
+    },
+    {
+      "order": 0,
+      "hz": 284108.44708421064,
+      "above_local_floor_db": 20.39373838671772,
+      "power": 1290479131.129754,
+      "fit_error_hz": -8.268212200840935
+    },
+    {
+      "order": 5,
+      "hz": 1117462.1499462132,
+      "above_local_floor_db": 20.232370918387204,
+      "power": 1055940715.4891242,
+      "fit_error_hz": 7.31276563834399
+    },
+    {
+      "order": 9,
+      "hz": 1784129.2812234967,
+      "above_local_floor_db": 19.631535294542516,
+      "power": 845043128.3435453,
+      "fit_error_hz": 3.9465355910360813
+    },
+    {
+      "order": 12,
+      "hz": 2284118.2189959986,
+      "above_local_floor_db": 19.261602306292634,
+      "power": 803011723.5924,
+      "fit_error_hz": -9.988822405226529
+    },
+    {
+      "order": 14,
+      "hz": 2617465.9194818437,
+      "above_local_floor_db": 23.191845733755542,
+      "power": 2127936300.0179048,
+      "fit_error_hz": 2.4629097748547792
+    }
+  ],
+  "fit_max_residual_hz": 9.988822405226529,
+  "capture_seconds": 0.0065536,
+  "clip_fraction": 0.0,
+  "amplitude_control_db": -5.661653192442943,
+  "reaches_20msps": false,
+  "scope": "Known finite periodic pattern rate only. Does not establish arbitrary polar sample fidelity, gap-free sustained operation, host sample streaming or whole-band qualification.",
+  "inputs": {
+    "output/rtl8922-bb-polar-rf-5180-e.json": "0e5f0039aa082b9b0f9f9f750788f7f1374bf0ee51d1420b4439672e8bc045d8",
+    "output/rtl8922-bb-polar-patch-e.json": "3be0e86fd666c50179b0b0984b2232d894dc000d56e10d6906f03229007e62fe"
+  },
+  "trace_sha256": "eaf88f1a446cd18aea02a510ab206327545a7ea8d9f1f6d245480ed4aee43c30"
+}

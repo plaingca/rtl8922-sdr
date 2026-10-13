@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "scope": "Source metadata and hashes only; no input I/Q or command samples",
+  "sources": {
+    "rt100-native.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 1,
+      "input_sample_rate_hz": 10666666.666666666,
+      "input_samples": 4194305,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 8192,
+      "frame_count": 512,
+      "oversample": 40,
+      "active_carrier_span_hz": 100000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "26a49a7a61dac64da9fad773a90f7c2c7bd3612d9679e0ed1f62a758fd594ebe",
+      "feedback": 0.97,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt100-base.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 40,
+      "input_sample_rate_hz": 266666.6666666666,
+      "input_samples": 104859,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 8192,
+      "frame_count": 512,
+      "oversample": 40,
+      "active_carrier_span_hz": 100000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "3fa9240be32b87d00e124174237412725161e848396f12c6fec791cad09a3bb7",
+      "feedback": 0.97,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "nco_codebook": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt200-base.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 20,
+      "input_sample_rate_hz": 533333.3333333333,
+      "input_samples": 209717,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 20,
+      "active_carrier_span_hz": 200000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+      "feedback": 0.97,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt200-mixed.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 20,
+      "input_sample_rate_hz": 533333.3333333333,
+      "input_samples": 209717,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 20,
+      "active_carrier_span_hz": 200000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+      "feedback": 0.95,
+      "phase_weight": 0.2,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt200-peak.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 20,
+      "input_sample_rate_hz": 533333.3333333333,
+      "input_samples": 209717,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 20,
+      "active_carrier_span_hz": 200000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+      "feedback": 0.97,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.9,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "nco_codebook": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt200-tuned.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 20,
+      "input_sample_rate_hz": 533333.3333333333,
+      "input_samples": 209717,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 20,
+      "active_carrier_span_hz": 200000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+      "feedback": 0.95,
+      "phase_weight": 8.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt250-base.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 16,
+      "input_sample_rate_hz": 666666.6666666666,
+      "input_samples": 262145,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 16,
+      "active_carrier_span_hz": 250000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+      "feedback": 0.97,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt250-mixed.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 16,
+      "input_sample_rate_hz": 666666.6666666666,
+      "input_samples": 262145,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 16,
+      "active_carrier_span_hz": 250000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+      "feedback": 0.85,
+      "phase_weight": 2.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt250-peak.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 16,
+      "input_sample_rate_hz": 666666.6666666666,
+      "input_samples": 262145,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 4096,
+      "frame_count": 1024,
+      "oversample": 16,
+      "active_carrier_span_hz": 250000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "7989386ddd886251b83117db1245823b9d35343d726667643296355b16ee5530",
+      "feedback": 0.95,
+      "phase_weight": 1.0,
+      "envelope_peak": 0.9,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "nco_codebook": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt400-tuned.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 10,
+      "input_sample_rate_hz": 1066666.6666666665,
+      "input_samples": 419432,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 2048,
+      "frame_count": 2048,
+      "oversample": 10,
+      "active_carrier_span_hz": 400000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+      "feedback": 0.7,
+      "phase_weight": 4.0,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    },
+    "rt400-extended.json": {
+      "schema_version": 1,
+      "hardware_access": false,
+      "kind": "realtime-cf32-ofdm",
+      "input_format": "CF32_LE",
+      "input_factor": 10,
+      "input_sample_rate_hz": 1066666.6666666665,
+      "input_samples": 419432,
+      "frame_samples": 4194304,
+      "stream_blocks": 1024,
+      "ofdm_frame_slots": 2048,
+      "frame_count": 2048,
+      "oversample": 10,
+      "active_carrier_span_hz": 400000.0,
+      "body_bytes": 4,
+      "training_seed": 8922,
+      "carrier_offset_hz": 250000,
+      "table_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+      "feedback": 0.85,
+      "phase_weight": 0.2,
+      "envelope_peak": 0.7,
+      "sources": [
+        {
+          "body_hex": "52543030",
+          "packet_hex": "52543030ad5b"
+        },
+        {
+          "body_hex": "52543031",
+          "packet_hex": "52543031bd7a"
+        },
+        {
+          "body_hex": "52543032",
+          "packet_hex": "525430328d19"
+        },
+        {
+          "body_hex": "52543033",
+          "packet_hex": "525430339d38"
+        }
+      ],
+      "nco_codebook": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12,
+        13,
+        16,
+        17,
+        24,
+        32,
+        33
+      ],
+      "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+    }
+  }
+}

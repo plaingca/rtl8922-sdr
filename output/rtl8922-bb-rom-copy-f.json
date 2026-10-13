@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "source_local": "0x10000028",
+  "bytes": 96,
+  "output_local": "0x10017b00",
+  "output_host_hypothesis": "0x1863fb00",
+  "writes": "save, select and restore register 0xc04 only",
+  "deadline_seconds": 20,
+  "started_utc": "2026-10-13T01:07:54Z",
+  "raw_directory": "/tmp/rtl8922-bb-rom-copy-20261012-f",
+  "status": "copy_not_validated",
+  "selector_before": "0x18780000",
+  "stub_readback_matches": true,
+  "output": {
+    "bytes": 112,
+    "sha256": "92ed86e8f927543bd610b370457bd9db3b44e9e6a2ecc21ff6c95371c4da907a",
+    "unique_words": 27,
+    "sentinel_words": {
+      "0x0": 2,
+      "0xffffffff": 0,
+      "0xdeadbeef": 0
+    }
+  },
+  "repeat_identical": true,
+  "markers": [
+    "0x524f4d31",
+    "0x524f4d32"
+  ],
+  "copy_finished": true,
+  "directory": {
+    "valid": false,
+    "required_keys_found": [
+      "0x44534143",
+      "0x44534243",
+      "0x44535546"
+    ],
+    "entries": []
+  },
+  "selector_after": "0x18780000",
+  "selector_restored": true,
+  "finished_utc": "2026-10-13T01:07:54Z"
+}

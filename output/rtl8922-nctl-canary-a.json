@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "status": "started",
+  "tests": [],
+  "started_utc": "2026-10-13T15:17:01Z",
+  "rf_modes_before": {
+    "0": 210912,
+    "1": 243682
+  },
+  "exception": "ValueError: Runtime NCTL program differs from pinned load",
+  "rf_modes_after": {
+    "0": 210912,
+    "1": 243682
+  },
+  "cleanup_errors": []
+}

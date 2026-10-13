@@ -1,0 +1,477 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T04:28:45Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "56c50ba72f60bb67ab690fa41745e8a9ab98923c398d5b2035f47b32207550a9",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0df519150dc3545f1b828da0d2c8e3a5b743954240a45a38724185f06f35f1ad",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-iq-rf-levels-path1-a.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": null,
+    "probe_iq_rf": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1062\n\twdev 0x4400000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 68\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -373535.15625,
+        "above_median_db": 14.44975406814274,
+        "power": 87577620.67351887
+      },
+      {
+        "hz": -1373535.15625,
+        "above_median_db": 14.109004254291698,
+        "power": 80968885.34720182
+      },
+      {
+        "hz": -631896.97265625,
+        "above_median_db": 13.917273350509983,
+        "power": 77472053.9601925
+      },
+      {
+        "hz": -430969.23828125,
+        "above_median_db": 13.291508622843134,
+        "power": 67076222.62682196
+      },
+      {
+        "hz": -574462.890625,
+        "above_median_db": 13.169052697102419,
+        "power": 65211322.053672716
+      },
+      {
+        "hz": -1631896.97265625,
+        "above_median_db": 13.15314127689408,
+        "power": 64972841.86271774
+      },
+      {
+        "hz": -1150695.80078125,
+        "above_median_db": 13.123391401507924,
+        "power": 64529288.3143589
+      },
+      {
+        "hz": -1058044.43359375,
+        "above_median_db": 13.0474686802965,
+        "power": 63411000.16181035
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 29.187449812590685,
+    "mean_real": 0.08587646484375,
+    "mean_imag": -0.06817626953125,
+    "clip_fraction": 0.0
+  },
+  "iq_rf_modulation": {
+    "qualified": false,
+    "interpretation": "Finite host-paced signed I/Q RF levels",
+    "iqc_rf_gates": {
+      "reference_phase_residual_below_0_25_rad": true,
+      "heldout_prediction_above_15db": false,
+      "two_independent_axes_condition_below_3": true,
+      "on_above_zero_15db": false
+    },
+    "dds640_constant_preflight": {
+      "status": "0x337cc",
+      "records": 40960,
+      "valid_capture": true,
+      "real_std": 0.0,
+      "imag_std": 0.0,
+      "real_mean": 2048.0,
+      "imag_mean": 0.0,
+      "real_min": 2048,
+      "real_max": 2048,
+      "imag_min": 0,
+      "imag_max": 0,
+      "iq_covariance": 0.0,
+      "unique_words": 1,
+      "peak_cycles_per_record": 0.0,
+      "peak_above_median_db": 0.0
+    },
+    "on_above_zero_db": -0.022611571493078814,
+    "axis_condition": 2.0585179972259993,
+    "offset_source": "iqc_dc",
+    "baseline_codes": [
+      0,
+      0
+    ],
+    "heldout_uses_unseen_joint_codes": true,
+    "private_decimated_trace_path": "/tmp/rtl8922-iq-rf-levels-a.npz",
+    "digital_calibration_pilot": true,
+    "pilot_hz_relative_pluto": 1265495.4295645864,
+    "carrier_hz_relative_pluto": 1015495.4295645864,
+    "pilot_phase_residual_rad": 0.13019598298680288,
+    "pilot_amplitude": 1.7657247222392678,
+    "rx_alignment_seconds": -0.06435992287707329,
+    "residual_frequency_hz": 30.224999999999742,
+    "frequency_drift_hz_per_second": 72.04999999999949,
+    "state_dwell_seconds": 0.04,
+    "events": [
+      [
+        0.2004879228770733,
+        0,
+        0
+      ],
+      [
+        0.24027257598936558,
+        -512,
+        0
+      ],
+      [
+        0.28015078976750374,
+        0,
+        0
+      ],
+      [
+        0.3201052490621805,
+        512,
+        0
+      ],
+      [
+        0.3601133991032839,
+        0,
+        0
+      ],
+      [
+        0.40012037940323353,
+        0,
+        -512
+      ],
+      [
+        0.44015415012836456,
+        0,
+        0
+      ],
+      [
+        0.48011360689997673,
+        0,
+        512
+      ],
+      [
+        0.5201304964721203,
+        0,
+        0
+      ],
+      [
+        0.5601240396499634,
+        -512,
+        0
+      ],
+      [
+        0.6001118421554565,
+        0,
+        0
+      ],
+      [
+        0.6401300132274628,
+        512,
+        0
+      ],
+      [
+        0.6801062133163214,
+        0,
+        0
+      ],
+      [
+        0.7201103270053864,
+        0,
+        -512
+      ],
+      [
+        0.7601087000221014,
+        0,
+        0
+      ],
+      [
+        0.8001245055347681,
+        0,
+        512
+      ],
+      [
+        0.8401213362812996,
+        0,
+        0
+      ],
+      [
+        0.8801057413220406,
+        -256,
+        -384
+      ],
+      [
+        0.9201152957975864,
+        0,
+        0
+      ],
+      [
+        0.9600895121693611,
+        256,
+        384
+      ],
+      [
+        1.0001025926321745,
+        0,
+        0
+      ],
+      [
+        1.0401473753154278,
+        -384,
+        256
+      ],
+      [
+        1.080110490322113,
+        0,
+        0
+      ],
+      [
+        1.1201104260981083,
+        384,
+        -256
+      ],
+      [
+        1.160088850185275,
+        0,
+        0
+      ],
+      [
+        1.2002414278686047,
+        -256,
+        -384
+      ],
+      [
+        1.2402183394879103,
+        0,
+        0
+      ],
+      [
+        1.2802727296948433,
+        256,
+        384
+      ],
+      [
+        1.3202438689768314,
+        0,
+        0
+      ],
+      [
+        1.360273763537407,
+        -384,
+        256
+      ],
+      [
+        1.4001423176378012,
+        0,
+        0
+      ],
+      [
+        1.4401195589452982,
+        384,
+        -256
+      ],
+      [
+        1.4801255073398352,
+        0,
+        0
+      ]
+    ],
+    "used_envelope_points": 5504,
+    "discarded_clipped_fraction": 0.0,
+    "complex_intercept_i_q_coefficients": [
+      [
+        0.0008720304110685655,
+        -0.003953355363532139
+      ],
+      [
+        -2.6250343476946932e-05,
+        -1.3677423138529157e-06
+      ],
+      [
+        1.8494977804052255e-05,
+        -2.1289297708966494e-05
+      ]
+    ],
+    "axis_singular_values": [
+      3.4676773751975114e-05,
+      1.684550428935018e-05
+    ],
+    "fit_mse": 0.02321168412112225,
+    "train_points": 2879,
+    "heldout_points": 2625,
+    "heldout_mse": 0.024190139976900074,
+    "heldout_modulation_to_residual_db": -24.867893908779443,
+    "modulation_power": 7.885858690826446e-05,
+    "modulation_to_residual_db": -24.688576612382246
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": -1038574.21875,
+        "above_median_db": 13.520013304916919,
+        "power": 31669823884.430325
+      },
+      {
+        "hz": -1264099.12109375,
+        "above_median_db": 13.512785685914192,
+        "power": 31617162138.047504
+      },
+      {
+        "hz": -436706.54296875,
+        "above_median_db": 13.167614966962022,
+        "power": 29201543971.102787
+      },
+      {
+        "hz": -1294738.76953125,
+        "above_median_db": 13.151810270519794,
+        "power": 29095467841.11154
+      },
+      {
+        "hz": -294799.8046875,
+        "above_median_db": 13.082122910793167,
+        "power": 28632324594.94888
+      },
+      {
+        "hz": -1283203.125,
+        "above_median_db": 13.042006177983973,
+        "power": 28369059330.88922
+      },
+      {
+        "hz": -722473.14453125,
+        "above_median_db": 13.031635834228139,
+        "power": 28301398805.95476
+      },
+      {
+        "hz": -1101745.60546875,
+        "above_median_db": 13.015153901631981,
+        "power": 28194195571.77739
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 282.49962079858227,
+    "mean_real": 0.1641082763671875,
+    "mean_imag": 0.045806884765625,
+    "clip_fraction": 0.0
+  },
+  "status": "iq_rf_level_probe_complete",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

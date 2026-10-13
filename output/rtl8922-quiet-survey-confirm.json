@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "status": "started",
+  "started_utc": "2026-10-13T18:09:04Z",
+  "rx_rate": 8000000,
+  "rx_bandwidth": 5000000,
+  "rx_gain": 45,
+  "fft_samples": 4096,
+  "power_scope": "Uncalibrated receiver dBFS; cross-band antenna/gain/noise response may differ",
+  "rows": [],
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "actual_rx": {
+    "sample_rate": 8000000,
+    "rx_rf_bandwidth": 5000000,
+    "rx_hardwaregain_chan0": 45
+  },
+  "exception": "FileNotFoundError: [Errno 2] No such file or directory: 'output/rtl8922-quiet-survey-confirm-points.json'",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_tx_powerdown": "1",
+  "cleanup_errors": [],
+  "rtl_card_bound_after": false
+}

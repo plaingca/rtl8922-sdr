@@ -1,0 +1,85 @@
+{
+  "tag": "wide-long-slow-hold-a",
+  "preamble_timebase": {
+    "tag": "wide-long-slow-hold-a",
+    "nominal_period_samples": 32768,
+    "measured_period_samples": 32768.20669619301,
+    "ppm": 6.307867218335872,
+    "correlation": 0.9688699841499329,
+    "window_start_seconds": 0.12813507692307693,
+    "lags": [
+      32760,
+      32761,
+      32762,
+      32763,
+      32764,
+      32765,
+      32766,
+      32767,
+      32768,
+      32769,
+      32770,
+      32771,
+      32772,
+      32773,
+      32774,
+      32775,
+      32776
+    ],
+    "correlations": [
+      0.02172396145761013,
+      0.11025342345237732,
+      0.2626282274723053,
+      0.426462858915329,
+      0.5885910391807556,
+      0.7354018092155457,
+      0.8541702032089233,
+      0.9343842267990112,
+      0.9688699841499329,
+      0.9545571804046631,
+      0.8928069472312927,
+      0.7892638444900513,
+      0.6532354950904846,
+      0.49669986963272095,
+      0.33302807807922363,
+      0.17559516429901123,
+      0.03655939921736717
+    ]
+  },
+  "controls": {
+    "private_trace": {
+      "packets": [
+        {
+          "payload_hex": "ffffffff012092f800002289004000009801110f52544c38343232204c6f5261203030",
+          "crc_ok": false,
+          "header": {
+            "crc_valid": false,
+            "err": 0,
+            "ldro_mode": 0,
+            "crc": 1,
+            "pay_len": 35,
+            "cr": 4
+          }
+        }
+      ],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    },
+    "wrong_sync": {
+      "packets": [],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    },
+    "private_off_trace": {
+      "packets": [],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    }
+  },
+  "exact_crc_packets": 0,
+  "packets": 1,
+  "scope": "Diagnostic timebase correction estimated from repeated preamble only; no payload fit, no RF change."
+}

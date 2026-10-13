@@ -1,0 +1,1927 @@
+[
+  {
+    "tag": "wide-short-turbo-hold-a",
+    "parameters": {
+      "preset": "SHORT_TURBO",
+      "wide_lora": true,
+      "sf": 7,
+      "bandwidth_hz": 1625000,
+      "coding_rate_denominator": 5,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "decoders": {
+      "soft": {
+        "packets": [],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 1,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 6
+            }
+          ],
+          "before_crc": [],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 7,
+                "cfo_frac": -0.003886500606313348,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            }
+          ],
+          "synchronized_samples": 1024
+        }
+      },
+      "hard": {
+        "packets": [],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 1,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 37,
+              "cr": 2
+            }
+          ],
+          "before_crc": [],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 7,
+                "cfo_frac": -0.003886500606313348,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            }
+          ],
+          "synchronized_samples": 1024
+        }
+      }
+    }
+  },
+  {
+    "tag": "wide-medium-turbo-hold-a",
+    "parameters": {
+      "preset": "MEDIUM_TURBO",
+      "wide_lora": true,
+      "sf": 9,
+      "bandwidth_hz": 1625000,
+      "coding_rate_denominator": 5,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "decoders": {
+      "soft": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff0140949806662289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f801002e8500cc00000801120f52544c38393232204c6f5261203031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff0140949806662289000000000801120f52544c38393232204c6f5261203030642f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f801002e8500cc00000801120f52544c38393232204c6f5261203031d16a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 9,
+                "cfo_frac": -0.01214960590004921,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 4096,
+              "info": {
+                "ldro": false,
+                "symb_numb": 48,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 24576,
+              "info": {
+                "sf": 9,
+                "cfo_frac": -0.037285398691892624,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 28672,
+              "info": {
+                "ldro": false,
+                "symb_numb": 48,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_samples": 49152
+        }
+      },
+      "hard": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff0160969842662289000000040801160f52544c38393232204c6f5261203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f801002a81008800000801120f52544c38393232204c6f5261203031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff0160969842662289000000040801160f52544c38393232204c6f5261203030642f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f801002a81008800000801120f52544c38393232204c6f5261203031d16a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 9,
+                "cfo_frac": -0.01214960590004921,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 4096,
+              "info": {
+                "ldro": false,
+                "symb_numb": 48,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 24576,
+              "info": {
+                "sf": 9,
+                "cfo_frac": -0.037285398691892624,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 28672,
+              "info": {
+                "ldro": false,
+                "symb_numb": 48,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_samples": 49152
+        }
+      }
+    }
+  },
+  {
+    "tag": "wide-long-turbo-hold-a",
+    "parameters": {
+      "preset": "LONG_TURBO",
+      "wide_lora": true,
+      "sf": 11,
+      "bandwidth_hz": 1625000,
+      "coding_rate_denominator": 8,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "decoders": {
+      "soft": {
+        "packets": [
+          {
+            "payload_hex": "ffffff9f012092f800002289000000000801120f52544c38393232824c6f526f223030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f8e1902289000006000801120f52544c38393232824c6f526f203031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffff9f012092f800002289000000000801120f52544c38393232824c6f526f2230302454",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f8e1902289000006000801120f52544c38393232824c6f526f203031b0ea",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.04189493879675865,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16384,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 131072,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.07744736969470978,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 147456,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 262144
+        }
+      },
+      "hard": {
+        "packets": [
+          {
+            "payload_hex": "ffffff9f012092f800002289000004404c45164f4a444d38093232204c6f526f203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          },
+          {
+            "payload_hex": "ffffff9f012892f860002289000006000801120f52544c38093232204c6f526f203031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffff9f012092f800002289000004404c45164f4a444d38093232204c6f526f2030302474",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffff9f012892f860002289000006000801120f52544c38093232204c6f526f203031f06a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.04189493879675865,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16384,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 131072,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.07744736969470978,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 147456,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 262144
+        }
+      }
+    }
+  },
+  {
+    "tag": "wide-long-moderate-hold-a",
+    "parameters": {
+      "preset": "LONG_MODERATE",
+      "wide_lora": true,
+      "sf": 11,
+      "bandwidth_hz": 406250,
+      "coding_rate_denominator": 8,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "decoders": {
+      "soft": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5561a03031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030442f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5561a03031c16a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.24141502380371094,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16384,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 131072,
+              "info": {
+                "sf": 11,
+                "cfo_frac": 0.4932820200920105,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 147456,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 262144
+        }
+      },
+      "hard": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5161a03031",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 1,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030642f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5161a03031c16a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 11,
+                "cfo_frac": -0.24141502380371094,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16384,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            },
+            {
+              "offset": 131072,
+              "info": {
+                "sf": 11,
+                "cfo_frac": 0.4932820200920105,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 147456,
+              "info": {
+                "ldro": false,
+                "symb_numb": 64,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 262144
+        }
+      }
+    }
+  },
+  {
+    "tag": "wide-long-slow-hold-a",
+    "parameters": {
+      "preset": "LONG_SLOW",
+      "wide_lora": true,
+      "sf": 12,
+      "bandwidth_hz": 406250,
+      "coding_rate_denominator": 8,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": true
+    },
+    "decoders": {
+      "soft": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030242f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 12,
+                "cfo_frac": -0.20821036398410797,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 32768,
+              "info": {
+                "ldro": false,
+                "symb_numb": 56,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 229376
+        }
+      },
+      "hard": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          }
+        ],
+        "crc_valid_packets": 0,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 4
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030242f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 12,
+                "cfo_frac": -0.20821036398410797,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 32768,
+              "info": {
+                "ldro": false,
+                "symb_numb": 56,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 4
+              }
+            }
+          ],
+          "synchronized_samples": 229376
+        }
+      }
+    }
+  },
+  {
+    "tag": "wide-short-slow-confirm-a",
+    "parameters": {
+      "preset": "SHORT_SLOW",
+      "wide_lora": true,
+      "sf": 8,
+      "bandwidth_hz": 812500,
+      "coding_rate_denominator": 5,
+      "preamble_symbols": 12,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": false,
+      "deprecated": false
+    },
+    "decoders": {
+      "soft": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f5261203032",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f803002289000000000801122f52544c38393232204c6f52612030a3",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "9fcaccfa072092f807002289000000000801120f52544c38393232204c6f5261203037",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f5261203038",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f5261203039",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          }
+        ],
+        "crc_valid_packets": 7,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030642f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031d16a",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 74,
+              "bytes_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f52612030320ea4",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 111,
+              "bytes_hex": "ffffffff012092f803002289000000000801122f52544c38393232204c6f52612030a3abe1",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 148,
+              "bytes_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035246c",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 185,
+              "bytes_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036fba2",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 222,
+              "bytes_hex": "9fcaccfa072092f807002289000000000801120f52544c38393232204c6f52612030374ee7",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 259,
+              "bytes_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f52612030388e22",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 296,
+              "bytes_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f52612030393b67",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.007250666152685881,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 2048,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 14848,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.006729407235980034,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16896,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 29696,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.011977635324001312,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 31744,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 44544,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.24031196534633636,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 46592,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 59392,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.0067039658315479755,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 61440,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 74240,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.01052731741219759,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 76288,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 89088,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.00998742040246725,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 91136,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 103936,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.012149907648563385,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 105984,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 118784,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.010789467953145504,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 120832,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_samples": 133632
+        }
+      },
+      "hard": {
+        "packets": [
+          {
+            "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f5261203032",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f8030022890000000008411a2f52554c38393232204c2d5a613030b3",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "bfc8edda072092f807002289000000000801120f52544c38393232204c6f5261203037",
+            "crc_ok": false,
+            "header": {
+              "crc_valid": false,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f5261203038",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          },
+          {
+            "payload_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f5261203039",
+            "crc_ok": true,
+            "header": {
+              "crc_valid": true,
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          }
+        ],
+        "crc_valid_packets": 6,
+        "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+        "repetition_averaging": false,
+        "audit": {
+          "headers": [
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 1,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 163,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            },
+            {
+              "err": 0,
+              "ldro_mode": 0,
+              "crc": 1,
+              "pay_len": 35,
+              "cr": 1
+            }
+          ],
+          "before_crc": [
+            {
+              "offset": 0,
+              "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030642f",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 37,
+              "bytes_hex": "ffffffff012092f802002289000000000801120f52544c38393232204c6f52612030320ea4",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 74,
+              "bytes_hex": "ffffffff012092f8030022890000000008411a2f52554c38393232204c2d5a613030b3bbe1",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 111,
+              "bytes_hex": "ffffffff012092f805002289000000000801120f52544c38393232204c6f5261203035246c",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 148,
+              "bytes_hex": "ffffffff012092f806002289000000000801120f52544c38393232204c6f5261203036fba2",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 185,
+              "bytes_hex": "bfc8edda072092f807002289000000000801120f52544c38393232204c6f52612030374ee7",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 222,
+              "bytes_hex": "ffffffff012092f808002289000000000801120f52544c38393232204c6f52612030388e22",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 259,
+              "bytes_hex": "ffffffff012092f809002289000000000801120f52544c38393232204c6f52612030393b67",
+              "header": {
+                "err": 0,
+                "ldro_mode": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_tags": [
+            {
+              "offset": 0,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.007250666152685881,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 2048,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 14848,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.006729407235980034,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 16896,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.011977635324001312,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 18944,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 31744,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.24031196534633636,
+                "cfo_int": -1,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 33792,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 46592,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.0067039658315479755,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 48640,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 61440,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.01052731741219759,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 63488,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 76288,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.00998742040246725,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 78336,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 91136,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.012149907648563385,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 93184,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            },
+            {
+              "offset": 105984,
+              "info": {
+                "sf": 8,
+                "cfo_frac": 0.010789467953145504,
+                "cfo_int": 0,
+                "is_header": true
+              }
+            },
+            {
+              "offset": 108032,
+              "info": {
+                "ldro": false,
+                "symb_numb": 58,
+                "is_header": false,
+                "err": 0,
+                "crc": 1,
+                "pay_len": 35,
+                "cr": 1
+              }
+            }
+          ],
+          "synchronized_samples": 120832
+        }
+      }
+    }
+  }
+]

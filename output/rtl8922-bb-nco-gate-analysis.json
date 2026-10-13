@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "phase_behavior": "RF strongly matches a phase accumulator that pauses while the NCO index is zero and resumes without reset",
+  "nco_only_write_rate_hz_approx": 10666666.666666666,
+  "nco_only_write_interval_ns_approx": 93.75,
+  "counter_ticks_per_nco_write_approx": 60,
+  "finite_writes_per_command": 4194304,
+  "command_duration_seconds_approx": 0.3933,
+  "phase_evidence": [
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-phase16-repeat-c-analysis.json",
+      "scores": {
+        "continuous": 0.19424254733137464,
+        "paused": 0.9888272619251657,
+        "reset": 0.4488792794391483
+      },
+      "off_scores": {
+        "continuous": 0.0957679617413335,
+        "paused": 0.14819163079301384,
+        "reset": 0.09024160707515258
+      },
+      "qualified": true
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-phase18-b-analysis.json",
+      "scores": {
+        "continuous": 0.26167563866282545,
+        "paused": 0.9811919257545016,
+        "reset": 0.3663639560426011
+      },
+      "off_scores": {
+        "continuous": 0.11074784036351595,
+        "paused": 0.11084443172762604,
+        "reset": 0.1433812533601344
+      },
+      "qualified": true
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-phase18-confirm-d-analysis.json",
+      "scores": {
+        "continuous": 0.26097573049534506,
+        "paused": 0.9873701259922631,
+        "reset": 0.38419448190974337
+      },
+      "off_scores": {
+        "continuous": 0.0617593193542859,
+        "paused": 0.12808670747471534,
+        "reset": 0.1385968547067265
+      },
+      "qualified": true
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-half-repeat-c-analysis.json",
+      "scores": {
+        "continuous": 0.019968011346035312,
+        "paused": 0.9357649962192521,
+        "reset": 0.02015510592969675
+      },
+      "off_scores": {
+        "continuous": 0.047229482977188,
+        "paused": 0.14074947045465555,
+        "reset": 0.02141553256066787
+      },
+      "qualified": true
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-levels-b-analysis.json",
+      "scores": {
+        "continuous": 0.3039631424303809,
+        "paused": 0.9763692483413119,
+        "reset": 0.31574222673912283
+      },
+      "off_scores": {
+        "continuous": 0.08001770993492908,
+        "paused": 0.14111779556275822,
+        "reset": 0.08671685393348016
+      },
+      "qualified": true
+    }
+  ],
+  "ordinary_mute_pdm_is_independent_amplitude_control": false,
+  "ordinary_pdm_effect": "Couples duty to accumulated phase and average frequency; 50-percent gating of a 4-MHz on-tone produces a strong approximately 2-MHz component",
+  "compensation": "Catch up missing phase during on-slots; one frequency/mute write per slot, separate attenuation fixed",
+  "amplitude_evidence": [
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-low-compensated-c-analysis.json",
+      "amplitude": {
+        "filter_cutoff_hz": 100000,
+        "repeat_combined": true,
+        "alignment_samples": 356,
+        "complex_envelope_evm": 0.20319624585350027,
+        "magnitude_rms_error": 0.07376975906298196,
+        "levels": [
+          {
+            "density": 0.0,
+            "relative_amplitude": 0.03614852738758157,
+            "relative_phase_degrees": 178.7501902917558
+          },
+          {
+            "density": 0.125,
+            "relative_amplitude": 0.07179770256336453,
+            "relative_phase_degrees": -138.13696835682927
+          },
+          {
+            "density": 0.25,
+            "relative_amplitude": 0.21070333195030225,
+            "relative_phase_degrees": -57.76493171891803
+          },
+          {
+            "density": 0.375,
+            "relative_amplitude": 0.33386876344493555,
+            "relative_phase_degrees": -34.32919329864885
+          },
+          {
+            "density": 0.625,
+            "relative_amplitude": 0.6268570087005715,
+            "relative_phase_degrees": -12.356924796946364
+          },
+          {
+            "density": 0.75,
+            "relative_amplitude": 0.723033188338738,
+            "relative_phase_degrees": -4.975317264175351
+          },
+          {
+            "density": 0.875,
+            "relative_amplitude": 0.8452775383065916,
+            "relative_phase_degrees": -1.9595166582768664
+          },
+          {
+            "density": 1.0,
+            "relative_amplitude": 0.9999999999999999,
+            "relative_phase_degrees": -0.0
+          }
+        ],
+        "feasibility_gates": {
+          "source_model_correlation_above_90_percent": true,
+          "off_model_correlation_below_50_percent": true,
+          "amplitude_rms_error_below_10_percent": true
+        },
+        "narrowband_amplitude_feasibility": true,
+        "scope": "Known repeated envelope after receiver filtering/averaging; no emission-mask, independent phase, or streaming qualification"
+      },
+      "uncombined_amplitude": null
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-quarter-compensated-f-analysis.json",
+      "amplitude": {
+        "filter_cutoff_hz": 100000,
+        "repeat_combined": true,
+        "alignment_samples": 3834,
+        "complex_envelope_evm": 0.08000417192355408,
+        "magnitude_rms_error": 0.05752826839683344,
+        "levels": [
+          {
+            "density": 0.0,
+            "relative_amplitude": 0.04045642152683211,
+            "relative_phase_degrees": -176.41470694462524
+          },
+          {
+            "density": 0.125,
+            "relative_amplitude": 0.09191745758103487,
+            "relative_phase_degrees": -56.7737538780529
+          },
+          {
+            "density": 0.25,
+            "relative_amplitude": 0.25539135664255525,
+            "relative_phase_degrees": -10.302175787495253
+          },
+          {
+            "density": 0.375,
+            "relative_amplitude": 0.31869938641540113,
+            "relative_phase_degrees": -8.345538896257121
+          },
+          {
+            "density": 0.625,
+            "relative_amplitude": 0.5934647984061011,
+            "relative_phase_degrees": -3.802476227377424
+          },
+          {
+            "density": 0.75,
+            "relative_amplitude": 0.725902110428027,
+            "relative_phase_degrees": -0.3906038509379326
+          },
+          {
+            "density": 0.875,
+            "relative_amplitude": 0.8308971103164804,
+            "relative_phase_degrees": 0.9249742609594014
+          },
+          {
+            "density": 1.0,
+            "relative_amplitude": 1.0,
+            "relative_phase_degrees": -0.0
+          }
+        ],
+        "feasibility_gates": {
+          "source_model_correlation_above_90_percent": true,
+          "off_model_correlation_below_50_percent": true,
+          "amplitude_rms_error_below_10_percent": true
+        },
+        "narrowband_amplitude_feasibility": true,
+        "scope": "Known repeated envelope after receiver filtering/averaging; no emission-mask, independent phase, or streaming qualification"
+      },
+      "uncombined_amplitude": null
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-quarter-am-h-analysis.json",
+      "amplitude": {
+        "filter_cutoff_hz": 100000,
+        "repeat_combined": true,
+        "alignment_samples": 926,
+        "complex_envelope_evm": 0.0663461342969116,
+        "magnitude_rms_error": 0.0318074966821592,
+        "levels": [],
+        "feasibility_gates": {
+          "source_model_correlation_above_90_percent": true,
+          "off_model_correlation_below_50_percent": true,
+          "amplitude_rms_error_below_10_percent": true
+        },
+        "narrowband_amplitude_feasibility": true,
+        "scope": "Known repeated envelope after receiver filtering/averaging; no emission-mask, independent phase, or streaming qualification"
+      },
+      "uncombined_amplitude": {
+        "filter_cutoff_hz": 100000,
+        "data_repetitions_combined": false,
+        "calibration_repetitions": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "scored_repetitions": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "gain_calibration": "One constant complex gain from first eight admitted repetitions; CFO/timing from full-capture phase model fit",
+        "median_complex_evm": 0.3413554530430235,
+        "p90_complex_evm": 0.3898022897405149,
+        "median_magnitude_rms_error": 0.2311300007433237,
+        "p90_magnitude_rms_error": 0.29262848832589755,
+        "off_median_complex_evm_same_gain": 1.0422485897890295,
+        "scope": "Known periodic AM waveform, not packet decoding or an independent blind synchronization test"
+      }
+    },
+    {
+      "analysis": "output/rtl8922-bb-nco-gate-pdm-low-am-h-analysis.json",
+      "amplitude": {
+        "filter_cutoff_hz": 100000,
+        "repeat_combined": true,
+        "alignment_samples": 3289,
+        "complex_envelope_evm": 0.23450826795726518,
+        "magnitude_rms_error": 0.04590295292436177,
+        "levels": [],
+        "feasibility_gates": {
+          "source_model_correlation_above_90_percent": true,
+          "off_model_correlation_below_50_percent": true,
+          "amplitude_rms_error_below_10_percent": true
+        },
+        "narrowband_amplitude_feasibility": true,
+        "scope": "Known repeated envelope after receiver filtering/averaging; no emission-mask, independent phase, or streaming qualification"
+      },
+      "uncombined_amplitude": {
+        "filter_cutoff_hz": 100000,
+        "data_repetitions_combined": false,
+        "calibration_repetitions": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "scored_repetitions": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "gain_calibration": "One constant complex gain from first eight admitted repetitions; CFO/timing from full-capture phase model fit",
+        "median_complex_evm": 0.42626604792176354,
+        "p90_complex_evm": 0.5087584556565166,
+        "median_magnitude_rms_error": 0.24068637847701066,
+        "p90_magnitude_rms_error": 0.3022190282861712,
+        "off_median_complex_evm_same_gain": 1.0366985112854525,
+        "scope": "Known periodic AM waveform, not packet decoding or an independent blind synchronization test"
+      }
+    }
+  ],
+  "qualification": {
+    "narrowband_filtered_repeated_amplitude_feasibility": true,
+    "independent_phase_control": false,
+    "clean_single_period_complex_modulation": false,
+    "2mhz_ofdm_single_frame": false,
+    "emission_mask": false,
+    "indefinite_host_streaming": false,
+    "20msps": false
+  },
+  "rf_runs": [
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-half-a.json",
+      "sha256": "35ef61b145de8b9fc4cecb2cd7535ef20fc5297e59e0d9f9decf40ebfc29c2c8",
+      "accepted": false,
+      "exception": "ValueError: Capture clipped",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-half-b.json",
+      "sha256": "d814c7b4f909c604f63698ecd912628aa556e30623dc219e7dcae9870be4b4df",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-half-repeat-c.json",
+      "sha256": "bc71084cc5472ded3529edf103ed4a080d291bfa2332dc95c1be0c1e646ebbfc",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-levels-a.json",
+      "sha256": "124b98485783b93536425865e91e97d12075b7a88cdf97e801d6ddc2c4c43b83",
+      "accepted": false,
+      "exception": "ValueError: Static control not above both off controls",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-levels-b.json",
+      "sha256": "9ac2cf2adf074ad4a931e0972dca823f2c67878389164cbe44c771d0997f0bc6",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-low-am-ga.json",
+      "sha256": "0961f5213b2f68f0a240fd45658d69872770c5d1cf6740f435c9785153c1b159",
+      "accepted": false,
+      "exception": "ValueError: Static control too weak",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-low-am-gb.json",
+      "sha256": "95e18c0c3040c52e21d7eb4c32bd66fa305659017f60297eaf5cd30900cb76b4",
+      "accepted": false,
+      "exception": "ValueError: Capture clipped",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-low-am-h.json",
+      "sha256": "ec32d3354b16e893407214dd6f456f8f93f4cef1c0fafbd68d9ffbe5bd642171",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-low-compensated-c.json",
+      "sha256": "5cc978ce95a30cdb6744e2f64e22ba341035eadb38885fd1fc8bdef69c597b62",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-low-naive-c.json",
+      "sha256": "d88b8d0f9250891f36c8bc5b8dcd85d4ccbe096413883172a84aeb44099f17d6",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-d.json",
+      "sha256": "0a2245d28f673ba8f0771734063c832509e394f8f942151232fc94e43366fb2d",
+      "accepted": false,
+      "exception": "ValueError: Static control too weak",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x399c2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-e.json",
+      "sha256": "ff96046e25ce9b1ba914ba0bd5b8e6997d02f7c0c1f93f6823208bbfb48f4981",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-f.json",
+      "sha256": "52f54465034e64be666c888f1d86fb3edc28284ffa113cec092a954d10a7e166",
+      "accepted": false,
+      "exception": "ValueError: Static control too weak",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x3b7e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-h.json",
+      "sha256": "cdcb215f7c43670127beda6a0ccaddbaaef06ef539dc8b2ad292e9ea6831fe50",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-compensated-d.json",
+      "sha256": "131ae11adf75cc4814da6f2792651a7b371adcb39a70f95e0272c6781f76a967",
+      "accepted": false,
+      "exception": "ValueError: Static control not above both off controls",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-compensated-e.json",
+      "sha256": "3b67ff4c9f049ebe02c2aafcee003252af1924ad23f331f5cbd72f9bd1fda52e",
+      "accepted": false,
+      "exception": "ValueError: Static control too weak",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-compensated-f.json",
+      "sha256": "b3f1a6fd75e69e1f6520f62807e205a5540f9c16c22a5478f6a9cb908ce404dc",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-pdm-quarter-naive-d.json",
+      "sha256": "bfdce315ce635a09f9aa92da50a54f9878339ac3d6dfe588751c44bdcc65e4f3",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase16-a.json",
+      "sha256": "3283665b8d9a451ae28e26bfe2811abf6a437f01c1a7f1b871e97192aaceae32",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase16-b.json",
+      "sha256": "e702a5a77b81c84f8531cd6a62feddbad80a1f72d235e352038f015f1d835fb4",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase16-repeat-c.json",
+      "sha256": "d0993842dc8feb0e7b0e9131f517e05b6ff46a367312fb9d3f686e0735dffac2",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x337c0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase18-a.json",
+      "sha256": "0a079add2ec13a9858518685cbbe8748ecf690bf5750f1626fd51e9a1a7e5c02",
+      "accepted": false,
+      "exception": "ValueError: Static control clipped",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase18-b.json",
+      "sha256": "80216e9fd145d2b07d6b449344c67b7fe0fac9956512caa61542ee7e01727820",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {}
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase18-confirm-d.json",
+      "sha256": "9f67d4041f5a56131d86acaba8568cb59ecc0ca18f660f2cafb62cd2ca9c4598",
+      "accepted": true,
+      "exception": null,
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      }
+    },
+    {
+      "report": "output/rtl8922-bb-nco-gate-phase18-repeat-c.json",
+      "sha256": "d17f6c9a9d94761728dc6259ce4954aa8216a87d1139da8669402a14aa3ebc9c",
+      "accepted": false,
+      "exception": "ValueError: Static control too weak",
+      "cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      }
+    }
+  ],
+  "rf_accepted": 15,
+  "rf_rejected": 10,
+  "offline_tests_passed": 12,
+  "final_state": "output/rtl8922-bb-nco-gate-final-state.json",
+  "all_final_cleanup_checks_pass": true
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "9c18651bb657cf9674a4614880aca9e475fdcc78191ad5fbb92daca1437d78d5",
+  "stub_bytes": 1572,
+  "labels": {
+    "pattern": "0x10016558",
+    "single": "0x10016664",
+    "paired": "0x100166f0",
+    "amp_only": "0x100167fc",
+    "nop_only": "0x10016888",
+    "finished": "0x10016910",
+    "restore": "0x1001693c",
+    "done": "0x10016940",
+    "invalid": "0x10016958",
+    "complete": "0x1001695c",
+    "normal": "0x100169d4"
+  },
+  "command": 1019,
+  "magic": "0x504f4c31",
+  "nops_per_pattern_sample": 0,
+  "write_buffer_enabled_for_valid_commands": false,
+  "buffered_device_experiment": false,
+  "write_buffer_control_source": "https://github.com/Ameba-AIoT/ameba-rtos/blob/master/component/soc/common/include/cmsis/cache_riscv.h",
+  "period_samples": 32,
+  "frequency_pattern": "0xd39a6c57",
+  "amplitude_pattern": "0x6b19a3d5",
+  "nco_indices": [
+    8,
+    24
+  ],
+  "itqt_codes": [
+    18,
+    27
+  ],
+  "max_cycles": 131072,
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 1572
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0x6132",
+      "computed_xor16": "0x6132",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0xe74f",
+      "computed_xor16": "0xe74f",
+      "checksum_matches": true
+    }
+  ],
+  "interrupts": "left enabled",
+  "scope": "Finite throughput and pattern experiment; not a host streaming interface"
+}

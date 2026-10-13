@@ -1,0 +1,1767 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "started_utc": "2026-10-13T01:12:25Z",
+  "chunks": [
+    {
+      "name": "code",
+      "source_local": "0x10000000",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10000000",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:28Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-0000/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "a79a9dfd7c2b51edb3a3c39dd23802dfc0bdc0e1355caef45ce022d25afde15c",
+          "unique_words": 1474,
+          "sentinel_words": {
+            "0x0": 111,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:28Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "2c6181783e9cdf0be3f0dc8e8b7ebe5883b1131bdc02fc7de6f8acbcb863ed44",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10000000",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x8487",
+            "computed_xor16": "0x8487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x2fa",
+            "computed_xor16": "0x2fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 0,
+      "payload_sha256": "edbaee4cf62da4d30cb9ac53ba782f223c506b8b11635947b9e9d6e11081dafc"
+    },
+    {
+      "name": "code",
+      "source_local": "0x10001c00",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10001c00",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:30Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-1c00/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "303ee41af58271d3c5272ad19c31be5270aaa90d09ff6c0b69a2264009aac1f9",
+          "unique_words": 1409,
+          "sentinel_words": {
+            "0x0": 2,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:30Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "fc60b9cb13a78c475c3fb2a6815f2026f06848fdd794bb6f774d83e607468f7c",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10001c00",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x6487",
+            "computed_xor16": "0x6487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0xe2fa",
+            "computed_xor16": "0xe2fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "e077b14102b94a23b372488a38db3b3562e65a3ae4f02e78b79d8eb002343307"
+    },
+    {
+      "name": "code",
+      "source_local": "0x10003800",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10003800",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:33Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-3800/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "24ada99ecdb49a59b1744d2e60f4b567960f9f6e67f5dada1fdbc98cdcee4e0d",
+          "unique_words": 1576,
+          "sentinel_words": {
+            "0x0": 2,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:33Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "3cf42ba9d013cea70422c268207bfcf1921240fba55599a80e2d27773ac01327",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10003800",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x4487",
+            "computed_xor16": "0x4487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0xc2fa",
+            "computed_xor16": "0xc2fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "15b7b93855d6cd23501da7385f14b7d58b5d7dc8fbd46bd375928046581d1af7"
+    },
+    {
+      "name": "code",
+      "source_local": "0x10005400",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10005400",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:36Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-5400/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "c3ec62add62e04d1990eb762c9fdb8b5d1aac439cc1028ebcceeaa494bce0292",
+          "unique_words": 1455,
+          "sentinel_words": {
+            "0x0": 2,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:36Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "6c8949ddab5c64c0b955081aea85088e61ba3e703b4f3a0ef5bca2d38266024a",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10005400",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x9487",
+            "computed_xor16": "0x9487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x12fa",
+            "computed_xor16": "0x12fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "413c6eccf2b3d38ec8adfe310f4cb0905b2d041a8b1994c2c773219c6fab054b"
+    },
+    {
+      "name": "code",
+      "source_local": "0x10007000",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10007000",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:38Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-7000/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "581f66ecffb9d3ab53106e7201e9f1443ccb36414416069ca2fd78af9ea4b40e",
+          "unique_words": 1516,
+          "sentinel_words": {
+            "0x0": 2,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:38Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "819a2e28a213d614790cc7f2a55354e607fa09f08dff602efa48e1b3219a9d29",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10007000",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0xf487",
+            "computed_xor16": "0xf487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x72fa",
+            "computed_xor16": "0x72fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "3af2417ccc14bfd4f5a2d2f75fd95b5a5df0853b2eb6ee7ecb782d7e0c067847"
+    },
+    {
+      "name": "code",
+      "source_local": "0x10008c00",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10008c00",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:41Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-8c00/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "03813c6f1ea3addc55f4c97d41470dd44457fc17a210f79d1a9f82fdbbae72d4",
+          "unique_words": 1544,
+          "sentinel_words": {
+            "0x0": 2,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:41Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "8f19aa715c354085c251af7179c4791e4cffc98a15c34d601e8bce86b1c7c765",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10008c00",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0xd487",
+            "computed_xor16": "0xd487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x52fa",
+            "computed_xor16": "0x52fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "e020fc2166606f7cdb27e0f89455d9acdd30950d47196742ebab4c4c7b48869c"
+    },
+    {
+      "name": "code",
+      "source_local": "0x1000a800",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x1000a800",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:44Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-a800/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "c73bd44632d46f16a10d3b171a254dbaf433d387dcfacdd47de08538f617c50c",
+          "unique_words": 975,
+          "sentinel_words": {
+            "0x0": 569,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:44Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "2167e5c5748c685a62fa11876ecfb2cecedc91d48fbf2ae448362daa7dc93156",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x1000a800",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0xb487",
+            "computed_xor16": "0xb487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x32fa",
+            "computed_xor16": "0x32fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "72df4fe6b2901ab4af8701d4ee54e690707b17122f3606eae696124247ee89ad"
+    },
+    {
+      "name": "code",
+      "source_local": "0x1000c400",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x1000c400",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:46Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-c400/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "eb1b86c514a4853679e6d0e0ff1e9de383769b91a1520dae9f9bc9ebc1534ad1",
+          "unique_words": 3,
+          "sentinel_words": {
+            "0x0": 1854,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:46Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "f1b5a441883e978b53b5d13da91896c964ec2f0a5f69f3ed29b371b01b0cb5d2",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x1000c400",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x487",
+            "computed_xor16": "0x487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x82fa",
+            "computed_xor16": "0x82fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "d07843752f6da5a10512965a89b0ef03770d189c317ada5dc67ffd9a5e81b6c2"
+    },
+    {
+      "name": "code",
+      "source_local": "0x1000e000",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x1000e000",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:49Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-e000/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "eb1b86c514a4853679e6d0e0ff1e9de383769b91a1520dae9f9bc9ebc1534ad1",
+          "unique_words": 3,
+          "sentinel_words": {
+            "0x0": 1854,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:49Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "d97ad4bf584027d3d62f952e45c69d51aaa394f370a4c41d1fd5e6970a980a0b",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x1000e000",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x6487",
+            "computed_xor16": "0x6487",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0xe2fa",
+            "computed_xor16": "0xe2fa",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "d07843752f6da5a10512965a89b0ef03770d189c317ada5dc67ffd9a5e81b6c2"
+    },
+    {
+      "name": "code",
+      "source_local": "0x1000fc00",
+      "bytes": 1024,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x1000fc00",
+        "bytes": 1024,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:52Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/code-fc00/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 1040,
+          "sha256": "41a9d08a681c0dddd1e20a15d8abd73237f339644253282cac990681e67ec851",
+          "unique_words": 3,
+          "sentinel_words": {
+            "0x0": 258,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:52Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "d1c74e0edd98f756cd47adb0983bc951f7878ce8eb6ae5fbf7c5984300cfee36",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 140,
+        "copy_source_local": "0x1000fc00",
+        "copy_bytes": 1024,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 140
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x69f2",
+            "computed_xor16": "0x69f2",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0xef8f",
+            "computed_xor16": "0xef8f",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    },
+    {
+      "name": "tables",
+      "source_local": "0x10020000",
+      "bytes": 7408,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10020000",
+        "bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:54Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/tables-0000/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 7424,
+          "sha256": "8a69f0f5799a0590ddc19bbd7a2e2e3a10a8c632f8df7e38f91ec131818d82ea",
+          "unique_words": 615,
+          "sentinel_words": {
+            "0x0": 94,
+            "0xffffffff": 18,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:54Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "9658cdcf71603eabc63eda840b029b2db5700c5a815a0de4cd764f16877b8e57",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10020000",
+        "copy_bytes": 7408,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x8485",
+            "computed_xor16": "0x8485",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x2f8",
+            "computed_xor16": "0x2f8",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 0,
+      "payload_sha256": "98fbaf39f803aebf73957516e909e22cacadfd992be5e3b473992a5e7afed686"
+    },
+    {
+      "name": "tables",
+      "source_local": "0x10021c00",
+      "bytes": 2048,
+      "launcher_exit": 0,
+      "interface_up": true,
+      "reported_secure_boot_zero": true,
+      "cleanup_completed": true,
+      "copy": {
+        "schema_version": 1,
+        "hardware_access": true,
+        "source_local": "0x10021c00",
+        "bytes": 2048,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "writes": "save, select and restore register 0xc04 only",
+        "deadline_seconds": 20,
+        "started_utc": "2026-10-13T01:12:57Z",
+        "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h/tables-1c00/raw",
+        "status": "bb_local_copy_captured",
+        "selector_before": "0x18780000",
+        "stub_readback_matches": true,
+        "output": {
+          "bytes": 2064,
+          "sha256": "6af74b7ddc9a0a2467c43915a4514acbaa7227d6fd7daeed05949930d34c1688",
+          "unique_words": 270,
+          "sentinel_words": {
+            "0x0": 213,
+            "0xffffffff": 0,
+            "0xdeadbeef": 0
+          }
+        },
+        "repeat_identical": true,
+        "markers": [
+          "0x524f4d31",
+          "0x524f4d32"
+        ],
+        "copy_finished": true,
+        "selector_after": "0x18780000",
+        "selector_restored": true,
+        "finished_utc": "2026-10-13T01:12:57Z"
+      },
+      "patch": {
+        "schema_version": 2,
+        "hardware_access": false,
+        "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+        "patched_firmware_sha256": "de38cb9c17ab0875e357160950a50e0ad0da15a7f9c75601dae6efb646076980",
+        "hook": "0x10010214",
+        "stub": "0x10016240",
+        "stub_bytes": 144,
+        "copy_source_local": "0x10021c00",
+        "copy_bytes": 2048,
+        "output_local": "0x10016300",
+        "output_host_hypothesis": "0x1863e300",
+        "marker_started": "0x524f4d31",
+        "marker_finished": "0x524f4d32",
+        "changed_regions": [
+          {
+            "file_offset": "0xd4084",
+            "bytes": 4
+          },
+          {
+            "file_offset": "0xda0b0",
+            "bytes": 144
+          },
+          {
+            "file_offset": "0xdbef0",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdbf10",
+            "bytes": 32,
+            "kind": "sha256"
+          },
+          {
+            "file_offset": "0xdc130",
+            "bytes": 2,
+            "kind": "xor16"
+          },
+          {
+            "file_offset": "0xdc710",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdc740",
+            "bytes": 48,
+            "kind": "sha384"
+          },
+          {
+            "file_offset": "0xdca70",
+            "bytes": 2,
+            "kind": "xor16"
+          }
+        ],
+        "section_digest_refreshed": true,
+        "default_integrity_records": [
+          {
+            "file_offset": "0xdbe70",
+            "bytes": 712,
+            "algorithm": "sha256",
+            "digest_offsets": [
+              "0xdbef0",
+              "0xdbf10"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdc130",
+            "stored_xor16": "0x1b85",
+            "computed_xor16": "0x1b85",
+            "checksum_matches": true
+          },
+          {
+            "file_offset": "0xdc670",
+            "bytes": 1032,
+            "algorithm": "sha384",
+            "digest_offsets": [
+              "0xdc710",
+              "0xdc740"
+            ],
+            "digests_match_code": true,
+            "checksum_offset": "0xdca70",
+            "stored_xor16": "0x9df8",
+            "computed_xor16": "0x9df8",
+            "checksum_matches": true
+          }
+        ],
+        "pooled_keys_and_signatures_changed": false,
+        "requires_reported_secure_boot_zero": true,
+        "changed_regions_coordinates": "original container before optional header/security repacking",
+        "bb_security_sections_omitted": false,
+        "container_repacked": false,
+        "patched_bb_section_file_offset": "0xd3e70",
+        "container_bytes_removed": 0,
+        "acceptance": "untested; no signatures generated or hardware security settings changed",
+        "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+      },
+      "overlap_bytes_identical": 240,
+      "payload_sha256": "8dc91842e13333015da71fa26c726d91fb6dc9dc21e5a936a5974b5fc4e5c92b"
+    }
+  ],
+  "status": "bb_code_and_api_tables_captured",
+  "raw_directory": "/tmp/rtl8922-bb-rom-20261012-h",
+  "code": {
+    "base": "0x10000000",
+    "bytes": 65536,
+    "sha256": "048b294373e64d67ae11c1c779ce9047729a72c19b809ca18f15b4a7882ba758",
+    "all_chunk_overlaps_identical": true
+  },
+  "directory": {
+    "valid": true,
+    "required_keys_found": [
+      "0x44534143",
+      "0x44534243",
+      "0x44535546"
+    ],
+    "pointer_domain_note": "API roots may be tables in local 0x10020000..0x100223ff; contents need separate validation",
+    "entries": [
+      {
+        "key": "0x44535049",
+        "pointer": "0x10021f9c"
+      },
+      {
+        "key": "0x44535054",
+        "pointer": "0x10021f70"
+      },
+      {
+        "key": "0x44534143",
+        "pointer": "0x10020000"
+      },
+      {
+        "key": "0x44534243",
+        "pointer": "0x10020054"
+      },
+      {
+        "key": "0x44534346",
+        "pointer": "0x100204ec"
+      },
+      {
+        "key": "0x44534155",
+        "pointer": "0x1002050c"
+      },
+      {
+        "key": "0x44535546",
+        "pointer": "0x10021be0"
+      },
+      {
+        "key": "0x44534850",
+        "pointer": "0x10021c28"
+      },
+      {
+        "key": "0x4453504c",
+        "pointer": "0x10021ca4"
+      },
+      {
+        "key": "0x44535552",
+        "pointer": "0x10021e40"
+      },
+      {
+        "key": "0x44535452",
+        "pointer": "0x10021efc"
+      },
+      {
+        "key": "0x4453464f",
+        "pointer": "0x1000bb7c"
+      }
+    ]
+  },
+  "tables": {
+    "base": "0x10020000",
+    "bytes": 9216,
+    "sha256": "19e55f746ba1a9ba9d4f8a40ceeb585490135706583337941ab41625f5155789",
+    "all_chunk_overlaps_identical": true
+  },
+  "finished_utc": "2026-10-13T01:12:57Z",
+  "elapsed_seconds": 31.761979980394244,
+  "small_copy_cross_checks": {
+    "attempt_f_directory_matches_bulk_code": true,
+    "attempt_g_api_prefix_matches_bulk_tables": true
+  }
+}

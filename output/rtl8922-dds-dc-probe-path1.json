@@ -1,0 +1,2615 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T04:04:09Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "f998a0c4294a9c8038a036c637a479b390a574b995bbabb36c6aa81e28c38bc7",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "fc79cc703403446a4f53b485b2ae34b5101e2f0da7ca174550196327c0c3a844",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "9999091807b4028436ace5ad860643969fd31dc98c214216dd33c7c371592890"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 0,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-dds-dc-probe-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1059\n\twdev 0x4100000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 65\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1026062.01171875,
+        "above_median_db": 20.23887484128521,
+        "power": 1940920.6545344584
+      },
+      {
+        "hz": -947998.046875,
+        "above_median_db": 12.490324166767088,
+        "power": 325951.2975327496
+      },
+      {
+        "hz": -989807.12890625,
+        "above_median_db": 12.079562752513082,
+        "power": 296535.4180835465
+      },
+      {
+        "hz": -1311218.26171875,
+        "above_median_db": 11.901709475409618,
+        "power": 284636.92898828717
+      },
+      {
+        "hz": 65612.79296875,
+        "above_median_db": 11.74283743305769,
+        "power": 274412.5950455116
+      },
+      {
+        "hz": -927001.953125,
+        "above_median_db": 11.713069595907836,
+        "power": 272538.12083802937
+      },
+      {
+        "hz": 446350.09765625,
+        "above_median_db": 11.564867058608142,
+        "power": 263394.68271373684
+      },
+      {
+        "hz": 1082519.53125,
+        "above_median_db": 11.557651537181146,
+        "power": 262957.4328461252
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0589828620655,
+    "mean_real": -0.0177154541015625,
+    "mean_imag": 0.007080078125,
+    "clip_fraction": 0.0
+  },
+  "dds_dc_probe": {
+    "scope": "Both RF paths in standby; internal DAC debug tap",
+    "arbitrary_iq_demonstrated": false,
+    "rows": [
+      {
+        "tone_index": 1,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324ac",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1448.306321190376,
+          "imag_std": 1448.306321190376,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2042,
+          "real_max": 2042,
+          "imag_min": -2042,
+          "imag_max": 2042,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.38587426614484
+        }
+      },
+      {
+        "tone_index": 0,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x3250c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 0,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36ce4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 0,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393b2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 0,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324b1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 1,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36ba9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1448.111787811977,
+          "imag_std": 1448.111787811977,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 320,
+          "peak_cycles_per_record": 0.003125,
+          "peak_above_median_db": 248.98938052576557
+        }
+      },
+      {
+        "tone_index": 1,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392c8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1448.1134969331652,
+          "imag_std": 1448.1134969331652,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2046,
+          "real_max": 2046,
+          "imag_min": -2046,
+          "imag_max": 2046,
+          "iq_covariance": 0.0,
+          "unique_words": 80,
+          "peak_cycles_per_record": 0.0125,
+          "peak_above_median_db": 251.79717112757683
+        }
+      },
+      {
+        "tone_index": 1,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324bb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1448.158692961514,
+          "imag_std": 1448.158692961514,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2032,
+          "real_max": 2032,
+          "imag_min": -2032,
+          "imag_max": 2032,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.59114443030876
+        }
+      },
+      {
+        "tone_index": 20,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36e48",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.749287687616,
+          "imag_std": 1447.749287687616,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2008,
+          "real_max": 2008,
+          "imag_min": -2008,
+          "imag_max": 2008,
+          "iq_covariance": 0.0,
+          "unique_words": 16,
+          "peak_cycles_per_record": 0.0625,
+          "peak_above_median_db": 252.79900268326924
+        }
+      },
+      {
+        "tone_index": 20,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392c8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.730637929584,
+          "imag_std": 1447.730637929584,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1702,
+          "real_max": 1702,
+          "imag_min": -1702,
+          "imag_max": 1702,
+          "iq_covariance": 0.0,
+          "unique_words": 4,
+          "peak_cycles_per_record": 0.25,
+          "peak_above_median_db": 253.84457761237508
+        }
+      },
+      {
+        "tone_index": 20,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324bb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1138.0,
+          "imag_mean": -1702.0,
+          "real_min": -1138,
+          "real_max": -1138,
+          "imag_min": -1702,
+          "imag_max": -1702,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 40,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36abd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1492.582135230897,
+          "imag_std": 1394.1674118224707,
+          "real_mean": 149.6146484375,
+          "imag_mean": -0.0353515625,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -45.89995090474723,
+          "unique_words": 8,
+          "peak_cycles_per_record": 0.125,
+          "peak_above_median_db": 104.86106322578831
+        }
+      },
+      {
+        "tone_index": 40,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x39298",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 2048.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 2,
+          "peak_cycles_per_record": -0.5,
+          "peak_above_median_db": 253.84528324877223
+        }
+      },
+      {
+        "tone_index": 40,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324a8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 80,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36a83",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1444.0901412632627,
+          "imag_std": 1444.0901412632627,
+          "real_mean": 106.3375,
+          "imag_mean": -106.3375,
+          "real_min": -1448,
+          "real_max": 1448,
+          "imag_min": -1448,
+          "imag_max": 1448,
+          "iq_covariance": -142669.03609374975,
+          "unique_words": 4,
+          "peak_cycles_per_record": 0.25,
+          "peak_above_median_db": 103.54103118919573
+        }
+      },
+      {
+        "tone_index": 80,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392bb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1448.0,
+          "imag_mean": 1448.0,
+          "real_min": -1448,
+          "real_max": -1448,
+          "imag_min": 1448,
+          "imag_max": 1448,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 80,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324af",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1448.0,
+          "imag_mean": 1448.0,
+          "real_min": -1448,
+          "real_max": -1448,
+          "imag_min": 1448,
+          "imag_max": 1448,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 128,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36a60",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1458.873533865047,
+          "imag_std": 1429.1107847191456,
+          "real_mean": -121.40078125,
+          "imag_mean": 88.2423828125,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -135416.6917247009,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 99.14763218965568
+        }
+      },
+      {
+        "tone_index": 128,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x3932b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 253.57903299835942
+        }
+      },
+      {
+        "tone_index": 128,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324af",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 253.62475826976092
+        }
+      },
+      {
+        "tone_index": 160,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36a61",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 2042.1942096676307,
+          "real_mean": 0.0,
+          "imag_mean": 154.1,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 2,
+          "peak_cycles_per_record": -0.5,
+          "peak_above_median_db": 100.40988858915867
+        }
+      },
+      {
+        "tone_index": 160,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393a9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": -2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 160,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324b6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": -2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 256,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x374de",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1357.8009703717548,
+          "imag_std": 1504.3968540101164,
+          "real_mean": 90.8037109375,
+          "imag_mean": 279.88232421875,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 151471.27524137497,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 94.25988679709148
+        }
+      },
+      {
+        "tone_index": 256,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393e2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 253.1928071277025
+        }
+      },
+      {
+        "tone_index": 256,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324c4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 253.4134838676036
+        }
+      },
+      {
+        "tone_index": 320,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36ec2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 320,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x3132d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 320,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324e3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 512,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36a4d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1405.0864887869097,
+          "imag_std": 1482.6740550033155,
+          "real_mean": 44.493359375,
+          "imag_mean": -137.045703125,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -80448.00596755989,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 100.95387058740226
+        }
+      },
+      {
+        "tone_index": 512,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392ba",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 253.57903940424825
+        }
+      },
+      {
+        "tone_index": 512,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324a5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 253.62475826983842
+        }
+      },
+      {
+        "tone_index": 640,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36aa4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 640,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393e3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 640,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x3255b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 960,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36c19",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 960,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392c7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 960,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324b6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 1024,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x37a57",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1459.7630685821875,
+          "imag_std": 1402.9864534717844,
+          "real_mean": -247.778125,
+          "imag_mean": 180.052734375,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -253663.01326293935,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 87.64664908903832
+        }
+      },
+      {
+        "tone_index": 1024,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392c2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 253.17169639706864
+        }
+      },
+      {
+        "tone_index": 1024,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324b6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1458.9447426665577,
+          "imag_std": 1428.789882033514,
+          "real_mean": -123.310546875,
+          "imag_mean": 89.59453125,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -137320.59310455335,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 108.09702955418521
+        }
+      },
+      {
+        "tone_index": 1280,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36eb4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1459.265307453653,
+          "imag_std": 1427.453596387959,
+          "real_mean": -130.6783203125,
+          "imag_mean": 95.03251953125,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -144955.1623163414,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 96.95624793295144
+        }
+      },
+      {
+        "tone_index": 1280,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392dd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 253.70889413959247
+        }
+      },
+      {
+        "tone_index": 1280,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x325aa",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 253.57903299835942
+        }
+      },
+      {
+        "tone_index": 1920,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36b4d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1458.7515751872968,
+          "imag_std": 1429.4183157616726,
+          "real_mean": -119.964453125,
+          "imag_mean": 87.24296875,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": -134008.30121490487,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 99.0982251583928
+        }
+      },
+      {
+        "tone_index": 1920,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392bb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 253.62475826988216
+        }
+      },
+      {
+        "tone_index": 1920,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324ac",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 253.579040861635
+        }
+      },
+      {
+        "tone_index": 2048,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36be3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 2048,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393d3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 2048,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324b2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "tone_index": 2560,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36c1a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1402.9199439919764,
+          "imag_std": 1484.0221709247817,
+          "real_mean": 46.6189453125,
+          "imag_mean": 143.78779296875,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 84237.90458673474,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 99.80954691563403
+        }
+      },
+      {
+        "tone_index": 2560,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x393bf",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.4,
+          "peak_above_median_db": 253.62475826988216
+        }
+      },
+      {
+        "tone_index": 2560,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324a6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.4,
+          "peak_above_median_db": 253.7088963833902
+        }
+      },
+      {
+        "tone_index": 3200,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36d82",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 253.1928071277025
+        }
+      },
+      {
+        "tone_index": 3200,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x3927b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 253.19282741987453
+        }
+      },
+      {
+        "tone_index": 3200,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324ad",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 253.41348386781118
+        }
+      },
+      {
+        "tone_index": 3840,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36b34",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1402.8754543254288,
+          "imag_std": 1484.0515313216363,
+          "real_mean": 46.7306640625,
+          "imag_mean": 143.88291015625,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 84277.50996740337,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 100.62791443823971
+        }
+      },
+      {
+        "tone_index": 3840,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392b9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": -0.2,
+          "peak_above_median_db": 253.4134838676036
+        }
+      },
+      {
+        "tone_index": 3840,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324af",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.606576387383,
+          "imag_std": 1448.3535479985542,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1656,
+          "real_max": 2048,
+          "imag_min": -1948,
+          "imag_max": 1948,
+          "iq_covariance": 0.0,
+          "unique_words": 5,
+          "peak_cycles_per_record": 0.2,
+          "peak_above_median_db": 253.41348386781118
+        }
+      },
+      {
+        "tone_index": 4095,
+        "capture_rate_selector": 0,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x36b6a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1452.4731556576703,
+          "imag_std": 1434.2930289018034,
+          "real_mean": -125.9787109375,
+          "imag_mean": 102.9439453125,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -154492.2574980546,
+          "unique_words": 320,
+          "peak_cycles_per_record": -0.003125,
+          "peak_above_median_db": 97.77992286656632
+        }
+      },
+      {
+        "tone_index": 4095,
+        "capture_rate_selector": 2,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x392df",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.9249289932127,
+          "imag_std": 1447.9249289932127,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2046,
+          "real_max": 2046,
+          "imag_min": -2046,
+          "imag_max": 2046,
+          "iq_covariance": 0.0,
+          "unique_words": 80,
+          "peak_cycles_per_record": -0.0125,
+          "peak_above_median_db": 251.73152332973075
+        }
+      },
+      {
+        "tone_index": 4095,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324c4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.8686404505072,
+          "imag_std": 1447.8686404505072,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2046,
+          "real_max": 2046,
+          "imag_min": -2046,
+          "imag_max": 2046,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": -0.05,
+          "peak_above_median_db": 253.33457040828662
+        }
+      },
+      {
+        "tone_index": 1,
+        "capture_rate_selector": 4,
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "tx_dac_debug": {
+          "status": "0x324ba",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1447.9812153477683,
+          "imag_std": 1447.9812153477683,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2034,
+          "real_max": 2034,
+          "imag_min": -2034,
+          "imag_max": 2034,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.39416714877783
+        }
+      }
+    ],
+    "constant_candidates": [
+      320,
+      640,
+      960
+    ],
+    "matrix_tests": [
+      {
+        "index": 320,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36c43",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 0,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36b52",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 0,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x327e7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": -2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36c57",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": -2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36b85",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": -1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x37008",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": -2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": -1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36bcb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 512,
+        "b": 256,
+        "tx_dac_debug": {
+          "status": "0x36bc2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1024.0,
+          "imag_mean": -512.0,
+          "real_min": -1024,
+          "real_max": -1024,
+          "imag_min": -512,
+          "imag_max": -512,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 256,
+        "b": -512,
+        "tx_dac_debug": {
+          "status": "0x36b92",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -512.0,
+          "imag_mean": 1024.0,
+          "real_min": -512,
+          "real_max": -512,
+          "imag_min": 1024,
+          "imag_max": 1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 768,
+        "b": 384,
+        "tx_dac_debug": {
+          "status": "0x306a3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1536.0,
+          "imag_mean": -768.0,
+          "real_min": -1536,
+          "real_max": -1536,
+          "imag_min": -768,
+          "imag_max": -768,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 384,
+        "b": -768,
+        "tx_dac_debug": {
+          "status": "0x36bd0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -768.0,
+          "imag_mean": 1536.0,
+          "real_min": -768,
+          "real_max": -768,
+          "imag_min": 1536,
+          "imag_max": 1536,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 320,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36ab3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36b07",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 0,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36b3c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 0,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36a55",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36a7f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36c2a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": -2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": -1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36ba3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": -1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36ac7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": -2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 512,
+        "b": 256,
+        "tx_dac_debug": {
+          "status": "0x36f98",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1024.0,
+          "imag_mean": 512.0,
+          "real_min": 1024,
+          "real_max": 1024,
+          "imag_min": 512,
+          "imag_max": 512,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 256,
+        "b": -512,
+        "tx_dac_debug": {
+          "status": "0x36b84",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 512.0,
+          "imag_mean": -1024.0,
+          "real_min": 512,
+          "real_max": 512,
+          "imag_min": -1024,
+          "imag_max": -1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 768,
+        "b": 384,
+        "tx_dac_debug": {
+          "status": "0x36b83",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1536.0,
+          "imag_mean": 768.0,
+          "real_min": 1536,
+          "real_max": 1536,
+          "imag_min": 768,
+          "imag_max": 768,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 384,
+        "b": -768,
+        "tx_dac_debug": {
+          "status": "0x36b51",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 768.0,
+          "imag_mean": -1536.0,
+          "real_min": 768,
+          "real_max": 768,
+          "imag_min": -1536,
+          "imag_max": -1536,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 640,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36fe3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36beb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 0,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x369b4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 0,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36e44",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36b80",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36a97",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": -2048.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": -1024,
+        "b": 1024,
+        "tx_dac_debug": {
+          "status": "0x36edc",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": -1024,
+        "b": -1024,
+        "tx_dac_debug": {
+          "status": "0x36aa1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": -2048.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 512,
+        "b": 256,
+        "tx_dac_debug": {
+          "status": "0x36aba",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1024.0,
+          "imag_mean": 512.0,
+          "real_min": 1024,
+          "real_max": 1024,
+          "imag_min": 512,
+          "imag_max": 512,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 256,
+        "b": -512,
+        "tx_dac_debug": {
+          "status": "0x36a22",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 512.0,
+          "imag_mean": -1024.0,
+          "real_min": 512,
+          "real_max": 512,
+          "imag_min": -1024,
+          "imag_max": -1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 768,
+        "b": 384,
+        "tx_dac_debug": {
+          "status": "0x369ff",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1536.0,
+          "imag_mean": 768.0,
+          "real_min": 1536,
+          "real_max": 1536,
+          "imag_min": 768,
+          "imag_max": 768,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 384,
+        "b": -768,
+        "tx_dac_debug": {
+          "status": "0x37b23",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 768.0,
+          "imag_mean": -1536.0,
+          "real_min": 768,
+          "real_max": 768,
+          "imag_min": -1536,
+          "imag_max": -1536,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "index": 960,
+        "a": 1024,
+        "b": 0,
+        "tx_dac_debug": {
+          "status": "0x36a41",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      }
+    ],
+    "observation_control_passed": true
+  },
+  "status": "dds_dc_probe_complete_unqualified",
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1026062.01171875,
+        "above_median_db": 23.384526326007794,
+        "power": 3770477.4465398737
+      },
+      {
+        "hz": 958557.12890625,
+        "above_median_db": 15.684359643365616,
+        "power": 640294.3640024415
+      },
+      {
+        "hz": 446105.95703125,
+        "above_median_db": 12.3542837502041,
+        "power": 297421.315221521
+      },
+      {
+        "hz": -592956.54296875,
+        "above_median_db": 12.180184266595404,
+        "power": 285734.14506166236
+      },
+      {
+        "hz": 549804.6875,
+        "above_median_db": 11.961539998235375,
+        "power": 271705.0525952031
+      },
+      {
+        "hz": -872070.3125,
+        "above_median_db": 11.902515115322558,
+        "power": 268037.2949088192
+      },
+      {
+        "hz": 842163.0859375,
+        "above_median_db": 11.892865645987653,
+        "power": 267442.41135691176
+      },
+      {
+        "hz": -1316162.109375,
+        "above_median_db": 11.784970718798624,
+        "power": 260880.00050489645
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0352889065942836,
+    "mean_real": -0.0237579345703125,
+    "mean_imag": -0.013397216796875,
+    "clip_fraction": 0.0
+  },
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

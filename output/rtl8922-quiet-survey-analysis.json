@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "rf_tx_requested": false,
+  "started_utc": "2026-10-13T18:03:35Z",
+  "ended_utc": "2026-10-13T18:13:04Z",
+  "unique_rf_centers": 42,
+  "observations": 141,
+  "sampled_seconds_total": 64.684032,
+  "rx_gain": 45,
+  "sample_rate": 8000000,
+  "analog_rx_bandwidth": 5000000,
+  "fft_samples": 4096,
+  "statistical_time_resolution_seconds": 0.000512,
+  "recommended_pdm": {
+    "rf_hz": 2422250000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 250000,
+    "confirmation": {
+      "rf_hz": 2422250000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 250000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 5.996544,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.33199791532097,
+          "median_dbfs": -70.7214829226628,
+          "p95_dbfs": -67.3044882848606,
+          "p99_dbfs": -66.28721330153003,
+          "maximum_dbfs": -33.13560587964912,
+          "fraction_above_band_floor_plus_6db": 0.011270491803278689,
+          "band_reference_floor_dbfs": -72.33199791532097
+        },
+        "2000000": {
+          "p10_dbfs": -62.051850845988234,
+          "median_dbfs": -60.895771586884976,
+          "p95_dbfs": -57.16942132564613,
+          "p99_dbfs": -56.613240559374766,
+          "maximum_dbfs": -25.931006544465177,
+          "fraction_above_band_floor_plus_6db": 0.004183743169398907,
+          "band_reference_floor_dbfs": -62.051850845988234
+        }
+      }
+    }
+  },
+  "recommended_ofdm_target": {
+    "rf_hz": 2421500000,
+    "rtl_lo_mhz": 2417,
+    "nco_offset_hz": 4500000,
+    "requires_ofdm_table_retargeting": true,
+    "new_tx_geometry_tested": false,
+    "confirmation": {
+      "rf_hz": 2421500000,
+      "rtl_lo_mhz": 2417,
+      "nco_offset_hz": 4500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 5.996544,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.10788313161552,
+          "median_dbfs": -70.1550419287581,
+          "p95_dbfs": -67.29181048267112,
+          "p99_dbfs": -66.33085908188369,
+          "maximum_dbfs": -42.362948574052936,
+          "fraction_above_band_floor_plus_6db": 0.01016051912568306,
+          "band_reference_floor_dbfs": -72.33199791532097
+        },
+        "2000000": {
+          "p10_dbfs": -61.85496355213649,
+          "median_dbfs": -59.731636860129996,
+          "p95_dbfs": -57.42332379423473,
+          "p99_dbfs": -56.42971089404249,
+          "maximum_dbfs": -25.930174908427745,
+          "fraction_above_band_floor_plus_6db": 0.004012978142076503,
+          "band_reference_floor_dbfs": -62.051850845988234
+        }
+      }
+    }
+  },
+  "quiet_5g_candidate": {
+    "rf_hz": 5789000000,
+    "rtl_lo_mhz": 5785,
+    "nco_offset_hz": 4000000,
+    "tx_path_at_this_frequency_qualified": false,
+    "confirmation": {
+      "rf_hz": 5789000000,
+      "rtl_lo_mhz": 5785,
+      "nco_offset_hz": 4000000,
+      "band": "5 GHz",
+      "sampled_seconds": 5.996544,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -68.08705743156393,
+          "median_dbfs": -67.30252956384594,
+          "p95_dbfs": -66.34540752292027,
+          "p99_dbfs": -65.89376838179659,
+          "maximum_dbfs": -62.68400512102097,
+          "fraction_above_band_floor_plus_6db": 0.0,
+          "band_reference_floor_dbfs": -68.33075781704058
+        },
+        "2000000": {
+          "p10_dbfs": -57.532163616057424,
+          "median_dbfs": -57.2866070832827,
+          "p95_dbfs": -56.96423677883226,
+          "p99_dbfs": -56.78221251086874,
+          "maximum_dbfs": -53.124698403750955,
+          "fraction_above_band_floor_plus_6db": 0.0,
+          "band_reference_floor_dbfs": -57.75676961030985
+        }
+      }
+    }
+  },
+  "current_pdm": {
+    "rf_hz": 2442250000,
+    "rtl_lo_mhz": 2442,
+    "nco_offset_hz": 250000,
+    "band": "2.4 GHz",
+    "sampled_seconds": 5.996544,
+    "maximum_buffer_clip_fraction": 0.0557403564453125,
+    "metrics": {
+      "200000": {
+        "p10_dbfs": -71.86395515333577,
+        "median_dbfs": -69.81578246193226,
+        "p95_dbfs": -27.438508641472627,
+        "p99_dbfs": -26.982450856333827,
+        "maximum_dbfs": -23.794950422723726,
+        "fraction_above_band_floor_plus_6db": 0.24743852459016394,
+        "band_reference_floor_dbfs": -72.33199791532097
+      },
+      "2000000": {
+        "p10_dbfs": -61.6800880111572,
+        "median_dbfs": -59.890148963045974,
+        "p95_dbfs": -14.326278560504818,
+        "p99_dbfs": -14.101259916100522,
+        "maximum_dbfs": -13.594459250795122,
+        "fraction_above_band_floor_plus_6db": 0.24735314207650272,
+        "band_reference_floor_dbfs": -62.051850845988234
+      }
+    }
+  },
+  "current_ofdm": {
+    "rf_hz": 2446000000,
+    "rtl_lo_mhz": 2442,
+    "nco_offset_hz": 4000000,
+    "band": "2.4 GHz",
+    "sampled_seconds": 5.996544,
+    "maximum_buffer_clip_fraction": 6.103515625e-05,
+    "metrics": {
+      "200000": {
+        "p10_dbfs": -72.25059296323298,
+        "median_dbfs": -70.67855673522342,
+        "p95_dbfs": -42.152397822209444,
+        "p99_dbfs": -41.34959815591824,
+        "maximum_dbfs": -31.148358244055036,
+        "fraction_above_band_floor_plus_6db": 0.2381318306010929,
+        "band_reference_floor_dbfs": -72.33199791532097
+      },
+      "2000000": {
+        "p10_dbfs": -62.00389545489388,
+        "median_dbfs": -60.92527751091843,
+        "p95_dbfs": -31.176307025869527,
+        "p99_dbfs": -28.51006009153825,
+        "maximum_dbfs": -15.469085399792974,
+        "fraction_above_band_floor_plus_6db": 0.24018101092896174,
+        "band_reference_floor_dbfs": -62.051850845988234
+      }
+    }
+  },
+  "observed_p99_adc_band_power_difference_db": {
+    "pdm": 42.51198064327424,
+    "ofdm": 27.919650802504243
+  },
+  "power_comparison_limit": "Uncalibrated ADC dBFS; current-frequency observations contain clipping. These differences are not calibrated RF power or demonstrated SNR/EVM gains. Cross-band receiver/antenna response is not calibrated.",
+  "occupancy_definition": "Fraction of 0.512-ms FFT windows above the lowest within-band tenth-percentile integrated power plus 6 dB.",
+  "capture_limit": "Discontinuous receive snapshots; a quiet survey does not guarantee permanent channel availability.",
+  "source_reports": {
+    "output/rtl8922-quiet-survey-a.json": "b7cf6124513ad9c8fd205bde676e756a5221749a96f9c155b925c0d3da4db0ba",
+    "output/rtl8922-quiet-survey-refine.json": "f2ef28f72134fe6cf75e6952541f768a24fa8c97e7043b1d91f0e60aba4aaf74",
+    "output/rtl8922-quiet-survey-confirm-b.json": "0df0d0970d095d8ee61d3f72975adc4b7de14c4c6e3bcd8d705b319e872b4b30"
+  },
+  "refinement_analysis_recovery": "All observations completed. An empty-band ranking exception was fixed offline; source exception/report preserved.",
+  "setup_only_failed_attempt": "output/rtl8922-quiet-survey-confirm.json",
+  "final_state": "output/rtl8922-quiet-survey-final-state.json",
+  "all_cleanup_checks_pass": true,
+  "offline_tests_passed": 2
+}

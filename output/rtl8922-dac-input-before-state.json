@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-10-13T03:01:14.590815+00:00",
+  "demo_state": "inactive",
+  "status_listener": "",
+  "card_bound": false,
+  "working_modules_loaded": [],
+  "pluto_settings": {
+    "altvoltage0:True": {
+      "frequency": "2399999996"
+    },
+    "altvoltage1:True": {
+      "frequency": "2312000000",
+      "powerdown": "1"
+    },
+    "voltage0:False": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "18000000",
+      "hardwaregain": "71.000000 dB",
+      "gain_control_mode": "slow_attack"
+    },
+    "voltage0:True": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "3000000",
+      "hardwaregain": "-89.750000 dB"
+    }
+  },
+  "fault_lines": []
+}

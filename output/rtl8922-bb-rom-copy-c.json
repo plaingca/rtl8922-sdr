@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "status": "firmware_download_checksum_rejected",
+  "capture_script_ran": false,
+  "wrapper_exit_code": 2,
+  "patched_firmware_report": "output/rtl8922-bb-rom-copy-patch-digest.json",
+  "loader_message": "fw checksum fail",
+  "firmware_type": 64,
+  "fwdl_control": "0x10000833",
+  "boot_debug": "0x000b0900",
+  "wc_cpu_pc": "0x20029628",
+  "cleanup": "Wrapper unloaded modules, removed temporary firmware/NM configuration and released the card; wired default route preserved",
+  "inference_limit": "The repeated checksum status after section digest refresh leaves the remaining integrity check unresolved"
+}

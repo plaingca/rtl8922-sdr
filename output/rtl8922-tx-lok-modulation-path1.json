@@ -1,0 +1,310 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-12T21:55:35Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "lo",
+  "lo_injection_disabled": false,
+  "pluto_rx_rate": 4000000,
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1012\n\twdev 0x1200000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 18\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:1:5": "0x41",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:80cc": "0x240000",
+    "bb:0:802c": "0x250025",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:0": "0x337e0",
+    "rf:0:5": "0x41",
+    "rf:0:10000": "0x30000",
+    "rf:1:0": "0x33782",
+    "rf:1:10000": "0x30002"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -1273437.5,
+        "above_median_db": 16.500592430859673,
+        "power": 14016511918.410358
+      },
+      {
+        "hz": -1731079.1015625,
+        "above_median_db": 15.79935108396815,
+        "power": 11926576987.766489
+      },
+      {
+        "hz": -1360046.38671875,
+        "above_median_db": 15.633427759227317,
+        "power": 11479513509.578537
+      },
+      {
+        "hz": -1425109.86328125,
+        "above_median_db": 15.322711683169922,
+        "power": 10686903205.585928
+      },
+      {
+        "hz": -1579406.73828125,
+        "above_median_db": 15.07945890446123,
+        "power": 10104773844.817045
+      },
+      {
+        "hz": -1185668.9453125,
+        "above_median_db": 15.049656751657485,
+        "power": 10035670245.536816
+      },
+      {
+        "hz": -1644470.21484375,
+        "above_median_db": 15.004637904944413,
+        "power": 9932178088.54799
+      },
+      {
+        "hz": -1224609.375,
+        "above_median_db": 14.834214613469962,
+        "power": 9549973553.525814
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 163.0104705162365,
+    "mean_real": 0.11920166015625,
+    "mean_imag": -0.5961761474609375,
+    "clip_fraction": 0.0
+  },
+  "lok_modulation": {
+    "qualified": false,
+    "interpretation": "Exploratory analog-offset fit; not arbitrary DAC I/Q",
+    "carrier_hz_relative_pluto": 1015392.5310123517,
+    "pilot_phase_residual_rad": 4.392917953158015,
+    "pilot_amplitude": 297.3545739436833,
+    "rx_alignment_seconds": -0.060161140303373335,
+    "residual_frequency_hz": -86.124999999999,
+    "frequency_drift_hz_per_second": -93.14999999999965,
+    "state_dwell_seconds": 0.04,
+    "events": [
+      [
+        0.06022514030337334,
+        16,
+        16
+      ],
+      [
+        0.10015226528048515,
+        12,
+        16
+      ],
+      [
+        0.1401429921388626,
+        16,
+        16
+      ],
+      [
+        0.18015101179480553,
+        20,
+        16
+      ],
+      [
+        0.220144122838974,
+        16,
+        16
+      ],
+      [
+        0.26017947494983673,
+        16,
+        12
+      ],
+      [
+        0.3002058696001768,
+        16,
+        16
+      ],
+      [
+        0.3401430230587721,
+        16,
+        20
+      ],
+      [
+        0.38010949455201626,
+        16,
+        16
+      ],
+      [
+        0.42010973766446114,
+        12,
+        16
+      ],
+      [
+        0.46012096479535103,
+        16,
+        16
+      ],
+      [
+        0.5001006685197353,
+        20,
+        16
+      ],
+      [
+        0.5400985796004534,
+        16,
+        16
+      ],
+      [
+        0.5801309067755938,
+        16,
+        12
+      ],
+      [
+        0.6201033163815737,
+        16,
+        16
+      ],
+      [
+        0.6601289492100477,
+        16,
+        20
+      ],
+      [
+        0.700110899284482,
+        16,
+        16
+      ],
+      [
+        0.7401116155087948,
+        12,
+        16
+      ],
+      [
+        0.780142217874527,
+        16,
+        16
+      ],
+      [
+        0.8201284557580948,
+        20,
+        16
+      ],
+      [
+        0.8601353634148836,
+        16,
+        16
+      ],
+      [
+        0.9001449458301067,
+        16,
+        12
+      ],
+      [
+        0.9401516132056713,
+        16,
+        16
+      ],
+      [
+        0.9801130034029484,
+        16,
+        20
+      ],
+      [
+        1.0201151315122843,
+        16,
+        16
+      ],
+      [
+        1.0601332504302263,
+        12,
+        16
+      ],
+      [
+        1.1001492366194725,
+        16,
+        16
+      ],
+      [
+        1.1401172187179327,
+        20,
+        16
+      ],
+      [
+        1.1801343448460102,
+        16,
+        16
+      ],
+      [
+        1.220116576179862,
+        16,
+        12
+      ],
+      [
+        1.2601121813058853,
+        16,
+        16
+      ],
+      [
+        1.3001560401171446,
+        16,
+        20
+      ],
+      [
+        1.340142909437418,
+        16,
+        16
+      ]
+    ],
+    "used_envelope_points": 5500,
+    "discarded_clipped_fraction": 0.21504934210526316,
+    "complex_intercept_i_q_coefficients": [
+      [
+        0.15484887163343508,
+        -0.1675028430693985
+      ],
+      [
+        -0.46757227431359477,
+        0.5244345320720607
+      ],
+      [
+        0.3188754667134876,
+        0.18164721167534517
+      ]
+    ],
+    "axis_singular_values": [
+      0.7082055752831019,
+      0.3560583464202624
+    ],
+    "fit_mse": 20.82845778416378,
+    "modulation_power": 2.348706226444069,
+    "modulation_to_residual_db": -9.478284152679496
+  },
+  "status": "analog_offset_probe_complete_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:1:0": {
+      "saved": "0x33782",
+      "actual": "0x337e2"
+    }
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 70,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

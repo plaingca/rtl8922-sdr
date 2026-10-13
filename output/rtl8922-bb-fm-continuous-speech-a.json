@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": true,
+  "started_utc": "2026-10-13T08:22:02Z",
+  "status": "finite_fm_audio_captured",
+  "firmware_sha256": "81cbf6ff0ddee2f35db86e4b4f6d3a2b1d858321c03910e9a0f04006baf2e969",
+  "payload_sha256": "cc8c21308fe1a3ea5f840dcf305dee478ec047ed9cbca5ccc06c54b73ceaa4fc",
+  "payload": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-fm-20261013/speech-chirp.bin",
+  "hold": 334,
+  "rx_rate": 2000000,
+  "center_hz": 2422000000,
+  "rx_gain": 60,
+  "tx_gain_code": 15,
+  "tx_pad": 6,
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83de8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000"
+  },
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "uploads": [
+    {
+      "sequence": 1,
+      "consumed_before": 0,
+      "seconds": 0.005044586956501007,
+      "verified": true
+    },
+    {
+      "sequence": 2,
+      "consumed_before": 0,
+      "seconds": 0.005188301205635071,
+      "verified": true
+    },
+    {
+      "sequence": 3,
+      "consumed_before": 1,
+      "seconds": 0.003193434327840805,
+      "verified": false
+    },
+    {
+      "sequence": 4,
+      "consumed_before": 2,
+      "seconds": 0.003162166103720665,
+      "verified": false
+    },
+    {
+      "sequence": 5,
+      "consumed_before": 3,
+      "seconds": 0.0031545720994472504,
+      "verified": false
+    },
+    {
+      "sequence": 6,
+      "consumed_before": 4,
+      "seconds": 0.005123477429151535,
+      "verified": false
+    },
+    {
+      "sequence": 7,
+      "consumed_before": 5,
+      "seconds": 0.003090471029281616,
+      "verified": false
+    },
+    {
+      "sequence": 8,
+      "consumed_before": 6,
+      "seconds": 0.004359235987067223,
+      "verified": false
+    },
+    {
+      "sequence": 9,
+      "consumed_before": 7,
+      "seconds": 0.003606656566262245,
+      "verified": false
+    },
+    {
+      "sequence": 10,
+      "consumed_before": 8,
+      "seconds": 0.0031521879136562347,
+      "verified": false
+    },
+    {
+      "sequence": 11,
+      "consumed_before": 9,
+      "seconds": 0.0037250835448503494,
+      "verified": false
+    },
+    {
+      "sequence": 12,
+      "consumed_before": 10,
+      "seconds": 0.0033730287104845047,
+      "verified": false
+    },
+    {
+      "sequence": 13,
+      "consumed_before": 11,
+      "seconds": 0.0036785434931516647,
+      "verified": false
+    },
+    {
+      "sequence": 14,
+      "consumed_before": 12,
+      "seconds": 0.0035024676471948624,
+      "verified": false
+    },
+    {
+      "sequence": 15,
+      "consumed_before": 13,
+      "seconds": 0.0030957795679569244,
+      "verified": false
+    },
+    {
+      "sequence": 16,
+      "consumed_before": 14,
+      "seconds": 0.003732869401574135,
+      "verified": false
+    },
+    {
+      "sequence": 17,
+      "consumed_before": 15,
+      "seconds": 0.00322570838034153,
+      "verified": false
+    },
+    {
+      "sequence": 18,
+      "consumed_before": 16,
+      "seconds": 0.0031968913972377777,
+      "verified": false
+    },
+    {
+      "sequence": 19,
+      "consumed_before": 17,
+      "seconds": 0.00326366163790226,
+      "verified": false
+    },
+    {
+      "sequence": 20,
+      "consumed_before": 18,
+      "seconds": 0.003648867830634117,
+      "verified": false
+    },
+    {
+      "sequence": 21,
+      "consumed_before": 19,
+      "seconds": 0.0037587061524391174,
+      "verified": false
+    },
+    {
+      "sequence": 22,
+      "consumed_before": 20,
+      "seconds": 0.003202563151717186,
+      "verified": false
+    },
+    {
+      "sequence": 23,
+      "consumed_before": 21,
+      "seconds": 0.0032097287476062775,
+      "verified": false
+    },
+    {
+      "sequence": 24,
+      "consumed_before": 22,
+      "seconds": 0.0042644646018743515,
+      "verified": false
+    },
+    {
+      "sequence": 25,
+      "consumed_before": 23,
+      "seconds": 0.004496738314628601,
+      "verified": false
+    },
+    {
+      "sequence": 26,
+      "consumed_before": 24,
+      "seconds": 0.003180321305990219,
+      "verified": false
+    },
+    {
+      "sequence": 27,
+      "consumed_before": 25,
+      "seconds": 0.0031258873641490936,
+      "verified": false
+    },
+    {
+      "sequence": 28,
+      "consumed_before": 26,
+      "seconds": 0.004433939233422279,
+      "verified": false
+    },
+    {
+      "sequence": 29,
+      "consumed_before": 27,
+      "seconds": 0.0031826570630073547,
+      "verified": false
+    },
+    {
+      "sequence": 30,
+      "consumed_before": 28,
+      "seconds": 0.0031509138643741608,
+      "verified": false
+    },
+    {
+      "sequence": 31,
+      "consumed_before": 29,
+      "seconds": 0.0031509455293416977,
+      "verified": false
+    },
+    {
+      "sequence": 32,
+      "consumed_before": 30,
+      "seconds": 0.003557533025741577,
+      "verified": false
+    },
+    {
+      "sequence": 33,
+      "consumed_before": 31,
+      "seconds": 0.003101879730820656,
+      "verified": false
+    },
+    {
+      "sequence": 34,
+      "consumed_before": 32,
+      "seconds": 0.0036232583224773407,
+      "verified": false
+    },
+    {
+      "sequence": 35,
+      "consumed_before": 33,
+      "seconds": 0.0033482834696769714,
+      "verified": false
+    },
+    {
+      "sequence": 36,
+      "consumed_before": 34,
+      "seconds": 0.004781372845172882,
+      "verified": false
+    },
+    {
+      "sequence": 37,
+      "consumed_before": 35,
+      "seconds": 0.0038659125566482544,
+      "verified": false
+    },
+    {
+      "sequence": 38,
+      "consumed_before": 36,
+      "seconds": 0.0036276374012231827,
+      "verified": false
+    },
+    {
+      "sequence": 39,
+      "consumed_before": 37,
+      "seconds": 0.003100847825407982,
+      "verified": false
+    },
+    {
+      "sequence": 40,
+      "consumed_before": 38,
+      "seconds": 0.00324108824133873,
+      "verified": false
+    },
+    {
+      "sequence": 41,
+      "consumed_before": 39,
+      "seconds": 0.003977404907345772,
+      "verified": false
+    },
+    {
+      "sequence": 42,
+      "consumed_before": 40,
+      "seconds": 0.0036736056208610535,
+      "verified": false
+    },
+    {
+      "sequence": 43,
+      "consumed_before": 41,
+      "seconds": 0.003134544938802719,
+      "verified": false
+    },
+    {
+      "sequence": 44,
+      "consumed_before": 42,
+      "seconds": 0.004027610644698143,
+      "verified": false
+    },
+    {
+      "sequence": 45,
+      "consumed_before": 43,
+      "seconds": 0.003153029829263687,
+      "verified": false
+    },
+    {
+      "sequence": 46,
+      "consumed_before": 44,
+      "seconds": 0.003287253901362419,
+      "verified": false
+    },
+    {
+      "sequence": 47,
+      "consumed_before": 45,
+      "seconds": 0.0031770654022693634,
+      "verified": false
+    },
+    {
+      "sequence": 48,
+      "consumed_before": 46,
+      "seconds": 0.003184569999575615,
+      "verified": false
+    },
+    {
+      "sequence": 49,
+      "consumed_before": 47,
+      "seconds": 0.003145303577184677,
+      "verified": false
+    },
+    {
+      "sequence": 50,
+      "consumed_before": 48,
+      "seconds": 0.0032612960785627365,
+      "verified": false
+    },
+    {
+      "sequence": 51,
+      "consumed_before": 49,
+      "seconds": 0.0031373482197523117,
+      "verified": false
+    },
+    {
+      "sequence": 52,
+      "consumed_before": 50,
+      "seconds": 0.003161303699016571,
+      "verified": false
+    },
+    {
+      "sequence": 53,
+      "consumed_before": 51,
+      "seconds": 0.0032409876585006714,
+      "verified": false
+    },
+    {
+      "sequence": 54,
+      "consumed_before": 52,
+      "seconds": 0.003119995817542076,
+      "verified": false
+    },
+    {
+      "sequence": 55,
+      "consumed_before": 53,
+      "seconds": 0.003489302471280098,
+      "verified": false
+    },
+    {
+      "sequence": 56,
+      "consumed_before": 54,
+      "seconds": 0.003998355939984322,
+      "verified": false
+    },
+    {
+      "sequence": 57,
+      "consumed_before": 55,
+      "seconds": 0.0037640780210494995,
+      "verified": false
+    },
+    {
+      "sequence": 58,
+      "consumed_before": 56,
+      "seconds": 0.0031932760030031204,
+      "verified": false
+    },
+    {
+      "sequence": 59,
+      "consumed_before": 57,
+      "seconds": 0.0031149163842201233,
+      "verified": false
+    },
+    {
+      "sequence": 60,
+      "consumed_before": 58,
+      "seconds": 0.0044623445719480515,
+      "verified": false
+    },
+    {
+      "sequence": 61,
+      "consumed_before": 59,
+      "seconds": 0.003174358978867531,
+      "verified": false
+    },
+    {
+      "sequence": 62,
+      "consumed_before": 60,
+      "seconds": 0.0033629201352596283,
+      "verified": false
+    },
+    {
+      "sequence": 63,
+      "consumed_before": 61,
+      "seconds": 0.0031478814780712128,
+      "verified": false
+    }
+  ],
+  "off_before": {
+    "targets": [
+      {
+        "expected_hz": 250000,
+        "hz": 286621.09375,
+        "power": 9179183.916252188,
+        "local_median_power": 330576.3737515005,
+        "above_local_median_db": 14.435322601921449
+      },
+      {
+        "expected_hz": 375000,
+        "hz": 380371.09375,
+        "power": 8805471.644066181,
+        "local_median_power": 324078.8374470569,
+        "above_local_median_db": 14.341019506194526
+      },
+      {
+        "expected_hz": 500000,
+        "hz": 474121.09375,
+        "power": 6340464.1837237235,
+        "local_median_power": 314676.23340666376,
+        "above_local_median_db": 13.042571104957082
+      }
+    ],
+    "blocks": 32,
+    "fft_size": 16384,
+    "rms_per_buffer": [
+      9.67247606421906,
+      7.460537661079314,
+      9.118641767585064,
+      8.911055275775686,
+      44.84253999891941,
+      9.502494885955855,
+      10.401398315325805,
+      9.06065191959209
+    ],
+    "clip_fraction_per_buffer": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "pilot": {
+    "targets": [
+      {
+        "expected_hz": 250000,
+        "hz": 266235.3515625,
+        "power": 31206819627.169815,
+        "local_median_power": 409654.58802693663,
+        "above_local_median_db": 48.81831687565114
+      }
+    ],
+    "blocks": 32,
+    "fft_size": 16384,
+    "rms_per_buffer": [
+      25.11581875644592,
+      24.283012336000482,
+      24.89109427278519,
+      42.8724885877874,
+      24.361201836264698,
+      50.69654729699957,
+      24.39848471767365,
+      25.186394679046682
+    ],
+    "clip_fraction_per_buffer": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "carrier_hz": 391235.3515625,
+  "stream": {
+    "result_words": [
+      "0x464d4331",
+      "0x1",
+      "0x2",
+      "0x3f",
+      "0x14e",
+      "0x250001",
+      "0x250000",
+      "0x0",
+      "0x0",
+      "0x3f",
+      "0x0",
+      "0x0"
+    ],
+    "host_seconds": 4.041005581617355,
+    "blocks": 63,
+    "hold": 334,
+    "progress": [
+      [
+        0.0647895596921444,
+        1
+      ],
+      [
+        0.12923369742929935,
+        2
+      ],
+      [
+        0.19263278879225254,
+        3
+      ],
+      [
+        0.2570750545710325,
+        4
+      ],
+      [
+        0.3209535926580429,
+        5
+      ],
+      [
+        0.38583387434482574,
+        6
+      ],
+      [
+        0.448959281668067,
+        7
+      ],
+      [
+        0.5140998717397451,
+        8
+      ],
+      [
+        0.5781569611281157,
+        9
+      ],
+      [
+        0.6418093871325254,
+        10
+      ],
+      [
+        0.7066057287156582,
+        11
+      ],
+      [
+        0.7703520935028791,
+        12
+      ],
+      [
+        0.8340712059289217,
+        13
+      ],
+      [
+        0.8979487195611,
+        14
+      ],
+      [
+        0.9629722572863102,
+        15
+      ],
+      [
+        1.0264087691903114,
+        16
+      ],
+      [
+        1.09104129858315,
+        17
+      ],
+      [
+        1.1545030493289232,
+        18
+      ],
+      [
+        1.2189182713627815,
+        19
+      ],
+      [
+        1.2837437894195318,
+        20
+      ],
+      [
+        1.34680369310081,
+        21
+      ],
+      [
+        1.4116731733083725,
+        22
+      ],
+      [
+        1.4755252003669739,
+        23
+      ],
+      [
+        1.5402572005987167,
+        24
+      ],
+      [
+        1.6042286343872547,
+        25
+      ],
+      [
+        1.6683577820658684,
+        26
+      ],
+      [
+        1.73222173191607,
+        27
+      ],
+      [
+        1.7957081086933613,
+        28
+      ],
+      [
+        1.8602301571518183,
+        29
+      ],
+      [
+        1.924815945327282,
+        30
+      ],
+      [
+        1.9884907137602568,
+        31
+      ],
+      [
+        2.0529253743588924,
+        32
+      ],
+      [
+        2.116425719112158,
+        33
+      ],
+      [
+        2.181281404569745,
+        34
+      ],
+      [
+        2.244937567040324,
+        35
+      ],
+      [
+        2.3091203160583973,
+        36
+      ],
+      [
+        2.3731044959276915,
+        37
+      ],
+      [
+        2.437350934371352,
+        38
+      ],
+      [
+        2.5015715770423412,
+        39
+      ],
+      [
+        2.5656180158257484,
+        40
+      ],
+      [
+        2.629352716729045,
+        41
+      ],
+      [
+        2.6941467355936766,
+        42
+      ],
+      [
+        2.7578128054738045,
+        43
+      ],
+      [
+        2.822089545428753,
+        44
+      ],
+      [
+        2.8869278877973557,
+        45
+      ],
+      [
+        2.9511107467114925,
+        46
+      ],
+      [
+        3.0145323406904936,
+        47
+      ],
+      [
+        3.0790192615240812,
+        48
+      ],
+      [
+        3.14333731867373,
+        49
+      ],
+      [
+        3.206593506038189,
+        50
+      ],
+      [
+        3.271009089425206,
+        51
+      ],
+      [
+        3.335462676361203,
+        52
+      ],
+      [
+        3.3990798853337765,
+        53
+      ],
+      [
+        3.464130101725459,
+        54
+      ],
+      [
+        3.5274954475462437,
+        55
+      ],
+      [
+        3.5917687099426985,
+        56
+      ],
+      [
+        3.6562314350157976,
+        57
+      ],
+      [
+        3.720031561329961,
+        58
+      ],
+      [
+        3.784730577841401,
+        59
+      ],
+      [
+        3.8480064533650875,
+        60
+      ],
+      [
+        3.9128391053527594,
+        61
+      ],
+      [
+        3.9769422728568316,
+        62
+      ],
+      [
+        4.040941581130028,
+        63
+      ]
+    ],
+    "completed_blocks": 63,
+    "status": 2,
+    "uploaded_blocks": 63
+  },
+  "timing": {
+    "start": 0.15023280307650566,
+    "end": 4.192240422591567,
+    "rx_return": 6.790807900950313
+  },
+  "producer_errors": [],
+  "clip_fraction": 0.0,
+  "private_trace": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-fm-20261013/continuous-speech-a.cf32",
+  "captured_samples": 10280960,
+  "off_after": {
+    "targets": [
+      {
+        "expected_hz": 250000,
+        "hz": 286743.1640625,
+        "power": 9393121.56265248,
+        "local_median_power": 372931.8018617374,
+        "above_local_median_db": 14.011805233459839
+      },
+      {
+        "expected_hz": 375000,
+        "hz": 380493.1640625,
+        "power": 9492212.909570085,
+        "local_median_power": 358986.4432790859,
+        "above_local_median_db": 14.22289422601406
+      },
+      {
+        "expected_hz": 500000,
+        "hz": 474243.1640625,
+        "power": 5547889.838941345,
+        "local_median_power": 338201.5931321302,
+        "above_local_median_db": 12.14952179912948
+      }
+    ],
+    "blocks": 32,
+    "fft_size": 16384,
+    "rms_per_buffer": [
+      44.70047956717194,
+      10.784483493821835,
+      45.397255728036235,
+      8.979891884201788,
+      9.72698056957947,
+      60.4270020512709,
+      10.407427380372845,
+      9.21466822374158
+    ],
+    "clip_fraction_per_buffer": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:0:0": {
+      "saved": "0x337e0",
+      "actual": "0x3b7e0"
+    },
+    "rf:1:0": {
+      "saved": "0x337e2",
+      "actual": "0x3b7e2"
+    }
+  },
+  "mailbox_cleanup_errors": [],
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

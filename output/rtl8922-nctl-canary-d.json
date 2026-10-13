@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "status": "started",
+  "tests": [],
+  "started_utc": "2026-10-13T15:20:25Z",
+  "rf_modes_before": {
+    "0": 210912,
+    "1": 243682
+  },
+  "saved_nctl_rw": "0x4",
+  "program_comparison": {
+    "matches": false,
+    "mismatched_words": 1023,
+    "observed_sha256": "96a65791af8e6cfdf170bd5abd6c372c989b207af4c4ad3b59d234ae7eb6c7f0",
+    "expected_sha256": "755cb871b67582293bfd4d10240fd6ccee3055ce1a7f9de810e904bbf732d92b",
+    "first_mismatches": [
+      {
+        "address": "0x8504",
+        "observed": "0x80000008",
+        "expected": "0x43000004"
+      },
+      {
+        "address": "0x8508",
+        "observed": "0x80000008",
+        "expected": "0x4b044a00"
+      },
+      {
+        "address": "0x850c",
+        "observed": "0x80000008",
+        "expected": "0x40098604"
+      },
+      {
+        "address": "0x8510",
+        "observed": "0x80000008",
+        "expected": "0x4e027"
+      },
+      {
+        "address": "0x8514",
+        "observed": "0x80000008",
+        "expected": "0x87044b05"
+      },
+      {
+        "address": "0x8518",
+        "observed": "0x80000008",
+        "expected": "0xe027400b"
+      },
+      {
+        "address": "0x851c",
+        "observed": "0x80000008",
+        "expected": "0x4b000004"
+      },
+      {
+        "address": "0x8520",
+        "observed": "0x80000008",
+        "expected": "0x21e07410"
+      }
+    ]
+  },
+  "exception": "ValueError: Runtime NCTL program differs from pinned load",
+  "restored_nctl_rw": "0x4",
+  "rf_modes_after": {
+    "0": 243680,
+    "1": 243682
+  },
+  "cleanup_errors": []
+}

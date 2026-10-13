@@ -1,0 +1,846 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": true,
+  "status": "finite_polar_ofdm_captured",
+  "firmware_sha256": "58574902d4f7a21cf8e35c3a87c75d80be9a5c431998a3798b56fa2fb7a7e9fc",
+  "table_sha256": "d4daf99287225ddd2024f63d8167a699c471d2b2f8daa0ac55b6177ea2a030d0",
+  "source_report": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.json",
+  "center_mhz": 2442,
+  "rx_rate": 8000000,
+  "rx_offset_hz": 5500000,
+  "rx_gain": 45,
+  "started_utc": "2026-10-13T16:40:32Z",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "actual_rx": {
+    "sample_rate": 8000000,
+    "rx_lo": 2447500000,
+    "rx_rf_bandwidth": 5000000,
+    "rx_hardwaregain_chan0": 45
+  },
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83dec",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000"
+  },
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "table_readback_matches": true,
+  "off_trace_sha256": "322c04b828db3b34fc01333632d9a22ceef023e2a149d2a030e9352ea6b6bfed",
+  "private_off_trace": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-ofdm-cal-20261013/sweep-a-off.cf32",
+  "controls": [
+    {
+      "index": null,
+      "itqt": null,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1517333.984375,
+            "power": 838800.1791355477,
+            "local_median_power": 280231.08128327026,
+            "above_local_median_db": 4.761422119961628
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -961547.8515625,
+            "power": 1219176.8277087011,
+            "local_median_power": 304859.49609470647,
+            "above_local_median_db": 6.019669722085682
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          2.9612595677412443,
+          2.959303432674761,
+          82.21891879184379,
+          2.9593704626417168,
+          3.2851957302918993,
+          3.075432078700995,
+          2.9449576004680758,
+          97.87300600868342
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1483886.71875,
+            "power": 7984497905.411564,
+            "local_median_power": 254826.19766134012,
+            "above_local_median_db": 44.96003537263392
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -976318.359375,
+            "power": 908449.9571695479,
+            "local_median_power": 268164.5978274679,
+            "above_local_median_db": 5.2989956554965705
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          4.4977699688159705,
+          4.142607131705377,
+          4.202825485959378,
+          97.12538129223539,
+          4.145101869295366,
+          4.661115523649322,
+          4.734853588124618,
+          4.164894235648803
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1465942.3828125,
+            "power": 1314573.0927100265,
+            "local_median_power": 309587.83085137024,
+            "above_local_median_db": 6.280008574140487
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -983886.71875,
+            "power": 8204099843.781893,
+            "local_median_power": 329639.84955485247,
+            "above_local_median_db": 43.95991229826845
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          4.172721634013098,
+          4.33444336587666,
+          4.693836862545129,
+          4.628217248299926,
+          97.81896428694142,
+          4.935438280982817,
+          4.372776011179319,
+          4.9013351801169
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 27,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1483886.71875,
+            "power": 1914911415.8720117,
+            "local_median_power": 409091.9171423118,
+            "above_local_median_db": 36.70327789460706
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -1043090.8203125,
+            "power": 1478267.8245134722,
+            "local_median_power": 407248.4654424382,
+            "above_local_median_db": 5.59893667782657
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          99.36153780362977,
+          3.3976157411645853,
+          4.117319065141745,
+          3.721793331912554,
+          3.591452220583531,
+          86.65733792887332,
+          33.720189471272484,
+          4.41415237740356
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1484008.7890625,
+            "power": 6422271906.422061,
+            "local_median_power": 807415.5125174343,
+            "above_local_median_db": 39.00591599735632
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -1007446.2890625,
+            "power": 2209998.612042685,
+            "local_median_power": 558725.6214821974,
+            "above_local_median_db": 5.971934136729634
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          19.611154908637737,
+          4.55658830137661,
+          75.03157650305756,
+          4.295317544445019,
+          4.948406294304826,
+          4.3806673671977485,
+          10.802734904684945,
+          97.55771020620928
+        ]
+      }
+    }
+  ],
+  "amplitude_control_db": -6.200989230664788,
+  "tone_movement_hz": 500000.0,
+  "measured_carrier_offset_hz": 15991.2109375,
+  "attenuation_sweep": [
+    {
+      "code": 9,
+      "power": 3538650609.3641915,
+      "noise_power": 293198.94752286805,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 40.81675277433771
+    },
+    {
+      "code": 10,
+      "power": 1795675715.492506,
+      "noise_power": 325078.9572719286,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 37.42239051308667
+    },
+    {
+      "code": 11,
+      "power": 1381024477.815075,
+      "noise_power": 436451.75818364025,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 35.002651289254885
+    },
+    {
+      "code": 12,
+      "power": 911098441.8070488,
+      "noise_power": 185131085.90109366,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 6.920859553623879
+    },
+    {
+      "code": 13,
+      "power": 912844659.1142188,
+      "noise_power": 230290.51213942425,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 35.98120833321151
+    },
+    {
+      "code": 14,
+      "power": 938809828.4160187,
+      "noise_power": 427967.97722957376,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 33.41166353509898
+    },
+    {
+      "code": 15,
+      "power": 841005659.1998103,
+      "noise_power": 238875.13683183078,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 35.466279693783015
+    },
+    {
+      "code": 16,
+      "power": 5261871734.986199,
+      "noise_power": 533252.6724023599,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 39.94207216782935
+    },
+    {
+      "code": 17,
+      "power": 2188440852.1675396,
+      "noise_power": 176460928.12222186,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 10.934862541313201
+    },
+    {
+      "code": 18,
+      "power": 865528540.458181,
+      "noise_power": 359754.8382383059,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 33.812747497865004
+    },
+    {
+      "code": 19,
+      "power": 462965297.8881561,
+      "noise_power": 323275.7535450946,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 31.559753064731222
+    },
+    {
+      "code": 20,
+      "power": 308052453.78655285,
+      "noise_power": 205837.517651007,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 31.751001367574602
+    },
+    {
+      "code": 21,
+      "power": 239442508.42947707,
+      "noise_power": 459100.8688150449,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 27.17293138941377
+    },
+    {
+      "code": 22,
+      "power": 594419629.7772479,
+      "noise_power": 196892745.37968472,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 4.798634282679108
+    },
+    {
+      "code": 23,
+      "power": 227748011.54227573,
+      "noise_power": 399116.2255907237,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 27.563552099924536
+    },
+    {
+      "code": 24,
+      "power": 4239505414.1812377,
+      "noise_power": 311192.6560812949,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 41.34285854822409
+    },
+    {
+      "code": 25,
+      "power": 1365690548.3551009,
+      "noise_power": 204627.23174800677,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 38.243888747237825
+    },
+    {
+      "code": 26,
+      "power": 442255817.59251505,
+      "noise_power": 177596318.49725577,
+      "peak_hz": -1485351.5625,
+      "clip_fraction": 0.0,
+      "above_noise_db": 3.962395957057054
+    },
+    {
+      "code": 27,
+      "power": 199804627.33718276,
+      "noise_power": 287069.809150427,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 28.426180213922585
+    },
+    {
+      "code": 28,
+      "power": 113968824.5086441,
+      "noise_power": 200022.76956362123,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 27.557066325909382
+    },
+    {
+      "code": 29,
+      "power": 72631611.90921268,
+      "noise_power": 386189.8893261949,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 22.743247830285107
+    },
+    {
+      "code": 30,
+      "power": 67865261.27246752,
+      "noise_power": 280383.3242374027,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 23.83895344956169
+    },
+    {
+      "code": 31,
+      "power": 50353829.419485115,
+      "noise_power": 249323.11669605447,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 23.052699571251722
+    },
+    {
+      "code": 32,
+      "power": 4460433951.180689,
+      "noise_power": 227439.97278322463,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 42.92510318133387
+    },
+    {
+      "code": 33,
+      "power": 1054914774.9423231,
+      "noise_power": 432615.2539152663,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 33.87115546522615
+    },
+    {
+      "code": 34,
+      "power": 306856216.6042638,
+      "noise_power": 187607370.4337387,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 2.136850298059729
+    },
+    {
+      "code": 35,
+      "power": 124221884.37139952,
+      "noise_power": 328239.3804266709,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 25.780074287456777
+    },
+    {
+      "code": 36,
+      "power": 44147655.30517906,
+      "noise_power": 247372.0209136937,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 22.515570659560208
+    },
+    {
+      "code": 37,
+      "power": 27125685.667899005,
+      "noise_power": 206068.78018187478,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 21.193685245379513
+    },
+    {
+      "code": 38,
+      "power": 20759610.160285976,
+      "noise_power": 267215.9561458784,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 18.903568063332944
+    },
+    {
+      "code": 39,
+      "power": 535312212.6365349,
+      "noise_power": 200995202.8907292,
+      "peak_hz": -1484863.28125,
+      "clip_fraction": 0.0,
+      "above_noise_db": 4.254214591788033
+    },
+    {
+      "code": 40,
+      "power": 3997582506.32511,
+      "noise_power": 268980.9686035656,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 41.72075882786777
+    },
+    {
+      "code": 41,
+      "power": 905300508.7943548,
+      "noise_power": 222993.38670751534,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 36.08500781040192
+    },
+    {
+      "code": 42,
+      "power": 274094081.47147655,
+      "noise_power": 222531.9302220553,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 30.90507322919342
+    },
+    {
+      "code": 43,
+      "power": 88731025.79005972,
+      "noise_power": 227883.61876461827,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 25.903623948990692
+    },
+    {
+      "code": 44,
+      "power": 241285704.52267405,
+      "noise_power": 199880921.5862028,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 0.8176024881769477
+    },
+    {
+      "code": 45,
+      "power": 12493438.362445075,
+      "noise_power": 210762.7815828903,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 17.72888056888394
+    },
+    {
+      "code": 46,
+      "power": 8995036.82159751,
+      "noise_power": 247151.0892223053,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 15.610404167046337
+    },
+    {
+      "code": 47,
+      "power": 3066940.152779981,
+      "noise_power": 227305.29904195454,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 11.300957410827703
+    },
+    {
+      "code": 48,
+      "power": 3755455454.547169,
+      "noise_power": 231988.31316257943,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 42.091965078894695
+    },
+    {
+      "code": 49,
+      "power": 937140313.2950928,
+      "noise_power": 178225582.97851413,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 7.208345765087079
+    },
+    {
+      "code": 50,
+      "power": 236012747.13417748,
+      "noise_power": 236919.37055185987,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 29.983348898707767
+    },
+    {
+      "code": 51,
+      "power": 71589922.47519414,
+      "noise_power": 357976.1313764395,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 23.009978217809355
+    },
+    {
+      "code": 52,
+      "power": 18221152.832463782,
+      "noise_power": 445707.72532568953,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 16.115256891897925
+    },
+    {
+      "code": 53,
+      "power": 317615671.3044041,
+      "noise_power": 195596020.42335957,
+      "peak_hz": -1483398.4375,
+      "clip_fraction": 0.0,
+      "above_noise_db": 2.1054190814437503
+    },
+    {
+      "code": 54,
+      "power": 3188666.766786345,
+      "noise_power": 231425.37442125403,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 11.391981604090791
+    },
+    {
+      "code": 55,
+      "power": 1212391.239953205,
+      "noise_power": 230948.84546410077,
+      "peak_hz": -1483886.71875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 7.2012699423564825
+    },
+    {
+      "code": 56,
+      "power": 3735672486.4330525,
+      "noise_power": 244735.8788376866,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 41.836711512172045
+    },
+    {
+      "code": 57,
+      "power": 932984707.5800343,
+      "noise_power": 373928.0542448006,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 33.970864756857694
+    },
+    {
+      "code": 58,
+      "power": 322225046.2317484,
+      "noise_power": 164774666.71251118,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 2.9126885280100714
+    },
+    {
+      "code": 59,
+      "power": 54875296.65439155,
+      "noise_power": 216039.00729831774,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 24.04844708015237
+    },
+    {
+      "code": 60,
+      "power": 11779585.806202559,
+      "noise_power": 358336.99633955106,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 15.168383710405298
+    },
+    {
+      "code": 61,
+      "power": 3956556.710539633,
+      "noise_power": 240663.45019955054,
+      "peak_hz": -1484375.0,
+      "clip_fraction": 0.0,
+      "above_noise_db": 12.15907256441193
+    },
+    {
+      "code": 62,
+      "power": 303357737.87759495,
+      "noise_power": 178295105.85987997,
+      "peak_hz": -1482421.875,
+      "clip_fraction": 0.0,
+      "above_noise_db": 2.3081565505645933
+    },
+    {
+      "code": 63,
+      "power": 701354.7373248179,
+      "noise_power": 441658.86857661064,
+      "peak_hz": -1484863.28125,
+      "clip_fraction": 0.0,
+      "above_noise_db": 2.0085077923366486
+    }
+  ],
+  "capture_buffer_warmup_seconds": 0.07961524650454521,
+  "playback": {
+    "repeats": 4096,
+    "frame_samples": 800,
+    "host_seconds": 0.6150447931140661,
+    "result_words": [
+      "0x504f4631",
+      "0x1",
+      "0x2",
+      "0x1000",
+      "0x320",
+      "0x250010",
+      "0x250000",
+      "0x12",
+      "0x12",
+      "0x320000",
+      "0x17dd767",
+      "0x18edd77a"
+    ],
+    "samples_completed": 3276800,
+    "counter_ticks": 393216019,
+    "counter_ticks_per_pair": 120.00000579833984,
+    "completed": true
+  },
+  "capture_timing_monotonic": {
+    "command_start": 8935815.685449691,
+    "rx_call": 8935815.810404481,
+    "rx_return": 8935815.884103417,
+    "command_end": 8935816.301818315
+  },
+  "producer_errors": [],
+  "trace_sha256": "487e75523e93fbb1896b7f2d8567ed45cdbc77530b9deed8908f06d9674f27da",
+  "private_trace": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-ofdm-cal-20261013/sweep-a.cf32",
+  "captured_samples": 262144,
+  "clip_fraction": 0.0,
+  "off_after": {
+    "targets": [
+      {
+        "expected_hz": -1500000,
+        "hz": -1540039.0625,
+        "power": 1129284.647512612,
+        "local_median_power": 308558.65925449133,
+        "above_local_median_db": 5.634656852293135
+      },
+      {
+        "expected_hz": -1000000,
+        "hz": -950683.59375,
+        "power": 1075923.94650973,
+        "local_median_power": 326232.3543035715,
+        "above_local_median_db": 5.1825454330603336
+      }
+    ],
+    "fft_size": 65536,
+    "blocks": 8,
+    "clip_fraction_per_buffer": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rms_per_buffer": [
+      4.006946254460224,
+      3.358945739289664,
+      4.236995772798332,
+      2.983546596413193,
+      93.90038442969721,
+      3.124174695707152,
+      3.7164207023578566,
+      3.39378497982088
+    ]
+  },
+  "on_above_both_off_db": [
+    38.49444187299107,
+    38.27964237432911,
+    32.29345264232628,
+    37.54885264797991
+  ],
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "mailbox_cleanup_errors": [],
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

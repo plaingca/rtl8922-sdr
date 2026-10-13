@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "executable_output": false,
+  "firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "reference": {
+    "commit": "8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356",
+    "chip": "RTL8852C, comparison only",
+    "rfk_source_sha256": "eccbb6b07738927c3d6b95d9d9bdf4d2e74b8733e8003023eb4ae9b4dcb2ec0d",
+    "register_source_sha256": "a2e82156ae4ebca7a408c67c28b51e01f7f737ecb456b63fc4ab0b239bbceb4d",
+    "function": "_dpk_tpg_sel",
+    "tpg_sel_register": "0x8068",
+    "tpg_mode_register": "0x806c"
+  },
+  "nctl": {
+    "element_file_offset": "0xf80e0",
+    "payload_sha256": "3371cc8455964af813c2bee2dcd0b187bca6034c5b921076851ff04a15859c11",
+    "program_sha256": "755cb871b67582293bfd4d10240fd6ccee3055ce1a7f9de810e904bbf732d92b",
+    "load_words": 1024,
+    "token_halfwords": 2048,
+    "jump_padding_start_halfword": "0x67c",
+    "address_unit": "Halfword indices into the NCTL load, not RISC-V addresses",
+    "interpretation_status": "Partial static inference; no NCTL instructions executed"
+  },
+  "inferred_encoding": {
+    "page_tokens": "0x0004..0x0007 select successive 64-byte groups",
+    "register_token": "0x4000..0x7fff: low 8 bits literal; bits 13:8 byte index within group",
+    "candidate_address": "0x8000 + 64*(page_token-4) + ((token>>8)&0x3f)",
+    "call_token": "0xexxx appears to call absolute halfword xxx",
+    "jump_token": "0x3xxx appears to jump to absolute halfword xxx",
+    "return_token": "0x0001 appears to return",
+    "conditional_token": "Selected 0xfn2c tokens appear to branch forward 0x2c halfwords for command nibble n",
+    "unsupported": [
+      "Delay/wait encodings and timing",
+      "Reads, ALU and multiword instructions",
+      "Complete command-selection semantics",
+      "Base/path state and mask/control effects"
+    ],
+    "mask_caution": "0x42f7 before 0x6c08, then 0x4200, is consistent with preserving other 0x806c bits. Mask semantics are unresolved; do not simulate this as an unconditional full-byte overwrite."
+  },
+  "inferred_sparse_dispatch": [
+    {
+      "inferred_command": "0x20",
+      "conditional_pc_halfword": "0x53",
+      "jump_pc_halfword": "0x7f",
+      "target_pc_halfword": "0x38f"
+    },
+    {
+      "inferred_command": "0x21",
+      "conditional_pc_halfword": "0x54",
+      "jump_pc_halfword": "0x80",
+      "target_pc_halfword": "0x399"
+    },
+    {
+      "inferred_command": "0x22",
+      "conditional_pc_halfword": "0x55",
+      "jump_pc_halfword": "0x81",
+      "target_pc_halfword": "0x3a3"
+    },
+    {
+      "inferred_command": "0x23",
+      "conditional_pc_halfword": "0x56",
+      "jump_pc_halfword": "0x82",
+      "target_pc_halfword": "0x3ad"
+    },
+    {
+      "inferred_command": "0x28",
+      "conditional_pc_halfword": "0x57",
+      "jump_pc_halfword": "0x83",
+      "target_pc_halfword": "0x3d3"
+    },
+    {
+      "inferred_command": "0x29",
+      "conditional_pc_halfword": "0x58",
+      "jump_pc_halfword": "0x84",
+      "target_pc_halfword": "0x3e8"
+    },
+    {
+      "inferred_command": "0x2a",
+      "conditional_pc_halfword": "0x59",
+      "jump_pc_halfword": "0x85",
+      "target_pc_halfword": "0x3f9"
+    },
+    {
+      "inferred_command": "0x2b",
+      "conditional_pc_halfword": "0x5a",
+      "jump_pc_halfword": "0x86",
+      "target_pc_halfword": "0x411"
+    },
+    {
+      "inferred_command": "0x2c",
+      "conditional_pc_halfword": "0x5b",
+      "jump_pc_halfword": "0x87",
+      "target_pc_halfword": "0x415"
+    },
+    {
+      "inferred_command": "0x2d",
+      "conditional_pc_halfword": "0x5c",
+      "jump_pc_halfword": "0x88",
+      "target_pc_halfword": "0x454"
+    },
+    {
+      "inferred_command": "0x2e",
+      "conditional_pc_halfword": "0x5d",
+      "jump_pc_halfword": "0x89",
+      "target_pc_halfword": "0x466"
+    },
+    {
+      "inferred_command": "0x2f",
+      "conditional_pc_halfword": "0x5e",
+      "jump_pc_halfword": "0x8a",
+      "target_pc_halfword": "0x469"
+    },
+    {
+      "inferred_command": "0x30",
+      "conditional_pc_halfword": "0x5f",
+      "jump_pc_halfword": "0x8b",
+      "target_pc_halfword": "0x496"
+    },
+    {
+      "inferred_command": "0x31",
+      "conditional_pc_halfword": "0x60",
+      "jump_pc_halfword": "0x8c",
+      "target_pc_halfword": "0x498"
+    },
+    {
+      "inferred_command": "0x32",
+      "conditional_pc_halfword": "0x61",
+      "jump_pc_halfword": "0x8d",
+      "target_pc_halfword": "0x4a5"
+    },
+    {
+      "inferred_command": "0x33",
+      "conditional_pc_halfword": "0x62",
+      "jump_pc_halfword": "0x8e",
+      "target_pc_halfword": "0x457"
+    },
+    {
+      "inferred_command": "0x34",
+      "conditional_pc_halfword": "0x63",
+      "jump_pc_halfword": "0x8f",
+      "target_pc_halfword": "0x45c"
+    },
+    {
+      "inferred_command": "0x35",
+      "conditional_pc_halfword": "0x64",
+      "jump_pc_halfword": "0x90",
+      "target_pc_halfword": "0x461"
+    }
+  ],
+  "bandwidth_presets": [
+    {
+      "inferred_command": "0x20",
+      "reference_bandwidth_mhz": 160,
+      "wrapper_pc_halfword": "0x38f",
+      "setter_pc_halfword": "0x3b7",
+      "reference_tpg_sel": "0x180ff30",
+      "reference_mode_field": 3,
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x3b8",
+          "candidate_register": "0x806c",
+          "literal_byte": "0x6"
+        },
+        {
+          "pc_halfword": "0x3b9",
+          "candidate_register": "0x8068",
+          "literal_byte": "0x30"
+        },
+        {
+          "pc_halfword": "0x3ba",
+          "candidate_register": "0x8069",
+          "literal_byte": "0xff"
+        },
+        {
+          "pc_halfword": "0x3bb",
+          "candidate_register": "0x806a",
+          "literal_byte": "0x80"
+        },
+        {
+          "pc_halfword": "0x3bc",
+          "candidate_register": "0x806b",
+          "literal_byte": "0x1"
+        }
+      ],
+      "inferred_call_targets": [
+        "0x3e8",
+        "0x3b7",
+        "0x3f9"
+      ],
+      "setter_excerpt": {
+        "pc_halfword_start": "0x3b7",
+        "tokens": [
+          "0005",
+          "6c06",
+          "6830",
+          "69ff",
+          "6a80",
+          "6b01",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x21",
+      "reference_bandwidth_mhz": 80,
+      "wrapper_pc_halfword": "0x399",
+      "setter_pc_halfword": "0x3be",
+      "reference_tpg_sel": "0xffe0fa00",
+      "reference_mode_field": 0,
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x3bf",
+          "candidate_register": "0x806c",
+          "literal_byte": "0x0"
+        },
+        {
+          "pc_halfword": "0x3c0",
+          "candidate_register": "0x8068",
+          "literal_byte": "0x0"
+        },
+        {
+          "pc_halfword": "0x3c1",
+          "candidate_register": "0x8069",
+          "literal_byte": "0xfa"
+        },
+        {
+          "pc_halfword": "0x3c2",
+          "candidate_register": "0x806a",
+          "literal_byte": "0xe0"
+        },
+        {
+          "pc_halfword": "0x3c3",
+          "candidate_register": "0x806b",
+          "literal_byte": "0xff"
+        }
+      ],
+      "inferred_call_targets": [
+        "0x3e8",
+        "0x3be",
+        "0x3f9"
+      ],
+      "setter_excerpt": {
+        "pc_halfword_start": "0x3be",
+        "tokens": [
+          "0005",
+          "6c00",
+          "6800",
+          "69fa",
+          "6ae0",
+          "6bff",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x22",
+      "reference_bandwidth_mhz": 40,
+      "wrapper_pc_halfword": "0x3a3",
+      "setter_pc_halfword": "0x3c5",
+      "reference_tpg_sel": "0xff4009e0",
+      "reference_mode_field": 2,
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x3c6",
+          "candidate_register": "0x806c",
+          "literal_byte": "0x4"
+        },
+        {
+          "pc_halfword": "0x3c7",
+          "candidate_register": "0x8068",
+          "literal_byte": "0xe0"
+        },
+        {
+          "pc_halfword": "0x3c8",
+          "candidate_register": "0x8069",
+          "literal_byte": "0x9"
+        },
+        {
+          "pc_halfword": "0x3c9",
+          "candidate_register": "0x806a",
+          "literal_byte": "0x40"
+        },
+        {
+          "pc_halfword": "0x3ca",
+          "candidate_register": "0x806b",
+          "literal_byte": "0xff"
+        }
+      ],
+      "inferred_call_targets": [
+        "0x3e8",
+        "0x3c5",
+        "0x3f9"
+      ],
+      "setter_excerpt": {
+        "pc_halfword_start": "0x3c5",
+        "tokens": [
+          "0005",
+          "6c04",
+          "68e0",
+          "6909",
+          "6a40",
+          "6bff",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x23",
+      "reference_bandwidth_mhz": 20,
+      "wrapper_pc_halfword": "0x3ad",
+      "setter_pc_halfword": "0x3cc",
+      "reference_tpg_sel": "0xf9f007d0",
+      "reference_mode_field": 1,
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x3cd",
+          "candidate_register": "0x806c",
+          "literal_byte": "0x2"
+        },
+        {
+          "pc_halfword": "0x3ce",
+          "candidate_register": "0x8068",
+          "literal_byte": "0xd0"
+        },
+        {
+          "pc_halfword": "0x3cf",
+          "candidate_register": "0x8069",
+          "literal_byte": "0x7"
+        },
+        {
+          "pc_halfword": "0x3d0",
+          "candidate_register": "0x806a",
+          "literal_byte": "0xf0"
+        },
+        {
+          "pc_halfword": "0x3d1",
+          "candidate_register": "0x806b",
+          "literal_byte": "0xf9"
+        }
+      ],
+      "inferred_call_targets": [
+        "0x3e8",
+        "0x3cc",
+        "0x3f9"
+      ],
+      "setter_excerpt": {
+        "pc_halfword_start": "0x3cc",
+        "tokens": [
+          "0005",
+          "6c02",
+          "68d0",
+          "6907",
+          "6af0",
+          "6bf9",
+          "0001"
+        ]
+      }
+    }
+  ],
+  "shared_tpg_control": {
+    "before_setter_pc_halfword": "0x3e8",
+    "after_setter_pc_halfword": "0x3f9",
+    "after_setter_excerpt": {
+      "pc_halfword_start": "0x3f9",
+      "tokens": [
+        "0004",
+        "7420",
+        "42f7",
+        "0005",
+        "6c08",
+        "0004",
+        "4200",
+        "0005",
+        "7700",
+        "7e06",
+        "7388",
+        "7380",
+        "8f00",
+        "140f",
+        "0004",
+        "42f7",
+        "0005",
+        "6c00",
+        "0004",
+        "4200",
+        "7430",
+        "0005",
+        "7300",
+        "0001"
+      ]
+    },
+    "interpretation": "The common sequence contains candidate 0x806c bit-3 control, 0x8073 literals and unresolved wait/delay tokens. Trigger and timing behavior are not established."
+  },
+  "idl_wrappers": [
+    {
+      "inferred_command": "0x2d",
+      "wrapper_pc_halfword": "0x454",
+      "inferred_call_targets": [
+        "0x5ec"
+      ],
+      "wrapper_excerpt": {
+        "pc_halfword_start": "0x454",
+        "tokens": [
+          "e5ec",
+          "7e03",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x2e",
+      "wrapper_pc_halfword": "0x466",
+      "inferred_call_targets": [
+        "0x63b"
+      ],
+      "wrapper_excerpt": {
+        "pc_halfword_start": "0x466",
+        "tokens": [
+          "e63b",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x33",
+      "wrapper_pc_halfword": "0x457",
+      "inferred_call_targets": [
+        "0x5a7",
+        "0x614"
+      ],
+      "wrapper_excerpt": {
+        "pc_halfword_start": "0x457",
+        "tokens": [
+          "e5a7",
+          "e614",
+          "0005",
+          "7300",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x34",
+      "wrapper_pc_halfword": "0x45c",
+      "inferred_call_targets": [
+        "0x5be",
+        "0x614"
+      ],
+      "wrapper_excerpt": {
+        "pc_halfword_start": "0x45c",
+        "tokens": [
+          "e5be",
+          "e614",
+          "0005",
+          "7300",
+          "0001"
+        ]
+      }
+    },
+    {
+      "inferred_command": "0x35",
+      "wrapper_pc_halfword": "0x461",
+      "inferred_call_targets": [
+        "0x5d5",
+        "0x614"
+      ],
+      "wrapper_excerpt": {
+        "pc_halfword_start": "0x461",
+        "tokens": [
+          "e5d5",
+          "e614",
+          "0005",
+          "7300",
+          "0001"
+        ]
+      }
+    }
+  ],
+  "idl_mode_prefixes": [
+    {
+      "pc_halfword": "0x5a7",
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x5a8",
+          "candidate_register": "0x809d",
+          "literal_byte": "0x4"
+        },
+        {
+          "pc_halfword": "0x5a9",
+          "candidate_register": "0x80a0",
+          "literal_byte": "0x0"
+        },
+        {
+          "pc_halfword": "0x5aa",
+          "candidate_register": "0x80a1",
+          "literal_byte": "0x0"
+        }
+      ],
+      "limits": "Only the explicit initial literals are interpreted; the routine continues."
+    },
+    {
+      "pc_halfword": "0x5be",
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x5bf",
+          "candidate_register": "0x809d",
+          "literal_byte": "0x2"
+        },
+        {
+          "pc_halfword": "0x5c0",
+          "candidate_register": "0x80a0",
+          "literal_byte": "0x1"
+        },
+        {
+          "pc_halfword": "0x5c1",
+          "candidate_register": "0x80a1",
+          "literal_byte": "0x0"
+        }
+      ],
+      "limits": "Only the explicit initial literals are interpreted; the routine continues."
+    },
+    {
+      "pc_halfword": "0x5d5",
+      "candidate_register_literals": [
+        {
+          "pc_halfword": "0x5d6",
+          "candidate_register": "0x809d",
+          "literal_byte": "0x0"
+        },
+        {
+          "pc_halfword": "0x5d7",
+          "candidate_register": "0x80a0",
+          "literal_byte": "0x2"
+        },
+        {
+          "pc_halfword": "0x5d8",
+          "candidate_register": "0x80a1",
+          "literal_byte": "0x0"
+        }
+      ],
+      "limits": "Only the explicit initial literals are interpreted; the routine continues."
+    }
+  ],
+  "conclusion": {
+    "new_evidence": "All four bandwidth setters contain exactly the reference TPG mode and selection constants. Sparse branch structure links them and the traced IDL commands to short NCTL wrappers.",
+    "sample_upload_in_bandwidth_setters": false,
+    "arbitrary_iq_endpoint_identified": false,
+    "limits": [
+      "Four matching presets are not proof that the complete TPG is immutable or ROM-only.",
+      "No sample FIFO, writable waveform memory, I/Q packing or clocked replay reader identified.",
+      "Register visibility and a programmable sequencer do not establish sample-rate writes to the DAC.",
+      "No hardware behavior or timing is modeled; the cross-chip reference supplies names and matching constants."
+    ]
+  },
+  "next_targets": [
+    "Resolve NCTL mask/base and wait semantics before proposing custom programs.",
+    "Follow the hardware side of TPG/source controls to a sample writer and clocked consumer.",
+    "A native-timed DDS sequence is a separate modulation hypothesis, not arbitrary-I/Q replay."
+  ]
+}

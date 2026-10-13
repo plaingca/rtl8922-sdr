@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-13T07:28:01Z",
+  "hardware_access": true,
+  "pluto_tx_powerdown": "1",
+  "pluto_settings": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_matches_last_fresh_snapshot": true,
+  "demo_service": "inactive",
+  "card_bound": false,
+  "working_modules_loaded": [],
+  "temporary_firmware_present": false,
+  "temporary_nm_config_present": false,
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea"
+}

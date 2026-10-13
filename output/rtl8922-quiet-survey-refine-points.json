@@ -1,0 +1,80 @@
+[
+  {
+    "rf_hz": 2419500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": -2500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2420000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": -2000000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2420500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": -1500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2421000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": -1000000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2421500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": -500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2422000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 0,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2422250000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 250000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2422500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2423000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 1000000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2423500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 1500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2424000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 2000000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2424500000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 2500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2425000000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 3000000,
+    "band": "2.4 GHz"
+  }
+]

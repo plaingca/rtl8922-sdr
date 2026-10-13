@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "20msps_goal_incomplete",
+  "goal_achieved": false,
+  "paired_rf_rates_hz": {
+    "2422": 5333358.65129961,
+    "5180": 5333363.980058646
+  },
+  "cpu_peripheral_store_counter_ticks": 60,
+  "complete_pair_counter_ticks": 120,
+  "write_buffer_enable_improved_rate": false,
+  "noncacheable_attribute_change_improved_rate": false,
+  "nctl_canary_qualified": false,
+  "nctl_canary_reports": 9,
+  "5500_mhz": {
+    "static_controls_pass": true,
+    "paired_rf_rate_fit_qualified": false,
+    "reason": "Too few comb lines above the 18 dB local-floor gate; allocation warmed and capture call inside command window"
+  },
+  "completion_requirements": {
+    "20_million_complete_polar_updates_per_second": false,
+    "sustained_gap_free_polar_stream": false,
+    "arbitrary_polar_waveform_fidelity": false,
+    "all_mutual_frequency_segments_and_edges": false
+  },
+  "offline_validation": {
+    "tests_passed": 8,
+    "hardware_probes_in_ci": false
+  },
+  "cleanup_passed": true,
+  "evidence_sha256": {
+    "output/rtl8922-bb-polar-final-state.json": "7636eb34e9f3fdd04dd6ebd60c2124dc086f5e254a9fa2962f2f33813a732266",
+    "output/rtl8922-bb-polar-patch-a.json": "8b3cebf2cefa667d16e010042defabe950327a58fa02ec3a4766607c6406ed68",
+    "output/rtl8922-bb-polar-patch-b.json": "c9c7482502af168cef0f62635992643ce905fba669ac00c42983bddfba2463be",
+    "output/rtl8922-bb-polar-patch-c.json": "88d7c0d248874b57a9dc449bf3a95ed7429ca2706dbd7b1299897e00e6c069f9",
+    "output/rtl8922-bb-polar-patch-d.json": "49a46fb10911715aaccc11cea5bca9adf2a3b4081dccaea9e27389fb1a3ec655",
+    "output/rtl8922-bb-polar-patch-e.json": "3be0e86fd666c50179b0b0984b2232d894dc000d56e10d6906f03229007e62fe",
+    "output/rtl8922-bb-polar-rf-5180-a.json": "4fa355fcf817dac785d6172198408e9ea6e5a5177ba6a40f34f15f297ea75c41",
+    "output/rtl8922-bb-polar-rf-5180-b.json": "251248013a9c59517c4c5b5a8d7462b0f956dcbd4b6167f4f4b76819efc588d2",
+    "output/rtl8922-bb-polar-rf-5180-c.json": "b32865ea8196b58186a698f638cd80b1cba1df998401b309745c63d96b630f94",
+    "output/rtl8922-bb-polar-rf-5180-d.json": "bbce98c2dfcff5182d3a7dfe52bee6ad7ad5cfbe8514263ed77abae8dff9a596",
+    "output/rtl8922-bb-polar-rf-5180-e.json": "0e5f0039aa082b9b0f9f9f750788f7f1374bf0ee51d1420b4439672e8bc045d8",
+    "output/rtl8922-bb-polar-rf-5500-a.json": "ae0253d817a8989c2385a4f77446ffbe97e9751ee3829b1d03c1c8dfc5254911",
+    "output/rtl8922-bb-polar-rf-5500-b.json": "6f8af490cf65cac1787aaf958ac9712fb03975d1a5cacd454a19f7b36ae8e66a",
+    "output/rtl8922-bb-polar-rf-5500-c.json": "0b6e4bddebb5ca1fa7e59be7726e8755fac52671a29e536351e41ab9035434ac",
+    "output/rtl8922-bb-polar-rf-a.json": "f63c61cbaa50daf4fa4faba2f1f7941eac17c03b69839b27da0da7f16ef5dc4a",
+    "output/rtl8922-bb-polar-rf-analysis-5180-e.json": "09c33d979b8b0061a83aa355e13dacc7372d4b9ea291c49c4c219090af372f5c",
+    "output/rtl8922-bb-polar-rf-analysis-b.json": "b33a0b6a84eeda0ed8724cb4f01c1e343e7e6b290b78303a6083ffdab6e00b8c",
+    "output/rtl8922-bb-polar-rf-b.json": "0b85585726919cf224c7b3417d07fe0e6f6ac27c9c52331b6d87ed22adb39f3b",
+    "output/rtl8922-bb-polar-runtime-a.json": "2747221f7655c25bb203685e6bf059c632d5cd9b720a58fe426eae9024a7d509",
+    "output/rtl8922-bb-polar-runtime-b.json": "1d7ebc4841bd1098f53e45d5b1079b660e077bafd8bc8bc8ee8e1233c8b8b415",
+    "output/rtl8922-bb-polar-runtime-c.json": "e3a60667586ce2566d3a23ceac4bc1fd1e1099f89170d8632a5f8ffcbafde5af",
+    "output/rtl8922-bb-polar-runtime-d.json": "c75cc109343286221b96f9e143209a04009bf13e917031eca9af86d8863c063b",
+    "output/rtl8922-nctl-canary-a.json": "b683dfb8bf4af15048135a617289b2841fc04667286499de26fdc8e0d22e82db",
+    "output/rtl8922-nctl-canary-b.json": "baf68c6fdd3cbf25c03d1b182f8a0a67eb8d1e277f39c9736e1bf87f8dba3135",
+    "output/rtl8922-nctl-canary-c.json": "25fee39e405858f8c97ee0ae61840e23c09e282461e44dea63ccd90f1245c635",
+    "output/rtl8922-nctl-canary-d.json": "4a30dda0d667f04590619d784bf38f0e86720b1cae539d78765741c6f9fbe84e",
+    "output/rtl8922-nctl-canary-e.json": "e21b1e04e9d189762e06e416391201a3534ed5304d964b659cd66b9977047e49",
+    "output/rtl8922-nctl-canary-f.json": "e1231154cd17e2903986100c240cd76963d9cdaa73514948d68b7b0107fdd2ae",
+    "output/rtl8922-nctl-canary-g.json": "a228f9556c76970546b4ab702b2e9891d91964a137b9015bdd8cd5c3efe8ea84",
+    "output/rtl8922-nctl-canary-h.json": "c3bd6fe0bdc9311d6de2be00ae2ee3526730b091e28decc4c18be388a3d98e48",
+    "output/rtl8922-nctl-canary-i.json": "050dbde12d379cb6c56393cdad6b17affcf2b961c63b4b696c4bc5bdca0c0ea3"
+  },
+  "source_sha256": {
+    "research/firmware/bb_polar_patch.py": "89d937c0c47e7b41cf1ae7d2d71e871e758dcbcaf9b7287544fba85fbff23978",
+    "research/firmware/test_bb_polar_patch.py": "6306d7df137266228c2eb62b08ffd21bd9d570531eba548089c35e4c02b4f2e9",
+    "research/tx/bb_polar_probe.py": "4becda43626567681a9c51de3e88a206f5386098f5e6d5c814aa23a378a37c9c",
+    "research/tx/bb_polar_rf_probe.py": "06b405a81c4f12ea8bf4fb40fdb57cf56c7bba24383c3d75fd26253414c33254",
+    "research/tx/analyze_bb_polar.py": "9d5dc08ac52d206e28a751f6c48c4c65a714efd3902115deced5e40180ca3059",
+    "research/tx/test_bb_polar_analysis.py": "00dcd7d6ac444a45ccfd0eb7baad75ab4b339122fd9801a0c254f5bfe0122518",
+    "research/tx/nctl_canary_probe.py": "31800331fd8a81a4706098c0ec386fa512f083d010515f7ab8591bbd2371686e"
+  },
+  "public_sdk_cache_header": {
+    "url": "https://github.com/Ameba-AIoT/ameba-rtos/blob/master/component/soc/common/include/cmsis/cache_riscv.h",
+    "sha256": "c6ca40b365b94b3179b759c0991a6e8866c9dee6f1c2f6e10970871d81a58468",
+    "interpretation": "Cross-device CSR correspondence; exact core model not established"
+  }
+}

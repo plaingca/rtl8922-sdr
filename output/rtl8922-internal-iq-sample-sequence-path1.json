@@ -1,0 +1,1485 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T04:19:17Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "3de8ce3877fd77e0071ee1492fbe0f95ad95098a4690538d72c79b297961158c",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "fc79cc703403446a4f53b485b2ae34b5101e2f0da7ca174550196327c0c3a844",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 0,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-internal-iq-sample-sequence-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": true,
+    "iq_json": null,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1061\n\twdev 0x4300000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 67\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83dac",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1026062.01171875,
+        "above_median_db": 21.49964136897903,
+        "power": 2640759.805226947
+      },
+      {
+        "hz": -991821.2890625,
+        "above_median_db": 12.2916972178451,
+        "power": 316908.9364187312
+      },
+      {
+        "hz": 579162.59765625,
+        "above_median_db": 12.19043921682851,
+        "power": 309605.5133148959
+      },
+      {
+        "hz": 171020.5078125,
+        "above_median_db": 11.973874238072465,
+        "power": 294545.36154534464
+      },
+      {
+        "hz": -492370.60546875,
+        "above_median_db": 11.527302305038493,
+        "power": 265763.2919327684
+      },
+      {
+        "hz": 891052.24609375,
+        "above_median_db": 11.47387314661438,
+        "power": 262513.7638259174
+      },
+      {
+        "hz": -621704.1015625,
+        "above_median_db": 11.324228940183914,
+        "power": 253622.42932980132
+      },
+      {
+        "hz": 310241.69921875,
+        "above_median_db": 11.30510931031255,
+        "power": 252508.3215760333
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0613432927007818,
+    "mean_real": 0.029296875,
+    "mean_imag": 0.0009918212890625,
+    "clip_fraction": 0.0
+  },
+  "iq_sample_probe": {
+    "scope": "Both RF paths held in standby; internal TX-DAC tap",
+    "arbitrary_iq_rf_demonstrated": false,
+    "dds_word": 640,
+    "requested_iq": [
+      [
+        1024,
+        0
+      ],
+      [
+        0,
+        1024
+      ],
+      [
+        -1024,
+        0
+      ],
+      [
+        0,
+        -1024
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        -512,
+        512
+      ],
+      [
+        -512,
+        -512
+      ],
+      [
+        512,
+        -512
+      ],
+      [
+        146,
+        -702
+      ],
+      [
+        -51,
+        955
+      ],
+      [
+        -199,
+        -78
+      ],
+      [
+        -854,
+        292
+      ],
+      [
+        741,
+        -749
+      ],
+      [
+        431,
+        479
+      ],
+      [
+        47,
+        678
+      ],
+      [
+        513,
+        208
+      ],
+      [
+        -601,
+        -14
+      ],
+      [
+        -500,
+        835
+      ],
+      [
+        251,
+        -749
+      ],
+      [
+        77,
+        -70
+      ],
+      [
+        -33,
+        205
+      ],
+      [
+        990,
+        -786
+      ],
+      [
+        -901,
+        846
+      ],
+      [
+        -155,
+        138
+      ],
+      [
+        -348,
+        -318
+      ],
+      [
+        229,
+        -630
+      ],
+      [
+        109,
+        258
+      ],
+      [
+        -322,
+        121
+      ],
+      [
+        45,
+        -868
+      ],
+      [
+        490,
+        -911
+      ],
+      [
+        -432,
+        -123
+      ],
+      [
+        365,
+        384
+      ],
+      [
+        924,
+        -321
+      ],
+      [
+        761,
+        -460
+      ],
+      [
+        -24,
+        376
+      ],
+      [
+        -102,
+        915
+      ],
+      [
+        -42,
+        165
+      ],
+      [
+        433,
+        -981
+      ],
+      [
+        -274,
+        -762
+      ],
+      [
+        44,
+        -337
+      ]
+    ],
+    "target_dwell_seconds": 0.0005,
+    "nominal_host_updates_per_second": 2000.0,
+    "static_checks": [
+      {
+        "requested": [
+          1024,
+          0
+        ],
+        "tx_dac_debug": {
+          "status": "0x33f68",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          0,
+          1024
+        ],
+        "tx_dac_debug": {
+          "status": "0x34020",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 2048,
+          "imag_max": 2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -1024,
+          0
+        ],
+        "tx_dac_debug": {
+          "status": "0x337bb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          0,
+          -1024
+        ],
+        "tx_dac_debug": {
+          "status": "0x3370e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": -2048.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2048,
+          "imag_max": -2048,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          512,
+          512
+        ],
+        "tx_dac_debug": {
+          "status": "0x33b99",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1024.0,
+          "imag_mean": 1024.0,
+          "real_min": 1024,
+          "real_max": 1024,
+          "imag_min": 1024,
+          "imag_max": 1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -512,
+          512
+        ],
+        "tx_dac_debug": {
+          "status": "0x33fe3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1024.0,
+          "imag_mean": 1024.0,
+          "real_min": -1024,
+          "real_max": -1024,
+          "imag_min": 1024,
+          "imag_max": 1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -512,
+          -512
+        ],
+        "tx_dac_debug": {
+          "status": "0x32a5a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1024.0,
+          "imag_mean": -1024.0,
+          "real_min": -1024,
+          "real_max": -1024,
+          "imag_min": -1024,
+          "imag_max": -1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          512,
+          -512
+        ],
+        "tx_dac_debug": {
+          "status": "0x33f54",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1024.0,
+          "imag_mean": -1024.0,
+          "real_min": 1024,
+          "real_max": 1024,
+          "imag_min": -1024,
+          "imag_max": -1024,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          146,
+          -702
+        ],
+        "tx_dac_debug": {
+          "status": "0x3351b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 292.0,
+          "imag_mean": -1404.0,
+          "real_min": 292,
+          "real_max": 292,
+          "imag_min": -1404,
+          "imag_max": -1404,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -51,
+          955
+        ],
+        "tx_dac_debug": {
+          "status": "0x33f3e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -102.0,
+          "imag_mean": 1910.0,
+          "real_min": -102,
+          "real_max": -102,
+          "imag_min": 1910,
+          "imag_max": 1910,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -199,
+          -78
+        ],
+        "tx_dac_debug": {
+          "status": "0x33df0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -398.0,
+          "imag_mean": -156.0,
+          "real_min": -398,
+          "real_max": -398,
+          "imag_min": -156,
+          "imag_max": -156,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -854,
+          292
+        ],
+        "tx_dac_debug": {
+          "status": "0x35262",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1708.0,
+          "imag_mean": 584.0,
+          "real_min": -1708,
+          "real_max": -1708,
+          "imag_min": 584,
+          "imag_max": 584,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          741,
+          -749
+        ],
+        "tx_dac_debug": {
+          "status": "0x33897",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1482.0,
+          "imag_mean": -1498.0,
+          "real_min": 1482,
+          "real_max": 1482,
+          "imag_min": -1498,
+          "imag_max": -1498,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          431,
+          479
+        ],
+        "tx_dac_debug": {
+          "status": "0x33ff0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 862.0,
+          "imag_mean": 958.0,
+          "real_min": 862,
+          "real_max": 862,
+          "imag_min": 958,
+          "imag_max": 958,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          47,
+          678
+        ],
+        "tx_dac_debug": {
+          "status": "0x341f0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 94.0,
+          "imag_mean": 1356.0,
+          "real_min": 94,
+          "real_max": 94,
+          "imag_min": 1356,
+          "imag_max": 1356,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          513,
+          208
+        ],
+        "tx_dac_debug": {
+          "status": "0x343c3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1026.0,
+          "imag_mean": 416.0,
+          "real_min": 1026,
+          "real_max": 1026,
+          "imag_min": 416,
+          "imag_max": 416,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -601,
+          -14
+        ],
+        "tx_dac_debug": {
+          "status": "0x336e0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1202.0,
+          "imag_mean": -28.0,
+          "real_min": -1202,
+          "real_max": -1202,
+          "imag_min": -28,
+          "imag_max": -28,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -500,
+          835
+        ],
+        "tx_dac_debug": {
+          "status": "0x3366f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1000.0,
+          "imag_mean": 1670.0,
+          "real_min": -1000,
+          "real_max": -1000,
+          "imag_min": 1670,
+          "imag_max": 1670,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          251,
+          -749
+        ],
+        "tx_dac_debug": {
+          "status": "0x377d1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 502.0,
+          "imag_mean": -1498.0,
+          "real_min": 502,
+          "real_max": 502,
+          "imag_min": -1498,
+          "imag_max": -1498,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          77,
+          -70
+        ],
+        "tx_dac_debug": {
+          "status": "0x33f25",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 154.0,
+          "imag_mean": -140.0,
+          "real_min": 154,
+          "real_max": 154,
+          "imag_min": -140,
+          "imag_max": -140,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -33,
+          205
+        ],
+        "tx_dac_debug": {
+          "status": "0x33f41",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -66.0,
+          "imag_mean": 410.0,
+          "real_min": -66,
+          "real_max": -66,
+          "imag_min": 410,
+          "imag_max": 410,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          990,
+          -786
+        ],
+        "tx_dac_debug": {
+          "status": "0x34aaa",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1980.0,
+          "imag_mean": -1572.0,
+          "real_min": 1980,
+          "real_max": 1980,
+          "imag_min": -1572,
+          "imag_max": -1572,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -901,
+          846
+        ],
+        "tx_dac_debug": {
+          "status": "0x34156",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -1802.0,
+          "imag_mean": 1692.0,
+          "real_min": -1802,
+          "real_max": -1802,
+          "imag_min": 1692,
+          "imag_max": 1692,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -155,
+          138
+        ],
+        "tx_dac_debug": {
+          "status": "0x3412b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -310.0,
+          "imag_mean": 276.0,
+          "real_min": -310,
+          "real_max": -310,
+          "imag_min": 276,
+          "imag_max": 276,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -348,
+          -318
+        ],
+        "tx_dac_debug": {
+          "status": "0x32430",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -696.0,
+          "imag_mean": -636.0,
+          "real_min": -696,
+          "real_max": -696,
+          "imag_min": -636,
+          "imag_max": -636,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          229,
+          -630
+        ],
+        "tx_dac_debug": {
+          "status": "0x34158",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 458.0,
+          "imag_mean": -1260.0,
+          "real_min": 458,
+          "real_max": 458,
+          "imag_min": -1260,
+          "imag_max": -1260,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          109,
+          258
+        ],
+        "tx_dac_debug": {
+          "status": "0x34836",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 218.0,
+          "imag_mean": 516.0,
+          "real_min": 218,
+          "real_max": 218,
+          "imag_min": 516,
+          "imag_max": 516,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -322,
+          121
+        ],
+        "tx_dac_debug": {
+          "status": "0x34016",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -644.0,
+          "imag_mean": 242.0,
+          "real_min": -644,
+          "real_max": -644,
+          "imag_min": 242,
+          "imag_max": 242,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          45,
+          -868
+        ],
+        "tx_dac_debug": {
+          "status": "0x33e0f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 90.0,
+          "imag_mean": -1736.0,
+          "real_min": 90,
+          "real_max": 90,
+          "imag_min": -1736,
+          "imag_max": -1736,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          490,
+          -911
+        ],
+        "tx_dac_debug": {
+          "status": "0x3385e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 980.0,
+          "imag_mean": -1822.0,
+          "real_min": 980,
+          "real_max": 980,
+          "imag_min": -1822,
+          "imag_max": -1822,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -432,
+          -123
+        ],
+        "tx_dac_debug": {
+          "status": "0x343cf",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -864.0,
+          "imag_mean": -246.0,
+          "real_min": -864,
+          "real_max": -864,
+          "imag_min": -246,
+          "imag_max": -246,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          365,
+          384
+        ],
+        "tx_dac_debug": {
+          "status": "0x33615",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 730.0,
+          "imag_mean": 768.0,
+          "real_min": 730,
+          "real_max": 730,
+          "imag_min": 768,
+          "imag_max": 768,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          924,
+          -321
+        ],
+        "tx_dac_debug": {
+          "status": "0x324a2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1848.0,
+          "imag_mean": -642.0,
+          "real_min": 1848,
+          "real_max": 1848,
+          "imag_min": -642,
+          "imag_max": -642,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          761,
+          -460
+        ],
+        "tx_dac_debug": {
+          "status": "0x33fe2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 1522.0,
+          "imag_mean": -920.0,
+          "real_min": 1522,
+          "real_max": 1522,
+          "imag_min": -920,
+          "imag_max": -920,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -24,
+          376
+        ],
+        "tx_dac_debug": {
+          "status": "0x33745",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -48.0,
+          "imag_mean": 752.0,
+          "real_min": -48,
+          "real_max": -48,
+          "imag_min": 752,
+          "imag_max": 752,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -102,
+          915
+        ],
+        "tx_dac_debug": {
+          "status": "0x334e3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -204.0,
+          "imag_mean": 1830.0,
+          "real_min": -204,
+          "real_max": -204,
+          "imag_min": 1830,
+          "imag_max": 1830,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -42,
+          165
+        ],
+        "tx_dac_debug": {
+          "status": "0x36a2e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -84.0,
+          "imag_mean": 330.0,
+          "real_min": -84,
+          "real_max": -84,
+          "imag_min": 330,
+          "imag_max": 330,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          433,
+          -981
+        ],
+        "tx_dac_debug": {
+          "status": "0x336ea",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 866.0,
+          "imag_mean": -1962.0,
+          "real_min": 866,
+          "real_max": 866,
+          "imag_min": -1962,
+          "imag_max": -1962,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          -274,
+          -762
+        ],
+        "tx_dac_debug": {
+          "status": "0x3371f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -548.0,
+          "imag_mean": -1524.0,
+          "real_min": -548,
+          "real_max": -548,
+          "imag_min": -1524,
+          "imag_max": -1524,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "requested": [
+          44,
+          -337
+        ],
+        "tx_dac_debug": {
+          "status": "0x337ed",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 88.0,
+          "imag_mean": -674.0,
+          "real_min": 88,
+          "real_max": 88,
+          "imag_min": -674,
+          "imag_max": -674,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      }
+    ],
+    "constant_control": {
+      "status": "0x3325d",
+      "records": 40960,
+      "valid_capture": true,
+      "real_std": 0.0,
+      "imag_std": 0.0,
+      "real_mean": 2048.0,
+      "imag_mean": 0.0,
+      "real_min": 2048,
+      "real_max": 2048,
+      "imag_min": 0,
+      "imag_max": 0,
+      "iq_covariance": 0.0,
+      "unique_words": 1,
+      "peak_cycles_per_record": 0.0,
+      "peak_above_median_db": 0.0
+    },
+    "dac_counts_per_coefficient": 2.0,
+    "static_values_passed": true,
+    "capture_records": 40960,
+    "host_write_times": [
+      0.00407571904361248,
+      0.004560405388474464,
+      0.00507243350148201,
+      0.00556182861328125,
+      0.006070312112569809,
+      0.006573673337697983,
+      0.00706837885081768,
+      0.007561050355434418,
+      0.008061027154326439,
+      0.008558707311749458,
+      0.00906071625649929,
+      0.009558727964758873,
+      0.01006648875772953,
+      0.010589679703116417,
+      0.011069867759943008,
+      0.011561136692762375,
+      0.012061893939971924,
+      0.012568332254886627,
+      0.013064257800579071,
+      0.013560187071561813,
+      0.0140606127679348,
+      0.014558685943484306,
+      0.015061676502227783,
+      0.015559276565909386,
+      0.016061507165431976,
+      0.016559237614274025,
+      0.01706182025372982,
+      0.017557866871356964,
+      0.01805988699197769,
+      0.01855785772204399,
+      0.019060619175434113,
+      0.019566265866160393,
+      0.020063044503331184,
+      0.020559024065732956,
+      0.021061012521386147,
+      0.02156500704586506,
+      0.022063789889216423,
+      0.022560618817806244,
+      0.023059803992509842,
+      0.023559417575597763
+    ],
+    "sequence_verification": {
+      "passed": true,
+      "alignment_uses_sync_only": true,
+      "payload_samples": 32,
+      "payload_wrong_values": 0,
+      "max_absolute_dac_count_error": 0.0,
+      "sample_value_rms_error": 0.0,
+      "estimated_records_per_host_second_from_sync": 1250002.4796326784,
+      "max_payload_write_timing_residual_us": 5.414007614990297,
+      "dwell_records": [
+        607,
+        639,
+        613,
+        634,
+        627,
+        622,
+        616,
+        625,
+        622,
+        627,
+        623,
+        634,
+        647,
+        607,
+        615,
+        626,
+        632,
+        621,
+        620,
+        625,
+        623,
+        629,
+        622,
+        627,
+        623,
+        628,
+        620,
+        627,
+        623,
+        628,
+        632,
+        621,
+        620,
+        628,
+        629,
+        624,
+        621,
+        624,
+        625,
+        628
+      ],
+      "host_write_intervals_us": [
+        484.68634486198425,
+        512.0281130075455,
+        489.3951117992401,
+        508.48349928855896,
+        503.3612251281738,
+        494.70551311969757,
+        492.67150461673737,
+        499.9767988920212,
+        497.6801574230194,
+        502.00894474983215,
+        498.0117082595825,
+        507.76079297065735,
+        523.1909453868866,
+        480.1880568265915,
+        491.26893281936646,
+        500.75724720954895,
+        506.43831491470337,
+        495.92554569244385,
+        495.9292709827423,
+        500.42569637298584,
+        498.07317554950714,
+        502.99055874347687,
+        497.6000636816025,
+        502.23059952259064,
+        497.73044884204865,
+        502.5826394557953,
+        496.04661762714386,
+        502.02012062072754,
+        497.97073006629944,
+        502.76145339012146,
+        505.6466907262802,
+        496.7786371707916,
+        495.97956240177155,
+        501.9884556531906,
+        503.99452447891235,
+        498.78284335136414,
+        496.82892858982086,
+        499.185174703598,
+        499.61358308792114
+      ],
+      "interpretation": "Finite host-paced I/Q holds at DAC debug tap; hardware-clocked replay and RF are unproved"
+    },
+    "finite_internal_iq_sequence_demonstrated": true
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": -450622.55859375,
+        "above_median_db": 14.461456637385998,
+        "power": 5283418.4637589445
+      },
+      {
+        "hz": -554809.5703125,
+        "above_median_db": 14.15353338236606,
+        "power": 4921785.518144274
+      },
+      {
+        "hz": -1450622.55859375,
+        "above_median_db": 13.983090653802847,
+        "power": 4732366.934187941
+      },
+      {
+        "hz": -1554748.53515625,
+        "above_median_db": 13.530059080655327,
+        "power": 4263588.222797297
+      },
+      {
+        "hz": 549438.4765625,
+        "above_median_db": 13.381936117604138,
+        "power": 4120623.7144111935
+      },
+      {
+        "hz": -663574.21875,
+        "above_median_db": 13.229471919565288,
+        "power": 3978474.124314738
+      },
+      {
+        "hz": -95458.984375,
+        "above_median_db": 13.096534408661817,
+        "power": 3858538.044721701
+      },
+      {
+        "hz": -1316528.3203125,
+        "above_median_db": 13.077586720434308,
+        "power": 3841740.4280796833
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 22.200247355964656,
+    "mean_real": -0.077117919921875,
+    "mean_imag": -0.0142822265625,
+    "clip_fraction": 0.0
+  },
+  "status": "internal_iq_sample_probe_complete_rf_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

@@ -1,0 +1,40 @@
+{
+  "hardware_access": false,
+  "source_report": "vendor/local-rf-captures/bb-nco-lora-20261013/wide-long-turbo-hold-a.json",
+  "table_sha256": "7cbe4b18e6cb99acda686ef67883fb62ea82c6a9ab798701b288df9e07d7955e",
+  "decode": {
+    "packets": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      },
+      {
+        "payload_hex": "ffffffff012092f801002289000000000801120f52544c38393232204c6f5261203031",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      }
+    ],
+    "crc_valid_packets": 2,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "exact_crc_packets": 2,
+  "transmitted_packets": 2,
+  "modeled_service_hold_seconds": 9.667857358471314e-07,
+  "scope": "Independent phase integration of packed commands, nominal local slot rate, fixed hold every 4096 commands, ideal oscillator and mute. Synthetic, not RF; excludes jitter and analog distortion."
+}

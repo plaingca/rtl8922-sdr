@@ -1,0 +1,370 @@
+{
+  "source_report": "output/rtl8922-quiet-survey-refine.json",
+  "ranking": [
+    {
+      "rf_hz": 2421500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": -500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.24936757989441,
+          "median_dbfs": -70.6678245311812,
+          "p95_dbfs": -68.15941081054554,
+          "p99_dbfs": -67.57088787880686,
+          "maximum_dbfs": -66.91517266213795,
+          "fraction_above_band_floor_plus_6db": 0.0,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.911417337252225,
+          "median_dbfs": -60.73338545640755,
+          "p95_dbfs": -58.26357859520259,
+          "p99_dbfs": -57.36370458006096,
+          "maximum_dbfs": -49.69591274143109,
+          "fraction_above_band_floor_plus_6db": 0.00390625,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2422000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 0,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.2979816401449,
+          "median_dbfs": -70.82644711493504,
+          "p95_dbfs": -67.4075369065337,
+          "p99_dbfs": -66.20341130991072,
+          "maximum_dbfs": -38.98953009182246,
+          "fraction_above_band_floor_plus_6db": 0.022135416666666668,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.979429149853196,
+          "median_dbfs": -60.82818969232939,
+          "p95_dbfs": -57.53275913148939,
+          "p99_dbfs": -57.06981198054909,
+          "maximum_dbfs": -32.70688572329201,
+          "fraction_above_band_floor_plus_6db": 0.00390625,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2422250000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 250000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.38372607326409,
+          "median_dbfs": -70.31880213118879,
+          "p95_dbfs": -67.62420395584984,
+          "p99_dbfs": -66.53987168710144,
+          "maximum_dbfs": -37.84282053883636,
+          "fraction_above_band_floor_plus_6db": 0.010416666666666666,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.99692529251725,
+          "median_dbfs": -59.96393903539444,
+          "p95_dbfs": -57.424567422299,
+          "p99_dbfs": -57.03285500006406,
+          "maximum_dbfs": -30.32093519074187,
+          "fraction_above_band_floor_plus_6db": 0.0078125,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2422500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.28192766570449,
+          "median_dbfs": -70.85665015622999,
+          "p95_dbfs": -67.97909109962502,
+          "p99_dbfs": -67.31495915433847,
+          "maximum_dbfs": -43.785114252551125,
+          "fraction_above_band_floor_plus_6db": 0.0026041666666666665,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.9787023435492,
+          "median_dbfs": -60.96022892516265,
+          "p95_dbfs": -57.2462223916451,
+          "p99_dbfs": -56.91386443719831,
+          "maximum_dbfs": -29.271083479655758,
+          "fraction_above_band_floor_plus_6db": 0.00390625,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2423000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 1000000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.32582941153072,
+          "median_dbfs": -70.47330469046295,
+          "p95_dbfs": -66.99057651314183,
+          "p99_dbfs": -65.81635456544785,
+          "maximum_dbfs": -42.76599548149366,
+          "fraction_above_band_floor_plus_6db": 0.03515625,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -62.058685019391525,
+          "median_dbfs": -60.85522254481077,
+          "p95_dbfs": -57.24922369936045,
+          "p99_dbfs": -56.66772453371149,
+          "maximum_dbfs": -29.51878709847059,
+          "fraction_above_band_floor_plus_6db": 0.0078125,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2423500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 1500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.45353026394312,
+          "median_dbfs": -71.38842781409608,
+          "p95_dbfs": -66.82495506443847,
+          "p99_dbfs": -66.01334803094534,
+          "maximum_dbfs": -37.21358239316991,
+          "fraction_above_band_floor_plus_6db": 0.029947916666666668,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -62.15728688263605,
+          "median_dbfs": -61.72540805016193,
+          "p95_dbfs": -57.46353908862555,
+          "p99_dbfs": -56.422377404216746,
+          "maximum_dbfs": -27.737492852732565,
+          "fraction_above_band_floor_plus_6db": 0.009114583333333334,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2421000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": -1000000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -71.70998889007441,
+          "median_dbfs": -69.77494699046471,
+          "p95_dbfs": -67.16832968976051,
+          "p99_dbfs": -66.23851437113304,
+          "maximum_dbfs": -49.66371036523563,
+          "fraction_above_band_floor_plus_6db": 0.018229166666666668,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.69678311792801,
+          "median_dbfs": -59.815835251658825,
+          "p95_dbfs": -57.199310553000444,
+          "p99_dbfs": -55.86163575230939,
+          "maximum_dbfs": -34.13859841218872,
+          "fraction_above_band_floor_plus_6db": 0.01171875,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2420500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": -1500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -71.42437628803913,
+          "median_dbfs": -68.9337231162582,
+          "p95_dbfs": -66.60785591368402,
+          "p99_dbfs": -65.47753795903716,
+          "maximum_dbfs": -59.67539393282302,
+          "fraction_above_band_floor_plus_6db": 0.046875,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.43189771351954,
+          "median_dbfs": -58.797588247084434,
+          "p95_dbfs": -56.33856742274847,
+          "p99_dbfs": -55.79493043041036,
+          "maximum_dbfs": -35.85173434800039,
+          "fraction_above_band_floor_plus_6db": 0.03125,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2424000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 2000000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.51681283722115,
+          "median_dbfs": -71.36630256753341,
+          "p95_dbfs": -67.24353392427422,
+          "p99_dbfs": -63.50460800536818,
+          "maximum_dbfs": -31.68366136576224,
+          "fraction_above_band_floor_plus_6db": 0.024739583333333332,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -62.15955183827178,
+          "median_dbfs": -61.746661168937834,
+          "p95_dbfs": -57.767012367196386,
+          "p99_dbfs": -54.79041837890294,
+          "maximum_dbfs": -27.58584777342317,
+          "fraction_above_band_floor_plus_6db": 0.014322916666666666,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2419500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": -2500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -71.94437152956839,
+          "median_dbfs": -70.40346170684138,
+          "p95_dbfs": -63.83552580732099,
+          "p99_dbfs": -62.83894323774345,
+          "maximum_dbfs": -58.132742298425995,
+          "fraction_above_band_floor_plus_6db": 0.13671875,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.76754679383341,
+          "median_dbfs": -60.66282267252897,
+          "p95_dbfs": -53.80413594146613,
+          "p99_dbfs": -53.34143886939905,
+          "maximum_dbfs": -39.3019994637995,
+          "fraction_above_band_floor_plus_6db": 0.13541666666666666,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2420000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": -2000000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.08752520302271,
+          "median_dbfs": -70.18697088351658,
+          "p95_dbfs": -65.41980232085854,
+          "p99_dbfs": -57.75586020834967,
+          "maximum_dbfs": -44.10253692175951,
+          "fraction_above_band_floor_plus_6db": 0.125,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -61.782790100268194,
+          "median_dbfs": -60.19523940551251,
+          "p95_dbfs": -55.31192327039997,
+          "p99_dbfs": -47.98124329970483,
+          "maximum_dbfs": -33.818197443283935,
+          "fraction_above_band_floor_plus_6db": 0.15885416666666666,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2424500000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 2500000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.18652580553555,
+          "median_dbfs": -69.57796923170231,
+          "p95_dbfs": -66.68034742260224,
+          "p99_dbfs": -65.63765576046576,
+          "maximum_dbfs": -51.8157184705114,
+          "fraction_above_band_floor_plus_6db": 0.033854166666666664,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -62.030276262894624,
+          "median_dbfs": -59.31532614092237,
+          "p95_dbfs": -56.10765117656178,
+          "p99_dbfs": -47.492677820845685,
+          "maximum_dbfs": -38.59061050818009,
+          "fraction_above_band_floor_plus_6db": 0.053385416666666664,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    },
+    {
+      "rf_hz": 2425000000,
+      "rtl_lo_mhz": 2422,
+      "nco_offset_hz": 3000000,
+      "band": "2.4 GHz",
+      "sampled_seconds": 0.393216,
+      "maximum_buffer_clip_fraction": 0.0,
+      "metrics": {
+        "200000": {
+          "p10_dbfs": -72.3218129719251,
+          "median_dbfs": -69.99134782574822,
+          "p95_dbfs": -66.90840122877424,
+          "p99_dbfs": -62.09359533068815,
+          "maximum_dbfs": -57.01700861779759,
+          "fraction_above_band_floor_plus_6db": 0.041666666666666664,
+          "band_reference_floor_dbfs": -72.51681283722115
+        },
+        "2000000": {
+          "p10_dbfs": -62.04260341194066,
+          "median_dbfs": -59.464478850017805,
+          "p95_dbfs": -50.54692589183753,
+          "p99_dbfs": -35.04777761317384,
+          "maximum_dbfs": -25.13303099501872,
+          "fraction_above_band_floor_plus_6db": 0.10546875,
+          "band_reference_floor_dbfs": -62.15955183827178
+        }
+      }
+    }
+  ],
+  "analysis_recovery": "All 39 passive observations completed; fixed an empty-band ranking error offline. Original report and exception preserved."
+}

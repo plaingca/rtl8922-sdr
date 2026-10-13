@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": true,
+  "status": "finite_nco_gate_captured",
+  "firmware_sha256": "c130bdf3f62142836ddb351563c81c613587beb5efa735c3b2f2542d44f17364",
+  "table_sha256": "aad3f76af037eefe2d590ff26ee45e369304fba16f7749ab12b2fe8dd91fe862",
+  "source_report": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/phase16.json",
+  "center_mhz": 2442,
+  "rx_rate": 40000000,
+  "rx_offset_hz": 5500000,
+  "rx_gain": 35,
+  "nco_only": true,
+  "started_utc": "2026-10-13T17:23:17Z",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "actual_rx": {
+    "sample_rate": 40000000,
+    "rx_lo": 2447500000,
+    "rx_rf_bandwidth": 30000000,
+    "rx_hardwaregain_chan0": 35
+  },
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000"
+  },
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "table_readback_matches": true,
+  "off_trace_sha256": "c0869400d243e4bae1c962b5afe6a1d23baf19484ba66ac350a4e4617834aab3",
+  "private_off_trace": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/phase16-b-off.cf32",
+  "controls": [
+    {
+      "index": null,
+      "itqt": null,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1515502.9296875,
+            "power": 579505.331779602,
+            "local_median_power": 227201.3866811584,
+            "above_local_median_db": 4.066464583927595
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -1046752.9296875,
+            "power": 580237.0766339481,
+            "local_median_power": 227381.46400601798,
+            "above_local_median_db": 4.068504180034947
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          8.004089264013055,
+          37.04063184656511,
+          3.002354016213257,
+          225.15926000845204,
+          14.876904790398376,
+          2.7931435697035987,
+          2.9251370911383154,
+          3.341652470762267
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1483764.6484375,
+            "power": 727540152.7522624,
+            "local_median_power": 217437.39434393062,
+            "above_local_median_db": 35.24522731857597
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -970458.984375,
+            "power": 644522.4507097816,
+            "local_median_power": 217771.87089645478,
+            "above_local_median_db": 4.7123626757311845
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          3.657576882629229,
+          210.16312198337005,
+          29.22364650232031,
+          3.4898206639599065,
+          2.807153664182981,
+          3.5123270121159083,
+          3.1443953774993156,
+          21.47956551281102
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1510009.765625,
+            "power": 722439.217222741,
+            "local_median_power": 260662.29927725167,
+            "above_local_median_db": 4.427230915773192
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -983886.71875,
+            "power": 848758413.8632367,
+            "local_median_power": 270155.7647558254,
+            "above_local_median_db": 34.971698533066146
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          216.982334947339,
+          3.06000775504532,
+          3.5213906714169316,
+          2.78463299344871,
+          3.0401769325567223,
+          3.5429149148335473,
+          2.7967058695370746,
+          134.74809147716445
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 27,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1483764.6484375,
+            "power": 177384066.6518733,
+            "local_median_power": 368829.2567380251,
+            "above_local_median_db": 26.820892437749432
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -1019897.4609375,
+            "power": 1191040.7533463326,
+            "local_median_power": 344407.51269088703,
+            "above_local_median_db": 5.3885400549659295
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          8.066552851270718,
+          3.3908230068911736,
+          2.636044473970422,
+          3.636315934995413,
+          33.613459652344694,
+          112.29433287862426,
+          220.89152453816098,
+          200.71941514241294
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -1500000,
+            "hz": -1483764.6484375,
+            "power": 718581754.054235,
+            "local_median_power": 336906.81889858836,
+            "above_local_median_db": 33.28966384506283
+          },
+          {
+            "expected_hz": -1000000,
+            "hz": -1032714.84375,
+            "power": 1020545.7766953087,
+            "local_median_power": 296239.736428419,
+            "above_local_median_db": 5.371891771773408
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          3.503523007190628,
+          79.82610179452558,
+          3.211529085557659,
+          3.3937422666233252,
+          2.7764535756982887,
+          205.71935595591628,
+          95.62559160037075,
+          13.959933030806752
+        ]
+      }
+    }
+  ],
+  "amplitude_control_db": -6.129423597432932,
+  "tone_movement_hz": 499877.9296875,
+  "measured_carrier_offset_hz": 16235.3515625,
+  "capture_buffer_warmup_seconds": 0.053609294816851616,
+  "playback": {
+    "repeats": 4096,
+    "frame_samples": 1024,
+    "host_seconds": 0.39400078542530537,
+    "result_words": [
+      "0x504f4631",
+      "0x1",
+      "0x2",
+      "0x1000",
+      "0x400",
+      "0x250010",
+      "0x250000",
+      "0x12",
+      "0x12",
+      "0x400000",
+      "0x10a0a8b",
+      "0x100a0bca"
+    ],
+    "samples_completed": 4194304,
+    "counter_ticks": 251658559,
+    "counter_ticks_per_pair": 60.00007605552673,
+    "counter_ticks_per_nco_write": 60.00007605552673,
+    "completed": true
+  },
+  "capture_timing_monotonic": {
+    "command_start": 8938379.359471055,
+    "rx_call": 8938379.457272263,
+    "rx_return": 8938379.50453402,
+    "command_end": 8938379.754344918
+  },
+  "producer_errors": [],
+  "table_unchanged_after_playback": true,
+  "trace_sha256": "58cad06301fc2cf2457c53cebc26ee6f9a0bd52ccbeedc3f471ee5d903c2dc0e",
+  "private_trace": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/phase16-b.cf32",
+  "captured_samples": 262144,
+  "clip_fraction": 0.0,
+  "off_after": {
+    "targets": [
+      {
+        "expected_hz": -1500000,
+        "hz": -1519165.0390625,
+        "power": 1465989.704903384,
+        "local_median_power": 381931.2391163819,
+        "above_local_median_db": 5.841457385645473
+      },
+      {
+        "expected_hz": -1000000,
+        "hz": -1048583.984375,
+        "power": 1812931.0492642017,
+        "local_median_power": 382606.1658372237,
+        "above_local_median_db": 6.756293224394847
+      }
+    ],
+    "fft_size": 65536,
+    "blocks": 8,
+    "clip_fraction_per_buffer": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rms_per_buffer": [
+      213.91881796876203,
+      114.65930580939083,
+      2.6280441797917895,
+      2.6354337146393596,
+      3.4113686275578514,
+      2.6813724658803464,
+      3.587171288294232,
+      215.49583062831744
+    ]
+  },
+  "on_above_both_off_db": [
+    26.957260464908185,
+    26.704028055326976,
+    20.827836867475252,
+    26.903452651453257
+  ],
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:0:0": {
+      "saved": "0x337e0",
+      "actual": "0x3b7e0"
+    }
+  },
+  "mailbox_cleanup_errors": [],
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

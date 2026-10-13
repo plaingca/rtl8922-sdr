@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "pattern_decoder": {
+    "update_rate_hz": 309040.7087176829,
+    "phase_symbols": 24.625,
+    "host_rate_lower_bound": 305065.7026126402,
+    "search_upper_bound": 350825.5580045362,
+    "training_seconds": [
+      0.12,
+      0.13
+    ],
+    "heldout_seconds": [
+      0.13,
+      0.14
+    ],
+    "heldout_points": 9997,
+    "discriminator_center_hz": 513075.14856947644,
+    "discriminator_half_swing_hz": 248536.56211647397,
+    "heldout_correlation": 0.951857431446211,
+    "heldout_signal_error_db": 9.847919909094728,
+    "wrong_pattern_signal_error_db": -3.7505638239661465,
+    "passed": true,
+    "scope": "finite repeated frequency pattern, interrupts enabled; not per-write jitter qualification"
+  },
+  "repeated_audio_runs": [
+    {
+      "run": "e",
+      "passed": true,
+      "payload_sha256": "cc8c21308fe1a3ea5f840dcf305dee478ec047ed9cbca5ccc06c54b73ceaa4fc",
+      "blocks": 63,
+      "stream_seconds": 4.0593784712255,
+      "audio_rate_hz": 31936.240198737985,
+      "rx_clipping_fraction": 0.0,
+      "blanked_fraction": 0.004980446497305619,
+      "expected_pauses": 7,
+      "detected_pauses": 7,
+      "alignment": "initial pilot plus RF excursions; no speech-body fitting",
+      "status": "scored",
+      "pause_seconds": [
+        0.0029375,
+        0.0026475,
+        0.0023025,
+        0.003155,
+        0.0027575,
+        0.00243,
+        0.002375
+      ],
+      "total_pause_seconds": 0.018604999999999997,
+      "heldout_correlation": 0.9848556976979438,
+      "heldout_signal_error_db": 14.447270588310666,
+      "wrong_payload_signal_error_db": -3.213605367627835
+    },
+    {
+      "run": "f",
+      "passed": true,
+      "payload_sha256": "cc8c21308fe1a3ea5f840dcf305dee478ec047ed9cbca5ccc06c54b73ceaa4fc",
+      "blocks": 63,
+      "stream_seconds": 4.061205664649606,
+      "audio_rate_hz": 31936.0505442024,
+      "rx_clipping_fraction": 0.0,
+      "blanked_fraction": 0.005320459257883823,
+      "expected_pauses": 7,
+      "detected_pauses": 7,
+      "alignment": "initial pilot plus RF excursions; no speech-body fitting",
+      "status": "scored",
+      "pause_seconds": [
+        0.0026625,
+        0.0023375,
+        0.00325,
+        0.00306,
+        0.0032175,
+        0.00232,
+        0.0032425
+      ],
+      "total_pause_seconds": 0.02009,
+      "heldout_correlation": 0.9851510123787385,
+      "heldout_signal_error_db": 14.541963240703668,
+      "wrong_payload_signal_error_db": -3.2110470733462315
+    }
+  ],
+  "passed": true,
+  "scope": "Two finite mono FM speech runs. RF-measured pause correction for metrics; WAV preserves timeline and uses impulse blanking. No gapless or arbitrary-IQ qualification.",
+  "failed_attempts_preserved": {
+    "speech-a": "long hook lost valid BB memory reads",
+    "speech-b": "stream completed but capture export hit duration bound",
+    "speech-d": "host completion snapshot race; fixed before consecutive E/F"
+  },
+  "final_restored": true,
+  "artifacts": [
+    {
+      "path": "output/audio/rtl8922-bb-fm-received.wav",
+      "sha256": "4e9e75feb2be97d2634a1717d1c8b023ad0e07d90bb7d229e8082f99027b5abe",
+      "rate": 32000,
+      "frames": 123480,
+      "seconds": 3.85875
+    },
+    {
+      "path": "output/audio/rtl8922-bb-fm-unblanked.wav",
+      "sha256": "8bba1e332898bc5715060c160555c9dc16613ddaf4549010180d366ff1850112",
+      "rate": 32000,
+      "frames": 123480,
+      "seconds": 3.85875
+    },
+    {
+      "path": "output/audio/rtl8922-bb-fm-source.wav",
+      "sha256": "40acdd869debab64f50c1ab2c6ae3024d166e604493d5e4a2120a820b90b8521",
+      "rate": 22050,
+      "frames": 83812,
+      "seconds": 3.800997732426304
+    }
+  ],
+  "input_sha256": {
+    "output/rtl8922-bb-dds-pattern-diagnostic-b.json": "16cf047cf1efae9a9b1489c28d123d3077d4e6aa5e62dc637aa2503c713b050c",
+    "output/rtl8922-bb-fm-speech-e.json": "27366e97671d619ce1bf9df238e1d7f276458d9a07c39276dfb3e370820708df",
+    "output/rtl8922-bb-fm-speech-demod-e.json": "1baa2cb5c3a4e92a4b3cd861e8d137aee13d2175358401cab2f88a766a33cf50",
+    "output/rtl8922-bb-fm-speech-f.json": "c37ed6c1e9d4e6a507d9bd4bb039e9024fe4826529368abe1ee1a3cb104a21db",
+    "output/rtl8922-bb-fm-speech-demod-f.json": "82230be1cf04a1e6546c2ff6da7d36c9b81430f466b3c27e701d3e744c8ddb5e",
+    "output/rtl8922-bb-fm-final-state.json": "d4ed23705e9971aa773d9be841510bc1c158a206b71ae95353288db8ac90258e"
+  },
+  "checks": "corr > .95, signal/error > 10 dB, wrong payload < 0 dB, blanking < 2%, all blocks, restored devices"
+}

@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": true,
+  "status": "started",
+  "firmware_sha256": "9c18651bb657cf9674a4614880aca9e475fdcc78191ad5fbb92daca1437d78d5",
+  "native_5g_gain": true,
+  "center_mhz": 5500,
+  "rx_rate": 40000000,
+  "started_utc": "2026-10-13T15:36:00Z",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "actual_rx": {
+    "sample_rate": 40000000,
+    "rx_lo": 5504000000,
+    "rx_rf_bandwidth": 30000000,
+    "rx_hardwaregain_chan0": 50
+  },
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x60d",
+    "rf:1:58": "0x73724",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000"
+  },
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "controls": [
+    {
+      "index": null,
+      "itqt": null,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -2000000,
+            "hz": -2017822.265625,
+            "power": 20902592.902018726,
+            "local_median_power": 7020529.1105976105,
+            "above_local_median_db": 4.738303178525091
+          },
+          {
+            "expected_hz": 2000000,
+            "hz": 2043457.03125,
+            "power": 17966591.11028218,
+            "local_median_power": 6765218.85799355,
+            "above_local_median_db": 4.241838333061102
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          17.48594711640228,
+          17.52468308449297,
+          17.602043622752035,
+          17.577391477750883,
+          17.58013356580109,
+          17.58305139300521,
+          17.51987222703301,
+          17.474942387607328
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -2000000,
+            "hz": -1964111.328125,
+            "power": 1541311764.090232,
+            "local_median_power": 6939530.007676977,
+            "above_local_median_db": 23.465604351175884
+          },
+          {
+            "expected_hz": 2000000,
+            "hz": 2045898.4375,
+            "power": 26687612.081364214,
+            "local_median_power": 6926915.312884277,
+            "above_local_median_db": 5.8576983823258715
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          17.54232508978397,
+          17.71615899196863,
+          17.748606452503797,
+          17.604055960342855,
+          17.65054958449639,
+          17.581765682009028,
+          17.650275105609854,
+          17.611155598474276
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -2000000,
+            "hz": -1952514.6484375,
+            "power": 20444057.158002354,
+            "local_median_power": 6768639.895289306,
+            "above_local_median_db": 4.800656770892598
+          },
+          {
+            "expected_hz": 2000000,
+            "hz": 2036132.8125,
+            "power": 573414482.443038,
+            "local_median_power": 7495652.353737421,
+            "above_local_median_db": 18.836592216176502
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          17.629654939231433,
+          17.428183852806537,
+          17.600674338860347,
+          17.608016685217958,
+          17.554908713698545,
+          17.629471448395858,
+          17.57453826254339,
+          17.500249806392272
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "itqt": 27,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -2000000,
+            "hz": -1964111.328125,
+            "power": 330537207.42793304,
+            "local_median_power": 7107624.844568383,
+            "above_local_median_db": 16.67495856838748
+          },
+          {
+            "expected_hz": 2000000,
+            "hz": 1972045.8984375,
+            "power": 16961758.15424781,
+            "local_median_power": 6798555.406358823,
+            "above_local_median_db": 3.9705422533819563
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          17.56131270661428,
+          17.51068138029882,
+          17.495360713182652,
+          17.435565581407296,
+          17.50933283852344,
+          17.5439607233181,
+          17.569206504902663,
+          17.53534420844909
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "itqt": 18,
+      "rf": {
+        "targets": [
+          {
+            "expected_hz": -2000000,
+            "hz": -1964111.328125,
+            "power": 1297194155.0312362,
+            "local_median_power": 7351804.194636843,
+            "above_local_median_db": 22.466110514515428
+          },
+          {
+            "expected_hz": 2000000,
+            "hz": 2022705.078125,
+            "power": 18599360.96003662,
+            "local_median_power": 7314892.782753178,
+            "above_local_median_db": 4.052900580278378
+          }
+        ],
+        "fft_size": 65536,
+        "blocks": 8,
+        "clip_fraction_per_buffer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rms_per_buffer": [
+          17.48145903270403,
+          17.626249661343827,
+          17.575669967448967,
+          17.56506502690537,
+          17.531632526324692,
+          17.618287451803454,
+          17.526537147837598,
+          17.531327463342674
+        ]
+      }
+    }
+  ],
+  "exception": "ValueError: Static control too weak",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:0:0": {
+      "saved": "0x337e0",
+      "actual": "0x3b7e0"
+    }
+  },
+  "mailbox_cleanup_errors": [],
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 69,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

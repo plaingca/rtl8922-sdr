@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "3451067eab9cccdd6269ee7cfb817492447f9b17ff20ddaf13afe41c2aba9293",
+  "hook": "0x1001280a",
+  "stub": "0x10016400",
+  "stub_bytes": 640,
+  "labels": {
+    "bounded": "0x1001650c",
+    "pattern_loop": "0x10016530",
+    "fraction_loop": "0x10016554",
+    "same_loop": "0x10016574",
+    "delay": "0x10016578",
+    "delay_loop": "0x10016580",
+    "next": "0x10016588",
+    "finished": "0x100165a4",
+    "done": "0x100165bc",
+    "invalid": "0x100165cc",
+    "complete": "0x100165d0",
+    "normal": "0x10016630"
+  },
+  "output_local": "0x10017b00",
+  "output_host": "0x1863fb00",
+  "command": 1022,
+  "magic": "0x44445331",
+  "nco_local_hypothesis": "0xa000802c",
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 640
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0xf412",
+      "computed_xor16": "0xf412",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0x726f",
+      "computed_xor16": "0x726f",
+      "checksum_matches": true
+    }
+  ],
+  "modes": {
+    "0": "read only",
+    "1": "repeat original NCO word",
+    "2": "fractional index 1/2",
+    "3": "32-bit pattern, index 1/3"
+  },
+  "maximum_writes": 262144,
+  "maximum_delay": 255,
+  "delayed_maximum_writes": 16384,
+  "interrupts": "left enabled",
+  "acceptance": "requires separate bounded hardware validation; secure_boot=0 only"
+}

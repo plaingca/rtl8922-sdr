@@ -1,0 +1,38 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-timing-125.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-timing-125.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-150.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-150.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-timing-150.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-timing-150.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-validation-fine-100.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-validation-fine-100.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-validation-coarse-100.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-validation-fine-100-repeat.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-validation-fine-100-repeat.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.bin",
+    "report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100-repeat.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/high-validation-coarse-100-repeat.cf32"
+  }
+]

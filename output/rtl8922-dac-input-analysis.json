@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "arbitrary_iq_tx_demonstrated": false,
+  "input_report_sha256": {
+    "rtl8922-tpg-source-probe-path1.json": "25304974395e52b2f93a7b59e48b5bc1ecc322534ab32b65776d103bc4ef3166",
+    "rtl8922-dac-input-probe-path1.json": "872def9bd6c49a5ffbdb89b74229799900e07bfb85db909ebd62ab4832b9b346",
+    "rtl8922-iq-envelope-probe-path1.json": "f379b9ffcaf26036bfd48653dedd659cee05cf8af40d079506e4a12226e1d41e",
+    "rtl8922-tone-phase-probe-path1.json": "a12860ab45a6f7c15da097d05268e47fd3da9091a7eb4d79b88b8fe600244c8b",
+    "rtl8922-dadck-modulation-path1.json": "1cab86ffe432ac5ad575c148187d3ac2a7de6235174b6ea622292414ce77a293"
+  },
+  "windows_driver_sha256": "6e008520696c20450959babc2d1f04a742c950d9085c3f02207fce2cd9830bbb",
+  "firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "tpg": {
+    "controls_passed": true,
+    "candidate_count": 22,
+    "all_candidates_digital_zero": true,
+    "limit": "Only tested source/trigger subsets; does not exclude another TPG activation sequence"
+  },
+  "itqt": {
+    "controls_passed": true,
+    "word_count": 64,
+    "axes": {
+      "I": {
+        "code_bits": "5:3",
+        "observations_by_code": {
+          "0": {
+            "median_std": 5661.3547495277135,
+            "min_std": 5661.165569032582,
+            "max_std": 5661.3547495277135
+          },
+          "1": {
+            "median_std": 2830.813875902123,
+            "min_std": 2830.6251606314813,
+            "max_std": 2830.813875902123
+          },
+          "2": {
+            "median_std": 1415.161333558828,
+            "min_std": 1414.972932603306,
+            "max_std": 1415.161333558828
+          },
+          "3": {
+            "median_std": 707.7443041098953,
+            "min_std": 707.5569235050987,
+            "max_std": 707.7443041098953
+          },
+          "4": {
+            "median_std": 353.54716799884,
+            "min_std": 353.3621371907296,
+            "max_std": 353.54716799884
+          },
+          "5": {
+            "median_std": 176.97118409503847,
+            "min_std": 176.7891399379498,
+            "max_std": 176.97118409503847
+          },
+          "6": {
+            "median_std": 88.42850219244924,
+            "min_std": 88.25871061827269,
+            "max_std": 88.44433277491554
+          },
+          "7": {
+            "median_std": 0.0,
+            "min_std": 0.0,
+            "max_std": 2.6076809620810595
+          }
+        },
+        "max_relative_error_from_power_of_two_codes_1_through_6": 0.0008607178070393351,
+        "mute_code_7_max_std": 2.6076809620810595
+      },
+      "Q": {
+        "code_bits": "2:0",
+        "observations_by_code": {
+          "0": {
+            "median_std": 5838.172915390567,
+            "min_std": 5837.674450498245,
+            "max_std": 5838.172915390568
+          },
+          "1": {
+            "median_std": 2924.4931184736956,
+            "min_std": 2923.9967168244225,
+            "max_std": 2924.4931184736956
+          },
+          "2": {
+            "median_std": 1462.3016104757596,
+            "min_std": 1461.8061430983248,
+            "max_std": 1462.3016104757596
+          },
+          "3": {
+            "median_std": 730.9440471062063,
+            "min_std": 730.4508196997249,
+            "max_std": 730.9440471062063
+          },
+          "4": {
+            "median_std": 365.73432980785384,
+            "min_std": 365.2462183240232,
+            "max_std": 365.73432980785384
+          },
+          "5": {
+            "median_std": 182.79277885080688,
+            "min_std": 182.31730581598666,
+            "max_std": 182.79277885080688
+          },
+          "6": {
+            "median_std": 91.41772257062632,
+            "min_std": 90.97472176379546,
+            "max_std": 91.41772257062632
+          },
+          "7": {
+            "median_std": 0.0,
+            "min_std": 0.0,
+            "max_std": 2.8284271247461903
+          }
+        },
+        "max_relative_error_from_power_of_two_codes_1_through_6": 0.0004723963891068994,
+        "mute_code_7_max_std": 2.8284271247461903
+      }
+    },
+    "observed_function": "Independent powers-of-two attenuation of existing I/Q tones, code 7 mute",
+    "raw_sample_port": false,
+    "dds_zero_produced_nonzero_dc": false
+  },
+  "iqc_with_q_muted": {
+    "cases": 12,
+    "q_channel_always_zero": true,
+    "complex_envelope_hypothesis_passed": false
+  },
+  "phase_source_hypotheses": {
+    "controls_passed": true,
+    "observations": 19,
+    "nonzero_dc_found": false,
+    "phase_control_demonstrated": false
+  },
+  "dadck": {
+    "native_helper_va": "0x14045bf64",
+    "manual_bits_relative_bb_2bd4": "0xa000",
+    "path1_result_byte_addresses_relative_bb": [
+      "0xc4d0",
+      "0xc4d4"
+    ],
+    "result_width_bits": 7,
+    "baseline_codes": [
+      123,
+      120
+    ],
+    "state_count": 33,
+    "state_dwell_seconds": 0.04,
+    "heldout_uses_unseen_joint_codes": true,
+    "pilot_phase_residual_rad": 0.7963158018323303,
+    "heldout_modulation_to_residual_db": -26.24221655157723,
+    "axis_singular_values": [
+      0.2447092838780555,
+      2.9998277517204116e-05
+    ],
+    "qualified": false,
+    "limit": "Weak pilot and failed held-out prediction; no independent RF I/Q-axis proof"
+  },
+  "cleanup": {
+    "tpg": {
+      "rtl_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "pluto_tx_powerdown": "1"
+    },
+    "itqt": {
+      "rtl_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "pluto_tx_powerdown": "1"
+    },
+    "matrix": {
+      "rtl_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "pluto_tx_powerdown": "1"
+    },
+    "phase": {
+      "rtl_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "pluto_tx_powerdown": "1"
+    },
+    "dadck": {
+      "rtl_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x33722"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "pluto_tx_powerdown": "1"
+    }
+  }
+}

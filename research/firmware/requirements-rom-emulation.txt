@@ -1,0 +1,2 @@
+# Optional dependency for hardware-free RV32 patch and DMA/mailbox execution.
+unicorn==2.1.4

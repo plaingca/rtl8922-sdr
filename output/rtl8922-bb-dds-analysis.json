@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "input_sha256": {
+    "rtl8922-bb-dds-runtime-b.json": "193ff1e869f23d0f19e5674fc33ead6f27f80d798286786e5f04ee065a933d4c",
+    "rtl8922-bb-dds-rf-a.json": "c4ec1669023a1f4f902b6284119443565d3ecacf92beb85505d7e52e87521169",
+    "rtl8922-bb-dds-rf-b.json": "acbf8a186b625359a2d4ec696c169fb3b9db80a2a93f0a22f1c15d853328c174",
+    "rtl8922-bb-dds-rf-c.json": "bb85d32fd6ace07c39d3c6cc6d1a7f5cce05a16143f06f216210c3bc21866d04"
+  },
+  "runtime_status": "runtime_hook_and_same_word_benchmark_passed",
+  "same_word_lower_bound_updates_per_second": 10225747.790611835,
+  "fractional_rf_observations": [
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "run": 1,
+      "fraction_numerator": 16384,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 62500.0,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1328125.0,
+      "measured_shift_hz": 62500.0,
+      "error_hz": 0.0,
+      "observed_plateau_seconds": 0.024576000000000015,
+      "minimum_peak_above_floor_db": 21.624410953841526
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "run": 2,
+      "fraction_numerator": 32768,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 125000.0,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1390625.0,
+      "measured_shift_hz": 125000.0,
+      "error_hz": 0.0,
+      "observed_plateau_seconds": 0.015359999999999985,
+      "minimum_peak_above_floor_db": 22.69663221058963
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "run": 3,
+      "fraction_numerator": 49152,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 187500.0,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1453125.0,
+      "measured_shift_hz": 187500.0,
+      "error_hz": 0.0,
+      "observed_plateau_seconds": 0.01638400000000001,
+      "minimum_peak_above_floor_db": 21.913625698769362
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "run": 0,
+      "fraction_numerator": 10000,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 38146.97265625,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1303710.9375,
+      "measured_shift_hz": 38085.9375,
+      "error_hz": -61.03515625,
+      "observed_plateau_seconds": 0.008192000000000005,
+      "minimum_peak_above_floor_db": 22.83732346292492
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "run": 1,
+      "fraction_numerator": 32768,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 125000.0,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1390625.0,
+      "measured_shift_hz": 125000.0,
+      "error_hz": 0.0,
+      "observed_plateau_seconds": 0.024576000000000015,
+      "minimum_peak_above_floor_db": 23.042872254549597
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "run": 2,
+      "fraction_numerator": 40000,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 152587.890625,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1417968.75,
+      "measured_shift_hz": 152343.75,
+      "error_hz": -244.140625,
+      "observed_plateau_seconds": 0.024576000000000015,
+      "minimum_peak_above_floor_db": 22.13131137836582
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "run": 3,
+      "fraction_numerator": 12345,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 47092.437744140625,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1264648.4375,
+      "tone_hz": 1312500.0,
+      "measured_shift_hz": 47851.5625,
+      "error_hz": 759.124755859375,
+      "observed_plateau_seconds": 0.019456000000000015,
+      "minimum_peak_above_floor_db": 21.9260019690266
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-c.json",
+      "run": 0,
+      "fraction_numerator": 32768,
+      "fraction_denominator": 65536,
+      "predicted_shift_hz": 125000.0,
+      "clip_fraction": 0.0,
+      "pilot_hz": 1265625.0,
+      "tone_hz": 1390625.0,
+      "measured_shift_hz": 125000.0,
+      "error_hz": 0.0,
+      "observed_plateau_seconds": 0.02355199999999999,
+      "minimum_peak_above_floor_db": 22.52625980522389
+    }
+  ],
+  "finite_fractional_command_timings": [
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.02467869035899639,
+      "lower_bound_updates_per_second": 10622281.660276102
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.025165939703583717,
+      "lower_bound_updates_per_second": 10416618.774727087
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.02482036128640175,
+      "lower_bound_updates_per_second": 10561651.257817104
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.025193342939019203,
+      "lower_bound_updates_per_second": 10405288.438081551
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.02492418885231018,
+      "lower_bound_updates_per_second": 10517654.217489302
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.0257493257522583,
+      "lower_bound_updates_per_second": 10180616.08766626
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.024843724444508553,
+      "lower_bound_updates_per_second": 10551719.030112822
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.024942023679614067,
+      "lower_bound_updates_per_second": 10510133.554810906
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.025240972638130188,
+      "lower_bound_updates_per_second": 10385653.665500714
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.025016825646162033,
+      "lower_bound_updates_per_second": 10478707.558975091
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-c.json",
+      "count": 262144,
+      "host_bracket_seconds": 0.024928586557507515,
+      "lower_bound_updates_per_second": 10515798.775645083
+    }
+  ],
+  "all_eight_nonzero_fraction_observations_within_one_fft_bin": true,
+  "pattern_decoder_results": [
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "update_rate_hz": 1131571.9881269974,
+      "phase_symbols": 24.25,
+      "host_rate_lower_bound": 1111505.606903696,
+      "search_upper_bound": 1278231.4479392502,
+      "training_seconds": [
+        0.12,
+        0.13
+      ],
+      "heldout_seconds": [
+        0.13,
+        0.14
+      ],
+      "heldout_points": 10000,
+      "discriminator_center_hz": 1346035.4254657084,
+      "discriminator_half_swing_hz": 24400.470749052758,
+      "heldout_correlation": -0.001169837969149781,
+      "heldout_signal_error_db": -28.867324157756563,
+      "wrong_pattern_signal_error_db": -28.862190542067943,
+      "passed": false,
+      "scope": "finite repeated frequency pattern, interrupts enabled; not per-write jitter qualification"
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-c.json",
+      "update_rate_hz": 305353.0403709854,
+      "phase_symbols": 30.75,
+      "host_rate_lower_bound": 303174.22825062426,
+      "search_upper_bound": 348650.3624882179,
+      "training_seconds": [
+        0.12,
+        0.13
+      ],
+      "heldout_seconds": [
+        0.13,
+        0.14
+      ],
+      "heldout_points": 10001,
+      "discriminator_center_hz": 1223877.346572512,
+      "discriminator_half_swing_hz": 20089.26501055631,
+      "heldout_correlation": 0.002984044989853464,
+      "heldout_signal_error_db": -31.016500697805274,
+      "wrong_pattern_signal_error_db": -31.020639192826142,
+      "passed": false,
+      "scope": "finite repeated frequency pattern, interrupts enabled; not per-write jitter qualification"
+    }
+  ],
+  "cleanup_from_rf_reports": [
+    {
+      "report": "rtl8922-bb-dds-rf-a.json",
+      "errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      },
+      "mailbox_errors": [],
+      "pluto_tx_powerdown": "1",
+      "pluto_saved_equals_restored": true
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-b.json",
+      "errors": [],
+      "rtl_restore_mismatches": {},
+      "mailbox_errors": [],
+      "pluto_tx_powerdown": "1",
+      "pluto_saved_equals_restored": false
+    },
+    {
+      "report": "rtl8922-bb-dds-rf-c.json",
+      "errors": [],
+      "rtl_restore_mismatches": {},
+      "mailbox_errors": [],
+      "pluto_tx_powerdown": "1",
+      "pluto_saved_equals_restored": true
+    }
+  ],
+  "scope": "Finite fractional-frequency synthesis through BB-local NCO writes. Host brackets include command/observation overhead; no MCU clock or exact jitter claim.",
+  "not_demonstrated": [
+    "continuous host-fed streaming",
+    "arbitrary I/Q or clean QAM",
+    "held-out fast frequency-pattern decoding",
+    "spectral purity/SFDR",
+    "phase-noise or every-write timing qualification"
+  ]
+}

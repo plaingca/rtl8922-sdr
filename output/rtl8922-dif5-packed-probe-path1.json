@@ -1,0 +1,4274 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T04:53:16Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "30e2721b2a7409e5c928aeed35c04266c18397b94fa09cb5f356646e73bde929",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0df519150dc3545f1b828da0d2c8e3a5b743954240a45a38724185f06f35f1ad",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205",
+    "dac_phase_probe.py": "e288ea2adbf744d392fc03d66c79d6acc71f54ca39893b9773f235d0231c7c08"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 0,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-dif5-packed-probe-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": null,
+    "probe_iq_rf": false,
+    "probe_dac_phases": false,
+    "native_dac_clock4": false,
+    "probe_dif5": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1066\n\twdev 0x4800000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 72\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x33742",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000",
+    "bb:0:8030": "0x400000c0"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -1526855.46875,
+        "above_median_db": 16.029901970617026,
+        "power": 125457514.5724197
+      },
+      {
+        "hz": -1149475.09765625,
+        "above_median_db": 15.225975279471262,
+        "power": 104256708.68106984
+      },
+      {
+        "hz": -1064331.0546875,
+        "above_median_db": 15.0566949141397,
+        "power": 100271144.92493881
+      },
+      {
+        "hz": -1432983.3984375,
+        "above_median_db": 14.876603112928635,
+        "power": 96198166.30451794
+      },
+      {
+        "hz": -1513366.69921875,
+        "above_median_db": 14.767635569408315,
+        "power": 93814515.36553769
+      },
+      {
+        "hz": -1471496.58203125,
+        "above_median_db": 14.610070578727479,
+        "power": 90471864.43978971
+      },
+      {
+        "hz": -941650.390625,
+        "above_median_db": 14.555844623722884,
+        "power": 89349256.88193806
+      },
+      {
+        "hz": -1542907.71484375,
+        "above_median_db": 14.450420884240959,
+        "power": 87206442.62839726
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 27.99634500898831,
+    "mean_real": -0.0056915283203125,
+    "mean_imag": -0.025177001953125,
+    "clip_fraction": 0.0
+  },
+  "dif5_packed_probe": {
+    "scope": "Unknown 8030 field hypothesis; both RF paths held in standby",
+    "arbitrary_iq_rf_demonstrated": false,
+    "rows": [
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x345e4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x335ef",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x384e7",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3394c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x34101",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33d18",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x38b34",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x34329",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3405e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x366ab",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33780",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33e49",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x200200c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33725",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x200200c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33bfa",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x200200c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33f35",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc00400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33f49",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc00400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x35754",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0xc00400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33672",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000000",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33dd1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000000",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x3368b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000000",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x34319",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33556",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33729",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40000002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33a7e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3408c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33877",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x40002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x333b6",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x336b9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33d83",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 0,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x337b3",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x34335",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1471.9626939842408,
+          "imag_std": 1414.6634775162934,
+          "real_mean": 140.752001953125,
+          "imag_mean": -76.8794921875,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -127988.46713578224,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 99.72305550740683
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x334b9",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -26.6203369140625,
+              "std": 359.60426372030685,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 29.48974609375,
+              "std": 362.2611135587293,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -26.719580078125,
+              "std": 359.57962174250076,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 29.3961669921875,
+              "std": 362.24852013742355,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 359.5919463662296,
+          "interleaved_imag_std": 362.2548199245167,
+          "interleaved_real_mean": -26.66995849609375,
+          "interleaved_imag_mean": 29.44295654296875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x378df",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -0.7919189453125,
+              "std": 21.46558014556368,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.7809326171875,
+              "std": 23.428336390047527,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.78935546875,
+              "std": 21.46095687282092,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.78447265625,
+              "std": 23.423605946613367,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.78935546875,
+              "std": 21.46095687282092,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.78447265625,
+              "std": 23.423605946613367,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.7923583984375,
+              "std": 21.465482038495853,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.782421875,
+              "std": 23.428191351316396,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 21.46324414998548,
+          "interleaved_imag_std": 23.42593507208851,
+          "interleaved_real_mean": -0.7907470703125,
+          "interleaved_imag_mean": 2.783074951171875,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3463b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1393.9669269988049,
+          "imag_std": 1491.5340713170133,
+          "real_mean": -30.824365234375,
+          "imag_mean": -157.229296875,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 57121.77772367474,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 100.94352683239799
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x343ef",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 43.6972412109375,
+              "std": 374.47322370977633,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.2914794921875,
+              "std": 346.2561115007498,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 43.6183349609375,
+              "std": 374.46464221903204,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.2007080078125,
+              "std": 346.23734595064127,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 374.46893506732835,
+          "interleaved_imag_std": 346.2467318273885,
+          "interleaved_real_mean": 43.6577880859375,
+          "interleaved_imag_mean": 0.24609375,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33870",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 1.7100830078125,
+              "std": 22.98336282384126,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.4984375,
+              "std": 22.07646064807703,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.713330078125,
+              "std": 22.97880940527636,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.501904296875,
+              "std": 22.07132428624647,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.713330078125,
+              "std": 22.97880940527636,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.501904296875,
+              "std": 22.07132428624647,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.7108154296875,
+              "std": 22.983722590568977,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.499560546875,
+              "std": 22.075977421254898,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.981176225055172,
+          "interleaved_imag_std": 22.073771848159453,
+          "interleaved_real_mean": 1.7118896484375,
+          "interleaved_imag_mean": 0.50045166015625,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33aa6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1457.54426345577,
+          "imag_std": 1429.9911068027434,
+          "real_mean": 121.6529296875,
+          "imag_mean": -96.6583984375,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -134711.3499949265,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 96.03586052425234
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33eec",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -20.6737060546875,
+              "std": 354.62844552712886,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 34.158642578125,
+              "std": 367.0509879597383,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -21.0010498046875,
+              "std": 354.7654183052022,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 33.988818359375,
+              "std": 366.95554338671127,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 354.69697629047965,
+          "interleaved_imag_std": 367.0032785988356,
+          "interleaved_real_mean": -20.8373779296875,
+          "interleaved_imag_mean": 34.07373046875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33ffb",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -1.535693359375,
+              "std": 21.998503931014184,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.7447998046875,
+              "std": 23.006117240366745,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -1.61044921875,
+              "std": 22.03950107445045,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.74765625,
+              "std": 23.001298035191642,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -1.61044921875,
+              "std": 22.03950107445045,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.74765625,
+              "std": 23.001298035191642,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -1.6134033203125,
+              "std": 22.044092689413237,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.7447265625,
+              "std": 23.006028878730504,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.030431913695054,
+          "interleaved_imag_std": 23.00368571678471,
+          "interleaved_real_mean": -1.592498779296875,
+          "interleaved_imag_mean": 1.746209716796875,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x355f3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1433.9132504266022,
+          "imag_std": 1453.1829148284387,
+          "real_mean": -102.43212890625,
+          "imag_mean": -123.140576171875,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 149169.27626469135,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 100.52160272970197
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33543",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 9.6532958984375,
+              "std": 349.7851770087678,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 37.664501953125,
+              "std": 371.80089990420436,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 9.55634765625,
+              "std": 349.76453379428324,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 37.57998046875,
+              "std": 371.7947880268171,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 349.77485891274983,
+          "interleaved_imag_std": 371.7978463798726,
+          "interleaved_real_mean": 9.60482177734375,
+          "interleaved_imag_mean": 37.6222412109375,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3472a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 1.9819580078125,
+              "std": 23.28917108692805,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.0634521484375,
+              "std": 21.742972153840217,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.9848876953125,
+              "std": 23.2844637282123,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.0607177734375,
+              "std": 21.738073684935294,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.9848876953125,
+              "std": 23.2844637282123,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.0607177734375,
+              "std": 21.738073684935294,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.98212890625,
+              "std": 23.289358339679694,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.063818359375,
+              "std": 21.742760546935656,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 23.286864388080335,
+          "interleaved_imag_std": 21.740470199182404,
+          "interleaved_real_mean": 1.983465576171875,
+          "interleaved_imag_mean": -0.062176513671875,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x200200c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x342b0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1417.2778999022178,
+          "imag_std": 1469.3516915963546,
+          "real_mean": -80.586181640625,
+          "imag_mean": -138.4224609375,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 131887.73566193573,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 101.47043851913696
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x200200c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33609",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -34.7454345703125,
+              "std": 369.57334553593245,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 15.620703125,
+              "std": 352.2266389092655,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -34.9221923828125,
+              "std": 369.6321709780566,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 15.383056640625,
+              "std": 352.1413739010549,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 369.60276999383746,
+          "interleaved_imag_std": 352.1840290303966,
+          "interleaved_real_mean": -34.8338134765625,
+          "interleaved_imag_mean": 15.5018798828125,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x200200c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33750",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.1285888671875,
+              "std": 21.84550786607336,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.8343505859375,
+              "std": 23.222870948190454,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.13134765625,
+              "std": 21.84066689034638,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.837890625,
+              "std": 23.218145177261945,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.13134765625,
+              "std": 21.84066689034638,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.837890625,
+              "std": 23.218145177261945,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.1282470703125,
+              "std": 21.845306475159457,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.8357177734375,
+              "std": 23.22293953249078,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 21.843037208638954,
+          "interleaved_imag_std": 23.220525379740746,
+          "interleaved_real_mean": 0.1298828125,
+          "interleaved_imag_mean": 1.83646240234375,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc00400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x347e3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1390.9927466195827,
+          "imag_std": 1494.35024081011,
+          "real_mean": -10.23623046875,
+          "imag_mean": -159.46201171875,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 19073.86078063009,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 103.77048754515171
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc00400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x337e5",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -37.8186767578125,
+              "std": 371.58208054984163,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -7.157275390625,
+              "std": 350.09387527445534,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -37.9199462890625,
+              "std": 371.557214615737,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -7.257470703125,
+              "std": 350.06864933316496,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 371.5696512408628,
+          "interleaved_imag_std": 350.0812661155854,
+          "interleaved_real_mean": -37.8693115234375,
+          "interleaved_imag_mean": -7.207373046875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0xc00400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33eb8",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 1.4933349609375,
+              "std": 22.808914626448786,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.63369140625,
+              "std": 22.24838362383928,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.4968505859375,
+              "std": 22.804184911024358,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.637109375,
+              "std": 22.243369356196062,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.4968505859375,
+              "std": 22.804184911024358,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.637109375,
+              "std": 22.243369356196062,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.49453125,
+              "std": 22.808914944647157,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.63466796875,
+              "std": 22.24822410589928,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.80655002147632,
+          "interleaved_imag_std": 22.24583679833188,
+          "interleaved_real_mean": 1.495391845703125,
+          "interleaved_imag_mean": 0.63564453125,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000000",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x34010",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1453.7375892306861,
+          "imag_std": 1433.7902752195662,
+          "real_mean": -123.4560546875,
+          "imag_mean": -95.23134765625,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 138251.5902935982,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 96.77007880527918
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000000",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33631",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 14.3096923828125,
+              "std": 351.6247830437851,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 34.19765625,
+              "std": 370.19088013975636,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 14.218017578125,
+              "std": 351.609294146293,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 34.1167724609375,
+              "std": 370.17988997160245,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 351.617041668047,
+          "interleaved_imag_std": 370.1853873055559,
+          "interleaved_real_mean": 14.26385498046875,
+          "interleaved_imag_mean": 34.15721435546875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000000",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x34cbe",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -0.4852783203125,
+              "std": 21.716892413157257,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.9301025390625,
+              "std": 23.27444263080519,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.482080078125,
+              "std": 21.711902499007312,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.9273681640625,
+              "std": 23.27040903229831,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.482080078125,
+              "std": 21.711902499007312,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.9273681640625,
+              "std": 23.27040903229831,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.4845947265625,
+              "std": 21.71646698841228,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.9304931640625,
+              "std": 23.274796250009267,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 21.714291280106163,
+          "interleaved_imag_std": 23.2725143784164,
+          "interleaved_real_mean": -0.48350830078125,
+          "interleaved_imag_mean": -2.9288330078125,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33b78",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1488.3339185888515,
+          "imag_std": 1397.6488404339825,
+          "real_mean": -153.58671875,
+          "imag_mean": 36.550732421875,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -62179.68024410247,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 98.35458018541792
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x3401e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -21.4474365234375,
+              "std": 355.4137581374827,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -31.239892578125,
+              "std": 366.5096155111047,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -21.5423583984375,
+              "std": 355.3904376135806,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -31.3444091796875,
+              "std": 366.48111569976356,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 355.4021012358133,
+          "interleaved_imag_std": 366.4953696081994,
+          "interleaved_real_mean": -21.4948974609375,
+          "interleaved_imag_mean": -31.29215087890625,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40000002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3333b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.7823486328125,
+              "std": 22.144324539883215,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.5516357421875,
+              "std": 22.96609401650896,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.7853271484375,
+              "std": 22.139573778423095,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.5552490234375,
+              "std": 22.96113552114549,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.7853271484375,
+              "std": 22.139573778423095,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.5552490234375,
+              "std": 22.96113552114549,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.7825439453125,
+              "std": 22.144414658319423,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.5531005859375,
+              "std": 22.965867435098616,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.14197186558917,
+          "interleaved_imag_std": 22.96355830242073,
+          "interleaved_real_mean": 0.78388671875,
+          "interleaved_imag_mean": 1.55380859375,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3359f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1410.1719008907914,
+          "imag_std": 1477.069197259729,
+          "real_mean": 51.734326171875,
+          "imag_mean": -143.216015625,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -98114.2845869637,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 95.80650930700472
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x335e8",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -37.9926025390625,
+              "std": 371.2153139296162,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -10.151171875,
+              "std": 350.3802612020731,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -38.0899169921875,
+              "std": 371.19117759992685,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -10.25205078125,
+              "std": 350.35383578562477,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 371.2032491499336,
+          "interleaved_imag_std": 350.3670523736574,
+          "interleaved_real_mean": -38.041259765625,
+          "interleaved_imag_mean": -10.201611328125,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x40002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3353d",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 3.0744140625,
+              "std": 23.033164982472606,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.803564453125,
+              "std": 21.765460942260077,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 3.077783203125,
+              "std": 23.028324198653962,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8012451171875,
+              "std": 21.761086735515317,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 3.077783203125,
+              "std": 23.028324198653962,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8012451171875,
+              "std": 21.761086735515317,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 3.0757080078125,
+              "std": 23.033020321562056,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8044189453125,
+              "std": 21.76533123016647,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 23.030708593567315,
+          "interleaved_imag_std": 21.763241562999877,
+          "interleaved_real_mean": 3.076422119140625,
+          "interleaved_imag_mean": -2.802618408203125,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x35270",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1493.2034974936705,
+          "imag_std": 1392.2908882333356,
+          "real_mean": 158.3298828125,
+          "imag_mean": 7.49521484375,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 15945.110660572096,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 96.05054282762553
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33dc9",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 32.8400390625,
+              "std": 365.6263714562932,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -22.791552734375,
+              "std": 356.15310456808805,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 32.7489990234375,
+              "std": 365.6173283269323,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -22.882373046875,
+              "std": 356.1270992526447,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 365.6218527531988,
+          "interleaved_imag_std": 356.1401050427732,
+          "interleaved_real_mean": 32.79451904296875,
+          "interleaved_imag_mean": -22.836962890625,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "dds_word": 1,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x38d81",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 2.0,
+              "std": 0.0,
+              "min": 2,
+              "max": 2
+            },
+            {
+              "mean": 31.0,
+              "std": 0.0,
+              "min": 31,
+              "max": 31
+            },
+            {
+              "mean": 2.0,
+              "std": 0.0,
+              "min": 2,
+              "max": 2
+            },
+            {
+              "mean": 31.0,
+              "std": 0.0,
+              "min": 31,
+              "max": 31
+            },
+            {
+              "mean": 2.0,
+              "std": 0.0,
+              "min": 2,
+              "max": 2
+            },
+            {
+              "mean": 31.0,
+              "std": 0.0,
+              "min": 31,
+              "max": 31
+            },
+            {
+              "mean": 2.0,
+              "std": 0.0,
+              "min": 2,
+              "max": 2
+            },
+            {
+              "mean": 31.0,
+              "std": 0.0,
+              "min": 31,
+              "max": 31
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.0,
+          "interleaved_imag_mean": 31.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33808",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x325be",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -435.75,
+              "std": 268.82324583264744,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.578578061203,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 38.125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33e02",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -22.3859375,
+              "std": 22.866346499738295,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -22.3859375,
+              "std": 22.866346499738295,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.636884337139193,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 4.80703125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33535",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x3354a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -437.75,
+              "std": 265.55401992814944,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.6522636540447,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 37.125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33416",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 32.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3397e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x34829",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -512.0,
+              "std": 0.0,
+              "min": -512,
+              "max": -512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 512.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33134",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -25.640625,
+              "std": 19.145713609301037,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -25.640625,
+              "std": 19.145713609301037,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.84163292612902,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 3.1796875,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x3440c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x34b4b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -425.425,
+              "std": 284.8816760955327,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.1668279531216,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 43.2875,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33dbe",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9390625,
+              "std": 17.2709846743344,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9390625,
+              "std": 17.2709846743344,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.89979197275859,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.53046875,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x200200c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x34b2b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x200200c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33437",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -436.725,
+              "std": 267.2363642452127,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.61474576607174,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 37.6375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x200200c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3342c",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.44375,
+              "std": 16.45723506356703,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.44375,
+              "std": 16.45723506356703,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.91880553035115,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.278125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc00400c2",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x383f4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc00400c2",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33434",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -439.25,
+              "std": 263.0654623853158,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.7062358881082,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 36.375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0xc00400c2",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3341b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.4046875,
+              "std": 16.522200308292593,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.4046875,
+              "std": 16.522200308292593,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.91740552984901,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.29765625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000000",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x357e1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000000",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x33e5e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -432.85,
+              "std": 273.46823855797226,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.46823542214656,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 39.575,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000000",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x33e28",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.0703125,
+              "std": 17.06452991301969,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.0703125,
+              "std": 17.06452991301969,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.904929796006225,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.46484375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33fb0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x34959",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -431.575,
+              "std": 275.4759869298956,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.4184115446367,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 40.2125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40000002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x34029",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9734375,
+              "std": 17.217249183118476,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9734375,
+              "std": 17.217249183118476,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.901150721539793,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.51328125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40002",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x347cc",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40002",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x3352e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -437.225,
+              "std": 266.4175282803292,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.63311177767355,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 37.3875,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x40002",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x3363a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.2546875,
+              "std": 16.76848261702125,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -27.2546875,
+              "std": 16.76848261702125,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.91191787278439,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.37265625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 0,
+        "tx_dac_debug": {
+          "status": "0x33529",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 12,
+        "tx_dac_debug": {
+          "status": "0x3364f",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -435.65,
+              "std": 268.98527376047934,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.57484208977627,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 38.175,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "dds_word": 640,
+        "word_8030": "0x400000c0",
+        "data_type": 14,
+        "tx_dac_debug": {
+          "status": "0x337e5",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 32.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      }
+    ]
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1025878.90625,
+        "above_median_db": 22.156731637457586,
+        "power": 3093054.270308953
+      },
+      {
+        "hz": 958374.0234375,
+        "above_median_db": 15.555878744843179,
+        "power": 676553.6647697068
+      },
+      {
+        "hz": -66772.4609375,
+        "above_median_db": 12.463207778592938,
+        "power": 331921.32405734505
+      },
+      {
+        "hz": 183105.46875,
+        "above_median_db": 12.263671117543387,
+        "power": 317016.22355624073
+      },
+      {
+        "hz": -1546875.0,
+        "above_median_db": 12.19039754594979,
+        "power": 311712.43733967235
+      },
+      {
+        "hz": -1116210.9375,
+        "above_median_db": 11.799342032414213,
+        "power": 284871.22270974406
+      },
+      {
+        "hz": -1491210.9375,
+        "above_median_db": 11.648091816255096,
+        "power": 275120.88384762424
+      },
+      {
+        "hz": -1525939.94140625,
+        "above_median_db": 11.637630759148,
+        "power": 274458.9846238492
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0936035058144644,
+    "mean_real": 0.0039520263671875,
+    "mean_imag": -0.0191650390625,
+    "clip_fraction": 0.0
+  },
+  "status": "dif5_packed_probe_complete_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:1:0": {
+      "saved": "0x33742",
+      "actual": "0x337e2"
+    }
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

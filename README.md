@@ -4,29 +4,40 @@ Experimental raw I/Q reception from a Realtek RTL8922AE Wi-Fi card: patched
 Linux driver, SoapySDR plugin, live FFT/waterfall demo and timed ADALM-Pluto
 waterfall text and reference tone generation.
 
+## Start here
+
+- [Getting started](docs/getting-started.md): setup, offline checks, receiver launch,
+  SSH forwarding and troubleshooting.
+- [Receive and transmit capabilities](docs/capabilities.md): what has actually
+  worked, what remains experimental, and links to measured evidence.
+- [Transmit quick start](docs/transmit.md): compile application I/Q without
+  hardware, then follow the appropriate bounded lab experiment.
+- [Research map](docs/research-map.md): firmware, tuning and waveform investigations.
+
+```sh
+make help
+make doctor PYTHON=.venv/bin/python
+make check PYTHON=.venv/bin/python
+```
+
+These commands never open a radio. The demo is stopped on the original host;
+launching it is a separate, explicit action.
+
 ## Current state
 
-- One qualified receive path (`PATH1`), CF32/CS16 output.
-- Free-tuning requested centers: **2312–2382, 2412–2484, 2500–2515 and
-  4900–7115 MHz**, subject to enabled baseline channels. Actual RF tone
-  validation ends at 6 GHz because of the available Pluto reference.
-- Free tuning captures at 20 MS/s, with filtered output at 1.25, 2.5, 5, 10
-  and 20 MS/s. The browser demo now focuses on experimental **40 MS/s**
-  reception at 2422–2462 MHz, with a 1 MHz Pluto waterfall-text signal.
-- Coarse retunes cause gaps. Indefinite gapless reception, continuous
-  80/160 MS/s and 320 MB/s extraction remain unresolved. Allocation timeouts
-  can require a receiver restart.
-- Full S/C-band coverage remains unresolved. 76 recent valid PLL/LCK/VCO
-  trials unlocked no further windows. No Realtek raw-I/Q TX path is qualified.
+| Path | Demonstrated result | Main limit |
+| --- | --- | --- |
+| RTL8922 receive | One PATH1 diagnostic I/Q path, CF32/CS16; 20 MS/s free tuning and experimental 40 MS/s demo | Retune gaps; indefinite sample continuity is unqualified |
+| Pluto transmit | Timed waterfall text or reference tone in the browser demo | External Pluto hardware, separate from RTL8922 TX |
+| RTL8922 experimental transmit | Bounded 200-kHz OFDM from causally compiled 533.333 kS/s I/Q; 2027/2048 exact CRC frames in two runs | Constrained NCO commands, distortion and host refill deadlines; no Soapy TX stream |
+| RTL8922 LoRa experiment | Selected presets decoded on Pluto, including 10/10 Short Turbo at 1.625 MHz | SF11/SF12 failures; commercial-node interoperability unqualified |
 
-See [synthesizer findings](synthesizer-findings.md),
-[validation summary](validation-summary.json) and
-[development history](docs/development-history.txt) for evidence and limitations.
-
-The [streaming throughput investigation](docs/streaming-throughput.md) covers
-40/80/160 MS/s tests, the firmware PAXI bypass lead, and the PCIe/precision
-constraints on 320 MS/s. The isolated experimental patch and bounded manual
-tools preserve both successful and rejected measurements.
+Free-tuning requested centers are **2312–2382, 2412–2484, 2500–2515 and
+4900–7115 MHz**, subject to enabled baseline channels. External RF tone
+validation ends at 6 GHz. The browser demo uses **2422–2462 MHz at 40 MS/s**.
+Continuous 80/160 MS/s reception, raw DAC replay, indefinite arbitrary-I/Q TX,
+and emission masks remain unresolved. Command rate, I/Q input rate and occupied
+RF bandwidth are different quantities; see the [capability guide](docs/capabilities.md).
 
 ## Contents
 
@@ -38,6 +49,7 @@ tools preserve both successful and rejected measurements.
   builds the RF text waveform; `tests/` contains hardware-free checks.
 - `*-check.cpp`, `*-check.py`, `coded-continuity.py`: hardware validation tools.
   Some older tools retain host paths; inspect before running.
+- `tools/`, `Makefile`: local setup diagnostics and hardware-free build/test shortcuts.
 - `research/`, `output/`: archived experiments, analysis and small reports.
 - `examples/beastmode/`: original host-specific launchers for reference.
 

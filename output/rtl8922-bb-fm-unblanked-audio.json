@@ -1,0 +1,11 @@
+{
+  "trace_sha256": "40601d16ea092359041b8341ffcfe53797ddca869e6e5bd78d7efad531f41ee0",
+  "output": "output/audio/rtl8922-bb-fm-unblanked.wav",
+  "start_sample": 8035,
+  "samples": 123480,
+  "audio_rate": 32000,
+  "normalizer": 1.6772933091990525,
+  "blanking": false,
+  "reference_audio_inserted": false,
+  "sha256": "8bba1e332898bc5715060c160555c9dc16613ddaf4549010180d366ff1850112"
+}

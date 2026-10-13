@@ -1,0 +1,27 @@
+{
+  "phase_models": {
+    "continuous": 0.04806872777716871,
+    "paused": 0.20609062027613062,
+    "reset": 0.11521334167077082
+  },
+  "best_model": "paused",
+  "residual_cfo_hz": 206.5,
+  "received_repetitions": 68,
+  "quiet_repetitions": 64,
+  "model_selection_qualified": false,
+  "schema_version": 1,
+  "hardware_access": false,
+  "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16.json",
+  "rf_report": "output/rtl8922-bb-nco-gate-phase16-a.json",
+  "off_phase_models": {
+    "continuous": 0.03532212277792627,
+    "paused": 0.07717829027951942,
+    "reset": 0.05750227551395991
+  },
+  "off_qualified": false,
+  "counter_ticks_per_nco_write": 60.00007605552673,
+  "rf_rate_assumed_for_models": 10666666.666666666,
+  "scope": "Periodic finite models, not proof of every peripheral latch or zero jitter",
+  "qualified": false,
+  "private_fold": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/phase16-a-fold.npz"
+}

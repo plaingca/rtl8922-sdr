@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "input_sha256": {
+    "firmware": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+    "rom_code": "048b294373e64d67ae11c1c779ce9047729a72c19b809ca18f15b4a7882ba758",
+    "rom_tables": "19e55f746ba1a9ba9d4f8a40ceeb585490135706583337941ab41625f5155789"
+  },
+  "idle_hook": "0x100104a4",
+  "idle_task_call": "0x100132f2",
+  "timer_api_root": "0x10021efc",
+  "refresh_pointer": "0x1000779a",
+  "timer_object": "0x1002c1a4",
+  "refresh_argument": 1000000,
+  "interpretation": "Idle task refreshes the configured timer then WFI; continuous consumer calls refresh only, once per block.",
+  "evidence": {
+    "idle_hook": [
+      {
+        "address": "0x100104a4",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, -0x10"
+      },
+      {
+        "address": "0x100104a6",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x100104a8",
+        "size": 4,
+        "mnemonic": "lui",
+        "operands": "a1, 0xf4"
+      },
+      {
+        "address": "0x100104ac",
+        "size": 4,
+        "mnemonic": "lw",
+        "operands": "a5, -0x6c0(gp)"
+      },
+      {
+        "address": "0x100104b0",
+        "size": 4,
+        "mnemonic": "lui",
+        "operands": "a0, 0x1002c"
+      },
+      {
+        "address": "0x100104b4",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "a1, a1, 0x240"
+      },
+      {
+        "address": "0x100104b8",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "a0, a0, 0x1a4"
+      },
+      {
+        "address": "0x100104bc",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0x70(a5)"
+      },
+      {
+        "address": "0x100104be",
+        "size": 2,
+        "mnemonic": "c.jalr",
+        "operands": "a5"
+      },
+      {
+        "address": "0x100104c0",
+        "size": 4,
+        "mnemonic": "wfi",
+        "operands": ""
+      },
+      {
+        "address": "0x100104c4",
+        "size": 2,
+        "mnemonic": "c.lwsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x100104c6",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, 0x10"
+      },
+      {
+        "address": "0x100104c8",
+        "size": 2,
+        "mnemonic": "c.jr",
+        "operands": "ra"
+      }
+    ],
+    "idle_task": [
+      {
+        "address": "0x100132e4",
+        "size": 4,
+        "mnemonic": "jal",
+        "operands": "-0x78",
+        "direct_target": "0x1001326c"
+      },
+      {
+        "address": "0x100132e8",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0(s0)"
+      },
+      {
+        "address": "0x100132ea",
+        "size": 4,
+        "mnemonic": "bgeu",
+        "operands": "s1, a5, 8"
+      },
+      {
+        "address": "0x100132ee",
+        "size": 4,
+        "mnemonic": "ecall",
+        "operands": ""
+      },
+      {
+        "address": "0x100132f2",
+        "size": 4,
+        "mnemonic": "jal",
+        "operands": "-0x2e4e",
+        "direct_target": "0x100104a4"
+      },
+      {
+        "address": "0x100132f6",
+        "size": 2,
+        "mnemonic": "c.j",
+        "operands": "-0x12",
+        "direct_target": "0x100132e4"
+      }
+    ],
+    "refresh_entry": [
+      {
+        "address": "0x1000779a",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, -0x10"
+      },
+      {
+        "address": "0x1000779c",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x1000779e",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "s0, 8(sp)"
+      },
+      {
+        "address": "0x100077a0",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a4, 0(a0)"
+      },
+      {
+        "address": "0x100077a2",
+        "size": 2,
+        "mnemonic": "c.li",
+        "operands": "a2, 0"
+      },
+      {
+        "address": "0x100077a4",
+        "size": 2,
+        "mnemonic": "c.mv",
+        "operands": "s0, a0"
+      },
+      {
+        "address": "0x100077a6",
+        "size": 4,
+        "mnemonic": "lbu",
+        "operands": "a5, 0x10(a4)"
+      },
+      {
+        "address": "0x100077aa",
+        "size": 2,
+        "mnemonic": "c.andi",
+        "operands": "a5, -2"
+      },
+      {
+        "address": "0x100077ac",
+        "size": 4,
+        "mnemonic": "sb",
+        "operands": "a5, 0x10(a4)"
+      },
+      {
+        "address": "0x100077b0",
+        "size": 4,
+        "mnemonic": "jal",
+        "operands": "-0x1ac",
+        "direct_target": "0x10007604"
+      },
+      {
+        "address": "0x100077b4",
+        "size": 2,
+        "mnemonic": "c.li",
+        "operands": "a1, 1"
+      },
+      {
+        "address": "0x100077b6",
+        "size": 2,
+        "mnemonic": "c.mv",
+        "operands": "a0, s0"
+      },
+      {
+        "address": "0x100077b8",
+        "size": 2,
+        "mnemonic": "c.lwsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x100077ba",
+        "size": 2,
+        "mnemonic": "c.lwsp",
+        "operands": "s0, 8(sp)"
+      },
+      {
+        "address": "0x100077bc",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, 0x10"
+      },
+      {
+        "address": "0x100077be",
+        "size": 4,
+        "mnemonic": "j",
+        "operands": "-0x3ee",
+        "direct_target": "0x100073d0"
+      }
+    ],
+    "timer_load_write": [
+      {
+        "address": "0x100073be",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0(a0)"
+      },
+      {
+        "address": "0x100073c0",
+        "size": 2,
+        "mnemonic": "c.sw",
+        "operands": "a1, 0(a5)"
+      },
+      {
+        "address": "0x100073c2",
+        "size": 2,
+        "mnemonic": "c.jr",
+        "operands": "ra"
+      }
+    ],
+    "timer_restart": [
+      {
+        "address": "0x100073c4",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a4, 0(a0)"
+      },
+      {
+        "address": "0x100073c6",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0x10(a4)"
+      },
+      {
+        "address": "0x100073c8",
+        "size": 4,
+        "mnemonic": "ori",
+        "operands": "a5, a5, 1"
+      },
+      {
+        "address": "0x100073cc",
+        "size": 2,
+        "mnemonic": "c.sw",
+        "operands": "a5, 0x10(a4)"
+      },
+      {
+        "address": "0x100073ce",
+        "size": 2,
+        "mnemonic": "c.jr",
+        "operands": "ra"
+      },
+      {
+        "address": "0x100073d0",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, -0x10"
+      },
+      {
+        "address": "0x100073d2",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x100073d4",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "s0, 8(sp)"
+      },
+      {
+        "address": "0x100073d6",
+        "size": 2,
+        "mnemonic": "c.mv",
+        "operands": "s0, a0"
+      },
+      {
+        "address": "0x100073d8",
+        "size": 2,
+        "mnemonic": "c.jal",
+        "operands": "-0x6c",
+        "direct_target": "0x1000736c"
+      },
+      {
+        "address": "0x100073da",
+        "size": 2,
+        "mnemonic": "c.mv",
+        "operands": "a0, s0"
+      },
+      {
+        "address": "0x100073dc",
+        "size": 2,
+        "mnemonic": "c.lwsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x100073de",
+        "size": 2,
+        "mnemonic": "c.lwsp",
+        "operands": "s0, 8(sp)"
+      },
+      {
+        "address": "0x100073e0",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, 0x10"
+      },
+      {
+        "address": "0x100073e2",
+        "size": 2,
+        "mnemonic": "c.j",
+        "operands": "-0x1e",
+        "direct_target": "0x100073c4"
+      }
+    ],
+    "timeout_handler_entry": [
+      {
+        "address": "0x10014c80",
+        "size": 2,
+        "mnemonic": "c.addi",
+        "operands": "sp, -0x10"
+      },
+      {
+        "address": "0x10014c82",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "ra, 0xc(sp)"
+      },
+      {
+        "address": "0x10014c84",
+        "size": 2,
+        "mnemonic": "c.swsp",
+        "operands": "s0, 8(sp)"
+      },
+      {
+        "address": "0x10014c86",
+        "size": 4,
+        "mnemonic": "lui",
+        "operands": "a0, 0x1002c"
+      },
+      {
+        "address": "0x10014c8a",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "s0, gp, -0x6c0"
+      },
+      {
+        "address": "0x10014c8e",
+        "size": 2,
+        "mnemonic": "c.li",
+        "operands": "a1, 0x14"
+      },
+      {
+        "address": "0x10014c90",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0(s0)"
+      },
+      {
+        "address": "0x10014c92",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "a0, a0, 0x1a4"
+      },
+      {
+        "address": "0x10014c96",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0x70(a5)"
+      },
+      {
+        "address": "0x10014c98",
+        "size": 2,
+        "mnemonic": "c.jalr",
+        "operands": "a5"
+      },
+      {
+        "address": "0x10014c9a",
+        "size": 2,
+        "mnemonic": "c.li",
+        "operands": "a4, 1"
+      },
+      {
+        "address": "0x10014c9c",
+        "size": 4,
+        "mnemonic": "lui",
+        "operands": "a5, 0xa0018"
+      },
+      {
+        "address": "0x10014ca0",
+        "size": 4,
+        "mnemonic": "sw",
+        "operands": "a4, -0x4c4(a5)"
+      },
+      {
+        "address": "0x10014ca4",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0(s0)"
+      },
+      {
+        "address": "0x10014ca6",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "a0, gp, -0x28c"
+      },
+      {
+        "address": "0x10014caa",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0x24(a5)"
+      },
+      {
+        "address": "0x10014cac",
+        "size": 2,
+        "mnemonic": "c.jalr",
+        "operands": "a5"
+      },
+      {
+        "address": "0x10014cae",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0(s0)"
+      },
+      {
+        "address": "0x10014cb0",
+        "size": 4,
+        "mnemonic": "lui",
+        "operands": "a0, 0x1002c"
+      },
+      {
+        "address": "0x10014cb4",
+        "size": 4,
+        "mnemonic": "addi",
+        "operands": "a0, a0, 0x160"
+      },
+      {
+        "address": "0x10014cb8",
+        "size": 2,
+        "mnemonic": "c.lw",
+        "operands": "a5, 0x18(a5)"
+      },
+      {
+        "address": "0x10014cba",
+        "size": 2,
+        "mnemonic": "c.jalr",
+        "operands": "a5"
+      }
+    ]
+  },
+  "scope": "Existing timer is serviced, not disabled; interrupts remain enabled. Physical watchdog timing and all other task servicing are not exhaustively characterized."
+}

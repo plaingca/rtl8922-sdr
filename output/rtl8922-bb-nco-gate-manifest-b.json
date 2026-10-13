@@ -1,0 +1,26 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16.bin",
+    "report": "output/rtl8922-bb-nco-gate-phase16-b.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16-b.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18.bin",
+    "report": "output/rtl8922-bb-nco-gate-phase18-b.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18-b.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-half-b.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half-b.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-levels.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-levels.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-levels-b.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-levels-b.cf32"
+  }
+]

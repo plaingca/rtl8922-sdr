@@ -1,5 +1,12 @@
 # 40 MS/s waterfall-text demo
 
+For setup and troubleshooting, see [getting started](getting-started.md).
+The browser labels the external **Pluto** transmitter explicitly, waits for live
+samples before enabling tune/start controls, preserves command errors between
+frame updates, and shows that pausing the display leaves reception running.
+These UI refinements were checked with mocked API responses, without RF access;
+the hardware measurements below retain their original dates and scope.
+
 The live demo captures experimental 40 MS/s CF32 at 2422 MHz and offers
 receiver centers from 2422 to 2462 MHz. Pluto sends `RTL8922` on a nominal
 1 MHz canvas centered at +750 kHz. The browser provides a 40 MHz overview,

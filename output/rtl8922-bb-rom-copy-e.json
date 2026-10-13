@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "source_local": "0x10000028",
+  "bytes": 96,
+  "output_local": "0x10017b00",
+  "output_host_hypothesis": "0x1863fb00",
+  "writes": "save, select and restore register 0xc04 only",
+  "deadline_seconds": 20,
+  "started_utc": "2026-10-12T23:40:02Z",
+  "raw_directory": "/tmp/rtl8922-bb-rom-copy-20261012-e",
+  "status": "failed",
+  "selector_before": "0x18780000",
+  "stub_readback_matches": false,
+  "selector_after": "0x18780000",
+  "selector_restored": true,
+  "error": "ValueError: Temporary BB code did not reach the expected RAM window",
+  "finished_utc": "2026-10-12T23:40:02Z",
+  "loader": {
+    "interface_up_exit": 2,
+    "reported_secure_boot": false,
+    "message": "fw security fail",
+    "firmware_type": 64,
+    "download_retry_count": 5
+  }
+}
