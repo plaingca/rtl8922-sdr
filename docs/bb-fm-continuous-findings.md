@@ -6,10 +6,11 @@ feed completed 125/125 and 192/192 buffers in separate 8.02- and 12.31-second RF
 runs. Pluto recovered the audio without impulse blanking, handoff interpolation,
 or pause correction.
 
-[Play the 12.13-second Pluto recording](../output/audio/rtl8922-bb-fm-shoutcast-received.wav).
-The initial synchronization chirp is trimmed; the music is demodulated RF.
-[Known speech through the same continuous consumer](../output/audio/rtl8922-bb-fm-continuous-speech.wav)
-is also available locally. Audio and raw captures are ignored by Git.
+The 12.13-second Pluto recording is a local artifact at
+`output/audio/rtl8922-bb-fm-shoutcast-received.wav`. The initial synchronization
+chirp is trimmed; the music is demodulated RF. Known speech through the same
+continuous consumer is at `output/audio/rtl8922-bb-fm-continuous-speech.wav`.
+Audio and raw captures are ignored by Git and absent from public downloads.
 
 ## What caused the long-command failure
 
