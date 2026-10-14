@@ -1,0 +1,405 @@
+{
+  "duration_seconds": 50,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "narration": "No TTS; only credited original meme excerpts",
+  "focus": "160 MS/s reception and eight PHY header CRCs; no overflow/recovery scene",
+  "timeline": [
+    {
+      "start": 0,
+      "end": 3,
+      "title": "WAIT. THAT IS A WI-FI CARD?",
+      "evidence_qualifier": "Experimental single-path RTL8922AE reception. Actual project figures."
+    },
+    {
+      "start": 3,
+      "end": 9,
+      "title": "160 MS/s",
+      "evidence_qualifier": "160 million complex samples/s. Bounded 80/160 MS/s trials passed."
+    },
+    {
+      "start": 9,
+      "end": 15,
+      "title": "THE WATERFALL IS COOKING",
+      "evidence_qualifier": "Recorded passive 160 MS/s. 240 FFT/s target; screen refresh limits redraws."
+    },
+    {
+      "start": 15,
+      "end": 19,
+      "title": "ONE BURST. ALL 160 MHz.",
+      "evidence_qualifier": "Actual 160 MHz HE-SU transmission. PHY headers decoded; two-stream payload not decoded."
+    },
+    {
+      "start": 19,
+      "end": 27,
+      "title": "HEADER CRC KILLSTREAK",
+      "evidence_qualifier": "Same PHY header CRC passes in eight 20 MHz sections. Two-stream payload not decoded."
+    },
+    {
+      "start": 27,
+      "end": 32,
+      "title": "THE RECEIPTS: 441 BYTES",
+      "evidence_qualifier": "Legacy 20 MHz OFDM beacon from 160 MS/s I/Q. Independently checked FCS: a232c556."
+    },
+    {
+      "start": 32,
+      "end": 35,
+      "title": "2.4 / 5 / 6 GHz",
+      "evidence_qualifier": "Sequential survey tiles. RF fidelity above 6 GHz remains unqualified."
+    },
+    {
+      "start": 35,
+      "end": 45,
+      "title": "160,000,000",
+      "evidence_qualifier": "Complex samples per second. One RX path; firmware held. Full-band EVM/sensitivity unqualified."
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "title": "DEAL WITH THE BANDWIDTH",
+      "evidence_qualifier": "Experimental RX. Indefinite continuity unqualified. HE two-stream payload not decoded."
+    }
+  ],
+  "audio_events": [
+    {
+      "start": 0.15,
+      "end": 3.1,
+      "clip": "mom",
+      "caption": "[Meme clip: Mom, get the camera!]"
+    },
+    {
+      "start": 3.05,
+      "end": 4.63,
+      "clip": "airhorn",
+      "caption": "[Airhorn]"
+    },
+    {
+      "start": 3.35,
+      "end": 5.75,
+      "clip": "damn-son",
+      "caption": "Damn son, where'd you find this?"
+    },
+    {
+      "start": 6.5,
+      "end": 8.5,
+      "clip": "scary",
+      "caption": "[Skrillex: Scary Monsters and Nice Sprites \u2014 brief drop]"
+    },
+    {
+      "start": 7.5,
+      "end": 7.566,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 8,
+      "end": 8.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 9.8,
+      "end": 12.2,
+      "clip": "oh-my-god",
+      "caption": "[Excited gamer reaction]"
+    },
+    {
+      "start": 11.5,
+      "end": 11.566,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 12,
+      "end": 12.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 13,
+      "end": 13.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 15.1,
+      "end": 15.6,
+      "clip": "sniper",
+      "caption": "[Sniper shot]"
+    },
+    {
+      "start": 15.6,
+      "end": 19.1,
+      "clip": "get-noscoped",
+      "caption": "[Meme clip: Get noscoped!]"
+    },
+    {
+      "start": 20.5,
+      "end": 20.566,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 20.75,
+      "end": 20.816,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 21.0,
+      "end": 21.066,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 21.0,
+      "end": 25.2,
+      "clip": "triple",
+      "caption": "Oh baby, a triple! Oh yeah!"
+    },
+    {
+      "start": 21.25,
+      "end": 21.316,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 21.5,
+      "end": 21.566,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 21.75,
+      "end": 21.816,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 22.0,
+      "end": 22.066,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 22.25,
+      "end": 22.316,
+      "clip": "hitmarker",
+      "caption": "[Header CRC hitmarker]"
+    },
+    {
+      "start": 25.0,
+      "end": 27.4,
+      "clip": "wombo",
+      "caption": "[Tournament commentary: Wombo combo!]"
+    },
+    {
+      "start": 27.3,
+      "end": 27.96,
+      "clip": "wow",
+      "caption": "Wow!"
+    },
+    {
+      "start": 28,
+      "end": 28.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 29,
+      "end": 29.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 32.05,
+      "end": 34.85,
+      "clip": "triple",
+      "caption": "Oh baby, a triple!"
+    },
+    {
+      "start": 35.3,
+      "end": 36.88,
+      "clip": "airhorn",
+      "caption": "[Airhorn]"
+    },
+    {
+      "start": 36.8,
+      "end": 38.8,
+      "clip": "bangarang",
+      "caption": "[Skrillex: Bangarang \u2014 brief drop]"
+    },
+    {
+      "start": 37,
+      "end": 37.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 37.25,
+      "end": 37.316,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 37.5,
+      "end": 37.566,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 39,
+      "end": 39.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 39.25,
+      "end": 39.316,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 40.0,
+      "end": 41.5,
+      "clip": "darude",
+      "caption": "[Darude: Sandstorm \u2014 brief sting]"
+    },
+    {
+      "start": 42,
+      "end": 42.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 42.25,
+      "end": 42.316,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 42.5,
+      "end": 42.566,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 44,
+      "end": 44.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 45.4,
+      "end": 48.9,
+      "clip": "get-noscoped",
+      "caption": "[Meme clip: Get noscoped!]"
+    },
+    {
+      "start": 46,
+      "end": 46.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 47,
+      "end": 47.066,
+      "clip": "hitmarker",
+      "caption": "[Decorative montage hitmarker]"
+    },
+    {
+      "start": 48.1,
+      "end": 49.68,
+      "clip": "airhorn",
+      "caption": "[Airhorn]"
+    }
+  ],
+  "music_source": "docs/media/music/announcer-breaks-the-sound.mp3",
+  "music_sha256": "b4494e93b03fe833d1737a16c151283a13dc8226928282464892192bc5ef7688",
+  "music_edits": [
+    {
+      "start": 0,
+      "end": 9,
+      "source_start": 24.4267
+    },
+    {
+      "start": 9,
+      "end": 19,
+      "source_start": 40.0
+    },
+    {
+      "start": 19,
+      "end": 27,
+      "source_start": 51.42
+    },
+    {
+      "start": 27,
+      "end": 35,
+      "source_start": 82.0
+    },
+    {
+      "start": 35,
+      "end": 45,
+      "source_start": 115.2
+    },
+    {
+      "start": 45,
+      "end": 48,
+      "source_start": 131.7
+    },
+    {
+      "start": 48,
+      "end": 50,
+      "source_start": 147.1
+    }
+  ],
+  "mix": "Bass boosted and saturated excerpt stems; bed ducks for vocals, nearly mutes for classic music stings. Two-pass -12 LUFS / -2 dBTP target master.",
+  "premaster_loudness": {
+    "input_i": "-12.81",
+    "input_tp": "-2.92",
+    "input_lra": "6.60",
+    "input_thresh": "-22.87",
+    "output_i": "-12.67",
+    "output_tp": "-2.17",
+    "output_lra": "6.10",
+    "output_thresh": "-22.71",
+    "normalization_type": "dynamic",
+    "target_offset": "0.67"
+  },
+  "clip_manifest": "docs/media/classic-assets/manifest.json",
+  "assets": [
+    {
+      "path": "docs/media/live-demo.png",
+      "sha256": "a0e9933ff1022259cf439da900d4b6b7c787902f91c1e32b2d0d52f165ccb2c1"
+    },
+    {
+      "path": "output/wifi-decode/he160-wide-packet.png",
+      "sha256": "38834610094a24ed2e58ee5be42c563bba8e87fd9c3e9f22b786cdc32d443ce7"
+    },
+    {
+      "path": "output/wifi-decode/decoded-beacon.png",
+      "sha256": "23708eb70dd6f6f2cb8d331a3515c5d2d8fac8245ad38627b5d1eefdaac02a7d"
+    },
+    {
+      "path": "output/full-band-survey/rtl8922-full-span-survey.png",
+      "sha256": "fefc12c0496e96f2fea37d6f0523cb9c102bc4097fb90067a33c6ff542b17655"
+    }
+  ],
+  "browser_recording": {
+    "sha256": "1860b7922e9ba8b18dc86096a566d6e501f19479c76b79c4cb487aae4b71e742",
+    "used_source_seconds": [
+      4,
+      12
+    ]
+  },
+  "outputs": {
+    ".mp4": "ea6ca2ec74c1919f8d3e57106f64b466b639f15c78d5b72af43d64d77d9ca4b5",
+    ".webm": "2ac2fd576339281368bda94bbd9152b174c7c9d35a8182e198d5a09d2cef0512",
+    ".jpg": "33ef7402412097c3cfd3c80ba0dd3735369b4c887ebf3fefe2057d3672919c54",
+    ".srt": "14911ac6189a83277785240dc0ad6816ae4f77bd11efdba457a0587ceca35245",
+    ".vtt": "a8300950ae577707d2dda8f854a70d246d17d0015209671e7ed8b2e9cfc57966"
+  }
+}
