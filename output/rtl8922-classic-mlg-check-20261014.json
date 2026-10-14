@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-14",
+  "scope": "Offline creative media; no radio, service or driver changes",
+  "duration_seconds": 50,
+  "files": [
+    {
+      "file": "docs/media/rtl8922-classic-mlg-160msps.mp4",
+      "size": 34376789,
+      "sha256": "ea6ca2ec74c1919f8d3e57106f64b466b639f15c78d5b72af43d64d77d9ca4b5",
+      "duration": 50.0,
+      "streams": [
+        {
+          "codec": "h264",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "sample_rate": null
+        },
+        {
+          "codec": "aac",
+          "type": "audio",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000"
+        }
+      ],
+      "full_decode": "pass",
+      "loudness": {
+        "input_i": "-12.04",
+        "input_tp": "-2.08",
+        "input_lra": "6.70",
+        "input_thresh": "-22.10",
+        "output_i": "-12.67",
+        "output_tp": "-2.10",
+        "output_lra": "6.10",
+        "output_thresh": "-22.70",
+        "normalization_type": "dynamic",
+        "target_offset": "0.67"
+      }
+    },
+    {
+      "file": "docs/media/rtl8922-classic-mlg-160msps.webm",
+      "size": 45350455,
+      "sha256": "2ac2fd576339281368bda94bbd9152b174c7c9d35a8182e198d5a09d2cef0512",
+      "duration": 50.013,
+      "streams": [
+        {
+          "codec": "vp9",
+          "type": "video",
+          "width": 1280,
+          "height": 720,
+          "sample_rate": null
+        },
+        {
+          "codec": "opus",
+          "type": "audio",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000"
+        }
+      ],
+      "full_decode": "pass",
+      "loudness": {
+        "input_i": "-12.03",
+        "input_tp": "-2.01",
+        "input_lra": "6.60",
+        "input_thresh": "-22.09",
+        "output_i": "-12.67",
+        "output_tp": "-2.13",
+        "output_lra": "6.10",
+        "output_thresh": "-22.70",
+        "normalization_type": "dynamic",
+        "target_offset": "0.67"
+      }
+    }
+  ],
+  "hash_verification": "pass",
+  "picture_review": "Contact sheet and rendered keyframes reviewed for layout / stationary qualifiers",
+  "audio_review": "Source provenance, ASR and objective loudness checks; no subjective listening claim",
+  "narration": "Original meme clips only; no AI TTS stems",
+  "header_hits": [
+    20.5,
+    20.75,
+    21.0,
+    21.25,
+    21.5,
+    21.75,
+    22.0,
+    22.25
+  ],
+  "science_limits": [
+    "Eight PHY-header CRC passes, not HE two-stream payload decode",
+    "Legacy 441-byte beacon decoded independently with FCS a232c556",
+    "Sequential band survey; above-6-GHz RF unqualified",
+    "Single RX path, held firmware; indefinite continuity and full-band EVM/sensitivity unqualified"
+  ],
+  "browser": {
+    "source": "rtl8922-classic-mlg-160msps.webm",
+    "currentTime": 1.224139,
+    "paused": false,
+    "error": null,
+    "cues": 16,
+    "videoWidth": 1280,
+    "videoHeight": 720,
+    "audioMuted": false,
+    "page_errors": [],
+    "seek": "pass",
+    "captions": "loaded",
+    "playback": "pass"
+  },
+  "independent_asr": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": " No! Get the camera!"
+    },
+    {
+      "start": 3.0,
+      "end": 6.0,
+      "text": " Damn, son! Where'd you find this?"
+    },
+    {
+      "start": 15.0,
+      "end": 19.0,
+      "text": " That's right! Get those folks! Get those folks!"
+    },
+    {
+      "start": 21.0,
+      "end": 25.0,
+      "text": " Oh, baby! It's triple! Oh, yeah!"
+    },
+    {
+      "start": 27.0,
+      "end": 28.0,
+      "text": " Wow!"
+    },
+    {
+      "start": 30.0,
+      "end": 35.0,
+      "text": " Oh, baby, it's triple!"
+    },
+    {
+      "start": 45.0,
+      "end": 49.0,
+      "text": " That's right! Get those boots! Get those boots!"
+    }
+  ],
+  "asr_note": "Excited/processed meme voices are imperfectly transcribed; source manifest identifies recordings. No neural-announcer paragraphs occur in the score."
+}

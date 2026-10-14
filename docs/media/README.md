@@ -1,4 +1,61 @@
-# The RTL8922 Spectrum Spectacular
+# 160 MS/s: Classic MLG montage
+
+[Watch the classic MLG cut (MP4)](rtl8922-classic-mlg-160msps.mp4) ·
+[WebM](rtl8922-classic-mlg-160msps.webm) ·
+[Captions](rtl8922-classic-mlg-160msps.srt) ·
+[Timeline and hashes](rtl8922-classic-mlg-160msps.json) ·
+[Sound / graphic credits](classic-assets/SOURCES.md)
+
+The featured edit is 50 seconds at 1280 × 720 / 30 fps, centered on **160
+million complex samples per second** and **eight valid PHY-header CRCs**
+across one 160 MHz Wi-Fi 6 burst. Actual meme recordings replace all TTS.
+Original hitmarkers, airhorns, gamer reactions and short classic Skrillex /
+Darude stings join the user-supplied Suno song. Camera punches, quickscopes,
+spinning Dew cans / Doritos bags, sunglasses and hitmarker barrages are
+intentionally excessive. There is no overflow/recovery scene in this cut.
+
+The evidence qualifiers remain stationary below the effects. The waterfall
+and packet figures are real project evidence; zooms and overlays do not alter
+the underlying I/Q. The eight labeled header checks are timed to eight real
+hitmarker sounds. Other hitmarkers are decorative. The two-stream HE payload
+was **not** decoded; the separately shown 441-byte legacy beacon was, with
+independently matching FCS `a232c556`. The three-band survey is sequential,
+and RF fidelity above 6 GHz remains unqualified. Reception is experimental,
+with one receive path and firmware held. Indefinite continuity and full-band
+EVM / sensitivity remain unqualified.
+
+## Rebuild the featured edit without hardware
+
+Install NumPy, Pillow, FFmpeg with libx264 / VP9 / AAC / Opus and DejaVu fonts:
+
+```sh
+python3 tools/render-classic-mlg.py
+```
+
+The renderer uses committed still figures and short `.ogg` excerpts. It
+validates their hashes and never opens the network, a radio, a speech model
+or a transmitter. An existing passive browser recording can replace the
+receiver still with `--browser-video /path/to/recording.webm`; the shipped cut
+uses source seconds 4–12 of the earlier 2026-10-14 passive recording. Without
+that optional input, the receiver scenes use the committed still. Use
+`--review-only` to produce a contact sheet without encoding a movie.
+
+Both MP4 and WebM, a poster, English captions and a provenance JSON are
+written to this directory; intermediates remain in ignored `build-media/`.
+The main music is edited to the reveal / header-check / finale beats, reduced
+under real vocal clips, and nearly muted under the classic music stings.
+Excerpt stems receive bass boost and saturation before a separate two-pass
+master targeting -12 LUFS / -2 dBTP. This intentionally distorted sound does
+not depend on uncontrolled final sample clipping. Third-party recordings and
+logos retain their owners' rights; see the detailed source manifest and credits.
+
+`index.html` features this edit with both formats and a caption track; serve
+this directory over HTTP to load captions. Older edits below remain available
+for comparison. Their neural announcer is absent from the featured cut.
+
+---
+
+# Previous Suno / neural-announcer edition
 
 [Watch the Suno edition (MP4)](rtl8922-suno-montage.mp4) ·
 [WebM](rtl8922-suno-montage.webm) ·
@@ -11,7 +68,7 @@
 A 1280 × 720, 30 fps MLG montage parody of making a Wi-Fi card do a very
 different job. Actual received spectrum, an expressive neural salesman, falling
 pixel sunglasses, a spinning triple-band caption and an eight-hit CRC combo.
-The current edition uses the supplied Suno dubstep track, *Announcer breaks
+This previous edition uses the supplied Suno dubstep track, *Announcer breaks
 the sound*, cut to the 83.87-second picture. The old procedural music and
 airhorns are removed, while the eight original CRC hitmarker clicks remain.
 The measurement captions remain stationary and
@@ -42,7 +99,7 @@ the browser's transmitter controls use a separate ADALM-Pluto.
 
 ## Rebuild without hardware
 
-To rebuild the current score and remux both formats from the committed MLG
+To rebuild the previous score and remux both formats from the committed MLG
 picture streams, install NumPy and FFmpeg, then run:
 
 ```sh
@@ -87,7 +144,7 @@ ffmpeg -i docs/media/rtl8922-mlg-montage.mp4 \
 
 All RF figures and browser footage come from this project. Montage graphics,
 CRC clicks and the previous procedural score were synthesized by the renderer.
-The current music is the user-supplied Suno track credited above; its source,
+The previous music is the user-supplied Suno track credited above; its source,
 edit points and mix provenance are preserved separately. Original project code
 remains under the repository license.
 

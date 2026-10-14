@@ -6,11 +6,12 @@ waterfall text and reference tone generation.
 
 ### The Spectrum Spectacular
 
-[![Watch the RTL8922 Spectrum Spectacular](docs/media/rtl8922-suno-montage.jpg)](docs/media/rtl8922-suno-montage.mp4)
+[![Watch the RTL8922 Spectrum Spectacular](docs/media/rtl8922-classic-mlg-160msps.jpg)](docs/media/rtl8922-classic-mlg-160msps.mp4)
 
-[Watch the MLG montage parody](docs/media/rtl8922-suno-montage.mp4): real
-160 MS/s waterfalls, a CRC-checked 160 MHz Wi-Fi 6 header, an expressive neural
-salesman, Suno dubstep, bass drops and deeply questionable editing. Sound on.
+[Watch the classic MLG montage parody](docs/media/rtl8922-classic-mlg-160msps.mp4):
+160 MS/s waterfalls, eight CRC-checked sections of a 160 MHz Wi-Fi 6 header,
+actual meme clips, Suno dubstep, classic drop stings, spinning Dew / Doritos,
+quickscopes and deeply questionable editing. No TTS. Sound on.
 [Captions, evidence and reproduction](docs/media/README.md).
 
 ## Start here

@@ -1,0 +1,170 @@
+{
+  "pack_repository": "https://github.com/anli5005/mlg-soundboard",
+  "pack_revision": "4950f2ad00387ec97201c12476a4ff6ddd855c56",
+  "notice": "Brief excerpts for this montage parody. Community mirror provenance does not establish a blanket redistribution license. Original recording, music and trademark rights remain with their owners; these assets are not relicensed under the project code license.",
+  "clips": [
+    {
+      "id": "mom",
+      "file": "mom.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/MOM%20GET%20THE%20CAMERA.mp3",
+      "source_file": "MOM GET THE CAMERA.mp3",
+      "source_sha256": "23c51c54442adbf048a460a28b4a8648ac26cbac2f2835a9ed6d2c725d87510b",
+      "crop_start": 0,
+      "crop_duration": 2.95,
+      "sha256": "65eb35fadad2fcaee91c71197d36a4188720caf6269a70d4cc28e8f899ec1610"
+    },
+    {
+      "id": "triple",
+      "file": "triple.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/Oh%20Baby%20A%20Triple.mp3",
+      "source_file": "Oh Baby A Triple.mp3",
+      "source_sha256": "fbc93e77dc70e9077aa54f2a0436e2a51a0d05b05e7ee6cd6cfd5f4efc90b726",
+      "crop_start": 0,
+      "crop_duration": 4.2,
+      "sha256": "7bb8852d15f5ed92967e10601dd3558e012c772228ff2c0c910a6edcfebfd97b"
+    },
+    {
+      "id": "damn-son",
+      "file": "damn-son.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/DAMN%20SON%20WHERED%20YOU%20FIND%20THIS.mp3",
+      "source_file": "DAMN SON WHERED YOU FIND THIS.mp3",
+      "source_sha256": "3a224dee5474d362c6584846a6d0789c695c007d3fec88e7e582b95f4ffeb9c0",
+      "crop_start": 0,
+      "crop_duration": 2.4,
+      "sha256": "390de554e90cec3273b6137e90d55f95a6c7a1da955fb188cce09952a2b6e1e8"
+    },
+    {
+      "id": "oh-my-god",
+      "file": "oh-my-god.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/OOOOOOOOHMYGOOOOD.mp3",
+      "source_file": "OOOOOOOOHMYGOOOOD.mp3",
+      "source_sha256": "f06e854e818af29773b897673c061399998e289e84bfc95d838d1378e7c26446",
+      "crop_start": 2.8,
+      "crop_duration": 2.4,
+      "sha256": "7980e752010682a2f9392f967031205dfa5d52dccdf8ccd8de2c6d2f4b51f145"
+    },
+    {
+      "id": "get-noscoped",
+      "file": "get-noscoped.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/GET%20NOSCOPED.mp3",
+      "source_file": "GET NOSCOPED.mp3",
+      "source_sha256": "fcfcf7f1fa9ed53ea2e53e23d4f0280e42224b73590a3f83a922d9a2aa355a45",
+      "crop_start": 0,
+      "crop_duration": 3.5,
+      "sha256": "ddaca487a3d990c10a8c848f4f2bb034a8f2a2b62ad82a87b97f472cc7827394"
+    },
+    {
+      "id": "wombo",
+      "file": "wombo.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/WOMBO%20COMBO.mp3",
+      "source_file": "WOMBO COMBO.mp3",
+      "source_sha256": "4a87bb16c9403173af4665cb16d36992b6012fcdad9470c33886ee395c17d938",
+      "crop_start": 15.1,
+      "crop_duration": 2.4,
+      "sha256": "8da3e9255c3cfafe1671f22b90c76393b41ca994af1241ab10ad8f5f1fd697a0"
+    },
+    {
+      "id": "wow",
+      "file": "wow.ogg",
+      "kind": "vocal",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/wow%20.mp3",
+      "source_file": "wow .mp3",
+      "source_sha256": "446eaab60ddce7f373846d1a7f383c3c21b6c8f1081caf8c954fa53b2e91d173",
+      "crop_start": 0,
+      "crop_duration": 0.66,
+      "sha256": "0313348e7ee3b290a4441c53ba518e4ed9d05896f3f3df483d8b7c0d7b8cbd1f"
+    },
+    {
+      "id": "airhorn",
+      "file": "airhorn.ogg",
+      "kind": "sfx",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/AIRHORN.mp3",
+      "source_file": "AIRHORN.mp3",
+      "source_sha256": "6eb05fc3bc056f01d72397fcce5e584c6032feb428cede38bc4896f6b90b017b",
+      "crop_start": 0,
+      "crop_duration": 1.58,
+      "sha256": "9f89c877ddf120b8f5cac9b3936d50ade77c4c3a7bafde06592b80603b659915"
+    },
+    {
+      "id": "hitmarker",
+      "file": "hitmarker.ogg",
+      "kind": "sfx",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/HITMARKER.mp3",
+      "source_file": "HITMARKER.mp3",
+      "source_sha256": "18e33d75042a61d7fcf996e967791cade9e746014141d803adf23fe34190305e",
+      "crop_start": 0,
+      "crop_duration": 0.066,
+      "sha256": "657301a75e1b67b20fe67b81a512201dc6eb74e444fad7349d60483b83704141"
+    },
+    {
+      "id": "sniper",
+      "file": "sniper.ogg",
+      "kind": "sfx",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/intervention%20420.mp3",
+      "source_file": "intervention 420.mp3",
+      "source_sha256": "11d1a5522d91c8fcaba397f4d43eca4dbbdfb311d765f449e5c95a885c418c23",
+      "crop_start": 0,
+      "crop_duration": 0.5,
+      "sha256": "af32bb4a8e7abb9d0741b721331edd6fc6100133dbec9467a8894775e90590ce"
+    },
+    {
+      "id": "scary",
+      "file": "scary.ogg",
+      "kind": "music",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/SKRILLEX%20Scary.mp3",
+      "source_file": "SKRILLEX Scary.mp3",
+      "source_sha256": "b8559dd9bdc04afadacf0f7b29353ae0b9465f819d293c9991f1d16c2f10ed00",
+      "crop_start": 1.7,
+      "crop_duration": 2,
+      "sha256": "561ae3cacbda2c1cc3b82478629f6d6e75c4f9256a16bf23f8df78f09737589a"
+    },
+    {
+      "id": "bangarang",
+      "file": "bangarang.ogg",
+      "kind": "music",
+      "source": "https://www.myinstants.com/media/sounds/bangarangbest.mp3",
+      "source_file": "bangarang.mp3",
+      "source_sha256": "799a8d3a3da868e3f7ff464ef3c34586d940c44c1bd5af920d47830e32fa9537",
+      "crop_start": 2.5,
+      "crop_duration": 2,
+      "sha256": "de1f83668671187942acbd928a9f621999e7bd302039b77242d168927fba2de5"
+    },
+    {
+      "id": "darude",
+      "file": "darude.ogg",
+      "kind": "music",
+      "source": "https://raw.githubusercontent.com/anli5005/mlg-soundboard/4950f2ad00387ec97201c12476a4ff6ddd855c56/sound/Darude%20-%20Dankstorm.mp3",
+      "source_file": "Darude - Dankstorm.mp3",
+      "source_sha256": "f003e0166a90a878c678490d2ef5756c108db8b4e8682ebbd3decf418a8e9f64",
+      "crop_start": 0,
+      "crop_duration": 1.5,
+      "sha256": "ed0b51d920c331294bf1745ef14aea772d3f5980e48400b32acbd2d7cc53d73f"
+    }
+  ],
+  "graphics": [
+    {
+      "file": "mountain-dew.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_Dew_logo.svg",
+      "owner": "PepsiCo; trademark retained",
+      "sha256": "aa45736c2222a7ff3cd4d2e7f01842d152ec7f0b9635e32a0e9b6061cb5a5203"
+    },
+    {
+      "file": "mountain-dew.png",
+      "source": "mountain-dew.svg",
+      "transformation": "rsvg-convert width 500",
+      "sha256": "8f77a15b8e744f0b4d1e821047ec9b24aec8f2a2d6e8554e400ba0f5a062ec9b"
+    },
+    {
+      "file": "doritos.png",
+      "source": "https://en.wikipedia.org/wiki/File:Doritos_Logo_(2013).png",
+      "owner": "Frito-Lay / PepsiCo; copyright and trademark retained",
+      "sha256": "1f5cdec43da394af8667d78eef418b4261d51c19d93e81b5604a5c760411731f"
+    }
+  ]
+}
