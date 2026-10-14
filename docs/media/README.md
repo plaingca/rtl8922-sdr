@@ -1,17 +1,20 @@
 # The RTL8922 Spectrum Spectacular
 
-[Watch the trailer (MP4)](rtl8922-mlg-montage.mp4) ·
-[WebM](rtl8922-mlg-montage.webm) ·
-[Subtitles](rtl8922-mlg-montage.srt) ·
-[Timeline, transcript and asset hashes](rtl8922-mlg-montage.json)
+[Watch the Suno edition (MP4)](rtl8922-suno-montage.mp4) ·
+[WebM](rtl8922-suno-montage.webm) ·
+[Subtitles](rtl8922-suno-montage.srt) ·
+[Timeline, transcript and asset hashes](rtl8922-suno-montage.json)
 
 [Compare the original salesman trailer](rtl8922-spectrum-spectacular.mp4).
+[The previous MLG edit with procedural music](rtl8922-mlg-montage.mp4) also remains available.
 
 A 1280 × 720, 30 fps MLG montage parody of making a Wi-Fi card do a very
 different job. Actual received spectrum, an expressive neural salesman, falling
 pixel sunglasses, a spinning triple-band caption and an eight-hit CRC combo.
-Original procedural bass music, airhorns, hitmarker clicks and bass drops supply
-the questionable editing. The measurement captions remain stationary and
+The current edition uses the supplied Suno dubstep track, *Announcer breaks
+the sound*, cut to the 83.87-second picture. The old procedural music and
+airhorns are removed, while the eight original CRC hitmarker clicks remain.
+The measurement captions remain stationary and
 readable beneath the effects. No stock RF footage or invented waterfall traces.
 
 The video includes a passive browser recording from 2026-10-14 at 5250 MHz,
@@ -39,6 +42,24 @@ the browser's transmitter controls use a separate ADALM-Pluto.
 
 ## Rebuild without hardware
 
+To rebuild the current score and remux both formats from the committed MLG
+picture streams, install NumPy and FFmpeg, then run:
+
+```sh
+python3 tools/remix-demo-music.py
+```
+
+This preserves the encoded picture streams, edits the supplied song using
+[`music/suno-edit.json`](music/suno-edit.json), reconstructs the announcer from
+the committed voice stems and adds the timed CRC clicks. Music is reduced by
+8 dB under narration with smooth attack/release, with a small midrange cut to
+leave speech space. The final mix is mastered toward -16 LUFS with a -1.5 dBTP
+master ceiling. The source MP3 keeps the supplied compressed audio without
+re-encoding; embedded metadata and artwork have been removed. Its hash and the
+uploaded file's hash are recorded in the edit plan.
+
+To rebuild the preceding picture/montage edition from its source figures:
+
 Install NumPy, Pillow, FFmpeg with libx264/AAC/Opus and DejaVu fonts. On
 Debian/Ubuntu the native packages are `ffmpeg` and `fonts-dejavu-core`.
 Then, from the repository root:
@@ -64,10 +85,11 @@ ffmpeg -i docs/media/rtl8922-mlg-montage.mp4 \
   -c:a libopus -b:a 96k docs/media/rtl8922-mlg-montage.webm
 ```
 
-All RF figures and browser footage come from this project. Music, effects and
-graphics are original and synthesized by the renderer. No commercial montage
-music or borrowed sound clips are included. The repository license covers the
-original scripts and creative media.
+All RF figures and browser footage come from this project. Montage graphics,
+CRC clicks and the previous procedural score were synthesized by the renderer.
+The current music is the user-supplied Suno track credited above; its source,
+edit points and mix provenance are preserved separately. Original project code
+remains under the repository license.
 
 ## Neural announcer
 

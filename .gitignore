@@ -27,3 +27,6 @@ __pycache__/
 
 # Local received/generated audio artifacts; reports retain provenance.
 /output/audio/
+
+# Creative demo soundtrack supplied for publication, not an RF recording.
+!/docs/media/music/announcer-breaks-the-sound.mp3

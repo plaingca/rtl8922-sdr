@@ -1,0 +1,185 @@
+{
+  "timestamp_utc": "2026-10-14T16:40:29.741821+00:00",
+  "scope": "Suno score replacement, no new RF experiment",
+  "duration_seconds": 83.86666666666667,
+  "browser_playback": {
+    "duration": 83.874,
+    "currentTime": 1.35249,
+    "width": 1280,
+    "height": 720,
+    "paused": false,
+    "error": null,
+    "source": "http://127.0.0.1:18733/rtl8922-suno-montage.webm",
+    "captions": 21
+  },
+  "encoded_checks": {
+    "mp4": {
+      "picture_bitstream_sha256": "SHA256=40a79b978b235354360e70974c01028927adc477de8721e12fc1c60b21b379e7",
+      "picture_identical_to_previous": true,
+      "loudness": {
+        "input_i": "-16.03",
+        "input_tp": "-1.75",
+        "input_lra": "2.70",
+        "input_thresh": "-26.20",
+        "output_i": "-15.95",
+        "output_tp": "-1.56",
+        "output_lra": "2.40",
+        "output_thresh": "-26.11",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.05"
+      },
+      "full_decode_pass": true
+    },
+    "webm": {
+      "picture_bitstream_sha256": "SHA256=bf25d99f7a610a8707dd9eee3c29d049b63e64a3c50ad1f7a791eab2b6cc89d1",
+      "picture_identical_to_previous": true,
+      "loudness": {
+        "input_i": "-16.01",
+        "input_tp": "-1.57",
+        "input_lra": "2.60",
+        "input_thresh": "-26.18",
+        "output_i": "-15.96",
+        "output_tp": "-1.50",
+        "output_lra": "2.40",
+        "output_thresh": "-26.11",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.04"
+      },
+      "full_decode_pass": true
+    }
+  },
+  "picture_captions_poster_preserved": true,
+  "mix_asr": [
+    {
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Oh, baby! Is your Wi-Fi card just doing Wi-Fi? Folks, that is a tragedy!"
+    },
+    {
+      "start": 7.0,
+      "end": 11.0,
+      "text": " Welcome to the Spectrum Spectacular!"
+    },
+    {
+      "start": 11.0,
+      "end": 15.0,
+      "text": " One hundred and sixty million complex samples a second!"
+    },
+    {
+      "start": 15.0,
+      "end": 21.0,
+      "text": " That's right! This baby has more bandwidth in my entire personality!"
+    },
+    {
+      "start": 21.0,
+      "end": 24.0,
+      "text": " Look at that waterfall!"
+    },
+    {
+      "start": 24.0,
+      "end": 26.0,
+      "text": " 240 FFTs a second!"
+    },
+    {
+      "start": 26.0,
+      "end": 29.0,
+      "text": " The spectrum is absolutely cooking."
+    },
+    {
+      "start": 30.0,
+      "end": 35.0,
+      "text": " 160 megahertz, 8 slices, 8 valid header check sums,"
+    },
+    {
+      "start": 35.0,
+      "end": 38.0,
+      "text": " 8 for 8, somebody clipped that."
+    },
+    {
+      "start": 39.0,
+      "end": 44.0,
+      "text": " 441 bytes, decoded in software, matching frame check sum."
+    },
+    {
+      "start": 44.0,
+      "end": 47.0,
+      "text": " Oh my goodness, the check sum's check out."
+    },
+    {
+      "start": 48.0,
+      "end": 53.0,
+      "text": " But wait, there's more! 2.4, 5, 6 gigahertz."
+    },
+    {
+      "start": 53.0,
+      "end": 55.0,
+      "text": " Every band must go."
+    },
+    {
+      "start": 55.0,
+      "end": 61.32,
+      "text": " So, sequentially of course, we're ridiculous, not magical."
+    },
+    {
+      "start": 61.32,
+      "end": 62.32,
+      "text": " Overflow?"
+    },
+    {
+      "start": 62.32,
+      "end": 63.32,
+      "text": " Skill issue!"
+    },
+    {
+      "start": 63.32,
+      "end": 64.32,
+      "text": " Just kidding!"
+    },
+    {
+      "start": 64.32,
+      "end": 67.8,
+      "text": " We mark the gap, reload, and get right back in the game."
+    },
+    {
+      "start": 67.8,
+      "end": 68.8,
+      "text": " That's the comeback."
+    },
+    {
+      "start": 68.8,
+      "end": 71.4,
+      "text": " Tune while streaming."
+    },
+    {
+      "start": 71.4,
+      "end": 75.08,
+      "text": " The RT deal 8922SDR."
+    },
+    {
+      "start": 75.08,
+      "end": 77.56,
+      "text": " Open source, experimental."
+    },
+    {
+      "start": 77.56,
+      "end": 80.92,
+      "text": " Deal with the bandwidths, something bugging required."
+    },
+    {
+      "start": 80.92,
+      "end": 82.92,
+      "text": " imaginary warranty sold separately."
+    }
+  ],
+  "asr_note": "Independent transcription sanity check recovers the sample rate, FFT rate, header count and beacon length; not a subjective listening assessment.",
+  "music_plan": "docs/media/music/suno-edit.json",
+  "hashes": {
+    "mp4": "eeaffb93f7c55c58282d26c3d89acd082f32eb71547186aa6d5497c668d4898e",
+    "webm": "21cf573d90b94bd7f3e129cf97b2daa049327bbac9218705071da5d0cb8b2c7e",
+    "jpg": "339801a091eacd96322da2c21d302171a5705a6278a403aa9dbd19289a609214",
+    "srt": "35f2fad88b8c1cbc28fb03eee9abc664541a0f3bceedd5f0033bb5eacfbceace",
+    "vtt": "e20760515dea7d4022a5d76e8e2738212bd2a8a8dedbeffc5f2ed3d913b9501a",
+    "json": "c085710785ccecaee708962b2ad969c6ceb61acf046198b7a7e0cdf91829d8d4"
+  },
+  "mixer_sha256": "f8cd28fa3c7f949c55316dc4ee586d7954cf1aa6302479d694213965f9fc348b"
+}
