@@ -1,0 +1,70 @@
+{
+  "timestamp_utc": "2026-10-14T16:16:42.986211+00:00",
+  "scope": "Offline MLG parody media update; no new RF experiment",
+  "video_seconds": 83.86666666666667,
+  "browser_playback": {
+    "duration": 83.89,
+    "currentTime": 1.355699,
+    "width": 1280,
+    "height": 720,
+    "paused": false,
+    "error": null,
+    "source": "http://127.0.0.1:18733/rtl8922-mlg-montage.webm",
+    "captions": 21
+  },
+  "full_decode_both_formats_pass": true,
+  "voice": "Qwen3-TTS Ryan, synthetic actor; CPU synthesis",
+  "voice_model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "voice_clip_hashes_pass": true,
+  "speech_transcription_review": [
+    {
+      "file": "scene-1.ogg",
+      "transcription": "Oh baby, is your Wi-Fi car just doing Wi-Fi? Folks, that is a tragedy. Welcome to the Spectrum Spectacular."
+    },
+    {
+      "file": "scene-2.ogg",
+      "transcription": "One hundred and sixty million complex samples a second. That's right, this baby has more bandwidth in my entire personality."
+    },
+    {
+      "file": "scene-3.ogg",
+      "transcription": "Look at that waterfall. 240 FFTs a second. The spectrum is absolutely cooking."
+    },
+    {
+      "file": "scene-4.ogg",
+      "transcription": "160 megahertz, 8 slices, 8 valid header checksums, 8 for 8, somebody clipped that."
+    },
+    {
+      "file": "scene-5.ogg",
+      "transcription": "441 bytes. Decoded in software. Matching frame checksum. Oh my goodness, the checksums check out."
+    },
+    {
+      "file": "scene-6.ogg",
+      "transcription": "But wait, there's more! 2.4, 5, 6 gigahertz! Every band must go! Sequentially, of course, we're ridiculous, not magical!"
+    },
+    {
+      "file": "scene-7.ogg",
+      "transcription": "Overflow skill issue just kidding we mark the gap reload and get right back in the game That's the comeback tune while streaming"
+    },
+    {
+      "file": "scene-8.ogg",
+      "transcription": "The RT deal 8922SDR, open source, experimental, deal with the bandwidths, some debugging required, imaginary warranties sold separately."
+    }
+  ],
+  "transcription_note": "Independent base.en ASR sanity check, not a word-perfect alignment or subjective voice-quality score. Technical sample rate, FFT rate, CRC count and beacon length were recovered.",
+  "audio_peak_check": "No clipping in measured decoded mix",
+  "visual_review": "All scene keyframes and montage overlays inspected; stationary qualification captions retained.",
+  "hashes": {
+    "mp4": "262cf8eb934d869495cad06cca96016d0f0b037f3e289d17298985efc7e5c901",
+    "webm": "7db112deb477098525c98e3920f3dd3de37d863416ac3ce64f476d670f537f9d",
+    "jpg": "339801a091eacd96322da2c21d302171a5705a6278a403aa9dbd19289a609214",
+    "srt": "35f2fad88b8c1cbc28fb03eee9abc664541a0f3bceedd5f0033bb5eacfbceace",
+    "vtt": "e20760515dea7d4022a5d76e8e2738212bd2a8a8dedbeffc5f2ed3d913b9501a",
+    "json": "6721054090fb7c4dcf67c0dd5513a5825914d816ce5d4a39cec72fec2b5aca57"
+  },
+  "source_hashes": {
+    "tools/render-demo-video.py": "ac8aa2f0a9ceb7807769ede31189a09f1ba7739f793e843cb0299c2b5c15ef17",
+    "tools/generate-demo-voiceover.py": "408b8691f0c4776f7c6c02681ea046ed580bf21f0ce6b4f97313666723e586bd"
+  },
+  "audio_mean_dbfs": -19.0,
+  "audio_max_dbfs": -1.9
+}
