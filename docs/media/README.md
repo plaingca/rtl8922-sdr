@@ -12,12 +12,22 @@ across one 160 MHz Wi-Fi 6 burst. Actual meme recordings replace all TTS.
 Original hitmarkers, airhorns, gamer reactions and short classic Skrillex /
 Darude stings join the user-supplied Suno song. Camera punches, quickscopes,
 spinning Dew cans / Doritos bags, sunglasses and hitmarker barrages are
-intentionally excessive. There is no overflow/recovery scene in this cut.
+intentionally excessive. The 160 reveal adds a brief score choke, a huge
+number slam, RGB splits, neon tunnels, camera shake and six spinning props.
+There is no overflow/recovery scene in this cut.
+
+Zoom punches and hitmarkers follow measured bass transients in the edited
+music, including the classic drop stings. The renderer detects positive
+35–180 Hz spectral flux with a 5 ms analysis hop, then snaps shared picture
+and sound events to the nearest 30 fps frame. The previous fixed BPM pulse
+is removed. Eight detected bass hits between 20 and 23 seconds drive the
+eight header-check scopes and sounds; all other hitmarkers are decorative.
+Exact detected times, frame times and strengths are in the movie's JSON.
 
 The evidence qualifiers remain stationary below the effects. The waterfall
 and packet figures are real project evidence; zooms and overlays do not alter
 the underlying I/Q. The eight labeled header checks are timed to eight real
-hitmarker sounds. Other hitmarkers are decorative. The two-stream HE payload
+hitmarker sounds. The two-stream HE payload
 was **not** decoded; the separately shown 441-byte legacy beacon was, with
 independently matching FCS `a232c556`. The three-band survey is sequential,
 and RF fidelity above 6 GHz remains unqualified. Reception is experimental,

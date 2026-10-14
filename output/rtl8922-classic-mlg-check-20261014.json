@@ -5,8 +5,8 @@
   "files": [
     {
       "file": "docs/media/rtl8922-classic-mlg-160msps.mp4",
-      "size": 34376789,
-      "sha256": "ea6ca2ec74c1919f8d3e57106f64b466b639f15c78d5b72af43d64d77d9ca4b5",
+      "size": 36139571,
+      "sha256": "673c1963116cb802039573c276c2663b82cce9475a6d1b31c4b4f2fbfce9eee7",
       "duration": 50.0,
       "streams": [
         {
@@ -27,21 +27,21 @@
       "full_decode": "pass",
       "loudness": {
         "input_i": "-12.04",
-        "input_tp": "-2.08",
-        "input_lra": "6.70",
-        "input_thresh": "-22.10",
-        "output_i": "-12.67",
-        "output_tp": "-2.10",
+        "input_tp": "-2.31",
+        "input_lra": "6.50",
+        "input_thresh": "-22.08",
+        "output_i": "-12.66",
+        "output_tp": "-2.70",
         "output_lra": "6.10",
-        "output_thresh": "-22.70",
+        "output_thresh": "-22.69",
         "normalization_type": "dynamic",
-        "target_offset": "0.67"
+        "target_offset": "0.66"
       }
     },
     {
       "file": "docs/media/rtl8922-classic-mlg-160msps.webm",
-      "size": 45350455,
-      "sha256": "2ac2fd576339281368bda94bbd9152b174c7c9d35a8182e198d5a09d2cef0512",
+      "size": 46879953,
+      "sha256": "7d13a987a79f76dc14e46a5ad4812f1b2e3da9bba4727675aad2c13819db596b",
       "duration": 50.013,
       "streams": [
         {
@@ -62,31 +62,31 @@
       "full_decode": "pass",
       "loudness": {
         "input_i": "-12.03",
-        "input_tp": "-2.01",
-        "input_lra": "6.60",
-        "input_thresh": "-22.09",
-        "output_i": "-12.67",
-        "output_tp": "-2.13",
+        "input_tp": "-2.06",
+        "input_lra": "6.50",
+        "input_thresh": "-22.08",
+        "output_i": "-12.66",
+        "output_tp": "-2.53",
         "output_lra": "6.10",
         "output_thresh": "-22.70",
         "normalization_type": "dynamic",
-        "target_offset": "0.67"
+        "target_offset": "0.66"
       }
     }
   ],
   "hash_verification": "pass",
-  "picture_review": "Contact sheet and rendered keyframes reviewed for layout / stationary qualifiers",
-  "audio_review": "Source provenance, ASR and objective loudness checks; no subjective listening claim",
+  "picture_review": "Bass-drop contact sheet and encoded 3.433-second reveal reviewed; evidence footer remains stationary and readable.",
+  "audio_review": "Source provenance, objective loudness and encoded/master timing correlation; no subjective listening claim",
   "narration": "Original meme clips only; no AI TTS stems",
   "header_hits": [
-    20.5,
-    20.75,
+    20.3,
+    20.733333333333334,
     21.0,
-    21.25,
-    21.5,
-    21.75,
-    22.0,
-    22.25
+    21.433333333333334,
+    21.7,
+    22.3,
+    22.533333333333335,
+    22.866666666666667
   ],
   "science_limits": [
     "Eight PHY-header CRC passes, not HE two-stream payload decode",
@@ -94,9 +94,67 @@
     "Sequential band survey; above-6-GHz RF unqualified",
     "Single RX path, held firmware; indefinite continuity and full-band EVM/sensitivity unqualified"
   ],
+  "bass_sync": {
+    "method": "35\u2013180 Hz positive spectral flux; 2048-sample Hann, 240-sample hop, local energy normalization; nearest 30 fps frame",
+    "reveal": 3.433333333333333,
+    "secondary_reveal": 6.7,
+    "cue_count": 83,
+    "hitmarker_count": 76,
+    "maximum_detected_to_frame_error_ms": 16.33333333333553,
+    "header_hit_times": [
+      20.3,
+      20.733333333333334,
+      21.0,
+      21.433333333333334,
+      21.7,
+      22.3,
+      22.533333333333335,
+      22.866666666666667
+    ]
+  },
+  "encoded_audio_timing": [
+    {
+      "format": ".mp4",
+      "master_correlation": [
+        {
+          "window_seconds": [
+            2,
+            9
+          ],
+          "audio_offset_ms": 0.0
+        },
+        {
+          "window_seconds": [
+            35,
+            45
+          ],
+          "audio_offset_ms": 0.0
+        }
+      ]
+    },
+    {
+      "format": ".webm",
+      "master_correlation": [
+        {
+          "window_seconds": [
+            2,
+            9
+          ],
+          "audio_offset_ms": 0.0
+        },
+        {
+          "window_seconds": [
+            35,
+            45
+          ],
+          "audio_offset_ms": 0.0
+        }
+      ]
+    }
+  ],
   "browser": {
     "source": "rtl8922-classic-mlg-160msps.webm",
-    "currentTime": 1.224139,
+    "currentTime": 1.212403,
     "paused": false,
     "error": null,
     "cues": 16,
@@ -107,43 +165,5 @@
     "seek": "pass",
     "captions": "loaded",
     "playback": "pass"
-  },
-  "independent_asr": [
-    {
-      "start": 0.0,
-      "end": 2.0,
-      "text": " No! Get the camera!"
-    },
-    {
-      "start": 3.0,
-      "end": 6.0,
-      "text": " Damn, son! Where'd you find this?"
-    },
-    {
-      "start": 15.0,
-      "end": 19.0,
-      "text": " That's right! Get those folks! Get those folks!"
-    },
-    {
-      "start": 21.0,
-      "end": 25.0,
-      "text": " Oh, baby! It's triple! Oh, yeah!"
-    },
-    {
-      "start": 27.0,
-      "end": 28.0,
-      "text": " Wow!"
-    },
-    {
-      "start": 30.0,
-      "end": 35.0,
-      "text": " Oh, baby, it's triple!"
-    },
-    {
-      "start": 45.0,
-      "end": 49.0,
-      "text": " That's right! Get those boots! Get those boots!"
-    }
-  ],
-  "asr_note": "Excited/processed meme voices are imperfectly transcribed; source manifest identifies recordings. No neural-announcer paragraphs occur in the score."
+  }
 }
