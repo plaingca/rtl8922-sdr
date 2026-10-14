@@ -44,7 +44,7 @@ file set; ignored local files are not part of the distribution. Before publishin
 new history, also run [Gitleaks](https://github.com/gitleaks/gitleaks):
 
 ```sh
-gitleaks git . --log-opts=--all --redact
+gitleaks git . --log-opts="--all --full-history -m" --redact
 ```
 
 `check-distribution` is not a secret scanner. If a credential was committed,

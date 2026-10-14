@@ -8,7 +8,7 @@
     "unexpected_signatures": 0,
     "prohibited_capture_firmware_or_compiled_artifact_paths": [],
     "gitleaks_version": "8.30.1",
-    "gitleaks_scope": "All reachable Git history, plus a clean tracked-file checkout",
+    "gitleaks_scope": "All reachable Git history including merge-parent diffs (--all --full-history -m), plus a clean tracked-file checkout",
     "gitleaks_findings": 0,
     "releases": 0,
     "actions_artifacts": 0,
@@ -40,7 +40,8 @@
     "cmake_receiver_and_bridge_build": true,
     "strict_c_tx_compiler_build": true,
     "shell_syntax": true,
-    "diff_whitespace": true
+    "diff_whitespace": true,
+    "tracked_audio_and_video_format_metadata": "No tags beyond codec/container/encoder identifiers"
   },
   "hosted_ci": "Verified separately on the publication pull request; local checks are not a substitute for its result",
   "rf_qualification_changed": false

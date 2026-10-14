@@ -21,7 +21,7 @@ jobs:
             --output "$RUNNER_TEMP/gitleaks.tar.gz"
           echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  $RUNNER_TEMP/gitleaks.tar.gz" | sha256sum --check
           tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$RUNNER_TEMP" gitleaks
-          "$RUNNER_TEMP/gitleaks" git . --log-opts=--all --redact
+          "$RUNNER_TEMP/gitleaks" git . --log-opts="--all --full-history -m" --redact
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: '3.11'
