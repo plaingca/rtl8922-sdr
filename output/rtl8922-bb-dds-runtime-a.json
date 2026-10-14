@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "started_utc": "2026-10-13T06:32:08Z",
+  "status": "started",
+  "firmware_sha256": "3451067eab9cccdd6269ee7cfb817492447f9b17ff20ddaf13afe41c2aba9293",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "rf_modes_before": {
+    "0": 210912,
+    "1": 210914
+  },
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "patch_readback_matches": true,
+  "commands": [
+    {
+      "mode": 0,
+      "count": 0,
+      "delay": 0,
+      "fraction": 0,
+      "host_command_seconds": 7.242895662784576e-05,
+      "result_words": [
+        "0x44445331",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x0",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x80000000",
+        "0x0",
+        "0x0",
+        "0x0"
+      ],
+      "status": {
+        "0x37600": "0xcff80003",
+        "0x3768c": "0x10000",
+        "0x3778c": "0x0"
+      },
+      "completed": true,
+      "writes": 0
+    }
+  ],
+  "address_mapping": {
+    "host": [
+      "0x250025",
+      "0x0",
+      "0x80000000"
+    ],
+    "bb": [
+      "0x250025",
+      "0x0",
+      "0x80000000"
+    ]
+  },
+  "exception": "ValueError: Mailbox busy before request",
+  "mailbox_cleanup_errors": [
+    "Mailbox remains busy; leave slot to wrapper firmware unload"
+  ],
+  "pluto_settings_unchanged": false,
+  "pluto_tx_powerdown": "1"
+}

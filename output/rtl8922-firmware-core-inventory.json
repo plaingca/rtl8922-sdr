@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "firmware": {
+    "bytes": 1849226,
+    "sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea"
+  },
+  "capstone_version": "5.0.7",
+  "directory": [
+    {
+      "type": 1,
+      "name": "normal",
+      "cv": 1,
+      "mp": 0,
+      "file_offset": "0x40",
+      "bytes": 430728,
+      "header": {
+        "file_offset": "0x40",
+        "bytes": 430728,
+        "version": "0.35.80.3",
+        "header_bytes": 192,
+        "dsp_checksum_flag": true,
+        "security_sections": 2,
+        "sections": [
+          {
+            "index": 0,
+            "destination": "0x20100000",
+            "declared_bytes": 390672,
+            "type": 2,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 1,
+            "destination": "0x20209bb8",
+            "declared_bytes": 33224,
+            "type": 1,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 2,
+            "destination": "0x202093b8",
+            "declared_bytes": 776,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          },
+          {
+            "index": 3,
+            "destination": "0x202093b8",
+            "declared_bytes": 1128,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          }
+        ],
+        "section_payload_offsets_walked": false
+      }
+    },
+    {
+      "type": 3,
+      "name": "wake_on_wireless",
+      "cv": 1,
+      "mp": 0,
+      "file_offset": "0x692c8",
+      "bytes": 337824,
+      "header": {
+        "file_offset": "0x692c8",
+        "bytes": 337824,
+        "version": "0.35.80.3",
+        "header_bytes": 192,
+        "dsp_checksum_flag": true,
+        "security_sections": 2,
+        "sections": [
+          {
+            "index": 0,
+            "destination": "0x20100000",
+            "declared_bytes": 301840,
+            "type": 2,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 1,
+            "destination": "0x20209bb8",
+            "declared_bytes": 29152,
+            "type": 1,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 2,
+            "destination": "0x202093b8",
+            "declared_bytes": 776,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          },
+          {
+            "index": 3,
+            "destination": "0x202093b8",
+            "declared_bytes": 1128,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          }
+        ],
+        "section_payload_offsets_walked": false
+      }
+    },
+    {
+      "type": 255,
+      "name": "log_dictionary",
+      "cv": 0,
+      "mp": 0,
+      "file_offset": "0xbba68",
+      "bytes": 99200
+    }
+  ],
+  "main_code_excerpt": {
+    "file_offset": "0x100",
+    "address": "0x20100000",
+    "bytes_checked": 18,
+    "code_sha256": "9e2af9cb3c63ca70b7d1fc1155ed4e1bd43ec5b9da82104748eb49508d32d359",
+    "decoder": "RISC-V 32-bit with compressed instructions",
+    "instructions": [
+      {
+        "address": "0x20100000",
+        "mnemonic": "c.addi",
+        "operands": "sp, -0x20"
+      },
+      {
+        "address": "0x20100002",
+        "mnemonic": "c.li",
+        "operands": "a0, 1"
+      },
+      {
+        "address": "0x20100004",
+        "mnemonic": "c.swsp",
+        "operands": "ra, 0x1c(sp)"
+      },
+      {
+        "address": "0x20100006",
+        "mnemonic": "c.swsp",
+        "operands": "s0, 0x18(sp)"
+      },
+      {
+        "address": "0x20100008",
+        "mnemonic": "c.swsp",
+        "operands": "s1, 0x14(sp)"
+      },
+      {
+        "address": "0x2010000a",
+        "mnemonic": "c.swsp",
+        "operands": "s2, 0x10(sp)"
+      },
+      {
+        "address": "0x2010000c",
+        "mnemonic": "c.swsp",
+        "operands": "s3, 0xc(sp)"
+      },
+      {
+        "address": "0x2010000e",
+        "mnemonic": "jal",
+        "operands": "0x477d4"
+      }
+    ]
+  },
+  "freertos_start_message_in_log_dictionary": true,
+  "baseband_variants": [
+    {
+      "element_id": 0,
+      "silicon_revision_cv": 1,
+      "image": {
+        "file_offset": "0xd3e10",
+        "bytes": 39344,
+        "version": "0.1.0.0",
+        "header_bytes": 96,
+        "dsp_checksum_flag": true,
+        "security_sections": 2,
+        "sections": [
+          {
+            "index": 0,
+            "destination": "0x18638000",
+            "declared_bytes": 32768,
+            "type": 10,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 1,
+            "destination": "0x20302a00",
+            "declared_bytes": 712,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          },
+          {
+            "index": 2,
+            "destination": "0x20302a00",
+            "declared_bytes": 1032,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 255
+          }
+        ],
+        "section_payload_offsets_walked": false
+      },
+      "entry_candidate_from_internal_header": "0x10010200",
+      "entry_file_offset_within_section": "0x200",
+      "execution_address_mapping": "Inferred from internal header; not live PC validation",
+      "startup": {
+        "file_offset": "0xd4070",
+        "address": "0x10010200",
+        "bytes_checked": 40,
+        "code_sha256": "d50f67cbff117d0d3803c5276a7108b302000368efe6ffad05024cca6b71b3d8",
+        "decoder": "RISC-V 32-bit with compressed instructions",
+        "instructions": [
+          {
+            "address": "0x10010200",
+            "mnemonic": "auipc",
+            "operands": "sp, 0x1d"
+          },
+          {
+            "address": "0x10010204",
+            "mnemonic": "addi",
+            "operands": "sp, sp, -0x710"
+          },
+          {
+            "address": "0x10010208",
+            "mnemonic": "addi",
+            "operands": "t1, zero, 0x206"
+          },
+          {
+            "address": "0x1001020c",
+            "mnemonic": "csrrs",
+            "operands": "a0, 1985, t1"
+          },
+          {
+            "address": "0x10010210",
+            "mnemonic": "fence",
+            "operands": ""
+          },
+          {
+            "address": "0x10010214",
+            "mnemonic": "auipc",
+            "operands": "t0, 0"
+          },
+          {
+            "address": "0x10010218",
+            "mnemonic": "addi",
+            "operands": "t0, t0, 0x3b4"
+          },
+          {
+            "address": "0x1001021c",
+            "mnemonic": "c.jalr",
+            "operands": "t0"
+          },
+          {
+            "address": "0x1001021e",
+            "mnemonic": "auipc",
+            "operands": "t0, 0"
+          },
+          {
+            "address": "0x10010222",
+            "mnemonic": "addi",
+            "operands": "t0, t0, 0xe2"
+          },
+          {
+            "address": "0x10010226",
+            "mnemonic": "c.jalr",
+            "operands": "t0"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 0,
+      "silicon_revision_cv": 0,
+      "image": {
+        "file_offset": "0xdd7e0",
+        "bytes": 33560,
+        "version": "0.1.0.0",
+        "header_bytes": 80,
+        "dsp_checksum_flag": true,
+        "security_sections": 1,
+        "sections": [
+          {
+            "index": 0,
+            "destination": "0x18638000",
+            "declared_bytes": 32768,
+            "type": 10,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          },
+          {
+            "index": 1,
+            "destination": "0x20302a00",
+            "declared_bytes": 712,
+            "type": 9,
+            "checksum_trailer": false,
+            "mssc_field": 0
+          }
+        ],
+        "section_payload_offsets_walked": false
+      },
+      "entry_candidate_from_internal_header": "0x10010200",
+      "entry_file_offset_within_section": "0x200",
+      "execution_address_mapping": "Inferred from internal header; not live PC validation",
+      "startup": {
+        "file_offset": "0xdda30",
+        "address": "0x10010200",
+        "bytes_checked": 40,
+        "code_sha256": "d4cd6fda9563a0d88cd14e0b69c90bc86b4f1f6b6aad948573c1101e89b59efd",
+        "decoder": "RISC-V 32-bit with compressed instructions",
+        "instructions": [
+          {
+            "address": "0x10010200",
+            "mnemonic": "auipc",
+            "operands": "sp, 0x1d"
+          },
+          {
+            "address": "0x10010204",
+            "mnemonic": "addi",
+            "operands": "sp, sp, -0x7f0"
+          },
+          {
+            "address": "0x10010208",
+            "mnemonic": "addi",
+            "operands": "t1, zero, 0x206"
+          },
+          {
+            "address": "0x1001020c",
+            "mnemonic": "csrrs",
+            "operands": "a0, 1985, t1"
+          },
+          {
+            "address": "0x10010210",
+            "mnemonic": "fence",
+            "operands": ""
+          },
+          {
+            "address": "0x10010214",
+            "mnemonic": "auipc",
+            "operands": "t0, 0"
+          },
+          {
+            "address": "0x10010218",
+            "mnemonic": "addi",
+            "operands": "t0, t0, 0x3b4"
+          },
+          {
+            "address": "0x1001021c",
+            "mnemonic": "c.jalr",
+            "operands": "t0"
+          },
+          {
+            "address": "0x1001021e",
+            "mnemonic": "auipc",
+            "operands": "t0, 0"
+          },
+          {
+            "address": "0x10010222",
+            "mnemonic": "addi",
+            "operands": "t0, t0, 0xe2"
+          },
+          {
+            "address": "0x10010226",
+            "mnemonic": "c.jalr",
+            "operands": "t0"
+          }
+        ]
+      }
+    }
+  ],
+  "rf_nctl": [
+    {
+      "file_offset": "0xf80e0",
+      "payload_bytes": 9616,
+      "register_writes": 1202,
+      "sequencer_load_words": 1024,
+      "instruction_set": "undecoded"
+    }
+  ],
+  "limits": [
+    "Readable startup code does not establish that every region is plaintext.",
+    "Security section presence does not establish this card's secure-boot fuse state.",
+    "Acceptance of modified images and runtime code writes is untested.",
+    "Two baseband firmware revisions do not establish two physical baseband cores.",
+    "Exact CPU implementations, clock rates, and complete ISA extensions are unresolved.",
+    "Section headers are inventoried; signature pools and authentication are not validated."
+  ]
+}

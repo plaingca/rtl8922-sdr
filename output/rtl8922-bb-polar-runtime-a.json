@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "status": "idle_single_and_paired_store_benchmark_completed",
+  "started_utc": "2026-10-13T08:50:22Z",
+  "firmware_sha256": "cf0d80b4aa365ce40f3d6c9670d2a62295201d5fd25a37970fd2dbdd0a04afb9",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "rf_modes_before": {
+    "0": 65536,
+    "1": 243682
+  },
+  "saved_nco_itqt": [
+    2424869,
+    0
+  ],
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "commands": [
+    {
+      "mode": 0,
+      "cycles": 0,
+      "samples": 0,
+      "host_seconds": 7.442198693752289e-05,
+      "host_bracket_lower_bound_samples_per_second": 0.0,
+      "result_words": [
+        "0x504f4c31",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x0",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.012922398746013641,
+      "host_bracket_lower_bound_samples_per_second": 10143008.475143492,
+      "result_words": [
+        "0x504f4c31",
+        "0x2",
+        "0x2",
+        "0x1000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.0988538209348917,
+      "host_bracket_lower_bound_samples_per_second": 10607339.100130746,
+      "result_words": [
+        "0x504f4c31",
+        "0x3",
+        "0x2",
+        "0x8000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.3936308491975069,
+      "host_bracket_lower_bound_samples_per_second": 10655425.022075646,
+      "result_words": [
+        "0x504f4c31",
+        "0x4",
+        "0x2",
+        "0x20000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.0247422493994236,
+      "host_bracket_lower_bound_samples_per_second": 5297497.324679521,
+      "result_words": [
+        "0x504f4c31",
+        "0x5",
+        "0x2",
+        "0x1000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.19690360873937607,
+      "host_bracket_lower_bound_samples_per_second": 5325326.471735251,
+      "result_words": [
+        "0x504f4c31",
+        "0x6",
+        "0x2",
+        "0x8000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.7866486944258213,
+      "host_bracket_lower_bound_samples_per_second": 5331864.1850177385,
+      "result_words": [
+        "0x504f4c31",
+        "0x7",
+        "0x2",
+        "0x20000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x0",
+        "0x0"
+      ],
+      "completed": true
+    }
+  ],
+  "final_nco_itqt": [
+    2424869,
+    0
+  ],
+  "final_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "mailbox_cleanup_errors": []
+}

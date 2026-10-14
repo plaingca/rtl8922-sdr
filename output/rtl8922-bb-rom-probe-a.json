@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "known_ram_check": "0x18638000 header and startup versus pinned BB MCU image",
+  "candidate_rom_bases": [
+    "0x18630000",
+    "0x10000000"
+  ],
+  "candidate_status": "hypotheses; directory signatures must validate before a larger capture",
+  "bytes_per_directory_probe": 96,
+  "writes": "save, select and restore register 0xc04 only; no sample or executable-memory writes",
+  "deadline_seconds": 20,
+  "raw_output": "local .bin files, excluded from Git",
+  "started_utc": "2026-10-12T23:20:03Z",
+  "firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "raw_directory": "/tmp/rtl8922-bb-rom-probe-20261012-a",
+  "status": "no_candidate_directory_found",
+  "selector_before": "0x18700000",
+  "ram_checks": [
+    {
+      "address": "0x18638000",
+      "bytes": 32,
+      "sha256": "104ecab51b006c6a4267b5e800358d151c21cfe78e7409730705133977811dc7",
+      "unique_words": 6,
+      "sentinel_words": {
+        "0x0": 2,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "matches_firmware": true
+    },
+    {
+      "address": "0x18638200",
+      "bytes": 48,
+      "sha256": "52d57c9cdaf6f355e93a27c5ffa2acfdac685c3a336d1e45c50eb5dd0f4fc128",
+      "unique_words": 11,
+      "sentinel_words": {
+        "0x0": 2,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "matches_firmware": true
+    }
+  ],
+  "rom_candidates": [
+    {
+      "base": "0x18630000",
+      "bytes": 96,
+      "sha256": "eb417c274399f0e49f56b3598aad638ac5f62dd15257cd3bfc4bcc2c9945d886",
+      "unique_words": 11,
+      "sentinel_words": {
+        "0x0": 14,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "repeat_identical": true,
+      "directory": {
+        "valid": false,
+        "required_keys_found": [],
+        "entries": []
+      }
+    },
+    {
+      "base": "0x10000000",
+      "bytes": 96,
+      "sha256": "44e3ccaba63fd4a4b43703d56aebcd5bda2d465fbfc3348b990c77eb8c038232",
+      "unique_words": 1,
+      "sentinel_words": {
+        "0x0": 0,
+        "0xffffffff": 0,
+        "0xdeadbeef": 24
+      },
+      "repeat_identical": true,
+      "directory": {
+        "valid": false,
+        "required_keys_found": [],
+        "entries": []
+      }
+    }
+  ],
+  "selector_after": "0x18700000",
+  "selector_restored": true,
+  "finished_utc": "2026-10-12T23:20:03Z"
+}

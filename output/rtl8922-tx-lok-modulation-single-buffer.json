@@ -1,0 +1,109 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-12T21:57:41Z",
+  "path": 1,
+  "center_hz": 2447000000,
+  "rf_gain_code": 0,
+  "source": "lo",
+  "lo_injection_disabled": false,
+  "pluto_rx_rate": 4000000,
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1013\n\twdev 0x1300000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 19\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:1:5": "0x41",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83de8",
+    "bb:0:80cc": "0x240000",
+    "bb:0:802c": "0x250025",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:0": "0x337e0",
+    "rf:0:5": "0x41",
+    "rf:0:10000": "0x30000",
+    "rf:1:0": "0x33742",
+    "rf:1:10000": "0x30002"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -1630065.91796875,
+        "above_median_db": 20.365186274928572,
+        "power": 99228703.18367638
+      },
+      {
+        "hz": -1491027.83203125,
+        "above_median_db": 19.995948989886877,
+        "power": 91140957.55655937
+      },
+      {
+        "hz": -1768005.37109375,
+        "above_median_db": 19.95291485717392,
+        "power": 90242303.78614044
+      },
+      {
+        "hz": -1513488.76953125,
+        "above_median_db": 19.75532712818318,
+        "power": 86228613.09398821
+      },
+      {
+        "hz": -1564147.94921875,
+        "above_median_db": 19.65019161466018,
+        "power": 84166225.16063897
+      },
+      {
+        "hz": -1830444.3359375,
+        "above_median_db": 19.54098503340044,
+        "power": 82076190.6233173
+      },
+      {
+        "hz": -1734924.31640625,
+        "above_median_db": 19.436095649449296,
+        "power": 80117659.39435108
+      },
+      {
+        "hz": -1799682.6171875,
+        "above_median_db": 19.428109153119845,
+        "power": 79970461.71114732
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 11.881742149566664,
+    "mean_real": 0.00439453125,
+    "mean_imag": 0.0037689208984375,
+    "clip_fraction": 0.0
+  },
+  "exception": "TimeoutError: [Errno 110] Connection timed out",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:1:0": {
+      "saved": "0x33742",
+      "actual": "0x337e2"
+    }
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

@@ -1,0 +1,1037 @@
+{
+  "arbitrary_iq_tx_demonstrated": false,
+  "user_reported_rf_topology": "antennas_over_air",
+  "observed_primitives": {
+    "path1_external_lo_carrier_movement_hz": 5000000,
+    "observed_lo_test_centers_mhz": [
+      2442,
+      2447
+    ],
+    "internal_tx_dac_debug_tone_cycles_per_record": [
+      0.05,
+      0.1,
+      0.15,
+      0.05
+    ],
+    "external_calibration_tone_demonstrated": true,
+    "independent_complex_modulation_demonstrated": false,
+    "external_calibration_tone_path": 1,
+    "external_calibration_tone_center_mhz": 2442,
+    "external_calibration_tone_selector_offsets_hz": {
+      "1": 250000,
+      "2": 500000,
+      "3": 750000,
+      "4095": -250000
+    },
+    "external_calibration_tone_movements_hz": [
+      250000,
+      250000,
+      -500000
+    ],
+    "live_frequency_writes_demonstrated": true,
+    "live_zero_selector_dac_output": "all_zero",
+    "fsk_link_qualified": false,
+    "best_observed_fsk_payload_bit_errors": 2,
+    "fsk_payload_bits": 64
+  },
+  "qualification_limits": [
+    "No user-sample RAM or DAC replay consumer identified.",
+    "Digital RF calibration tones qualified at the tested selectors, PATH1, center 2442 MHz; no broader TX range or sample-clock claim.",
+    "Initial digital-RF failures used an incorrect AFE force mask and do not constrain the corrected route.",
+    "TXIQC behaves as partial imbalance correction, not general complex multiplication.",
+    "All four 50-symbol/s FSK experiments failed full qualification; periodic weak symbols remain unexplained.",
+    "Analog offsets with corrected AFE forcing failed held-out waveform prediction (-7.50 dB modulation/residual).",
+    "No TX sample rate, waveform bandwidth, output power or fidelity qualification.",
+    "Some RX-mode RF0 readbacks and automatic Pluto RX gain readbacks differed after restoration; preserved per report.",
+    "Older RF reports hashed only the entrypoint, not evolving helper modules; current probe records both."
+  ],
+  "hardware_reports": [
+    {
+      "report": "rtl8922-tx-afe-force-fixed-path1.json",
+      "sha256": "7c1988c680494882c626604a8c99da44e9a9409f039b82673c17ceb74d425e26",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-afe-force-motion-path1.json",
+      "sha256": "0abcf8be81042a0084c1ddc3cc8355f95cf0057d103a01ff97d33cf47d03b3ca",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x33722"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-afe-lok-coherent-path1.json",
+      "sha256": "26a06d68fc01a4159abbc4badead209dbbd421f2b354cdedbf0ba8a7ab99b4f7",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "analog_modulation_qualified": false
+    },
+    {
+      "report": "rtl8922-tx-afe-lok-dc-path1.json",
+      "sha256": "521b5e0d79df2519d937b82dae15a7974e04c89e9f7a282cd3824237b153dc74",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 6,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-cal-gain-path1.json",
+      "sha256": "d01f28e7ebbc8c1cd61498cb860a1c4a27c7f17dd47bbe4993a53fbf18baea55",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-dac-path0.json",
+      "sha256": "bc0bf89b7b9ec9509d7ec3e2470cd4420aad39b50b2b673ff9237a56d4ee16a0",
+      "source": "calibration",
+      "path": 0,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-dac-path1.json",
+      "sha256": "616cf696a44ce398b3eaa9816594a7f54446ed0ddbbe5db340ffe53a46690d5f",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-dds-fsk-interference-path1.json",
+      "sha256": "efb4faf0c597196d8eb29f3ac01dd3d847e45650b3eb523111a5dc0496b812cc",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x3b7e2"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "fsk_qualification": {
+        "passed": false,
+        "gates": {
+          "sync_without_bit_errors": false,
+          "payload_without_bit_errors": false,
+          "every_symbol_has_6db_tone_discrimination": false,
+          "pilot_disappears_after_tx_stop_15db": true,
+          "no_clipping": true
+        },
+        "scope": "Host-controlled two-frequency DDS symbols; not arbitrary complex samples",
+        "alignment_seconds_sync_only": -0.06199999999999989,
+        "sync_bit_errors": 1,
+        "payload_bit_errors": 6,
+        "decoded_payload_hex": "52404c1831303021",
+        "expected_payload_hex": "52544c3839323221",
+        "symbol_tone_ratio_db": [
+          18.742749075810238,
+          17.096649357364864,
+          -15.474547748979017,
+          16.202385174147445,
+          -14.507419395805174,
+          -16.989884930303464,
+          14.255360732588098,
+          15.639673094610188,
+          15.610084155806035,
+          -15.238510319225211,
+          -18.388657675585833,
+          -7.637473942266924,
+          -16.192733552659895,
+          -17.14462660267089,
+          -16.830241637704972,
+          14.41099450072669,
+          -7.9625677931589065,
+          13.959824440931206,
+          -17.85912078644905,
+          16.061814117708334,
+          -15.222633486389913,
+          -8.890178531277623,
+          14.873035186105108,
+          -16.039173912002518,
+          -12.502337490837547,
+          17.069587070197564,
+          -7.070199894678854,
+          -4.897675678826243,
+          -5.7382252739969815,
+          -6.00128244093745,
+          -9.980090785248988,
+          -8.43920751814114,
+          -17.908877120247443,
+          15.524438755251577,
+          -17.693889286705403,
+          -8.732398076798027,
+          16.203853663487294,
+          14.179661145889925,
+          -5.415679201096799,
+          -6.088360632996936,
+          -9.476055781112434,
+          -9.040596506249367,
+          -8.59433311617849,
+          16.222018452637585,
+          15.123460678585898,
+          -14.388503461519978,
+          -16.096164286120963,
+          -17.238553677332554,
+          -18.63356623082457,
+          -15.019699871197364,
+          16.531248573374214,
+          15.928912461230194,
+          -6.133427561887653,
+          -19.867874335928594,
+          -16.139144363066304,
+          16.107184516977313,
+          -14.357998419965103,
+          -11.911709896949915,
+          16.62849174575439,
+          15.426120057431367,
+          -13.69960328446583,
+          -17.226944738486857,
+          -11.364889079794978,
+          -17.680834880551064,
+          -10.514025066008855,
+          -14.592475343472307,
+          15.836191378829492,
+          13.490683077953499,
+          -7.440751237715948,
+          -6.226834221844295,
+          -5.550127743536831,
+          -8.431617517562202,
+          -19.677007279506398,
+          -18.741075401355463,
+          18.1477731738335,
+          -20.6183326796023,
+          -15.032038035946835,
+          -14.048522212607304,
+          -15.810197402052959,
+          17.079219981897214
+        ],
+        "interference_rule": "Lowest quartile of out-of-tone-band noise within each symbol center window",
+        "pilot_above_off_db": 16.03940699198231,
+        "clip_fraction": 0.0,
+        "fft_size": 4096,
+        "candidate_alignment_count": 1202
+      }
+    },
+    {
+      "report": "rtl8922-tx-dds-fsk-pad2-path1.json",
+      "sha256": "e49719be000a0bddee4ccb7add716fbe4a33174961795630b904910316a87443",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "fsk_qualification": {
+        "passed": false,
+        "gates": {
+          "sync_without_bit_errors": true,
+          "payload_without_bit_errors": false,
+          "every_symbol_has_6db_tone_discrimination": false,
+          "pilot_disappears_after_tx_stop_15db": true,
+          "no_clipping": true
+        },
+        "scope": "Host-controlled two-frequency DDS symbols; not arbitrary complex samples",
+        "alignment_seconds_sync_only": -0.06099999999999989,
+        "sync_bit_errors": 0,
+        "payload_bit_errors": 4,
+        "decoded_payload_hex": "10444c3839123221",
+        "expected_payload_hex": "52544c3839323221",
+        "symbol_tone_ratio_db": [
+          17.320478863368464,
+          20.19045027120159,
+          -17.233553438991137,
+          16.187005809117643,
+          -21.421436028359658,
+          -16.949114894495043,
+          16.17135480524926,
+          21.170175336208427,
+          16.2121912820187,
+          -20.29932286878237,
+          -18.26146510926214,
+          21.518836594969592,
+          -17.929346122329665,
+          -18.28708827311213,
+          -18.828303128698664,
+          16.03454127564389,
+          -17.673342141077008,
+          -6.060923388001413,
+          -22.3263467319288,
+          19.818973403197123,
+          -18.085375527973063,
+          -17.940700793630462,
+          -7.5707535317807455,
+          -9.856859601979952,
+          -16.603682386795143,
+          19.965572394474705,
+          -18.202539483727506,
+          -4.925162048699135,
+          -17.768923165654556,
+          19.352097467858954,
+          -20.197630720666467,
+          -17.516155484120034,
+          -19.099569322428195,
+          18.44294412876478,
+          -16.271690038191196,
+          -18.6842511134468,
+          17.408102374529985,
+          20.172022871684057,
+          -18.445156715124185,
+          -20.542344569720093,
+          -17.44864077621042,
+          -17.804862065812415,
+          19.96971695856621,
+          18.396365755404652,
+          15.56400931771629,
+          -15.373079323483134,
+          -17.187580645833304,
+          -19.988549521640117,
+          -20.32182640704503,
+          -19.236967182658812,
+          20.31494433361288,
+          16.144712716496624,
+          17.62834245810248,
+          -15.814740290934157,
+          -19.174444753702158,
+          18.039541179607887,
+          -19.61627578174554,
+          -18.963554214116755,
+          -1.6590150495830995,
+          18.507044225307475,
+          -16.108169590985423,
+          -18.465457345580834,
+          16.953896318224135,
+          -7.611405201125625,
+          -15.548475685896587,
+          -19.007970699002183,
+          17.197741143480275,
+          19.529822864666734,
+          -10.282488302123106,
+          -18.301696916415835,
+          14.478680851959322,
+          -16.189488653751404,
+          -17.307627974906005,
+          -8.597063835815874,
+          18.970830118988413,
+          -19.606039640877906,
+          -18.65101220943936,
+          -17.050700463141535,
+          -18.41090352713746,
+          18.688046295286117
+        ],
+        "interference_rule": "Lowest quartile of out-of-tone-band noise within each symbol center window",
+        "pilot_above_off_db": 18.193758388806785,
+        "clip_fraction": 0.0,
+        "fft_size": 4096,
+        "candidate_alignment_count": 1202
+      }
+    },
+    {
+      "report": "rtl8922-tx-dds-fsk-path1.json",
+      "sha256": "f49a714c89f6805f6bda85dd074acfe4b525f3010694302a6cae857bb243a5e3",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "fsk_qualification": {
+        "passed": false,
+        "gates": {
+          "sync_without_bit_errors": true,
+          "payload_without_bit_errors": false,
+          "every_symbol_has_6db_tone_discrimination": false,
+          "pilot_disappears_after_tx_stop_15db": true,
+          "no_clipping": true
+        },
+        "scope": "Host-controlled two-frequency DDS symbols; not arbitrary complex samples",
+        "alignment_seconds_sync_only": -0.06299999999999989,
+        "sync_bit_errors": 0,
+        "payload_bit_errors": 4,
+        "decoded_payload_hex": "42504c3838323021",
+        "expected_payload_hex": "52544c3839323221",
+        "symbol_tone_ratio_db": [
+          15.465839588051198,
+          15.523604639395607,
+          -17.87390764007392,
+          15.334293300002123,
+          -14.983543453285868,
+          -17.505930312062226,
+          16.995066959134718,
+          15.473341148770434,
+          15.364700103355858,
+          -11.638303989015157,
+          -17.594006709302604,
+          16.59141732409074,
+          -15.525450606563107,
+          -16.668645854520502,
+          -6.739504293655006,
+          15.660338217463629,
+          -16.470392028307554,
+          16.888027780509926,
+          -17.076616398058054,
+          -4.455811440185121,
+          -17.610300399449734,
+          -16.619241690429853,
+          16.77604869664201,
+          -17.409037324782517,
+          -7.791120890685926,
+          16.921256907458204,
+          -18.12683933669187,
+          16.013681874786407,
+          -16.85636792689843,
+          -6.380481126162611,
+          -16.593221301397506,
+          -17.253182032615243,
+          -17.132304289849685,
+          15.528415721535158,
+          -7.978245152127105,
+          -15.7414212611585,
+          16.008181109328483,
+          16.20694307292586,
+          -17.93111898363596,
+          -9.275082543789704,
+          -17.349852280887312,
+          -16.27846404445892,
+          16.47338900863256,
+          16.55058243211944,
+          10.351967768498927,
+          -16.31926573690831,
+          -16.874308070788487,
+          -15.814659671505375,
+          -16.833799341925875,
+          -16.939010360209224,
+          6.208526661565708,
+          15.876712323691688,
+          17.968936936364003,
+          -16.810676164432845,
+          -17.48008399873538,
+          -4.866660464339731,
+          -17.695211455722983,
+          -16.417771794357787,
+          16.780704766393,
+          16.42195608616644,
+          -8.26812768303542,
+          -17.311644934615302,
+          16.351393582530463,
+          -17.334405468561368,
+          -17.47360021146403,
+          -7.999965509101015,
+          16.145272407474444,
+          17.026473112416923,
+          -15.578777037159831,
+          -17.366097531803426,
+          -6.098822048296542,
+          -16.559741438288103,
+          -16.803375383242738,
+          -16.647011946574256,
+          16.139118127091407,
+          -9.231492326012589,
+          -16.03579670872607,
+          -16.197475822451946,
+          -17.037236514401524,
+          16.74349563649782
+        ],
+        "pilot_above_off_db": 16.152992962447406,
+        "clip_fraction": 0.0,
+        "fft_size": 4096,
+        "candidate_alignment_count": 1202
+      }
+    },
+    {
+      "report": "rtl8922-tx-dds-fsk-pluto2m-path1.json",
+      "sha256": "e584b0aba99b53557e5ecfd10789a4302543243042caf312f1c4ede20cd6a527",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      },
+      "pluto_readback_mismatches": {
+        "rx_hardwaregain_chan0": {
+          "saved": 71,
+          "actual": 70
+        }
+      },
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "fsk_qualification": {
+        "passed": false,
+        "gates": {
+          "sync_without_bit_errors": true,
+          "payload_without_bit_errors": false,
+          "every_symbol_has_6db_tone_discrimination": false,
+          "pilot_disappears_after_tx_stop_15db": true,
+          "no_clipping": true
+        },
+        "scope": "Host-controlled two-frequency DDS symbols; not arbitrary complex samples",
+        "alignment_seconds_sync_only": -0.036499999999999866,
+        "sync_bit_errors": 0,
+        "payload_bit_errors": 2,
+        "decoded_payload_hex": "52540c3839323201",
+        "expected_payload_hex": "52544c3839323221",
+        "symbol_tone_ratio_db": [
+          16.780129035934152,
+          15.80672110854643,
+          -17.120183536732902,
+          15.725096171402544,
+          -18.883157763885777,
+          -16.458066438732754,
+          18.839486997632587,
+          16.99479844747481,
+          16.880847092731813,
+          -16.544078438549107,
+          -20.087883882672116,
+          17.62323145280267,
+          -16.061855144217546,
+          -16.760737695394994,
+          -18.971327060509367,
+          15.998202718660139,
+          -16.42398568001896,
+          17.800224989552298,
+          -12.771315086154026,
+          16.52015601010331,
+          -15.612508028180823,
+          -18.826564207599553,
+          15.07469624262794,
+          -8.642885727244597,
+          -15.294249558359276,
+          18.711960468483,
+          -15.891663972086404,
+          17.129470644786153,
+          -10.250279477838799,
+          16.774299144281752,
+          -18.386085931212442,
+          -15.66681208077516,
+          -16.56047322105473,
+          -5.008347093331984,
+          -15.296426486639222,
+          -18.097094507350583,
+          15.845478066623585,
+          16.06345752196077,
+          -14.016175519693302,
+          -17.198056176024515,
+          -15.624098894543959,
+          -17.739457021737636,
+          18.063769476183978,
+          15.910080279467905,
+          18.357500202978578,
+          -19.321770502041737,
+          -17.057382063244493,
+          -16.894246421411275,
+          -16.773703080219224,
+          -20.56065084522724,
+          15.845480404753427,
+          16.701369900188357,
+          16.33539514164353,
+          -19.01265809863007,
+          -17.226128133981543,
+          15.888253318656101,
+          -18.78519528422948,
+          -18.39316658959141,
+          19.05869904940553,
+          4.98532100438166,
+          -16.91283540143139,
+          -16.862450228026077,
+          17.56885975025338,
+          -17.128800841610186,
+          -10.548474018688456,
+          -16.56651462277105,
+          16.245581503879663,
+          15.742409642523985,
+          -17.617181842229442,
+          -8.431337756235306,
+          16.650607592308738,
+          -16.81461769741354,
+          -18.208010805486495,
+          -16.121763127373974,
+          -8.145044415403575,
+          -18.271394712710016,
+          -18.42877065436003,
+          -16.421474634684216,
+          -16.703581147955543,
+          8.245757241919081
+        ],
+        "interference_rule": "Lowest quartile of out-of-tone-band noise within each symbol center window",
+        "pilot_above_off_db": 16.911028395255634,
+        "clip_fraction": 0.0,
+        "fft_size": 4096,
+        "candidate_alignment_count": 1202
+      }
+    },
+    {
+      "report": "rtl8922-tx-digital-tone-gain8-path1.json",
+      "sha256": "604170bffbd259c63eaef1ef595f3d219534aaeec2268c522851e3680c907a6a",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_tone_qualification": {
+        "passed": true,
+        "gates": {
+          "all_on_peaks_above_local_floor_20db": true,
+          "all_on_peaks_above_both_off_controls_15db": true,
+          "all_frequency_residuals_within_3000hz": true,
+          "no_clipped_buffers": true
+        },
+        "measured_movements_hz": [
+          250000.0,
+          250000.0,
+          -500000.0
+        ],
+        "common_carrier_offset_hz": 16601.5625,
+        "on_above_off_db": [
+          25.926855810660705,
+          25.630445985628356,
+          25.757088560881304,
+          25.32202125444413
+        ],
+        "scope": "Finite calibration-tone RF route only; no arbitrary-I/Q or replay qualification"
+      }
+    },
+    {
+      "report": "rtl8922-tx-digital-tone-validation-path1.json",
+      "sha256": "f52e111925b9f28b53679606e897391587e315edaf43b646b74d1a211a2a4479",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "pluto_readback_mismatches": {
+        "rx_hardwaregain_chan0": {
+          "saved": 70,
+          "actual": 71
+        }
+      },
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_tone_qualification": {
+        "passed": false,
+        "gates": {
+          "all_on_peaks_above_local_floor_20db": false,
+          "all_on_peaks_above_both_off_controls_15db": false,
+          "all_frequency_residuals_within_3000hz": true,
+          "no_clipped_buffers": true
+        },
+        "measured_movements_hz": [
+          250000.0,
+          250000.0,
+          -500244.140625
+        ],
+        "common_carrier_offset_hz": 16845.703125,
+        "on_above_off_db": [
+          -0.14170329834152826,
+          7.2903443473886576,
+          0.7173130679409844,
+          -1.1008771710064718
+        ],
+        "scope": "Finite calibration-tone RF route only; no arbitrary-I/Q or replay qualification"
+      }
+    },
+    {
+      "report": "rtl8922-tx-iqc-path1.json",
+      "sha256": "538bf7d9a01736d7a208e8deb9c6930d8a6e09e49688b9cfa5deb702f1b93664",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 8,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-iqc-tone-path1.json",
+      "sha256": "5a1350f638f61c80e2582f31ade858f8f9ea84b4a31c7404b3dc8479275723de",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 8,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-live-dds-controls-path1.json",
+      "sha256": "69a6f51312209d4eaadf90e6dea934469a1908c5654589c5de989b54f59c07b0",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "pluto_readback_mismatches": {
+        "rx_hardwaregain_chan0": {
+          "saved": 70,
+          "actual": 71
+        }
+      },
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lo-movement-path1.json",
+      "sha256": "10ef02826406ec46b4b7348e42451d278a9da5e3afdf3f05529035ab2b5c4a05",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 3,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:58": {
+          "saved": "0x83de8",
+          "actual": "0x83dec"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lo-path1.json",
+      "sha256": "efea0d795a7995b512ddd2ad895670f007b3388eb568ff7f08f83847df6bdac7",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 3,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:58": {
+          "saved": "0x83de8",
+          "actual": "0x83dec"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lok-controls-path1.json",
+      "sha256": "e386503cbd68027906af4462768af8051dd140d7aa29e49b324db109b426f2e0",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 6,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x337e2"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lok-modulation-path1.json",
+      "sha256": "eddf1ae62c19924a0a63331aa3f4dda26e205abcc9fe65b84968905ac4153982",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33782",
+          "actual": "0x337e2"
+        }
+      },
+      "pluto_readback_mismatches": {
+        "rx_hardwaregain_chan0": {
+          "saved": 71,
+          "actual": 70
+        }
+      },
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "analog_modulation_qualified": false
+    },
+    {
+      "report": "rtl8922-tx-lok-modulation-single-buffer-retry.json",
+      "sha256": "186bfb5c48cf823a5303971066e8d6591ac3cae1375e5b1dcb2719f8f570f35e",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "analog_modulation_qualified": false
+    },
+    {
+      "report": "rtl8922-tx-lok-modulation-single-buffer.json",
+      "sha256": "7db78dde66d6c5d6faa728e4448afe8a802b4a6b77b8a2e3ac5061735d10483b",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 0,
+      "exception": "TimeoutError: [Errno 110] Connection timed out",
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lok-offset-path1.json",
+      "sha256": "6e5c0ee327bdc75b10c5503e297ba87b5a66d2dbdfe48ebfdabf05d0d1532734",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 6,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33762",
+          "actual": "0x33782"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-lok-override-path1.json",
+      "sha256": "75f2c7eb7692827e0c4861d431e3b9555cf28d03f7fde3d8a681addb2da2f746",
+      "source": "lo",
+      "path": 1,
+      "tone_observations": 6,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x33782"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false
+    },
+    {
+      "report": "rtl8922-tx-manual-gain-path1.json",
+      "sha256": "c204e3ee0583711b835fe756de00e839fa4962ead97dc54c5f5141b0786cac33",
+      "source": "calibration",
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x38020"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-tone-path0.json",
+      "sha256": "589c3c4f557f90e4917e092a46007293b3285b8ecf750653a64eef22627d7952",
+      "source": null,
+      "path": 0,
+      "tone_observations": 3,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33782"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    },
+    {
+      "report": "rtl8922-tx-tone-path1-wide.json",
+      "sha256": "e201b9be8f35aee8ecac0e68009d725142e857da4ed39a225f796a59e5448582",
+      "source": null,
+      "path": 1,
+      "tone_observations": 4,
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33782",
+          "actual": "0x399c2"
+        }
+      },
+      "pluto_readback_mismatches": {},
+      "pluto_restore_commands_completed": true,
+      "rtl_cleanup_errors": [],
+      "pluto_tx_off": true,
+      "helper_hashes_recorded": false,
+      "digital_rf_route_limit": "Initial probe used incorrect AFE force mask; not a complete routing test."
+    }
+  ],
+  "offline_checks": {
+    "existing_tests_passed": 11,
+    "tx_fault_injection_tests_passed": 4,
+    "static_inspection_functions": 27,
+    "wrong_driver_hash_rejected": true,
+    "diff_check_passed": true,
+    "tx_analysis_tests_passed": 4,
+    "tx_total_tests_passed": 8
+  },
+  "final_state_report": "rtl8922-tx-followup-final-state.json",
+  "hardware_report_count": 27,
+  "followup_hardware_report_count": 11,
+  "initial_final_state_report": "rtl8922-tx-final-state.json",
+  "current_research_source_sha256": {
+    "calibration_probe.py": "1d497787f961613556aa4c2b2453cead8b1bc2f3f4aac5dd4641600c0aac8c41",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "inspect_tx.py": "0c977ecb2924d28d66d8fb3f503a1f361582b11c0222b62f77364530860cc58e",
+    "lok_modulation.py": "f27cd1173a2588ee9edb63816b9244a6366547cf1bbd250cce92846381f06fe8",
+    "test_calibration_probe.py": "9406dd3f84d3195936442ddfc6bb453642b9b812e8c7295c23d35259764aded2",
+    "test_fsk_probe.py": "6d397c886a1572d14d501ba57442c4cab35dfeee6d0f01f3962bf6148d0e23d6",
+    "test_tone_validation.py": "aa397c20c6d78642d112e57a32cf7bc4274602e28d2aff50fbec5cdb6b1e0492",
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a"
+  }
+}

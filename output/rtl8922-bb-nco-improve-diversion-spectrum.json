@@ -1,0 +1,28 @@
+{
+  "rf_report": "output/rtl8922-bb-nco-improve-diversion-wide-b.json",
+  "moving_tone_hz": 499877.9296875,
+  "control_above_both_off_db": [
+    30.904515545211634,
+    32.094113750178984,
+    24.697257138261385,
+    31.068349761462688
+  ],
+  "clip_fraction": 0.0,
+  "model_correlation": 0.9896200831382843,
+  "bands": [
+    {
+      "band": "wanted",
+      "receive_offset_hz": -733517.5592032665,
+      "on_to_off_band_power_db": 11.953634100009271,
+      "uncalibrated_on_band_power": 22539871.083995808
+    },
+    {
+      "band": "diverted",
+      "receive_offset_hz": 7266482.440796734,
+      "on_to_off_band_power_db": 8.902353132922201,
+      "uncalibrated_on_band_power": 9987113.047880376
+    }
+  ],
+  "diverted_to_wanted_200khz_power_db": -3.535114619387263,
+  "scope": "Receiver band powers, no calibrated emission mask; unrelated wideband activity can contaminate averages"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-low-am-ga.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am-ga.cf32",
+    "control_base_index": 4
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-low-am-gb.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am-gb.cf32",
+    "control_base_index": 4
+  }
+]

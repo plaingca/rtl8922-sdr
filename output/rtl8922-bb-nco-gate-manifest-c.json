@@ -1,0 +1,32 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16-repeat.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16-repeat.bin",
+    "report": "output/rtl8922-bb-nco-gate-phase16-repeat-c.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16-repeat-c.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18-repeat.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18-repeat.bin",
+    "report": "output/rtl8922-bb-nco-gate-phase18-repeat-c.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/phase18-repeat-c.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half-repeat.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half-repeat.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-half-repeat-c.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-half-repeat-c.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-naive.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-naive.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-low-naive-c.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-naive-c.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-compensated.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-compensated.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-low-compensated-c.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-compensated-c.cf32"
+  }
+]

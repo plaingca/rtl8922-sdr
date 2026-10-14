@@ -1,0 +1,63 @@
+{
+  "source_report": "output/rtl8922-waterfall160-shot1-20261013.json",
+  "source_capture": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-waterfall160-shot1-20261013.bin",
+  "source_report_sha256": "3c5b347e605b139ff0aff8a9e03a14190336c6eb0c161b8dfcebab1db6c3d893",
+  "source_interval_sha256": "63421f05371da30d9afe1b9589ed45047aaa176710effad7de636246922f0191",
+  "source_rate": 160000000,
+  "source_center_mhz": 5250,
+  "channel_mhz": 5220.0,
+  "source_start_sample": 0,
+  "source_samples": 40000000,
+  "channel_rate": 20000000,
+  "channel_samples": 5000000,
+  "channelizer": "complex mixing then scipy.signal.resample_poly(up=1, down=8), default Kaiser FIR",
+  "phase_removed": false,
+  "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+  "reference_modification": "retain received FCS in PDU; CRC gate and PHY algorithms unchanged",
+  "equalized_symbols": 1262,
+  "equalizer_tags": 70,
+  "frame_count": 1,
+  "crc_pass_count": 1,
+  "frames": [
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 441,
+      "frame_sha256": "dffaf1090f756ebca0dcb6314df2c5cacfd40639f5076c1931b6833c9f5a9a41",
+      "fcs_received": "a232c556",
+      "fcs_computed": "a232c556",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 441,
+        "encoding": 4,
+        "snr": 22.951410202412585,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154922.024104286,
+        "beta": 0.7324987649917603
+      }
+    }
+  ],
+  "selected_frame": {
+    "kind": "beacon",
+    "type": 0,
+    "subtype": 8,
+    "bytes_including_fcs": 441,
+    "frame_sha256": "dffaf1090f756ebca0dcb6314df2c5cacfd40639f5076c1931b6833c9f5a9a41",
+    "fcs_received": "a232c556",
+    "fcs_computed": "a232c556",
+    "crc_pass": true,
+    "metadata": {
+      "dlt": 105,
+      "frame bytes": 441,
+      "encoding": 4,
+      "snr": 22.951410202412585,
+      "nominal frequency": 5220000000.0,
+      "frequency offset": -154922.024104286,
+      "beta": 0.7324987649917603
+    }
+  },
+  "selected_equalizer_symbol_offset": 0,
+  "selected_ofdm_symbols": 37
+}

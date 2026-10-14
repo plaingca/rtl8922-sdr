@@ -1,0 +1,184 @@
+{
+  "source_report": "output/rtl8922-stream-matrix-v1.json",
+  "trials": [
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "tone_offset_hz": 250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.64871404047231
+      },
+      "reference_band_peak_hz": 239562.98828125,
+      "reference_peak_median_db": 29.034378717984858,
+      "fft_bin_hz": 305.17578125,
+      "prefix_sha256": "c85b98aabfa8ca151450baf49b946781430b19ac3aa9987b7d253419308f3347",
+      "producer_seconds": 60.000226515,
+      "host_bytes": 4799963136,
+      "full_requested_duration_transport_pass": true,
+      "source_guard_reason": 0,
+      "max_backlog_records": 3178
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "tone_offset_hz": -250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.91823733580539
+      },
+      "reference_band_peak_hz": -260620.1171875,
+      "reference_peak_median_db": 26.539913976631397,
+      "fft_bin_hz": 305.17578125,
+      "prefix_sha256": "d88cebc279bf3f7b445d123feb9019dd868c5d2428ad5abc728e17fcb0862587",
+      "producer_seconds": 2.000116644,
+      "host_bytes": 159997952,
+      "full_requested_duration_transport_pass": true,
+      "source_guard_reason": 0,
+      "max_backlog_records": 3044
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "tone_offset_hz": 250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 34.738387643769286
+      },
+      "reference_band_peak_hz": 239562.98828125,
+      "reference_peak_median_db": 25.73404731378104,
+      "fft_bin_hz": 305.17578125,
+      "prefix_sha256": "aab2e4ae4c2cbf80b708ea9756c88d9d3387eec03900e00a6d6c75ef46d93528",
+      "producer_seconds": 60.000023802,
+      "host_bytes": 4799946752,
+      "full_requested_duration_transport_pass": true,
+      "source_guard_reason": 0,
+      "max_backlog_records": 5001
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "tone_offset_hz": -250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": 17999877.9296875,
+        "peak_median_db": 32.479765083501974
+      },
+      "reference_band_peak_hz": -260620.1171875,
+      "reference_peak_median_db": 29.099756183066056,
+      "fft_bin_hz": 305.17578125,
+      "prefix_sha256": "5f5de030086ae75b0c05456d2b3540b81e1ddde5c12cc193e5184c11e79ccbd2",
+      "producer_seconds": 2.000151799,
+      "host_bytes": 159997952,
+      "full_requested_duration_transport_pass": true,
+      "source_guard_reason": 0,
+      "max_backlog_records": 2896
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "tone_offset_hz": 250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": 227661.1328125,
+        "peak_median_db": 26.358986804945626
+      },
+      "reference_band_peak_hz": 227661.1328125,
+      "reference_peak_median_db": 26.35252029831605,
+      "fft_bin_hz": 610.3515625,
+      "prefix_sha256": "e735bcda741c4e8342ba4f33b028bf1073ab0cc5e8086da232935c1f5b80be0c",
+      "producer_seconds": 0.004136507,
+      "host_bytes": 327680,
+      "full_requested_duration_transport_pass": false,
+      "source_guard_reason": 4,
+      "max_backlog_records": 41207
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "tone_offset_hz": -250000,
+      "global_peak": {
+        "samples": 131072,
+        "peak_hz": -272216.796875,
+        "peak_median_db": 25.88988961460752
+      },
+      "reference_band_peak_hz": -272216.796875,
+      "reference_peak_median_db": 25.883916069214415,
+      "fft_bin_hz": 610.3515625,
+      "prefix_sha256": "bb247f768a9ef6b8041b028615008e0a1c78ddbe8960844091a8453ab17e5f17",
+      "producer_seconds": 0.00413824,
+      "host_bytes": 327680,
+      "full_requested_duration_transport_pass": false,
+      "source_guard_reason": 4,
+      "max_backlog_records": 41227
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "tone_offset_hz": 250000,
+      "global_peak": {
+        "samples": 53248,
+        "peak_hz": 228365.38461538465,
+        "peak_median_db": 22.153332647330515
+      },
+      "reference_band_peak_hz": 228365.38461538465,
+      "reference_peak_median_db": 22.149943008925973,
+      "fft_bin_hz": 3004.8076923076924,
+      "prefix_sha256": "42eed57e9f29ac40044d354789aa444c6d829d78bcc381951e48c837dffc7016",
+      "producer_seconds": 0.001424372,
+      "host_bytes": 106496,
+      "full_requested_duration_transport_pass": false,
+      "source_guard_reason": 4,
+      "max_backlog_records": 42510
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "tone_offset_hz": -250000,
+      "global_peak": {
+        "samples": 53248,
+        "peak_hz": 30000000.000000004,
+        "peak_median_db": 20.16730105667976
+      },
+      "reference_band_peak_hz": -273437.50000000006,
+      "reference_peak_median_db": 19.626302134945938,
+      "fft_bin_hz": 3004.8076923076924,
+      "prefix_sha256": "889d642f3cc0d7510aae60c5a2b4f7e2f44d650f8c42ca82b92c916cd15bbcac",
+      "producer_seconds": 0.00142853,
+      "host_bytes": 106496,
+      "full_requested_duration_transport_pass": false,
+      "source_guard_reason": 4,
+      "max_backlog_records": 42654
+    }
+  ],
+  "pairs": [
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "measured_movement_hz": 500183.10546875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "measured_movement_hz": 500183.10546875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "measured_movement_hz": 499877.9296875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "measured_movement_hz": 501802.88461538474,
+      "reference_movement_pass": true
+    }
+  ],
+  "analysis_scope": "Post-hoc reference-band analysis; global peaks preserved. Reference movement does not establish wideband fidelity or long-run sample continuity."
+}

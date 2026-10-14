@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "raw_dac_replay_or_streaming_demonstrated": false,
+  "finite_host_paced_complex_if_demonstrated": true,
+  "input_report_sha256": {
+    "rtl8922-dac-input-analysis.json": "61fcebca00578c6359489d54042b0d31882cde810fc93ecf968e7c11a2c9b519",
+    "rtl8922-dds-dc-probe-path1.json": "8b7a710b7d06bf72a00ef0fd70bc6cfd46cedf865dc23365ed0ce5649d66b794",
+    "rtl8922-dds-dc-wide-probe-path1.json": "18359529008cbdd1106dba3ba4bd37abf279c76a7a38a3955a7090ba59d63ca6",
+    "rtl8922-internal-iq-sample-sequence-path1.json": "e9ffe785e8fa6a0955741eb6ef229e4e55bd3432d03ea7c14e3147fc41fd6bf0",
+    "rtl8922-dac-phase-clock-path1.json": "c5c76102ab37b930906ee625c3f6d5a99b29160f34844aaffc8a2c47317ec52a",
+    "rtl8922-dif5-packed-probe-path1.json": "3bc5a3175d885f0cb1299eb1fe0436c16757d8028e66db35a734080b4475264c",
+    "rtl8922-iq-rf-levels-path1-a.json": "543cedc0f42a0d69b87774fd387aa0a9d9c4764ddab79562fba1732d21180f25",
+    "rtl8922-iq-rf-levels-path1-b.json": "b27252a6c04e8866c8f378915e45d5fda446e3dc10613eb798533fa68d493872",
+    "rtl8922-dac-followup-tone-control-path1.json": "f1393e53c5321e6f83a9788b0db497315cd93a56cd51811b868ed94494a248b6",
+    "rtl8922-native-dac-clock-tone-control-path1.json": "aa1722fea326a04994f454f9063de124037e82d56ec1a9e0a5a97f1eb0d49b9c",
+    "rtl8922-dadck-reference-path1-c.json": "42e6e593f63d20bd39470bd9f28140c1507a13bcbeb9b59b32b658b60d2e4169",
+    "rtl8922-dadck-reference-path1-d.json": "c9b2463d4578191b4899cd70607c5d886bf4a4b7cba532a3a49f44118cec4a4e",
+    "rtl8922-dadck-reference-path1-e.json": "390fbcec07f530e29215c8a0e750a1ff5dec34f42030575e5c58ed21d8b9f472",
+    "rtl8922-iq-if-envelope-path1-a.json": "7a70da39eee1d4b0274b09c86e0d6d671940a82863c06086e6593ed144ca8a82",
+    "rtl8922-iq-if-envelope-path1-b.json": "477cbd739bba16de6061dca2c6f6d63419a6593a94db27a11a1c2b3c6d1c5713",
+    "rtl8922-iq-if-envelope-path1-c.json": "7968f2301d1a2428688ae0389b7e2b0a388a8efd5dcde9188bb009e24fc15624",
+    "rtl8922-iq-if-envelope-path1-d.json": "fef9d97cdea392f8558e85fe897d6efa40f6c3efd1be899256084f22848a0833",
+    "rtl8922-iq-if-envelope-path1-e.json": "bd78bba3dc24e5a2ffb6b106caaaf3ae3ea5c96f7ecac6ddf94908003e676761",
+    "rtl8922-iq-if-envelope-path1-c-offline-v2.json": "b1ed8985e56b46a9b6e673b3e94f6cc008732de213722a4f28e274ce33c2852a",
+    "rtl8922-iq-if-envelope-path1-d-offline.json": "420d9c38cfdaa77242da7cf1103a8a6c371072e0801652f6996ebf3f1175f088",
+    "rtl8922-iq-if-envelope-path1-e-offline.json": "b8b11354c2a9bdc847889e8feaa21942487f518c4abc4d669814e8237607c1c1"
+  },
+  "internal_signed_sequence": {
+    "dds_word": 640,
+    "scope": "Selected first debug phase only",
+    "finite_internal_sequence_demonstrated": true,
+    "static_values_passed": true,
+    "nominal_host_updates_per_second": 2000.0,
+    "verification": {
+      "passed": true,
+      "alignment_uses_sync_only": true,
+      "payload_samples": 32,
+      "payload_wrong_values": 0,
+      "max_absolute_dac_count_error": 0.0,
+      "sample_value_rms_error": 0.0,
+      "estimated_records_per_host_second_from_sync": 1250002.4796326784,
+      "max_payload_write_timing_residual_us": 5.414007614990297,
+      "dwell_records": [
+        607,
+        639,
+        613,
+        634,
+        627,
+        622,
+        616,
+        625,
+        622,
+        627,
+        623,
+        634,
+        647,
+        607,
+        615,
+        626,
+        632,
+        621,
+        620,
+        625,
+        623,
+        629,
+        622,
+        627,
+        623,
+        628,
+        620,
+        627,
+        623,
+        628,
+        632,
+        621,
+        620,
+        628,
+        629,
+        624,
+        621,
+        624,
+        625,
+        628
+      ],
+      "host_write_intervals_us": [
+        484.68634486198425,
+        512.0281130075455,
+        489.3951117992401,
+        508.48349928855896,
+        503.3612251281738,
+        494.70551311969757,
+        492.67150461673737,
+        499.9767988920212,
+        497.6801574230194,
+        502.00894474983215,
+        498.0117082595825,
+        507.76079297065735,
+        523.1909453868866,
+        480.1880568265915,
+        491.26893281936646,
+        500.75724720954895,
+        506.43831491470337,
+        495.92554569244385,
+        495.9292709827423,
+        500.42569637298584,
+        498.07317554950714,
+        502.99055874347687,
+        497.6000636816025,
+        502.23059952259064,
+        497.73044884204865,
+        502.5826394557953,
+        496.04661762714386,
+        502.02012062072754,
+        497.97073006629944,
+        502.76145339012146,
+        505.6466907262802,
+        496.7786371707916,
+        495.97956240177155,
+        501.9884556531906,
+        503.99452447891235,
+        498.78284335136414,
+        496.82892858982086,
+        499.185174703598,
+        499.61358308792114
+      ],
+      "interpretation": "Finite host-paced I/Q holds at DAC debug tap; hardware-clocked replay and RF are unproved"
+    },
+    "physical_dac_constant_or_rf_proved": false
+  },
+  "sampling_trap": {
+    "wide_capture_observation_control_passed": true,
+    "dds320_and_960_alias_to_dc_at_slow_debug_rates": true,
+    "rate_selector_7_dds1_cycles_per_record": 0.0015625,
+    "rate_selector_8_dds1_cycles_per_record": 0.003125,
+    "selector8_is_not_qualified_320msps": true,
+    "dds640_packed_counterexamples": [
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3494e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -362.325,
+              "std": 361.752117305483,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 506.5010844941499,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 74.8375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x37c6a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.5078125,
+              "std": 17.925843814583562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.5078125,
+              "std": 17.925843814583562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.881953659024894,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.74609375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33c47",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -432.65,
+              "std": 273.78454576546136,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.46047288208314,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 39.675,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33907",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.7875,
+              "std": 17.505137638704813,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.7875,
+              "std": 17.505137638704813,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.893689986226118,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.60625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      }
+    ],
+    "packed_field_interpretation_provisional": true,
+    "adjacent_8030_observations": 90,
+    "adjacent_8030_dds_zero_always_zero": true
+  },
+  "raw_dc_rf_attempts": {
+    "rtl8922-iq-rf-levels-path1-a.json": {
+      "qualified": false,
+      "on_above_zero_db": -0.022611571493078814,
+      "heldout_modulation_to_residual_db": -24.867893908779443
+    },
+    "rtl8922-iq-rf-levels-path1-b.json": {
+      "qualified": false,
+      "on_above_zero_db": 0.29247693356082505,
+      "heldout_modulation_to_residual_db": -26.31703097134194
+    }
+  },
+  "dac_correction_full_codebook": {
+    "train_mse": 6.410057672592308e-05,
+    "differential_frequency_hz": -1.699999999999882,
+    "heldout_mse": 0.00012394662732812255,
+    "heldout_modulation_to_residual_db": -4.643117519567487,
+    "axis_singular_values": [
+      8.993100808326334e-05,
+      1.963210042436207e-05
+    ],
+    "axis_condition": 4.580814387627378,
+    "coefficients": [
+      [
+        0.004063850891902773,
+        0.010578025936410057
+      ],
+      [
+        7.403735626400426e-05,
+        -1.1242402499550127e-06
+      ],
+      [
+        4.88429285416339e-05,
+        -2.4588206008538898e-05
+      ]
+    ],
+    "heldout_axis_gate_passed": false
+  },
+  "complex_if": {
+    "path": 1,
+    "center_hz": 2442000000,
+    "rf_gain_code_uncalibrated": 8,
+    "dds_word": 1,
+    "nominal_if_hz": 250000,
+    "iqc_relative_bb_address": "0x8238",
+    "manual_enable_bit": 1,
+    "signed_field_width": 12,
+    "a_bits": "31:20",
+    "b_bits": "19:8",
+    "coefficient_mapping": "A_code=2*I_code-1024; B_code=2*Q_code",
+    "ideal_signal": "z=m*exp(jwt)+(m-1)*exp(-jwt), m=(I_code+j*Q_code)/1024",
+    "payload_component_range": [
+      -512,
+      512
+    ],
+    "max_payload_levels": 16,
+    "host_hold_seconds": 0.04,
+    "instantaneous_host_updates_per_second": 25,
+    "max_total_tx_seconds": 1.72,
+    "continuous_payload_stream": false,
+    "spectral_image_db_relative_to_desired_random_payload_c": 8.11024937370984,
+    "receiver_method": "U-r*L is payload-independent; fixed known references determine r; training-only affine calibration",
+    "validation": [
+      {
+        "report": "rtl8922-iq-if-envelope-path1-c-offline-v2.json",
+        "passed": true,
+        "payload_levels": 16,
+        "heldout_snr_db": 34.024474014498225,
+        "heldout_evm_percent": 1.9896482271826992,
+        "wrong_sequence_snr_db": -3.6226811378532258,
+        "axis_condition": 1.164840119795397,
+        "discarded_training_indices": [],
+        "min_payload_clean_points": 52,
+        "unknown_payload_values_used_in_fitting": false
+      },
+      {
+        "report": "rtl8922-iq-if-envelope-path1-d-offline.json",
+        "passed": true,
+        "payload_levels": 16,
+        "heldout_snr_db": 35.115762125994756,
+        "heldout_evm_percent": 1.7547364346727223,
+        "wrong_sequence_snr_db": -2.432660513134472,
+        "axis_condition": 1.1636186355157376,
+        "discarded_training_indices": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "min_payload_clean_points": 78,
+        "unknown_payload_values_used_in_fitting": false
+      },
+      {
+        "report": "rtl8922-iq-if-envelope-path1-e-offline.json",
+        "passed": true,
+        "payload_levels": 16,
+        "heldout_snr_db": 23.93906621060261,
+        "heldout_evm_percent": 6.353992377137556,
+        "wrong_sequence_snr_db": -2.4253288206597694,
+        "axis_condition": 1.2003324759969056,
+        "discarded_training_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "min_payload_clean_points": 43,
+        "unknown_payload_values_used_in_fitting": false
+      }
+    ],
+    "original_reports_preserved": {
+      "rtl8922-iq-if-envelope-path1-a.json": {
+        "qualified": false,
+        "reason": null,
+        "heldout_snr_db": null,
+        "heldout_modulation_to_residual_db": -6.954173829455387,
+        "spectral_image_mean_power_relative_to_desired_db": 9.933562117875459
+      },
+      "rtl8922-iq-if-envelope-path1-b.json": {
+        "qualified": false,
+        "reason": null,
+        "heldout_snr_db": null,
+        "heldout_modulation_to_residual_db": -4.054134553247154,
+        "spectral_image_mean_power_relative_to_desired_db": 9.4464751243152
+      },
+      "rtl8922-iq-if-envelope-path1-c.json": {
+        "qualified": true,
+        "reason": null,
+        "heldout_snr_db": 34.030596747976055,
+        "heldout_modulation_to_residual_db": null,
+        "spectral_image_mean_power_relative_to_desired_db": 8.11024937370984
+      },
+      "rtl8922-iq-if-envelope-path1-d.json": {
+        "qualified": false,
+        "reason": "Insufficient clean samples in state: minimum 1",
+        "heldout_snr_db": null,
+        "heldout_modulation_to_residual_db": null,
+        "spectral_image_mean_power_relative_to_desired_db": null
+      },
+      "rtl8922-iq-if-envelope-path1-e.json": {
+        "qualified": false,
+        "reason": "Insufficient clean samples in state: minimum 2",
+        "heldout_snr_db": null,
+        "heldout_modulation_to_residual_db": null,
+        "spectral_image_mean_power_relative_to_desired_db": null
+      }
+    },
+    "reanalysis_note": "D/E initially failed the requirement for all training symbols. Offline decoding discards erased known training symbols, requires both signed axes, and still requires every held-out payload symbol. C originally passed prospectively.",
+    "limits": [
+      "Strong complementary spectral image",
+      "Finite host-paced holds with known reference symbols",
+      "No physical DAC rate, wideband fidelity, replay RAM or continuous stream qualification"
+    ]
+  },
+  "cleanup": {
+    "rtl8922-dds-dc-probe-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dds-dc-wide-probe-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-internal-iq-sample-sequence-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dac-phase-clock-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dif5-packed-probe-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33742",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-rf-levels-path1-a.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-rf-levels-path1-b.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dac-followup-tone-control-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": false,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-native-dac-clock-tone-control-path1.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dadck-reference-path1-c.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dadck-reference-path1-d.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-dadck-reference-path1-e.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-if-envelope-path1-a.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33722",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-if-envelope-path1-b.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-if-envelope-path1-c.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": false,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-if-envelope-path1-d.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    },
+    "rtl8922-iq-if-envelope-path1-e.json": {
+      "rtl_cleanup_errors": [],
+      "rtl_restore_mismatches": {},
+      "cleanup_errors": [],
+      "pluto_settings_restored": true,
+      "final_pluto_tx_powerdown": "1"
+    }
+  }
+}

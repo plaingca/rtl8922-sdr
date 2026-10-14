@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "rf_report": "output/rtl8922-bb-nco-lora-long-moderate-hold-a.json",
+  "source": {
+    "schema_version": 1,
+    "hardware_access": false,
+    "kind": "meshtastic-lora-frequency-dither",
+    "parameters": {
+      "preset": "LONG_MODERATE",
+      "wide_lora": false,
+      "sf": 11,
+      "bandwidth_hz": 125000,
+      "coding_rate_denominator": 8,
+      "preamble_symbols": 16,
+      "sync_word": 43,
+      "explicit_header": true,
+      "payload_crc": true,
+      "ldro": true,
+      "deprecated": false
+    },
+    "frame_samples": 16244736,
+    "stream_blocks": 3966,
+    "carrier_offset_hz": 500000,
+    "sources": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "symbol_count": 72,
+        "symbol_sha256": "a2c51d5bc4836a3bbe993f9ffab82c638caf26cad906bad1e2b770ecb67e582b",
+        "nominal_airtime_seconds": 1.511424,
+        "first_native_command": 53333,
+        "native_commands": 16081369,
+        "ideal_crc_packets": 1
+      }
+    ],
+    "packet_count": 1,
+    "body_bytes": 35,
+    "table_sha256": "b4473ac9f74a601e767add3735557a3dc1952813ab886d64484dcfce63de3379",
+    "native_rate_hz": 10666666.666666666,
+    "chirp_playback_rate_hz": 10639878.95,
+    "buffer_hold_phase_compensation": true,
+    "modeled_buffer_service_gap_seconds": 9.667857358471314e-07,
+    "nco_command_max": 9,
+    "nco_codebook": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "scope": "Offline phase-accumulation frequency dithering; no amplitude compiler. Stock LoRa header/FEC/CRC, Meshtastic sync and preamble. RF carrier is in WiFi band, not sub-GHz."
+  },
+  "receiver_sample_rate_hz": 1000000,
+  "receiver_mixing_offset_hz": -489866.1640625,
+  "decode": {
+    "packets": [
+      {
+        "payload_hex": "ffff5fff012992f80000228900000000080d120f52544538393232204c6f5261f03070",
+        "crc_ok": false,
+        "header": {
+          "crc_valid": false,
+          "err": 0,
+          "ldro_mode": 1,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      }
+    ],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "off_control": {
+    "packets": [],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "wrong_sync_control": {
+    "packets": [],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "exact_crc_packets": 0,
+  "transmitted_packets": 1,
+  "distinct_exact_payloads": [],
+  "scope": "Stock LoRa per-packet acquisition/header/FEC/CRC; no known-payload fit, packet averaging or inter-packet phase correction. WiFi-band RF, not demonstrated commercial Meshtastic receiver interoperability.",
+  "packet_decode_demonstrated": false
+}

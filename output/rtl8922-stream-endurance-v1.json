@@ -1,0 +1,72 @@
+{
+  "tests": [
+    {
+      "name": "coded40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 1,
+      "returncode": 0,
+      "host": {
+        "packets": 9764,
+        "bytes": 79986688,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 1.106498,
+        "capture_bytes": 20000000
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,315f0,1,800,d24957f,2801,700000 packets=9764 produced=9999799 consumed=9998336 max_backlog=2591 elapsed_ns=1000018666 loss=0x0 stages_ns=25645440,444771,830453870,37021275 policy=6 reason=0 gap_ns=156509,93248 yield_ns=56839,53362\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "host_drops": 0,
+      "tx_on": true,
+      "capture_bytes_limit": 20000000
+    },
+    {
+      "name": "endurance40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 900.0,
+      "returncode": 0,
+      "host": {
+        "packets": 8788989,
+        "bytes": 71999397888,
+        "sequence_gaps": 0,
+        "pending_bytes": 0,
+        "producer_errno": 0,
+        "policy_errno": 0,
+        "reader_errno": 0,
+        "driver_ret": 0,
+        "seconds": 900.1006,
+        "capture_bytes": 262144
+      },
+      "producer": "ret=0 pipeline=1 snap=40b01,378cf,1,800,d24957f,2801,700000 packets=8788989 produced=409991317 consumed=409990144 max_backlog=4707 elapsed_ns=900000129856 loss=0x0 stages_ns=22931576752,397778646,751958768613,33345213377 policy=6 reason=0 gap_ns=366129,97397 yield_ns=272350,53161\n 21098=17e03fe0 2109c=0 210a0=0 210b4=0 210b8=0 210bc=0 210e4=0 210e8=0 210f0=0 8428=0",
+      "host_drops": 0,
+      "tx_on": false,
+      "capture_bytes_limit": 262144
+    }
+  ],
+  "started_utc": "2026-10-12T19:55:21Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": null
+}

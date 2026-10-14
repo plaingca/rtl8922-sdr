@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-12",
+  "sample_format": "signed 8-bit I plus signed 8-bit Q",
+  "working_driver_promoted": false,
+  "bit29_control": [
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 536870912,
+      "physical": 0,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9318049,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 671096832,
+      "busy": 0,
+      "monitor": 0,
+      "valid_copy": true,
+      "MBps": 87.9153994575474
+    },
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 536870912,
+      "physical": 1,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 6082906,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 671096832,
+      "busy": 0,
+      "monitor": 0,
+      "valid_copy": true,
+      "MBps": 134.67247397872003
+    }
+  ],
+  "copy_only_MBps": {
+    "virtual": {
+      "min": 87.27156199903013,
+      "max": 88.0996343198406
+    },
+    "physical_aligned": {
+      "min": 132.3831652310613,
+      "max": 135.16802365440415
+    }
+  },
+  "matrix": [
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 60.0,
+      "producer_seconds": 60.000226515,
+      "bytes": 4799963136,
+      "complex_samples": 2399981568,
+      "payload_MBps": 79.99908358345971,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 3178,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 2,
+      "producer_seconds": 2.000116644,
+      "bytes": 159997952,
+      "complex_samples": 79998976,
+      "payload_MBps": 79.99431057181883,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 3044,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "requested_seconds": 60.0,
+      "producer_seconds": 60.000023802,
+      "bytes": 4799946752,
+      "complex_samples": 2399973376,
+      "payload_MBps": 79.99908079769797,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 5001,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "producer_seconds": 2.000151799,
+      "bytes": 159997952,
+      "complex_samples": 79998976,
+      "payload_MBps": 79.99290457853894,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 2896,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "producer_seconds": 0.004136507,
+      "bytes": 327680,
+      "complex_samples": 163840,
+      "payload_MBps": 79.21659506438644,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 41207,
+      "producer_return": -75,
+      "source_guard_reason": 4,
+      "checks": {
+        "host_counters_clean": false,
+        "host_fifo_drops_zero": true,
+        "producer_clean": false,
+        "requested_duration_completed": false,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": false
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "producer_seconds": 0.00413824,
+      "bytes": 327680,
+      "complex_samples": 163840,
+      "payload_MBps": 79.18342097123416,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 41227,
+      "producer_return": -75,
+      "source_guard_reason": 4,
+      "checks": {
+        "host_counters_clean": false,
+        "host_fifo_drops_zero": true,
+        "producer_clean": false,
+        "requested_duration_completed": false,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": false
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "producer_seconds": 0.001424372,
+      "bytes": 106496,
+      "complex_samples": 53248,
+      "payload_MBps": 74.76698502919182,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 42510,
+      "producer_return": -75,
+      "source_guard_reason": 4,
+      "checks": {
+        "host_counters_clean": false,
+        "host_fifo_drops_zero": true,
+        "producer_clean": false,
+        "requested_duration_completed": false,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": false
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "requested_seconds": 2,
+      "producer_seconds": 0.00142853,
+      "bytes": 106496,
+      "complex_samples": 53248,
+      "payload_MBps": 74.54936193149602,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 42654,
+      "producer_return": -75,
+      "source_guard_reason": 4,
+      "checks": {
+        "host_counters_clean": false,
+        "host_fifo_drops_zero": true,
+        "producer_clean": false,
+        "requested_duration_completed": false,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": false
+    }
+  ],
+  "endurance": [
+    {
+      "name": "coded40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 1,
+      "producer_seconds": 1.000018666,
+      "bytes": 79986688,
+      "complex_samples": 39993344,
+      "payload_MBps": 79.98519499635022,
+      "sequence_counter_wraps": 0,
+      "max_backlog_records": 2591,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    {
+      "name": "endurance40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 900.0,
+      "producer_seconds": 900.000129856,
+      "bytes": 71999397888,
+      "complex_samples": 35999698944,
+      "payload_MBps": 79.9993194440093,
+      "sequence_counter_wraps": 2,
+      "max_backlog_records": 4707,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    }
+  ],
+  "new_coded_waveform_gate_passed": false,
+  "reference_movement": [
+    {
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "measured_movement_hz": 500183.10546875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 40,
+      "account_before_yield": true,
+      "measured_movement_hz": 500183.10546875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 80,
+      "account_before_yield": true,
+      "measured_movement_hz": 499877.9296875,
+      "reference_movement_pass": true
+    },
+    {
+      "rate_msps": 160,
+      "account_before_yield": true,
+      "measured_movement_hz": 501802.88461538474,
+      "reference_movement_pass": true
+    }
+  ],
+  "paxi_bypass_status": "Firmware trace lead only; direct LA-to-host transfer unverified",
+  "rate_320_status": "640 MB/s exceeds verified PCIe Gen2 x1 ceiling at 8+8 bits; reduced precision and source mode unverified",
+  "limitations": [
+    "Transport checks do not establish sample-level continuity or full-band RF fidelity.",
+    "A failed coded coherence gate cannot be overridden by packet counters.",
+    "No indefinite drop-free guarantee; allocation timeouts and application consumers remain relevant."
+  ]
+}

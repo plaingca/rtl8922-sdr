@@ -1,0 +1,38 @@
+[
+  {
+    "rf_hz": 2422250000,
+    "rtl_lo_mhz": 2422,
+    "nco_offset_hz": 250000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2421500000,
+    "rtl_lo_mhz": 2417,
+    "nco_offset_hz": 4500000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2442250000,
+    "rtl_lo_mhz": 2442,
+    "nco_offset_hz": 250000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 2446000000,
+    "rtl_lo_mhz": 2442,
+    "nco_offset_hz": 4000000,
+    "band": "2.4 GHz"
+  },
+  {
+    "rf_hz": 5244000000,
+    "rtl_lo_mhz": 5240,
+    "nco_offset_hz": 4000000,
+    "band": "5 GHz"
+  },
+  {
+    "rf_hz": 5789000000,
+    "rtl_lo_mhz": 5785,
+    "nco_offset_hz": 4000000,
+    "band": "5 GHz"
+  }
+]

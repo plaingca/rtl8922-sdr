@@ -1,0 +1,25 @@
+{
+  "source": "wide-long-slow-hold-a",
+  "decode": {
+    "packets": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "crc_ok": true,
+        "header": {
+          "crc_valid": true,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      }
+    ],
+    "crc_valid_packets": 1,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false
+  },
+  "exact_crc_packets": 1,
+  "packets": 1,
+  "scope": "Independent integration of actual packed commands with fixed modeled service hold; synthetic, not RF."
+}

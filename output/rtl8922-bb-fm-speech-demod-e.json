@@ -1,0 +1,87 @@
+{
+  "pilot_start_seconds": 0.0716227799988926,
+  "pilot_clock_scale": 1.0019964717469947,
+  "measured_audio_rate": 31936.240198737985,
+  "pilot_gain_hz_per_unit": 70101.64786063647,
+  "pilot_signal_error_db": 4.281289629796555,
+  "heldout_correlation": 0.16071161195789635,
+  "heldout_signal_error_db": -2.562674831357487,
+  "wrong_payload_signal_error_db": -3.2757762549106246,
+  "heldout_samples": 122592,
+  "output_peak_before_wav_normalization": 1.4972318564355775,
+  "alignment_uses": "initial chirp preamble only; held-out body does not tune alignment or gain",
+  "pause_corrected": {
+    "expected_pauses": 7,
+    "detected_pauses": 7,
+    "alignment": "initial pilot plus RF excursions; no speech-body fitting",
+    "status": "scored",
+    "pause_seconds": [
+      0.0029375,
+      0.0026475,
+      0.0023025,
+      0.003155,
+      0.0027575,
+      0.00243,
+      0.002375
+    ],
+    "total_pause_seconds": 0.018604999999999997,
+    "heldout_correlation": 0.9848556976979438,
+    "heldout_signal_error_db": 14.447270588310666,
+    "wrong_payload_signal_error_db": -3.213605367627835
+  },
+  "trace_sha256": "efa38bd75d9066bdea44b162f86d34f3edf8e2c97b02eabd00e3ea84d5c3f2b2",
+  "rf_report": "output/rtl8922-bb-fm-speech-e.json",
+  "source": "vendor/local-rf-captures/bb-fm-20261013/speech-chirp.wav",
+  "output": "output/audio/rtl8922-bb-fm-received-e.wav",
+  "rf_center_hz": 2422000000,
+  "audio_rate": 32000,
+  "duration_seconds": 4.011,
+  "stream_completed_blocks": 63,
+  "stream_requested_blocks": 63,
+  "stream_status": 2,
+  "receiver": "125 kHz channel LPF, quadrature FM, 75 us deemphasis, 30 Hz highpass",
+  "reference_audio_inserted": false,
+  "skipped_preamble_seconds": 0.18034375,
+  "output_duration_seconds": 3.87903125,
+  "blanking": {
+    "blanked_samples": 8087,
+    "phase_rate": 400000.0,
+    "spans": [
+      [
+        233815,
+        235070
+      ],
+      [
+        440201,
+        441340
+      ],
+      [
+        646470,
+        647471
+      ],
+      [
+        852601,
+        853943
+      ],
+      [
+        1059072,
+        1060255
+      ],
+      [
+        1265385,
+        1266437
+      ],
+      [
+        1471568,
+        1472598
+      ],
+      [
+        1652331,
+        1652416
+      ]
+    ],
+    "method": "interpolate excursions above 95 kHz shorter than 10 ms; no reference used",
+    "fraction_of_stream": 0.004980446497305619
+  },
+  "wav_normalizer": 1.5319610386842686
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "status": "finite_paired_pattern_rate_measured",
+  "period_samples": 32,
+  "comb_spacing_hz": 166667.4578531128,
+  "rf_measured_paired_update_rate_hz": 5333358.65129961,
+  "fitted_carrier_hz": 265766.88894562336,
+  "static_control_carrier_offset_hz": 15136.71875,
+  "qualified_lines": [
+    {
+      "order": -18,
+      "hz": -2734215.647515149,
+      "above_local_floor_db": 24.971994247069937,
+      "power": 20736069.96083916,
+      "fit_error_hz": 31.70489525841549
+    },
+    {
+      "order": -17,
+      "hz": -2567578.877934623,
+      "above_local_floor_db": 21.279286437685624,
+      "power": 8997603.363427587,
+      "fit_error_hz": 1.016622671391815
+    },
+    {
+      "order": -15,
+      "hz": -2234269.0778586105,
+      "above_local_floor_db": 18.375412816910647,
+      "power": 5268336.804673163,
+      "fit_error_hz": -24.09900754177943
+    },
+    {
+      "order": -11,
+      "hz": -1567603.2772812748,
+      "above_local_floor_db": 21.098821345441774,
+      "power": 9442825.066825118,
+      "fit_error_hz": -28.12984265713021
+    },
+    {
+      "order": -9,
+      "hz": -1234254.4201090913,
+      "above_local_floor_db": 19.27875166681742,
+      "power": 5494319.034112156,
+      "fit_error_hz": -14.188376699341461
+    },
+    {
+      "order": -8,
+      "hz": -1067512.4228788912,
+      "above_local_floor_db": 19.721978676751213,
+      "power": 5807507.0885459995,
+      "fit_error_hz": 60.35100038792007
+    },
+    {
+      "order": -7,
+      "hz": -900868.0921129097,
+      "above_local_floor_db": 23.27785968807075,
+      "power": 16242489.589788616,
+      "fit_error_hz": 37.223913256661035
+    },
+    {
+      "order": -6,
+      "hz": -734243.7284076092,
+      "above_local_floor_db": 19.1101535100901,
+      "power": 6106704.678158298,
+      "fit_error_hz": -5.870234555681236
+    },
+    {
+      "order": -4,
+      "hz": -400937.53114216845,
+      "above_local_floor_db": 21.715981164059983,
+      "power": 9905322.488802005,
+      "fit_error_hz": -34.58867534057936
+    },
+    {
+      "order": 0,
+      "hz": 265763.1920663219,
+      "above_local_floor_db": 24.467005293045055,
+      "power": 18912990.2265432,
+      "fit_error_hz": -3.6968793014530092
+    },
+    {
+      "order": 2,
+      "hz": 599112.2008042092,
+      "above_local_floor_db": 18.01386307777641,
+      "power": 4266070.968429634,
+      "fit_error_hz": 10.39615236024838
+    },
+    {
+      "order": 3,
+      "hz": 765681.5143856963,
+      "above_local_floor_db": 18.742728955977455,
+      "power": 5862263.518576289,
+      "fit_error_hz": -87.74811926553957
+    },
+    {
+      "order": 4,
+      "hz": 932428.3269646988,
+      "above_local_floor_db": 18.256037530887475,
+      "power": 5351470.360619893,
+      "fit_error_hz": -8.393393375794403
+    },
+    {
+      "order": 5,
+      "hz": 1099125.201974872,
+      "above_local_floor_db": 22.582306751841422,
+      "power": 13203751.186247854,
+      "fit_error_hz": 21.023763684555888
+    },
+    {
+      "order": 7,
+      "hz": 1432455.2923257323,
+      "above_local_floor_db": 18.660864755447093,
+      "power": 5423872.16196621,
+      "fit_error_hz": 16.198408319381997
+    },
+    {
+      "order": 9,
+      "hz": 1765788.4267370703,
+      "above_local_floor_db": 21.350828928095854,
+      "power": 11696215.89540998,
+      "fit_error_hz": 14.417113431729376
+    },
+    {
+      "order": 11,
+      "hz": 2099078.0748749664,
+      "above_local_floor_db": 19.406138679477152,
+      "power": 6537657.146171207,
+      "fit_error_hz": -30.850454898085445
+    },
+    {
+      "order": 12,
+      "hz": 2265779.8749092137,
+      "above_local_floor_db": 19.63238613785716,
+      "power": 7566592.831629973,
+      "fit_error_hz": 3.491726236883551
+    },
+    {
+      "order": 14,
+      "hz": 2599153.0402772403,
+      "above_local_floor_db": 25.704669579589332,
+      "power": 24583692.33970312,
+      "fit_error_hz": 41.74138803780079
+    }
+  ],
+  "fit_max_residual_hz": 87.74811926553957,
+  "capture_seconds": 0.0065536,
+  "clip_fraction": 0.0,
+  "amplitude_control_db": -5.955161063038745,
+  "reaches_20msps": false,
+  "scope": "Known finite periodic pattern rate only. Does not establish arbitrary polar sample fidelity, gap-free sustained operation, host sample streaming or whole-band qualification.",
+  "inputs": {
+    "output/rtl8922-bb-polar-rf-b.json": "0b85585726919cf224c7b3417d07fe0e6f6ac27c9c52331b6d87ed22adb39f3b",
+    "output/rtl8922-bb-polar-patch-b.json": "c9c7482502af168cef0f62635992643ce905fba669ac00c42983bddfba2463be"
+  },
+  "trace_sha256": "35e1e7cea800562b28f4f681cbb6705e2146e33ec23356ccaaea0698197ece99"
+}

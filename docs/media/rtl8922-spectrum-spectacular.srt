@@ -1,0 +1,79 @@
+1
+00:00:00,600 --> 00:00:03,341
+Folks! Has your Wi-Fi card been wasting its life,
+
+2
+00:00:03,341 --> 00:00:06,082
+doing Wi-Fi? Then step right up!
+
+3
+00:00:07,600 --> 00:00:10,328
+Introducing the R T L eighty nine twenty two!
+
+4
+00:00:10,328 --> 00:00:13,056
+One hundred and sixty million complex samples, every second!
+
+5
+00:00:13,056 --> 00:00:15,784
+That's a lot of radio!
+
+6
+00:00:17,300 --> 00:00:20,442
+Real I Q! Real spectrum! Two hundred and forty
+
+7
+00:00:20,442 --> 00:00:23,585
+F F Ts a second! Look at that waterfall!
+
+8
+00:00:25,100 --> 00:00:28,922
+And this beauty? One, one hundred and sixty megahertz
+
+9
+00:00:28,922 --> 00:00:32,745
+Wi-Fi six burst! Eight slices! Eight valid header checksums!
+
+10
+00:00:34,267 --> 00:00:36,366
+Want receipts? We decoded a four hundred and forty
+
+11
+00:00:36,366 --> 00:00:38,465
+one byte beacon, all the way to a matching
+
+12
+00:00:38,465 --> 00:00:40,564
+frame checksum!
+
+13
+00:00:42,067 --> 00:00:45,491
+But wait! There's more! Two point four! Five! Six
+
+14
+00:00:45,491 --> 00:00:48,915
+gigahertz! A stitched tour of the neighborhood!
+
+15
+00:00:50,433 --> 00:00:52,605
+Tune while streaming! And if the receiver overflows? It
+
+16
+00:00:52,605 --> 00:00:54,777
+marks the gap, reloads, and gets back in the
+
+17
+00:00:54,777 --> 00:00:56,948
+game!
+
+18
+00:00:58,467 --> 00:01:01,681
+R T L eighty nine twenty two S D
+
+19
+00:01:01,681 --> 00:01:04,896
+R! Open source! Unreasonably entertaining! Experimental! Some assembly, and
+
+20
+00:01:04,896 --> 00:01:08,110
+quite a lot of debugging, required!

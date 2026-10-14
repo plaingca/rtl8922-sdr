@@ -1,0 +1,469 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T05:09:01Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "a5c5c89fed4ede8522e1915a5aebae99f24c83d8ef26ae7129ac30be8c14a116",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0a7d1b7e6fef7eea4f05b3ee108a4a4bf5101cf37a670714808188cdfd8c24d2",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205",
+    "dac_phase_probe.py": "e288ea2adbf744d392fc03d66c79d6acc71f54ca39893b9773f235d0231c7c08",
+    "iq_if_probe.py": "42ae38c1424ba01b9747a4adc92f423c1799384c1a633477207b5269c3b0fc10"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-iq-if-envelope-path1-b.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": null,
+    "probe_iq_rf": false,
+    "probe_dac_phases": false,
+    "native_dac_clock4": false,
+    "probe_dif5": false,
+    "probe_iq_if": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1068\n\twdev 0x4a00000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 74\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1025512.6953125,
+        "above_median_db": 20.442237402804654,
+        "power": 1949348.6058894238
+      },
+      {
+        "hz": 958068.84765625,
+        "above_median_db": 14.71348205921019,
+        "power": 521211.4856450336
+      },
+      {
+        "hz": -1117675.78125,
+        "above_median_db": 11.602515081245537,
+        "power": 254634.5202399524
+      },
+      {
+        "hz": -1873962.40234375,
+        "above_median_db": 11.335906905800396,
+        "power": 239472.94885572974
+      },
+      {
+        "hz": -1594665.52734375,
+        "above_median_db": 11.253834171384616,
+        "power": 234989.8957898404
+      },
+      {
+        "hz": -1508605.95703125,
+        "above_median_db": 11.212359534363381,
+        "power": 232756.45013403686
+      },
+      {
+        "hz": 1051513.671875,
+        "above_median_db": 11.153332539376775,
+        "power": 229614.3495683593
+      },
+      {
+        "hz": 1373962.40234375,
+        "above_median_db": 11.14689796899813,
+        "power": 229274.40149768506
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0495970906659255,
+    "mean_real": -0.0022735595703125,
+    "mean_imag": 0.0058746337890625,
+    "clip_fraction": 0.0
+  },
+  "iq_if_modulation": {
+    "qualified": false,
+    "interpretation": "Finite host-paced complex IF envelope with a second spectral image",
+    "iqc_rf_gates": {
+      "reference_phase_residual_below_0_25_rad": true,
+      "heldout_prediction_above_15db": false,
+      "two_independent_axes_condition_below_3": true,
+      "on_above_zero_15db": false
+    },
+    "dds640_constant_preflight": null,
+    "on_above_zero_db": 13.352908284467711,
+    "axis_condition": 1.3577874753715722,
+    "offset_source": "iqc_if",
+    "baseline_codes": [
+      0,
+      0
+    ],
+    "heldout_uses_unseen_joint_codes": true,
+    "spectral_image_mean_power_relative_to_desired_db": 9.4464751243152,
+    "if_envelope_mapping": "A=2*I-1024, B=2*Q; desired m=(I+jQ)/1024; image=m-1",
+    "private_decimated_trace_path": "/tmp/rtl8922-iq-if-envelope-b.npz",
+    "digital_calibration_pilot": true,
+    "pilot_hz_relative_pluto": 1265109.5000690182,
+    "carrier_hz_relative_pluto": 1265109.5000690182,
+    "pilot_phase_residual_rad": 0.11777076198097734,
+    "pilot_amplitude": 6.895683417427557,
+    "rx_alignment_seconds": -0.06605680033993722,
+    "residual_frequency_hz": -45.174999999999834,
+    "frequency_drift_hz_per_second": -43.750000000000526,
+    "state_dwell_seconds": 0.04,
+    "events": [
+      [
+        0.2002648003399372,
+        0,
+        0
+      ],
+      [
+        0.2401561103761196,
+        -512,
+        0
+      ],
+      [
+        0.2801108192652464,
+        0,
+        0
+      ],
+      [
+        0.32012466341257095,
+        512,
+        0
+      ],
+      [
+        0.3600989803671837,
+        0,
+        0
+      ],
+      [
+        0.40011494792997837,
+        0,
+        -512
+      ],
+      [
+        0.4401203952729702,
+        0,
+        0
+      ],
+      [
+        0.48012243770062923,
+        0,
+        512
+      ],
+      [
+        0.5201045796275139,
+        0,
+        0
+      ],
+      [
+        0.560091570019722,
+        -512,
+        0
+      ],
+      [
+        0.600101126357913,
+        0,
+        0
+      ],
+      [
+        0.6401310712099075,
+        512,
+        0
+      ],
+      [
+        0.680099306628108,
+        0,
+        0
+      ],
+      [
+        0.7201084811240435,
+        0,
+        -512
+      ],
+      [
+        0.7600906938314438,
+        0,
+        0
+      ],
+      [
+        0.800093425437808,
+        0,
+        512
+      ],
+      [
+        0.8400872405618429,
+        0,
+        0
+      ],
+      [
+        0.8801326639950275,
+        93,
+        -331
+      ],
+      [
+        0.9201712440699339,
+        -6,
+        -80
+      ],
+      [
+        0.9601445402950048,
+        -19,
+        -407
+      ],
+      [
+        1.0000854954123497,
+        166,
+        390
+      ],
+      [
+        1.0401367098093033,
+        -355,
+        235
+      ],
+      [
+        1.0801730658859015,
+        259,
+        43
+      ],
+      [
+        1.1202450394630432,
+        359,
+        276
+      ],
+      [
+        1.1603858675807714,
+        124,
+        -281
+      ],
+      [
+        1.200358821079135,
+        13,
+        -230
+      ],
+      [
+        1.240465883165598,
+        437,
+        145
+      ],
+      [
+        1.2804617621004581,
+        -355,
+        58
+      ],
+      [
+        1.3202311974018812,
+        -15,
+        3
+      ],
+      [
+        1.360128778964281,
+        122,
+        -373
+      ],
+      [
+        1.4001242276281118,
+        -431,
+        443
+      ],
+      [
+        1.4401361774653196,
+        -58,
+        89
+      ],
+      [
+        1.4801667425781488,
+        -154,
+        -139
+      ]
+    ],
+    "used_envelope_points": 5835,
+    "discarded_clipped_fraction": 0.0,
+    "complex_intercept_i_q_coefficients": [
+      [
+        0.027800944483907394,
+        0.05583503578528827
+      ],
+      [
+        -0.0014287443417055324,
+        -0.0006887979072133834
+      ],
+      [
+        -0.00025012918750854746,
+        0.001351861137152746
+      ]
+    ],
+    "axis_singular_values": [
+      0.00169010315526523,
+      0.0012447479343574857
+    ],
+    "fit_mse": 0.13036266851156741,
+    "train_points": 3133,
+    "heldout_points": 2702,
+    "heldout_mse": 0.7241906499767431,
+    "heldout_modulation_to_residual_db": -4.054134553247154,
+    "modulation_power": 0.2847340844462806,
+    "modulation_to_residual_db": 3.3928621616644525
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1025573.73046875,
+        "above_median_db": 29.05702692348377,
+        "power": 115491743.00584428
+      },
+      {
+        "hz": 958068.84765625,
+        "above_median_db": 22.392116965746382,
+        "power": 24892008.465500545
+      },
+      {
+        "hz": -1003784.1796875,
+        "above_median_db": 16.131453256731678,
+        "power": 5888349.360164962
+      },
+      {
+        "hz": 890563.96484375,
+        "above_median_db": 15.649820257605434,
+        "power": 5270238.499099208
+      },
+      {
+        "hz": 823059.08203125,
+        "above_median_db": 13.764245571417442,
+        "power": 3414072.9809660185
+      },
+      {
+        "hz": 879821.77734375,
+        "above_median_db": 12.817478068357428,
+        "power": 2745339.446389831
+      },
+      {
+        "hz": 729980.46875,
+        "above_median_db": 12.303214621630529,
+        "power": 2438763.6073302687
+      },
+      {
+        "hz": -261718.75,
+        "above_median_db": 12.188454944340634,
+        "power": 2375164.7425194313
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 3.130637005710409,
+    "mean_real": 0.087921142578125,
+    "mean_imag": -0.0403594970703125,
+    "clip_fraction": 0.0
+  },
+  "status": "iq_if_envelope_probe_complete",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

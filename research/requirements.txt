@@ -1,2 +1,6 @@
-capstone
-pefile
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6
+capstone==5.0.9
+pefile==2024.8.26
+-r firmware/requirements-rom-emulation.txt

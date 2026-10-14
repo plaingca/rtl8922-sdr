@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "known_ram_check": "0x18638000 header and startup versus pinned BB MCU image",
+  "candidate_rom_bases": [
+    "0x18630000",
+    "0x10000000"
+  ],
+  "candidate_status": "hypotheses; directory signatures must validate before a larger capture",
+  "bytes_per_directory_probe": 96,
+  "writes": "save, select and restore register 0xc04 only; no sample or executable-memory writes",
+  "deadline_seconds": 20,
+  "raw_output": "local .bin files, excluded from Git",
+  "started_utc": "2026-10-12T23:42:05Z",
+  "firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "raw_directory": "/tmp/rtl8922-rom-dump-20261012",
+  "dump_wcpu_rom": true,
+  "status": "firmware_fault_after_wcpu_capture",
+  "selector_before": "0x18780000",
+  "wcpu_rom": {
+    "address": "0x20000000",
+    "bytes": 524288,
+    "sha256": "d133bbe8b31273f27d9eeae992ce5cccd8001eaf816ebbeca240ce84e07a6ee4",
+    "unique_words": 27302,
+    "sentinel_words": {
+      "0x0": 34564,
+      "0xffffffff": 1,
+      "0xdeadbeef": 45056
+    },
+    "repeat_identical": true,
+    "matches_historical": true,
+    "raw_file": "/tmp/rtl8922-rom-dump-20261012/wcpu-rom.bin",
+    "preserved_window_file": "/home/plaing/rtl8922-sdr/vendor/local-rom-dumps/20261012/wcpu-rom-window.bin",
+    "readable_prefix_bytes": 344064,
+    "readable_prefix_sha256": "d688582ba4c1ccf617dd2a90a844c4b6f0deab024a2b9ac7db924315bee1b58d",
+    "preserved_readable_file": "/home/plaing/rtl8922-sdr/vendor/local-rom-dumps/20261012/wcpu-rom-readable.bin",
+    "unmapped_tail": {
+      "address": "0x20054000",
+      "bytes": 180224,
+      "word": "0xdeadbeef",
+      "all_words_match": true
+    },
+    "size_limit": "512 KiB aperture capture; only the first 336 KiB is a readable ROM region. Physical ROM size is not established."
+  },
+  "ram_checks": [
+    {
+      "address": "0x18638000",
+      "bytes": 32,
+      "sha256": "104ecab51b006c6a4267b5e800358d151c21cfe78e7409730705133977811dc7",
+      "unique_words": 6,
+      "sentinel_words": {
+        "0x0": 2,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "matches_firmware": true
+    },
+    {
+      "address": "0x18638200",
+      "bytes": 48,
+      "sha256": "52d57c9cdaf6f355e93a27c5ffa2acfdac685c3a336d1e45c50eb5dd0f4fc128",
+      "unique_words": 11,
+      "sentinel_words": {
+        "0x0": 2,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "matches_firmware": true
+    }
+  ],
+  "rom_candidates": [
+    {
+      "base": "0x18630000",
+      "bytes": 96,
+      "sha256": "eb417c274399f0e49f56b3598aad638ac5f62dd15257cd3bfc4bcc2c9945d886",
+      "unique_words": 11,
+      "sentinel_words": {
+        "0x0": 14,
+        "0xffffffff": 0,
+        "0xdeadbeef": 0
+      },
+      "repeat_identical": true,
+      "directory": {
+        "valid": false,
+        "required_keys_found": [],
+        "entries": []
+      }
+    },
+    {
+      "base": "0x10000000",
+      "bytes": 96,
+      "sha256": "44e3ccaba63fd4a4b43703d56aebcd5bda2d465fbfc3348b990c77eb8c038232",
+      "unique_words": 1,
+      "sentinel_words": {
+        "0x0": 0,
+        "0xffffffff": 0,
+        "0xdeadbeef": 24
+      },
+      "repeat_identical": true,
+      "directory": {
+        "valid": false,
+        "required_keys_found": [],
+        "entries": []
+      },
+      "interpretation": "Faulting address; returned DEADBEEF is not validated ROM data"
+    }
+  ],
+  "selector_after": "0x18780000",
+  "selector_restored": true,
+  "finished_utc": "2026-10-12T23:42:06Z",
+  "loader": {
+    "original_firmware_interface_up_exit": 0,
+    "reported_secure_boot": false,
+    "secure_boot_log": "MSS secure_boot=0 dev_type=0 cust_idx=0 key_num=0",
+    "healthy_rx_verified_at_that_boot": false
+  },
+  "cleanup": {
+    "demo_active": false,
+    "card_unbound": true,
+    "temporary_firmware_absent": true,
+    "temporary_nm_config_absent": true,
+    "working_git_modules_unloaded": true,
+    "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+    "checked_utc": "2026-10-12T23:44:11Z"
+  },
+  "original_probe_status": "no_candidate_directory_found",
+  "firmware_fault": {
+    "detected_utc": "2026-10-12T23:42:06Z",
+    "global_probe_address": "0x10000028",
+    "fw_status": "0x1400",
+    "fw_badaddr": "0x10000028",
+    "fw_epc_ra": "0x2002c9e0",
+    "ser_error": "0x5000",
+    "hardware_restart_requested": true,
+    "followed_by": [
+      "HWSI is busy",
+      "ignore h2c due to power is off with firmware state=0"
+    ],
+    "conclusion": "Original firmware booted, then ROM-alias probe faulted it. Interface-up and selector restoration did not establish healthy reception.",
+    "unsafe_alias_disabled": true,
+    "recovery_report": "output/rtl8922-rom-probe-recovery-20261012.json"
+  },
+  "later_recovery_verified": true
+}

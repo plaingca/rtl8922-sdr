@@ -1,0 +1,3152 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T03:03:15Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "e1dc870963d34e993b8c05d32ef171083c1d4f9f65b718518e59711ffe5dcdb0",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "f27cd1173a2588ee9edb63816b9244a6366547cf1bbd250cce92846381f06fe8",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 0,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-dac-input-probe-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1049\n\twdev 0x3700000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 55\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x33762",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83de8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000",
+    "bb:0:2b58": "0x35ae660"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -1331970.21484375,
+        "above_median_db": 14.779138496105626,
+        "power": 1535738703.7219546
+      },
+      {
+        "hz": -1302429.19921875,
+        "above_median_db": 14.740973290714745,
+        "power": 1522301968.4972813
+      },
+      {
+        "hz": -1368774.4140625,
+        "above_median_db": 14.699966588803157,
+        "power": 1507995823.675709
+      },
+      {
+        "hz": -1357788.0859375,
+        "above_median_db": 14.537140360608499,
+        "power": 1452504598.3510053
+      },
+      {
+        "hz": -1069519.04296875,
+        "above_median_db": 14.43621124780056,
+        "power": 1419137919.7650607
+      },
+      {
+        "hz": -1635681.15234375,
+        "above_median_db": 14.130584742726459,
+        "power": 1322701829.277489
+      },
+      {
+        "hz": -1702087.40234375,
+        "above_median_db": 14.110167151744076,
+        "power": 1316497973.9331174
+      },
+      {
+        "hz": -1146789.55078125,
+        "above_median_db": 14.109725626427018,
+        "power": 1316364139.0207908
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 44.932649183488884,
+    "mean_real": -0.006866455078125,
+    "mean_imag": 0.00653076171875,
+    "clip_fraction": 0.0
+  },
+  "dac_input_probe": {
+    "scope": "Internal DAC debug tap; both RF paths held in standby",
+    "arbitrary_iq_demonstrated": false,
+    "itqt_pair_hypothesis": "Two independent three-bit I/Q settings, unproved",
+    "rows": [
+      {
+        "name": "dds_1_before",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3253f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.4758917056836,
+          "imag_std": 1462.416083062546,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1980,
+          "real_max": 1980,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 290208.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.90898022470262
+        }
+      },
+      {
+        "name": "dds_zero_before",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds1_00",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x0",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.326311033485,
+          "imag_std": 5837.674450498245,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 4608764.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.4327325134641
+        }
+      },
+      {
+        "name": "itqt_dds1_01",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.165569032582,
+          "imag_std": 2923.9967168244225,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 2300334.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 250.1451262490267
+        }
+      },
+      {
+        "name": "itqt_dds1_02",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32533",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 1461.8061430983248,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 1145457.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.03570490211405
+        }
+      },
+      {
+        "name": "itqt_dds1_03",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 730.4508196997249,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 565475.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.16861958236083
+        }
+      },
+      {
+        "name": "itqt_dds1_04",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x4",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3251f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 365.2462183240232,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 275174.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.53004815702698
+        }
+      },
+      {
+        "name": "itqt_dds1_05",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x5",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 182.31730581598666,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 128672.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.90620128772903
+        }
+      },
+      {
+        "name": "itqt_dds1_06",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x6",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 90.97472176379546,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 54644.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.07897220316013
+        }
+      },
+      {
+        "name": "itqt_dds1_07",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x7",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324d5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 5661.3547495277135,
+          "imag_std": 2.8284271247461903,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -7952,
+          "real_max": 7952,
+          "imag_min": -4,
+          "imag_max": 4,
+          "iq_covariance": -15739.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": -0.05,
+          "peak_above_median_db": 250.89364341616604
+        }
+      },
+      {
+        "name": "itqt_dds1_08",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x8",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ca",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.786392506506,
+          "imag_std": 5837.910704181762,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 2298792.1999999997,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.31321851072158
+        }
+      },
+      {
+        "name": "itqt_dds1_09",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x9",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324d2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.6251606314813,
+          "imag_std": 2924.2318649518884,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 1150549.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.929371410305
+        }
+      },
+      {
+        "name": "itqt_dds1_0a",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xa",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32542",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 1462.0406287104336,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 575963.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 255.97711770976667
+        }
+      },
+      {
+        "name": "itqt_dds1_0b",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xb",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 730.6835156208192,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 286221.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.76076036817886
+        }
+      },
+      {
+        "name": "itqt_dds1_0c",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xc",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 365.47503334701264,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 141195.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.23672061438054
+        }
+      },
+      {
+        "name": "itqt_dds1_0d",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xd",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324a0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 182.53876300665567,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 68006.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 248.95024095730355
+        }
+      },
+      {
+        "name": "itqt_dds1_0e",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xe",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 91.1767514227174,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 31023.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.658373910286
+        }
+      },
+      {
+        "name": "itqt_dds1_0f",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0xf",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2830.813875902123,
+          "imag_std": 1.5491933384829668,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -3976,
+          "real_max": 3976,
+          "imag_min": -2,
+          "imag_max": 2,
+          "iq_covariance": -4137.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": -0.05,
+          "peak_above_median_db": 248.39071704608298
+        }
+      },
+      {
+        "name": "itqt_dds1_10",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x10",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324d4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.1346225712944,
+          "imag_std": 5838.172915390567,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 1144778.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.21609967690745
+        }
+      },
+      {
+        "name": "itqt_dds1_11",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x11",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x325f8",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1414.972932603306,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 575315.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.67557993858676
+        }
+      },
+      {
+        "name": "itqt_dds1_12",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32677",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 290214.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.73116127574636
+        }
+      },
+      {
+        "name": "itqt_dds1_13",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x13",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fc",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 145261.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 250.9000604549146
+        }
+      },
+      {
+        "name": "itqt_dds1_14",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x14",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 72707.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 247.46208617205681
+        }
+      },
+      {
+        "name": "itqt_dds1_15",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x15",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 36092.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.22010475806175
+        }
+      },
+      {
+        "name": "itqt_dds1_16",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x16",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 17590.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.79367185907336
+        }
+      },
+      {
+        "name": "itqt_dds1_17",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x17",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3280b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.161333558828,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1988,
+          "real_max": 1988,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.97054447754573
+        }
+      },
+      {
+        "name": "itqt_dds1_18",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x18",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324cd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7202837279712,
+          "imag_std": 5838.172915390567,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 564989.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.8551133717601
+        }
+      },
+      {
+        "name": "itqt_dds1_19",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x19",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3389e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.5569235050987,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 285268.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 249.79684905293115
+        }
+      },
+      {
+        "name": "itqt_dds1_1a",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1a",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324bd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 145090.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 253.2533239947922
+        }
+      },
+      {
+        "name": "itqt_dds1_1b",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1b",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 72622.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.69458258803178
+        }
+      },
+      {
+        "name": "itqt_dds1_1c",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1c",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32574",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 36349.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.8706777565893
+        }
+      },
+      {
+        "name": "itqt_dds1_1d",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1d",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3251a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 18044.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.09022762490022
+        }
+      },
+      {
+        "name": "itqt_dds1_1e",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1e",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 8794.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 247.08328021172693
+        }
+      },
+      {
+        "name": "itqt_dds1_1f",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324a2",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 707.7443041098953,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -994,
+          "real_max": 994,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.65513743819443
+        }
+      },
+      {
+        "name": "itqt_dds1_20",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x20",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324bd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.5284995583807,
+          "imag_std": 5838.172915390567,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 274529.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 243.8064792010904
+        }
+      },
+      {
+        "name": "itqt_dds1_21",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x21",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324a0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.3621371907296,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 139958.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 250.72625801538624
+        }
+      },
+      {
+        "name": "itqt_dds1_22",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x22",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 72384.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.1264075457363
+        }
+      },
+      {
+        "name": "itqt_dds1_23",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x23",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x323f0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 36230.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.96976753488835
+        }
+      },
+      {
+        "name": "itqt_dds1_24",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x24",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 18134.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.52751073699568
+        }
+      },
+      {
+        "name": "itqt_dds1_25",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x25",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324bd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 9002.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 254.3734289267025
+        }
+      },
+      {
+        "name": "itqt_dds1_26",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x26",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324c9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 4387.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.66677997912578
+        }
+      },
+      {
+        "name": "itqt_dds1_27",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x27",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 353.54716799884,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -496,
+          "real_max": 496,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.18695037322453
+        }
+      },
+      {
+        "name": "itqt_dds1_28",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x28",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324c9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.9610126553304,
+          "imag_std": 5838.172915390568,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 130776.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 243.62285884515117
+        }
+      },
+      {
+        "name": "itqt_dds1_29",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x29",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324b5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.7891399379498,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 68050.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.72886325986718
+        }
+      },
+      {
+        "name": "itqt_dds1_2a",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2a",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ec",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 36405.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 246.05464968939975
+        }
+      },
+      {
+        "name": "itqt_dds1_2b",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2b",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324c7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 18222.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 247.04576115048116
+        }
+      },
+      {
+        "name": "itqt_dds1_2c",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2c",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324cf",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 9120.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.45057016768402
+        }
+      },
+      {
+        "name": "itqt_dds1_2d",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2d",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324c1",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 4527.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.72604902289186
+        }
+      },
+      {
+        "name": "itqt_dds1_2e",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2e",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32790",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 2206.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 247.89158098964717
+        }
+      },
+      {
+        "name": "itqt_dds1_2f",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324dd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 176.97118409503847,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -248,
+          "real_max": 248,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 243.60455180487773
+        }
+      },
+      {
+        "name": "itqt_dds1_30",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x30",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ef",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.44433277491554,
+          "imag_std": 5838.172915390567,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": 56126.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.16023704534607
+        }
+      },
+      {
+        "name": "itqt_dds1_31",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x31",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fa",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.25871061827269,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": 30701.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.88578627874654
+        }
+      },
+      {
+        "name": "itqt_dds1_32",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x32",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ca",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 17718.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.11022855579347
+        }
+      },
+      {
+        "name": "itqt_dds1_33",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x33",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32490",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 8868.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 245.75242520026057
+        }
+      },
+      {
+        "name": "itqt_dds1_34",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x34",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3265d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 4439.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.24588990046524
+        }
+      },
+      {
+        "name": "itqt_dds1_35",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x35",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3250c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 2203.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 250.74531663659377
+        }
+      },
+      {
+        "name": "itqt_dds1_36",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x36",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 1073.2,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 248.5361523695775
+        }
+      },
+      {
+        "name": "itqt_dds1_37",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x37",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324de",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 88.42850219244924,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -124,
+          "real_max": 124,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 241.8773297921226
+        }
+      },
+      {
+        "name": "itqt_dds1_38",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x38",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3259c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2.6076809620810595,
+          "imag_std": 5838.172915390567,
+          "real_mean": 0.0,
+          "imag_mean": -0.1,
+          "real_min": -4,
+          "real_max": 4,
+          "imag_min": -8192,
+          "imag_max": 8190,
+          "iq_covariance": -14664.000000000004,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.27114751174955
+        }
+      },
+      {
+        "name": "itqt_dds1_39",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x39",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3252f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1.6733200530681511,
+          "imag_std": 2924.4931184736956,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2,
+          "real_max": 2,
+          "imag_min": -4136,
+          "imag_max": 4136,
+          "iq_covariance": -4710.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 249.24471660671298
+        }
+      },
+      {
+        "name": "itqt_dds1_3a",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3a",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 1462.3016104757596,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -2068,
+          "imag_max": 2068,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 247.96606497281033
+        }
+      },
+      {
+        "name": "itqt_dds1_3b",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3b",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 730.9440471062063,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -1034,
+          "imag_max": 1034,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.8211812474539
+        }
+      },
+      {
+        "name": "itqt_dds1_3c",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3c",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324a9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 365.73432980785384,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -516,
+          "imag_max": 516,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.93161217128085
+        }
+      },
+      {
+        "name": "itqt_dds1_3d",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3d",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 182.79277885080688,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -258,
+          "imag_max": 258,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 244.1404567634632
+        }
+      },
+      {
+        "name": "itqt_dds1_3e",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3e",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f7",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 91.41772257062632,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": -130,
+          "imag_max": 130,
+          "iq_covariance": 0.0,
+          "unique_words": 20,
+          "peak_cycles_per_record": -0.05,
+          "peak_above_median_db": 242.27308593728227
+        }
+      },
+      {
+        "name": "itqt_dds1_3f",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3251e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_00",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x0",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_01",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x1",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32512",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_02",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x2",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324fb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_04",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x4",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324da",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_08",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x8",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f4",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_10",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x10",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324e0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_12",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324de",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_18",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x18",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32519",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_20",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x20",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3240e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_24",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x24",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324d5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "itqt_dds0_3f",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32a0f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_0_itqt12_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32790",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_0_itqt12_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32a4b",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.131513323055,
+          "imag_std": 1462.3219891665447,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1994,
+          "real_max": 1994,
+          "imag_min": -2066,
+          "imag_max": 2066,
+          "iq_covariance": 290182.8,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.1679264542038
+        }
+      },
+      {
+        "name": "source_c2000a08_0_itqt3f_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x328aa",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_0_itqt3f_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ae",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_2_itqt12_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x327e5",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_2_itqt12_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ae",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.0501051199565,
+          "imag_std": 1461.8980812628492,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1990,
+          "real_max": 1990,
+          "imag_min": -2066,
+          "imag_max": 2066,
+          "iq_covariance": 290050.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.12028397408713
+        }
+      },
+      {
+        "name": "source_c2000a08_2_itqt3f_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32537",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_c2000a08_2_itqt3f_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x329f6",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_0_itqt12_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32590",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_0_itqt12_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324f0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.0915164751714,
+          "imag_std": 1462.3314261821772,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -1996,
+          "real_max": 1996,
+          "imag_min": -2058,
+          "imag_max": 2058,
+          "iq_covariance": 289964.4,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 251.74217344643026
+        }
+      },
+      {
+        "name": "source_42000a08_0_itqt3f_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324a3",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_0_itqt3f_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3255c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_2_itqt12_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x32616",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_2_itqt12_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x3252f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1415.178575304191,
+          "imag_std": 1462.2129803828168,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": -2002,
+          "real_max": 2002,
+          "imag_min": -2044,
+          "imag_max": 2044,
+          "iq_covariance": 290303.6,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 252.81338450258977
+        }
+      },
+      {
+        "name": "source_42000a08_2_itqt3f_dds0",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250000",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x325ed",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "source_42000a08_2_itqt3f_dds1",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0x42000a08",
+          "0x82cc": "0x3f",
+          "0x2b58": "0x135ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324ae",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "name": "dds_1_after",
+        "rf_modes": {
+          "0": 1,
+          "1": 1
+        },
+        "registers": {
+          "0x802c": "0x250001",
+          "0x8034": "0x11000a20",
+          "0x8220": "0xc2000a08",
+          "0x82cc": "0x12",
+          "0x2b58": "0x35ae660"
+        },
+        "tx_dac_debug": {
+          "status": "0x324d9",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1366.5338413949773,
+          "imag_std": 1496.0241554584632,
+          "real_mean": -31.899853515625,
+          "imag_mean": 143.843701171875,
+          "real_min": -1992,
+          "real_max": 1992,
+          "imag_min": -2066,
+          "imag_max": 2066,
+          "iq_covariance": 211454.23723480938,
+          "unique_words": 20,
+          "peak_cycles_per_record": 0.05,
+          "peak_above_median_db": 119.53625250569958
+        }
+      }
+    ],
+    "observation_control_passed": true
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1026306.15234375,
+        "above_median_db": 20.77594144703192,
+        "power": 2145675.757015533
+      },
+      {
+        "hz": 935668.9453125,
+        "above_median_db": 12.86200385923883,
+        "power": 346872.8715222876
+      },
+      {
+        "hz": 891296.38671875,
+        "above_median_db": 12.694049914903832,
+        "power": 333714.3953673361
+      },
+      {
+        "hz": -436340.33203125,
+        "above_median_db": 11.726747144661944,
+        "power": 267082.02729703026
+      },
+      {
+        "hz": 958801.26953125,
+        "above_median_db": 11.713731245693994,
+        "power": 266282.7750070751
+      },
+      {
+        "hz": -731933.59375,
+        "above_median_db": 11.70652298914879,
+        "power": 265841.17544410774
+      },
+      {
+        "hz": 316894.53125,
+        "above_median_db": 11.54078013898597,
+        "power": 255886.84730519107
+      },
+      {
+        "hz": 1399353.02734375,
+        "above_median_db": 11.512206514292885,
+        "power": 254208.81201378378
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0498151343956945,
+    "mean_real": -0.004913330078125,
+    "mean_imag": -0.007049560546875,
+    "clip_fraction": 0.0
+  },
+  "status": "dac_input_probe_complete_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {
+    "rf:1:0": {
+      "saved": "0x33762",
+      "actual": "0x337e2"
+    }
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.bin",
+    "report": "output/rtl8922-bb-polar-cal-confirm-fine-a.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/confirm-fine-a.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.bin",
+    "report": "output/rtl8922-bb-polar-cal-confirm-coarse-a.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/confirm-coarse-a.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/validation-fine-100.bin",
+    "report": "output/rtl8922-bb-polar-cal-confirm-fine-b.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/confirm-fine-b.cf32"
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-20261013/ofdm-feedback-b.bin",
+    "report": "output/rtl8922-bb-polar-cal-confirm-coarse-b.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/confirm-coarse-b.cf32"
+  }
+]

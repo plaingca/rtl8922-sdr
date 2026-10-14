@@ -1,0 +1,65 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-000.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-000.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-000.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-000.cf32",
+    "amp_advance": 0.0
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-025.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-025.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-025.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-025.cf32",
+    "amp_advance": 0.25
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-050.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-050.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-050.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-050.cf32",
+    "amp_advance": 0.5
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-075.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-075.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-075.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-075.cf32",
+    "amp_advance": 0.75
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-100.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-100.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-100.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-100.cf32",
+    "amp_advance": 1.0
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-125.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.cf32",
+    "amp_advance": 1.25
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-150.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-150.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-150.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-150.cf32",
+    "amp_advance": 1.5
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-175.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-175.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-175.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-175.cf32",
+    "amp_advance": 1.75
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-200.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-200.bin",
+    "report": "output/rtl8922-bb-polar-cal-timing-200.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-200.cf32",
+    "amp_advance": 2.0
+  }
+]

@@ -1,0 +1,725 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-12T22:35:51Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 2,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "d5b098c129f5c961addc4168ba5cc5c2dd0fff71d91e3a15f9a8f22ad2ac84e6",
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-tx-afe-lok-dc-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": true,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_fsk": false,
+    "tx_pad_code": 2
+  },
+  "tone_tests": [
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        16,
+        16
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": 1016479.4921875,
+            "above_median_db": 21.465038241136234,
+            "power": 2445281.278419842
+          },
+          {
+            "hz": 58898.92578125,
+            "above_median_db": 12.28839430990777,
+            "power": 295572.775471121
+          },
+          {
+            "hz": 1205566.40625,
+            "above_median_db": 11.949720030948924,
+            "power": 273399.05040513654
+          },
+          {
+            "hz": -1213134.765625,
+            "above_median_db": 11.755563344406646,
+            "power": 261445.59752118052
+          },
+          {
+            "hz": 924499.51171875,
+            "above_median_db": 11.518168780650166,
+            "power": 247537.99946689946
+          },
+          {
+            "hz": -1424926.7578125,
+            "above_median_db": 11.45093680166986,
+            "power": 243735.43839269946
+          },
+          {
+            "hz": 1223205.56640625,
+            "above_median_db": 11.4305403501779,
+            "power": 242593.42930208903
+          },
+          {
+            "hz": -1003784.1796875,
+            "above_median_db": 11.419889510781818,
+            "power": 241999.21086148213
+          }
+        ],
+        "targeted_peak": {
+          "hz": 1016479.4921875,
+          "above_local_median_db": 21.29453522965865
+        },
+        "rms": 1.048840854787739,
+        "mean_real": -0.01446533203125,
+        "mean_imag": 0.003143310546875,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0x841a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x324e3",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    },
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        12,
+        16
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": 1016479.4921875,
+            "above_median_db": 33.9606469289846,
+            "power": 42458377.119678535
+          },
+          {
+            "hz": -1003784.1796875,
+            "above_median_db": 12.526314740056941,
+            "power": 305161.80236012256
+          },
+          {
+            "hz": -59020.99609375,
+            "above_median_db": 11.972760914342263,
+            "power": 268642.5422674311
+          },
+          {
+            "hz": 123474.12109375,
+            "above_median_db": 11.950523964945072,
+            "power": 267270.5416331975
+          },
+          {
+            "hz": -75744.62890625,
+            "above_median_db": 11.944864353536113,
+            "power": 266922.4685453382
+          },
+          {
+            "hz": -1393249.51171875,
+            "above_median_db": 11.591190604145043,
+            "power": 246046.8207166416
+          },
+          {
+            "hz": -105590.8203125,
+            "above_median_db": 11.550083334260005,
+            "power": 243728.90127350614
+          },
+          {
+            "hz": -186584.47265625,
+            "above_median_db": 11.545283690737252,
+            "power": 243459.6909300217
+          }
+        ],
+        "targeted_peak": {
+          "hz": 1016479.4921875,
+          "above_local_median_db": 34.001830526577976
+        },
+        "rms": 1.0494008125733882,
+        "mean_real": 0.0121612548828125,
+        "mean_imag": 0.018463134765625,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0x641a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x3249c",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    },
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        20,
+        16
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": 1016418.45703125,
+            "above_median_db": 32.2845237901683,
+            "power": 33323992.197828356
+          },
+          {
+            "hz": -1003784.1796875,
+            "above_median_db": 12.082559560809749,
+            "power": 318097.7528976781
+          },
+          {
+            "hz": 283630.37109375,
+            "above_median_db": 11.951385482308687,
+            "power": 308633.5919779903
+          },
+          {
+            "hz": 513610.83984375,
+            "above_median_db": 11.789292123484055,
+            "power": 297326.6635481651
+          },
+          {
+            "hz": -779907.2265625,
+            "above_median_db": 11.683864145836843,
+            "power": 290195.7579529362
+          },
+          {
+            "hz": -241516.11328125,
+            "above_median_db": 11.6226248300554,
+            "power": 286132.4596165689
+          },
+          {
+            "hz": 1456604.00390625,
+            "above_median_db": 11.606005521591566,
+            "power": 285039.5982716063
+          },
+          {
+            "hz": -966918.9453125,
+            "above_median_db": 11.280568266384321,
+            "power": 264460.9001011638
+          }
+        ],
+        "targeted_peak": {
+          "hz": 1016418.45703125,
+          "above_local_median_db": 32.25326283040142
+        },
+        "rms": 1.1076888043600908,
+        "mean_real": -0.0074920654296875,
+        "mean_imag": -0.0245361328125,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0xa41a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x324a3",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    },
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        16,
+        12
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": -1003112.79296875,
+            "above_median_db": 18.59012630558853,
+            "power": 375032825.6547146
+          },
+          {
+            "hz": -1609985.3515625,
+            "above_median_db": 17.73465985987007,
+            "power": 307980087.11881363
+          },
+          {
+            "hz": -1356689.453125,
+            "above_median_db": 17.682082774748643,
+            "power": 304274059.6906523
+          },
+          {
+            "hz": -1463684.08203125,
+            "above_median_db": 17.60274980718538,
+            "power": 298766316.17888427
+          },
+          {
+            "hz": -1559875.48828125,
+            "above_median_db": 17.37734078736954,
+            "power": 283655187.4162509
+          },
+          {
+            "hz": -1774658.203125,
+            "above_median_db": 17.306154692670226,
+            "power": 279043635.0567569
+          },
+          {
+            "hz": -1513000.48828125,
+            "above_median_db": 17.179107646062555,
+            "power": 270998830.150506
+          },
+          {
+            "hz": -1230468.75,
+            "above_median_db": 17.01598315830684,
+            "power": 261008690.23859844
+          }
+        ],
+        "targeted_peak": {
+          "hz": 998107.91015625,
+          "above_local_median_db": 15.249419840102156
+        },
+        "rms": 22.150440137636444,
+        "mean_real": 0.0338592529296875,
+        "mean_imag": -0.0359649658203125,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0x831a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x324a1",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    },
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        16,
+        20
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": 1016418.45703125,
+            "above_median_db": 34.96930702556809,
+            "power": 53802718.252491325
+          },
+          {
+            "hz": 713562.01171875,
+            "above_median_db": 11.811192825168517,
+            "power": 260011.64436798848
+          },
+          {
+            "hz": 521057.12890625,
+            "above_median_db": 11.794231243490781,
+            "power": 258998.1367170285
+          },
+          {
+            "hz": 373840.33203125,
+            "above_median_db": 11.72795205658235,
+            "power": 255075.4849476307
+          },
+          {
+            "hz": -802429.19921875,
+            "above_median_db": 11.531155586791273,
+            "power": 243774.9488718897
+          },
+          {
+            "hz": -1487365.72265625,
+            "above_median_db": 11.486030694167033,
+            "power": 241255.14549742188
+          },
+          {
+            "hz": -957214.35546875,
+            "above_median_db": 11.209690756209023,
+            "power": 226382.36412132086
+          },
+          {
+            "hz": -1003784.1796875,
+            "above_median_db": 11.182615797755224,
+            "power": 224975.43235992178
+          }
+        ],
+        "targeted_peak": {
+          "hz": 1016418.45703125,
+          "above_local_median_db": 34.55542314240821
+        },
+        "rms": 1.0579953913164626,
+        "mean_real": 0.0055084228515625,
+        "mean_imag": 0.0121002197265625,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0x851a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x324b2",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    },
+    {
+      "tone_index": 0,
+      "rtl_center_mhz": 2442,
+      "txiqc": null,
+      "lok_coarse_iq": [
+        16,
+        16
+      ],
+      "expected_calibration_offset_hz_hypothesis": 0,
+      "pluto_rx_lo": 2441000000,
+      "spectrum": {
+        "peaks": [
+          {
+            "hz": -1388244.62890625,
+            "above_median_db": 14.904359373343866,
+            "power": 222216721.75764114
+          },
+          {
+            "hz": -1616577.1484375,
+            "above_median_db": 14.06483133440008,
+            "power": 183157173.36074418
+          },
+          {
+            "hz": -1104125.9765625,
+            "above_median_db": 13.720293922631722,
+            "power": 169188247.27584973
+          },
+          {
+            "hz": -388244.62890625,
+            "above_median_db": 13.697082940958797,
+            "power": 168286428.32678002
+          },
+          {
+            "hz": -1198791.50390625,
+            "above_median_db": 13.619799870445135,
+            "power": 165318244.95922363
+          },
+          {
+            "hz": -1493713.37890625,
+            "above_median_db": 13.513657717209906,
+            "power": 161326819.073107
+          },
+          {
+            "hz": -1441955.56640625,
+            "above_median_db": 13.478491007254377,
+            "power": 160025760.49627978
+          },
+          {
+            "hz": -1419860.83984375,
+            "above_median_db": 13.353831767606989,
+            "power": 155497702.20359617
+          }
+        ],
+        "targeted_peak": {
+          "hz": 958923.33984375,
+          "above_local_median_db": 10.337760406643868
+        },
+        "rms": 22.16273754356182,
+        "mean_real": -0.017791748046875,
+        "mean_imag": -0.0348663330078125,
+        "clip_fraction": 0.0
+      },
+      "readback": {
+        "rf_mode": "0x20002",
+        "tone": "0x250000",
+        "rf_channel": "0x7",
+        "rf_channel_v1": "0x7",
+        "rf_lok": "0x841a8",
+        "afe_mode_path0": "0x111",
+        "afe_mode_path1": "0x11",
+        "control": "0x11000a20"
+      },
+      "tx_dac_debug": {
+        "status": "0x324bb",
+        "records": 40960,
+        "valid_capture": true,
+        "real_std": 0.0,
+        "imag_std": 0.0,
+        "real_mean": 0.0,
+        "imag_mean": 0.0,
+        "unique_words": 1,
+        "peak_cycles_per_record": 0.0,
+        "peak_above_median_db": 0.0
+      }
+    }
+  ],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1024\n\twdev 0x1e00000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 30\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": -1003784.1796875,
+        "above_median_db": 13.294900570328378,
+        "power": 370098.58928664215
+      },
+      {
+        "hz": 1252746.58203125,
+        "above_median_db": 11.870242441567083,
+        "power": 266594.7648116775
+      },
+      {
+        "hz": -97778.3203125,
+        "above_median_db": 11.711803192601266,
+        "power": 257044.13081954495
+      },
+      {
+        "hz": 1100585.9375,
+        "above_median_db": 11.606843010618286,
+        "power": 250906.362150311
+      },
+      {
+        "hz": -341674.8046875,
+        "above_median_db": 11.412251525125505,
+        "power": 239912.30602167547
+      },
+      {
+        "hz": -230712.890625,
+        "above_median_db": 11.409867991953334,
+        "power": 239780.67136558337
+      },
+      {
+        "hz": 554809.5703125,
+        "above_median_db": 11.386103078032184,
+        "power": 238472.15727913915
+      },
+      {
+        "hz": 1621704.1015625,
+        "above_median_db": 11.24622942654553,
+        "power": 230914.0270708218
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0497061181922835,
+    "mean_real": 0.03912353515625,
+    "mean_imag": 0.0100250244140625,
+    "clip_fraction": 0.0
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": -1498596.19140625,
+        "above_median_db": 15.036400441237458,
+        "power": 216217496.39829203
+      },
+      {
+        "hz": -237365.72265625,
+        "above_median_db": 13.704839684927222,
+        "power": 159123659.72364303
+      },
+      {
+        "hz": -1315307.6171875,
+        "above_median_db": 13.697581286603794,
+        "power": 158857937.195625
+      },
+      {
+        "hz": -1447875.9765625,
+        "above_median_db": 13.543223032366905,
+        "power": 153310921.2784138
+      },
+      {
+        "hz": -767456.0546875,
+        "above_median_db": 13.482963852495327,
+        "power": 151198393.03709388
+      },
+      {
+        "hz": -1102539.0625,
+        "above_median_db": 13.470334238647553,
+        "power": 150759335.3263834
+      },
+      {
+        "hz": -1789611.81640625,
+        "above_median_db": 13.397555941582766,
+        "power": 148253987.9045805
+      },
+      {
+        "hz": -1402587.890625,
+        "above_median_db": 13.354018542318029,
+        "power": 146775187.69225934
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 22.14736514985597,
+    "mean_real": 0.019195556640625,
+    "mean_imag": -0.0098419189453125,
+    "clip_fraction": 0.0
+  },
+  "status": "tone_probe_complete_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

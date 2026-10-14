@@ -1,0 +1,3966 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T04:37:32Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 0,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "339a311e1b2c300eca80670eca48fd354aa6eace636453ddf44dc42697f34048",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0df519150dc3545f1b828da0d2c8e3a5b743954240a45a38724185f06f35f1ad",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205",
+    "dac_phase_probe.py": "9943bf5dd299a1c47d5d1a04a56ea0217305dbb21f9121040722c4cfbbacece2"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 0,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-dac-phase-clock-path1.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": null,
+    "probe_iq_rf": false,
+    "probe_dac_phases": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1063\n\twdev 0x4500000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 69\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83da8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1026000.9765625,
+        "above_median_db": 23.217018147726204,
+        "power": 3844770.996993313
+      },
+      {
+        "hz": 958496.09375,
+        "above_median_db": 17.133207149267744,
+        "power": 947304.0139751971
+      },
+      {
+        "hz": 890991.2109375,
+        "above_median_db": 11.744655700934533,
+        "power": 273926.6161854274
+      },
+      {
+        "hz": 1127258.30078125,
+        "above_median_db": 11.641210737451903,
+        "power": 267479.0280073133
+      },
+      {
+        "hz": -263427.734375,
+        "above_median_db": 11.582828290131125,
+        "power": 263907.35354171845
+      },
+      {
+        "hz": -589599.609375,
+        "above_median_db": 11.559704527299765,
+        "power": 262505.9280545632
+      },
+      {
+        "hz": 1040405.2734375,
+        "above_median_db": 11.339786959988501,
+        "power": 249544.13008112498
+      },
+      {
+        "hz": -54382.32421875,
+        "above_median_db": 11.327667393112842,
+        "power": 248848.71467244893
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0644226629815574,
+    "mean_real": 0.0482635498046875,
+    "mean_imag": -0.0236968994140625,
+    "clip_fraction": 0.0
+  },
+  "dac_phase_probe": {
+    "scope": "Internal DAC tap; both RF paths held in standby",
+    "arbitrary_iq_rf_demonstrated": false,
+    "rows": [
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36f3f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x37169",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36b7b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36b5e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33f65",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x35330",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3352d",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33bd7",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x37a6c",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1344.6464661828195,
+          "imag_std": 1517.5835459916832,
+          "real_mean": -13.85234375,
+          "imag_mean": 285.757177734375,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -27432.717368431116,
+          "unique_words": 320,
+          "peak_cycles_per_record": 0.003125,
+          "peak_above_median_db": 89.8241492632327
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36e06",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 1447.9445431369254,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 1447.9445431369254,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 1447.9445431369254,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 1447.9445431369254,
+              "min": -2048,
+              "max": 2048
+            }
+          ],
+          "interleaved_real_std": 1447.9445431369254,
+          "interleaved_imag_std": 1447.9445431369254,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0015625
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x379c2",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -0.2,
+              "std": 361.98621866032414,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -0.2,
+              "std": 361.98621866032414,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -0.16875,
+              "std": 362.0280241548125,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -0.16875,
+              "std": 362.0280241548125,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 362.00712234824795,
+          "interleaved_imag_std": 362.00712234824795,
+          "interleaved_real_mean": -0.184375,
+          "interleaved_imag_mean": -0.184375,
+          "interleaved_peak_cycles_per_sample": 0.0015625
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x375fe",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -0.48125,
+              "std": 22.59230285821921,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.48125,
+              "std": 22.592302858219213,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.478125,
+              "std": 22.593821533427562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.478125,
+              "std": 22.593821533427562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.48125,
+              "std": 22.605301334808612,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.48125,
+              "std": 22.605301334808612,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.478125,
+              "std": 22.593821533427562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.478125,
+              "std": 22.593821533427562,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.596312473550718,
+          "interleaved_imag_std": 22.59631247355072,
+          "interleaved_real_mean": -0.4796875,
+          "interleaved_imag_mean": -0.4796875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33faf",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1486.478582741672,
+          "imag_std": 1399.3713118584246,
+          "real_mean": -153.121044921875,
+          "imag_mean": 48.32939453125,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -87246.51549955847,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 99.38380499239963
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x34d13",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 196.016015625,
+              "std": 1475.6470446314177,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -121.31796875,
+              "std": 1400.9083762968535,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 196.016015625,
+              "std": 1475.6470446314177,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -121.31796875,
+              "std": 1400.9083762968535,
+              "min": -2048,
+              "max": 2048
+            }
+          ],
+          "interleaved_real_std": 1475.6470446314177,
+          "interleaved_imag_std": 1400.9083762968535,
+          "interleaved_real_mean": 196.016015625,
+          "interleaved_imag_mean": -121.31796875,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33c22",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -74.80283203125,
+              "std": 373.8098995580569,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -31.9546142578125,
+              "std": 340.23750000817677,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -74.7353759765625,
+              "std": 373.6079290341844,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -32.3582763671875,
+              "std": 340.37857059553835,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 373.7089294624738,
+          "interleaved_imag_std": 340.308102463066,
+          "interleaved_real_mean": -74.76910400390625,
+          "interleaved_imag_mean": -32.1564453125,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x34740",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.41640625,
+              "std": 21.86353816625893,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.912939453125,
+              "std": 23.201167605827035,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.419775390625,
+              "std": 21.858472764357888,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.9159912109375,
+              "std": 23.19651206572979,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.419775390625,
+              "std": 21.858472764357888,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.9159912109375,
+              "std": 23.19651206572979,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.4173583984375,
+              "std": 21.863106285691455,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.9133544921875,
+              "std": 23.20151798680236,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 21.860897680621328,
+          "interleaved_imag_std": 23.198927601144124,
+          "interleaved_real_mean": 0.418328857421875,
+          "interleaved_imag_mean": 1.914569091796875,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x379eb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x378c6",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36fa0",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -512.0,
+              "std": 0.0,
+              "min": -512,
+              "max": -512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 512.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36ea6",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.50390625,
+              "std": 8.593919565088502,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": 29.49609375,
+              "std": 8.593919565088502,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": -26.9921875,
+              "std": 17.187839130177004,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.50390625,
+              "std": 8.593919565088502,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": -29.49609375,
+              "std": 8.593919565088502,
+              "min": -32,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 23.362212084715157,
+          "interleaved_imag_std": 21.72412253694036,
+          "interleaved_real_mean": 2.50390625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x347ef",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2040.6290794752485,
+          "imag_std": 0.0,
+          "real_mean": 173.6,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 2,
+          "peak_cycles_per_record": -0.5,
+          "peak_above_median_db": 88.73861613391927
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x341dd",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 282.9,
+              "std": 2028.3667296620697,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 282.9,
+              "std": 2028.3667296620697,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 2028.36672966207,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 282.9,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3388d",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -38.1,
+              "std": 510.5804442005196,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -38.1,
+              "std": 134.3710906408071,
+              "min": -512,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 492.5817698616139,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 373.32826038220026,
+          "interleaved_imag_std": 348.3079097580185,
+          "interleaved_real_mean": -38.1,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33317",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -4.8296875,
+              "std": 31.633433557746205,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -4.8296875,
+              "std": 11.455309627083144,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 29.486437560342893,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -4.8296875,
+              "std": 11.455309627083144,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 29.486437560342893,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -4.8296875,
+              "std": 31.633433557746205,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 23.789685131425003,
+          "interleaved_imag_std": 20.850059951952176,
+          "interleaved_real_mean": -4.8296875,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.125
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36bcf",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36f25",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3660b",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 512.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36ce6",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9734375,
+              "std": 17.217249183118476,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9734375,
+              "std": 17.217249183118476,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.901150721539793,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.51328125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3361d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x34443",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x3494e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -362.325,
+              "std": 361.752117305483,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 506.5010844941499,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 74.8375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x37c6a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.5078125,
+              "std": 17.925843814583562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.5078125,
+              "std": 17.925843814583562,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.881953659024894,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.74609375,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x37205",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36f06",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -2048.0,
+              "std": 0.0,
+              "min": -2048,
+              "max": -2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -2048.0,
+              "std": 0.0,
+              "min": -2048,
+              "max": -2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": -2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x36f9d",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -512.0,
+              "std": 0.0,
+              "min": -512,
+              "max": -512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 512.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x32afa",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -3.21640625,
+              "std": 9.621836146752916,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": 28.78359375,
+              "std": 9.621836146752916,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": 25.5671875,
+              "std": 19.24367229350583,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -3.21640625,
+              "std": 9.621836146752916,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": -28.78359375,
+              "std": 9.621836146752916,
+              "min": -32,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 23.518444481618282,
+          "interleaved_imag_std": 21.460137464610984,
+          "interleaved_real_mean": -3.21640625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x39287",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x391ce",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 218.4,
+              "std": 2036.3215463182623,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 218.4,
+              "std": 2036.3215463182623,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 2036.3215463182623,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 218.4,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x373ae",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 51.25,
+              "std": 509.42854013099816,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -51.25,
+              "std": 509.42854013099816,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 361.13066800674795,
+          "interleaved_imag_std": 361.13066800674795,
+          "interleaved_real_mean": 25.625,
+          "interleaved_imag_mean": -25.625,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "clock": "tone_setup",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22906056",
+        "tx_dac_debug": {
+          "status": "0x33dcd",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -2.371875,
+              "std": 31.91197594923221,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -2.37265625,
+              "std": 8.384241308510624,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": -0.00078125,
+              "std": 30.79082654606155,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.37265625,
+              "std": 8.384241308510624,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": -0.00078125,
+              "std": 30.79082654606155,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.3734375,
+              "std": 31.911859777104713,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 23.33094516558075,
+          "interleaved_imag_std": 21.772402252563037,
+          "interleaved_real_mean": -2.37265625,
+          "interleaved_imag_mean": -0.000390625,
+          "interleaved_peak_cycles_per_sample": -0.125
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3705a",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36c81",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36f92",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36c40",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x336ea",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 0.0,
+          "imag_mean": 0.0,
+          "real_min": 0,
+          "real_max": 0,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x338f4",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x342e1",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 0,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3604f",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x373cd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1478.907448905895,
+          "imag_std": 1406.6854740038498,
+          "real_mean": -155.18369140625,
+          "imag_mean": -64.200048828125,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": 118752.65470782763,
+          "unique_words": 320,
+          "peak_cycles_per_record": 0.003125,
+          "peak_above_median_db": 96.34749513591863
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x370d8",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 74.86572265625,
+              "std": 1354.9855036762274,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -278.146337890625,
+              "std": 1508.240869904946,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 74.86572265625,
+              "std": 1354.9855036762274,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -278.146337890625,
+              "std": 1508.240869904946,
+              "min": -2048,
+              "max": 2048
+            }
+          ],
+          "interleaved_real_std": 1354.9855036762274,
+          "interleaved_imag_std": 1508.240869904946,
+          "interleaved_real_mean": 74.86572265625,
+          "interleaved_imag_mean": -278.146337890625,
+          "interleaved_peak_cycles_per_sample": 0.0015625
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x37110",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -39.606982421875,
+              "std": 373.0660731055796,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 6.536328125,
+              "std": 348.3509112542604,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -39.6358642578125,
+              "std": 373.0257187690536,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 6.5100830078125,
+              "std": 348.3112366463566,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 373.04589676249424,
+          "interleaved_imag_std": 348.3310747623523,
+          "interleaved_real_mean": -39.62142333984375,
+          "interleaved_imag_mean": 6.52320556640625,
+          "interleaved_peak_cycles_per_sample": 0.0015625
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x37035",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 0.2407958984375,
+              "std": 21.838326417876743,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.880224609375,
+              "std": 23.210953215417515,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.2435546875,
+              "std": 21.827164381621397,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8775390625,
+              "std": 23.201084577760835,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.240576171875,
+              "std": 21.825725397364252,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8805419921875,
+              "std": 23.19949492435788,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.243310546875,
+              "std": 21.826934451633477,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -2.8778076171875,
+              "std": 23.201263302377956,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 21.829538302210867,
+          "interleaved_imag_std": 23.20319948711063,
+          "interleaved_real_mean": 0.242059326171875,
+          "interleaved_imag_mean": -2.8790283203125,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3380f",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 1349.6649757525242,
+          "imag_std": 1516.4565974123427,
+          "real_mean": -11.07197265625,
+          "imag_mean": 269.163818359375,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": -2048,
+          "imag_max": 2048,
+          "iq_covariance": -40009.07653963565,
+          "unique_words": 640,
+          "peak_cycles_per_record": 0.0015625,
+          "peak_above_median_db": 82.78997251417911
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33751",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 47.031201171875,
+              "std": 1407.135689281572,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -145.994775390625,
+              "std": 1479.8648878202268,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 47.031201171875,
+              "std": 1407.135689281572,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": -145.994775390625,
+              "std": 1479.8648878202268,
+              "min": -2048,
+              "max": 2048
+            }
+          ],
+          "interleaved_real_std": 1407.1356892815718,
+          "interleaved_imag_std": 1479.8648878202268,
+          "interleaved_real_mean": 47.031201171875,
+          "interleaved_imag_mean": -145.994775390625,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33979",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -2.23603515625,
+              "std": 347.84958332227905,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -39.9872314453125,
+              "std": 373.5364357803917,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -2.323583984375,
+              "std": 347.8267011651133,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": -40.082177734375,
+              "std": 373.51125008516055,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 347.83814518629697,
+          "interleaved_imag_std": 373.5238461618595,
+          "interleaved_real_mean": -2.2798095703125,
+          "interleaved_imag_mean": -40.03470458984375,
+          "interleaved_peak_cycles_per_sample": 0.00078125
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 1,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3396a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 1.9781982421875,
+              "std": 23.28484217832051,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.75703125,
+              "std": 21.718823052372645,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.981103515625,
+              "std": 23.280110801680117,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.7540771484375,
+              "std": 21.71406076801428,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.981103515625,
+              "std": 23.280110801680117,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.7540771484375,
+              "std": 21.71406076801428,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 1.97822265625,
+              "std": 23.284872083281865,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": -0.7569091796875,
+              "std": 21.718790773737663,
+              "min": -32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 23.282484132128335,
+          "interleaved_imag_std": 21.71643401841669,
+          "interleaved_real_mean": 1.979656982421875,
+          "interleaved_imag_mean": -0.755523681640625,
+          "interleaved_peak_cycles_per_sample": 0.000390625
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36bbd",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": -2048.0,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": -2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x37c18",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -2048.0,
+              "std": 0.0,
+              "min": -2048,
+              "max": -2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -2048.0,
+              "std": 0.0,
+              "min": -2048,
+              "max": -2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": -2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36b54",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -512.0,
+              "std": 0.0,
+              "min": -512,
+              "max": -512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 512.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36dba",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -32.0,
+              "std": 0.0,
+              "min": -32,
+              "max": -32
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 22.627416997969522,
+          "interleaved_imag_std": 22.627416997969522,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3390e",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2042.1185053762183,
+          "imag_std": 0.0,
+          "real_mean": -155.1,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 2,
+          "peak_cycles_per_record": -0.5,
+          "peak_above_median_db": 93.6346963625403
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33c95",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -157.5,
+              "std": 2041.9348055214691,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -157.5,
+              "std": 2041.9348055214691,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 2041.9348055214691,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": -157.5,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x337ed",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 37.65,
+              "std": 510.6138242351062,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 37.6625,
+              "std": 133.65902922642377,
+              "min": 0,
+              "max": 512
+            },
+            {
+              "mean": -0.0125,
+              "std": 492.80909066671046,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 373.22326673981286,
+          "interleaved_imag_std": 348.4686498968558,
+          "interleaved_real_mean": 37.65625,
+          "interleaved_imag_mean": -0.00625,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 320,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x336d1",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 2.315625,
+              "std": 31.916106918911254,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.315625,
+              "std": 8.290831132002086,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 30.82044775794148,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.315625,
+              "std": 8.290831132002086,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 30.82044775794148,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.315625,
+              "std": 31.916106918911254,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 23.317115620491634,
+          "interleaved_imag_std": 21.793347608846144,
+          "interleaved_real_mean": 2.315625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.125
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3724d",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x3860e",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36dbe",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 512.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x37010",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9484375,
+              "std": 17.256352926055772,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.9484375,
+              "std": 17.256352926055772,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.900163464740242,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.52578125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33bf0",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33f5a",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33c47",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -432.65,
+              "std": 273.78454576546136,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 510.46047288208314,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 39.675,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 640,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x33907",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.7875,
+              "std": 17.505137638704813,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -26.7875,
+              "std": 17.505137638704813,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 31.893689986226118,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2.60625,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36e89",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 0.0,
+          "imag_std": 0.0,
+          "real_mean": 2048.0,
+          "imag_mean": 0.0,
+          "real_min": 2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 1,
+          "peak_cycles_per_record": 0.0,
+          "peak_above_median_db": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36d94",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2048.0,
+              "std": 0.0,
+              "min": 2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 0.0,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 2048.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.0
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x36c4c",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 512.0,
+              "std": 0.0,
+              "min": 512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": -404.85,
+              "std": 313.4333701123733,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 509.18927657109987,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 53.575,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.5
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 0,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x371a4",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": 32.0,
+              "std": 0.0,
+              "min": 32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.4125,
+              "std": 8.448659287129528,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": -29.5875,
+              "std": 8.448659287129528,
+              "min": -32,
+              "max": 0
+            },
+            {
+              "mean": -27.175,
+              "std": 16.897318574259057,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.4125,
+              "std": 8.448659287129528,
+              "min": 0,
+              "max": 32
+            },
+            {
+              "mean": 29.5875,
+              "std": 8.448659287129528,
+              "min": 0,
+              "max": 32
+            }
+          ],
+          "interleaved_real_std": 23.34051935476158,
+          "interleaved_imag_std": 21.757757237362494,
+          "interleaved_real_mean": 2.4125,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 0,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x307cb",
+          "records": 40960,
+          "valid_capture": true,
+          "real_std": 2017.7669934856203,
+          "imag_std": 0.0,
+          "real_mean": 350.6,
+          "imag_mean": 0.0,
+          "real_min": -2048,
+          "real_max": 2048,
+          "imag_min": 0,
+          "imag_max": 0,
+          "iq_covariance": 0.0,
+          "unique_words": 2,
+          "peak_cycles_per_record": -0.5,
+          "peak_above_median_db": 77.84451988644399
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 3,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x34ed3",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 3,
+          "candidate_bits": 14,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": 165.0,
+              "std": 2041.3424504477439,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 165.0,
+              "std": 2041.3424504477439,
+              "min": -2048,
+              "max": 2048
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 2041.3424504477439,
+          "interleaved_imag_std": 0.0,
+          "interleaved_real_mean": 165.0,
+          "interleaved_imag_mean": 0.0,
+          "interleaved_peak_cycles_per_sample": 0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 12,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x34532",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 12,
+          "candidate_bits": 12,
+          "candidate_phases": 2,
+          "component_stats": [
+            {
+              "mean": -53.3,
+              "std": 509.21813596925233,
+              "min": -512,
+              "max": 512
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 53.3,
+              "std": 509.21813596925233,
+              "min": -512,
+              "max": 512
+            }
+          ],
+          "interleaved_real_std": 361.05647411450735,
+          "interleaved_imag_std": 361.05647411450735,
+          "interleaved_real_mean": -26.65,
+          "interleaved_imag_mean": 26.65,
+          "interleaved_peak_cycles_per_sample": -0.25
+        }
+      },
+      {
+        "clock": "native_dack_force4",
+        "dds_word": 960,
+        "capture_rate_selector": 7,
+        "data_type": 14,
+        "clock_register_2ba0": "0x22b46056",
+        "tx_dac_debug": {
+          "status": "0x34384",
+          "records": 40960,
+          "valid_capture": true,
+          "data_type": 14,
+          "candidate_bits": 8,
+          "candidate_phases": 4,
+          "component_stats": [
+            {
+              "mean": -2.5703125,
+              "std": 31.89660630305901,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.5703125,
+              "std": 31.89660630305901,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            },
+            {
+              "mean": 2.5703125,
+              "std": 31.89660630305901,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 2.5703125,
+              "std": 31.89660630305901,
+              "min": -32,
+              "max": 32
+            },
+            {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0,
+              "max": 0
+            }
+          ],
+          "interleaved_real_std": 22.627416997969522,
+          "interleaved_imag_std": 22.590891381552122,
+          "interleaved_real_mean": 0.0,
+          "interleaved_imag_mean": 1.28515625,
+          "interleaved_peak_cycles_per_sample": -0.125
+        }
+      }
+    ]
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1025939.94140625,
+        "above_median_db": 23.240321676247284,
+        "power": 3717669.246021089
+      },
+      {
+        "hz": 958435.05859375,
+        "above_median_db": 14.217705157174352,
+        "power": 465595.8459619042
+      },
+      {
+        "hz": 976074.21875,
+        "above_median_db": 12.34188287626015,
+        "power": 302292.1495447516
+      },
+      {
+        "hz": 807861.328125,
+        "above_median_db": 12.024929233329118,
+        "power": 281016.2955749031
+      },
+      {
+        "hz": -1029418.9453125,
+        "above_median_db": 11.92972637689948,
+        "power": 274923.0914834715
+      },
+      {
+        "hz": 660583.49609375,
+        "above_median_db": 11.809030419350517,
+        "power": 267387.8216213459
+      },
+      {
+        "hz": -620056.15234375,
+        "above_median_db": 11.609644561008178,
+        "power": 255389.49965942514
+      },
+      {
+        "hz": -56579.58984375,
+        "above_median_db": 11.512197586184989,
+        "power": 249722.88280591898
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.0533773691493176,
+    "mean_real": 0.034820556640625,
+    "mean_imag": -0.0474395751953125,
+    "clip_fraction": 0.0
+  },
+  "status": "dac_phase_clock_comparison_complete_unqualified",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

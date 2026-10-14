@@ -9,7 +9,7 @@
 #include <stdexcept>
 #include <vector>
 int main() {
-    std::string args="driver=rtl8922";
+    std::string args="driver=rtl8922,capture_mode=legacy";
     if(std::getenv("RTL8922_TEST_RATE")&&std::atof(std::getenv("RTL8922_TEST_RATE"))==40000000) args+=",experimental40=1";
     if(std::getenv("RTL8922_PRODUCER_SCHEDULER")) args+=",producer_scheduler="+std::string(std::getenv("RTL8922_PRODUCER_SCHEDULER"));
     auto *dev=SoapySDR::Device::make(args);

@@ -1,0 +1,20 @@
+{
+  "live": true,
+  "frequency_hz": 2312000000,
+  "rate": 20000000,
+  "samples_added": 40562688,
+  "errors_added": 0,
+  "recoveries_added": 0,
+  "tone_enabled": false,
+  "loaded_srcversion": "071571FF11683534D38F0D4",
+  "working_srcversion": "071571FF11683534D38F0D4",
+  "pluto_independent_readback": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75,
+    "tx_powerdown": "1"
+  }
+}

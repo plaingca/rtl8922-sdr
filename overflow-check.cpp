@@ -7,7 +7,7 @@
 #include <thread>
 #include <vector>
 int main() {
-    auto *dev=SoapySDR::Device::make("driver=rtl8922");
+    auto *dev=SoapySDR::Device::make("driver=rtl8922,capture_mode=legacy");
     if(!dev) return 1;
     auto *s=dev->setupStream(SOAPY_SDR_RX,SOAPY_SDR_CF32);
     if(dev->activateStream(s)) return 2;

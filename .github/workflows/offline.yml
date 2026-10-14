@@ -1,0 +1,16 @@
+name: Offline checks
+on: [push, pull_request]
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y libfftw3-dev pkg-config
+      - run: python -m pip install -r research/requirements.txt
+      - run: make check check-research
+      - run: make tx-compiler
+      - run: bash -n run-receiver.sh driver/prepare.sh research/firmware/run_bb_rom_test.sh research/tx/lora_python.sh

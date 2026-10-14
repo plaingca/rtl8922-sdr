@@ -1,0 +1,203 @@
+{
+  "examined_seconds": [
+    0.07572919619255988,
+    4.084760911537235
+  ],
+  "threshold_hz": 95000,
+  "discriminator_rate": 400000,
+  "median_filter_samples": 9,
+  "holds_at_least_100us": [
+    {
+      "start_seconds": 0.58374,
+      "duration_seconds": 0.0026625
+    },
+    {
+      "start_seconds": 1.099425,
+      "duration_seconds": 0.0023375
+    },
+    {
+      "start_seconds": 1.6147975,
+      "duration_seconds": 0.000275
+    },
+    {
+      "start_seconds": 1.6150875,
+      "duration_seconds": 0.000335
+    },
+    {
+      "start_seconds": 1.61556,
+      "duration_seconds": 0.00049
+    },
+    {
+      "start_seconds": 1.616075,
+      "duration_seconds": 0.000125
+    },
+    {
+      "start_seconds": 1.61621,
+      "duration_seconds": 0.000265
+    },
+    {
+      "start_seconds": 1.6164925,
+      "duration_seconds": 0.000315
+    },
+    {
+      "start_seconds": 1.6168525,
+      "duration_seconds": 0.000645
+    },
+    {
+      "start_seconds": 1.617515,
+      "duration_seconds": 0.000135
+    },
+    {
+      "start_seconds": 1.6176825,
+      "duration_seconds": 0.0001425
+    },
+    {
+      "start_seconds": 1.6178825,
+      "duration_seconds": 0.000165
+    },
+    {
+      "start_seconds": 2.13108,
+      "duration_seconds": 0.000555
+    },
+    {
+      "start_seconds": 2.13165,
+      "duration_seconds": 0.0001675
+    },
+    {
+      "start_seconds": 2.1319575,
+      "duration_seconds": 0.000505
+    },
+    {
+      "start_seconds": 2.1325725,
+      "duration_seconds": 0.0001
+    },
+    {
+      "start_seconds": 2.1327175,
+      "duration_seconds": 0.00035
+    },
+    {
+      "start_seconds": 2.133075,
+      "duration_seconds": 0.00041
+    },
+    {
+      "start_seconds": 2.1334875,
+      "duration_seconds": 0.0006525
+    },
+    {
+      "start_seconds": 2.647165,
+      "duration_seconds": 0.0002525
+    },
+    {
+      "start_seconds": 2.6474225,
+      "duration_seconds": 0.0001625
+    },
+    {
+      "start_seconds": 2.6476825,
+      "duration_seconds": 0.000115
+    },
+    {
+      "start_seconds": 2.6479475,
+      "duration_seconds": 0.00017
+    },
+    {
+      "start_seconds": 2.64813,
+      "duration_seconds": 0.0001175
+    },
+    {
+      "start_seconds": 2.64844,
+      "duration_seconds": 0.000265
+    },
+    {
+      "start_seconds": 2.648895,
+      "duration_seconds": 0.00015
+    },
+    {
+      "start_seconds": 2.64906,
+      "duration_seconds": 0.000105
+    },
+    {
+      "start_seconds": 2.64921,
+      "duration_seconds": 0.0001575
+    },
+    {
+      "start_seconds": 2.6495775,
+      "duration_seconds": 0.00011
+    },
+    {
+      "start_seconds": 2.649815,
+      "duration_seconds": 0.000125
+    },
+    {
+      "start_seconds": 2.6500875,
+      "duration_seconds": 0.0001975
+    },
+    {
+      "start_seconds": 3.16341,
+      "duration_seconds": 0.0003875
+    },
+    {
+      "start_seconds": 3.16381,
+      "duration_seconds": 0.0007525
+    },
+    {
+      "start_seconds": 3.1647425,
+      "duration_seconds": 0.00017
+    },
+    {
+      "start_seconds": 3.1650625,
+      "duration_seconds": 0.000265
+    },
+    {
+      "start_seconds": 3.1654425,
+      "duration_seconds": 0.00028
+    },
+    {
+      "start_seconds": 3.67877,
+      "duration_seconds": 0.0032425
+    }
+  ],
+  "max_out_of_range_hold_seconds": 0.0032425,
+  "amplitude_below_tenth_median_max_seconds": 2.5e-06,
+  "no_100us_holds": false,
+  "repair_or_blanking": false,
+  "scope": "Detects the old millisecond integer-NCO holds; not a proof of zero per-write jitter or indefinite service.",
+  "rf_report": "output/rtl8922-bb-fm-speech-f.json",
+  "audio_report": "output/rtl8922-bb-fm-speech-demod-f.json",
+  "trace_sha256": "40601d16ea092359041b8341ffcfe53797ddca869e6e5bd78d7efad531f41ee0",
+  "single_command": false,
+  "completed_blocks": 63,
+  "batch_yields": [
+    [
+      0.5156832598149776,
+      8
+    ],
+    [
+      1.0310609843581915,
+      16
+    ],
+    [
+      1.54724645242095,
+      24
+    ],
+    [
+      2.0634454041719437,
+      32
+    ],
+    [
+      2.5796923581510782,
+      40
+    ],
+    [
+      3.095058338716626,
+      48
+    ],
+    [
+      3.6113359685987234,
+      56
+    ]
+  ],
+  "audio_heldout_correlation": 0.16117775431641326,
+  "audio_heldout_signal_error_db": -2.563462950094919,
+  "audio_blanking_enabled": true,
+  "passed": false
+}

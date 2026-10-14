@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "purpose": "Verify RX after ROM-alias firmware fault; no ROM probes",
+  "started_utc": "2026-10-12T23:52:44.180301+00:00",
+  "deadline_seconds": 40,
+  "tests": [
+    {
+      "label": "20000000-250000",
+      "center_hz": 2442000000,
+      "rate": 20000000,
+      "reference_offset_hz": 250000,
+      "returncode": 0,
+      "stdout": "RF_CENTER 2442000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+      "stderr": "",
+      "samples": 65536,
+      "finite_samples": true,
+      "rms": 0.023248646408319473,
+      "peak_hz": 233328.6830357143,
+      "peak_median_db": 51.60053447288314,
+      "peak_linear": 251189.81233033453,
+      "fft_length": 57344,
+      "fft_bin_hz": 348.77232142857144,
+      "tone_position_pass": true
+    },
+    {
+      "label": "20000000--250000",
+      "center_hz": 2442000000,
+      "rate": 20000000,
+      "reference_offset_hz": -250000,
+      "returncode": 0,
+      "stdout": "RF_CENTER 2442000000.000000 OFFSET 0.000000\n{\"coded_samples\":65536,\"rate\":2e+07}\n",
+      "stderr": "",
+      "samples": 65536,
+      "finite_samples": true,
+      "rms": 0.0235622376203537,
+      "peak_hz": -266462.0535714286,
+      "peak_median_db": 52.74522501379897,
+      "peak_linear": 320227.24864569615,
+      "fft_length": 57344,
+      "fft_bin_hz": 348.77232142857144,
+      "tone_position_pass": true
+    },
+    {
+      "label": "40000000-250000",
+      "center_hz": 2422000000,
+      "rate": 40000000,
+      "reference_offset_hz": 250000,
+      "returncode": 0,
+      "stdout": "{\"coded_samples\":400000,\"rate\":4e+07}\n",
+      "stderr": "",
+      "samples": 400000,
+      "finite_samples": true,
+      "rms": 0.026996195316314697,
+      "peak_hz": 233917.236328125,
+      "peak_median_db": 56.714689998937814,
+      "peak_linear": 6276978.702607064,
+      "fft_length": 262144,
+      "fft_bin_hz": 152.587890625,
+      "tone_position_pass": true
+    },
+    {
+      "label": "40000000--250000",
+      "center_hz": 2422000000,
+      "rate": 40000000,
+      "reference_offset_hz": -250000,
+      "returncode": 0,
+      "stdout": "{\"coded_samples\":400000,\"rate\":4e+07}\n",
+      "stderr": "",
+      "samples": 400000,
+      "finite_samples": true,
+      "rms": 0.027968471869826317,
+      "peak_hz": -265960.693359375,
+      "peak_median_db": 57.85152045399094,
+      "peak_linear": 8231744.3973964965,
+      "fft_length": 262144,
+      "fft_bin_hz": 152.587890625,
+      "tone_position_pass": true
+    }
+  ],
+  "status": "rf_checks_passed",
+  "driver_directory": "/home/plaing/rtl8922-iq-research/la-driver",
+  "firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "plugin": "/home/plaing/rtl8922-sdr/build/libRTL8922Support.so",
+  "raw_directory": "/tmp/rtl8922-recovery-captures-20261012",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_powerdown": "1",
+  "tone_movement": [
+    {
+      "rate": 20000000,
+      "observed_hz": 499790.73660714284,
+      "expected_hz": 500000,
+      "tolerance_hz": 3000,
+      "passed": true
+    },
+    {
+      "rate": 40000000,
+      "observed_hz": 499877.9296875,
+      "expected_hz": 500000,
+      "tolerance_hz": 3000,
+      "passed": true
+    }
+  ],
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "restored_powerdown": "1",
+  "pluto_restored": true,
+  "cleanup_errors": [],
+  "finished_utc": "2026-10-12T23:52:47.956210+00:00",
+  "kernel_check": {
+    "since_utc": "2026-10-12T23:52:34.180301+00:00",
+    "rtw89_log_lines": 619,
+    "error_lines": [],
+    "passed": true
+  },
+  "cleanup": {
+    "checked_utc": "2026-10-12T23:53:38.485695+00:00",
+    "demo_active": false,
+    "demo_8732_listening": false,
+    "card_unbound": true,
+    "working_git_modules_unloaded": true,
+    "temporary_firmware_absent": true,
+    "temporary_nm_config_absent": true,
+    "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104"
+  },
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "firmware_sha256_after": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "passed": true
+}

@@ -6,9 +6,10 @@ sample-clock calibration or proof about captures longer than this file.
 """
 import argparse
 import json
+import sys
 from pathlib import Path
 import numpy as np
-from scipy.signal import correlate, firwin, lfilter
+from scipy.signal import correlate, firwin, lfilter, oaconvolve
 
 ROOT = Path('/home/plaing/rtl8922-iq-research/soapy')
 parser = argparse.ArgumentParser(description=__doc__)
@@ -16,15 +17,23 @@ parser.add_argument('--rate', type=int, default=20000000)
 parser.add_argument('--input', type=Path, default=ROOT/'coded-cf32.bin')
 parser.add_argument('--output', type=Path, default=ROOT/'coded-continuity.json')
 parser.add_argument('--analysis-lowpass-hz', type=float, default=0.)
+parser.add_argument('--experimental-highrate', action='store_true')
+parser.add_argument('--format', choices=('cf32', 'ci8'), default='cf32')
+parser.add_argument('--analysis-filter-taps', type=int, default=257)
+parser.add_argument('--mix-hz', type=float, default=0.)
+parser.add_argument('--symbol-rate', type=int, choices=(250000, 1000000), default=1000000)
 args = parser.parse_args()
-if args.rate not in (20000000, 40000000):
+if args.rate not in ((20000000, 40000000, 80000000, 160000000)
+                    if args.experimental_highrate else (20000000, 40000000)):
     parser.error('Qualified analyzer rates are 20000000 and 40000000')
 SCALE = args.rate // 20000000
 PERIOD = 655360 * SCALE  # 32768 symbols, 1 Msymbol/s
 STEP = 2000000 * SCALE
 if not 0 <= args.analysis_lowpass_hz < args.rate/2:
     parser.error('Analysis lowpass must be zero or below Nyquist')
-analysis_taps = (firwin(257, args.analysis_lowpass_hz, fs=args.rate)
+if args.analysis_filter_taps < 3 or args.analysis_filter_taps % 2 != 1:
+    parser.error('Filter tap count must be odd and at least three')
+analysis_taps = (firwin(args.analysis_filter_taps, args.analysis_lowpass_hz, fs=args.rate)
                  if args.analysis_lowpass_hz else None)
 
 
@@ -32,8 +41,11 @@ def measure(z):
     # Both the original and injected deletion pass through the same filter.
     # Fixed filter delay cancels between periods. This validates timing of
     # the coded signal's band, not fidelity across the full receive bandwidth.
+    if args.mix_hz:
+        z = (z - z.mean()) * np.exp(-2j * np.pi * args.mix_hz / args.rate * np.arange(len(z)))
     if analysis_taps is not None:
-        z = lfilter(analysis_taps, [1.], z)
+        z = (oaconvolve(z, analysis_taps, mode='full')[:len(z)]
+             if args.experimental_highrate else lfilter(analysis_taps, [1.], z))
     rows = []
     width, search = 4096*SCALE, 180*SCALE
     for cycle in range(1, 6):
@@ -46,11 +58,20 @@ def measure(z):
             a -= a.mean()
             b -= b.mean()
             c = np.abs(correlate(b, a, mode='valid', method='fft'))
+            if args.experimental_highrate:
+                # Raw correlation favors higher-energy shifted windows and can
+                # bias timing by many samples for narrowband references.
+                sums = np.r_[0j, np.cumsum(b)]
+                powers = np.r_[0., np.cumsum(np.abs(b)**2)]
+                local_sum = sums[width:] - sums[:-width]
+                energy = powers[width:] - powers[:-width] - np.abs(local_sum)**2/width
+                c /= np.sqrt(np.maximum(energy, 1e-30) * np.vdot(a,a).real)
             k = int(c.argmax())
             if k == 0 or k == len(c)-1:
                 raise RuntimeError('Correlation peak outside timing search')
             frac = .5 * (c[k-1]-c[k+1]) / (c[k-1]-2*c[k]+c[k+1])
-            coherence = c[k] / np.sqrt(np.vdot(a,a).real * np.vdot(b[k:k+width],b[k:k+width]).real)
+            coherence = (c[k] if args.experimental_highrate else
+                         c[k] / np.sqrt(np.vdot(a,a).real * np.vdot(b[k:k+width],b[k:k+width]).real))
             rows.append([cycle, offset, cycle*PERIOD+k-search+frac, coherence])
     rows = np.asarray(rows)
     # Every template refers to cycle zero. Fit period through zero; separate
@@ -76,19 +97,37 @@ def measure(z):
                 measurements=rows.tolist())
 
 
-z = np.fromfile(args.input, dtype='<c8')
+if args.format == 'ci8':
+    packed = np.fromfile(args.input, dtype='i1')
+    if len(packed) % 2:
+        parser.error('Incomplete complex i8 sample')
+    z = packed.astype('f4').view('c8') / 128
+else:
+    z = np.fromfile(args.input, dtype='<c8')
+if len(z) < 6 * PERIOD:
+    parser.error('Six complete waveform periods are required')
 report = {'received_samples':len(z), 'sample_rate':args.rate,
+          'input_format':args.format, 'experimental_highrate':args.experimental_highrate,
+          'mix_hz':args.mix_hz, 'symbol_rate':args.symbol_rate,
+          'correlation':'normalized per lag' if args.experimental_highrate else 'raw magnitude',
+          'dc_removed_before_mix':bool(args.mix_hz),
           'analysis_lowpass_hz':args.analysis_lowpass_hz,
-          'analysis_filter_taps':257 if analysis_taps is not None else 0,
-          'waveform':'repeating seeded QPSK, 1 Msymbol/s, 32.768 ms period',
-          'original':measure(z),
-          'deleted_one_sample':measure(np.delete(z,STEP))}
+          'analysis_filter_taps':args.analysis_filter_taps if analysis_taps is not None else 0,
+          'waveform':'repeating seeded QPSK, 32.768 ms period'}
+try:
+    report.update(original=measure(z), deleted_one_sample=measure(np.delete(z,STEP)))
+except RuntimeError as error:
+    report.update(analysis_error=str(error), timing_check_passed=False)
+    args.output.write_text(json.dumps(report, indent=2))
+    print(json.dumps(report, indent=2))
+    sys.exit(1)
 original = report['original']
 control = report['deleted_one_sample']
 report['checks'] = {
     'all_windows_coherence_at_least_half': original['coherence_min'] >= .5,
     'median_coherence_at_least_point8': original['coherence_median'] >= .8,
     'no_step_resolved_at_test_boundary': abs(original['estimated_step_samples']) <= max(.25, 3*original['step_fit_standard_error']),
+    'one_sample_step_resolvable': 3*original['step_fit_standard_error'] < .5,
     'injected_loss_detected': abs(control['estimated_step_samples']-original['estimated_step_samples']+1) < .1,
 }
 report['timing_check_passed'] = all(report['checks'].values())

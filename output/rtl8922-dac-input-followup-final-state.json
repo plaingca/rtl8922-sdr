@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-10-13T05:37:34.233623+00:00",
+  "demo_state": "inactive",
+  "status_listener": "",
+  "rtl_card_bound": false,
+  "working_modules_loaded": [],
+  "temporary_firmware_present": false,
+  "temporary_nm_config_present": false,
+  "pluto_settings": {
+    "altvoltage0:True": {
+      "frequency": "2399999996"
+    },
+    "altvoltage1:True": {
+      "frequency": "2312000000",
+      "powerdown": "1"
+    },
+    "voltage0:False": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "18000000",
+      "hardwaregain": "71.000000 dB",
+      "gain_control_mode": "slow_attack"
+    },
+    "voltage0:True": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "3000000",
+      "hardwaregain": "-89.750000 dB"
+    }
+  },
+  "pluto_settings_restored": true,
+  "working_module_sha256": {
+    "rtw89_core_git.ko": "27c42b65a4aab23c0b643bd78c5aa3ef6db1349682d48073ec92af8c3ab12eb1",
+    "rtw89_pci_git.ko": "3beb6d521df193170e8796795605fdc2ca79b619b96137cf95b0876bf62138b5",
+    "rtw89_8922a_git.ko": "9208ef1c90d16bb686176faa4e1e70c060d909d585c1d3644021f1c6b54c43ce",
+    "rtw89_8922ae_git.ko": "4ff4533638b4cd7a4b08df9899b8d9aabff7ceff60951948b1b55548f9392625"
+  },
+  "working_modules_unchanged": true,
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "working_patch_matches_pin": true,
+  "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+  "fault_lines": []
+}

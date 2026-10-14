@@ -1,0 +1,939 @@
+{
+  "experimental": true,
+  "arbitrary_iq_tx_demonstrated": false,
+  "started_utc": "2026-10-13T05:19:23Z",
+  "path": 1,
+  "center_hz": 2442000000,
+  "rf_gain_code": 8,
+  "source": "calibration",
+  "lo_injection_disabled": false,
+  "manual_rf_mode_gain": null,
+  "tx_pad_code": 0,
+  "pluto_rx_rate": 4000000,
+  "probe_sha256": "1a7f80ff8f89eeb203895fb0e8046a98ea509abd43290a713a1f4326931757c7",
+  "helper_sha256": {
+    "tone_validation.py": "af785d16d0383bced14923c42742d5d76e3b9eeda09ba7649595c3e45a00323a",
+    "dds_probe.py": "f06bee1c8359b5bbbb79448370226f2b1c76a550da7f0a71f1f82b698d589998",
+    "fsk_probe.py": "8a9cf751aa6e8143acf71bedc2f381978f782191647bfe6faecd8d38c4ade15a",
+    "lok_modulation.py": "0a4f1023f87364f49fe2e609c5c7b7aaa5e3e0934a724938e3769f1f109f25b3",
+    "tpg_probe.py": "663bdaa64162933afc57cddeab9c34f718511755326d7f052de0c7932751ca47",
+    "dac_input_probe.py": "9c26bbba277e58ad3030ff10159ec89dc2b73cfd4aeea9412673b06f92f632b2",
+    "iq_envelope_probe.py": "13530882ce07f29c9abaa8960497fa385d8c5e7e5f077e0469e030f07c3b5f62",
+    "tone_phase_probe.py": "e02065e62b7cef61e20b99dbcd0a2a57077938d2095e65b974259fc7b1183edb",
+    "dadck_reference.py": "cb57ee38e639d014f8abb60a055267da4f6e9bcf74c6be48606487373072a3d9",
+    "dds_dc_probe.py": "614d67758eb94bb631dcf59829d31de62b10eefc0f492187387fbc1b6ca48176",
+    "iq_sample_probe.py": "e0e4c0600c9994cc02c0932e9310186df44783e73fb226280d7bb33bbc2a4205",
+    "dac_phase_probe.py": "e288ea2adbf744d392fc03d66c79d6acc71f54ca39893b9773f235d0231c7c08",
+    "iq_if_probe.py": "5c7ed5f029edacd25eaafdbad1d66b6935c7c652f78603fab77acc630af5fbb5",
+    "decode_iq_if.py": "4ab5afb09d81441c43da8a02c30b84d7fc6d08964396c72c277658290a486608"
+  },
+  "probe_options": {
+    "run_rf_test": true,
+    "path": 1,
+    "source": "calibration",
+    "gain_code": 8,
+    "rx_rate": 4000000,
+    "report": "/home/plaing/rtl8922-sdr/output/rtl8922-iq-if-envelope-path1-c.json",
+    "capture_dac": true,
+    "probe_iqc": false,
+    "probe_lok": false,
+    "disable_lo_injection": false,
+    "probe_lok_stream": false,
+    "rf_mode_gain": null,
+    "verify_tone": false,
+    "probe_dds": false,
+    "probe_tpg": false,
+    "probe_dac_input": false,
+    "probe_iq_envelope": false,
+    "probe_tone_phase": false,
+    "probe_dadck": false,
+    "probe_dadck_reference": false,
+    "dadck_range": "local",
+    "probe_dds_dc": false,
+    "probe_iq_samples": false,
+    "iq_json": "/tmp/rtl8922-iq-if-payload-c.json",
+    "probe_iq_rf": false,
+    "probe_dac_phases": false,
+    "native_dac_clock4": false,
+    "probe_dif5": false,
+    "probe_iq_if": true,
+    "probe_fsk": false,
+    "tx_pad_code": 0
+  },
+  "tone_tests": [],
+  "original_interface_info": "Interface wlp13s0\n\tifindex 1069\n\twdev 0x4b00000001\n\taddr e8:47:3a:fd:66:d9\n\ttype monitor\n\twiphy 75\n\tchannel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz\n\tmulticast TXQ:\n\t\tqsz-byt\tqsz-pkt\tflows\tdrops\tmarks\toverlmt\thashcol\ttx-bytes\ttx-packets\n\t\t0\t0\t0\t0\t0\t0\t0\t0\t\t0\n",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 71,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "saved_pluto_tx_powerdown": "1",
+  "saved_rtl": {
+    "rf:1:df": "0x0",
+    "rf:0:5": "0x41",
+    "rf:1:5": "0x41",
+    "rf:0:0": "0x337e0",
+    "rf:1:0": "0x337e2",
+    "bb:0:2af4": "0x700",
+    "bb:0:2bf4": "0x700",
+    "bb:0:10fc": "0x0",
+    "bb:0:e414": "0x0",
+    "bb:0:e514": "0x0",
+    "bb:0:2ba0": "0x22800056",
+    "bb:0:2ca0": "0x0",
+    "bb:0:2a20": "0x101",
+    "bb:0:2b20": "0x1",
+    "rf:1:10000": "0x30002",
+    "rf:1:10005": "0x1",
+    "bb:0:8008": "0x0",
+    "bb:0:8088": "0x80000000",
+    "bb:0:808c": "0x0",
+    "bb:0:8074": "0x0",
+    "bb:0:80d0": "0x0",
+    "bb:0:8220": "0x10010000",
+    "bb:0:8000": "0x310a",
+    "rf:1:10001": "0xf",
+    "bb:0:8034": "0x11000a30",
+    "bb:0:80cc": "0x240000",
+    "bb:0:8014": "0x101bf",
+    "bb:0:8018": "0x40010100",
+    "bb:0:82cc": "0x0",
+    "rf:1:11": "0x50b",
+    "rf:1:58": "0x83de8",
+    "bb:0:802c": "0x250025",
+    "bb:0:8238": "0x40000000",
+    "bb:0:8224": "0x101",
+    "rf:0:10000": "0x30000",
+    "mmio:0:21090": "0x3e",
+    "mmio:0:2109c": "0x0",
+    "mmio:0:21098": "0x17e00000",
+    "mmio:0:210b4": "0x0",
+    "mmio:0:210e4": "0x0",
+    "mmio:0:210b8": "0x0",
+    "mmio:0:210c8": "0x0",
+    "mmio:0:210e0": "0x0",
+    "mmio:0:210bc": "0x0",
+    "mmio:0:21094": "0x0",
+    "mmio:0:210d0": "0x1f0",
+    "mmio:0:20014": "0x2800",
+    "mmio:0:210cc": "0x0",
+    "mmio:0:210c4": "0x0",
+    "mmio:0:9660": "0x0",
+    "mmio:0:9668": "0xffffffff",
+    "mmio:0:26b50": "0x4d66b",
+    "mmio:0:8938": "0x55",
+    "mmio:0:8924": "0x80000000"
+  },
+  "off_before": {
+    "peaks": [
+      {
+        "hz": 1025939.94140625,
+        "above_median_db": 14.793580138541076,
+        "power": 627047.1098361138
+      },
+      {
+        "hz": -915649.4140625,
+        "above_median_db": 11.813273262109288,
+        "power": 315696.29336574546
+      },
+      {
+        "hz": 119750.9765625,
+        "above_median_db": 11.696967243606712,
+        "power": 307354.00808444706
+      },
+      {
+        "hz": 145019.53125,
+        "above_median_db": 11.42963879349719,
+        "power": 289005.4521873853
+      },
+      {
+        "hz": -1209838.8671875,
+        "above_median_db": 11.3499393350636,
+        "power": 283750.1436763585
+      },
+      {
+        "hz": 774658.203125,
+        "above_median_db": 11.313465703645193,
+        "power": 281377.0855361139
+      },
+      {
+        "hz": 730102.5390625,
+        "above_median_db": 11.172654436749651,
+        "power": 272400.3117514802
+      },
+      {
+        "hz": -213195.80078125,
+        "above_median_db": 11.170115705600532,
+        "power": 272241.12274573627
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 1.1014793851622917,
+    "mean_real": 0.00531005859375,
+    "mean_imag": 0.01397705078125,
+    "clip_fraction": 0.0
+  },
+  "iq_if_modulation": {
+    "offset_source": "iqc_if",
+    "if_schedule": {
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          -512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          -512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          512
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          -128,
+          -391
+        ],
+        [
+          176,
+          182
+        ],
+        [
+          34,
+          -207
+        ],
+        [
+          -170,
+          -349
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          463,
+          -149
+        ],
+        [
+          421,
+          226
+        ],
+        [
+          29,
+          459
+        ],
+        [
+          204,
+          366
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          463,
+          -438
+        ],
+        [
+          26,
+          134
+        ],
+        [
+          -463,
+          60
+        ],
+        [
+          435,
+          387
+        ],
+        [
+          512,
+          0
+        ],
+        [
+          -376,
+          -63
+        ],
+        [
+          94,
+          -203
+        ],
+        [
+          114,
+          300
+        ],
+        [
+          -195,
+          6
+        ],
+        [
+          512,
+          0
+        ]
+      ],
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "reference_indices": [
+        3,
+        11,
+        17,
+        22,
+        27,
+        32,
+        37
+      ],
+      "payload_indices": [
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36
+      ],
+      "dwell_seconds": 0.04,
+      "initial_pilot_seconds": 0.2
+    },
+    "private_decimated_trace_path": "/tmp/rtl8922-iq-if-envelope-c.npz",
+    "carrier_hz_relative_pluto": 1265435.9157219816,
+    "image_hz_relative_pluto": 765435.9157219816,
+    "if_envelope_mapping": "A=2*I-1024, B=2*Q; desired m=(I+jQ)/1024; image=m-1",
+    "pilot_spectrum": {
+      "hz": 1265625.0,
+      "above_local_median_db": 32.68566512069657,
+      "blocks": 64,
+      "fft_size": 4096
+    },
+    "discarded_clipped_fraction": 0.0,
+    "events": [
+      [
+        0.2001582756638527,
+        0,
+        0
+      ],
+      [
+        0.24009314738214016,
+        -512,
+        0
+      ],
+      [
+        0.2800871431827545,
+        0,
+        0
+      ],
+      [
+        0.3200890924781561,
+        512,
+        0
+      ],
+      [
+        0.3601613771170378,
+        0,
+        0
+      ],
+      [
+        0.4002403449267149,
+        0,
+        -512
+      ],
+      [
+        0.44021631591022015,
+        0,
+        0
+      ],
+      [
+        0.48014021664857864,
+        0,
+        512
+      ],
+      [
+        0.5201280601322651,
+        0,
+        0
+      ],
+      [
+        0.5601278059184551,
+        -512,
+        0
+      ],
+      [
+        0.6001410372555256,
+        0,
+        0
+      ],
+      [
+        0.6401355024427176,
+        512,
+        0
+      ],
+      [
+        0.6801369525492191,
+        0,
+        0
+      ],
+      [
+        0.7201344035565853,
+        0,
+        -512
+      ],
+      [
+        0.7601334489881992,
+        0,
+        0
+      ],
+      [
+        0.8000782001763582,
+        0,
+        512
+      ],
+      [
+        0.8400825448334217,
+        0,
+        0
+      ],
+      [
+        0.8801291808485985,
+        512,
+        0
+      ],
+      [
+        0.9201323725283146,
+        -128,
+        -391
+      ],
+      [
+        0.9601313974708319,
+        176,
+        182
+      ],
+      [
+        1.000052211806178,
+        34,
+        -207
+      ],
+      [
+        1.0401277430355549,
+        -170,
+        -349
+      ],
+      [
+        1.080146986991167,
+        512,
+        0
+      ],
+      [
+        1.1201320234686136,
+        463,
+        -149
+      ],
+      [
+        1.1600604448467493,
+        421,
+        226
+      ],
+      [
+        1.200132578611374,
+        29,
+        459
+      ],
+      [
+        1.2401417028158903,
+        204,
+        366
+      ],
+      [
+        1.2801406774669886,
+        512,
+        0
+      ],
+      [
+        1.3201760221272707,
+        463,
+        -438
+      ],
+      [
+        1.3600676096975803,
+        26,
+        134
+      ],
+      [
+        1.4001113008707762,
+        -463,
+        60
+      ],
+      [
+        1.4400625340640545,
+        435,
+        387
+      ],
+      [
+        1.4831532295793295,
+        512,
+        0
+      ],
+      [
+        1.520598080009222,
+        -376,
+        -63
+      ],
+      [
+        1.5602323487401009,
+        94,
+        -203
+      ],
+      [
+        1.600134888663888,
+        114,
+        300
+      ],
+      [
+        1.6400898583233356,
+        -195,
+        6
+      ],
+      [
+        1.6801382079720497,
+        512,
+        0
+      ]
+    ],
+    "experimental": true,
+    "wideband_arbitrary_iq_tx_demonstrated": false,
+    "finite_complex_if_sequence_demonstrated": true,
+    "gates": {
+      "heldout_complex_level_snr_at_least_20db": true,
+      "two_axis_condition_below_3": true,
+      "wrong_sequence_snr_below_3db": true,
+      "all_states_at_least_32_clean_points": true
+    },
+    "method": "Known references determine U-rL; coherent per-level correlation; training-only affine I/Q calibration",
+    "unknown_payload_values_used_in_fitting": false,
+    "rx_alignment_seconds": -0.06441427566385269,
+    "pilot_amplitude": 1.8224499914338175,
+    "differential_image_frequency_hz": 3.1389999999995024,
+    "reference_times_seconds": [
+      0.2743511208791209,
+      0.6010822686567163,
+      0.8357120000000001,
+      1.035712,
+      1.235776,
+      1.4375040000000001,
+      1.635712
+    ],
+    "reference_ratios_real_imag": [
+      [
+        -0.9430712751794249,
+        0.04245344004103537
+      ],
+      [
+        -0.9498774797069556,
+        0.043050886835237494
+      ],
+      [
+        -0.9608068996975242,
+        0.017948997574079473
+      ],
+      [
+        -0.9439053989415161,
+        0.020725556228391267
+      ],
+      [
+        -0.957406969152251,
+        0.042440757560149346
+      ],
+      [
+        -0.9769403643280743,
+        0.030035647494124403
+      ],
+      [
+        -0.9446632015422678,
+        0.07463453695223789
+      ]
+    ],
+    "reference_tls_noise_eigenvalues": [
+      0.027083507652298226,
+      0.013750757967516156,
+      0.020695842001607182,
+      0.017782694348136088,
+      0.018490879500820852,
+      0.02713148445811665,
+      0.010032706929677648
+    ],
+    "forward_affine_matrix": [
+      [
+        -0.005758376330599181,
+        0.07471602420915756
+      ],
+      [
+        1.0137007393435062,
+        -0.1563146624491113
+      ],
+      [
+        0.005216127451475698,
+        0.9926157883966956
+      ]
+    ],
+    "axis_condition": 1.1640241014228205,
+    "train_complex_mse": 5.541966611699844e-05,
+    "heldout_complex_mse": 6.122247641763554e-05,
+    "heldout_signal_power": 0.1548711657524109,
+    "heldout_snr_db": 34.030596747976055,
+    "heldout_evm_percent": 1.9882462069274707,
+    "wrong_sequence_snr_db": -3.2609281397069556,
+    "payload_indices": [
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36
+    ],
+    "payload_requested_iq_codes": [
+      [
+        -128,
+        -391
+      ],
+      [
+        176,
+        182
+      ],
+      [
+        34,
+        -207
+      ],
+      [
+        -170,
+        -349
+      ],
+      [
+        463,
+        -149
+      ],
+      [
+        421,
+        226
+      ],
+      [
+        29,
+        459
+      ],
+      [
+        204,
+        366
+      ],
+      [
+        463,
+        -438
+      ],
+      [
+        26,
+        134
+      ],
+      [
+        -463,
+        60
+      ],
+      [
+        435,
+        387
+      ],
+      [
+        -376,
+        -63
+      ],
+      [
+        94,
+        -203
+      ],
+      [
+        114,
+        300
+      ],
+      [
+        -195,
+        6
+      ]
+    ],
+    "payload_reconstructed_iq_codes": [
+      [
+        -126.54991567287001,
+        -393.9123049192233
+      ],
+      [
+        172.8004766589532,
+        182.8202266721182
+      ],
+      [
+        37.05347447944168,
+        -206.07601554031186
+      ],
+      [
+        -177.0683467860917,
+        -344.54058519436643
+      ],
+      [
+        464.64845257907575,
+        -144.41527624470106
+      ],
+      [
+        419.6964781861495,
+        229.80510006074388
+      ],
+      [
+        21.173614242136885,
+        457.1864800510613
+      ],
+      [
+        210.45726542847387,
+        369.0063342305124
+      ],
+      [
+        460.0143246319015,
+        -428.87104921843746
+      ],
+      [
+        27.70558675179353,
+        124.91050363132736
+      ],
+      [
+        -450.6861271084029,
+        57.79362229282631
+      ],
+      [
+        420.8944036738274,
+        375.0651935048112
+      ],
+      [
+        -367.80192452826384,
+        -65.23668115901987
+      ],
+      [
+        95.92779604077104,
+        -206.29193908178542
+      ],
+      [
+        112.52779693718193,
+        297.9409149758946
+      ],
+      [
+        -194.66572429102604,
+        4.790686006331357
+      ]
+    ],
+    "clean_points_per_state": [
+      217,
+      173,
+      219,
+      91,
+      201,
+      218,
+      164,
+      216,
+      90,
+      194,
+      219,
+      134,
+      219,
+      127,
+      198,
+      219,
+      94,
+      218,
+      164,
+      191,
+      219,
+      52,
+      219,
+      202,
+      181,
+      218,
+      66,
+      219,
+      217,
+      103,
+      218,
+      114,
+      199,
+      216,
+      113,
+      211,
+      140,
+      218
+    ],
+    "total_points": 16384,
+    "excluded_fraction": 0.59161376953125,
+    "dwell_seconds": 0.04,
+    "constraints": [
+      "Finite sequence with reference symbols",
+      "Host-paced 40 ms holds",
+      "Strong complementary spectral image",
+      "No DAC waveform RAM or hardware sample clock identified"
+    ],
+    "spectral_image_mean_power_relative_to_desired_db": 8.11024937370984,
+    "qualified": true
+  },
+  "off_after": {
+    "peaks": [
+      {
+        "hz": 1025878.90625,
+        "above_median_db": 21.68151043923543,
+        "power": 16111208.28105883
+      },
+      {
+        "hz": -1003784.1796875,
+        "above_median_db": 16.39504194447984,
+        "power": 4769592.355777466
+      },
+      {
+        "hz": -1078430.17578125,
+        "above_median_db": 13.3761797229194,
+        "power": 2380099.102034593
+      },
+      {
+        "hz": -88867.1875,
+        "above_median_db": 12.68689269043999,
+        "power": 2030796.1773426414
+      },
+      {
+        "hz": 50598.14453125,
+        "above_median_db": 12.575828253087566,
+        "power": 1979519.9978091423
+      },
+      {
+        "hz": 213317.87109375,
+        "above_median_db": 12.254340606747444,
+        "power": 1838277.7424700735
+      },
+      {
+        "hz": 286804.19921875,
+        "above_median_db": 12.220338030022734,
+        "power": 1823941.358398199
+      },
+      {
+        "hz": -116149.90234375,
+        "above_median_db": 12.19504282915558,
+        "power": 1813348.8078247798
+      }
+    ],
+    "targeted_peak": null,
+    "rms": 2.8036128033265513,
+    "mean_real": -0.021453857421875,
+    "mean_imag": 0.0902252197265625,
+    "clip_fraction": 0.0
+  },
+  "status": "iq_if_envelope_probe_complete",
+  "rtl_cleanup_errors": [],
+  "rtl_restore_mismatches": {},
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "rx_hardwaregain_chan0": 69,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "final_pluto_tx_powerdown": "1",
+  "cleanup_errors": []
+}

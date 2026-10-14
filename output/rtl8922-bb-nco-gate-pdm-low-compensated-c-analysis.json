@@ -1,0 +1,84 @@
+{
+  "phase_models": {
+    "continuous": 0.9310664369213439,
+    "paused": 0.9654038018018047,
+    "reset": 0.33200961392957906
+  },
+  "best_model": "paused",
+  "residual_cfo_hz": 204.0,
+  "received_repetitions": 68,
+  "quiet_repetitions": 64,
+  "model_selection_qualified": false,
+  "schema_version": 1,
+  "hardware_access": false,
+  "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-compensated.json",
+  "rf_report": "output/rtl8922-bb-nco-gate-pdm-low-compensated-c.json",
+  "off_phase_models": {
+    "continuous": 0.0576709339664737,
+    "paused": 0.06094978055371184,
+    "reset": 0.23712915417173883
+  },
+  "off_qualified": false,
+  "counter_ticks_per_nco_write": 60.00079131126404,
+  "rf_rate_assumed_for_models": 10666666.666666666,
+  "scope": "Periodic finite models, not proof of every peripheral latch or zero jitter",
+  "qualified": false,
+  "private_fold": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-compensated-c-fold.npz",
+  "amplitude": {
+    "filter_cutoff_hz": 100000,
+    "repeat_combined": true,
+    "alignment_samples": 356,
+    "complex_envelope_evm": 0.20319624585350027,
+    "magnitude_rms_error": 0.07376975906298196,
+    "levels": [
+      {
+        "density": 0.0,
+        "relative_amplitude": 0.03614852738758157,
+        "relative_phase_degrees": 178.7501902917558
+      },
+      {
+        "density": 0.125,
+        "relative_amplitude": 0.07179770256336453,
+        "relative_phase_degrees": -138.13696835682927
+      },
+      {
+        "density": 0.25,
+        "relative_amplitude": 0.21070333195030225,
+        "relative_phase_degrees": -57.76493171891803
+      },
+      {
+        "density": 0.375,
+        "relative_amplitude": 0.33386876344493555,
+        "relative_phase_degrees": -34.32919329864885
+      },
+      {
+        "density": 0.625,
+        "relative_amplitude": 0.6268570087005715,
+        "relative_phase_degrees": -12.356924796946364
+      },
+      {
+        "density": 0.75,
+        "relative_amplitude": 0.723033188338738,
+        "relative_phase_degrees": -4.975317264175351
+      },
+      {
+        "density": 0.875,
+        "relative_amplitude": 0.8452775383065916,
+        "relative_phase_degrees": -1.9595166582768664
+      },
+      {
+        "density": 1.0,
+        "relative_amplitude": 0.9999999999999999,
+        "relative_phase_degrees": -0.0
+      }
+    ],
+    "feasibility_gates": {
+      "source_model_correlation_above_90_percent": true,
+      "off_model_correlation_below_50_percent": true,
+      "amplitude_rms_error_below_10_percent": true
+    },
+    "narrowband_amplitude_feasibility": true,
+    "scope": "Known repeated envelope after receiver filtering/averaging; no emission-mask, independent phase, or streaming qualification"
+  },
+  "qualification_scope": "Identifying one unique phase hypothesis; compensated amplitude is evaluated separately"
+}

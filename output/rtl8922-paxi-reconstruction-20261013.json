@@ -1,0 +1,46 @@
+{
+  "scope": "Fresh local pristine pinned clone plus checked working patch and preparation script; generated sources compared with tested driver",
+  "files": [
+    {
+      "file": "debug.c",
+      "sha256": {
+        "rtw89-paxi-repro": "9043531533ed68100b6617a770275d8458d7ab4bdcb30119fe3afb6f3f682a16",
+        "rtw89-paxi-wide": "9043531533ed68100b6617a770275d8458d7ab4bdcb30119fe3afb6f3f682a16"
+      },
+      "identical": true
+    },
+    {
+      "file": "rtw8922a.c",
+      "sha256": {
+        "rtw89-paxi-repro": "94ed2dddd9fb2e90635876fd627d0e90c734edbdbf28aa123cead1ce4e784ceb",
+        "rtw89-paxi-wide": "94ed2dddd9fb2e90635876fd627d0e90c734edbdbf28aa123cead1ce4e784ceb"
+      },
+      "identical": true
+    },
+    {
+      "file": "iq-copybench.c",
+      "sha256": {
+        "rtw89-paxi-repro": "202e5e22e6cb3c22613da89af0357e4eccdface1ed767157bbf1e4b2f71b1a47",
+        "rtw89-paxi-wide": "202e5e22e6cb3c22613da89af0357e4eccdface1ed767157bbf1e4b2f71b1a47"
+      },
+      "identical": true
+    },
+    {
+      "file": "iq-paxi-frozen.c",
+      "sha256": {
+        "rtw89-paxi-repro": "b79be03b78deaa5e1f1877b093f4ac020e5f7232586648a3fb8ab5ea9bdb94ca",
+        "rtw89-paxi-wide": "b79be03b78deaa5e1f1877b093f4ac020e5f7232586648a3fb8ab5ea9bdb94ca"
+      },
+      "identical": true
+    },
+    {
+      "file": "iq-paxi-drain.c",
+      "sha256": {
+        "rtw89-paxi-repro": "2d49ea0e1b7089ff21b3d20f47c327397ffa709414d06cc1a43a9b23f3fff479",
+        "rtw89-paxi-wide": "2d49ea0e1b7089ff21b3d20f47c327397ffa709414d06cc1a43a9b23f3fff479"
+      },
+      "identical": true
+    }
+  ],
+  "passed": true
+}

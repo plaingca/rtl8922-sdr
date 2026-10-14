@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "c130bdf3f62142836ddb351563c81c613587beb5efa735c3b2f2542d44f17364",
+  "stub_bytes": 688,
+  "labels": {
+    "frame": "0x1001650c",
+    "samples": "0x10016514",
+    "invalid": "0x100165fc",
+    "complete": "0x10016600",
+    "normal": "0x10016660"
+  },
+  "command": 1018,
+  "magic": "0x504f4631",
+  "table_local": "0x10016800",
+  "max_samples": 1024,
+  "max_repeats": 4096,
+  "nco_only": true,
+  "packing": "low12 signed NCO index, zero allowed; amplitude fixed during loop",
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 688
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0x30b3",
+      "computed_xor16": "0x30b3",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0xb6ce",
+      "computed_xor16": "0xb6ce",
+      "checksum_matches": true
+    }
+  ],
+  "interrupts": "left enabled",
+  "scope": "Finite NCO-only mute/frequency table; no amplitude stores in loop"
+}

@@ -1,0 +1,17 @@
+{
+  "hardware_access": false,
+  "input_samples": 209717,
+  "input_sample_rate_hz": 533333.3333333333,
+  "output_commands": 4194320,
+  "nominal_command_rate_hz": 10666666.666666666,
+  "compiler_seconds": 0.0937017910182476,
+  "elapsed_seconds": 0.09685797989368439,
+  "lookahead_input_samples": 1,
+  "scope": "Hardware-free unpaced full-input pipe benchmark; same prepared CF32 source as working RF mode. Exact command prefix matches absolute-time block compilation. Does not qualify live external ingress to RF.",
+  "input_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+  "output_sha256": "54919b5bd308cc31abc6c7d19e7dd116845823e1479d0ad5f56d114e4eee2b0c",
+  "compared_native_commands": 4194304,
+  "bit_exact_with_block_compiler": true,
+  "nominal_signal_seconds": 0.393216,
+  "elapsed_speed_multiple": 4.059717128434966
+}

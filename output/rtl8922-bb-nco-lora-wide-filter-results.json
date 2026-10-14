@@ -1,0 +1,82 @@
+[
+  {
+    "tag": "wide-short-turbo-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 2,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-medium-turbo-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 2,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-long-turbo-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 0,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-long-moderate-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 1,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-long-slow-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 0,
+    "packets": 1,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-short-fast-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 2,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-medium-fast-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 2,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-long-fast-hold-a",
+    "returncode": 0,
+    "exact_crc_packets": 1,
+    "packets": 2,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-short-slow-confirm-a",
+    "returncode": 0,
+    "exact_crc_packets": 10,
+    "packets": 10,
+    "off": 0,
+    "wrong": 0
+  },
+  {
+    "tag": "wide-medium-slow-confirm-a",
+    "returncode": 0,
+    "exact_crc_packets": 10,
+    "packets": 10,
+    "off": 0,
+    "wrong": 0
+  }
+]

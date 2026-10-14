@@ -1,0 +1,1405 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "scope": "Finite prepared CF32 inputs; commands generated causally during RF playback. Bandwidth denotes active OFDM carrier-center span, not an emission mask. No external live-source RF ingress, infinite endurance, or every-store RF latch claim.",
+  "attempts": 14,
+  "rf_controls_and_stream_completed": 13,
+  "restore_readback_note": "Cleanup actions completed and Pluto settings restored. Thirteen runs record RF register 0 readback differences of bit 15 only. These are preserved, not classified as exact register restoration; final card is unbound, Pluto TX off and demo stopped.",
+  "working_mode": {
+    "active_carrier_span_hz": 200000,
+    "input_sample_rate_hz": 533333.3333333333,
+    "input_factor": 20,
+    "feedback": 0.97,
+    "phase_weight": 1.0,
+    "envelope_peak": 0.9,
+    "physical_nco_codebook": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "exact_crc_frames": 2027,
+    "transmitted_frames": 2048,
+    "paired_delivery_fraction": 0.98974609375,
+    "median_evm_range": [
+      0.21586318111184538,
+      0.22988453026941524
+    ],
+    "runs": [
+      "rt200-peak-a",
+      "rt200-peak-b"
+    ]
+  },
+  "final_state": {
+    "checked_utc": "2026-10-13T20:54:56Z",
+    "demo_state": "inactive",
+    "rtl_card_bound": false,
+    "loaded_experiment_modules": [],
+    "temporary_firmware_exists": false,
+    "temporary_nm_configuration_exists": false,
+    "pluto_tx_powerdown": "1",
+    "pluto_settings": {
+      "sample_rate": 4000000,
+      "rx_lo": 2399999996,
+      "tx_lo": 2312000000,
+      "rx_rf_bandwidth": 18000000,
+      "tx_rf_bandwidth": 3000000,
+      "gain_control_mode_chan0": "slow_attack",
+      "rx_hardwaregain_chan0": 71,
+      "tx_hardwaregain_chan0": -89.75
+    },
+    "working_module_sha256": {
+      "rtw89_8851b_git.ko": "f77ac06a30e4dcd5b9e4820fd6a982f1bb3816d445cb5ea1e3fff5f72ebb40de",
+      "rtw89_8851be_git.ko": "01344e983f6b0414247a6bea7ddb3ba4f9ff9c9f9f0129d7abffa6ee851b595f",
+      "rtw89_8851bu_git.ko": "61fe87ab20333bdfc988cc1a8ef7d11abd5180f585b1757e38c5c839bec79a27",
+      "rtw89_8852a_git.ko": "ca7b02784ecd77ae0f856f7211c19e5ad136139bbaec2a8b7db623d559cc4c9a",
+      "rtw89_8852ae_git.ko": "b24930720bd3c37df2f89b5170f15917c7579a5662a934c4bbb008ee0622b4d2",
+      "rtw89_8852au_git.ko": "88ed21ae811195df7e95aec60c133123583ae736b151cac0d85764df30931611",
+      "rtw89_8852b_common_git.ko": "265304191e29fa15b9a764a3a0672d167353f31b00b39f4158e7a239287cf6a4",
+      "rtw89_8852b_git.ko": "58dfccef2e0145074c3d978e8eae0d369ad94d17df8fe0c76244e607d830d46a",
+      "rtw89_8852be_git.ko": "ec36d90e14068789605670ef2b7c75466a7ce7aae0766880ee75c8835f75e47c",
+      "rtw89_8852bt_git.ko": "3ced4c5ddeccefbdfb2fac4d70fe4a1f1b807571706378c5be3eb9f4ca32ab6d",
+      "rtw89_8852bte_git.ko": "885d1526ce41a9bd0a9563597940ae4edc0a9b5882735b147fdc88fbfc7d31ff",
+      "rtw89_8852bu_git.ko": "bebd750ed1b6eaef2b811cb9480cfbc244fce0195c5db23898776c5025f23271",
+      "rtw89_8852c_git.ko": "5cc88dde13ee247f3a750c16ab2cef171f69702749b68437b3ed57ae33978f53",
+      "rtw89_8852ce_git.ko": "2f1242db740bcff5de24e36e2f8ed4752f26f5b99921a367fd7e791d905302eb",
+      "rtw89_8852cu_git.ko": "87355d7329e28dddeaccc77fa84073183433b6ea68094e8069b84a6d0856df9b",
+      "rtw89_8922a_git.ko": "9208ef1c90d16bb686176faa4e1e70c060d909d585c1d3644021f1c6b54c43ce",
+      "rtw89_8922ae_git.ko": "4ff4533638b4cd7a4b08df9899b8d9aabff7ceff60951948b1b55548f9392625",
+      "rtw89_8922au_git.ko": "d2dd396ec4fd9fe32c92572e96bff27f1978778aa2b3a8435b6e7314951f7943",
+      "rtw89_8922d_git.ko": "40c992ebe0e37f9612aa6385540c703e644870caba5084567a9ac7f995c209fb",
+      "rtw89_8922de_git.ko": "68837e3a74890c1cae61d02e5f198f6cf3b4db8eec68b9b2bf435fa73a258645",
+      "rtw89_core_git.ko": "27c42b65a4aab23c0b643bd78c5aa3ef6db1349682d48073ec92af8c3ab12eb1",
+      "rtw89_pci_git.ko": "3beb6d521df193170e8796795605fdc2ca79b619b96137cf95b0876bf62138b5",
+      "rtw89_usb_git.ko": "5b1243ad6eafe8d8121277939be04bac1d629cb6a353e9dfe7b7904f235c5f13"
+    },
+    "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+    "working_modules_unchanged": true,
+    "all_run_cleanup_errors_empty": true,
+    "pluto_settings_restored": true,
+    "pluto_settings_match_first_run": true,
+    "all_cleanup_checks_pass": true
+  },
+  "pipe_check": {
+    "hardware_access": false,
+    "input_samples": 209717,
+    "input_sample_rate_hz": 533333.3333333333,
+    "output_commands": 4194320,
+    "nominal_command_rate_hz": 10666666.666666666,
+    "compiler_seconds": 0.0937017910182476,
+    "elapsed_seconds": 0.09685797989368439,
+    "lookahead_input_samples": 1,
+    "scope": "Hardware-free unpaced full-input pipe benchmark; same prepared CF32 source as working RF mode. Exact command prefix matches absolute-time block compilation. Does not qualify live external ingress to RF.",
+    "input_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+    "output_sha256": "54919b5bd308cc31abc6c7d19e7dd116845823e1479d0ad5f56d114e4eee2b0c",
+    "compared_native_commands": 4194304,
+    "bit_exact_with_block_compiler": true,
+    "nominal_signal_seconds": 0.393216,
+    "elapsed_speed_multiple": 4.059717128434966
+  },
+  "runs": [
+    {
+      "tag": "rt100-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt100-a.json",
+      "rf_report_sha256": "3f87b2357925976aefb23838f60974f6865388789e44637a616c436412b9cf6d",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 1,
+        "input_sample_rate_hz": 10666666.666666666,
+        "input_samples": 4194305,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 8192,
+        "frame_count": 512,
+        "oversample": 40,
+        "active_carrier_span_hz": 100000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "26a49a7a61dac64da9fad773a90f7c2c7bd3612d9679e0ed1f62a758fd594ebe",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 1,
+        "input_sample_rate_hz": 10666666.666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "26a49a7a61dac64da9fad773a90f7c2c7bd3612d9679e0ed1f62a758fd594ebe",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003057047724723816,
+        "median_compile_seconds": 6.045028567314148e-05,
+        "maximum_compile_seconds": 0.00015269219875335693
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt100-a-demod.json",
+      "transmitted_frames": 512,
+      "detected_frames": 508,
+      "crc_frames": 508,
+      "sequence_correct_crc_frames": 508,
+      "median_frame_evm": 0.1799157072791826,
+      "median_frame_period_seconds": 0.0007702499999999723,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9921875,
+      "offered_payload_bps": 41544.95293735949,
+      "delivered_payload_bps": 41220.38299253637,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt100-base-b",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt100-base-b.json",
+      "rf_report_sha256": "f593c9c6acf4193748b1a06ef52663fcf813fcb48f84f93741665a94da00b03f",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 40,
+        "input_sample_rate_hz": 266666.6666666666,
+        "input_samples": 104859,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 8192,
+        "frame_count": 512,
+        "oversample": 40,
+        "active_carrier_span_hz": 100000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "3fa9240be32b87d00e124174237412725161e848396f12c6fec791cad09a3bb7",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 40,
+        "input_sample_rate_hz": 266666.6666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "3fa9240be32b87d00e124174237412725161e848396f12c6fec791cad09a3bb7",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.00031070224940776825,
+        "median_compile_seconds": 6.677769124507904e-05,
+        "maximum_compile_seconds": 0.00015770085155963898
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt100-base-b-demod.json",
+      "transmitted_frames": 512,
+      "detected_frames": 512,
+      "crc_frames": 510,
+      "sequence_correct_crc_frames": 510,
+      "median_frame_evm": 0.20191130300239152,
+      "median_frame_period_seconds": 0.0007702499999999723,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.99609375,
+      "offered_payload_bps": 41544.95293735949,
+      "delivered_payload_bps": 41382.667964947934,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt200-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-a.json",
+      "rf_report_sha256": "1011ed8d2f7ae2dba674621104a67b04ddc0d06ac9e213bd0e7f1984b3430d74",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003050360828638077,
+        "median_compile_seconds": 6.451830267906189e-05,
+        "maximum_compile_seconds": 0.00015207193791866302
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1004,
+      "crc_frames": 960,
+      "sequence_correct_crc_frames": 960,
+      "median_frame_evm": 0.2859613047137687,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9375,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 77896.78675754905,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt200-b",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-b.json",
+      "rf_report_sha256": "1997272b66f5eb22860e188041c3eedc33da01f431450f5924e371389ad5ed7f",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003223661333322525,
+        "median_compile_seconds": 6.60596415400505e-05,
+        "maximum_compile_seconds": 0.00016939453780651093
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-b-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1015,
+      "crc_frames": 958,
+      "sequence_correct_crc_frames": 958,
+      "median_frame_evm": 0.2930720804423255,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.935546875,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 77734.50178513749,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt200-mixed-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-mixed-a.json",
+      "rf_report_sha256": "d361b00078ca9e32f62922e0c35760fb958f0d7573f4540ad8ff8583c5299062",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "feedback": 0.95,
+        "phase_weight": 0.2,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.95,
+        "phase_weight": 0.2,
+        "input_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003191586583852768,
+        "median_compile_seconds": 6.308034062385559e-05,
+        "maximum_compile_seconds": 0.00016600638628005981
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x3b7e0",
+          "actual": "0x337e0"
+        },
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-mixed-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 863,
+      "crc_frames": 819,
+      "sequence_correct_crc_frames": 819,
+      "median_frame_evm": 0.3096561062103076,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.7998046875,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 66455.69620253403,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt200-peak-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-peak-a.json",
+      "rf_report_sha256": "8f8d7c5023911c4e78fd530e778713f8b48d77a705af69a23db31498e629a062",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.9,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.00032141245901584625,
+        "median_compile_seconds": 6.702356040477753e-05,
+        "maximum_compile_seconds": 0.0001681298017501831
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-peak-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1019,
+      "crc_frames": 1011,
+      "sequence_correct_crc_frames": 1011,
+      "median_frame_evm": 0.22988453026941524,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9873046875,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 82035.05355404384,
+      "qualification": "working_bounded_200khz"
+    },
+    {
+      "tag": "rt200-peak-b",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-peak-b.json",
+      "rf_report_sha256": "e2a53b2f5f34d02dc47a885a926d9de184a3ae7ec33ebc644e5319b2cc432886",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.9,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "97caadd733e4a6bc2e7f5ef10952d030f5a25b875ae933fb9b7fda3f6748cb8d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003132373094558716,
+        "median_compile_seconds": 6.713904440402985e-05,
+        "maximum_compile_seconds": 0.0001600552350282669
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x3b7e0",
+          "actual": "0x337e0"
+        },
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-peak-b-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1023,
+      "crc_frames": 1016,
+      "sequence_correct_crc_frames": 1016,
+      "median_frame_evm": 0.21586318111184538,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9921875,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 82440.76598507274,
+      "qualification": "working_bounded_200khz"
+    },
+    {
+      "tag": "rt200-tuned-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt200-tuned-a.json",
+      "rf_report_sha256": "a538b0bf81f8e3f752425906887ab663b35effb98443c90f4b7c9d30b551e9ec",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "input_samples": 209717,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 20,
+        "active_carrier_span_hz": 200000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "feedback": 0.95,
+        "phase_weight": 8.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 20,
+        "input_sample_rate_hz": 533333.3333333333,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.95,
+        "phase_weight": 8.0,
+        "input_sha256": "13e353023d129a1d1cd23f87495036d37d6777706e451b5b992865ef9c9d696d",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003067757934331894,
+        "median_compile_seconds": 6.425753235816956e-05,
+        "maximum_compile_seconds": 0.00015381351113319397
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt200-tuned-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1020,
+      "crc_frames": 959,
+      "sequence_correct_crc_frames": 959,
+      "median_frame_evm": 0.238449108868712,
+      "median_frame_period_seconds": 0.00038512499999998617,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9365234375,
+      "offered_payload_bps": 83089.90587471898,
+      "delivered_payload_bps": 77815.64427134326,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt250-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt250-a.json",
+      "rf_report_sha256": "207ef41f59eabb882621fb13bfc022fa25a18160a29832940626799045df8bdb",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "input_samples": 262145,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 16,
+        "active_carrier_span_hz": 250000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.97,
+        "phase_weight": 1.0,
+        "input_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003041904419660568,
+        "median_compile_seconds": 6.189942359924316e-05,
+        "maximum_compile_seconds": 0.0001511983573436737
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {},
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt250-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 927,
+      "crc_frames": 681,
+      "sequence_correct_crc_frames": 681,
+      "median_frame_evm": 0.3462305876674769,
+      "median_frame_period_seconds": 0.00038490000000002134,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.6650390625,
+      "offered_payload_bps": 83138.47752662569,
+      "delivered_payload_bps": 55290.335151984465,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt250-mixed-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt250-mixed-a.json",
+      "rf_report_sha256": "f57a6e3334ab5e43537cf5038d6d0abb87df4c5cc5bb9289d061acd7e5112831",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "input_samples": 262145,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 16,
+        "active_carrier_span_hz": 250000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+        "feedback": 0.85,
+        "phase_weight": 2.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.85,
+        "phase_weight": 2.0,
+        "input_sha256": "b0252b35ef917be9264e20c8555038d93e921584ad4e7a5298f83e5951af6967",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.00030524469912052155,
+        "median_compile_seconds": 5.501508712768555e-05,
+        "maximum_compile_seconds": 0.00013995729386806488
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x3b7e0",
+          "actual": "0x337e0"
+        },
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt250-mixed-a-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1018,
+      "crc_frames": 648,
+      "sequence_correct_crc_frames": 648,
+      "median_frame_evm": 0.40727516069943437,
+      "median_frame_period_seconds": 0.00038490000000002134,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.6328125,
+      "offered_payload_bps": 83138.47752662569,
+      "delivered_payload_bps": 52611.06780981782,
+      "qualification": "baseline_or_tuning_attempt"
+    },
+    {
+      "tag": "rt250-peak-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt250-peak-a.json",
+      "rf_report_sha256": "2a72d416f99e378fdb8d0c5b4e8e54c718f3d433e53485ff4c78d20e2c17cbe9",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "input_samples": 262145,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 16,
+        "active_carrier_span_hz": 250000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "7989386ddd886251b83117db1245823b9d35343d726667643296355b16ee5530",
+        "feedback": 0.95,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.9,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": false,
+      "completed_buffers": 927,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": null,
+      "compiler": {
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.95,
+        "phase_weight": 1.0,
+        "input_sha256": "7989386ddd886251b83117db1245823b9d35343d726667643296355b16ee5530",
+        "native_samples_compiled_during_tx": 3792896,
+        "maximum_compile_and_fill_seconds": 0.000570930540561676,
+        "median_compile_seconds": 5.844235420227051e-05,
+        "maximum_compile_seconds": 0.0001668892800807953
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [
+        -32
+      ],
+      "exception": "ValueError: Final table/buffers readback mismatch",
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x3b7e0",
+          "actual": "0x337e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "qualification": "rejected_host_refill_underrun",
+      "failure_interpretation": "BB status 4 and producer -32 indicate underrun; final readback was checked before producer error in this historical run. No RF trace was preserved. Current probe preserves acquisition before qualification and reports producer failure first."
+    },
+    {
+      "tag": "rt250-peak-b",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt250-peak-b.json",
+      "rf_report_sha256": "4a69f091875031169aefc76d966487931d16d2b039078fbd6397c91ea2684dd6",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "input_samples": 262145,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 4096,
+        "frame_count": 1024,
+        "oversample": 16,
+        "active_carrier_span_hz": 250000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "7989386ddd886251b83117db1245823b9d35343d726667643296355b16ee5530",
+        "feedback": 0.95,
+        "phase_weight": 1.0,
+        "envelope_peak": 0.9,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 16,
+        "input_sample_rate_hz": 666666.6666666666,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.95,
+        "phase_weight": 1.0,
+        "input_sha256": "7989386ddd886251b83117db1245823b9d35343d726667643296355b16ee5530",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003056023269891739,
+        "median_compile_seconds": 5.8570876717567444e-05,
+        "maximum_compile_seconds": 0.00015257112681865692
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt250-peak-b-demod.json",
+      "transmitted_frames": 1024,
+      "detected_frames": 1022,
+      "crc_frames": 989,
+      "sequence_correct_crc_frames": 989,
+      "median_frame_evm": 0.31434404083359757,
+      "median_frame_period_seconds": 0.00038490000000002134,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "exact_delivery_fraction": 0.9658203125,
+      "offered_payload_bps": 83138.47752662569,
+      "delivered_payload_bps": 80296.83034553986,
+      "qualification": "degraded_experimental_250khz"
+    },
+    {
+      "tag": "rt400-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt400-a.json",
+      "rf_report_sha256": "2ab52787013df3550d88f51de0b42c644a5aae36f0f79236d6a67b129150fb4f",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 10,
+        "input_sample_rate_hz": 1066666.6666666665,
+        "input_samples": 419432,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 2048,
+        "frame_count": 2048,
+        "oversample": 10,
+        "active_carrier_span_hz": 400000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+        "feedback": 0.7,
+        "phase_weight": 4.0,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": true,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 10,
+        "input_sample_rate_hz": 1066666.6666666665,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.7,
+        "phase_weight": 4.0,
+        "input_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.00030189938843250275,
+        "median_compile_seconds": 5.76898455619812e-05,
+        "maximum_compile_seconds": 0.00014855526387691498
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x3b7e0",
+          "actual": "0x337e0"
+        },
+        "rf:1:0": {
+          "saved": "0x3b7e2",
+          "actual": "0x337e2"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt400-a-demod.json",
+      "transmitted_frames": 2048,
+      "detected_frames": 439,
+      "crc_frames": 175,
+      "sequence_correct_crc_frames": 86,
+      "median_frame_evm": 0.782204681382845,
+      "median_frame_period_seconds": 0.00019293750000000387,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "qualification": "rejected_waveform_distortion",
+      "failure_interpretation": "Sparse detections make timing-derived source sequence/EVM scoring uncertain. Report raw CRC count only; no useful 400 kHz mode qualified."
+    },
+    {
+      "tag": "rt400-ext-a",
+      "rf_report": "output/rtl8922-bb-nco-realtime-rt400-ext-a.json",
+      "rf_report_sha256": "825ad774d9ad266aa4e76c6eb896eece2dd575ccecaa3dd398b41d4f8dc15395",
+      "source": {
+        "schema_version": 1,
+        "hardware_access": false,
+        "kind": "realtime-cf32-ofdm",
+        "input_format": "CF32_LE",
+        "input_factor": 10,
+        "input_sample_rate_hz": 1066666.6666666665,
+        "input_samples": 419432,
+        "frame_samples": 4194304,
+        "stream_blocks": 1024,
+        "ofdm_frame_slots": 2048,
+        "frame_count": 2048,
+        "oversample": 10,
+        "active_carrier_span_hz": 400000.0,
+        "body_bytes": 4,
+        "training_seed": 8922,
+        "carrier_offset_hz": 250000,
+        "table_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+        "feedback": 0.85,
+        "phase_weight": 0.2,
+        "envelope_peak": 0.7,
+        "sources": [
+          {
+            "body_hex": "52543030",
+            "packet_hex": "52543030ad5b"
+          },
+          {
+            "body_hex": "52543031",
+            "packet_hex": "52543031bd7a"
+          },
+          {
+            "body_hex": "52543032",
+            "packet_hex": "525430328d19"
+          },
+          {
+            "body_hex": "52543033",
+            "packet_hex": "525430339d38"
+          }
+        ],
+        "nco_codebook": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          12,
+          13,
+          16,
+          17,
+          24,
+          32,
+          33
+        ],
+        "scope": "I/Q input only; command decisions are made causally by the compiler during playback, no stored command table"
+      },
+      "rf_controls_and_stream_completed": true,
+      "completed_buffers": 1024,
+      "total_buffers": 1024,
+      "local_repetitions_per_buffer": 1,
+      "full_burst_capture_requested": false,
+      "clip_fraction": 0.0,
+      "compiler": {
+        "input_factor": 10,
+        "input_sample_rate_hz": 1066666.6666666665,
+        "native_samples_compiled_before_tx": 8192,
+        "feedback": 0.85,
+        "phase_weight": 0.2,
+        "input_sha256": "6a8a45aae1e86a5ed89db6be5621e10a048a83eadba3161819276217d4ff9158",
+        "native_samples_compiled_during_tx": 4186112,
+        "maximum_compile_and_fill_seconds": 0.0003299303352832794,
+        "median_compile_seconds": 8.84179025888443e-05,
+        "maximum_compile_seconds": 0.00017703697085380554
+      },
+      "native_buffer_budget_seconds": 0.000384,
+      "producer_errors": [],
+      "exception": null,
+      "rtl_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      },
+      "cleanup_actions_without_errors": true,
+      "demod_report": "output/rtl8922-bb-nco-realtime-rt400-ext-a-demod.json",
+      "transmitted_frames": 2048,
+      "detected_frames": 0,
+      "crc_frames": 0,
+      "sequence_correct_crc_frames": 0,
+      "median_frame_evm": null,
+      "median_frame_period_seconds": null,
+      "off_crc_frames": 0,
+      "wrong_training_crc_frames": 0,
+      "repetition_averaging": false,
+      "qualification": "unqualified_snapshot_timing",
+      "failure_interpretation": "No preambles in this snapshot, but RX call began after finite TX completed. Queued capture timing is unverified; this is not proof the expanded alphabet cannot synthesize OFDM. No bandwidth claim from this run."
+    }
+  ]
+}

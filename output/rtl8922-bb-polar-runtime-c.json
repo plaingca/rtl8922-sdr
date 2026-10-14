@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "rf_tx_requested": false,
+  "status": "idle_single_and_paired_store_benchmark_completed",
+  "started_utc": "2026-10-13T15:09:31Z",
+  "firmware_sha256": "90adc107451b297a3ddc3ea0da66f872f14fd58d5dd7b89c0911a04a4fdfa6fc",
+  "saved_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "rf_modes_before": {
+    "0": 210912,
+    "1": 210914
+  },
+  "saved_nco_itqt": [
+    2424869,
+    0
+  ],
+  "mailbox_saved": {
+    "0x37600": "0x0",
+    "0x37608": "0x0",
+    "0x3760c": "0x0",
+    "0x37610": "0x0"
+  },
+  "mailbox_status_before": {
+    "0x37680": "0x0",
+    "0x37684": "0x0",
+    "0x3768c": "0x0",
+    "0x3778c": "0x0"
+  },
+  "selector_before": "0x18780000",
+  "commands": [
+    {
+      "mode": 0,
+      "cycles": 0,
+      "samples": 0,
+      "host_seconds": 8.77678394317627e-05,
+      "host_bracket_lower_bound_samples_per_second": 0.0,
+      "result_words": [
+        "0x504f4c31",
+        "0x1",
+        "0x2",
+        "0x0",
+        "0x0",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x0"
+      ],
+      "mcycle_delta": 0,
+      "cycles_per_sample": null,
+      "host_bracket_lower_bound_cycle_hz": null,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x0"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.012873882427811623,
+      "host_bracket_lower_bound_samples_per_second": 10181233.263156371,
+      "result_words": [
+        "0x504f4c31",
+        "0x2",
+        "0x2",
+        "0x1000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x8757b0",
+        "0xff57c6"
+      ],
+      "mcycle_delta": 7864342,
+      "cycles_per_sample": 60.00016784667969,
+      "host_bracket_lower_bound_cycle_hz": 610875704.6755806,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.09840250760316849,
+      "host_bracket_lower_bound_samples_per_second": 10655988.60781711,
+      "result_words": [
+        "0x504f4c31",
+        "0x3",
+        "0x2",
+        "0x8000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0xff7701",
+        "0x4bf770b"
+      ],
+      "mcycle_delta": 62914570,
+      "cycles_per_sample": 60.000009536743164,
+      "host_bracket_lower_bound_cycle_hz": 639359418.0924531,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 1,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.3936622254550457,
+      "host_bracket_lower_bound_samples_per_second": 10654575.747397864,
+      "result_words": [
+        "0x504f4c31",
+        "0x4",
+        "0x2",
+        "0x20000",
+        "0x1",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x4bf8bfb",
+        "0x13bf8c05"
+      ],
+      "mcycle_delta": 251658250,
+      "cycles_per_sample": 60.00000238418579,
+      "host_bracket_lower_bound_cycle_hz": 639274570.24636,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.025124674662947655,
+      "host_bracket_lower_bound_samples_per_second": 5216863.5717021655,
+      "result_words": [
+        "0x504f4c31",
+        "0x5",
+        "0x2",
+        "0x1000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x13bfaa3c",
+        "0x14afaa5a"
+      ],
+      "mcycle_delta": 15728670,
+      "cycles_per_sample": 120.00022888183594,
+      "host_bracket_lower_bound_cycle_hz": 626024822.649572,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.19713810086250305,
+      "host_bracket_lower_bound_samples_per_second": 5318992.094437113,
+      "result_words": [
+        "0x504f4c31",
+        "0x6",
+        "0x2",
+        "0x8000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0x14afcb0b",
+        "0x1c2fcb20"
+      ],
+      "mcycle_delta": 125829141,
+      "cycles_per_sample": 120.00002002716064,
+      "host_bracket_lower_bound_cycle_hz": 638279157.8567628,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 2,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.7867560256272554,
+      "host_bracket_lower_bound_samples_per_second": 5331136.7989282515,
+      "result_words": [
+        "0x504f4c31",
+        "0x7",
+        "0x2",
+        "0x20000",
+        "0x2",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x1c2ff7a9",
+        "0x3a2ff7be"
+      ],
+      "mcycle_delta": 503316501,
+      "cycles_per_sample": 120.00000500679016,
+      "host_bracket_lower_bound_cycle_hz": 639736442.5632734,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 4,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.012379908934235573,
+      "host_bracket_lower_bound_samples_per_second": 10587476.910878696,
+      "result_words": [
+        "0x504f4c31",
+        "0x8",
+        "0x2",
+        "0x1000",
+        "0x4",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x3a3017fb",
+        "0x3aa8180c"
+      ],
+      "mcycle_delta": 7864337,
+      "cycles_per_sample": 60.00012969970703,
+      "host_bracket_lower_bound_cycle_hz": 635249987.8453753,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 4,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.0985376350581646,
+      "host_bracket_lower_bound_samples_per_second": 10641375.7482717,
+      "result_words": [
+        "0x504f4c31",
+        "0x9",
+        "0x2",
+        "0x8000",
+        "0x4",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0x3aa82f5d",
+        "0x3e682f67"
+      ],
+      "mcycle_delta": 62914570,
+      "cycles_per_sample": 60.000009536743164,
+      "host_bracket_lower_bound_cycle_hz": 638482646.3803694,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 4,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.3936170693486929,
+      "host_bracket_lower_bound_samples_per_second": 10655798.049968202,
+      "result_words": [
+        "0x504f4c31",
+        "0xa",
+        "0x2",
+        "0x20000",
+        "0x4",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x3e6849ae",
+        "0x4d684ae3"
+      ],
+      "mcycle_delta": 251658549,
+      "cycles_per_sample": 60.00007367134094,
+      "host_bracket_lower_bound_cycle_hz": 639348668.0250232,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 5,
+      "cycles": 4096,
+      "samples": 131072,
+      "host_seconds": 0.0006807595491409302,
+      "host_bracket_lower_bound_samples_per_second": 192537879.43981615,
+      "result_words": [
+        "0x504f4c31",
+        "0xb",
+        "0x2",
+        "0x1000",
+        "0x5",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x20000",
+        "0x4d686b14",
+        "0x4d6a6bf0"
+      ],
+      "mcycle_delta": 131292,
+      "cycles_per_sample": 1.001678466796875,
+      "host_bracket_lower_bound_cycle_hz": 192861047.8775966,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 5,
+      "cycles": 32768,
+      "samples": 1048576,
+      "host_seconds": 0.001898348331451416,
+      "host_bracket_lower_bound_samples_per_second": 552362273.3654432,
+      "result_words": [
+        "0x504f4c31",
+        "0xc",
+        "0x2",
+        "0x8000",
+        "0x5",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x100000",
+        "0x4d6a8951",
+        "0x4d7a90e7"
+      ],
+      "mcycle_delta": 1050518,
+      "cycles_per_sample": 1.001852035522461,
+      "host_bracket_lower_bound_cycle_hz": 553385267.9169832,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    },
+    {
+      "mode": 5,
+      "cycles": 131072,
+      "samples": 4194304,
+      "host_seconds": 0.0068399421870708466,
+      "host_bracket_lower_bound_samples_per_second": 613207522.1232504,
+      "result_words": [
+        "0x504f4c31",
+        "0xd",
+        "0x2",
+        "0x20000",
+        "0x5",
+        "0x250025",
+        "0x250025",
+        "0x0",
+        "0x0",
+        "0x400000",
+        "0x4d7aab41",
+        "0x4dbac916"
+      ],
+      "mcycle_delta": 4201941,
+      "cycles_per_sample": 1.0018208026885986,
+      "host_bracket_lower_bound_cycle_hz": 614324052.0282013,
+      "csr_words": [
+        "0x3100216",
+        "0x0",
+        "0x81811111",
+        "0xbe",
+        "0x3100216",
+        "0x3100216"
+      ],
+      "completed": true
+    }
+  ],
+  "final_nco_itqt": [
+    2424869,
+    0
+  ],
+  "final_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "gain_control_mode_chan0": "slow_attack",
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "mailbox_cleanup_errors": []
+}

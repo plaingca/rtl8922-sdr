@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "90adc107451b297a3ddc3ea0da66f872f14fd58d5dd7b89c0911a04a4fdfa6fc",
+  "stub_bytes": 1588,
+  "labels": {
+    "pattern": "0x10016564",
+    "single": "0x10016670",
+    "paired": "0x100166fc",
+    "amp_only": "0x10016808",
+    "nop_only": "0x10016894",
+    "finished": "0x1001691c",
+    "restore": "0x10016954",
+    "done": "0x10016958",
+    "invalid": "0x10016970",
+    "complete": "0x10016974",
+    "normal": "0x100169e4"
+  },
+  "command": 1019,
+  "magic": "0x504f4c31",
+  "nops_per_pattern_sample": 0,
+  "write_buffer_enabled_for_valid_commands": true,
+  "write_buffer_control_source": "https://github.com/Ameba-AIoT/ameba-rtos/blob/master/component/soc/common/include/cmsis/cache_riscv.h",
+  "period_samples": 32,
+  "frequency_pattern": "0xd39a6c57",
+  "amplitude_pattern": "0x6b19a3d5",
+  "nco_indices": [
+    8,
+    24
+  ],
+  "itqt_codes": [
+    18,
+    27
+  ],
+  "max_cycles": 131072,
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 1588
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0xf2e7",
+      "computed_xor16": "0xf2e7",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0x749a",
+      "computed_xor16": "0x749a",
+      "checksum_matches": true
+    }
+  ],
+  "interrupts": "left enabled",
+  "scope": "Finite throughput and pattern experiment; not a host streaming interface"
+}

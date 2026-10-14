@@ -1,0 +1,19 @@
+{
+  "scope": "Correlate failed long live trial with pinned watchdog IRQ definition; kernel monotonic timestamps avoid wall-clock conversion drift",
+  "trial": "output/rtl8922-paxi-live80-60s-20261013.json",
+  "irq_definition": "vendor pinned mac.h MAC_AX_ERR_L2_ERR_WDT_TIMEOUT_INT = 0x2599; pci.c IRQ handler calls rtw89_ser_notify with this code",
+  "watchdog_irq_messages": 10675,
+  "first_watchdog_irq": [
+    "[8970307.719371] beastmode kernel: rtw89_8922ae_git 0000:0d:00.0: SER catches error: 0x2599"
+  ],
+  "last_watchdog_irq": [
+    "[8970307.988895] beastmode kernel: rtw89_8922ae_git 0000:0d:00.0: SER catches error: 0x2599"
+  ],
+  "recovery_messages": [
+    "[8970307.774903] beastmode kernel: rtw89_8922ae_git 0000:0d:00.0: FW backtrace invalid address: 0x0",
+    "[8970307.990907] beastmode kernel: ieee80211 phy319: Hardware restart was requested"
+  ],
+  "initial_watchdog_control": "0x80001e84",
+  "final_watchdog_read": "0xeaeaeaea",
+  "transport_pass": false
+}

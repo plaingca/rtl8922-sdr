@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "c55296bb75d5176587f0210c9c11654984fb175875f3d38f8b5b98b0451c6311",
+  "hook": "0x1001280a",
+  "stub": "0x10016400",
+  "stub_bytes": 656,
+  "command": 1021,
+  "magic": "0x464d3031",
+  "buffer_local": "0x10016800",
+  "buffer_bytes": 4096,
+  "control_local": "0x10017b40",
+  "batch_blocks": 8,
+  "max_blocks": 64,
+  "block_samples": 2048,
+  "hold_range": [
+    16,
+    1024
+  ],
+  "interrupts": "enabled",
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 656
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0x86c3",
+      "computed_xor16": "0x86c3",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0xbe",
+      "computed_xor16": "0xbe",
+      "checksum_matches": true
+    }
+  ],
+  "semantics": "fraction=unsigned_audio_byte/256; index 1/2; finite count; underrun/cancel mutes"
+}

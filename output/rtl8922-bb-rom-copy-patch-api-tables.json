@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "hardware_access": false,
+  "pinned_firmware_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_firmware_sha256": "e30cfe4e8a7f3150900d642600b197f583016890d82760080d69f48e4a3906b4",
+  "hook": "0x10010214",
+  "stub": "0x10017000",
+  "stub_bytes": 140,
+  "copy_source_local": "0x10020000",
+  "copy_bytes": 256,
+  "output_local": "0x10017b00",
+  "output_host_hypothesis": "0x1863fb00",
+  "marker_started": "0x524f4d31",
+  "marker_finished": "0x524f4d32",
+  "changed_regions": [
+    {
+      "file_offset": "0xd4084",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xdae70",
+      "bytes": 140
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "section_digest_refreshed": true,
+  "default_integrity_records": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0xc9f1",
+      "computed_xor16": "0xc9f1",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0x4f8c",
+      "computed_xor16": "0x4f8c",
+      "checksum_matches": true
+    }
+  ],
+  "pooled_keys_and_signatures_changed": false,
+  "requires_reported_secure_boot_zero": true,
+  "changed_regions_coordinates": "original container before optional header/security repacking",
+  "bb_security_sections_omitted": false,
+  "container_repacked": false,
+  "patched_bb_section_file_offset": "0xd3e70",
+  "container_bytes_removed": 0,
+  "acceptance": "untested; no signatures generated or hardware security settings changed",
+  "writes_if_executed": "temporary BB IRAM output and stack only; original startup resumed"
+}

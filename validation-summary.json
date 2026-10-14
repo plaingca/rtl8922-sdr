@@ -7930,5 +7930,337 @@
       "output/rtl8922-pll-followup-live.json"
     ],
     "firmware_scope": "RAM firmware log dictionary and ROM printable-symbol search; RF sequencer implementation unresolved"
+  },
+  "streaming_throughput_2026_10_12": {
+    "date": "2026-10-12",
+    "working_driver_changed": false,
+    "new_rate_promoted": false,
+    "raw_40msps_endurance": {
+      "name": "endurance40",
+      "rate_msps": 40,
+      "account_before_yield": false,
+      "requested_seconds": 900.0,
+      "producer_seconds": 900.000129856,
+      "bytes": 71999397888,
+      "complex_samples": 35999698944,
+      "payload_MBps": 79.9993194440093,
+      "sequence_counter_wraps": 2,
+      "max_backlog_records": 4707,
+      "producer_return": 0,
+      "source_guard_reason": 0,
+      "checks": {
+        "host_counters_clean": true,
+        "host_fifo_drops_zero": true,
+        "producer_clean": true,
+        "requested_duration_completed": true,
+        "packet_count_matches": true,
+        "record_count_matches_modulo_u32": true
+      },
+      "transport_pass": true
+    },
+    "new_coded_waveform_gate_passed": false,
+    "coded_gate_limitation": "Low coherence; sample-level continuity is inconclusive despite the passing transport counters.",
+    "continuous_80msps": false,
+    "continuous_160msps": false,
+    "higher_rate_failure": "Source ring overwrite after approximately 4.14ms at 80MS/s and 1.43ms at 160MS/s; zero host sequence gaps do not override producer EOVERFLOW.",
+    "paxi_path": "Firmware TX0/1 descriptor/submission/completion trace identified; direct LA payload and throughput unverified. Earlier TX2 probe was outside this firmware selector supported contexts.",
+    "320msps": "Uncompressed 8-bit I plus 8-bit Q needs 640MB/s, above verified PCIe Gen2 x1 ceiling of 500MB/s before overhead. Reduced precision packing and a 320MS/s source are unverified.",
+    "findings": "docs/streaming-throughput.md",
+    "summary": "output/rtl8922-stream-throughput-summary.json",
+    "evidence": [
+      "output/rtl8922-copy-control-bench.json",
+      "output/rtl8922-copy-channel-bench.json",
+      "output/rtl8922-stream-matrix-v1.json",
+      "output/rtl8922-stream-matrix-analysis.json",
+      "output/rtl8922-stream-endurance-v1.json",
+      "output/rtl8922-stream-coded40-analysis.json",
+      "output/rtl8922-stream-firmware-trace.json",
+      "output/rtl8922-stream-build-manifest.json",
+      "output/rtl8922-copy-control29-bench.json",
+      "output/rtl8922-stream-final-restoration.json"
+    ],
+    "restoration": {
+      "live": true,
+      "frequency_hz": 2312000000,
+      "rate": 20000000,
+      "samples_added": 40562688,
+      "errors_added": 0,
+      "recoveries_added": 0,
+      "tone_enabled": false,
+      "loaded_srcversion": "071571FF11683534D38F0D4",
+      "working_srcversion": "071571FF11683534D38F0D4",
+      "pluto_independent_readback": {
+        "sample_rate": 4000000,
+        "rx_lo": 2399999996,
+        "tx_lo": 2312000000,
+        "rx_rf_bandwidth": 18000000,
+        "tx_rf_bandwidth": 3000000,
+        "tx_hardwaregain_chan0": -89.75,
+        "tx_powerdown": "1"
+      }
+    }
+  },
+  "live_demo_40msps_waterfall_text_2026_10_12": {
+    "receive_rate": 40000000,
+    "initial_frequency_hz": 2422000000,
+    "center_range_mhz": [
+      2422,
+      2462
+    ],
+    "text": "RTL8922",
+    "text_canvas_hz": 1000000,
+    "default_offset_hz": 750000,
+    "fft_size": 262144,
+    "working_driver_changed": false,
+    "service_checkout": "/home/plaing/rtl8922-sdr",
+    "publisher": "bounded separate thread; skips display snapshots without blocking capture",
+    "offline_tests_passed": 11,
+    "rf_check_passed": true,
+    "tone_movement_hz": 1499938.96484375,
+    "timer_restoration_verified": true,
+    "rf_check_added_capture_errors": 0,
+    "rf_check_added_recoveries": 0,
+    "display_stall_check": {
+      "stall_seconds": 2,
+      "before": {
+        "frame": 1875,
+        "samples": 5895356416,
+        "errors": 0,
+        "recoveries": 0,
+        "display_skipped": 35,
+        "live": true,
+        "received_at": 1791837144.55609
+      },
+      "after": {
+        "frame": 1908,
+        "samples": 5999165440,
+        "errors": 0,
+        "recoveries": 0,
+        "display_skipped": 59,
+        "live": true,
+        "received_at": 1791837147.1487463
+      },
+      "samples_added": 103809024,
+      "capture_errors_added": 0,
+      "recoveries_added": 0,
+      "display_skips_added": 24,
+      "passed": true
+    },
+    "indefinite_drop_free_qualified": false,
+    "sample_level_continuity_qualified": false,
+    "findings": "docs/demo40-waterfall.md",
+    "evidence": [
+      "output/rtl8922-demo40-live-check.json",
+      "output/rtl8922-demo40-backpressure-check.json",
+      "output/rtl8922-demo40-blocking-display-failure.json",
+      "output/rtl8922-demo40-deployment.json",
+      "output/rtl8922-demo40-browser-check.json"
+    ],
+    "browser_controls_verified": true,
+    "forwarded_browser_ports": {
+      "passed": true,
+      "direct_and_forwarded_hosts": true,
+      "mismatched_origin_rejected": true,
+      "report": "output/rtl8922-demo40-forwarding-check.json"
+    }
+  },
+  "paxi_highrate_2026_10_13": {
+    "scope": "Bounded experimental receive transport and Soapy application; sample-level and indefinite RF continuity unqualified",
+    "working_kernel_patch_changed": false,
+    "default_plugin_rates_changed": false,
+    "experimental_device_args": "driver=rtl8922,experimental_paxi=1",
+    "fixed_centers_mhz": {
+      "80": 5210,
+      "160": 5250
+    },
+    "maximum_capture_seconds": 60,
+    "firmware_held": true,
+    "module_reload_required": true,
+    "frozen_verified_MBps": 382.42602159367385,
+    "all_final_soapy_trials_passed": true,
+    "coded_sample_continuity_qualified": false,
+    "tone_absolute_position_gate_passed": false,
+    "tone_movement_gate_passed": true,
+    "offline_checks": {
+      "unittests_passed": 11,
+      "ruff": true,
+      "python_compile": true,
+      "kernel_and_plugin_builds": true,
+      "diff_check": true
+    },
+    "summary": "output/rtl8922-paxi-highrate-summary-20261013.json",
+    "findings": "docs/highrate-reception.md",
+    "restoration": "output/rtl8922-paxi-final-restoration-20261013.json",
+    "configuration_scope": "Historical bounded mode; superseded defaults are documented in default_reception_2026_10_13"
+  },
+  "default_reception_2026_10_13": {
+    "default_mode": "paxi160",
+    "device_args": "driver=rtl8922",
+    "sample_rate": 160000000,
+    "center_hz": 5250000000,
+    "display_span_hz": [
+      5170000000,
+      5330000000
+    ],
+    "continuous_until_stop_or_fault": true,
+    "maximum_capture_seconds": null,
+    "source_and_completed_counter_bits": 64,
+    "old_32bit_source_rollover_seconds": 107.3741824,
+    "firmware_held": true,
+    "local_watchdog_disabled_before_hold": true,
+    "driver_reload_required_after_stop": true,
+    "default_driver_directory": "vendor/rtw89-paxi-wide",
+    "working_kernel_patch_changed": false,
+    "explicit_legacy_demo_mode": "RTL8922_CAPTURE_MODE=legacy40",
+    "default_demo_bounded_180s_passed": true,
+    "no_sample_level_or_indefinite_continuity_claim": true,
+    "offline_tests_passed": 18,
+    "browser_desktop_mobile_mock_passed": true,
+    "reconstruction_identical": true,
+    "evidence": [
+      "output/rtl8922-continuous-demo160-180s-20261013.json",
+      "output/rtl8922-default-soapy160-20261013.json",
+      "output/rtl8922-continuous-demo-browser-check.json",
+      "output/rtl8922-continuous-reconstruction-20261013.json"
+    ],
+    "restoration": "output/rtl8922-continuous-demo-restoration-20261013.json"
+  },
+  "fft240_demo_2026_10_13": {
+    "sample_rate": 160000000,
+    "center_hz": 5250000000,
+    "target_fft_fps": 240,
+    "fft_size": 262144,
+    "native_bin_hz": 610.3515625,
+    "fft_engine": "single precision FFTW, separate native display worker",
+    "browser_transport": "bounded SSE stream; requestAnimationFrame waterfall row batches",
+    "bounded_120s_passed": true,
+    "no_host_drops_or_capture_errors": true,
+    "display_skips_distinct_from_sample_loss": true,
+    "no_sample_level_or_indefinite_continuity_claim": true,
+    "offline_tests_passed": 21,
+    "evidence": [
+      "output/rtl8922-fft240-demo160-120s-20261013.json",
+      "output/rtl8922-fft240-live-browser.json"
+    ],
+    "live_service": "rtl8922-live-demo.service",
+    "started_on_explicit_user_request": true
+  },
+  "paxi_live_retuning_2026_10_13": {
+    "sample_rate": 160000000,
+    "driver_reload_on_retune": false,
+    "firmware_resume_on_retune": false,
+    "initial_center_mhz": 5250,
+    "centers": "Enabled 2.4 GHz channel centers; 5 MHz hardware centers 5005 through 7115 MHz",
+    "implementation": "Producer mailbox; idle DMA/host/quota guard; pinned host chip callbacks; explicit FIFO discard and timestamp gap",
+    "intentional_retune_gap_ms_approx": 25,
+    "http_retune_latency_ms_approx": 40,
+    "tested_same_driver_hops": 12,
+    "paired_rf_pass_centers_mhz": [
+      2412,
+      2462,
+      5005,
+      5570,
+      5815,
+      5950,
+      5955,
+      5975,
+      5250
+    ],
+    "passive_only_centers_mhz": [
+      6185,
+      6675,
+      7115
+    ],
+    "rf_above_6ghz_qualified": false,
+    "full_band_fidelity_or_indefinite_continuity_qualified": false,
+    "offline_tests_passed": 22,
+    "working_kernel_patch_changed": false,
+    "evidence": [
+      "output/rtl8922-paxi-retune-band-edges-final-20261013.json",
+      "output/rtl8922-paxi-retune-http-20261013.json",
+      "output/rtl8922-paxi-retune-browser-mock.json",
+      "output/rtl8922-paxi-retune-reconstruction.json"
+    ],
+    "preserved_failures": [
+      "output/rtl8922-paxi-retune-pilot-20261013.json",
+      "output/rtl8922-paxi-retune-band-edges-20261013.json",
+      "output/rtl8922-paxi-retune-band-edges-repeat-20261013.json",
+      "output/rtl8922-paxi-retune-band-edges-controlfix-20261013.json"
+    ],
+    "restoration": "output/rtl8922-paxi-retune-restoration-20261013.json"
+  },
+  "wifi_iq_demodulation_2026_10_13": {
+    "pass": true,
+    "method": "offline GNU Radio legacy OFDM receiver from native signed-i8 I/Q; no monitor packet interface or new RF run",
+    "source_report": "output/rtl8922-waterfall160-shot1-20261013.json",
+    "source_rate_msps": 160,
+    "source_center_mhz": 5250,
+    "decoded_channel_mhz": 5220,
+    "source_seconds_analyzed": 0.25,
+    "decoded_frame": "beacon",
+    "frame_bytes_including_fcs": 441,
+    "modulation": "16-QAM, rate 1/2",
+    "phy_rate_mbps": 24,
+    "received_fcs": "a232c556",
+    "independent_crc32": "a232c556",
+    "phase_removed_control_valid_frames": 0,
+    "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+    "reference_patch": "retain received FCS; no change to PHY or CRC acceptance",
+    "evidence": [
+      "output/wifi-decode/ch5220.json",
+      "output/wifi-decode/ch5220-magnitude-only.json",
+      "output/wifi-decode/decoded-beacon.png"
+    ],
+    "limit": "Coherent I/Q demonstrated on channel 44 only; full 160 MHz fidelity and 160 MHz Wi-Fi PHY decoding remain unqualified."
+  },
+  "wifi_he160_header_2026_10_14": {
+    "pass": true,
+    "scope": "Coherent preamble and PHY header across contiguous 160 MHz; HE payload and MAC FCS not decoded",
+    "source_report": "output/rtl8922-wifi-wide-shot4-20261013.json",
+    "sample_rate": 160000000,
+    "center_mhz": 5250,
+    "format": "HE-SU",
+    "bandwidth_mhz": 160,
+    "matching_crc_checked_header_copies": 8,
+    "section_centers_mhz": [
+      5180,
+      5200,
+      5220,
+      5240,
+      5260,
+      5280,
+      5300,
+      5320
+    ],
+    "ltf_alignment_spread_us": 0.2,
+    "mcs": 9,
+    "modulation": "256-QAM, rate 5/6",
+    "spatial_streams": 2,
+    "stbc": false,
+    "coding": "LDPC",
+    "bss_color": 63,
+    "phase_removed_control_valid_headers": 0,
+    "independent_bcc_comparisons": 400,
+    "independent_crc_comparisons": 100,
+    "receiver_restored_and_unloaded": true,
+    "pluto_tx_off": true,
+    "evidence": [
+      "output/wifi-decode/he160-eight-sections.json",
+      "output/wifi-decode/he160-wide-packet.png",
+      "output/wifi-decode/he-codec-reference-check.json"
+    ],
+    "limits": "Full-band EVM, sensitivity, sample-level continuity and indefinite reception remain unqualified."
+  },
+  "demo_overflow_recovery_2026_10_14": {
+    "pass": true,
+    "scope": "Bounded Pluto tests and automatic overflow recovery; interruptions remain counted, no new continuity qualification",
+    "forced_overflow_passed": true,
+    "recovered_center_hz": 5350000000,
+    "stop_stays_stopped": true,
+    "restoration_passed": true,
+    "summary": "output/rtl8922-demo-overflow-recovery-summary-20261014.json",
+    "kernel_guards_unchanged": true,
+    "automatic_driver_reload": true,
+    "pluto_tone_and_text_passed": true
   }
 }

@@ -1,0 +1,32 @@
+{
+  "hardware_access": true,
+  "pluto_settings_unchanged": true,
+  "pluto_tx_powerdown": "1",
+  "pluto_settings": {
+    "altvoltage0:True": {
+      "frequency": "2399999996"
+    },
+    "altvoltage1:True": {
+      "frequency": "2312000000",
+      "powerdown": "1"
+    },
+    "voltage0:False": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "18000000",
+      "hardwaregain": "71.000000 dB",
+      "gain_control_mode": "slow_attack"
+    },
+    "voltage0:True": {
+      "sampling_frequency": "4000000",
+      "rf_bandwidth": "3000000",
+      "hardwaregain": "-89.750000 dB"
+    }
+  },
+  "demo_service": "inactive",
+  "card_bound": false,
+  "temporary_firmware_present": false,
+  "temporary_nm_config_present": false,
+  "working_modules_loaded": [],
+  "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+  "new_fault_lines": []
+}

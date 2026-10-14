@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "hardware_access": true,
+  "single_frame_success": false,
+  "fine_levels_promoted": false,
+  "effective_amp_advance_samples": 1.0,
+  "effective_amp_advance_ns": 187.5,
+  "absolute_internal_delay_calibrated": false,
+  "fine_desired_sideband_levels": 28,
+  "levels_using_clean_measurements": 16,
+  "remaining_levels": "Power-of-two model, marked inferred; weak/contaminated measurements not used",
+  "attenuation_encoding": "Inferred separate three-bit I/Q power-of-two attenuators; unequal settings create a conjugate image",
+  "model_evm_coarse": 0.184219739756468,
+  "model_evm_fine": 0.13667932077870404,
+  "model_limit": "Desired-sideband model does not include the actual conjugate image, settling, nonlinearities, or ambient interference",
+  "rf_runs": [
+    {
+      "path": "output/rtl8922-bb-polar-cal-confirm-coarse-a.json",
+      "sha256": "588ec20c2301619bfa8ad2b094022bf1202ebfd6f867ac60360823c1ea94dbdd",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-confirm-coarse-b.json",
+      "sha256": "1fd458a785b51281683e0aae842d08da00fe80e19f7187ba33393c155527f7b3",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {}
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-confirm-fine-a.json",
+      "sha256": "2bb9f771ea7c70085d65185e6b8c83968699896932114228e1bf5463b1ceef2b",
+      "accepted": false,
+      "exception": "ValueError: Static control clipped",
+      "clip_fraction": null,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-confirm-fine-b.json",
+      "sha256": "61cb38b0bc5733242298b4fd4954e51262ab6b7a75db6f35ac395d7dfc00429d",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-timing-125.json",
+      "sha256": "6178dec04a21daede43cb51b072a8b26a70c262fd5f72ac3f57cfe0aa353fcf8",
+      "accepted": false,
+      "exception": "ValueError: Static control clipped",
+      "clip_fraction": null,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33782",
+          "actual": "0x337a2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-timing-150.json",
+      "sha256": "60f85b2aa0a75111ce8c76e82eaab4662221bac0a843374a2487932b34fa280e",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-validation-coarse-100-repeat.json",
+      "sha256": "6688a81639813bec9e04e8bd80300d4889b12a9281d5f29da84ac1e25c508d64",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x33782",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-validation-coarse-100.json",
+      "sha256": "754ed0f2f1803fb7e386582404273fd086f6bdb2b3acb16888fd028be6f0fb22",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-validation-fine-100-repeat.json",
+      "sha256": "840c377bac1ea73c58602fd3a1c7b41db68c808a544e19032294e37ac3468fd9",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-high-validation-fine-100.json",
+      "sha256": "3b6ee54c110d96e49680c19574ddc64f7247c5138f4fee9feb5396f6b397e18c",
+      "accepted": false,
+      "exception": "ValueError: Static control clipped",
+      "clip_fraction": null,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-retry-timing-125.json",
+      "sha256": "bb62c9fb95b940bcf4a28810276c150be9a6fd864c8c78a1e5bc7d049f756347",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-sweep-a.json",
+      "sha256": "713a7927a27cc14f9beb15280d9dd9e7bd406954a2c2701438d75a6954612360",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {}
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-sweep-b.json",
+      "sha256": "38ce6df1f776be526935ff59dbe67d118f320a309915f5a46e22493ee3cbec4b",
+      "accepted": false,
+      "exception": "ValueError: Attenuation sweep clipped",
+      "clip_fraction": null,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-sweep-c.json",
+      "sha256": "baa9e7d59b2c5f94af1ac02b32a7f01eb0be06bd22265b66afe8241c6d8678f9",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33782"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-000.json",
+      "sha256": "c0d13e3876d882c57f84ab9f4d35c4b0e54a188d6bdb1365dc21b70897a06f2b",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33742"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-025.json",
+      "sha256": "1d42ffba8ccb230d80f54d9d95e864ac4c8c7655a4d01741779888cb6d91781c",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-050.json",
+      "sha256": "e7731b6f4c9774bcee3922be061f5a97e8eb8e63134bd32bfd1faa5d4f89e3ca",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x33762"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-075.json",
+      "sha256": "54807b6f199c5ecd8e271266ebb4d879bf17402248780fb0aef9a0e3d86c155b",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x33782",
+          "actual": "0x337e2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-100.json",
+      "sha256": "e6a0897141604643621d2a6df6a1e99dea36509b66faac80553c039d1134993c",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-125.json",
+      "sha256": "6f33a857d5eec929497e2e7f9becc311dacc9bedfc00a976126df7d53af4eb83",
+      "accepted": false,
+      "exception": "ValueError: Static control not above both off controls",
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-150.json",
+      "sha256": "5fdaadd4d7ccdcfa51f9ce6d47fdfc876399c3a7b300d41b664e83ff37e6d04c",
+      "accepted": false,
+      "exception": "ValueError: Static control not above both off controls",
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-175.json",
+      "sha256": "1956705ced777a3fbe3db69969160fd0a2bf7221c80619115a3f1fda2c0a82b3",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:0:0": {
+          "saved": "0x337e0",
+          "actual": "0x3b7e0"
+        },
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x30be2"
+        }
+      }
+    },
+    {
+      "path": "output/rtl8922-bb-polar-cal-timing-200.json",
+      "sha256": "b639f15dfb1f5d5cb1c5d64672942b3f78fa8a7364189499ec9699e217db4597",
+      "accepted": true,
+      "exception": null,
+      "clip_fraction": 0.0,
+      "cleanup_errors": [],
+      "rf_restore_mismatches": {
+        "rf:1:0": {
+          "saved": "0x337e2",
+          "actual": "0x3b7e2"
+        }
+      }
+    }
+  ],
+  "validation": [
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-high-validation-fine-100.json",
+      "kind": "fine",
+      "rx_gain": 60,
+      "accepted": false,
+      "rejection": "ValueError: Static control clipped"
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100.json",
+      "kind": "coarse",
+      "rx_gain": 60,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100-demod.json",
+      "single_frame_candidates": 182,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 3,
+      "combined_groups": 3,
+      "combined_erased": 0,
+      "combined_median_evm_rms": 0.28670732291646084,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -1.0910979289479859,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-high-validation-fine-100-repeat.json",
+      "kind": "fine",
+      "rx_gain": 60,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-high-validation-fine-100-repeat-demod.json",
+      "single_frame_candidates": 44,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 0,
+      "combined_groups": 2,
+      "combined_erased": 0,
+      "combined_median_evm_rms": 0.3742739431880808,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -4.654427423456155,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100-repeat.json",
+      "kind": "coarse",
+      "rx_gain": 60,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-high-validation-coarse-100-repeat-demod.json",
+      "single_frame_candidates": 97,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 1,
+      "combined_groups": 2,
+      "combined_erased": 0,
+      "combined_median_evm_rms": 0.30258004096005253,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -2.780937018039409,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-confirm-fine-a.json",
+      "kind": "fine",
+      "rx_gain": 55,
+      "accepted": false,
+      "rejection": "ValueError: Static control clipped"
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-confirm-coarse-a.json",
+      "kind": "coarse",
+      "rx_gain": 55,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-confirm-coarse-a-demod.json",
+      "single_frame_candidates": 106,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 1,
+      "combined_groups": 2,
+      "combined_erased": 0,
+      "combined_median_evm_rms": 0.2812845046030113,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -2.79372138110358,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-confirm-fine-b.json",
+      "kind": "fine",
+      "rx_gain": 55,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-confirm-fine-b-demod.json",
+      "single_frame_candidates": 59,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 0,
+      "combined_groups": 3,
+      "combined_erased": 3,
+      "combined_median_evm_rms": null,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -23.489552062710203,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    },
+    {
+      "rf_report": "output/rtl8922-bb-polar-cal-confirm-coarse-b.json",
+      "kind": "coarse",
+      "rx_gain": 55,
+      "accepted": true,
+      "decode_report": "output/rtl8922-bb-polar-cal-confirm-coarse-b-demod.json",
+      "single_frame_candidates": 128,
+      "single_frame_crc_valid": 0,
+      "combined_crc_valid": 2,
+      "combined_groups": 2,
+      "combined_erased": 0,
+      "combined_median_evm_rms": 0.2633035294931893,
+      "off_crc_valid": 0,
+      "wrong_training_crc_valid": 0,
+      "coherent_signal_to_inter_repetition_residual_db": -1.3275615965675964,
+      "residual_scope": "Includes interference, noise, phase/timing variation and distortion; not an isolated thermal SNR measurement."
+    }
+  ],
+  "final_state_report": "output/rtl8922-bb-polar-cal-final-state.json",
+  "all_final_cleanup_checks_pass": true,
+  "offline_tests_passed": 8,
+  "scope": "Finite repeated 2-MHz custom OFDM at 5.333 MS/s paired updates. No single-frame improvement, indefinite streaming, 20 MS/s, or clean emission mask qualification."
+}

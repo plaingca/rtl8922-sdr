@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-13",
+  "checked_utc": "2026-10-14T03:24:40Z",
+  "scope": "Bounded experimental receive transport and Soapy application; sample-level and indefinite RF continuity unqualified",
+  "working_kernel_patch_changed": false,
+  "default_plugin_rates_changed": false,
+  "experimental_device_args": "driver=rtl8922,experimental_paxi=1",
+  "fixed_centers_mhz": {
+    "80": 5210,
+    "160": 5250
+  },
+  "maximum_capture_seconds": 60,
+  "firmware_held": true,
+  "module_reload_required": true,
+  "frozen_verified_MBps": 382.42602159367385,
+  "soapy_trials": [
+    {
+      "rate_msps": 80,
+      "format": "CF32",
+      "requested_seconds": 60.0,
+      "application": {
+        "format": "CF32",
+        "samples": 4799954944,
+        "calls": 2343728,
+        "seconds": 60.0012,
+        "grid_errors": 0,
+        "bounded_end": true,
+        "reload_required": true
+      },
+      "native_payload_bytes": 9599909888,
+      "producer_elapsed_ns": 60000001589,
+      "max_poll_gap_ns": 276829,
+      "max_backlog_records": 11747,
+      "checks": {
+        "application_clean": true,
+        "producer_clean": true,
+        "no_host_drops": true,
+        "scratch_guards_clean": true,
+        "tracking_quiesced": true,
+        "native_sample_counts_match": true,
+        "packet_counts_match": true,
+        "watchdog_disabled_and_clear": true,
+        "restored": true,
+        "clean_safety_cap_end": true
+      },
+      "passed": true,
+      "evidence": "output/rtl8922-paxi-soapy-80-CF32-persistent-v2-20261013.json"
+    },
+    {
+      "rate_msps": 80,
+      "format": "CS16",
+      "requested_seconds": 1.0,
+      "application": {
+        "format": "CS16",
+        "samples": 80000000,
+        "calls": 39064,
+        "seconds": 1.00126,
+        "grid_errors": 0,
+        "bounded_end": false,
+        "reload_required": true
+      },
+      "native_payload_bytes": 160000000,
+      "producer_elapsed_ns": 1000247272,
+      "max_poll_gap_ns": 93209,
+      "max_backlog_records": 6692,
+      "checks": {
+        "application_clean": true,
+        "producer_clean": true,
+        "no_host_drops": true,
+        "scratch_guards_clean": true,
+        "tracking_quiesced": true,
+        "watchdog_disabled_and_clear": true,
+        "restored": true,
+        "requested_prefix_received": true,
+        "producer_contains_requested_prefix": true,
+        "host_notifications_not_ahead_of_submissions": true
+      },
+      "passed": true,
+      "evidence": "output/rtl8922-paxi-soapy-80-CS16-persistent-v2-20261013.json",
+      "scope": "Requested one-second prefix and conversion/timestamp checks; explicit stop may leave an unconsumed tail",
+      "unconsumed_tail_samples": 3072,
+      "packets_pending_at_producer_status": 0
+    },
+    {
+      "rate_msps": 160,
+      "format": "CF32",
+      "requested_seconds": 60.0,
+      "application": {
+        "format": "CF32",
+        "samples": 9599909888,
+        "calls": 4687456,
+        "seconds": 60.0011,
+        "grid_errors": 0,
+        "bounded_end": true,
+        "reload_required": true
+      },
+      "native_payload_bytes": 19199819776,
+      "producer_elapsed_ns": 60000017419,
+      "max_poll_gap_ns": 232915,
+      "max_backlog_records": 18707,
+      "checks": {
+        "application_clean": true,
+        "producer_clean": true,
+        "no_host_drops": true,
+        "scratch_guards_clean": true,
+        "tracking_quiesced": true,
+        "native_sample_counts_match": true,
+        "packet_counts_match": true,
+        "watchdog_disabled_and_clear": true,
+        "restored": true,
+        "clean_safety_cap_end": true
+      },
+      "passed": true,
+      "evidence": "output/rtl8922-paxi-soapy-160-CF32-persistent-v2-20261013.json"
+    },
+    {
+      "rate_msps": 160,
+      "format": "CS16",
+      "requested_seconds": 1.0,
+      "application": {
+        "format": "CS16",
+        "samples": 160000000,
+        "calls": 78127,
+        "seconds": 1.0028,
+        "grid_errors": 0,
+        "bounded_end": false,
+        "reload_required": true
+      },
+      "native_payload_bytes": 320000000,
+      "producer_elapsed_ns": 1001869253,
+      "max_poll_gap_ns": 179142,
+      "max_backlog_records": 17045,
+      "checks": {
+        "application_clean": true,
+        "producer_clean": true,
+        "no_host_drops": true,
+        "scratch_guards_clean": true,
+        "tracking_quiesced": true,
+        "watchdog_disabled_and_clear": true,
+        "restored": true,
+        "requested_prefix_received": true,
+        "producer_contains_requested_prefix": true,
+        "host_notifications_not_ahead_of_submissions": true
+      },
+      "passed": true,
+      "evidence": "output/rtl8922-paxi-soapy-160-CS16-persistent-v2-20261013.json",
+      "scope": "Requested one-second prefix and conversion/timestamp checks; explicit stop may leave an unconsumed tail",
+      "unconsumed_tail_samples": 268288,
+      "packets_pending_at_producer_status": 24
+    }
+  ],
+  "all_final_soapy_trials_passed": true,
+  "coded_sample_continuity_qualified": false,
+  "coded_evidence": [
+    "output/rtl8922-paxi-coded80-quiesced-analysis-20261013.json",
+    "output/rtl8922-paxi-coded160-quiesced-analysis-20261013.json"
+  ],
+  "tone_absolute_position_gate_passed": false,
+  "tone_movement_gate_passed": true,
+  "retained_failure_types": [
+    "cached quota mismatch and credit stall",
+    "WCPU watchdog timeout",
+    "producer poll gap exceeds source-ring retention",
+    "host completion timeout",
+    "FIFO-reader order-4 allocation failure",
+    "initial reusable-reader signed/unsigned return bug",
+    "coded reference insufficient coherence or timing resolution"
+  ],
+  "reconstruction": "output/rtl8922-paxi-reconstruction-20261013.json",
+  "restoration": "output/rtl8922-paxi-final-restoration-20261013.json",
+  "offline_checks": {
+    "unittests_passed": 11,
+    "ruff": true,
+    "python_compile": true,
+    "kernel_and_plugin_builds": true,
+    "diff_check": true
+  },
+  "current_sha256": {
+    "SoapyRTL8922.cpp": "87af1f3ad5c6fc5b581c1bd8ce1c8c5874c24bd6f5318cbb778d235d18fe268c",
+    "research/streaming/paxi-soapy-check.cpp": "eb5900d83e1d115c73c44d976ad92f2826433b995d7867454f768bf389eef54d",
+    "research/streaming/paxi-status.py": "44c56bf93eb9ed6fbf84f09768989fbabe5e2f664601f2d5a7d1ab758a33e453",
+    "research/streaming/paxi-drain.c": "2d49ea0e1b7089ff21b3d20f47c327397ffa709414d06cc1a43a9b23f3fff479",
+    "research/streaming/paxi-frozen.py": "fae37b1d2700e333ab997724a202a8e22cf0f5cda75e16293a1475295c00e406",
+    "research/streaming/paxi-soapy-check.py": "43651e07654a3c0b925235e9bea101190579535ae483e8cdc9a434cb6e00ad65",
+    "research/streaming/paxi-frozen.c": "b79be03b78deaa5e1f1877b093f4ac020e5f7232586648a3fb8ab5ea9bdb94ca",
+    "research/streaming/paxi-live.py": "6684b83c8569ca4af0d9d970748b85dba80bfab7da1ad5752dea0ff31b37fb1f",
+    "research/streaming/prepare-paxi.py": "3835b5b64e040e36bac248d07b7bcc8513bc1a059b164ead015a9d62cb68569c",
+    "coded-continuity.py": "53cba438b08ed724411aae7dd7b70aee2ff6ad38dc634cde11e5a162792554eb",
+    "driver/patches/driver.patch": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+    "build-paxi/libRTL8922Support.so": "8c73b6e05804eac105c413bc14e2407dfde0786011cb3878cd78623afbe3009c",
+    "build-streaming/raw-stream": "5db79f531dc2684249b5c26eac141ee8f8669f6493153e8a8f480b12e64bc3ce"
+  }
+}

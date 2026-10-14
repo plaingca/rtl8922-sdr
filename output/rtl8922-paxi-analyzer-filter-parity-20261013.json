@@ -1,0 +1,5 @@
+{
+  "scope": "Offline equivalence of causal FIR implementations on complex random input",
+  "maximum_absolute_error": 4.586498644671073e-16,
+  "passed": true
+}

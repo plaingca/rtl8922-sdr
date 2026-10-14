@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "vendor_code_executed": false,
+  "driver_sha256": "6e008520696c20450959babc2d1f04a742c950d9085c3f02207fce2cd9830bbb",
+  "operations_table_slot_va": "0x14093f538",
+  "functions": {
+    "dack_dispatch": {
+      "start_va": "0x14045d3b0",
+      "end_va": "0x14045d518",
+      "function_sha256": "bbf0e62fc7036922fd3fd0f4ece52ce08230a66f0b4c982e07e45720ac70fbc7",
+      "direct_calls": [
+        "0x140001b88",
+        "0x140001bb0",
+        "0x14038fe8c",
+        "0x140460ec4",
+        "0x14046106c"
+      ],
+      "register_reference_excerpts": []
+    },
+    "local_dack": {
+      "start_va": "0x14046106c",
+      "end_va": "0x140461178",
+      "function_sha256": "2c5f358fe33c46f5fa22bd97e2d53900cd394c6780b66da6d185755806e60b51",
+      "direct_calls": [
+        "0x140001b88",
+        "0x14045c2c0",
+        "0x14045c700",
+        "0x14045cb30",
+        "0x14045cf74",
+        "0x14045e418",
+        "0x14045ea24",
+        "0x14045f07c",
+        "0x1404601c8",
+        "0x14046039c",
+        "0x140461178",
+        "0x140461410"
+      ],
+      "register_reference_excerpts": []
+    },
+    "path1_calibration_variant": {
+      "start_va": "0x14045cf74",
+      "end_va": "0x14045d3a4",
+      "function_sha256": "30e9d48e21d3df7074cd70eec28250bb8f315b015ba3a74eb7614ed8997f1a09",
+      "direct_calls": [
+        "0x140458630",
+        "0x140458dbc",
+        "0x14045907c",
+        "0x14045a2ec",
+        "0x14045b078",
+        "0x14045bf64",
+        "0x140466c44",
+        "0x140466d14",
+        "0x140467808",
+        "0x1405f45b0"
+      ],
+      "register_reference_excerpts": [
+        {
+          "va": "0x14045cfc7",
+          "instruction": "mov dword ptr [rsp + 0x40], 0x8220"
+        },
+        {
+          "va": "0x14045d004",
+          "instruction": "mov edx, 0x2bd4"
+        },
+        {
+          "va": "0x14045d140",
+          "instruction": "mov edx, 0x8220"
+        },
+        {
+          "va": "0x14045d1f0",
+          "instruction": "mov edx, 0x82cc"
+        },
+        {
+          "va": "0x14045d285",
+          "instruction": "mov edx, 0x82cc"
+        },
+        {
+          "va": "0x14045d2d1",
+          "instruction": "mov edx, 0x2b58"
+        }
+      ]
+    },
+    "path1_dack_source_variant": {
+      "start_va": "0x14045b078",
+      "end_va": "0x14045b51e",
+      "function_sha256": "8271e3fcc3923f6206f6c6e1d2bf32344f1babc20cc5d8311fa5b335fedf9739",
+      "direct_calls": [
+        "0x140001b88",
+        "0x1402c1f18",
+        "0x1402c1fec",
+        "0x140457f30",
+        "0x140458630",
+        "0x140458dbc"
+      ],
+      "register_reference_excerpts": [
+        {
+          "va": "0x14045b090",
+          "instruction": "mov edx, 0x2b58"
+        },
+        {
+          "va": "0x14045b0af",
+          "instruction": "mov edx, 0x82cc"
+        },
+        {
+          "va": "0x14045b0cb",
+          "instruction": "mov edx, 0x2bcc"
+        },
+        {
+          "va": "0x14045b0d8",
+          "instruction": "mov esi, 0x2bd0"
+        },
+        {
+          "va": "0x14045b145",
+          "instruction": "or edx, 0xc1f6"
+        },
+        {
+          "va": "0x14045b15d",
+          "instruction": "or edx, 0xc1f7"
+        },
+        {
+          "va": "0x14045b20f",
+          "instruction": "mov edx, 0x2bd0"
+        },
+        {
+          "va": "0x14045b2ed",
+          "instruction": "mov edi, 0xc1f6"
+        },
+        {
+          "va": "0x14045b324",
+          "instruction": "mov edi, 0xc1f7"
+        },
+        {
+          "va": "0x14045b355",
+          "instruction": "mov ebp, 0x2bd0"
+        }
+      ]
+    },
+    "path1_dac_dc_correction_variant": {
+      "start_va": "0x14045bf64",
+      "end_va": "0x14045c2bf",
+      "function_sha256": "1b86454fd3b4128e8e116ce57835afcd3b51bfad4320fa540376a7a33274aeae",
+      "direct_calls": [
+        "0x140001b88",
+        "0x1402c1fec",
+        "0x140457f30",
+        "0x140458630",
+        "0x140458dbc",
+        "0x140460e08"
+      ],
+      "register_reference_excerpts": [
+        {
+          "va": "0x14045bf84",
+          "instruction": "mov edx, 0x2b58"
+        },
+        {
+          "va": "0x14045bf9d",
+          "instruction": "mov edx, 0x82cc"
+        },
+        {
+          "va": "0x14045bffa",
+          "instruction": "mov r13d, 0x2bd4"
+        },
+        {
+          "va": "0x14045c0e8",
+          "instruction": "mov edx, 0x2bd0"
+        },
+        {
+          "va": "0x14045c17e",
+          "instruction": "mov edi, 0xc1f6"
+        },
+        {
+          "va": "0x14045c1b5",
+          "instruction": "mov edi, 0xc1f7"
+        },
+        {
+          "va": "0x14045c1f4",
+          "instruction": "mov edx, 0x2bd0"
+        },
+        {
+          "va": "0x14045c222",
+          "instruction": "mov edx, 0x2bd0"
+        },
+        {
+          "va": "0x14045c276",
+          "instruction": "or edx, 0xc4d0"
+        },
+        {
+          "va": "0x14045c292",
+          "instruction": "or edx, 0xc4d4"
+        }
+      ]
+    }
+  },
+  "limits": "Selected DACK variant only; field meanings require tracing and hardware evidence. No sample RAM found here."
+}

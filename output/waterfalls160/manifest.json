@@ -1,0 +1,46 @@
+{
+  "scope": "Real passive RTL8922AE captures; nominal frequency axis, uncalibrated RF power; separate snapshots",
+  "fft_size": 4096,
+  "spectra_per_row": 64,
+  "frequency_bins_averaged": 2,
+  "dc_removal": "Per-FFT complex mean subtraction",
+  "color_limits_dbfs": [
+    -68.82730102539062,
+    -40.40180969238281
+  ],
+  "images": [
+    {
+      "image": "/home/plaing/rtl8922-sdr/output/waterfalls160/rtl8922-160mhz-waterfall-1.png",
+      "capture_report": "/home/plaing/rtl8922-sdr/output/rtl8922-waterfall160-shot1-20261013.json",
+      "capture_started_utc": "2026-10-14T03:37:47Z",
+      "raw_prefix": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-waterfall160-shot1-20261013.bin",
+      "raw_bytes": 536870912,
+      "raw_sha256": "342d5c7db5e5f215420c04f2bf2c0dcc050c4702667e80f863651c1df0cd6f7e",
+      "displayed_seconds": 1.6777216,
+      "transport_pass": true,
+      "restored": true
+    },
+    {
+      "image": "/home/plaing/rtl8922-sdr/output/waterfalls160/rtl8922-160mhz-waterfall-2.png",
+      "capture_report": "/home/plaing/rtl8922-sdr/output/rtl8922-waterfall160-shot2-20261013.json",
+      "capture_started_utc": "2026-10-14T03:37:54Z",
+      "raw_prefix": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-waterfall160-shot2-20261013.bin",
+      "raw_bytes": 536870912,
+      "raw_sha256": "854b1d16a19b331deb2a025fec611713029a49b1cf45d9d3cdad4f6d835165cb",
+      "displayed_seconds": 1.6777216,
+      "transport_pass": true,
+      "restored": true
+    },
+    {
+      "image": "/home/plaing/rtl8922-sdr/output/waterfalls160/rtl8922-160mhz-waterfall-3.png",
+      "capture_report": "/home/plaing/rtl8922-sdr/output/rtl8922-waterfall160-shot3-20261013.json",
+      "capture_started_utc": "2026-10-14T03:38:00Z",
+      "raw_prefix": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-waterfall160-shot3-20261013.bin",
+      "raw_bytes": 536870912,
+      "raw_sha256": "49483e181253c532ed5f122136efa57f0183a61e7c89b610f0a8c9c88359b0a4",
+      "displayed_seconds": 1.6777216,
+      "transport_pass": true,
+      "restored": true
+    }
+  ]
+}

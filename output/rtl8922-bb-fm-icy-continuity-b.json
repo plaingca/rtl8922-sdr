@@ -1,0 +1,27 @@
+{
+  "examined_seconds": [
+    0.07881547544030207,
+    8.084936382293305
+  ],
+  "threshold_hz": 95000,
+  "discriminator_rate": 400000,
+  "median_filter_samples": 9,
+  "holds_at_least_100us": [],
+  "max_out_of_range_hold_seconds": 0,
+  "amplitude_below_tenth_median_max_seconds": 2.5e-06,
+  "no_100us_holds": true,
+  "repair_or_blanking": false,
+  "scope": "Detects the old millisecond integer-NCO holds; not a proof of zero per-write jitter or indefinite service.",
+  "rf_report": "output/rtl8922-bb-fm-icy-b.json",
+  "audio_report": "output/rtl8922-bb-fm-icy-demod-b.json",
+  "trace_sha256": "a388613502f28719736c49e98b1a0385a7e008333bc6c1acb8205a50d2b9eee6",
+  "single_command": true,
+  "completed_blocks": 125,
+  "batch_yields": [],
+  "audio_heldout_correlation": 0.990017523243016,
+  "audio_heldout_signal_error_db": 16.09311473359027,
+  "audio_blanking_enabled": false,
+  "live_network_blocks_decoded_during_tx": 98,
+  "source_error": null,
+  "passed": true
+}

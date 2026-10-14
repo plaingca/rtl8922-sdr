@@ -1,0 +1,202 @@
+[
+  {
+    "oversample": 40,
+    "bandwidth": 100000.0,
+    "feedback": 0.99,
+    "phase_weight": 0,
+    "speed_Msamples": 82.50449541763473,
+    "frames": 12,
+    "crc": 12,
+    "evm": 0.18477311479372333
+  },
+  {
+    "oversample": 40,
+    "bandwidth": 100000.0,
+    "feedback": 0.97,
+    "phase_weight": 0.2,
+    "speed_Msamples": 73.20510018607348,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.1527961899429686
+  },
+  {
+    "oversample": 40,
+    "bandwidth": 100000.0,
+    "feedback": 0.97,
+    "phase_weight": 1,
+    "speed_Msamples": 69.58925177214692,
+    "frames": 12,
+    "crc": 12,
+    "evm": 0.16678072104506167
+  },
+  {
+    "oversample": 40,
+    "bandwidth": 100000.0,
+    "feedback": 0.9,
+    "phase_weight": 0,
+    "speed_Msamples": 100.24418426767969,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.18078460460422185
+  },
+  {
+    "oversample": 20,
+    "bandwidth": 200000.0,
+    "feedback": 0.99,
+    "phase_weight": 0,
+    "speed_Msamples": 77.82293630909427,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.30731467744059043
+  },
+  {
+    "oversample": 20,
+    "bandwidth": 200000.0,
+    "feedback": 0.97,
+    "phase_weight": 0.2,
+    "speed_Msamples": 70.31998898530085,
+    "frames": 12,
+    "crc": 12,
+    "evm": 0.25890177037452033
+  },
+  {
+    "oversample": 20,
+    "bandwidth": 200000.0,
+    "feedback": 0.97,
+    "phase_weight": 1,
+    "speed_Msamples": 66.8948500195805,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.19641056434102133
+  },
+  {
+    "oversample": 20,
+    "bandwidth": 200000.0,
+    "feedback": 0.9,
+    "phase_weight": 0,
+    "speed_Msamples": 96.99897101097973,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.23818442171933804
+  },
+  {
+    "oversample": 16,
+    "bandwidth": 250000.0,
+    "feedback": 0.99,
+    "phase_weight": 0,
+    "speed_Msamples": 86.8975933382641,
+    "frames": 12,
+    "crc": 2,
+    "evm": 0.35374595471191556
+  },
+  {
+    "oversample": 16,
+    "bandwidth": 250000.0,
+    "feedback": 0.97,
+    "phase_weight": 0.2,
+    "speed_Msamples": 69.51290133641012,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.3376383196946957
+  },
+  {
+    "oversample": 16,
+    "bandwidth": 250000.0,
+    "feedback": 0.97,
+    "phase_weight": 1,
+    "speed_Msamples": 68.44125590146307,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.23902715196870725
+  },
+  {
+    "oversample": 16,
+    "bandwidth": 250000.0,
+    "feedback": 0.9,
+    "phase_weight": 0,
+    "speed_Msamples": 100.07538973401496,
+    "frames": 11,
+    "crc": 11,
+    "evm": 0.2630988549394617
+  },
+  {
+    "oversample": 10,
+    "bandwidth": 400000.0,
+    "feedback": 0.99,
+    "phase_weight": 0,
+    "speed_Msamples": 71.2019013594379,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  },
+  {
+    "oversample": 10,
+    "bandwidth": 400000.0,
+    "feedback": 0.97,
+    "phase_weight": 0.2,
+    "speed_Msamples": 68.92301501471533,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  },
+  {
+    "oversample": 10,
+    "bandwidth": 400000.0,
+    "feedback": 0.97,
+    "phase_weight": 1,
+    "speed_Msamples": 62.119008541918355,
+    "frames": 1,
+    "crc": 0,
+    "evm": 0.6096960375498838
+  },
+  {
+    "oversample": 10,
+    "bandwidth": 400000.0,
+    "feedback": 0.9,
+    "phase_weight": 0,
+    "speed_Msamples": 91.52935466252289,
+    "frames": 12,
+    "crc": 0,
+    "evm": 0.5329145595218976
+  },
+  {
+    "oversample": 8,
+    "bandwidth": 500000.0,
+    "feedback": 0.99,
+    "phase_weight": 0,
+    "speed_Msamples": 82.36247804759171,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  },
+  {
+    "oversample": 8,
+    "bandwidth": 500000.0,
+    "feedback": 0.97,
+    "phase_weight": 0.2,
+    "speed_Msamples": 62.92722254802478,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  },
+  {
+    "oversample": 8,
+    "bandwidth": 500000.0,
+    "feedback": 0.97,
+    "phase_weight": 1,
+    "speed_Msamples": 70.59124779070028,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  },
+  {
+    "oversample": 8,
+    "bandwidth": 500000.0,
+    "feedback": 0.9,
+    "phase_weight": 0,
+    "speed_Msamples": 95.86465116150923,
+    "frames": 0,
+    "crc": 0,
+    "evm": null
+  }
+]

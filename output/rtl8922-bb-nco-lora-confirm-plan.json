@@ -1,0 +1,58 @@
+[
+  {
+    "name": "short-turbo-confirm-a",
+    "preset": "SHORT_TURBO",
+    "wide": false,
+    "stream_blocks": 828,
+    "generation_pass": true
+  },
+  {
+    "name": "short-fast-confirm-a",
+    "preset": "SHORT_FAST",
+    "wide": false,
+    "stream_blocks": 1381,
+    "generation_pass": true
+  },
+  {
+    "name": "short-slow-confirm-a",
+    "preset": "SHORT_SLOW",
+    "wide": false,
+    "stream_blocks": 2355,
+    "generation_pass": true
+  },
+  {
+    "name": "medium-turbo-confirm-a",
+    "preset": "MEDIUM_TURBO",
+    "wide": false,
+    "stream_blocks": 2089,
+    "generation_pass": true
+  },
+  {
+    "name": "medium-slow-confirm-a",
+    "preset": "MEDIUM_SLOW",
+    "wide": false,
+    "stream_blocks": 7536,
+    "generation_pass": true
+  },
+  {
+    "name": "narrow-fast-confirm-a",
+    "preset": "NARROW_FAST",
+    "wide": false,
+    "stream_blocks": 5288,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-short-slow-confirm-a",
+    "preset": "SHORT_SLOW",
+    "wide": true,
+    "stream_blocks": 882,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-medium-slow-confirm-a",
+    "preset": "MEDIUM_SLOW",
+    "wide": true,
+    "stream_blocks": 2377,
+    "generation_pass": true
+  }
+]

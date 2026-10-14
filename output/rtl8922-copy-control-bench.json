@@ -1,0 +1,76 @@
+{
+  "tests": [
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 0,
+      "physical": 0,
+      "staged": 0,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9355583,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 8192,
+      "busy": 0,
+      "monitor": 0,
+      "MBps": 87.56268850375226
+    },
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 0,
+      "physical": 0,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 9410709,
+      "mismatched_words": 0,
+      "active": 0,
+      "ctrl": 8192,
+      "busy": 0,
+      "monitor": 0,
+      "MBps": 87.04976426324521
+    },
+    {
+      "ret": 0,
+      "channel": 5,
+      "flags": 268435456,
+      "physical": 0,
+      "staged": 1,
+      "bytes": 8192,
+      "copies": 100,
+      "elapsed_ns": 3155352,
+      "mismatched_words": 2047,
+      "active": 0,
+      "ctrl": 268443648,
+      "busy": 0,
+      "monitor": 0,
+      "MBps": 259.62238127473574
+    }
+  ],
+  "started_utc": "2026-10-12T19:45:42Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "reference_sha256": "fcb7cf18403f568ea4343c1749b0b6389f81ac31e9feb953f8fe73eb59fd1a9d",
+  "rf_scope": "Passive frozen samples; copy fidelity only, no TX or RF qualification",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": "DMA variant failed; stop before trying another channel"
+}

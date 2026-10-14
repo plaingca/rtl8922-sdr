@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "original_sha256": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+  "patched_sha256": "fc2f9d9686c97fdd34beea3e06ff9f800d9913edbc9578f15900862cadf2c4d5",
+  "stub_bytes": 980,
+  "nco_only": true,
+  "packing_bits": 4,
+  "stream_consumer": true,
+  "max_samples": 8192,
+  "block_bytes": 2048,
+  "block_commands": 4096,
+  "max_blocks": 1024,
+  "nco_codebook": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    12,
+    13,
+    16,
+    17,
+    24,
+    32,
+    33
+  ],
+  "lookup_local": "0x10017880",
+  "command": 1018,
+  "magic": "0x504f4631",
+  "buffer_local": "0x10016800",
+  "control_local": "0x10017b40",
+  "changed_regions": [
+    {
+      "file_offset": "0xd667a",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xda270",
+      "bytes": 980
+    },
+    {
+      "file_offset": "0xdb6f0",
+      "bytes": 64
+    },
+    {
+      "file_offset": "0xdbef0",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdbf10",
+      "bytes": 32,
+      "kind": "sha256"
+    },
+    {
+      "file_offset": "0xdc130",
+      "bytes": 2,
+      "kind": "xor16"
+    },
+    {
+      "file_offset": "0xdc710",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdc740",
+      "bytes": 48,
+      "kind": "sha384"
+    },
+    {
+      "file_offset": "0xdca70",
+      "bytes": 2,
+      "kind": "xor16"
+    }
+  ],
+  "integrity": [
+    {
+      "file_offset": "0xdbe70",
+      "bytes": 712,
+      "algorithm": "sha256",
+      "digest_offsets": [
+        "0xdbef0",
+        "0xdbf10"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdc130",
+      "stored_xor16": "0x99a2",
+      "computed_xor16": "0x99a2",
+      "checksum_matches": true
+    },
+    {
+      "file_offset": "0xdc670",
+      "bytes": 1032,
+      "algorithm": "sha384",
+      "digest_offsets": [
+        "0xdc710",
+        "0xdc740"
+      ],
+      "digests_match_code": true,
+      "checksum_offset": "0xdca70",
+      "stored_xor16": "0x1fdf",
+      "computed_xor16": "0x1fdf",
+      "checksum_matches": true
+    }
+  ],
+  "scope": "Finite host-fed double-buffered nibble commands; underrun/cancel/final completion mute; native timer serviced per block"
+}

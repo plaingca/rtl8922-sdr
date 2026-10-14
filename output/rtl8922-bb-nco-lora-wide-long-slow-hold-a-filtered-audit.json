@@ -1,0 +1,212 @@
+{
+  "hardware_access": false,
+  "rf_report": "output/rtl8922-bb-nco-lora-wide-long-slow-hold-a.json",
+  "trace_sha256": "f63996a3a7665e7bc6eec073d49567a97b6816236d9b9084e263bf1d49914d12",
+  "filtered": true,
+  "soft_decisions": true,
+  "parameters": {
+    "preset": "LONG_SLOW",
+    "wide_lora": true,
+    "sf": 12,
+    "bandwidth_hz": 406250,
+    "coding_rate_denominator": 8,
+    "preamble_symbols": 12,
+    "sync_word": 43,
+    "explicit_header": true,
+    "payload_crc": true,
+    "ldro": false,
+    "deprecated": true
+  },
+  "receiver_audit": {
+    "packets": [
+      {
+        "payload_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030",
+        "crc_ok": false,
+        "header": {
+          "crc_valid": false,
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      }
+    ],
+    "crc_valid_packets": 0,
+    "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+    "repetition_averaging": false,
+    "audit": {
+      "headers": [
+        {
+          "err": 0,
+          "ldro_mode": 0,
+          "crc": 1,
+          "pay_len": 35,
+          "cr": 4
+        }
+      ],
+      "before_crc": [
+        {
+          "offset": 0,
+          "bytes_hex": "ffffffff012092f800002289000000000801120f52544c38393232204c6f5261203030242f",
+          "header": {
+            "err": 0,
+            "ldro_mode": 0,
+            "crc": 1,
+            "pay_len": 35,
+            "cr": 4
+          }
+        }
+      ],
+      "synchronized_tags": [
+        {
+          "offset": 0,
+          "info": {
+            "sf": 12,
+            "cfo_frac": -0.2083245813846588,
+            "cfo_int": -1,
+            "is_header": true
+          }
+        },
+        {
+          "offset": 32768,
+          "info": {
+            "ldro": false,
+            "symb_numb": 56,
+            "is_header": false,
+            "err": 0,
+            "crc": 1,
+            "pay_len": 35,
+            "cr": 4
+          }
+        }
+      ]
+    }
+  },
+  "symbol_audit": [
+    {
+      "reference_packet_index_post_decode": 0,
+      "compared_symbols": 56,
+      "symbol_errors": 18,
+      "bin_errors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "peak_power_fraction": [
+        0.7801247574332597,
+        0.5381267503161452,
+        0.9876233422907328,
+        0.9652182173593725,
+        0.8365366628260995,
+        0.829881697057406,
+        0.6428390614531101,
+        0.5686459764485662,
+        0.31624151593177735,
+        0.5133159313608785,
+        0.797462061691952,
+        0.7047577378401724,
+        0.48623472133861995,
+        0.7366181831691454,
+        0.3350379790568662,
+        0.35655123030891533,
+        0.34971806844645215,
+        0.3806527962910285,
+        0.5796547370165224,
+        0.8622723819453576,
+        0.37126765435870074,
+        0.8683178138633725,
+        0.5952247336548021,
+        0.7057639214270225,
+        0.3362917391516373,
+        0.5499591399273653,
+        0.4333620281447553,
+        0.5934720302067178,
+        0.7546842909619688,
+        0.4800090778744681,
+        0.5241834191263244,
+        0.7343754733926687,
+        0.5055234029988049,
+        0.5460670639080886,
+        0.8703752795744135,
+        0.7823938491907589,
+        0.5133968361164554,
+        0.6944542137384231,
+        0.7491437993056203,
+        0.4339504315054539,
+        0.7884926247489518,
+        0.47089087010387304,
+        0.835950127261376,
+        0.6666080488063424,
+        0.7187044114051173,
+        0.6119940414767118,
+        0.7739933081514845,
+        0.5340443126303158,
+        0.5716042409249846,
+        0.6837045156922783,
+        0.7149607606072976,
+        0.6619563537484031,
+        0.350895613315274,
+        0.43014618256941983,
+        0.5029819667401102,
+        0.38228592347364626
+      ],
+      "estimated_cfo_bins": -1.2083245813846588
+    }
+  ],
+  "exact_crc_packets": 0,
+  "scope": "Diagnostic only: header, pre-CRC bytes and FFT decisions. Known references used only after stock decoding for error scoring; controls and qualification are in analyze_bb_nco_lora.py."
+}

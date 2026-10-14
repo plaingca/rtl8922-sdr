@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "passed": true,
+  "method": "one running BB consumer; native idle timer refreshed once per 2048-sample buffer; no host batch handoffs",
+  "firmware_sha256": "81cbf6ff0ddee2f35db86e4b4f6d3a2b1d858321c03910e9a0f04006baf2e969",
+  "known_speech_unblanked_correlation": 0.9944613176602702,
+  "live_source": "https://ice5.somafm.com/groovesalad-128-mp3",
+  "source_protocol": "ICY / SHOUTcast-compatible HTTP MP3; SomaFM Icecast endpoint",
+  "live_runs": [
+    {
+      "run": "b",
+      "passed": true,
+      "blocks": 125,
+      "stream_seconds": 8.016742266714573,
+      "playback_seconds": 7.83575,
+      "correlation": 0.990017523243016,
+      "signal_error_db": 16.09311473359027,
+      "wrong_payload_signal_error_db": -2.7037391036246294,
+      "out_of_range_holds_at_least_100us": 0,
+      "maximum_out_of_range_hold_seconds": 0,
+      "live_blocks_decoded_during_rf": 98,
+      "blanking": false,
+      "payload_sha256": "3bf4daa3fa2cc713b406750db83b6e0efa4dca1d76b6bf2f8a91c73d79536b0c"
+    },
+    {
+      "run": "c",
+      "passed": true,
+      "blocks": 192,
+      "stream_seconds": 12.31323498673737,
+      "playback_seconds": 12.13234375,
+      "correlation": 0.9890928656190735,
+      "signal_error_db": 15.682450687438582,
+      "wrong_payload_signal_error_db": -2.6450295516257305,
+      "out_of_range_holds_at_least_100us": 0,
+      "maximum_out_of_range_hold_seconds": 1e-05,
+      "live_blocks_decoded_during_rf": 165,
+      "blanking": false,
+      "payload_sha256": "4931a28556fe8980cd72b4827928c0a540ea1da503d4102bf5df0ba257958405"
+    }
+  ],
+  "old_handoff_negative_control_detected": true,
+  "first_live_attempt": "125 blocks completed, capture export exceeded per-file size; preserved as icy-a",
+  "scope": "Continuous during the bounded tests; longest RF stream about 12.3 s. No claim of indefinite runtime, zero cycle jitter, stereo or normal Wi-Fi coexistence.",
+  "final_restored": true,
+  "offline_tests": {
+    "firmware": 46,
+    "tx": 58
+  },
+  "audio": {
+    "path": "output/audio/rtl8922-bb-fm-shoutcast-received.wav",
+    "sha256": "831ca570bdb5990af369d25155461294c913a0df1d1e4fcde2c234a2d3c83e40",
+    "rate": 32000,
+    "frames": 388235
+  },
+  "input_sha256": {
+    "output/rtl8922-bb-fm-timer-trace.json": "bce42960ea3d2d2c037f02d5a78fcbfda51a7374127b1573a168d9ef25a94aa9",
+    "output/rtl8922-bb-fm-continuous-patch-a.json": "72c70e4051b21b4149bd2937f064205c3542f8c14a0a11682421170614d80cc5",
+    "output/rtl8922-bb-fm-continuous-demod-a.json": "0dd6062f1a8ad55d8a77fb8bd62de2bd246138b11d62d00e6b86a37cba27f4c3",
+    "output/rtl8922-bb-fm-old-handoff-control.json": "6ff5f9879b0bc206b1cba5c04bc58345fc7b0fa06762092f5210086ab7456b90",
+    "output/rtl8922-bb-fm-icy-b.json": "04c54972f1707a4b413b93c1fa31eb82a0ca02945c7f7bd0fd9115056287a4dd",
+    "output/rtl8922-bb-fm-icy-demod-b.json": "162709005ede7e48c999707824ddd0fc14aefcca6ea07772c7ead140bf80c511",
+    "output/rtl8922-bb-fm-icy-continuity-b.json": "e98b4f8cf51021686168f27df607af1924c531830b1acf655020798224c47c5d",
+    "output/rtl8922-bb-fm-icy-c.json": "40f6d109248841d1d17423ac20c1cb305e70719f310a2722c56476fba9258122",
+    "output/rtl8922-bb-fm-icy-demod-c.json": "4fbf566d5e092104941fbd9fe51c94ed5920fd2eb822db111759ffd4cee7cb65",
+    "output/rtl8922-bb-fm-icy-continuity-c.json": "166c8c3c42aac5ea5afebee9750a810fc5044441ae14d843ff2110431d2b74bf",
+    "output/rtl8922-bb-fm-continuous-final-state.json": "eab094a95057c5253675b423fec44817c49908457283ad2111f9fb096fd04168"
+  }
+}

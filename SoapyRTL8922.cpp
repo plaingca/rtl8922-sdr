@@ -48,6 +48,8 @@ class RTL8922 : public SoapySDR::Device {
     double frequency = 2412000000., rate = 5000000.;
     int lockfd = -1, datafd = -1;
     bool opened = false, active = false, overflow = false, experimental40 = false;
+    bool experimentalPaxi = false, paxiUsed = false;
+    const char *streamEndpoint() const { return experimentalPaxi ? "iq_paxi_stream" : "iq_stream"; }
     std::atomic<bool> done{true}, workerError{false};
     std::thread worker;
     mutable std::recursive_mutex streamMutex;
@@ -114,6 +116,19 @@ class RTL8922 : public SoapySDR::Device {
         if(channelCenters.empty()) throw std::runtime_error("No enabled receive channels");
     }
     std::vector<double> centers(double sampleRate) const {
+        if(experimentalPaxi) {
+            if(active&&paxiUsed&&sampleRate==160000000) {
+                std::vector<double> result;
+                for(double c:channelCenters) if(c>=2412000000.&&c<=2484000000.) result.push_back(c);
+                if(std::binary_search(channelCenters.begin(),channelCenters.end(),5180000000.))
+                    for(double c=5005000000.;c<=5950000000.;c+=5000000.) result.push_back(c);
+                if(channelCenters.back()>=5955000000.)
+                    for(double c=5955000000.;c<=7115000000.;c+=5000000.) result.push_back(c);
+                return result;
+            }
+            if(!std::binary_search(channelCenters.begin(),channelCenters.end(),5180000000.)) return {};
+            return {sampleRate==160000000?5250000000.:5210000000.};
+        }
         if(freeTuning&&sampleRate!=40000000) {
             std::vector<double> result;
             for(double f=2312000000.;f<=2382000000.;f+=5000000.) result.push_back(f);
@@ -133,6 +148,11 @@ class RTL8922 : public SoapySDR::Device {
         return result;
     }
     SoapySDR::RangeList tuningRanges(double sampleRate) const {
+        if(experimentalPaxi) {
+            SoapySDR::RangeList result;
+            for(double c:centers(sampleRate)) result.emplace_back(c,c);
+            return result;
+        }
         if(freeTuning) {
             if(sampleRate==40000000) return {};
             return {{2312000000.,2382000000.},{2412000000.,2484000000.},{2500000000.,2515000000.},
@@ -161,7 +181,9 @@ class RTL8922 : public SoapySDR::Device {
         for(const auto &r:tuningRanges(sampleRate)) if(requested>=r.minimum()&&requested<=r.maximum()) valid=true;
         if(!std::isfinite(requested)||!valid) throw std::runtime_error("Frequency unavailable in this sample-rate mode or regulatory domain; query getFrequencyRange");
         const auto cs=centers(sampleRate);
-        return *std::min_element(cs.begin(),cs.end(),[&](double a,double b){return std::abs(a-requested)<std::abs(b-requested);});
+        const double nearest=*std::min_element(cs.begin(),cs.end(),[&](double a,double b){return std::abs(a-requested)<std::abs(b-requested);});
+        if(experimentalPaxi&&nearest!=requested) throw std::runtime_error("PAXI retuning requires an available hardware center (5 MHz grid; query getFrequencyRange)");
+        return nearest;
     }
     void updateNco(bool reset) {
         if(reset) { ncoCos=1.; ncoSin=0.; ncoSamples=0; ncoActive=false; }
@@ -248,7 +270,12 @@ class RTL8922 : public SoapySDR::Device {
         }
         const auto mhz=std::to_string(static_cast<int>(std::llround((baseline-(rate==40000000?10000000:0))/1e6)));
         const pid_t pid=fork(); if (pid<0) throw std::runtime_error("fork failed");
-        if (!pid) { execl(iw.c_str(),iw.c_str(),"dev",iface.c_str(),"set","freq",mhz.c_str(),rate==40000000?"HT40+":"HT20",nullptr); _exit(127); }
+        if (!pid) {
+            if(experimentalPaxi)
+                execl(iw.c_str(),iw.c_str(),"dev",iface.c_str(),"set","freq","5180",rate==160000000?"160":"80",rate==160000000?"5250":"5210",nullptr);
+            else execl(iw.c_str(),iw.c_str(),"dev",iface.c_str(),"set","freq",mhz.c_str(),rate==40000000?"HT40+":"HT20",nullptr);
+            _exit(127);
+        }
         int status=0; while(waitpid(pid,&status,0)<0) if(errno!=EINTR) throw std::runtime_error("waitpid failed");
         if(!WIFEXITED(status)||WEXITSTATUS(status)) throw std::runtime_error("iw rejected frequency");
         if(freeTuning) {
@@ -299,7 +326,7 @@ class RTL8922 : public SoapySDR::Device {
         // preserves consecutive samples at native 10/20 MHz bandwidths.
         const unsigned small=nativeRate>=20000000?0:nativeRate==10000000?2:1;
         wr(0x26b50,(rd(0x26b50)&0x3fffffff)|(small<<30));
-        field("la_smp_rt_sel",nativeRate==40000000?3:nativeRate==20000000?4:nativeRate==10000000?3:2);
+        field("la_smp_rt_sel",nativeRate==160000000?1:nativeRate==80000000?2:nativeRate==40000000?3:nativeRate==20000000?4:nativeRate==10000000?3:2);
         field("la_clk_en",1); field("la_en",1);
         wr(0x8938,(rd(0x8938)&~0xc00)|0x400); wr(0x8924,(rd(0x8924)&~0x80000)|8);
         updateNco(true);
@@ -309,6 +336,25 @@ class RTL8922 : public SoapySDR::Device {
     long long nextTimeNs() const { return timeBaseNs+static_cast<long long>(ticks*1e9/rate); }
     void changeSettings(double newRate,double newFrequency) {
         if(newRate==rate&&newFrequency==frequency) return;
+        if(experimentalPaxi && paxiUsed) {
+            if(!active||newRate!=rate||rate!=160000000||!fs::exists(dbg/"iq_paxi_retune"))
+                throw std::runtime_error("PAXI only permits live 160 MS/s retuning; reload after stop/rate changes");
+            coarseCenter(newRate,newFrequency);
+            const auto started=Clock::now();
+            writeFile(dbg/"iq_paxi_retune",std::to_string(static_cast<unsigned>(newFrequency/1e6)));
+            const auto result=readFile(dbg/"iq_paxi_retune");
+            std::smatch sequence;
+            if(result.rfind("ret=0 ",0)!=0||!std::regex_search(result,sequence,std::regex("seq=([0-9]+)")))
+                throw std::runtime_error("PAXI retune failed: "+result);
+            // Old-frequency FIFO bytes were explicitly discarded by the paused
+            // producer. Reset only the client parser; keep counters and worker.
+            pending.clear(); packet.clear(); cursor=packedPhase=0;
+            expected=static_cast<uint32_t>(std::stoul(sequence[1]));
+            frequency=rfCenter=newFrequency; updateNco(true);
+            timeBaseNs+=std::chrono::duration_cast<std::chrono::nanoseconds>(Clock::now()-started).count();
+            discontinuity=true;
+            return;
+        }
         if(!active) { rate=newRate; frequency=newFrequency; return; }
         coarseCenter(newRate,newFrequency); // Reject invalid pairs before stopping RX.
         // Validate before stopping a working receiver. Inactive clients may set
@@ -353,6 +399,7 @@ class RTL8922 : public SoapySDR::Device {
                 if(pending.size()>=24+h[0]) {
                     overflow=h[1]!=expected;
                     if(overflow) {
+                        std::cerr<<"RTL8922 FIFO gap: expected="<<expected<<" received="<<h[1]<<" drops="<<readFile(dbg/"scope_dropped")<<std::endl;
                         const uint64_t missing=static_cast<uint64_t>(static_cast<uint32_t>(h[1]-expected))*packedPhases;
                         ticks+=missing/decimation; skipNco(missing);
                         initFilter();
@@ -364,10 +411,12 @@ class RTL8922 : public SoapySDR::Device {
                 }
             }
             uint8_t buf[65536]; const ssize_t n=read(datafd,buf,sizeof(buf));
+            if(n>static_cast<ssize_t>(sizeof(buf))) return SOAPY_SDR_STREAM_ERROR;
             if(n>0) { pending.insert(pending.end(),buf,buf+n); continue; }
-            if(n<0&&errno!=EAGAIN&&errno!=EINTR) return SOAPY_SDR_STREAM_ERROR;
+            if(n<0&&errno!=EAGAIN&&errno!=EINTR) { std::cerr<<"RTL8922 FIFO read: "<<std::strerror(errno)<<" ("<<errno<<")"<<std::endl; return SOAPY_SDR_STREAM_ERROR; }
             if(done.load()) {
-                const auto result=readFile(dbg/"iq_stream");
+                const auto result=readFile(dbg/streamEndpoint());
+                if(experimentalPaxi&&pending.empty()&&result.rfind("ret=0 ",0)==0) return 1; // Clean bounded end.
                 return result.find("ret=-75")!=std::string::npos?SOAPY_SDR_OVERFLOW:SOAPY_SDR_STREAM_ERROR;
             }
             if(Clock::now()>=until) return SOAPY_SDR_TIMEOUT;
@@ -378,12 +427,29 @@ public:
     explicit RTL8922(const SoapySDR::Kwargs &args) {
         freeTuning=args.count("free_tuning")&&args.at("free_tuning")=="1";
         experimental40=args.count("experimental40")&&args.at("experimental40")=="1";
-        producerScheduler=args.count("producer_scheduler")?args.at("producer_scheduler"):"normal";
+        const std::string mode=args.count("capture_mode")?args.at("capture_mode"):"";
+        if(!mode.empty()&&mode!="paxi"&&mode!="legacy") throw std::runtime_error("capture_mode must be paxi or legacy");
+        experimentalPaxi=mode.empty()?!(freeTuning||experimental40):mode=="paxi";
+        if(args.count("experimental_paxi")) {
+            const bool explicitPaxi=args.at("experimental_paxi")=="1";
+            if(!mode.empty()&&explicitPaxi!=experimentalPaxi) throw std::runtime_error("Conflicting capture_mode and experimental_paxi arguments");
+            experimentalPaxi=explicitPaxi;
+        }
+        if(experimentalPaxi) {
+            if(freeTuning) throw std::runtime_error("PAXI uses its native live-retune path; do not combine it with legacy free_tuning");
+            rate=160000000.; frequency=5250000000.;
+        }
+        producerScheduler=args.count("producer_scheduler")?args.at("producer_scheduler"):(experimentalPaxi?"deadline":"normal");
+        if(experimentalPaxi&&producerScheduler!="deadline") throw std::runtime_error("PAXI requires producer_scheduler=deadline");
         if(producerScheduler!="normal"&&producerScheduler!="deadline") throw std::runtime_error("producer_scheduler must be normal or deadline");
         dbg=args.count("debugfs")?args.at("debugfs"):debugPath();
         iw=args.count("iw")?args.at("iw"):(std::getenv("RTL8922_IW")?std::getenv("RTL8922_IW"):"/usr/sbin/iw");
         pci=args.count("pci")?args.at("pci"):(std::getenv("RTL8922_PCI")?std::getenv("RTL8922_PCI"):"0000:0d:00.0");
         if(dbg.empty()||!fs::exists(dbg/"iq_stop")) throw std::runtime_error("Experimental RTL8922 SDR driver is not loaded");
+        if(experimentalPaxi && !fs::exists(dbg/"iq_paxi_stream"))
+            throw std::runtime_error("Default 160 MS/s capture requires the separate PAXI driver; use capture_mode=legacy for the legacy driver");
+        if(experimentalPaxi && readFile(dbg/"iq_paxi_stream").find(" held=1 ")!=std::string::npos)
+            throw std::runtime_error("PAXI firmware is already held; reload the isolated driver before creating another receiver");
         lockfd=open("/run/lock/rtl8922-sdr.lock",O_CREAT|O_RDWR|O_CLOEXEC,0600);
         if(lockfd<0||flock(lockfd,LOCK_EX|LOCK_NB)) { if(lockfd>=0) close(lockfd); throw std::runtime_error("RTL8922 SDR busy or insufficient permission"); }
         try { iface=fs::directory_iterator(fs::path("/sys/bus/pci/devices")/pci/"net")->path().filename().string(); }
@@ -405,7 +471,7 @@ public:
     }
     std::string getDriverKey() const override { return "rtl8922"; }
     std::string getHardwareKey() const override { return "RTL8922AE LA"; }
-    SoapySDR::Kwargs getHardwareInfo() const override { return {{"pci",pci},{"transport","LA/IDDMA/PCIe"},{"status","experimental RX"}}; }
+    SoapySDR::Kwargs getHardwareInfo() const override { return {{"pci",pci},{"transport",experimentalPaxi?"LA/PAXI/PCIe":"LA/IDDMA/PCIe"},{"status",experimentalPaxi?"continuous experimental RX; firmware held; reload after stop required":"experimental RX"}}; }
     size_t getNumChannels(int d) const override { return d==SOAPY_SDR_RX?1:0; }
     std::vector<std::string> getStreamFormats(int,size_t) const override { return {SOAPY_SDR_CF32,SOAPY_SDR_CS16}; }
     std::string getNativeStreamFormat(int,size_t,double &fullScale) const override { fullScale=32768; return SOAPY_SDR_CS16; }
@@ -415,13 +481,19 @@ public:
     void setSampleRate(int d,size_t ch,double value) override {
         ControlLock guard(controlWaiters,streamMutex);
         if(d!=SOAPY_SDR_RX||ch) throw std::runtime_error("Unsupported channel");
+        if(experimentalPaxi) {
+            if(value==rate) return;
+            if(value!=80000000&&value!=160000000) throw std::runtime_error("PAXI supports experimental 80/160 MS/s only");
+            changeSettings(value,value==160000000?5250000000.:5210000000.);
+            return;
+        }
         if(value!=1250000&&value!=2500000&&value!=5000000&&value!=10000000&&value!=20000000&&value!=40000000) throw std::runtime_error("Unsupported rate");
         if(value==40000000&&!experimental40) throw std::runtime_error("40 MS/s is experimental; explicitly use experimental40=1");
         if(value==40000000&&freeTuning) throw std::runtime_error("Free tuning currently supports up to20MS/s; use free_tuning=0 for experimental40");
         changeSettings(value,frequency);
     }
     double getSampleRate(int,size_t) const override { std::lock_guard<std::recursive_mutex> guard(streamMutex); return rate; }
-    std::vector<double> listSampleRates(int,size_t) const override { auto r=std::vector<double>{1250000,2500000,5000000,10000000,20000000}; if(experimental40) r.push_back(40000000); return r; }
+    std::vector<double> listSampleRates(int,size_t) const override { if(experimentalPaxi) return {80000000,160000000}; auto r=std::vector<double>{1250000,2500000,5000000,10000000,20000000}; if(experimental40) r.push_back(40000000); return r; }
     SoapySDR::RangeList getSampleRateRange(int,size_t) const override { SoapySDR::RangeList r; for(auto x:listSampleRates(SOAPY_SDR_RX,0)) r.emplace_back(x,x); return r; }
     void setFrequency(int d,size_t ch,double hz,const SoapySDR::Kwargs &) override {
         ControlLock guard(controlWaiters,streamMutex);
@@ -454,11 +526,20 @@ public:
     int activateStream(SoapySDR::Stream *s,int flags,long long,size_t numElems) override {
         std::lock_guard<std::recursive_mutex> guard(streamMutex);
         check(s); if(flags||numElems) return SOAPY_SDR_NOT_SUPPORTED; if(active) return SOAPY_SDR_STREAM_ERROR;
-        configure(); writeFile(dbg/"iq_sample_rate",rate==40000000?"10000000":"5000000");
+        if(experimentalPaxi&&paxiUsed) throw std::runtime_error("PAXI requires a fresh module load for each capture");
+        configure();
+        writeFile(dbg/"iq_sample_rate",experimentalPaxi?std::to_string(static_cast<unsigned>(rate/4)):rate==40000000?"10000000":"5000000");
+        if(experimentalPaxi) {
+            field("la_en",0); // PAXI starts the writer after taking its private ring.
+            writeFile(dbg/"iq_paxi_disable_watchdog","Y");
+            writeFile(dbg/"iq_paxi_static_ring","Y");
+            writeFile(dbg/"iq_paxi_burst","4");
+        }
         writeFile(dbg/"iq_pipeline",rate==40000000?"Y":"N");
         writeFile(dbg/"iq_chunk_bytes","8192"); writeFile(dbg/"iq_drain","1");
         datafd=open((dbg/"iq_drain").c_str(),O_RDONLY|O_NONBLOCK|O_CLOEXEC); if(datafd<0) return SOAPY_SDR_STREAM_ERROR;
         pending.clear(); packet.clear(); cursor=0; packedPhase=0; expected=0; ticks=0; timeBaseNs=0; discontinuity=false; initFilter(); done=false; workerError=false;
+        if(experimentalPaxi) paxiUsed=true;
         worker=std::thread([this] {
             try {
                 if(producerScheduler=="deadline") {
@@ -467,10 +548,12 @@ public:
                     struct Attr { uint32_t size, policy; uint64_t flags; int32_t nice;
                         uint32_t priority; uint64_t runtime, deadline, period; };
                     Attr attr{sizeof(Attr),6,0,0,0,950000,1000000,1000000};
+                    // A one-ms throttling interval can exceed the 160 MS/s ring retention.
+                    if(experimentalPaxi) { attr.runtime=237500; attr.deadline=attr.period=250000; }
                     if(syscall(SYS_sched_setattr,0,&attr,0)<0)
                         throw std::runtime_error(std::string("Producer SCHED_DEADLINE failed: ")+std::strerror(errno));
                 }
-                writeFile(dbg/"iq_stream","0");
+                writeFile(dbg/streamEndpoint(),"0");
             } catch(const std::exception &e) { std::cerr<<e.what()<<std::endl; workerError=true; }
             done=true;
         });
@@ -485,7 +568,7 @@ public:
         check(s); if(flags) return SOAPY_SDR_NOT_SUPPORTED;
         if(worker.joinable()) {
             writeFile(dbg/"iq_stop","Y"); worker.join();
-            if(std::getenv("RTL8922_TRACE")) std::cerr<<"RTL8922 producer: "<<readFile(dbg/"iq_stream")<<std::endl;
+            if(std::getenv("RTL8922_TRACE")) std::cerr<<"RTL8922 producer: "<<readFile(dbg/streamEndpoint())<<std::endl;
         }
         if(datafd>=0) close(datafd);
         datafd=-1; active=false; field("la_en",0); return 0;
@@ -510,10 +593,28 @@ public:
         if(discontinuity) { discontinuity=false; flags=SOAPY_SDR_HAS_TIME; timeNs=nextTimeNs(); return SOAPY_SDR_OVERFLOW; }
         if(cursor>=packet.size()) {
             const long remaining=std::max<int64_t>(0,std::chrono::duration_cast<std::chrono::microseconds>(deadline-Clock::now()).count());
-            const int result=nextPacket(remaining); if(result) return result;
+            const int result=nextPacket(remaining);
+            if(result==1&&experimentalPaxi) { flags=SOAPY_SDR_END_BURST; timeNs=nextTimeNs(); return 0; }
+            if(result) return result;
         }
         size_t n=0;
         timeNs=nextTimeNs(); flags=SOAPY_SDR_HAS_TIME;
+        if(experimentalPaxi&&sampleBits==8&&packedPhases==4&&decimation==1&&!ncoActive) {
+            // Consecutive native i8 pairs: avoid per-sample bit extraction and lround.
+            const size_t start=cursor+2*packedPhase;
+            n=std::min(numElems,(packet.size()-start)/2);
+            const auto *in=reinterpret_cast<const int8_t *>(packet.data()+start);
+            if(format==SOAPY_SDR_CF32) {
+                auto *out=static_cast<float *>(buffs[0]);
+                for(size_t j=0;j<2*n;++j) out[j]=in[j]*(1.f/128.f);
+            } else {
+                auto *out=static_cast<int16_t *>(buffs[0]);
+                for(size_t j=0;j<2*n;++j) out[j]=static_cast<int16_t>(in[j])*256;
+            }
+            const size_t end=start+2*n;
+            cursor=end&~size_t(7); packedPhase=(end&7)/2;
+            ticks+=n; return static_cast<int>(n);
+        }
         while(n<numElems&&cursor<packet.size()) {
             uint64_t word; memcpy(&word,packet.data()+cursor,8);
             word>>=2*sampleBits*packedPhase;

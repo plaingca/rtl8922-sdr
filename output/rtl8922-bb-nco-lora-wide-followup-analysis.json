@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "filter": {
+    "taps": 257,
+    "cutoff_bandwidth_ratio": 0.55,
+    "window": "kaiser8",
+    "sampling": "8 samples per chip"
+  },
+  "paired_saved_capture_results": [
+    {
+      "tag": "wide-short-turbo-hold-a",
+      "parameters": {
+        "preset": "SHORT_TURBO",
+        "wide_lora": true,
+        "sf": 7,
+        "bandwidth_hz": 1625000,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "d431910c2cf8fe6d9e3194a07f82585d5d70dca9a810b07541a04a6a0bb148a6",
+      "original": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 2,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 2,
+        "transmitted_packets": 2,
+        "distinct_payloads": 2,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-short-fast-hold-a",
+      "parameters": {
+        "preset": "SHORT_FAST",
+        "wide_lora": true,
+        "sf": 7,
+        "bandwidth_hz": 812500,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "670a48f1cae1d8250d0126d86ee5891e948a3d03537e054cae22e5a0b142ec45",
+      "original": {
+        "exact_crc_packets": 1,
+        "transmitted_packets": 2,
+        "distinct_payloads": 1,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 2,
+        "transmitted_packets": 2,
+        "distinct_payloads": 2,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-short-slow-confirm-a",
+      "parameters": {
+        "preset": "SHORT_SLOW",
+        "wide_lora": true,
+        "sf": 8,
+        "bandwidth_hz": 812500,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "8c497d2b478d414f02bfaf80f64a85fb824d7671d97dafbe1ba1f1789fe1d4de",
+      "original": {
+        "exact_crc_packets": 7,
+        "transmitted_packets": 10,
+        "distinct_payloads": 7,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 10,
+        "transmitted_packets": 10,
+        "distinct_payloads": 10,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-medium-turbo-hold-a",
+      "parameters": {
+        "preset": "MEDIUM_TURBO",
+        "wide_lora": true,
+        "sf": 9,
+        "bandwidth_hz": 1625000,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "2f3437b26ce31a6f74d1d0a0692d73439cbefc2a5eee28c1264e9016bab77c0c",
+      "original": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 2,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 2,
+        "transmitted_packets": 2,
+        "distinct_payloads": 2,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-medium-fast-hold-a",
+      "parameters": {
+        "preset": "MEDIUM_FAST",
+        "wide_lora": true,
+        "sf": 9,
+        "bandwidth_hz": 812500,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "366ed793d82150af876e07c011ad4e9ce0f84f75c6c51f6348200c9bb7472ff8",
+      "original": {
+        "exact_crc_packets": 1,
+        "transmitted_packets": 2,
+        "distinct_payloads": 1,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 2,
+        "transmitted_packets": 2,
+        "distinct_payloads": 2,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-medium-slow-confirm-a",
+      "parameters": {
+        "preset": "MEDIUM_SLOW",
+        "wide_lora": true,
+        "sf": 10,
+        "bandwidth_hz": 812500,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "308a43327ebb511b450c574f73913dd5679644ae16fcf662ec77c9fd665f1b42",
+      "original": {
+        "exact_crc_packets": 9,
+        "transmitted_packets": 10,
+        "distinct_payloads": 9,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 10,
+        "transmitted_packets": 10,
+        "distinct_payloads": 10,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-long-turbo-hold-a",
+      "parameters": {
+        "preset": "LONG_TURBO",
+        "wide_lora": true,
+        "sf": 11,
+        "bandwidth_hz": 1625000,
+        "coding_rate_denominator": 8,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "52b809fe7bc4ce2131256035c4bf7105609b5b8177a27bf43144f91e00da1b36",
+      "original": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 2,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 2,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-long-fast-hold-a",
+      "parameters": {
+        "preset": "LONG_FAST",
+        "wide_lora": true,
+        "sf": 11,
+        "bandwidth_hz": 812500,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "b5f5fcb56236af675825ff5b1177e695f11a1ef634b0e2b6ae5ba3f1526f6884",
+      "original": {
+        "exact_crc_packets": 1,
+        "transmitted_packets": 2,
+        "distinct_payloads": 1,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 1,
+        "transmitted_packets": 2,
+        "distinct_payloads": 1,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-long-moderate-hold-a",
+      "parameters": {
+        "preset": "LONG_MODERATE",
+        "wide_lora": true,
+        "sf": 11,
+        "bandwidth_hz": 406250,
+        "coding_rate_denominator": 8,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "5f6940b17c05e98fe768750ce61dd7f8a95eef1da8671d4258c1dda9e2684930",
+      "original": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 2,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 1,
+        "transmitted_packets": 2,
+        "distinct_payloads": 1,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-long-slow-hold-a",
+      "parameters": {
+        "preset": "LONG_SLOW",
+        "wide_lora": true,
+        "sf": 12,
+        "bandwidth_hz": 406250,
+        "coding_rate_denominator": 8,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": true
+      },
+      "trace_sha256": "f63996a3a7665e7bc6eec073d49567a97b6816236d9b9084e263bf1d49914d12",
+      "original": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 1,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 0,
+        "transmitted_packets": 1,
+        "distinct_payloads": 0,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    }
+  ],
+  "fresh_rf_confirmations": [
+    {
+      "tag": "wide-short-turbo-filtered-confirm-b",
+      "parameters": {
+        "preset": "SHORT_TURBO",
+        "wide_lora": true,
+        "sf": 7,
+        "bandwidth_hz": 1625000,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "7c1ce18f9528d6e26c0fd2d3d33213f0e852e491018b63319caf2a1d81c9e054",
+      "original": {
+        "exact_crc_packets": 8,
+        "transmitted_packets": 10,
+        "distinct_payloads": 8,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 10,
+        "transmitted_packets": 10,
+        "distinct_payloads": 10,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    },
+    {
+      "tag": "wide-medium-turbo-filtered-confirm-b",
+      "parameters": {
+        "preset": "MEDIUM_TURBO",
+        "wide_lora": true,
+        "sf": 9,
+        "bandwidth_hz": 1625000,
+        "coding_rate_denominator": 5,
+        "preamble_symbols": 12,
+        "sync_word": 43,
+        "explicit_header": true,
+        "payload_crc": true,
+        "ldro": false,
+        "deprecated": false
+      },
+      "trace_sha256": "3fb59c09ff1ff2f4583338ffc301dce4a1154a22997b2a0197b0c64135bd8275",
+      "original": {
+        "exact_crc_packets": 7,
+        "transmitted_packets": 10,
+        "distinct_payloads": 7,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      },
+      "channel_filtered": {
+        "exact_crc_packets": 9,
+        "transmitted_packets": 10,
+        "distinct_payloads": 9,
+        "off_crc_packets": 0,
+        "wrong_sync_crc_packets": 0
+      }
+    }
+  ],
+  "residual_failure_audits": [
+    {
+      "tag": "wide-long-turbo-hold-a",
+      "valid_headers": 2,
+      "exact_crc_packets": 0,
+      "symbol_errors_per_frame": [
+        45,
+        50
+      ],
+      "scope": "Diagnostic only: header, pre-CRC bytes and FFT decisions. Known references used only after stock decoding for error scoring; controls and qualification are in analyze_bb_nco_lora.py."
+    },
+    {
+      "tag": "wide-long-fast-hold-a",
+      "valid_headers": 2,
+      "exact_crc_packets": 1,
+      "symbol_errors_per_frame": [
+        2,
+        1
+      ],
+      "scope": "Diagnostic only: header, pre-CRC bytes and FFT decisions. Known references used only after stock decoding for error scoring; controls and qualification are in analyze_bb_nco_lora.py."
+    },
+    {
+      "tag": "wide-long-moderate-hold-a",
+      "valid_headers": 2,
+      "exact_crc_packets": 1,
+      "symbol_errors_per_frame": [
+        9,
+        24
+      ],
+      "scope": "Diagnostic only: header, pre-CRC bytes and FFT decisions. Known references used only after stock decoding for error scoring; controls and qualification are in analyze_bb_nco_lora.py."
+    },
+    {
+      "tag": "wide-long-slow-hold-a",
+      "valid_headers": 1,
+      "exact_crc_packets": 0,
+      "symbol_errors_per_frame": [
+        18
+      ],
+      "scope": "Diagnostic only: header, pre-CRC bytes and FFT decisions. Known references used only after stock decoding for error scoring; controls and qualification are in analyze_bb_nco_lora.py."
+    }
+  ],
+  "synthetic_fixed_hold_model_results": [
+    {
+      "tag": "wide-short-turbo-hold-a",
+      "exact_crc_packets": 2,
+      "packets": 2,
+      "scope": "Independent integration of actual packed commands with fixed modeled service hold; synthetic, not RF."
+    },
+    {
+      "tag": "wide-long-turbo-hold-a",
+      "exact_crc_packets": 2,
+      "packets": 2,
+      "scope": "Independent integration of actual packed commands with fixed modeled service hold; synthetic, not RF."
+    },
+    {
+      "tag": "wide-long-moderate-hold-a",
+      "exact_crc_packets": 2,
+      "packets": 2,
+      "scope": "Independent integration of actual packed commands with fixed modeled service hold; synthetic, not RF."
+    },
+    {
+      "tag": "wide-long-slow-hold-a",
+      "exact_crc_packets": 1,
+      "packets": 1,
+      "scope": "Independent integration of actual packed commands with fixed modeled service hold; synthetic, not RF."
+    }
+  ],
+  "final_state_report": "output/rtl8922-bb-nco-lora-wide-followup-final-state.json",
+  "tests": {
+    "hardware_free_packet_tests_passed": 5,
+    "aliasing_regression": "Strong different packet at +2 BW aliases without channel FIR; fixed FIR recovers desired packet."
+  },
+  "interpretation": "Missing channel filtering caused several receiver failures. SF11/SF12 RF failures remain after filtering despite successful fixed-hold command simulations; exact physical or receiver cause not isolated.",
+  "limits": "Small bounded samples, no repetition averaging. Simulated decoding is not RF evidence. No commercial SX1280/Meshtastic interoperability claim.",
+  "derived_report_sha256": {
+    "rtl8922-bb-nco-lora-wide-short-turbo-cal-a-demod.json": "33f74671f91f963e720efd7f63816fc4b87426cf0e4d7fea62a38a3e34f084a2",
+    "rtl8922-bb-nco-lora-wide-long-moderate-hold-a-period-demod.json": "24892e0db2aa3299f57e6e47fb893f6f9bee7076bb3c59c45da5ebd5cba9cb33",
+    "rtl8922-bb-nco-lora-wide-long-fast-hold-a-period-demod.json": "a7a90bce779b6fd7060d29303faeb94b3d3914455e8cb5f7ada45a42a39a3269",
+    "rtl8922-bb-nco-lora-wide-long-turbo-cal-a-demod.json": "5e03f9523003335e4657b5fb1f4c934013fae8aef0aa626282abbce9e89706bb",
+    "rtl8922-bb-nco-lora-wide-short-fast-hold-a-filtered-demod.json": "4a7948768dc17d64492c37f23855996ebf17b928e6b8eb58eef79cc2c494aa72",
+    "rtl8922-bb-nco-lora-wide-short-slow-hold-a-demod.json": "daf288ef6aff2c8ac1d083b44920ba95fe5a9f890d541ecebd0281ae7ebd05ae",
+    "rtl8922-bb-nco-lora-wide-long-slow-hold-a-filtered-audit.json": "72600af0baa68de0cfb939c08c510eef7946d06a827d37c3fea4c11c87298d17",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-filtered-confirm-b-legacy-demod.json": "4b6985d70629679c3affdeef5bdfaa1609f7b9ce86160f0d74e2d342f8f69a28",
+    "rtl8922-bb-nco-lora-wide-medium-slow-confirm-a-demod.json": "3779159feb7fc831dbbc9da7189b9d1159ed8c2a01665c2b0d64f7310bc64c82",
+    "rtl8922-bb-nco-lora-wide-long-fast-hold-a-demod.json": "3d63f35cac4a6c2d35083fe208ca1a38e52ffde160ab383e90af3e1d3bb1c5d0",
+    "rtl8922-bb-nco-lora-wide-long-slow-hold-a-demod.json": "327e323c4b937cfb59faaa19ca79f74a3c3ac837d60cdd10ca3ab3cd347c9291",
+    "rtl8922-bb-nco-lora-wide-short-turbo-filtered-confirm-b-legacy-demod.json": "bcf8c7a70cd0aa70f4d518af77475ad0c663e21aef61eda3f507f66ca5a8c0fb",
+    "rtl8922-bb-nco-lora-wide-short-fast-hold-a-demod.json": "7a8aeea3c87408e31d83d2061d51d3306f1c3af7de6a235c4b8617dcb852743c",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-hold-a-period-demod.json": "813651291a7bff841865a75a208f1f8fb6ad55606e73a0f98fdd39aa565b3ec4",
+    "rtl8922-bb-nco-lora-wide-long-turbo-hold-a-period-demod.json": "e99bd915b5b16ac67a49c098f42d7b1cb0d90b3f0509c60cca8a5c2e276397aa",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-cal-a-demod.json": "732e34e1097f53233ce1544910a8ae80c55bdf1316a9676ab7f2a32028fb9a90",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-hold-a-filtered-demod.json": "a6c001c3437f6d1f9916c9bf4d345a4728bebfc8ff114b6e6d744f60256b60e7",
+    "rtl8922-bb-nco-lora-wide-medium-fast-cal-a-demod.json": "a7469ff9b1694d2e031a2a11828a7eb974b211f7558e82636cbc7f0c6759090c",
+    "rtl8922-bb-nco-lora-wide-short-turbo-filtered-confirm-b-demod.json": "8226dcc0a7dd6cf79d41a5c747ffba39bd97bf9ec524595e93c9edfa1c737af8",
+    "rtl8922-bb-nco-lora-wide-short-turbo-hold-a-demod.json": "a88a9eb70c8f5a2cd0d7b3899f73c51428ba12b90e764d48a0f8e2de66ba8958",
+    "rtl8922-bb-nco-lora-wide-short-slow-confirm-a-filtered-demod.json": "15f4b8c5b34ee579101c86936075fe0b96efebb290c0c7113b1804cd6efa66ab",
+    "rtl8922-bb-nco-lora-wide-long-slow-hold-a-period-demod.json": "fd1cb4c701cd1bffcc89ceb1f70ada9f331e89ffd2c40fdfb79a5134983ba41a",
+    "rtl8922-bb-nco-lora-wide-short-fast-cal-a-demod.json": "a5ef77d14a77e2b3548a95615e8be3086aad523ae0ea62197fde797395bdf4da",
+    "rtl8922-bb-nco-lora-wide-long-moderate-hold-a-demod.json": "76714b906b6f6a101c20f3bd70766ded0838cde8ba3fa1f8b30df2fa1d87bb99",
+    "rtl8922-bb-nco-lora-wide-long-moderate-hold-a-filtered-demod.json": "0fbafacb474d32ee8a9577232f313a61d60f7f3cbc04a2cd4c401c295a7d4cca",
+    "rtl8922-bb-nco-lora-wide-medium-fast-hold-a-demod.json": "53b1351d6fa5b20101bf2a932bf8ec0506efea8341e6eeb503a5752d169c1c84",
+    "rtl8922-bb-nco-lora-wide-long-turbo-hold-a-filtered-demod.json": "7d1d1789a7b8102052f8e4a993e4d0d14dc20f741d8a2ad7fedde77332063c10",
+    "rtl8922-bb-nco-lora-wide-long-slow-hold-a-filtered-demod.json": "2a0e94c750ccf90e21180efd203fabf8d51000273545e096dcdd1ca6f72dd66b",
+    "rtl8922-bb-nco-lora-wide-long-fast-cal-a-demod.json": "e0ddf5932dd09a1d573bc35aa80868a7c4784962e6095f78ef6352a65d44f4be",
+    "rtl8922-bb-nco-lora-wide-long-fast-hold-a-filtered-audit.json": "ee43293dbfa9e9f9d126f5063e8dc6d6059bfdc51b2339f8db4d2daa3cfa0d37",
+    "rtl8922-bb-nco-lora-wide-long-turbo-hold-a-filtered-audit.json": "219b18f61be5601bd39d3b897c0366b98672ab151e5ae63ae3637aecb9b1c1bb",
+    "rtl8922-bb-nco-lora-wide-long-turbo-hold-a-demod.json": "9da3b7133e33fad6e8afe5ed2e145532eb34868aa1f6d468daf1fa3d346b53c8",
+    "rtl8922-bb-nco-lora-wide-medium-slow-cal-a-demod.json": "f9e281a6da01726411731335f73538b798ac96ccf92aced746690cff744c9d52",
+    "rtl8922-bb-nco-lora-wide-medium-slow-hold-a-demod.json": "14b39d66a7418780d71cf6ee22ae21866113270ba967075e99f534f456da9510",
+    "rtl8922-bb-nco-lora-wide-long-slow-cal-a-demod.json": "c9b32187169e89046c174fe2b9a7fe1fb43f73246206e1c1ca4bb906162dc068",
+    "rtl8922-bb-nco-lora-wide-short-turbo-hold-a-model-demod.json": "e8d410ae346ab317df10a98f6ab270825e9b6c3e7bd16c668d2b3fc3de50b315",
+    "rtl8922-bb-nco-lora-wide-long-moderate-hold-a-model-demod.json": "925ffbf6dc24977daff5a20dd73cc26240e8e388da3214b8faf09276e85d47aa",
+    "rtl8922-bb-nco-lora-wide-long-turbo-hold-a-model-demod.json": "f18e01eeb7a11d0aab3634c81d3975e60d76d9857eb16eb576c21adfd7f8fb0b",
+    "rtl8922-bb-nco-lora-wide-long-moderate-cal-a-demod.json": "1e6b883e1f6617c2cb910943d75aa1e80e364806d5458e6e56ac9567dbed7562",
+    "rtl8922-bb-nco-lora-wide-long-slow-hold-a-model-demod.json": "3e17071a181017255cdb1f13eb3b98f43cf483bdcf2f80c9d808523ea79e57c1",
+    "rtl8922-bb-nco-lora-wide-short-turbo-hold-a-period-demod.json": "ec1f79646652ee8189a1e6afabdea38ea6b533c8db6ce619261044bd908c9993",
+    "rtl8922-bb-nco-lora-wide-short-slow-confirm-a-demod.json": "e58f7011b11c7371ae68675fdd827f09d042051add659d0c0376330eb75a8de0",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-hold-a-demod.json": "d0903916362a151ce85f0ace59062df19663313612121b518bf79bb9e045d96d",
+    "rtl8922-bb-nco-lora-wide-short-turbo-hold-a-filtered-demod.json": "5ba66847e191cb70f1c1abee900e3ef3a8bf571b8f88210bd2b6c05f633452cf",
+    "rtl8922-bb-nco-lora-wide-medium-slow-confirm-a-filtered-demod.json": "e1bf23674514b96b2f22d0896e157623e44689dfaa26274bc14aa0e464bd99ec",
+    "rtl8922-bb-nco-lora-wide-medium-turbo-filtered-confirm-b-demod.json": "6ea9f249dc46cdd786790fb3931fb37fa723a857977101291659e81962199dd7",
+    "rtl8922-bb-nco-lora-wide-long-fast-hold-a-filtered-demod.json": "c87a90f9c73e9201f4f2601dfea74f483b0ab42520ead2908bbd3623ce116596",
+    "rtl8922-bb-nco-lora-wide-long-moderate-hold-a-filtered-audit.json": "12d05d07bf449d500a0180ba2cd10788ce71a4cd29247895cb652594701fd857",
+    "rtl8922-bb-nco-lora-wide-short-slow-cal-a-demod.json": "ff10a00fc1b6bbce45773c25ba22dd6b69cbab25bdf0c8c3bedd53e3921ed790",
+    "rtl8922-bb-nco-lora-wide-medium-fast-hold-a-filtered-demod.json": "e86bc14535772946e4e13286aab77c6f89e655239f9ae357590580e038a940d8"
+  }
+}

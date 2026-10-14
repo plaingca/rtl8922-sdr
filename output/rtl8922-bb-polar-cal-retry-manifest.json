@@ -1,0 +1,9 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.json",
+    "payload": "vendor/local-rf-captures/bb-ofdm-cal-20261013/timing-125.bin",
+    "report": "output/rtl8922-bb-polar-cal-retry-timing-125.json",
+    "trace": "vendor/local-rf-captures/bb-ofdm-cal-20261013/retry-timing-125.cf32",
+    "amp_advance": 1.25
+  }
+]

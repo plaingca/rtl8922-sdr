@@ -1,0 +1,28 @@
+{
+  "phase_models": {
+    "continuous": 0.19424254733137464,
+    "paused": 0.9888272619251657,
+    "reset": 0.4488792794391483
+  },
+  "best_model": "paused",
+  "residual_cfo_hz": 194.5,
+  "received_repetitions": 68,
+  "quiet_repetitions": 64,
+  "model_selection_qualified": true,
+  "schema_version": 1,
+  "hardware_access": false,
+  "source": "vendor/local-rf-captures/bb-nco-gate-20261013/phase16-repeat.json",
+  "rf_report": "output/rtl8922-bb-nco-gate-phase16-repeat-c.json",
+  "off_phase_models": {
+    "continuous": 0.0957679617413335,
+    "paused": 0.14819163079301384,
+    "reset": 0.09024160707515258
+  },
+  "off_qualified": false,
+  "counter_ticks_per_nco_write": 60.00007605552673,
+  "rf_rate_assumed_for_models": 10666666.666666666,
+  "scope": "Periodic finite models, not proof of every peripheral latch or zero jitter",
+  "qualified": true,
+  "private_fold": "/home/plaing/rtl8922-sdr/vendor/local-rf-captures/bb-nco-gate-20261013/phase16-repeat-c-fold.npz",
+  "qualification_scope": "Identifying one unique phase hypothesis; compensated amplitude is evaluated separately"
+}

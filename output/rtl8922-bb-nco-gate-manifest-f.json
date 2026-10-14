@@ -1,0 +1,16 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-compensated.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-compensated.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-quarter-compensated-f.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-compensated-f.cf32",
+    "control_base_index": 1
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-f.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am-f.cf32",
+    "control_base_index": 1
+  }
+]

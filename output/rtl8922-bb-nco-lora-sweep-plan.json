@@ -1,0 +1,184 @@
+[
+  {
+    "name": "short-turbo-cal-a",
+    "preset": "SHORT_TURBO",
+    "wide": false,
+    "stream_blocks": 176,
+    "generation_pass": true
+  },
+  {
+    "name": "short-fast-cal-a",
+    "preset": "SHORT_FAST",
+    "wide": false,
+    "stream_blocks": 287,
+    "generation_pass": true
+  },
+  {
+    "name": "short-slow-cal-a",
+    "preset": "SHORT_SLOW",
+    "wide": false,
+    "stream_blocks": 482,
+    "generation_pass": true
+  },
+  {
+    "name": "medium-turbo-cal-a",
+    "preset": "MEDIUM_TURBO",
+    "wide": false,
+    "stream_blocks": 429,
+    "generation_pass": true
+  },
+  {
+    "name": "medium-fast-cal-a",
+    "preset": "MEDIUM_FAST",
+    "wide": false,
+    "stream_blocks": 792,
+    "generation_pass": true
+  },
+  {
+    "name": "medium-slow-cal-a",
+    "preset": "MEDIUM_SLOW",
+    "wide": false,
+    "stream_blocks": 1518,
+    "generation_pass": true
+  },
+  {
+    "name": "long-turbo-cal-a",
+    "preset": "LONG_TURBO",
+    "wide": false,
+    "stream_blocks": 1858,
+    "generation_pass": true
+  },
+  {
+    "name": "long-fast-cal-a",
+    "preset": "LONG_FAST",
+    "wide": false,
+    "stream_blocks": 2757,
+    "generation_pass": true
+  },
+  {
+    "name": "long-moderate-cal-a",
+    "preset": "LONG_MODERATE",
+    "wide": false,
+    "stream_blocks": 7918,
+    "generation_pass": true
+  },
+  {
+    "name": "long-slow-cal-a",
+    "preset": "LONG_SLOW",
+    "wide": false,
+    "stream_blocks": 14408,
+    "generation_pass": true
+  },
+  {
+    "name": "lite-fast-cal-a",
+    "preset": "LITE_FAST",
+    "wide": false,
+    "stream_blocks": 1518,
+    "generation_pass": true
+  },
+  {
+    "name": "lite-slow-cal-a",
+    "preset": "LITE_SLOW",
+    "wide": false,
+    "stream_blocks": 2970,
+    "generation_pass": true
+  },
+  {
+    "name": "narrow-fast-cal-a",
+    "preset": "NARROW_FAST",
+    "wide": false,
+    "stream_blocks": 1068,
+    "generation_pass": true
+  },
+  {
+    "name": "narrow-slow-cal-a",
+    "preset": "NARROW_SLOW",
+    "wide": false,
+    "stream_blocks": 1944,
+    "generation_pass": true
+  },
+  {
+    "name": "tiny-fast-cal-a",
+    "preset": "TINY_FAST",
+    "wide": false,
+    "stream_blocks": 3609,
+    "generation_pass": true
+  },
+  {
+    "name": "tiny-slow-cal-a",
+    "preset": "TINY_SLOW",
+    "wide": false,
+    "stream_blocks": 9110,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-short-turbo-cal-a",
+    "preset": "SHORT_TURBO",
+    "wide": true,
+    "stream_blocks": 98,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-short-fast-cal-a",
+    "preset": "SHORT_FAST",
+    "wide": true,
+    "stream_blocks": 130,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-short-slow-cal-a",
+    "preset": "SHORT_SLOW",
+    "wide": true,
+    "stream_blocks": 187,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-medium-turbo-cal-a",
+    "preset": "MEDIUM_TURBO",
+    "wide": true,
+    "stream_blocks": 171,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-medium-fast-cal-a",
+    "preset": "MEDIUM_FAST",
+    "wide": true,
+    "stream_blocks": 276,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-medium-slow-cal-a",
+    "preset": "MEDIUM_SLOW",
+    "wide": true,
+    "stream_blocks": 486,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-long-turbo-cal-a",
+    "preset": "LONG_TURBO",
+    "wide": true,
+    "stream_blocks": 591,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-long-fast-cal-a",
+    "preset": "LONG_FAST",
+    "wide": true,
+    "stream_blocks": 841,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-long-moderate-cal-a",
+    "preset": "LONG_MODERATE",
+    "wide": true,
+    "stream_blocks": 2167,
+    "generation_pass": true
+  },
+  {
+    "name": "wide-long-slow-cal-a",
+    "preset": "LONG_SLOW",
+    "wide": true,
+    "stream_blocks": 3850,
+    "generation_pass": true
+  }
+]

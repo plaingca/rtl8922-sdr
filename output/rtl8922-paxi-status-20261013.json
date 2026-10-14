@@ -1,0 +1,54 @@
+{
+  "tests": [],
+  "started_utc": "2026-10-13T23:50:38Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "scope": "PAXI and processor-control baseline; no CPU reset or DMA submission",
+  "direct": {
+    "0x88": "0x467",
+    "0x888": "0xdeadbeef",
+    "0x3fc": "0x2002ba4e",
+    "0x8400": "0x7fff4f80",
+    "0x8404": "0xffffffff",
+    "0x914": "0xdeadbeef"
+  },
+  "indirect_global": {
+    "0x88": "0xdeadbeef",
+    "0x888": "0xdeadbeef",
+    "0x3fc": "0xdeadbeef"
+  },
+  "paxi": {
+    "0x0": "0x2800",
+    "0x4": "0x0",
+    "0x100": "0x3",
+    "0x104": "0x0",
+    "0x320": "0x200020",
+    "0x420": "0x20002",
+    "0x424": "0x0",
+    "0x620": "0x20300388",
+    "0x624": "0x20300488",
+    "0x700": "0x3",
+    "0x704": "0x20020",
+    "0x710": "0x400000",
+    "0x714": "0x60006"
+  },
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": null
+}

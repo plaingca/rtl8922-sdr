@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-13",
+  "hardware_access": false,
+  "rf_tests_run": false,
+  "service_changes": false,
+  "scope": "Receiver/transmit usability refinements; existing RF results retain their original qualification scope",
+  "local_checks": {
+    "receiver_demo": {"reported_tests": 11, "passed": 11, "skipped": 0},
+    "tx_research": {"reported_tests": 91, "passed": 86, "skipped": 5, "skip_reason": "Optional separately built LoRa modem absent from this interpreter"},
+    "firmware_research": {"reported_tests": 61, "passed": 61, "skipped": 0},
+    "optional_lora_separate_launcher": {"reported_tests": 5, "passed": 5, "skipped": 0},
+    "unique_test_cases_passed_across_launchers": 163,
+    "numerical_test_environment": {"python": "3.10.12", "numpy": "1.21.5", "scipy": "1.8.0", "capstone": "5.0.9", "unicorn": "2.1.4"},
+    "receiver_cpp_build": "passed",
+    "compiler_c_build_warnings_as_errors": "passed",
+    "shell_and_javascript_syntax": "passed",
+    "new_guide_local_links": "passed",
+    "doctor_compatible_environment": "passed",
+    "doctor_incompatible_numpy_scipy": "correctly rejected"
+  },
+  "public_snapshot_without_private_inputs": {
+    "receiver_demo": {"reported_tests": 11, "passed": 11, "skipped": 0},
+    "tx_research": {"reported_tests": 91, "passed": 86, "skipped": 5},
+    "firmware_research": {"reported_tests": 56, "passed": 49, "skipped": 7},
+    "scope": "Unittest counts a skipped class once; counts differ from the local-input suite. Optional modem and private-image checks were skipped explicitly.",
+    "compiler_c_build": "passed"
+  },
+  "browser": {
+    "api": "mocked responses at localhost:52862; no live receiver connection",
+    "javascript_errors": [],
+    "desktop_viewport": [1360, 1000],
+    "mobile_viewport": [390, 900],
+    "mobile_horizontal_overflow": false,
+    "checks": ["numeric input validation", "persistent tune/TX errors", "display pause semantics", "offline control disabling", "Stop TX remains available", "shutdown state"]
+  },
+  "publication": {
+    "json_reports_parsed": true,
+    "prohibited_raw_build_extensions_excluded": true,
+    "credential_pattern_scan": "no matches",
+    "limits": "Offline checks do not qualify new RF behavior, indefinite streaming, general DAC replay, emission masks or commercial LoRa interoperability. GitHub Actions has not been run as part of these local checks."
+  }
+}

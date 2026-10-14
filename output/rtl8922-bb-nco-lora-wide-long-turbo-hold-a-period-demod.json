@@ -1,0 +1,97 @@
+{
+  "tag": "wide-long-turbo-hold-a",
+  "preamble_timebase": {
+    "tag": "wide-long-turbo-hold-a",
+    "nominal_period_samples": 16384,
+    "measured_period_samples": 16383.779264753306,
+    "ppm": -13.47261027184743,
+    "correlation": 0.9585910439491272,
+    "window_start_seconds": 0.20653415384615384,
+    "lags": [
+      16376,
+      16377,
+      16378,
+      16379,
+      16380,
+      16381,
+      16382,
+      16383,
+      16384,
+      16385,
+      16386,
+      16387,
+      16388,
+      16389,
+      16390,
+      16391,
+      16392
+    ],
+    "correlations": [
+      0.02750307321548462,
+      0.16720648109912872,
+      0.32510045170783997,
+      0.48899486660957336,
+      0.6454529762268066,
+      0.7810999155044556,
+      0.8840186595916748,
+      0.9450156092643738,
+      0.9585910439491272,
+      0.9235551357269287,
+      0.8431264162063599,
+      0.7246049642562866,
+      0.5785709619522095,
+      0.4177676737308502,
+      0.2557762563228607,
+      0.10581079125404358,
+      0.026137689128518105
+    ]
+  },
+  "controls": {
+    "private_trace": {
+      "packets": [
+        {
+          "payload_hex": "ffffffff012092f8000022890000000c0801120f52144c38393232204c6f5261c03030",
+          "crc_ok": false,
+          "header": {
+            "crc_valid": false,
+            "err": 0,
+            "ldro_mode": 0,
+            "crc": 1,
+            "pay_len": 35,
+            "cr": 4
+          }
+        },
+        {
+          "payload_hex": "ffffffff012092f801002289000000000801120f52144c38393232204c6f5261a03031",
+          "crc_ok": false,
+          "header": {
+            "crc_valid": false,
+            "err": 0,
+            "ldro_mode": 0,
+            "crc": 1,
+            "pay_len": 35,
+            "cr": 4
+          }
+        }
+      ],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    },
+    "wrong_sync": {
+      "packets": [],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    },
+    "private_off_trace": {
+      "packets": [],
+      "crc_valid_packets": 0,
+      "decoder": "pinned gr-lora_sdr stock synchronization, header, FEC and CRC",
+      "repetition_averaging": false
+    }
+  },
+  "exact_crc_packets": 0,
+  "packets": 2,
+  "scope": "Diagnostic timebase correction estimated from repeated preamble only; no payload fit, no RF change."
+}

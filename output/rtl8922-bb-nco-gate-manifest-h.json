@@ -1,0 +1,20 @@
+[
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-quarter-am-h.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-quarter-am-h.cf32",
+    "control_base_index": 1,
+    "rx_offset": 1000000,
+    "rx_bandwidth": 5000000
+  },
+  {
+    "source": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.json",
+    "payload": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am.bin",
+    "report": "output/rtl8922-bb-nco-gate-pdm-low-am-h.json",
+    "trace": "vendor/local-rf-captures/bb-nco-gate-20261013/pdm-low-am-h.cf32",
+    "control_base_index": 4,
+    "rx_offset": 1750000,
+    "rx_bandwidth": 5000000
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "meshtastic_firmware_commit": "04cb8885118b959a9f538cd5881bd7d595758911",
+  "meshtastic_firmware_branch": "develop",
+  "meshtastic_protobufs_commit": "28f4f5f5c31c0323bfb86d890a1acaff15d1c4c6",
+  "preset_mapping_source": "https://github.com/meshtastic/firmware/blob/04cb8885118b959a9f538cd5881bd7d595758911/src/mesh/MeshRadio.h",
+  "profile_source": "https://github.com/meshtastic/firmware/blob/04cb8885118b959a9f538cd5881bd7d595758911/src/mesh/RadioInterface.cpp",
+  "sync_source": "https://github.com/meshtastic/firmware/blob/04cb8885118b959a9f538cd5881bd7d595758911/src/mesh/RadioLibInterface.h",
+  "scope": "Current develop preset/profile definitions, not a pinned released firmware binary. Very Long Slow enum remains but has no supported profile or parameter case; excluded from supported sweep. Long Slow deprecated but still selectable and included. Tiny 15.6 kHz label uses 15.625 kHz hardware bandwidth. Sub-GHz modem settings transposed to WiFi-band RF; LORA_24 profiles tested separately. gr-lora_sdr implements conventional LoRa PHY; commercial SX1280 interoperability not established.",
+  "playback_clock_calibration": {
+    "source_rf_report": "output/rtl8922-bb-nco-lora-short-fast-a.json",
+    "counter_ticks_per_command": 60.15106116400825,
+    "counter_frequency_assumed_hz": 640000000,
+    "effective_commands_per_second": 10639878.95,
+    "independent_rf_observation": "Preamble lag correlation peaks at 1026-1027 samples rather than nominal 1024 at 2 MS/s; diagnostic 399/400 receive resampling recovers both original Short Fast packets. That receive time warp is diagnostic only and is not used to qualify subsequent TX-calibrated results."
+  },
+  "gr_lora_sdr_commit": "862746dd1cf635c9c8a4bfbaa2c3a0ec3a5306c9"
+}

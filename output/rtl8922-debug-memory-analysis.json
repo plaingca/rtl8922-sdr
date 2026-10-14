@@ -1,0 +1,1667 @@
+{
+  "schema_version": 1,
+  "hardware_access": false,
+  "driver_sha256": "6e008520696c20450959babc2d1f04a742c950d9085c3f02207fce2cd9830bbb",
+  "emulation": {
+    "architecture": "x86-64",
+    "bounded_cases": 99,
+    "instruction_limit_per_case": 10000,
+    "timeout_us_per_case": 100000,
+    "executed": "Native selector and read/write wrappers only",
+    "stubbed": [
+      "CFG dispatch tail jump",
+      "logging",
+      "indirect bus reads and writes"
+    ],
+    "not_modeled": [
+      "AXI reachability",
+      "DMA",
+      "clocked playback",
+      "converters",
+      "RF"
+    ]
+  },
+  "native_operations_table_va": "0x140cc4210",
+  "base_selector_cases": [
+    {
+      "operation": "base",
+      "selector": 0,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18003000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 1,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x2020c000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 2,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18006000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 3,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18700000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 4,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18800000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 5,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18800800",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 6,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18818000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 7,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18823000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 8,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18824000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 9,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18828000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 10,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18840000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 11,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18850000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 12,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18858000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 13,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18859000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 14,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18860000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 15,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18880000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 16,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18862000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 17,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18881800",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 18,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18863000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 19,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18883000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 20,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18867000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 21,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18887000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 22,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x1886b000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 23,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x1888b000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 24,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x0",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 25,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x19c02000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 26,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18861000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 27,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18881000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 28,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "base",
+      "selector": 29,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "base",
+      "selector": 30,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18820000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 31,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18829000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 32,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x1882a000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 33,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "base",
+      "selector": 34,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x0",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 35,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0x18005000",
+      "bus_calls": [],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "base",
+      "selector": 4294967295,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    }
+  ],
+  "debug_wrapper_cases": [
+    {
+      "operation": "read",
+      "selector": 0,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18003040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 1,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x2020c040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 2,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18006040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 3,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18818040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 4,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18823040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 5,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18824040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 6,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18828040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 7,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18840040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 8,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18850040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 9,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18858040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 10,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18859040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 11,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18860040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 12,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18700040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 13,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18800040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 14,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18800840",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 15,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18880040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 16,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x40",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 17,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x19c02040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 18,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18862040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 19,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18881840",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 20,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18861040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 21,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18881040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 22,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18820040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 23,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18829040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 24,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x1882a040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 25,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "read",
+      "selector": 26,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18005040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "read",
+      "selector": 27,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "read",
+      "selector": 28,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 0,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18003040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 1,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x2020c040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 2,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18006040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 3,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18818040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 4,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18823040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 5,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18824040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 6,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18828040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 7,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18840040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 8,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18850040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 9,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18858040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 10,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18859040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 11,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18860040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 12,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 13,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18800040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 14,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18800840",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 15,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18880040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 16,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x40",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 17,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x19c02040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 18,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 19,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 20,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 21,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 22,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18820040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 23,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18829040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 24,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x1882a040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 25,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 26,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 27,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    },
+    {
+      "operation": "write",
+      "selector": 28,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 0,
+      "return": 11,
+      "output_word": "0xdec0adde",
+      "bus_calls": [],
+      "logging_stub_calls": 1
+    }
+  ],
+  "dmac_remap_cases": [
+    {
+      "operation": "read",
+      "selector": 13,
+      "offset": "0x124",
+      "special_offset_remap": true,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xcafe1234",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18800424",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 13,
+      "offset": "0x124",
+      "special_offset_remap": true,
+      "synthetic_transport_status": 0,
+      "return": 0,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18800424",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    }
+  ],
+  "transport_failure_cases": [
+    {
+      "operation": "read",
+      "selector": 0,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 85,
+      "return": 85,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "read",
+          "address": "0x18003040",
+          "length_bytes": 4
+        }
+      ],
+      "logging_stub_calls": 0
+    },
+    {
+      "operation": "write",
+      "selector": 0,
+      "offset": "0x40",
+      "special_offset_remap": false,
+      "synthetic_transport_status": 85,
+      "return": 85,
+      "output_word": "0xdec0adde",
+      "bus_calls": [
+        {
+          "operation": "write",
+          "address": "0x18003040",
+          "length_bytes": 4,
+          "value": "0x1234abcd"
+        }
+      ],
+      "logging_stub_calls": 0
+    }
+  ],
+  "bbmcu_access": {
+    "observed": "MP BBMCU register access delegates to a host register read/write at runtime context offset + supplied offset + (nonzero phy selector ? 0x20000 : 0).",
+    "initializer": "For the BE branch, context + 0x9ac is initialized to 0x30000.",
+    "limit": "This is a register aperture; no BB-local ROM-to-host alias translation was found.",
+    "initializer_excerpt": [
+      {
+        "va": "0x1402f6311",
+        "mnemonic": "neg",
+        "operands": "edx"
+      },
+      {
+        "va": "0x1402f6313",
+        "mnemonic": "mov",
+        "operands": "rcx, rbx"
+      },
+      {
+        "va": "0x1402f6316",
+        "mnemonic": "sbb",
+        "operands": "eax, eax"
+      },
+      {
+        "va": "0x1402f6318",
+        "mnemonic": "not",
+        "operands": "eax"
+      },
+      {
+        "va": "0x1402f631a",
+        "mnemonic": "and",
+        "operands": "eax, 0x30000"
+      },
+      {
+        "va": "0x1402f631f",
+        "mnemonic": "mov",
+        "operands": "dword ptr [rbx + 0x9ac], eax"
+      }
+    ],
+    "read_address_excerpt": [
+      {
+        "va": "0x14035f88f",
+        "mnemonic": "mov",
+        "operands": "esi, edx"
+      },
+      {
+        "va": "0x14035f891",
+        "mnemonic": "mov",
+        "operands": "rbx, rcx"
+      },
+      {
+        "va": "0x14035f894",
+        "mnemonic": "mov",
+        "operands": "edx, dword ptr [rcx + 0x9ac]"
+      },
+      {
+        "va": "0x14035f89a",
+        "mnemonic": "mov",
+        "operands": "rcx, qword ptr [rcx + 8]"
+      },
+      {
+        "va": "0x14035f89e",
+        "mnemonic": "add",
+        "operands": "edx, esi"
+      },
+      {
+        "va": "0x14035f8a0",
+        "mnemonic": "call",
+        "operands": "0x1402c1edc"
+      }
+    ]
+  },
+  "bb_rom_file_loader": {
+    "filename_components": {
+      "rom_stem": {
+        "va": "0x14065b880",
+        "value": "RTL8922Afw_rom"
+      },
+      "ram_stem": {
+        "va": "0x14065b8f0",
+        "value": "RTL8922Afw"
+      },
+      "bb0_suffix": {
+        "va": "0x14065b950",
+        "value": "_bb0"
+      },
+      "bb1_suffix": {
+        "va": "0x14065b960",
+        "value": "_bb1"
+      },
+      "extension": {
+        "va": "0x14065b870",
+        "value": ".bin"
+      }
+    },
+    "rom_file_read_excerpt": [
+      {
+        "va": "0x1404cf97d",
+        "mnemonic": "mov",
+        "operands": "rdx, qword ptr [rbx + rbp + 8]"
+      },
+      {
+        "va": "0x1404cf982",
+        "mnemonic": "mov",
+        "operands": "r8d, 0x100000"
+      },
+      {
+        "va": "0x1404cf988",
+        "mnemonic": "mov",
+        "operands": "rcx, r14"
+      },
+      {
+        "va": "0x1404cf98b",
+        "mnemonic": "call",
+        "operands": "0x14000d1b8"
+      }
+    ],
+    "ram_file_read_excerpt": [
+      {
+        "va": "0x1404d0101",
+        "mnemonic": "mov",
+        "operands": "r8d, 0x100000"
+      },
+      {
+        "va": "0x1404d0107",
+        "mnemonic": "lea",
+        "operands": "rcx, [rsp + 0x50]"
+      },
+      {
+        "va": "0x1404d010c",
+        "mnemonic": "mov",
+        "operands": "rdx, rsi"
+      },
+      {
+        "va": "0x1404d010f",
+        "mnemonic": "call",
+        "operands": "0x14000d1b8"
+      },
+      {
+        "va": "0x1404d0114",
+        "mnemonic": "test",
+        "operands": "eax, eax"
+      },
+      {
+        "va": "0x1404d0116",
+        "mnemonic": "mov",
+        "operands": "dword ptr [rdi], eax"
+      },
+      {
+        "va": "0x1404d0118",
+        "mnemonic": "sete",
+        "operands": "bl"
+      }
+    ],
+    "limit": "Optional external ROM-image loading support does not supply the file or implement a ROM dump."
+  },
+  "functions": {
+    "selector_base": {
+      "start_va": "0x140535ab0",
+      "end_va_exclusive": "0x140535d0d",
+      "code_sha256": "8e51ca42a3781a40822f4042a9ea38c42d57a4d27fe3629fdbb54fb2863043a9"
+    },
+    "sram_debug_read_8922a": {
+      "start_va": "0x14055df00",
+      "end_va_exclusive": "0x14055e15b",
+      "code_sha256": "72ba0f6600a5edbc79d2e16dc12a94b657777081e7526b203053afbfc5ff1dde"
+    },
+    "sram_debug_write_8922a": {
+      "start_va": "0x14055e160",
+      "end_va_exclusive": "0x14055e369",
+      "code_sha256": "b184ec07dadcb19710d12a0e9cab350db43e7a6c99be64ce69ffea8d4cc86e0c"
+    },
+    "bbmcu_masked_read": {
+      "start_va": "0x14035f90c",
+      "end_va_exclusive": "0x14035f949",
+      "code_sha256": "fdec2dd35f8c94d2893665e8526b18651209bec836deb9d10b78b24352f76ee6"
+    },
+    "bbmcu_read_transport": {
+      "start_va": "0x14035f880",
+      "end_va_exclusive": "0x14035f909",
+      "code_sha256": "65f56dfa58907c8a75d9c00e2e8a777ea999bb00c5645565ccec9f0f44f7d434"
+    },
+    "bbmcu_masked_write": {
+      "start_va": "0x14035fa40",
+      "end_va_exclusive": "0x14035fac6",
+      "code_sha256": "c1373c88d44556a16123d70b7273d641a286f2264164688ac28d713d99b1819b"
+    },
+    "bbmcu_write_transport": {
+      "start_va": "0x14035f990",
+      "end_va_exclusive": "0x14035fa40",
+      "code_sha256": "992b5b394ce2e9cacb2df6a767b8892defbdc10d34d9ced96cc88fda0511df2f"
+    },
+    "bb_context_initialization": {
+      "start_va": "0x1402f6240",
+      "end_va_exclusive": "0x1402f660a",
+      "code_sha256": "ccc8d8243f790320e41657b9f6345eb3fae3a84109fad9264704a83faa5fd691"
+    },
+    "bb_firmware_configuration": {
+      "start_va": "0x1404cf6e8",
+      "end_va_exclusive": "0x1404cfda3",
+      "code_sha256": "49ba00b8c61e0b17fb7bc1471122a530d7c9a191fa6bf4db0d642fac360b8e42"
+    },
+    "bb_firmware_file_reader": {
+      "start_va": "0x1404d0010",
+      "end_va_exclusive": "0x1404d0146",
+      "code_sha256": "7399feb54b92855a675bb390a31d5e49fcdc6cdeb7467b9e96579b63989cc6f0"
+    }
+  },
+  "conclusion": {
+    "arbitrary_iq_endpoint_identified": false,
+    "observed": "The SRAM debug wrappers select ordinary indirect addresses and transfer four bytes. Extra selectors resolve to MAC tables, packet memory, CPU/peripheral regions or a zero base.",
+    "limits": [
+      "No sample reader, DAC source selection or sample-clock handshake found.",
+      "A zero-base selector is not evidence that any chosen AXI address is reachable.",
+      "The separate BB MCU ROM implementation remains unavailable."
+    ]
+  },
+  "package": {
+    "sha256": "4f1b9e5ea65fd6d4a3f04fdeee77fba83b3c423ee40f4e620c97f148f005e21b",
+    "entry_count": 23,
+    "binary_or_rom_named_entries": [
+      "rtldata711.dat",
+      "rtwlane711.sys"
+    ],
+    "bb_rom_file_present": false
+  }
+}
