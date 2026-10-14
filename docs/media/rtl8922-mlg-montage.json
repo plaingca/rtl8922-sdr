@@ -1,0 +1,143 @@
+{
+  "title": "The RTL8922 Spectrum Spectacular",
+  "duration_seconds": 83.86666666666667,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "codec": "H.264",
+    "audio": "AAC stereo"
+  },
+  "sources": {
+    "docs/media/live-demo.png": "a0e9933ff1022259cf439da900d4b6b7c787902f91c1e32b2d0d52f165ccb2c1",
+    "output/wifi-decode/he160-wide-packet.png": "38834610094a24ed2e58ee5be42c563bba8e87fd9c3e9f22b786cdc32d443ce7",
+    "output/wifi-decode/decoded-beacon.png": "23708eb70dd6f6f2cb8d331a3515c5d2d8fac8245ad38627b5d1eefdaac02a7d",
+    "output/full-band-survey/rtl8922-full-span-survey.png": "fefc12c0496e96f2fea37d6f0523cb9c102bc4097fb90067a33c6ff542b17655"
+  },
+  "browser_recording_sha256": "1860b7922e9ba8b18dc86096a566d6e501f19479c76b79c4cb487aae4b71e742",
+  "browser_recording_note": "Optional passive UI footage, no new RF stimulus; no counters removed. Offline render uses still fallback.",
+  "edition": "MLG montage parody",
+  "audio": "Original procedural bass music, airhorns and hitmarkers; expressive neural synthetic actor.",
+  "voiceover": {
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_license": "Apache-2.0",
+    "model_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "speaker": "Ryan",
+    "synthetic_voice": true,
+    "delivery_instruction": "Speak English as an outrageously enthusiastic American used car salesman hosting a ridiculous gaming montage. A warm, natural, smiling male voice. Very expressive, playful and excited, with big pitch changes, punchy emphasis, comic pauses and a slightly breathless sales pitch. Really sell the punchlines. Sound like a lively human actor, not a robot or a calm audiobook narrator. Keep every word clear. No background music.",
+    "seed": 8922,
+    "device": "cpu",
+    "package": "qwen-tts==0.1.1",
+    "clips": [
+      {
+        "file": "scene-1.ogg",
+        "text": "Oh, BABY! Is your Wi-Fi card just... doing Wi-Fi? Folks, that is a TRAGEDY! Welcome to the Spectrum Spectacular!",
+        "duration_seconds": 9.68,
+        "sha256": "26819d35474fd76e63a117b9823d23854e2eef57b3dc92dba9fe78379e7cbde9"
+      },
+      {
+        "file": "scene-2.ogg",
+        "text": "ONE HUNDRED AND SIXTY MILLION complex samples a second! That's right! This baby has more bandwidth than my entire personality!",
+        "duration_seconds": 10.4,
+        "sha256": "15fb3169b801772e5228edd59628732171a5add710e78da2a81a7db923279ce0"
+      },
+      {
+        "file": "scene-3.ogg",
+        "text": "Look at that waterfall! Two hundred and forty FFTs a second! The spectrum is absolutely COOKING!",
+        "duration_seconds": 8.08,
+        "sha256": "a2fde8aa8cea99addfd3dd5457eca3aafb7a13b3a25862cbdf93986410e52a0b"
+      },
+      {
+        "file": "scene-4.ogg",
+        "text": "One hundred and sixty megahertz! Eight slices! Eight valid header checksums! EIGHT FOR EIGHT! Somebody clip that!",
+        "duration_seconds": 8.56,
+        "sha256": "5d47eb1ce4f787bbcb9bf78f83a9f342479f6adb6d249b804923a5b31643a982"
+      },
+      {
+        "file": "scene-5.ogg",
+        "text": "Four hundred forty-one bytes! Decoded in software! Matching frame checksum! Oh my goodness, the checksums CHECK OUT!",
+        "duration_seconds": 8.48,
+        "sha256": "9fb9cfa9a6e05c5f484d8c174d66c168d336d1fb48b3360af99e1d5a5d9e1777"
+      },
+      {
+        "file": "scene-6.ogg",
+        "text": "But WAIT! There's MORE! Two point four! Five! Six gigahertz! Every band must go! Sequentially, of course. We're ridiculous, not magical!",
+        "duration_seconds": 12.24,
+        "sha256": "9e9ae6694294f1f264d0cce6fc3ae3c08f3232e0fd407128314b0b13f62e24f8"
+      },
+      {
+        "file": "scene-7.ogg",
+        "text": "Overflow? Skill issue! Just kidding. We mark the gap, reload, and get right back in the game! THAT'S the comeback! Tune while streaming!",
+        "duration_seconds": 9.84,
+        "sha256": "683243d650e23add5734f417b27977ddf3af768e527a3e8a756a8e4db0151437"
+      },
+      {
+        "file": "scene-8.ogg",
+        "text": "The RTL eighty-nine twenty-two SDR! Open source! Experimental! Deal with the BANDWIDTH! Some debugging required. Imaginary warranties sold separately!",
+        "duration_seconds": 13.04,
+        "sha256": "b71e463726461b33a467ebb549236c62023c2541e9ba355955aae659ac13d667"
+      }
+    ]
+  },
+  "voice_playback_speed": 1.12,
+  "timeline": [
+    {
+      "start": 0.0,
+      "duration": 10.166666666666666,
+      "title": "MOM! GET THE ANTENNA!",
+      "narration": "Oh, BABY! Is your Wi-Fi card just... doing Wi-Fi? Folks, that is a TRAGEDY! Welcome to the Spectrum Spectacular!",
+      "qualification": "Actual RTL8922AE receive experiments. Dealership enthusiasm sold separately."
+    },
+    {
+      "start": 10.166666666666666,
+      "duration": 10.8,
+      "title": "160",
+      "narration": "ONE HUNDRED AND SIXTY MILLION complex samples a second! That's right! This baby has more bandwidth than my entire personality!",
+      "qualification": "Experimental PAXI RX. 80 / 160 MS/s passed bounded 60-second application trials."
+    },
+    {
+      "start": 20.96666666666667,
+      "duration": 8.733333333333333,
+      "title": "LOOK AT THAT WATERFALL.",
+      "narration": "Look at that waterfall! Two hundred and forty FFTs a second! The spectrum is absolutely COOKING!",
+      "qualification": "240 FFT/s target; screen refresh limits redraws. Recorded passive RX; Pluto TX off."
+    },
+    {
+      "start": 29.700000000000003,
+      "duration": 9.166666666666666,
+      "title": "ONE BURST. ALL 160 MHz.",
+      "narration": "One hundred and sixty megahertz! Eight slices! Eight valid header checksums! EIGHT FOR EIGHT! Somebody clip that!",
+      "qualification": "Same HE-SU PHY header in eight 20 MHz sections. Two-stream payload not decoded."
+    },
+    {
+      "start": 38.86666666666667,
+      "duration": 9.1,
+      "title": "THE CHECKSUMS CHECK OUT.",
+      "narration": "Four hundred forty-one bytes! Decoded in software! Matching frame checksum! Oh my goodness, the checksums CHECK OUT!",
+      "qualification": "Legacy 20 MHz OFDM extracted from 160 MS/s I/Q. Independent FCS: a232c556."
+    },
+    {
+      "start": 47.96666666666667,
+      "duration": 12.433333333333334,
+      "title": "BUT WAIT! THERE'S MORE!",
+      "narration": "But WAIT! There's MORE! Two point four! Five! Six gigahertz! Every band must go! Sequentially, of course. We're ridiculous, not magical!",
+      "qualification": "Sequentially stitched survey, not simultaneous full-band RX. Above 6 GHz RF unqualified."
+    },
+    {
+      "start": 60.400000000000006,
+      "duration": 10.3,
+      "title": "OVERFLOW? GET BACK UP.",
+      "narration": "Overflow? Skill issue! Just kidding. We mark the gap, reload, and get right back in the game! THAT'S the comeback! Tune while streaming!",
+      "qualification": "Retunes mark brief gaps without reload. Fault recovery reloads the isolated driver."
+    },
+    {
+      "start": 70.7,
+      "duration": 13.166666666666666,
+      "title": "RTL8922 SDR",
+      "narration": "The RTL eighty-nine twenty-two SDR! Open source! Experimental! Deal with the BANDWIDTH! Some debugging required. Imaginary warranties sold separately!",
+      "qualification": "One receive path. Firmware held. Indefinite continuity, full-band EVM / sensitivity unqualified."
+    }
+  ],
+  "sha256": "262cf8eb934d869495cad06cca96016d0f0b037f3e289d17298985efc7e5c901"
+}

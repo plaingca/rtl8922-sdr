@@ -1,14 +1,18 @@
 # The RTL8922 Spectrum Spectacular
 
-[Watch the trailer (MP4)](rtl8922-spectrum-spectacular.mp4) ·
-[WebM](rtl8922-spectrum-spectacular.webm) ·
-[Subtitles](rtl8922-spectrum-spectacular.srt) ·
-[Timeline, transcript and asset hashes](rtl8922-spectrum-spectacular.json)
+[Watch the trailer (MP4)](rtl8922-mlg-montage.mp4) ·
+[WebM](rtl8922-mlg-montage.webm) ·
+[Subtitles](rtl8922-mlg-montage.srt) ·
+[Timeline, transcript and asset hashes](rtl8922-mlg-montage.json)
 
-A 69-second, 1280 × 720, 30 fps H.264/AAC celebration of making a Wi-Fi card
-do a very different job. Actual received spectrum, an enthusiastic synthetic
-announcer, original procedural synth music, and the traditional dealership
-starburst. No stock RF footage or invented waterfall traces.
+[Compare the original salesman trailer](rtl8922-spectrum-spectacular.mp4).
+
+A 1280 × 720, 30 fps MLG montage parody of making a Wi-Fi card do a very
+different job. Actual received spectrum, an expressive neural salesman, falling
+pixel sunglasses, a spinning triple-band caption and an eight-hit CRC combo.
+Original procedural bass music, airhorns, hitmarker clicks and bass drops supply
+the questionable editing. The measurement captions remain stationary and
+readable beneath the effects. No stock RF footage or invented waterfall traces.
 
 The video includes a passive browser recording from 2026-10-14 at 5250 MHz,
 160 MS/s, with Pluto TX off. The receiver had already recovered from an
@@ -35,15 +39,16 @@ the browser's transmitter controls use a separate ADALM-Pluto.
 
 ## Rebuild without hardware
 
-Install NumPy, Pillow, FFmpeg with libx264/AAC, the eSpeak NG shared library
-and DejaVu fonts. On Debian/Ubuntu the native packages are `ffmpeg`,
-`libespeak-ng1` and `fonts-dejavu-core`. Then, from the repository root:
+Install NumPy, Pillow, FFmpeg with libx264/AAC/Opus and DejaVu fonts. On
+Debian/Ubuntu the native packages are `ffmpeg` and `fonts-dejavu-core`.
+Then, from the repository root:
 
 ```sh
 python3 tools/render-demo-video.py
 ```
 
-The renderer never opens a radio, browser, network connection or transmitter.
+The renderer decodes the committed compressed voice stems; no speech model or
+API key is needed. It never opens a radio, browser, network connection or transmitter.
 It uses the committed still as a fallback for the live-waterfall scene. To use
 an existing passive browser recording, pass `--browser-video /path/to/video.webm`.
 The supplied edition uses that option; its manifest records the source hash.
@@ -54,12 +59,35 @@ serve this directory over HTTP to load its caption track. Create the WebM
 fallback after rendering with:
 
 ```sh
-ffmpeg -i docs/media/rtl8922-spectrum-spectacular.mp4 \
+ffmpeg -i docs/media/rtl8922-mlg-montage.mp4 \
   -c:v libvpx-vp9 -crf 33 -b:v 0 -cpu-used 4 -row-mt 1 -threads 4 \
-  -c:a libopus -b:a 96k docs/media/rtl8922-spectrum-spectacular.webm
+  -c:a libopus -b:a 96k docs/media/rtl8922-mlg-montage.webm
 ```
 
-All RF figures and browser footage come from this project. Music and effects
-are synthesized by the renderer. The announcer uses local eSpeak NG's
-`en-us+m3` voice; no downloaded voice model or commercial music is included.
-The repository license covers the original script and creative media.
+All RF figures and browser footage come from this project. Music, effects and
+graphics are original and synthesized by the renderer. No commercial montage
+music or borrowed sound clips are included. The repository license covers the
+original scripts and creative media.
+
+## Neural announcer
+
+The actor is synthetic: [Qwen3-TTS-12Hz-1.7B-CustomVoice](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice),
+using the `Ryan` preset and an exaggerated used car salesman delivery prompt.
+The model is Apache-2.0 licensed; its weights are downloaded to the local
+Hugging Face cache and are not included in this repository. The creative voice
+stems, prompt, seed, pinned model revision and hashes are in
+[`voiceover/manifest.json`](voiceover/manifest.json). The final mix uses a modest
+1.12× tempo adjustment with pitch preserved, and ducks the music under speech.
+
+To regenerate the stems, install `qwen-tts==0.1.1` in a separate environment,
+following [the upstream setup instructions](https://github.com/QwenLM/Qwen3-TTS#environment-setup),
+then run:
+
+```sh
+python tools/generate-demo-voiceover.py --threads 4
+```
+
+This optional step downloads the pinned model on first use and runs inference
+on CPU. It never opens radio hardware or uses the shared GPU. The normal movie
+render remains entirely offline. Regenerated audio can differ across library
+versions or hardware; the shipped stems preserve the published performance.
