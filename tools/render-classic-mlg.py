@@ -16,7 +16,7 @@ import subprocess
 import wave
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 W, H, FPS, SR, DURATION = 1280, 720, 30, 48000, 50
@@ -43,7 +43,7 @@ SCENES = [
 EVENTS = [
     (0.15, 'mom', '[Meme clip: Mom, get the camera!]'),
     (3.05, 'airhorn', '[Airhorn]'),
-    (3.35, 'damn-son', "Damn son, where'd you find this?"),
+    (3.8, 'damn-son', "Damn son, where'd you find this?"),
     (6.5, 'scary', '[Skrillex: Scary Monsters and Nice Sprites — brief drop]'),
     (9.8, 'oh-my-god', '[Excited gamer reaction]'),
     (15.1, 'sniper', '[Sniper shot]'),
@@ -57,8 +57,7 @@ EVENTS = [
     (40.0, 'darude', '[Darude: Sandstorm — brief sting]'),
     (45.4, 'get-noscoped', '[Meme clip: Get noscoped!]'),
     (48.1, 'airhorn', '[Airhorn]'),
-] + [(20.5+i*.25, 'hitmarker', '[Header CRC hitmarker]') for i in range(8)]
-EVENTS += [(t, 'hitmarker', '[Decorative montage hitmarker]') for t in (7.5, 8, 11.5, 12, 13, 28, 29, 37, 37.25, 37.5, 39, 39.25, 42, 42.25, 42.5, 44, 46, 47)]
+]
 MUSIC_EDITS = [(0, 9, 24.4267), (9, 19, 40.0), (19, 27, 51.42),
                (27, 35, 82.0), (35, 45, 115.2), (45, 48, 131.7), (48, 50, 147.1)]
 
@@ -73,6 +72,47 @@ def decode(ffmpeg, path, filters=None):
         cmd += ['-af', filters]
     raw = subprocess.check_output(cmd+['-ar', str(SR), '-ac', '2', '-f', 'f32le', '-'])
     return np.frombuffer(raw, '<f4').reshape(-1, 2).copy()
+
+
+def bass_timing(music):
+    """Measure positive 35–180 Hz spectral flux on the edited music bus.
+
+    Analyze before vocals/SFX so a hitmarker cannot trigger another hitmarker.
+    A 5 ms analysis hop locates transients; shared audio/visual cues then snap
+    to the nearest video frame. There is no assumed BPM or free-running grid.
+    """
+    size, hop = 2048, 240
+    mono = music.mean(axis=1)
+    windows = np.lib.stride_tricks.sliding_window_view(mono, size)[::hop]
+    spectrum = abs(np.fft.rfft(windows*np.hanning(size), axis=1))
+    frequencies = np.fft.rfftfreq(size, 1/SR)
+    spectrum = spectrum[:, (frequencies >= 35) & (frequencies <= 180)]
+    energy = np.sqrt(np.mean(spectrum**2, axis=1))
+    flux = np.maximum(0, np.diff(spectrum, axis=0, prepend=spectrum[:1])).mean(axis=1)
+    local = np.convolve(energy, np.ones(200)/200, 'same')
+    score = flux/np.maximum(local, .1)
+    peaks = [i for i in range(1, len(score)-1) if score[i] > score[i-1]
+             and score[i] >= score[i+1] and energy[i] > .5 and score[i] > .09]
+    selected = []
+    for i in sorted(peaks, key=lambda x: score[x], reverse=True):
+        if all(abs(i-j)*hop/SR >= .18 for j in selected):
+            selected.append(i)
+    candidates = [dict(detected_seconds=(i*hop+size/2)/SR,
+                       time=round((i*hop+size/2)/SR*FPS)/FPS,
+                       flux=float(score[i]), strength=min(1, float(score[i])/.4))
+                  for i in sorted(selected)]
+    header_pool = [c for c in candidates if 20.2 <= c['time'] < 23 and c['flux'] >= .2]
+    if len(header_pool) < 8:
+        raise ValueError('Music must contain eight distinct bass hits for the header sequence')
+    headers = sorted(sorted(header_pool, key=lambda x: x['flux'], reverse=True)[:8], key=lambda x: x['time'])
+    reveal = max((c for c in candidates if 3.2 < c['time'] < 3.8), key=lambda x: x['flux'])
+    secondary = max((c for c in candidates if 6.5 < c['time'] < 7), key=lambda x: x['flux'])
+    cues = [c for c in candidates if c['flux'] >= (.12 if 3 <= c['time'] < 9 else .22)]
+    by_frame = {round(c['time']*FPS): c for c in cues+headers+[reveal, secondary]}
+    return dict(method='35–180 Hz positive spectral flux; 2048-sample Hann, 240-sample hop, local energy normalization; nearest 30 fps frame',
+                analyzed_bus='Edited Suno music plus classic music stings, before vocal ducking and SFX',
+                cues=[by_frame[k] for k in sorted(by_frame)],
+                header_hits=[c['time'] for c in headers], reveal=reveal['time'], secondary_reveal=secondary['time'])
 
 
 def soundtrack(ffmpeg, work, manifest):
@@ -98,14 +138,35 @@ def soundtrack(ffmpeg, work, manifest):
         audio = decode(ffmpeg, ASSET_DIR/entry['file'], 'bass=g=14:f=100:w=0.7')
         audio /= max(.001, float(np.max(np.abs(audio))))
         pcm[key] = .7*np.tanh(audio*2.8)+.3*audio
+    # Detect the actual arrangement, including the two classic dubstep stings.
+    analysis_bus = music.copy()
+    for start, key, _ in EVENTS:
+        if clips[key]['kind'] == 'music':
+            a = round(start*SR); b = min(count, a+len(pcm[key]))
+            analysis_bus[a:b] = analysis_bus[a:b]*.07+pcm[key][:b-a]*.38
+    sync = bass_timing(analysis_bus)
+    scheduled = []
+    for start, key, caption in EVENTS:
+        if key == 'triple' and start == 21:
+            start = sync['header_hits'][2]
+        elif key == 'airhorn' and start == 3.05:
+            start = sync['reveal']
+        elif key == 'sniper':
+            start = min((c['time'] for c in sync['cues'] if 15 <= c['time'] < 15.8), key=lambda x: abs(x-start))
+        scheduled.append((start, key, caption))
+    scheduled += [(t, 'hitmarker', '[Header CRC hitmarker]') for t in sync['header_hits']]
+    scheduled += [(c['time'], 'hitmarker', '[Bass-synced decorative montage hitmarker]')
+                  for c in sync['cues'] if 3 <= c['time'] < 49.5 and not 20.2 <= c['time'] < 23]
     events = []
-    for start, key, caption in sorted(EVENTS):
+    for start, key, caption in sorted(set(scheduled)):
         audio = pcm[key]
         if key == 'triple' and start == 32.05:
             audio = audio[:round(2.8*SR)]
         a, b = round(start*SR), min(count, round(start*SR)+len(audio))
         kind = clips[key]['kind']
         gain = .43 if kind == 'vocal' else (.38 if kind == 'music' else .27)
+        if key == 'hitmarker' and start not in sync['header_hits']:
+            gain = .17
         effects[a:b] += audio[:b-a]*gain
         if kind != 'sfx':
             left, right = max(0, a-round(.05*SR)), min(count, b+round(.12*SR))
@@ -115,6 +176,10 @@ def soundtrack(ffmpeg, work, manifest):
             envelope[b-left:] = np.linspace(level, 1, right-b)
             duck[left:right] = np.minimum(duck[left:right], envelope)
         events.append(dict(start=start, end=b/SR, clip=key, caption=caption))
+    # A brief score choke makes the first measured drop/reveal hit harder.
+    reveal_sample = round(sync['reveal']*SR)
+    anticipation = round(.12*SR)
+    music[reveal_sample-anticipation:reveal_sample] *= np.linspace(1, .025, anticipation)[:, None]
     mixed = music*duck[:, None]+effects
     mixed *= min(1, .94/float(np.max(np.abs(mixed))))
     t = np.arange(count)/SR
@@ -133,7 +198,9 @@ def soundtrack(ffmpeg, work, manifest):
         f"offset={stats['target_offset']}")
     subprocess.run([ffmpeg, '-y', '-v', 'error', '-i', str(premaster), '-af', settings,
                     '-ar', str(SR), '-c:a', 'pcm_s24le', str(master)], check=True)
-    return master, events, stats
+    sync['hitmarkers'] = [x['start'] for x in events if x['clip'] == 'hitmarker']
+    sync['sniper'] = next(x['start'] for x in events if x['clip'] == 'sniper')
+    return master, events, stats, sync
 
 
 def panel(canvas, source, zoom=1, center=(.5, .5)):
@@ -172,27 +239,29 @@ def product(logo, kind):
     return out
 
 
-def frame(t, assets, live, products):
+def frame(t, assets, live, products, sync):
     index = next(i for i, (a, b, _, _) in enumerate(SCENES) if a <= t < b)
     start, end, title, qualifier = SCENES[index]
     u = t-start
     im = Image.new('RGB', (W, H), '#050817')
-    beat = 60/140
-    pulse = math.exp(-((t-3) % beat)*12)
-    zoom = 1+.11*pulse
+    pulse = max((c['strength']*math.exp(-(t-c['time'])*18)
+                 for c in sync['cues'] if 0 <= t-c['time'] < .35), default=0)
+    zoom = 1+.22*pulse
     if index in (0, 1, 2, 8):
         src = live[int((u*12) % len(live))] if index == 2 and live else assets['live']
-        if index == 2 and 12.8 <= t < 14.2:
+        if index == 1:
+            panel(im, src, 1.25+1.2*pulse, (.5+.16*pulse*math.sin(t*13), .5))
+        elif index == 2 and next(c['time'] for c in sync['cues'] if c['time'] >= 12.6) <= t < next(c['time'] for c in sync['cues'] if c['time'] >= 14):
             panel(im, src, 2.7+.9*pulse, (.14, .32))
         else:
             panel(im, src, zoom*(1.0 if index == 2 else 1.15), (.5+.07*math.sin(t*2), .5))
     elif index in (3, 4, 7):
-        if index == 4 and 20.5 <= t < 22.5:
-            i = min(7, int((t-20.5)/.25))
+        if index == 4 and sync['header_hits'][0] <= t < sync['header_hits'][-1]+.2:
+            i = min(7, sum(t >= h for h in sync['header_hits'])-1)
             panel(im, assets['wide'], 3.4+.7*pulse, ((i+.5)/8, .5))
         elif index == 7:
-            panel(im, assets['wide'], 1.1+.9*(int(u*3)%3==1)+.22*pulse,
-                  (.2+.6*((int(u*3)%8)/7), .5))
+            hits = sum(t >= c['time'] for c in sync['cues'])
+            panel(im, assets['wide'], 1.1+1.3*pulse, (.2+.6*((hits%8)/7), .5))
         else:
             panel(im, assets['wide'], zoom)
     elif index == 5:
@@ -217,11 +286,27 @@ def frame(t, assets, live, products):
         stamp(im, 'MOM GET THE CAMERA', (640, 220), 65, '#ffe733', -7+5*math.sin(u*8))
         stamp(im, 'THAT WI-FI CARD HAS LORE', (640, 515), 44, 'white', 5)
     elif index == 1:
-        scale = int(150+60*pulse)
-        stamp(im, '160 MS/s', (640, 310), scale, '#ffe733', 5*math.sin(u*13))
-        stamp(im, 'MILLION COMPLEX SAMPLES / SECOND', (640, 500), 43, 'white', -4)
-        stamp(im, '+160 BANDWIDTH', (640, 180), 43, '#6eff80', 6)
-        if u > 4.6:
+        if t < sync['reveal']:
+            d.rectangle((0, 67, W, 637), fill='#020208')
+            stamp(im, 'BANDWIDTH LOADING...', (640, 320), 66, '#ffe733', -4)
+            stamp(im, 'BRACE YOUR ANTENNA', (640, 465), 42, 'white', 4)
+        else:
+            # Each slam comes from the measured bass cue, not a fixed BPM.
+            for ring in range(7):
+                radius = 60+ring*95+110*pulse
+                points = [(640+math.cos(k*math.tau/8+t)*radius,
+                           330+math.sin(k*math.tau/8+t)*radius*.7) for k in range(9)]
+                d.line(points, fill='#00ffff' if ring%2 else '#ff00cf', width=3+round(4*pulse))
+            x = 640+round(45*pulse*math.sin(t*75))
+            y = 285+round(22*pulse*math.cos(t*62))
+            size = round(290+170*pulse)
+            for dx, color in ((-round(20*pulse), '#ff00cf'), (round(20*pulse), '#00ffff'), (0, '#ffe733')):
+                d.text((x+dx, y), '160', font=font(size), anchor='mm', fill=color,
+                       stroke_width=10, stroke_fill='black')
+            stamp(im, 'MS/s', (640, 470), 82+round(32*pulse), 'white', 7*pulse*math.sin(t*50))
+            stamp(im, 'MILLION COMPLEX SAMPLES / SECOND', (640, 580), 35, '#6eff80', -3)
+            stamp(im, 'BANDWIDTH HAS LEFT THE CHAT', (640, 135), 36, '#00ffff', 5)
+        if t >= sync['secondary_reveal']+.1:
             for x in (460, 650):
                 for row in range(4):
                     for col in range(9-row):
@@ -234,14 +319,14 @@ def frame(t, assets, live, products):
             stamp(im, 'REAL I/Q. ABSOLUTE CINEMA.', (640, 550), 43, '#ffe733', 6)
     elif index == 3:
         stamp(im, '160 MHz WIDE', (640, 180), 82, '#ffe733', -6)
-        if u < .65:
+        if abs(t-sync['sniper']) < .2:
             # Classic quickscope over the actual packet, not a new RF trace.
             d.ellipse((350, 80, 930, 660), outline='black', width=30)
             d.line((640, 80, 640, 630), fill='black', width=4)
             d.line((350, 370, 930, 370), fill='black', width=4)
         stamp(im, 'PACKET ACQUIRED', (640, 550), 48, '#6eff80', 4)
     elif index == 4:
-        combo = max(0, min(8, 1+int((t-20.5)/.25))) if t >= 20.5 else 0
+        combo = sum(t >= h for h in sync['header_hits'])
         stamp(im, f'HEADER CRC x{combo}' if combo < 8 else '8 / 8 HEADER CRCs',
               (640, 170), 65 if combo < 8 else 74, '#6eff80', 4*math.sin(t*9))
         for i in range(8):
@@ -250,7 +335,7 @@ def frame(t, assets, live, products):
                         outline='#6eff80' if i < combo else '#687080', width=3)
             d.text((x+68, 552), f'{5180+20*i} MHz', font=font(18), anchor='mm', fill='white')
             d.text((x+68, 584), 'CRC PASS' if i < combo else '...', font=font(20), anchor='mm', fill='#6eff80')
-        if t > 22.5:
+        if t > sync['header_hits'][-1]+.15:
             stamp(im, 'OH BABY, AN OCTUPLE', (640, 370), 54, '#ffe733', -7)
     elif index == 5:
         stamp(im, '441 BYTES. FCS MATCH.', (640, 155), 59, '#6eff80', -5)
@@ -275,10 +360,24 @@ def frame(t, assets, live, products):
             x = int(70 if j == 0 else 1060)+round(50*math.sin(t*4+j))
             y = round(340+135*math.sin(t*3+j*2))
             im.paste(pic, (x-pic.width//2, y-pic.height//2), pic)
-    for event in EVENTS:
-        if event[1] in ('hitmarker', 'sniper') and 0 <= t-event[0] < .14:
+    for at in sync['hitmarkers']+[sync['sniper']]:
+        if 0 <= t-at < .1:
             hitmark(ImageDraw.Draw(im), 640, 350, 42)
-            hitmark(ImageDraw.Draw(im), 190+round(event[0]*117)%900, 220+round(event[0]*71)%300, 22)
+            hitmark(ImageDraw.Draw(im), 190+round(at*117)%900, 220+round(at*71)%300, 22)
+    if index == 1 and t >= sync['reveal']:
+        # RGB split and camera shake only on bass impacts; footer drawn later.
+        if pulse > .2:
+            area = im.crop((0, 67, W, 637))
+            r, g, b = area.split()
+            area = Image.merge('RGB', (ImageChops.offset(r, round(12*pulse), 0),
+                                      g, ImageChops.offset(b, -round(12*pulse), 0)))
+            im.paste(area, (round(13*pulse*math.sin(t*80)), 67))
+        for j in range(4):
+            pic = products[j%2].resize((95+round(55*pulse), 134+round(77*pulse)), RESAMPLE.BICUBIC)
+            pic = pic.rotate(t*420+j*90, resample=RESAMPLE.BICUBIC, expand=True)
+            angle = j*math.tau/4+t*.7
+            x, y = 640+math.cos(angle)*(390+110*pulse), 330+math.sin(angle)*235
+            im.paste(pic, (round(x-pic.width/2), round(y-pic.height/2)), pic)
     if index in (1, 4, 7) and pulse > .75:
         d = ImageDraw.Draw(im)
         d.rectangle((2, 68, 1277, 635), outline='#ff00d4', width=7)
@@ -322,10 +421,12 @@ def main():
             live.append(Image.fromarray(pixels).crop((30, 175, 960, 520)))
     products = [product(Image.open(ASSET_DIR/'mountain-dew.png').convert('RGBA'), 'can'),
                 product(Image.open(ASSET_DIR/'doritos.png').convert('RGBA'), 'bag')]
-    times = [.8, 4, 7.6, 11, 16, 21.3, 23, 28.5, 33, 38, 46]
+    master, events, loudness, sync = soundtrack(args.ffmpeg, work, manifest)
+    times = [sync['reveal']-.1, sync['reveal'], sync['reveal']+.1,
+             sync['secondary_reveal'], 11, 16, sync['header_hits'][3], 23.2, 28.5, 33, 38, 46]
     previews = []
     for t in times:
-        pic = frame(t, assets, live, products)
+        pic = frame(t, assets, live, products, sync)
         pic.save(work/f'frame-{t:.1f}.jpg', quality=92)
         previews.append(pic.resize((426, 240), RESAMPLE.LANCZOS))
     sheet = Image.new('RGB', (426*3, 240*4))
@@ -334,7 +435,6 @@ def main():
     sheet.save(work/'contact-sheet.jpg', quality=92)
     if args.review_only:
         return
-    master, events, loudness = soundtrack(args.ffmpeg, work, manifest)
     command = [args.ffmpeg, '-y', '-v', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24',
         '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-', '-i', str(master),
         '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-threads', '4', '-pix_fmt', 'yuv420p',
@@ -342,7 +442,7 @@ def main():
     process = subprocess.Popen(command, stdin=subprocess.PIPE)
     try:
         for i in range(FPS*DURATION):
-            process.stdin.write(frame(i/FPS, assets, live, products).tobytes())
+            process.stdin.write(frame(i/FPS, assets, live, products, sync).tobytes())
             if i%300 == 0:
                 print(f'Rendered {i/FPS:.0f}/{DURATION}s', flush=True)
         process.stdin.close()
@@ -354,11 +454,12 @@ def main():
     subprocess.run([args.ffmpeg, '-y', '-v', 'error', '-i', str(out.with_suffix('.mp4')),
         '-c:v', 'libvpx-vp9', '-crf', '33', '-b:v', '0', '-cpu-used', '4', '-row-mt', '1', '-threads', '4',
         '-c:a', 'libopus', '-b:a', '160k', str(out.with_suffix('.webm'))], check=True)
-    frame(4, assets, live, products).save(out.with_suffix('.jpg'), quality=94)
+    frame(sync['reveal'], assets, live, products, sync).save(out.with_suffix('.jpg'), quality=94)
     # Sound labels are captions, not a fabricated TTS transcript. Overlapping
     # minor clicks are omitted where a vocal/music caption already describes it.
     cues = [x for x in events if x['clip'] not in ('hitmarker', 'sniper')]
-    cues.append(dict(start=20.5, end=22.5, caption='[Eight hitmarkers: eight PHY header CRC passes]'))
+    cues.append(dict(start=sync['header_hits'][0], end=sync['header_hits'][-1]+.2,
+                     caption='[Eight bass-synced hitmarkers: eight PHY header CRC passes]'))
     cues.sort(key=lambda x: x['start'])
     srt = '\n\n'.join(f"{i}\n{draw_helpers.srt_time(x['start'])} --> {draw_helpers.srt_time(x['end'])}\n{x['caption']}"
                         for i, x in enumerate(cues, 1))+'\n'
@@ -368,6 +469,7 @@ def main():
         focus='160 MS/s reception and eight PHY header CRCs; no overflow/recovery scene',
         timeline=[dict(start=a, end=b, title=c, evidence_qualifier=d) for a, b, c, d in SCENES],
         audio_events=events, music_source='docs/media/music/announcer-breaks-the-sound.mp3',
+        bass_sync=sync,
         music_sha256=sha(ROOT/'docs/media/music/announcer-breaks-the-sound.mp3'),
         music_edits=[dict(start=a, end=b, source_start=c) for a, b, c in MUSIC_EDITS],
         mix='Bass boosted and saturated excerpt stems; bed ducks for vocals, nearly mutes for classic music stings. Two-pass -12 LUFS / -2 dBTP target master.',

@@ -11,7 +11,8 @@ waterfall text and reference tone generation.
 [Watch the classic MLG montage parody](docs/media/rtl8922-classic-mlg-160msps.mp4):
 160 MS/s waterfalls, eight CRC-checked sections of a 160 MHz Wi-Fi 6 header,
 actual meme clips, Suno dubstep, classic drop stings, spinning Dew / Doritos,
-quickscopes and deeply questionable editing. No TTS. Sound on.
+quickscopes, bass-synced zooms / hitmarkers and a completely excessive 160 reveal.
+No TTS. Sound on.
 [Captions, evidence and reproduction](docs/media/README.md).
 
 ## Start here
