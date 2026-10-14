@@ -23,11 +23,13 @@ static bool writeText(const std::string &path, const std::string &text) {
     close(fd); return ok;
 }
 int main(int argc, char **argv) {
-    if (argc != 5) return 2;
+    if (argc != 5 && argc != 6) return 2;
     const std::string dir = argv[1];
+    const std::string endpoint = argc == 6 ? argv[5] : "iq_stream";
+    if (endpoint != "iq_stream" && endpoint != "iq_paxi_stream") return 2;
     const double seconds = std::stod(argv[2]);
     const size_t captureLimit = std::stoull(argv[4]);
-    if (seconds <= 0 || seconds > 1800 || captureLimit > 32*1024*1024) return 2;
+    if (seconds <= 0 || seconds > 1800 || captureLimit > 512*1024*1024) return 2;
     signal(SIGTERM, stop); signal(SIGINT, stop);
     int fd = open((dir+"/iq_drain").c_str(), O_RDONLY|O_NONBLOCK);
     if (fd < 0) { perror("iq_drain"); return 2; }
@@ -40,8 +42,9 @@ int main(int argc, char **argv) {
             uint32_t priority; uint64_t runtime, deadline, period; } attr{};
         attr.size=sizeof(attr); attr.policy=6; attr.runtime=950000;
         attr.deadline=attr.period=1000000;
+        if(endpoint=="iq_paxi_stream") { attr.runtime=237500; attr.deadline=attr.period=250000; }
         if (syscall(SYS_sched_setattr, 0, &attr, 0)) policyError=errno;
-        if (!policyError && !writeText(dir+"/iq_stream", "0")) producerError=errno;
+        if (!policyError && !writeText(dir+"/"+endpoint, "0")) producerError=errno;
         done=true;
     });
     using Clock = std::chrono::steady_clock;
@@ -58,6 +61,9 @@ int main(int argc, char **argv) {
             stopSent=true;
         }
         ssize_t n=read(fd,buffer.data()+used,buffer.size()-used);
+        if (n>ssize_t(buffer.size()-used)) {
+            readerError=EPROTO; writeText(dir+"/iq_stop", "Y"); break;
+        }
         if (n<=0) {
             if (n<0 && errno!=EAGAIN && errno!=EINTR) { readerError=errno; interrupted=1; }
             if (done && now-lastData>std::chrono::milliseconds(100)) break;
@@ -67,7 +73,7 @@ int main(int argc, char **argv) {
         size_t off=0;
         while (used-off>=24) {
             uint32_t h[6]; memcpy(h,buffer.data()+off,24);
-            if (!h[0] || h[0]>11400 || h[0]%8 || h[0]!=h[3]) {
+            if (!h[0] || h[0]>16360 || h[0]%8 || h[0]!=h[3]) {
                 readerError=EPROTO; interrupted=1; used=off; break;
             }
             if (used-off<24+h[0]) break;
@@ -89,8 +95,8 @@ int main(int argc, char **argv) {
     FILE *out=fopen(argv[3],"wb");
     if (!out || fwrite(capture.data(),1,capture.size(),out)!=capture.size()) readerError=EIO;
     if (out) fclose(out);
-    char status[4096]={}; int driverRet=-999;
-    int sf=open((dir+"/iq_stream").c_str(),O_RDONLY);
+    char status[16384]={}; int driverRet=-999;
+    int sf=open((dir+"/"+endpoint).c_str(),O_RDONLY);
     if (sf>=0) { if (read(sf,status,sizeof(status)-1)>0) sscanf(status,"ret=%d",&driverRet); close(sf); }
     fprintf(stderr,"%s\n",status);
     printf("{\"packets\":%llu,\"bytes\":%llu,\"sequence_gaps\":%llu,\"pending_bytes\":%zu,"

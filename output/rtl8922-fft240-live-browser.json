@@ -1,0 +1,17 @@
+{
+  "scope": "Actual passive 160 MS/s receiver, live SSE browser, Pluto off",
+  "url": "http://localhost:8732/",
+  "stats": {
+    "fft_fps": 239.616698586,
+    "backend_fps": 239.7657046401878,
+    "renderedFps": 240.01573873696628,
+    "browserSkipped": 0,
+    "samples": 2424045568,
+    "errors": 0,
+    "recoveries": 0,
+    "display_skipped": 5,
+    "frame": 3636
+  },
+  "javascript_errors": [],
+  "passed": true
+}

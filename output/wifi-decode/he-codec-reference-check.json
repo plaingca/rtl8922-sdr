@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "bcc_decode_comparisons": 400,
+  "he_crc_comparisons": 100,
+  "reference_commit": "add75653e8de63361b9d3d34606eb8dc5b6029c5",
+  "reference_file_sha256": "1ad05764eafe50e7703fa9b7a1ff68e247a0f77d830cfac02f183fba5ad1fb15",
+  "scope": "Offline parity with independent GR-WiFi encoder and CRC, including soft-noise input; no hardware"
+}

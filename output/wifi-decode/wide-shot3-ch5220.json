@@ -1,0 +1,101 @@
+{
+  "source_report": "output/rtl8922-wifi-wide-shot3-20261013.json",
+  "source_capture": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-wifi-wide-shot3-20261013.bin",
+  "source_report_sha256": "416dc023a2b7214bac32ac110cc78006dc54406ca60f6750a6ce1fa3c96a1094",
+  "source_interval_sha256": "4930c3255dc17df1858757bf2d7426f5569f837737e849f7a5ca5b49a33e77a6",
+  "source_rate": 160000000,
+  "source_center_mhz": 5250,
+  "channel_mhz": 5220.0,
+  "source_start_sample": 0,
+  "source_samples": 40000000,
+  "channel_rate": 20000000,
+  "channel_samples": 5000000,
+  "channelizer": "complex mixing then scipy.signal.resample_poly(up=1, down=8), default Kaiser FIR",
+  "phase_removed": false,
+  "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+  "reference_modification": "retain received FCS in PDU; CRC gate and PHY algorithms unchanged",
+  "equalized_symbols": 1942,
+  "equalizer_tags": 112,
+  "frame_count": 3,
+  "crc_pass_count": 3,
+  "frames": [
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 449,
+      "frame_sha256": "bedb361c170da413ada20c7ddce9d416ac03b158ce4002488862899129182c88",
+      "fcs_received": "d408b626",
+      "fcs_computed": "d408b626",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 449,
+        "encoding": 4,
+        "snr": 23.338430216892483,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151523.52863542415,
+        "beta": 2.626798152923584
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 449,
+      "frame_sha256": "d69d5eff0dd3fd57b67f28343affeccc85b107237331aaf69d14c2d0d2bf926c",
+      "fcs_received": "0644585e",
+      "fcs_computed": "0644585e",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 449,
+        "encoding": 4,
+        "snr": 22.91479940030479,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150710.77873876266,
+        "beta": 2.330592393875122
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 115,
+      "frame_sha256": "4112d73505b42d773a18247a2ef6fb8f305d439348b91f45f8a1e4242a3b0faa",
+      "fcs_received": "070c70f7",
+      "fcs_computed": "070c70f7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 115,
+        "encoding": 4,
+        "snr": 22.45077918851088,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150546.01737822374,
+        "beta": 0.8717356324195862
+      }
+    }
+  ],
+  "selected_frame": {
+    "kind": "beacon",
+    "type": 0,
+    "subtype": 8,
+    "bytes_including_fcs": 449,
+    "frame_sha256": "bedb361c170da413ada20c7ddce9d416ac03b158ce4002488862899129182c88",
+    "fcs_received": "d408b626",
+    "fcs_computed": "d408b626",
+    "crc_pass": true,
+    "metadata": {
+      "dlt": 105,
+      "frame bytes": 449,
+      "encoding": 4,
+      "snr": 23.338430216892483,
+      "nominal frequency": 5220000000.0,
+      "frequency offset": -151523.52863542415,
+      "beta": 2.626798152923584
+    }
+  },
+  "selected_equalizer_symbol_offset": 0,
+  "selected_ofdm_symbols": 38
+}

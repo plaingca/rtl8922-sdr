@@ -124,6 +124,13 @@ class TransmitterTest(unittest.TestCase):
         self.assertEqual(self.device.powerdown.value, '0')
         self.assertEqual(self.device.writes, 0)
 
+    def test_prepare_does_not_open_device_or_enable_tx(self):
+        with patch.object(sys.modules['adi'], 'Pluto', side_effect=AssertionError('No hardware access')):
+            self.t.prepare()
+        self.assertIsNone(self.t.device)
+        self.assertFalse(self.t.enabled)
+        self.assertEqual(self.device.powerdown.value, '1')
+
     def test_tone_mode_and_stop(self):
         result = self.t.command(dict(enabled=True, mode='tone', offset_khz=500, seconds=5), 2422e6)
         self.assertEqual(result['bandwidth_hz'], 0)

@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "scope": "Bounded Pluto tests and automatic overflow recovery; interruptions remain counted, no new continuity qualification",
+  "pluto_modes_passed": [
+    {
+      "mode": "tone",
+      "enabled": true,
+      "restored": true,
+      "tx_powerdown": "1",
+      "errors": 0,
+      "recoveries": 0,
+      "same_session": true
+    },
+    {
+      "mode": "text",
+      "enabled": true,
+      "restored": true,
+      "tx_powerdown": "1",
+      "errors": 0,
+      "recoveries": 0,
+      "same_session": true
+    }
+  ],
+  "forced_overflow_passed": true,
+  "recovered_center_hz": 5350000000,
+  "recoveries": 1,
+  "stop_stays_stopped": true,
+  "restoration_passed": true,
+  "current_demo": {
+    "session": "69615839db08436da761e1479b72eb17",
+    "rate": 160000000,
+    "frequency": 5250000000,
+    "samples": 39608909824,
+    "errors": 0,
+    "recoveries": 0,
+    "capture_restarts": 0,
+    "fft_fps": 239.728593431,
+    "backend_fps": 239.6827832525688
+  },
+  "current_demo_tx_enabled": false,
+  "forwarded_host_origin_sse_pass": true,
+  "build_sha256": {
+    "demo_state.py": "3385828b10723140859962489b10f7c7764b6566e56a72fed2e3f8b0c4d07e15",
+    "run-demo-service.py": "772919117a635e422ee2949ac79a77427af47368f3f41d1fd8292d4fec895621",
+    "run-live-demo.py": "7920e83e01f744e4d2e569b456011e4d947376148a5e3e1fb86442fe9012723f",
+    "live-demo.py": "17b81d7d59cc847c4160d6e046bc614fb81b3084b1052fc69253c5c057243e8d",
+    "live-demo.html": "ff3dfab5a6b7dee2dadb7fb7f901df7a88b8cb86606afbf6c58f05de47ad81e1",
+    "pluto_tone.py": "4873526fa5b3ea5c0e8b8566c4e255aa1da33069815324353ad2db13b78f270c",
+    "waterfall_text.py": "4e773260894f4a7cc9fb0412d47d13390e9fb3d20edd8d67b0d2e95bf00d3f80",
+    "live-bridge.cpp": "0c830af1a5bc7cf6ab2ecc4e4f1eed40111ad53e208ec14dd3c3be6dd431a602",
+    "SoapyRTL8922.cpp": "688c20a1a49f96f3aaaa3c7b27afbf39066620d5f3dd7adb8f70f9c71e35de0e"
+  },
+  "evidence": [
+    "output/rtl8922-pluto-crash-state-20261014.json",
+    "output/rtl8922-pluto-demo-recovery-20261014.json",
+    "output/rtl8922-pluto-demo-recovery-v5-20261014.json"
+  ],
+  "preserved_failed_trials": [
+    "output/rtl8922-pluto-demo-recovery-20261014.json",
+    "output/rtl8922-pluto-demo-recovery-v2-20261014.json",
+    "output/rtl8922-pluto-demo-recovery-v3-20261014.json",
+    "output/rtl8922-pluto-demo-recovery-v4-20261014.json"
+  ]
+}

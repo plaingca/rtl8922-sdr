@@ -30,6 +30,14 @@ class PlutoTone:
         self.restored = None
         self.closed = False
 
+    def prepare(self):
+        """Warm optional Python support without opening or modifying Pluto."""
+        try:
+            import adi  # noqa: F401
+            text_waves(self.text, self.offset)
+        except ImportError as exc:
+            print(f'PLUTO_SUPPORT_UNAVAILABLE {exc}', flush=True)
+
     def snapshot(self):
         with self.lock:
             return dict(enabled=self.enabled, follow=self.follow, center_hz=self.center,
@@ -81,9 +89,9 @@ class PlutoTone:
             self.actual_offset = round(self.offset*len(n)/int(s.sample_rate))*int(s.sample_rate)/len(n)
             wave = (24576*np.exp(2j*np.pi*self.actual_offset/int(s.sample_rate)*n)).astype(np.complex64)
             self.waves = []
+        s.tx(wave)
         s.tx_hardwaregain_chan0 = self.gain
         self.lo.attrs['powerdown'].value = '0'
-        s.tx(wave)
         self.center = int(s.tx_lo)
         self.enabled = True
         self.restored = False

@@ -1,5 +1,6 @@
 """Small, deterministic RF spectrogram font; no hardware access on import."""
 import numpy as np
+from functools import lru_cache
 
 SAMPLE_RATE = 4_000_000
 WAVE_SAMPLES = 16384
@@ -66,6 +67,7 @@ def bitmap(text):
                      for row in range(7)], dtype=bool)
 
 
+@lru_cache(maxsize=16)
 def text_waves(text, offset_hz):
     """One coherent cyclic multitone buffer per row, bottom first for newest-at-top.
 

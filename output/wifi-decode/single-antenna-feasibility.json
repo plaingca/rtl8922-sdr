@@ -1,0 +1,24 @@
+{
+  "scope": "Offline rough wideband signal-to-background feasibility estimate, not a calibrated SNR measurement or payload decode attempt",
+  "source_header_report": "output/wifi-decode/he160-eight-sections.json",
+  "source_interval_sha256": "e770397d7f7cc5a73df778af96629afc7b4346f6c01b2d8d79346bac41a3f9f8",
+  "background_window_us_relative_packet": [
+    -12,
+    -3
+  ],
+  "data_window_us_relative_packet": [
+    52,
+    64
+  ],
+  "background_power": 0.0006315438076853752,
+  "data_plus_background_power": 0.017426976934075356,
+  "estimated_wideband_snr_db": 14.247877268377751,
+  "scalar_awgn_capacity_bits_per_complex_sample": 4.786295704443759,
+  "full_rate_2_stream_mcs9_information_bits_per_data_tone": 13.333333333333334,
+  "ideal_flat_awgn_total_snr_db_for_full_rate": 40.1369119587396,
+  "limits": [
+    "Background may include interference; estimate is approximate.",
+    "Full-rate comparison omits actual packet shortening, padding and frequency-selective channel weighting.",
+    "This is a feasibility diagnostic, not a rigorous impossibility proof for this finite packet."
+  ]
+}

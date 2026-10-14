@@ -1,0 +1,22 @@
+{
+  "source_report": "output/rtl8922-waterfall160-shot1-20261013.json",
+  "source_capture": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-waterfall160-shot1-20261013.bin",
+  "source_report_sha256": "3c5b347e605b139ff0aff8a9e03a14190336c6eb0c161b8dfcebab1db6c3d893",
+  "source_interval_sha256": "63421f05371da30d9afe1b9589ed45047aaa176710effad7de636246922f0191",
+  "source_rate": 160000000,
+  "source_center_mhz": 5250,
+  "channel_mhz": 5260.0,
+  "source_start_sample": 0,
+  "source_samples": 40000000,
+  "channel_rate": 20000000,
+  "channel_samples": 5000000,
+  "channelizer": "complex mixing then scipy.signal.resample_poly(up=1, down=8), default Kaiser FIR",
+  "phase_removed": false,
+  "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+  "reference_modification": "retain received FCS in PDU; CRC gate and PHY algorithms unchanged",
+  "equalized_symbols": 0,
+  "equalizer_tags": 0,
+  "frame_count": 0,
+  "crc_pass_count": 0,
+  "frames": []
+}

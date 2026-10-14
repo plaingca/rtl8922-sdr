@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-10-14T06:15:47Z",
+  "service": "active",
+  "started_on_explicit_user_request": true,
+  "continuous": true,
+  "url": "http://127.0.0.1:8732/",
+  "tx_powerdown": "1",
+  "host_drops": 0,
+  "card_bound": true,
+  "frame": {
+    "live": true,
+    "frequency": 5250000000,
+    "rate": 160000000,
+    "samples": 7018119168,
+    "errors": 0,
+    "recoveries": 0,
+    "fft_fps": 240.063975914,
+    "backend_fps": 240.05675254749792,
+    "display_skipped": 18,
+    "can_retune": true,
+    "retunes": 0
+  },
+  "source_sha256": {
+    "fft-spectrum.hpp": "9b33cb3d34a0bd3983b2eba9afce365c02d6e21570b31bc2b680a88b94f33629",
+    "live-bridge.cpp": "ca88420eb66763c74bbbd4a44a478900dac5a04a1134f7f9264b5606501cf97a",
+    "live-demo.py": "872929223346a8a1cbd9a3ef08efc98bb5df1bd99402d22bd1518385456f96ce",
+    "live-demo.html": "28caa704d02432584e686ab8170b605345f1e3a8f6a2e1f6488a96a7e9fe417e",
+    "run-receiver.sh": "9b07323a817e09fb6f8ea1239cf9b3fd4bf29a079f93d8a822f0335416ea0d7d"
+  },
+  "passed": true
+}

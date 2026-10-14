@@ -1,0 +1,18 @@
+{
+  "scope": "Build used for both read-only watchdog snapshot tests; historical build manifests retained unchanged",
+  "reports": [
+    "rtl8922-paxi-watch-0ms-20261013.json",
+    "rtl8922-paxi-watch-200ms-20261013.json"
+  ],
+  "sha256": {
+    "research/streaming/paxi-frozen.c": "7aa9943a8814e118e1f1be366de78f5b1091a499ef3b8fa973de23e5f8740681",
+    "research/streaming/paxi-frozen.py": "b16d785e025c1ecae65b9e1e8e22ba818f1c236321c26b7600488e7f8eeb9c00",
+    "research/streaming/prepare-paxi.py": "bc8b12f059f8fb8a2ed9d1fe37d4c5f322ad8e84248252557577b2f2fcbcac79",
+    "vendor/rtw89-paxi-wide/iq-paxi-frozen.c": "7aa9943a8814e118e1f1be366de78f5b1091a499ef3b8fa973de23e5f8740681",
+    "vendor/rtw89-paxi-wide/rtw8922a.c": "94ed2dddd9fb2e90635876fd627d0e90c734edbdbf28aa123cead1ce4e784ceb",
+    "driver/patches/driver.patch": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6"
+  },
+  "working_driver_changed": false,
+  "continuous_80msps": false,
+  "continuous_160msps": false
+}

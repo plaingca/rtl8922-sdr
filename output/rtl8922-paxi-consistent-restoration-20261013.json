@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-14T01:18:55Z",
+  "demo_service": "inactive",
+  "card_bound": false,
+  "loaded_test_modules": [],
+  "pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+  "temporary_firmware": false,
+  "temporary_nm_config": false,
+  "demo_api": "<urlopen error [Errno 111] Connection refused>"
+}

@@ -1,0 +1,147 @@
+{
+  "hardware_access": false,
+  "scope": "Execute pinned ROM TX0 descriptor writer with stubbed feature query; does not simulate DMA or CPU reset",
+  "inputs": {
+    "rom": "d133bbe8b31273f27d9eeae992ce5cccd8001eaf816ebbeca240ce84e07a6ee4",
+    "firmware": "d11927f593c82879bd0437435475d7915a60932374747984b3dc906a23009dea",
+    "historical_table": "d9a5d721e0af55f6aceacea9ef272548d485469373072d95aa3433dbd851630f"
+  },
+  "cases": [
+    {
+      "start_slot": 0,
+      "payload_source": "0x18716200",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083840
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 0,
+      "payload_source": "0x18766000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410411008
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 0,
+      "payload_source": "0xb8716000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083328
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 14,
+      "payload_source": "0x18716200",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083840
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 14,
+      "payload_source": "0x18766000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410411008
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 14,
+      "payload_source": "0xb8716000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083328
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 31,
+      "payload_source": "0x18716200",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083840
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 31,
+      "payload_source": "0x18766000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410411008
+        ]
+      ],
+      "untouched_slots_preserved": true
+    },
+    {
+      "start_slot": 31,
+      "payload_source": "0xb8716000",
+      "descriptors": [
+        [
+          363135008,
+          410411264
+        ],
+        [
+          1436877056,
+          410083328
+        ]
+      ],
+      "untouched_slots_preserved": true
+    }
+  ],
+  "passed": true
+}

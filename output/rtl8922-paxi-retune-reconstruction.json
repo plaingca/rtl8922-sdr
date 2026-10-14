@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "files": {
+    "debug.c": {
+      "same": true,
+      "sha256": "7a09911ecd92aea4c5713a47ee39cd3cbcea490dbe15d86ace0408417144b14c"
+    },
+    "rtw8922a.c": {
+      "same": true,
+      "sha256": "94ed2dddd9fb2e90635876fd627d0e90c734edbdbf28aa123cead1ce4e784ceb"
+    },
+    "iq-paxi-frozen.c": {
+      "same": true,
+      "sha256": "ba40db866b4fb8cd360a8c4f3c5cceb6d64e7e2279cfe9be0773ef7c3480dad6"
+    },
+    "iq-paxi-drain.c": {
+      "same": true,
+      "sha256": "2d49ea0e1b7089ff21b3d20f47c327397ffa709414d06cc1a43a9b23f3fff479"
+    }
+  }
+}

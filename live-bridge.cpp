@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <iostream>
 #include <mutex>
+#include <memory>
 #include <condition_variable>
 #include <sstream>
 #include <cerrno>
@@ -18,6 +19,7 @@
 #include <vector>
 #include <poll.h>
 #include <unistd.h>
+#include "fft-spectrum.hpp"
 static std::atomic<bool> running{true};
 static void stop(int) { running=false; }
 // The display can be slow without blocking the hardware reader. Keep at most
@@ -38,37 +40,67 @@ int main(int argc,char **argv) {
     signal(SIGTERM,stop); signal(SIGINT,stop); signal(SIGPIPE,SIG_IGN);
     SoapySDR::Device *d=nullptr; SoapySDR::Stream *s=nullptr;
     std::thread control, publisher;
+    std::unique_ptr<FFTSpectrum> spectrum;
     std::mutex displayMutex;
     std::condition_variable displayReady;
     constexpr size_t size=262144;
     std::vector<float> pending(size*2);
     std::string pendingHeader;
     bool hasPending=false;
-    std::atomic<double> requested{0};
+    std::atomic<double> requested{0}, zoomCenter{750000};
+    constexpr double targetFps=240;
     std::atomic<unsigned> generation{0};
     try {
-        d=SoapySDR::Device::make(std::getenv("RTL8922_DEVICE_ARGS")?std::getenv("RTL8922_DEVICE_ARGS"):"driver=rtl8922,producer_scheduler=deadline,experimental40=1");
-        // Move into the supported HT40 center range before changing sample rate.
-        d->setFrequency(SOAPY_SDR_RX,0,argc>1?std::stod(argv[1]):2422000000.);
-        d->setSampleRate(SOAPY_SDR_RX,0,40000000);
+        d=SoapySDR::Device::make(std::getenv("RTL8922_DEVICE_ARGS")?std::getenv("RTL8922_DEVICE_ARGS"):"driver=rtl8922,producer_scheduler=deadline");
+        const double rate=std::getenv("RTL8922_CAPTURE_RATE")?std::stod(std::getenv("RTL8922_CAPTURE_RATE")):160000000.;
+        if(rate!=160000000.&&rate!=40000000.) throw std::runtime_error("Demo rate must be 160 or 40 MS/s");
+        const bool paxi=rate==160000000.;
+        spectrum=std::make_unique<FFTSpectrum>(); // Plan before activating reception.
+        const double desiredFrequency=argc>1?std::stod(argv[1]):(paxi?5250000000.:2422000000.);
+        const bool startupRetuned=paxi&&desiredFrequency!=5250000000.;
+        // Fresh PAXI must initialize at its calibrated baseline, then use the
+        // qualified held-firmware retune path to restore the prior frequency.
+        d->setFrequency(SOAPY_SDR_RX,0,paxi?5250000000.:desiredFrequency);
+        d->setSampleRate(SOAPY_SDR_RX,0,rate);
         s=d->setupStream(SOAPY_SDR_RX,SOAPY_SDR_CF32);
         if(d->activateStream(s)) throw std::runtime_error("Activation failed");
+        if(startupRetuned) d->setFrequency(SOAPY_SDR_RX,0,desiredFrequency);
         control=std::thread([&] {
+            std::string commands;
             while(running) {
-                pollfd fd{STDIN_FILENO,POLLIN,0}; if(poll(&fd,1,100)<=0) continue;
-                std::string line; if(!std::getline(std::cin,line)) { running=false; break; }
-                if(line=="stop") { running=false; break; }
-                try {
-                    const double hz=std::stod(line);
-                    if(!std::isfinite(hz)||hz<=0) throw std::runtime_error("Invalid frequency");
-                    requested=hz;
-                } catch(const std::exception &e) { std::cerr<<"TUNE_ERROR "<<e.what()<<std::endl; }
+                pollfd fd{STDIN_FILENO,POLLIN,0};
+                if(poll(&fd,1,100)<=0) continue;
+                char bytes[512];
+                const ssize_t count=read(STDIN_FILENO,bytes,sizeof(bytes));
+                if(count<0&&(errno==EINTR||errno==EAGAIN)) continue;
+                if(count<=0) { running=false; break; }
+                commands.append(bytes,count);
+                if(commands.size()>4096) { commands.clear(); std::cerr<<"TUNE_ERROR Control line too long"<<std::endl; continue; }
+                size_t end;
+                while((end=commands.find('\n'))!=std::string::npos) {
+                    const std::string line=commands.substr(0,end);
+                    commands.erase(0,end+1);
+                    if(line=="stop") { running=false; break; }
+                    try {
+                        if(line.rfind("zoom ",0)==0) {
+                            const double hz=std::stod(line.substr(5));
+                            if(!std::isfinite(hz)) throw std::runtime_error("Invalid zoom offset");
+                            zoomCenter=hz; continue;
+                        }
+                        const double hz=std::stod(line);
+                        if(!std::isfinite(hz)||hz<=0) throw std::runtime_error("Invalid frequency");
+                        requested=hz;
+                    } catch(const std::exception &e) { std::cerr<<"TUNE_ERROR "<<e.what()<<std::endl; }
+                }
             }
         });
         if(fcntl(STDOUT_FILENO,F_SETFL,fcntl(STDOUT_FILENO,F_GETFL)|O_NONBLOCK)<0)
             throw std::runtime_error("Could not configure display pipe");
-        publisher=std::thread([&] {
+        publisher=std::thread([&,rate] {
             std::vector<float> output(size*2);
+            uint64_t computed=0;
+            auto measuredAt=std::chrono::steady_clock::now();
+            double measuredFps=0;
             while(running) {
                 std::string header;
                 {
@@ -78,7 +110,21 @@ int main(int argc,char **argv) {
                     if(!hasPending) continue;
                     output.swap(pending); header.swap(pendingHeader); hasPending=false;
                 }
-                if(!publish(header.data(),header.size())||!publish(output.data(),output.size()*sizeof(float))) {
+                spectrum->analyze(output.data(),rate,zoomCenter.load());
+                computed++;
+                const auto now=std::chrono::steady_clock::now();
+                const double interval=std::chrono::duration<double>(now-measuredAt).count();
+                if(interval>=1) { measuredFps=computed/interval; computed=0; measuredAt=now; }
+                std::ostringstream info;
+                info<<std::setprecision(12)<<header.substr(0,header.size()-2)
+                    <<",\"kind\":\"spectrum\",\"fft_size\":"<<size<<",\"fft_bins\":"<<FFTSpectrum::overviewBins
+                    <<",\"zoom_bins\":"<<spectrum->zoomBins<<",\"zoom_start_hz\":"<<spectrum->zoomStartHz
+                    <<",\"zoom_bin_hz\":"<<spectrum->zoomBinHz<<",\"rms\":"<<spectrum->rms
+                    <<",\"peak_dbfs\":"<<spectrum->peakDbfs<<",\"peak_hz\":"<<spectrum->peakHz
+                    <<",\"target_fps\":"<<targetFps<<",\"fft_fps\":"<<measuredFps
+                    <<",\"bytes\":"<<spectrum->bins.size()*sizeof(float)<<"}\n";
+                header=info.str();
+                if(!publish(header.data(),header.size())||!publish(spectrum->bins.data(),spectrum->bins.size()*sizeof(float))) {
                     running=false; break;
                 }
             }
@@ -89,11 +135,13 @@ int main(int argc,char **argv) {
         unsigned recentRecoveries=0;
         auto recoveryWindow=std::chrono::steady_clock::now();
         unsigned seen=generation.load();
-        auto next=std::chrono::steady_clock::now();
+        bool intentionalGap=startupRetuned;
+        double nextSnapshot=rate/targetFps;
         while(running) {
             if(const double hz=requested.exchange(0);hz!=0) {
                 try {
-                    d->setFrequency(SOAPY_SDR_RX,0,hz); generation++;
+                    if(hz==d->getFrequency(SOAPY_SDR_RX,0)) continue;
+                    d->setFrequency(SOAPY_SDR_RX,0,hz); generation++; intentionalGap=true;
                     std::cerr<<"TUNED "<<std::fixed<<hz<<std::endl;
                 } catch(const std::exception &e) { std::cerr<<"TUNE_ERROR "<<e.what()<<std::endl; }
             }
@@ -103,7 +151,10 @@ int main(int argc,char **argv) {
             if(!running) break;
             if(n==SOAPY_SDR_TIMEOUT) continue;
             if(n<0) {
-                errors++; used=0;
+                used=0;
+                if(n==SOAPY_SDR_OVERFLOW&&(flags&SOAPY_SDR_HAS_TIME)&&intentionalGap) { intentionalGap=false; continue; }
+                errors++;
+                if(paxi) throw std::runtime_error("PAXI receive fault "+std::to_string(n)+"; stop and reload driver before restarting");
                 if(n==SOAPY_SDR_OVERFLOW&&(flags&SOAPY_SDR_HAS_TIME)) continue;
                 const auto now=std::chrono::steady_clock::now();
                 if(now-recoveryWindow>std::chrono::seconds(10)) { recentRecoveries=0; recoveryWindow=now; }
@@ -115,19 +166,19 @@ int main(int argc,char **argv) {
                 std::cerr<<"RECOVERED interruption="<<errors<<std::endl;
                 continue;
             }
+            if(n==0&&(flags&SOAPY_SDR_END_BURST)) break;
             used+=n; samples+=n;
             if(used!=size) continue;
             used=0;
-            const auto now=std::chrono::steady_clock::now();
-            if(now<next) continue;
-            next=now+std::chrono::milliseconds(75);
+            if(samples<nextSnapshot) continue;
+            do { nextSnapshot+=rate/targetFps; } while(nextSnapshot<=samples);
             std::lock_guard<std::mutex> lock(displayMutex);
             if(hasPending) skippedDisplay++;
             std::ostringstream header;
             header<<std::setprecision(16)<<"{\"frame\":"<<++frames<<",\"samples\":"<<samples
                 <<",\"errors\":"<<errors<<",\"recoveries\":"<<recoveries<<",\"generation\":"<<seen<<",\"frequency\":"<<d->getFrequency(SOAPY_SDR_RX,0)
-                <<",\"display_skipped\":"<<skippedDisplay
-                <<",\"rf_center\":"<<d->readSetting("rf_center")<<",\"rate\":40000000,\"bytes\":"<<data.size()*sizeof(float)<<"}\n";
+                <<",\"retunes\":"<<seen<<",\"display_skipped\":"<<skippedDisplay
+                <<",\"rf_center\":"<<d->readSetting("rf_center")<<",\"rate\":"<<rate<<"}\n";
             pending.swap(data); pendingHeader=header.str(); hasPending=true;
             displayReady.notify_one();
         }

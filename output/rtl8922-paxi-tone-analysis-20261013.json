@@ -1,0 +1,70 @@
+{
+  "scope": "Paired narrowband RF references; not full-band fidelity or continuity",
+  "tests": [
+    {
+      "rate_msps": 80,
+      "tones": [
+        {
+          "input_report": "output/rtl8922-paxi-tone80-250000-20261013.json",
+          "offset_hz": 250000,
+          "peak_hz": 220031.73828125,
+          "above_median_db": 27.769687627099206,
+          "transport_pass": true,
+          "dc_power": 7546543083.171291,
+          "restored": true
+        },
+        {
+          "input_report": "output/rtl8922-paxi-tone80--250000-20261013.json",
+          "offset_hz": -250000,
+          "peak_hz": -278625.48828125,
+          "above_median_db": 27.930743307175113,
+          "transport_pass": true,
+          "dc_power": 7523362652.058911,
+          "restored": true
+        }
+      ],
+      "movement_hz": 498657.2265625,
+      "checks": {
+        "both_transport_pass": true,
+        "both_restored": true,
+        "both_positions_within_3khz": false,
+        "movement_within_3khz": true,
+        "both_above_median_15db": true
+      },
+      "passed": false
+    },
+    {
+      "rate_msps": 160,
+      "tones": [
+        {
+          "input_report": "output/rtl8922-paxi-tone160-250000-20261013.json",
+          "offset_hz": 250000,
+          "peak_hz": 222167.96875,
+          "above_median_db": 26.48150994458974,
+          "transport_pass": true,
+          "dc_power": 7486246304.893072,
+          "restored": true
+        },
+        {
+          "input_report": "output/rtl8922-paxi-tone160--250000-20261013.json",
+          "offset_hz": -250000,
+          "peak_hz": -277099.609375,
+          "above_median_db": 23.01112222427795,
+          "transport_pass": true,
+          "dc_power": 7904964844.188461,
+          "restored": true
+        }
+      ],
+      "movement_hz": 499267.578125,
+      "checks": {
+        "both_transport_pass": true,
+        "both_restored": true,
+        "both_positions_within_3khz": false,
+        "movement_within_3khz": true,
+        "both_above_median_15db": true
+      },
+      "passed": false
+    }
+  ],
+  "passed": false
+}

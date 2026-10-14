@@ -1,0 +1,1191 @@
+{
+  "scope": "Sequential passive mosaic, not simultaneous coverage or calibration; RF above 6 GHz unqualified",
+  "source_report": "/home/plaing/rtl8922-sdr/output/rtl8922-full-band-survey-20261013.json",
+  "tile_count": 164,
+  "tiles": [
+    {
+      "center_mhz": 2312,
+      "started_unix_ns": 1791949865645091790,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-1.bin",
+      "raw_sha256": "d477a9d5065463e65c9b4f980ed3751af933dc6315c2355c7b57d44dbbdbff4c",
+      "passed": true
+    },
+    {
+      "center_mhz": 2327,
+      "started_unix_ns": 1791949865868704394,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-2.bin",
+      "raw_sha256": "94e1a11f380929076e3576a77b755c8d8ac9471506e5652ec46b8fe7ac5e8e70",
+      "passed": true
+    },
+    {
+      "center_mhz": 2342,
+      "started_unix_ns": 1791949866092066108,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-3.bin",
+      "raw_sha256": "887c0325175603bb039a368544fe80b2d79e4283f9b2616b82b257b58e6d2a6c",
+      "passed": true
+    },
+    {
+      "center_mhz": 2357,
+      "started_unix_ns": 1791949866315960289,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-4.bin",
+      "raw_sha256": "c2140ed1914245f7ab71f3bd4911049aef1b278e1bc8ecae7caf263ab95814f0",
+      "passed": true
+    },
+    {
+      "center_mhz": 2372,
+      "started_unix_ns": 1791949866539226640,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-5.bin",
+      "raw_sha256": "8dfce045b8c761f1555455a9b42d1555263e1d0cc2fcae6db51cb0d230c1a2f0",
+      "passed": true
+    },
+    {
+      "center_mhz": 2382,
+      "started_unix_ns": 1791949866762753129,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-6.bin",
+      "raw_sha256": "ccc82299bb8833e68b37a2790693ce8f3830a33ae9b3fe1f6b6c23781bb87970",
+      "passed": true
+    },
+    {
+      "center_mhz": 2412,
+      "started_unix_ns": 1791949866985872548,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-7.bin",
+      "raw_sha256": "5e668f83a50285f041e7d1fda9fcf4c0e9ab03f0a8a09f1a6cfa63ab3bbc99cf",
+      "passed": true
+    },
+    {
+      "center_mhz": 2427,
+      "started_unix_ns": 1791949867209181230,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-8.bin",
+      "raw_sha256": "db8e68c4f4f70f8f354142f4f789487c71e3affdf0990bb9477e68143d9879f8",
+      "passed": true
+    },
+    {
+      "center_mhz": 2442,
+      "started_unix_ns": 1791949867551795892,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-9.bin",
+      "raw_sha256": "03e027af85526340def30afc1f6bc98146ac4b9a8b2044203b03d2fa5569ffab",
+      "passed": true
+    },
+    {
+      "center_mhz": 2457,
+      "started_unix_ns": 1791949867918348692,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-10.bin",
+      "raw_sha256": "8c1e8a62f5383127867cc3116b87fad7da8a50c9ee559d5f9d3a615e81c1b66a",
+      "passed": true
+    },
+    {
+      "center_mhz": 2472,
+      "started_unix_ns": 1791949868287837397,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-11.bin",
+      "raw_sha256": "f4ca13ef009c77eb3cb35d112771c92725371f65f0b0d974fc934d754aadec83",
+      "passed": true
+    },
+    {
+      "center_mhz": 2484,
+      "started_unix_ns": 1791949868641367677,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-12.bin",
+      "raw_sha256": "02e9e59ed21d7e6eb134cb6d4578661def6448bcc381d4dbebbe43c60b55ae16",
+      "passed": true
+    },
+    {
+      "center_mhz": 2500,
+      "started_unix_ns": 1791949868865547935,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-13.bin",
+      "raw_sha256": "24e64ccc0ff4a7d5fb9d4ec33b2a7e8e2f301136bb8d99ab64ca752fb8d4691e",
+      "passed": true
+    },
+    {
+      "center_mhz": 2515,
+      "started_unix_ns": 1791949869088698653,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-14.bin",
+      "raw_sha256": "65a01f0531ef68857918f5baf14d59ac3c84f5d6755bf6af88dc4feebebf6f88",
+      "passed": true
+    },
+    {
+      "center_mhz": 4900,
+      "started_unix_ns": 1791949869313961181,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-15.bin",
+      "raw_sha256": "48b8509b21d7b3631d77645da26cad46976455532b99e36f8ecb385db256f6fa",
+      "passed": true
+    },
+    {
+      "center_mhz": 4915,
+      "started_unix_ns": 1791949869689938736,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-16.bin",
+      "raw_sha256": "f01acd90dec6905181da2f675e39d0655909d08d84147155ee3871189f7d4e07",
+      "passed": true
+    },
+    {
+      "center_mhz": 4930,
+      "started_unix_ns": 1791949869914525310,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-17.bin",
+      "raw_sha256": "44895818670a99e1c4a67331242fa0f4f99860ff46dffd9695cc464a9eac26b7",
+      "passed": true
+    },
+    {
+      "center_mhz": 4945,
+      "started_unix_ns": 1791949870137914484,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-18.bin",
+      "raw_sha256": "ba3f00715f6a2d7265af52cd8d2c2778e21529d040e89f2b63d71dfd9b10b76c",
+      "passed": true
+    },
+    {
+      "center_mhz": 4960,
+      "started_unix_ns": 1791949870361763637,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-19.bin",
+      "raw_sha256": "34402356da6395fc2a6d00e443df61a15158c29a0f40c79e86c03216f3fbcef0",
+      "passed": true
+    },
+    {
+      "center_mhz": 4975,
+      "started_unix_ns": 1791949870585624323,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-20.bin",
+      "raw_sha256": "2a9bf4bcac62c51137bed7ba5cf987ae605b7c9cf55d90ab8f614bce798af1a1",
+      "passed": true
+    },
+    {
+      "center_mhz": 4990,
+      "started_unix_ns": 1791949870808873368,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-21.bin",
+      "raw_sha256": "5c4b53b604c8965a61b13e7b15835d1a1f707fec8d9aa83564b9d562dc84bad5",
+      "passed": true
+    },
+    {
+      "center_mhz": 5005,
+      "started_unix_ns": 1791949871032050396,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-22.bin",
+      "raw_sha256": "c3d55e1d653dccd9733637869a967a4e9c814b8ca810d3eb8d841a97dc4de8b3",
+      "passed": true
+    },
+    {
+      "center_mhz": 5020,
+      "started_unix_ns": 1791949871255276317,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-23.bin",
+      "raw_sha256": "786d92cc38b4cb18a9565d3da49ac252ee7cacdbd6d4d20ca018cbd5b5608413",
+      "passed": true
+    },
+    {
+      "center_mhz": 5035,
+      "started_unix_ns": 1791949871478623590,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-24.bin",
+      "raw_sha256": "a4dc4fcaa10ccdcdea5e4e8b28edbf83f9bba40696756fd6b1663c36c479f551",
+      "passed": true
+    },
+    {
+      "center_mhz": 5050,
+      "started_unix_ns": 1791949871701916669,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-25.bin",
+      "raw_sha256": "c8217dacee5355d43a6a15a8978080c7f48be2c662f6276665baefb0a9f003f0",
+      "passed": true
+    },
+    {
+      "center_mhz": 5065,
+      "started_unix_ns": 1791949871925638779,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-26.bin",
+      "raw_sha256": "0c129dbf4fd2aadf5fedd3033a91007a31cc8650e4a6f63511c648bcc131ba58",
+      "passed": true
+    },
+    {
+      "center_mhz": 5080,
+      "started_unix_ns": 1791949872149027851,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-27.bin",
+      "raw_sha256": "6ceb751606facde59f2d8533e2ae8e4aa4e43be0ec79493b3b0160e258de3088",
+      "passed": true
+    },
+    {
+      "center_mhz": 5095,
+      "started_unix_ns": 1791949872372060853,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-28.bin",
+      "raw_sha256": "89cc328caa02adb839c41e956d95ca8197537e0e953ea6b7af36209910435a3b",
+      "passed": true
+    },
+    {
+      "center_mhz": 5110,
+      "started_unix_ns": 1791949872595194136,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-29.bin",
+      "raw_sha256": "a85dc6ccf905ac745c1fa357e38fda4bf3e7ff76d9fd49135c3b660b22e1ffe5",
+      "passed": true
+    },
+    {
+      "center_mhz": 5125,
+      "started_unix_ns": 1791949872818591093,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-30.bin",
+      "raw_sha256": "aab78ac6b13534787215fe63386e65d0b1553e564fbf216024bf18ca609eff45",
+      "passed": true
+    },
+    {
+      "center_mhz": 5140,
+      "started_unix_ns": 1791949873042139750,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-31.bin",
+      "raw_sha256": "4d01e532c9028f00d6aab6faddf91f81b2f726fba365e78a4daff18c2c197d6d",
+      "passed": true
+    },
+    {
+      "center_mhz": 5155,
+      "started_unix_ns": 1791949873265586923,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-32.bin",
+      "raw_sha256": "cd335d20477e110fb1939f4e5288bd5009c6682fbd5d0fdd84b5cb22c057ba52",
+      "passed": true
+    },
+    {
+      "center_mhz": 5170,
+      "started_unix_ns": 1791949873488866456,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-33.bin",
+      "raw_sha256": "67d2e418e42aa0dbf5e817c336e20d8dca9c0b38ad6d0db9ebaa50a1e8519e93",
+      "passed": true
+    },
+    {
+      "center_mhz": 5185,
+      "started_unix_ns": 1791949873711968719,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-34.bin",
+      "raw_sha256": "4888fb4bcdaa582a630a5ff3acf1d6b68a85a2a15d0205a965515f6bf8949c77",
+      "passed": true
+    },
+    {
+      "center_mhz": 5200,
+      "started_unix_ns": 1791949873935738459,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-35.bin",
+      "raw_sha256": "b37f7f86f7d100ca5517278275d7edc0a5ec6b481f0683982312691716be9ab8",
+      "passed": true
+    },
+    {
+      "center_mhz": 5215,
+      "started_unix_ns": 1791949874301761459,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-36.bin",
+      "raw_sha256": "29651727d88da58f81b3d6440cd30ae5579d93f78530490b454970a6fbc03812",
+      "passed": true
+    },
+    {
+      "center_mhz": 5230,
+      "started_unix_ns": 1791949874667700318,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-37.bin",
+      "raw_sha256": "92a039b5a9f72bacb92d47597f154bc6dc6526b1fdb2beecb7ce01b5cdfe5a0c",
+      "passed": true
+    },
+    {
+      "center_mhz": 5245,
+      "started_unix_ns": 1791949874890969701,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-38.bin",
+      "raw_sha256": "4a057791eff16bc07168b09e6ce69251d8dcecd9fe2553fb1a0f205af6ec3bc4",
+      "passed": true
+    },
+    {
+      "center_mhz": 5260,
+      "started_unix_ns": 1791949875256457216,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-39.bin",
+      "raw_sha256": "de51bbb7d6d7c9c34ee8acc402d04c38f039ef5ed3d18b09776e5ccc6e55c1d7",
+      "passed": true
+    },
+    {
+      "center_mhz": 5275,
+      "started_unix_ns": 1791949875621222840,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-40.bin",
+      "raw_sha256": "ea63c814660d9c3b1d224eca75525e1f5b0519196e73beae82d3c9653bff01c1",
+      "passed": true
+    },
+    {
+      "center_mhz": 5290,
+      "started_unix_ns": 1791949875985031184,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-41.bin",
+      "raw_sha256": "8c2f1c3e512e2c76c34f7c826562ffc657cd796e9b5bed24c4ad70150dc0efe7",
+      "passed": true
+    },
+    {
+      "center_mhz": 5305,
+      "started_unix_ns": 1791949876208437848,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-42.bin",
+      "raw_sha256": "07e9dbaabfc025a0f1b648027ceb561d47aaa8357f6332007599175d71adc56c",
+      "passed": true
+    },
+    {
+      "center_mhz": 5320,
+      "started_unix_ns": 1791949876571543065,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-43.bin",
+      "raw_sha256": "ee7c1d4236da69f9663c2d9f07961ad14c0623b530e878cea11cbfaf7638d26f",
+      "passed": true
+    },
+    {
+      "center_mhz": 5335,
+      "started_unix_ns": 1791949876933038774,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-44.bin",
+      "raw_sha256": "150b0323c574ec5a78b27c61677c2225bc57c75660eaf9857e67dee824511a91",
+      "passed": true
+    },
+    {
+      "center_mhz": 5350,
+      "started_unix_ns": 1791949877156321541,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-45.bin",
+      "raw_sha256": "175a426c1a82d466c179eb47ad1b40b29b53bd6c3ded25753d510a44d833a832",
+      "passed": true
+    },
+    {
+      "center_mhz": 5365,
+      "started_unix_ns": 1791949877379861920,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-46.bin",
+      "raw_sha256": "66e81ec153b8e254073c7268d57f279ef6d6a9ca4cc251aea99bf2c060990226",
+      "passed": true
+    },
+    {
+      "center_mhz": 5380,
+      "started_unix_ns": 1791949877604011524,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-47.bin",
+      "raw_sha256": "891d75465c72e9d23132803e9478b72d510c198a832f22d4195a5077112cd2cf",
+      "passed": true
+    },
+    {
+      "center_mhz": 5395,
+      "started_unix_ns": 1791949877837647303,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-48.bin",
+      "raw_sha256": "f393c17291e592b0052286b8bdf9e849f909265065840e6435e4960393002e70",
+      "passed": true
+    },
+    {
+      "center_mhz": 5410,
+      "started_unix_ns": 1791949878060836790,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-49.bin",
+      "raw_sha256": "69a0faf1063f6bd057cf7e053ec4e95cfe4022c6b57686a6661f966e8fd27c05",
+      "passed": true
+    },
+    {
+      "center_mhz": 5425,
+      "started_unix_ns": 1791949878283897582,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-50.bin",
+      "raw_sha256": "26c29e8fded7334699421c3cdefc756dd56e56b7f6f60a72a907a830ae77f721",
+      "passed": true
+    },
+    {
+      "center_mhz": 5440,
+      "started_unix_ns": 1791949878645731897,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-51.bin",
+      "raw_sha256": "eee2a6843ac0fbe194b244943ebe06139b18705332956242a7cfce377e3b0d51",
+      "passed": true
+    },
+    {
+      "center_mhz": 5455,
+      "started_unix_ns": 1791949878868841070,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-52.bin",
+      "raw_sha256": "ca2078a6196fa7b2e347044096407ecbb0f66fadfd0a51282fa5df457e506b43",
+      "passed": true
+    },
+    {
+      "center_mhz": 5470,
+      "started_unix_ns": 1791949879091928212,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-53.bin",
+      "raw_sha256": "1780a9492bbec0373d9376055ea56a5ce0ce3e01f17bb3a86f545898156bfe03",
+      "passed": true
+    },
+    {
+      "center_mhz": 5485,
+      "started_unix_ns": 1791949879315380110,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-54.bin",
+      "raw_sha256": "9a8233c72ccf82a102b4cc651689a68a2bd3faf60fae59b10e6c877320e1651b",
+      "passed": true
+    },
+    {
+      "center_mhz": 5500,
+      "started_unix_ns": 1791949879539775013,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-55.bin",
+      "raw_sha256": "6e9bdb8fc322510248d9ed0c9e396f234b5db1c956e423c442f3b0b32eb79813",
+      "passed": true
+    },
+    {
+      "center_mhz": 5515,
+      "started_unix_ns": 1791949879764727051,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-56.bin",
+      "raw_sha256": "4961db233519dc71545aa268d9374ad47cfd3800c048cb821e0315f142e32eb6",
+      "passed": true
+    },
+    {
+      "center_mhz": 5530,
+      "started_unix_ns": 1791949880123278475,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-57.bin",
+      "raw_sha256": "9484d9430d4ee2d3e15e2f83bfce6504b6936d4c2b403e1695fd35a56e92d087",
+      "passed": true
+    },
+    {
+      "center_mhz": 5545,
+      "started_unix_ns": 1791949880346621916,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-58.bin",
+      "raw_sha256": "498b77a258abf8e554d649f0018116823e62a4192ba36c5bc8d2c161a778be6f",
+      "passed": true
+    },
+    {
+      "center_mhz": 5560,
+      "started_unix_ns": 1791949880706993391,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-59.bin",
+      "raw_sha256": "090c0262118990f9eb621ca32a3cadcb114ca4d85d726bf68be8fe90a4a9631b",
+      "passed": true
+    },
+    {
+      "center_mhz": 5575,
+      "started_unix_ns": 1791949881068574881,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-60.bin",
+      "raw_sha256": "375c6a7bb5c645e047fbceca12d2e41f65b337b6a18694cc60424414e4b13621",
+      "passed": true
+    },
+    {
+      "center_mhz": 5590,
+      "started_unix_ns": 1791949881430893860,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-61.bin",
+      "raw_sha256": "5cbc70d59f42b40d397b7ecdf2f7acbc31dd98364eb2925ec577882a7c49f0ea",
+      "passed": true
+    },
+    {
+      "center_mhz": 5605,
+      "started_unix_ns": 1791949881654570628,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-62.bin",
+      "raw_sha256": "9daf2a741840153ec78c38ea0d94e2c76301fca8afe569b13034ed0170b1a27e",
+      "passed": true
+    },
+    {
+      "center_mhz": 5620,
+      "started_unix_ns": 1791949881878543402,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-63.bin",
+      "raw_sha256": "29aa0e2d32deb63137902b319c114f1e75a7cadd44f36d33ab3afc2643c54a55",
+      "passed": true
+    },
+    {
+      "center_mhz": 5635,
+      "started_unix_ns": 1791949882102589646,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-64.bin",
+      "raw_sha256": "d1a8c227010989d197dc2161bf7544cc1272ba8f272f0e3e260686df63ce7614",
+      "passed": true
+    },
+    {
+      "center_mhz": 5650,
+      "started_unix_ns": 1791949882468744281,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-65.bin",
+      "raw_sha256": "362657fc61fd60674fef030c328fa7377d1affd38bc1131a99f1bb03977fa339",
+      "passed": true
+    },
+    {
+      "center_mhz": 5665,
+      "started_unix_ns": 1791949882692008539,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-66.bin",
+      "raw_sha256": "6070f1b77bc778236b8fe267f34b4cfa10db909d336c8fc19c3c53e64c0ee912",
+      "passed": true
+    },
+    {
+      "center_mhz": 5680,
+      "started_unix_ns": 1791949882915620683,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-67.bin",
+      "raw_sha256": "a16574ddc23d801d4ec149af300bbb2fa1468a0126c94c03a0fad223b99e21ae",
+      "passed": true
+    },
+    {
+      "center_mhz": 5695,
+      "started_unix_ns": 1791949883280930171,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-68.bin",
+      "raw_sha256": "2ae42c4e16324bb90e9580452834eeceaece23a07d5969f112cd96e58c6150d5",
+      "passed": true
+    },
+    {
+      "center_mhz": 5710,
+      "started_unix_ns": 1791949883646638752,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-69.bin",
+      "raw_sha256": "9054dae09976e2516bb06c4c69e0560f12d5cbf6dd6f1cd7fba8aa6ac1e96377",
+      "passed": true
+    },
+    {
+      "center_mhz": 5725,
+      "started_unix_ns": 1791949883869904673,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-70.bin",
+      "raw_sha256": "1dc9374d9740cbc5e0b9e146604160e2fd1f2d603834b912e45c16bf83c54b68",
+      "passed": true
+    },
+    {
+      "center_mhz": 5740,
+      "started_unix_ns": 1791949884235008787,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-71.bin",
+      "raw_sha256": "294b4ae41dabd1152b467bac8765bd5fc3a5d0e4699c7e708789febfe27e2a67",
+      "passed": true
+    },
+    {
+      "center_mhz": 5755,
+      "started_unix_ns": 1791949884595968845,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-72.bin",
+      "raw_sha256": "a400f0ac6b3c202643d2a5083e6d470496cee79196ee1161b959a161049cf4be",
+      "passed": true
+    },
+    {
+      "center_mhz": 5770,
+      "started_unix_ns": 1791949884819413296,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-73.bin",
+      "raw_sha256": "e9cb1695b44c748799b8a401154a030710f2f0d60dc42d57c63ccf7095447c0e",
+      "passed": true
+    },
+    {
+      "center_mhz": 5785,
+      "started_unix_ns": 1791949885181846080,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-74.bin",
+      "raw_sha256": "08ddd94d3466d4484dccb612c66618efc9a6520d33123d71c86b465a812fdf15",
+      "passed": true
+    },
+    {
+      "center_mhz": 5800,
+      "started_unix_ns": 1791949885539923293,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-75.bin",
+      "raw_sha256": "2e672a0923c30531bf311b667f04b02166f2feb8bd737e965e22731bbea09ad2",
+      "passed": true
+    },
+    {
+      "center_mhz": 5815,
+      "started_unix_ns": 1791949885892548017,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-76.bin",
+      "raw_sha256": "3cd520d0fa7a42b81557f4d0233680924beeccb09e9d26a98fb3316002780ae5",
+      "passed": true
+    },
+    {
+      "center_mhz": 5830,
+      "started_unix_ns": 1791949886115690601,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-77.bin",
+      "raw_sha256": "041e4d0c05228c2280feb1936a0892fe628f67e490befc131a108e0078ab2cb0",
+      "passed": true
+    },
+    {
+      "center_mhz": 5845,
+      "started_unix_ns": 1791949886465136744,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-78.bin",
+      "raw_sha256": "a4573237638508e5174b253d9fa7f3aee274e2d9e46c1719afd00a51d22ec02d",
+      "passed": true
+    },
+    {
+      "center_mhz": 5860,
+      "started_unix_ns": 1791949886688351706,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-79.bin",
+      "raw_sha256": "422084fade4d36ce166edec6b80e7c732c290dc56b87b78f637d3d0aa686262d",
+      "passed": true
+    },
+    {
+      "center_mhz": 5875,
+      "started_unix_ns": 1791949886911904524,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-80.bin",
+      "raw_sha256": "0bd855fd512f742cc35fe8ae80b5d0ed545b361eb4674b47a94a53afa8edc864",
+      "passed": true
+    },
+    {
+      "center_mhz": 5890,
+      "started_unix_ns": 1791949887136904951,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-81.bin",
+      "raw_sha256": "ef4791fd752345dc983bc76d814bb16bff81e73ad1987b6518706332b9e73d3f",
+      "passed": true
+    },
+    {
+      "center_mhz": 5905,
+      "started_unix_ns": 1791949887360639245,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-82.bin",
+      "raw_sha256": "2cefe6a785addaa03214265cffa70b598ec2a9035fa4ba96877d1a0e8187fb04",
+      "passed": true
+    },
+    {
+      "center_mhz": 5920,
+      "started_unix_ns": 1791949887584000937,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-83.bin",
+      "raw_sha256": "5968c4eee12a0563fc03ae23eda0f259697d88067193f0cd5f17b8e9e3332522",
+      "passed": true
+    },
+    {
+      "center_mhz": 5935,
+      "started_unix_ns": 1791949887807380874,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-84.bin",
+      "raw_sha256": "4b323e112042c9465ad7e753e2d67200aae2e5cfbc6048d02b977afebef41d51",
+      "passed": true
+    },
+    {
+      "center_mhz": 5950,
+      "started_unix_ns": 1791949888031338766,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-85.bin",
+      "raw_sha256": "f4c79f246e54d0dabaf9ada5556107c9f5cd6e599baa0935b5f35f68f104da03",
+      "passed": true
+    },
+    {
+      "center_mhz": 5955,
+      "started_unix_ns": 1791949888255329771,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-86.bin",
+      "raw_sha256": "f0ef5283dbd3dfba102f27c9508d1b41033cd97b251c6c39cb02d460e5c09d6f",
+      "passed": true
+    },
+    {
+      "center_mhz": 5970,
+      "started_unix_ns": 1791949888623505106,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-87.bin",
+      "raw_sha256": "cfca21abc1e8762b0a7aa65c6dd80a63fcba761bcc8ad34a1b18ccb059012026",
+      "passed": true
+    },
+    {
+      "center_mhz": 5985,
+      "started_unix_ns": 1791949889005815437,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-88.bin",
+      "raw_sha256": "9f5d714a17c539cd3d6f5ca08326cfc2472751c93ae734eac8b331783486bddf",
+      "passed": true
+    },
+    {
+      "center_mhz": 6000,
+      "started_unix_ns": 1791949889229858210,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-89.bin",
+      "raw_sha256": "729f5d809df3261df1fccd2a622dc62cc2da70f756ec7efe0ddacf686f2da2fd",
+      "passed": true
+    },
+    {
+      "center_mhz": 6015,
+      "started_unix_ns": 1791949889597091733,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-90.bin",
+      "raw_sha256": "f8426817bae1b4a6c5de54138835acd5f3f1bc15ff33dd4d37aefa21a8f2340f",
+      "passed": true
+    },
+    {
+      "center_mhz": 6030,
+      "started_unix_ns": 1791949889966026219,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-91.bin",
+      "raw_sha256": "490af06fd56fca8f5e0e18d5572850eba2591d6c64886aa615b86f2bc0a03d4b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6045,
+      "started_unix_ns": 1791949890349846165,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-92.bin",
+      "raw_sha256": "48494ed7cb748e730e34879590bd29cae099b01c346261b950758e7a60e8a14a",
+      "passed": true
+    },
+    {
+      "center_mhz": 6060,
+      "started_unix_ns": 1791949890573041467,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-93.bin",
+      "raw_sha256": "d1453825ff768cb34c1ab7ba5a93aadd123a03398dd0cf8ea47669cd6104deee",
+      "passed": true
+    },
+    {
+      "center_mhz": 6075,
+      "started_unix_ns": 1791949890956927279,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-94.bin",
+      "raw_sha256": "2190e5a2c268cdb7e787ad7ade979a9501fa110855e23a36a6da3aa79bcc86c1",
+      "passed": true
+    },
+    {
+      "center_mhz": 6090,
+      "started_unix_ns": 1791949891318997845,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-95.bin",
+      "raw_sha256": "7b0c388cda1469cde4dbf6e9a7cdccf9c41b8cb103131e88535e53d072370c40",
+      "passed": true
+    },
+    {
+      "center_mhz": 6105,
+      "started_unix_ns": 1791949891680933112,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-96.bin",
+      "raw_sha256": "5b6ea5ed1cbab878df337e95cdd8ada5c34e1327121aff02dbaf55a14b99795c",
+      "passed": true
+    },
+    {
+      "center_mhz": 6120,
+      "started_unix_ns": 1791949891904188559,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-97.bin",
+      "raw_sha256": "6a49eb056e903bdaab836bf0eb1eb3813790266981e824aad066daa09f1a03f2",
+      "passed": true
+    },
+    {
+      "center_mhz": 6135,
+      "started_unix_ns": 1791949892293143175,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-98.bin",
+      "raw_sha256": "c081a262e9bd35ba191e7aeb59361aa15a72ef20961bafbe6b4a11bfee6475b6",
+      "passed": true
+    },
+    {
+      "center_mhz": 6150,
+      "started_unix_ns": 1791949892657153139,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-99.bin",
+      "raw_sha256": "b573b1165dadf4feb51fc3bdcf8fe53b626144445652ee327c7bdfbbe9c78dfe",
+      "passed": true
+    },
+    {
+      "center_mhz": 6165,
+      "started_unix_ns": 1791949893018395570,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-100.bin",
+      "raw_sha256": "19dd60e75fb37924806eab4d3a81031fa7afd61a26710a4035d0b53c85e1ce26",
+      "passed": true
+    },
+    {
+      "center_mhz": 6180,
+      "started_unix_ns": 1791949893241900723,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-101.bin",
+      "raw_sha256": "c5ffcba88f06ec997f3c07ba7ced1b6c040eb38693d752aeeee96d6022ec16df",
+      "passed": true
+    },
+    {
+      "center_mhz": 6195,
+      "started_unix_ns": 1791949893599865694,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-102.bin",
+      "raw_sha256": "fe52a0ddf2f91cf8ffccd8cfb0831eae14d68f10092970be75c6dfe0627cb067",
+      "passed": true
+    },
+    {
+      "center_mhz": 6210,
+      "started_unix_ns": 1791949893956067012,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-103.bin",
+      "raw_sha256": "5dc67356c5458386f65906019e7609095e9361191ab2ec35885239620321fad7",
+      "passed": true
+    },
+    {
+      "center_mhz": 6225,
+      "started_unix_ns": 1791949894317616489,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-104.bin",
+      "raw_sha256": "ab02cc9f55090c1aa647864105c04c5225b466da1a9026ac00bd9655baf0d5a5",
+      "passed": true
+    },
+    {
+      "center_mhz": 6240,
+      "started_unix_ns": 1791949894540852487,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-105.bin",
+      "raw_sha256": "d080682a87c6636a397935631f4df84d87664589b9a242e61100b5d99d0b1c5d",
+      "passed": true
+    },
+    {
+      "center_mhz": 6255,
+      "started_unix_ns": 1791949894905734347,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-106.bin",
+      "raw_sha256": "ae825bdc6a8c7949016ccff22ba4922d41341acccbea91cb2d795808b66a9339",
+      "passed": true
+    },
+    {
+      "center_mhz": 6270,
+      "started_unix_ns": 1791949895271636188,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-107.bin",
+      "raw_sha256": "c534e75ddce84094257f81dca5438fbbfab874f8aff31af7c88ab2378d5cf5f1",
+      "passed": true
+    },
+    {
+      "center_mhz": 6285,
+      "started_unix_ns": 1791949895638166951,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-108.bin",
+      "raw_sha256": "beda759cb55cd300368555b6ef9865ff7bffbc4e9042435b0bba53d3ec62a406",
+      "passed": true
+    },
+    {
+      "center_mhz": 6300,
+      "started_unix_ns": 1791949895862650324,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-109.bin",
+      "raw_sha256": "5c600db09495b2a05aa27ce03001ea106c77b07acdc8783ef8a69d2f1d272de1",
+      "passed": true
+    },
+    {
+      "center_mhz": 6315,
+      "started_unix_ns": 1791949896230587537,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-110.bin",
+      "raw_sha256": "bb1123bff653f7bd24c87b7a0be017c996670698f6f9319441beacf043238471",
+      "passed": true
+    },
+    {
+      "center_mhz": 6330,
+      "started_unix_ns": 1791949896598324767,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-111.bin",
+      "raw_sha256": "c17a541c82ac74830496ca04148069356a750eaf847f12b9ffa36241b5fa6cfb",
+      "passed": true
+    },
+    {
+      "center_mhz": 6345,
+      "started_unix_ns": 1791949896963660123,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-112.bin",
+      "raw_sha256": "efe6846948e7571e07376bf37c9c1f6e3332ccb1dc7b67484e32be610d82d72b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6360,
+      "started_unix_ns": 1791949897186968688,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-113.bin",
+      "raw_sha256": "00e8aa4f5ece6085d6a6ecd8369828b6867798cb45934540aefe7f11665d8d6b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6375,
+      "started_unix_ns": 1791949897551693355,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-114.bin",
+      "raw_sha256": "3b4215db87b0715d8a7d1449c708a8d8a6c44890518c5c54efc1e37d76aacd39",
+      "passed": true
+    },
+    {
+      "center_mhz": 6390,
+      "started_unix_ns": 1791949897917705996,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-115.bin",
+      "raw_sha256": "5c9aaaad86cddc5b581922a3cb5b4aca8795b37c19a3028cc1689064d3c7f04b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6405,
+      "started_unix_ns": 1791949898281010316,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-116.bin",
+      "raw_sha256": "112c834bf5373f3929a121e9ffa5b993a686269d083adb83825bb827fc11f46a",
+      "passed": true
+    },
+    {
+      "center_mhz": 6420,
+      "started_unix_ns": 1791949898504310755,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-117.bin",
+      "raw_sha256": "5b4b878f5765a6c08cf771c6bd90c55e44120d6998b0dbf6865fb4146077a4da",
+      "passed": true
+    },
+    {
+      "center_mhz": 6435,
+      "started_unix_ns": 1791949898869857604,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-118.bin",
+      "raw_sha256": "729d4265146a4767a23783b415cb0a79bea2a7a894b09c2c2621f1e3d04fae8c",
+      "passed": true
+    },
+    {
+      "center_mhz": 6450,
+      "started_unix_ns": 1791949899229227457,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-119.bin",
+      "raw_sha256": "a985b98fd13d1723f26805a867008438ca52a9b9990acbfe3632acca212aadab",
+      "passed": true
+    },
+    {
+      "center_mhz": 6465,
+      "started_unix_ns": 1791949899590498337,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-120.bin",
+      "raw_sha256": "e24af66c7132336c3ee48913ddb13ed6a6bb738adb0c171f2023f73b821b9b95",
+      "passed": true
+    },
+    {
+      "center_mhz": 6480,
+      "started_unix_ns": 1791949899814406197,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-121.bin",
+      "raw_sha256": "8c374b646a56328796fb2061d48a9e55917edbd21f74491d00ddcc5a854a0a05",
+      "passed": true
+    },
+    {
+      "center_mhz": 6495,
+      "started_unix_ns": 1791949900173750111,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-122.bin",
+      "raw_sha256": "512d3f0da89b625b76d285bd71fad6ca2f69e8c4b0a1b6111cba530ccaa5e995",
+      "passed": true
+    },
+    {
+      "center_mhz": 6510,
+      "started_unix_ns": 1791949900536709298,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-123.bin",
+      "raw_sha256": "3320e2a4f85aa0838a642bb461519fc7c8ad4ee51e4218ba496c381fb93807a3",
+      "passed": true
+    },
+    {
+      "center_mhz": 6525,
+      "started_unix_ns": 1791949900897164968,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-124.bin",
+      "raw_sha256": "647b6e29ae2152f48221b32c66db3ade71bcf226646921c059e8735b4b166371",
+      "passed": true
+    },
+    {
+      "center_mhz": 6540,
+      "started_unix_ns": 1791949901120687390,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-125.bin",
+      "raw_sha256": "0e6e320fae226c8d767c5a51574cb8354ba9b50580f591afd5fc94ef2d0894c0",
+      "passed": true
+    },
+    {
+      "center_mhz": 6555,
+      "started_unix_ns": 1791949901481079257,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-126.bin",
+      "raw_sha256": "9dfdd3a3383952d4ef3b876cb30e9f97ee8513755f3e2b26a272a5b89e753711",
+      "passed": true
+    },
+    {
+      "center_mhz": 6570,
+      "started_unix_ns": 1791949901836615526,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-127.bin",
+      "raw_sha256": "3d71d50539104b97325ca810e15ce56b799eb9a3bb718f06a3a1f6a0fdf87757",
+      "passed": true
+    },
+    {
+      "center_mhz": 6585,
+      "started_unix_ns": 1791949902190649071,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-128.bin",
+      "raw_sha256": "00a97171ad4fd2541fb4f368f9b3b0e778d8052eca56d92fcab47092df3df365",
+      "passed": true
+    },
+    {
+      "center_mhz": 6600,
+      "started_unix_ns": 1791949902414280100,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-129.bin",
+      "raw_sha256": "6d6e3b4730a1369e100c55da854ffbedf83f352bde931de1a1c3127c7a508501",
+      "passed": true
+    },
+    {
+      "center_mhz": 6615,
+      "started_unix_ns": 1791949902765925427,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-130.bin",
+      "raw_sha256": "fbc033c4d1ade1143a96fe70cb3a3d9df1617070e5794164856a4df9c72fd466",
+      "passed": true
+    },
+    {
+      "center_mhz": 6630,
+      "started_unix_ns": 1791949903116177799,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-131.bin",
+      "raw_sha256": "364698d0b2e9461a6e4a6bde14b2f1c8fbad0bbfce719ce34fa06b7200b8abf2",
+      "passed": true
+    },
+    {
+      "center_mhz": 6645,
+      "started_unix_ns": 1791949903468286542,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-132.bin",
+      "raw_sha256": "48c91b19757d5bf3b7d658bd3575a1f2053188bd5d0e9b38d58085e0345ee616",
+      "passed": true
+    },
+    {
+      "center_mhz": 6660,
+      "started_unix_ns": 1791949903697687406,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-133.bin",
+      "raw_sha256": "bd76320291c3af643813ec5ca50233a2cac78c4220f0312ad4125ba43f0dbc9d",
+      "passed": true
+    },
+    {
+      "center_mhz": 6675,
+      "started_unix_ns": 1791949904059068923,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-134.bin",
+      "raw_sha256": "211f40732d79e0f53b4f50cf0c7b695bc43d82f01e3b210fac51ae6815158fc7",
+      "passed": true
+    },
+    {
+      "center_mhz": 6690,
+      "started_unix_ns": 1791949904422228371,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-135.bin",
+      "raw_sha256": "bc76484251414a78a9877d10ff752058f92141e44481f0939a680e8c95340a3b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6705,
+      "started_unix_ns": 1791949904805023354,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-136.bin",
+      "raw_sha256": "ebffb71091107476fb520275baf73fbbd04682cda7c23cfe02ff1a352cceec9b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6720,
+      "started_unix_ns": 1791949905029154579,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-137.bin",
+      "raw_sha256": "7cfe219a0cb791daa5b0d11a912a22970fe878ed7446868cad4acf933a0822a7",
+      "passed": true
+    },
+    {
+      "center_mhz": 6735,
+      "started_unix_ns": 1791949905413801404,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-138.bin",
+      "raw_sha256": "9ca105552256667d66597592d2cff48db1db55d36618c2c64647799dbe030670",
+      "passed": true
+    },
+    {
+      "center_mhz": 6750,
+      "started_unix_ns": 1791949905791584811,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-139.bin",
+      "raw_sha256": "232a8962f8d568d7c74fa19dd21b1ba952118c85f391c9080411fc8485a1b887",
+      "passed": true
+    },
+    {
+      "center_mhz": 6765,
+      "started_unix_ns": 1791949906168414083,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-140.bin",
+      "raw_sha256": "c3cc82fc0e2f3c67ab0a00c73a8a60e21934fa49dbb81d6fdba9ece5543fcc49",
+      "passed": true
+    },
+    {
+      "center_mhz": 6780,
+      "started_unix_ns": 1791949906391871057,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-141.bin",
+      "raw_sha256": "d4626b716097f440f53f2ed0b8a62fb0abd32fff8557d65130ee22fbed1efc5e",
+      "passed": true
+    },
+    {
+      "center_mhz": 6795,
+      "started_unix_ns": 1791949906785149751,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-142.bin",
+      "raw_sha256": "f368bbeeb27b075a49171727203c5e9d753ec375daa6b0c019101531deb6cefe",
+      "passed": true
+    },
+    {
+      "center_mhz": 6810,
+      "started_unix_ns": 1791949907180455090,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-143.bin",
+      "raw_sha256": "fedcfa7654a1cdd6136a35371f15518282a6379f9b15ac14d745d34694ccad8f",
+      "passed": true
+    },
+    {
+      "center_mhz": 6825,
+      "started_unix_ns": 1791949907570857821,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-144.bin",
+      "raw_sha256": "f4b547254c190d78f4c6a314cc6f850b715f53099cf35009659734c1a9cc3f6a",
+      "passed": true
+    },
+    {
+      "center_mhz": 6840,
+      "started_unix_ns": 1791949907794601674,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-145.bin",
+      "raw_sha256": "b9f98c16122686e3ab62a1392877ee08bdd50166838d8f26f049314ba6f90d1c",
+      "passed": true
+    },
+    {
+      "center_mhz": 6855,
+      "started_unix_ns": 1791949908179943696,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-146.bin",
+      "raw_sha256": "a1c34bf315f7cdaea8ed1ed5e851c4d65696e626c960b17952c93aa9df4661b5",
+      "passed": true
+    },
+    {
+      "center_mhz": 6870,
+      "started_unix_ns": 1791949908557471312,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-147.bin",
+      "raw_sha256": "61796beb67ea23bb76ec132447e86466e4210d14bf1e918577a268377de93b6b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6885,
+      "started_unix_ns": 1791949908929098892,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-148.bin",
+      "raw_sha256": "2f12d2ac7091f91fef7f4f44f34e9f45173da9c55bcef2c20da8a990dcd64a87",
+      "passed": true
+    },
+    {
+      "center_mhz": 6900,
+      "started_unix_ns": 1791949909155668499,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-149.bin",
+      "raw_sha256": "6ecf0cfd2948072eb0c69fe1294fee8dfef78ee30c92c9c35960d547bd187e84",
+      "passed": true
+    },
+    {
+      "center_mhz": 6915,
+      "started_unix_ns": 1791949909526298821,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-150.bin",
+      "raw_sha256": "96aac51e284fdd9efc60ed0e8336dd2a5849363c4d2dd783732b17c60e6baeb7",
+      "passed": true
+    },
+    {
+      "center_mhz": 6930,
+      "started_unix_ns": 1791949909913781556,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-151.bin",
+      "raw_sha256": "ddc2e4cd1d26633c82f421aa3ef5aa2a8993ef5850f52fcf0a028c340578393b",
+      "passed": true
+    },
+    {
+      "center_mhz": 6945,
+      "started_unix_ns": 1791949910296713246,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-152.bin",
+      "raw_sha256": "0866f2467384d804f46f4c991aca644ed85a74d4bd4f6335e077171354441157",
+      "passed": true
+    },
+    {
+      "center_mhz": 6960,
+      "started_unix_ns": 1791949910520145842,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-153.bin",
+      "raw_sha256": "3cfc2efdedf9ec034b040ba53b0c35ab68d6218c080ba6b99e039025625d88c8",
+      "passed": true
+    },
+    {
+      "center_mhz": 6975,
+      "started_unix_ns": 1791949910906048805,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-154.bin",
+      "raw_sha256": "f9e1eed07ac1971cbf8cffc74ce272ea5ee37171321f0144e3ac18c694f719c1",
+      "passed": true
+    },
+    {
+      "center_mhz": 6990,
+      "started_unix_ns": 1791949911274648782,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-155.bin",
+      "raw_sha256": "c96b2353df7ea36a0ed017701f872b122b09deb37dc288079be5b88f2f6555e7",
+      "passed": true
+    },
+    {
+      "center_mhz": 7005,
+      "started_unix_ns": 1791949911639752703,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-156.bin",
+      "raw_sha256": "571d6313b7c5b2f85dff4fd451009961452c16f61e0633264a6e5caa7037a4ef",
+      "passed": true
+    },
+    {
+      "center_mhz": 7020,
+      "started_unix_ns": 1791949911862949988,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-157.bin",
+      "raw_sha256": "18231b16e020e0a68b3dd01cc2e508ccd2af4e5b8e8b7c0e2e19eab52fe4586c",
+      "passed": true
+    },
+    {
+      "center_mhz": 7035,
+      "started_unix_ns": 1791949912225877716,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-158.bin",
+      "raw_sha256": "490dd8f0e72f7a46f302dd4cab349b0ed0c4dab103b65220c29771b841340859",
+      "passed": true
+    },
+    {
+      "center_mhz": 7050,
+      "started_unix_ns": 1791949912586244927,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-159.bin",
+      "raw_sha256": "0c67ca827c7bb18f7de4c332773306d8df430dc4babcfeeb6508b717b0ee239f",
+      "passed": true
+    },
+    {
+      "center_mhz": 7065,
+      "started_unix_ns": 1791949912963681545,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-160.bin",
+      "raw_sha256": "b41e6fc1b42b1ca77a4f6a1bcfb1905c9bf6d4b6209fad13717caef16d209278",
+      "passed": true
+    },
+    {
+      "center_mhz": 7080,
+      "started_unix_ns": 1791949913187202889,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-161.bin",
+      "raw_sha256": "fcadf01116ce8a3ddb54956613ce444f05e6ac34925f0a24264130d712f667c5",
+      "passed": true
+    },
+    {
+      "center_mhz": 7095,
+      "started_unix_ns": 1791949913561904725,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-162.bin",
+      "raw_sha256": "2996fadd50d8aaecace42249f6b95689b286ae085b2e9664bc8261446c603a00",
+      "passed": true
+    },
+    {
+      "center_mhz": 7110,
+      "started_unix_ns": 1791949913921839989,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-163.bin",
+      "raw_sha256": "07afea6851dbfe8f5c01ac31d1ffcc5dbaa2c33711fcf9b4da7923e8d308d7d3",
+      "passed": true
+    },
+    {
+      "center_mhz": 7115,
+      "started_unix_ns": 1791949914282369017,
+      "raw": "/home/plaing/rtl8922-sdr/build-survey/rtl8922-full-band-survey-20261013/tile-164.bin",
+      "raw_sha256": "673fd11fd07cd283e88b370d610e1a831eee108b56b7738f2bcc860de1ec52b2",
+      "passed": true
+    }
+  ],
+  "sample_rate": 20000000,
+  "fft_size": 2048,
+  "spectra_averaged_per_row": 16,
+  "tile_displayed_seconds": 0.1998848,
+  "mosaic_bin_mhz": 0.25,
+  "trusted_halfwidth_mhz": 8,
+  "overlap_blend": "Linear power; weights taper from 6 to 8 MHz from each center",
+  "dc_removal": "Per-FFT complex mean subtraction",
+  "color_limits_dbfs": [
+    -71.39891042954497,
+    -42.27759507415685
+  ],
+  "ranges_mhz": [
+    [
+      2312,
+      2382
+    ],
+    [
+      2412,
+      2484
+    ],
+    [
+      2500,
+      2515
+    ],
+    [
+      4900,
+      7115
+    ]
+  ],
+  "images": [
+    "/home/plaing/rtl8922-sdr/output/full-band-survey/rtl8922-full-span-survey.png",
+    "/home/plaing/rtl8922-sdr/output/full-band-survey/rtl8922-survey-band-1.png",
+    "/home/plaing/rtl8922-sdr/output/full-band-survey/rtl8922-survey-band-2.png",
+    "/home/plaing/rtl8922-sdr/output/full-band-survey/rtl8922-survey-band-3.png"
+  ]
+}

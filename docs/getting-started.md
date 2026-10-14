@@ -35,19 +35,21 @@ skips when those dependencies are absent. LoRa setup is described in the
 ## Build the receiver
 
 Install matching kernel headers, GCC/G++, make, git, CMake, SoapySDR development
-files, `iw`, `pciutils`, NetworkManager and libiio through your distribution.
+files, single-precision FFTW (`libfftw3-dev`), pkg-config, `iw`, `pciutils`,
+NetworkManager and libiio through your distribution.
 Then, from the repository root:
 
 ```sh
-bash driver/prepare.sh
-make -C vendor/rtw89 -j4
+bash driver/prepare-default.sh
+make -C vendor/rtw89-paxi-wide -j4
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j4
 ```
 
 The preparation script downloads the source and firmware pinned by
-[`driver/upstream.json`](../driver/upstream.json), and applies the working patch.
-It neither installs nor loads modules. Experimental driver/firmware patches
+[`driver/upstream.json`](../driver/upstream.json), and reconstructs the separate PAXI profile used by the default 160 MS/s demo.
+It neither installs nor loads modules. `driver/prepare.sh` still reconstructs
+the unchanged working driver in `vendor/rtw89`. Experimental driver/firmware patches
 are alternatives built from their documented inputs; do not stack them.
 
 The plugin and application must use the same SoapySDR ABI. When `/usr` and
@@ -57,7 +59,7 @@ outside the default `build/` directory.
 
 ## Start reception explicitly
 
-The original beastmode demo is stopped. Before using its card, inspect
+Before using the original beastmode card, inspect
 `rtl8922-live-demo.service` and the loopback demo status if available. Do not
 run a second receiver or overwrite working modules while they are loaded.
 For another machine, use its PCI address and its actual regulatory country.
@@ -69,7 +71,7 @@ sudo env RTL8922_PCI=0000:0d:00.0 \
   RTL8922_IW=/usr/sbin/iw RTL8922_COUNTRY=CA \
   SOAPY_SDR_ROOT="$PWD/build/soapy-root" \
   SOAPY_SDR_PLUGIN_PATH="$PWD/build" \
-  bash run-receiver.sh "$PWD/.venv/bin/python" run-live-demo.py
+  "$PWD/.venv/bin/python" run-demo-service.py
 ```
 
 The launcher refuses a bound card, loaded experiment modules or occupied
@@ -88,14 +90,26 @@ ssh -N -L 8732:127.0.0.1:8732 beastmode
 A different local port works too; use that port in the browser. The server is
 loopback-only and commands must come from the exact same local origin.
 
-1. Wait for **Live · 40 MS/s**, then tune within 2422–2462 MHz.
-2. Choose the text close-up or full 40-MHz view. Pausing freezes the display;
-   the receiver keeps draining I/Q.
+1. Wait for **Live · 160 MS/s**, initially at **5250 MHz**.
+   Choose a 2.4 GHz channel center or a 5 MHz center in 5005–7115 MHz.
+   Retuning briefly pauses sampling and marks a waterfall gap; it keeps the
+   driver loaded and the page open.
+   Reception continues until stopped. With `run-demo-service.py`, receive faults
+   automatically reload the isolated driver and reconnect the browser, marking a gap.
+2. Choose the text close-up or full 160-MHz view (5170–5330 MHz). Pausing freezes the display;
+   the receiver keeps draining I/Q. The FFT targets 240 frames/s, retaining
+   262,144 points (610 Hz bins). Incoming waterfall rows are batched at screen
+   refresh; measured FFT/server rates appear below the plots.
 3. For a Pluto signal, choose text or reference tone and press **Start Pluto TX**.
    This transmits from the external Pluto, not the Wi-Fi card. Starting requires
    live reception and an idle Pluto transmitter.
 4. **Stop TX** mutes Pluto. **Stop demo & release hardware** ends the session.
    Closing a browser tab does not stop reception.
+
+For the previous tunable 40 MS/s demo, prepare/build the working driver using
+`bash driver/prepare.sh` and `make -C vendor/rtw89 -j4`, then launch with
+`RTL8922_CAPTURE_MODE=legacy40`. Plain Soapy devices now default to PAXI;
+use `capture_mode=legacy` for low-rate applications.
 
 The transmitter timer, stale-receiver watchdog and normal shutdown mute TX
 and restore saved Pluto settings. A lost IIO connection can prevent restoration;
@@ -113,8 +127,8 @@ received I/Q, not a continuous recording or a synthetic text overlay.
 | Temporary path already exists | Inspect its owner. The launcher refuses to overwrite another session's firmware or configuration. |
 | Plugin not found or ABI mismatch | Match SoapySDR builds and set `SOAPY_SDR_PLUGIN_PATH`; isolate older installed plugins with `SOAPY_SDR_ROOT`. |
 | Browser cannot connect | Check launcher output and SSH forwarding. Use a localhost/loopback URL, not the remote host's LAN name. |
-| Tune/TX controls disabled | Wait for fresh receiver samples. Read the connection badge and capture status. Stop TX remains available. |
-| Allocation timeout / restart limit | Stop the launcher, check cleanup and restart explicitly. Indefinite capture is not qualified. |
+| Tune/TX controls disabled | Wait for fresh reception and any pending retune to finish. TX requires fresh samples. Stop TX remains available. |
+| Allocation timeout / restart limit | Stop the launcher, check cleanup and restart explicitly. PAXI requires a fresh driver load after any stop/fault. Indefinite continuity is not qualified. |
 | Research tests skip LoRa or private inputs | Expected on a public checkout; the suite states which checks did not run. |
 
 [Capabilities and measured limits](capabilities.md) · [Transmit quick start](transmit.md)

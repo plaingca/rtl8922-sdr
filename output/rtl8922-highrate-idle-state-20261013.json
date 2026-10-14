@@ -1,0 +1,11 @@
+{
+  "demo_service": "inactive",
+  "demo_api": "<urlopen error [Errno 111] Connection refused>",
+  "card_bound": false,
+  "loaded_test_modules": [],
+  "temporary_firmware": false,
+  "temporary_nm_config": false,
+  "reset_method": "flr bus",
+  "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+  "pluto_restored": true
+}

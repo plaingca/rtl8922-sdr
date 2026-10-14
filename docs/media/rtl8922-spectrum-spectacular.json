@@ -1,0 +1,79 @@
+{
+  "title": "The RTL8922 Spectrum Spectacular",
+  "duration_seconds": 69.03333333333333,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "codec": "H.264",
+    "audio": "AAC stereo"
+  },
+  "sources": {
+    "docs/media/live-demo.png": "a0e9933ff1022259cf439da900d4b6b7c787902f91c1e32b2d0d52f165ccb2c1",
+    "output/wifi-decode/he160-wide-packet.png": "38834610094a24ed2e58ee5be42c563bba8e87fd9c3e9f22b786cdc32d443ce7",
+    "output/wifi-decode/decoded-beacon.png": "23708eb70dd6f6f2cb8d331a3515c5d2d8fac8245ad38627b5d1eefdaac02a7d",
+    "output/full-band-survey/rtl8922-full-span-survey.png": "fefc12c0496e96f2fea37d6f0523cb9c102bc4097fb90067a33c6ff542b17655"
+  },
+  "browser_recording_sha256": "1860b7922e9ba8b18dc86096a566d6e501f19479c76b79c4cb487aae4b71e742",
+  "browser_recording_note": "Optional passive UI footage, no new RF stimulus; no counters removed. Offline render uses still fallback.",
+  "audio": "Original procedural music and effects; local eSpeak NG en-us+m3 synthetic announcer.",
+  "timeline": [
+    {
+      "start": 0.0,
+      "duration": 7.0,
+      "title": "STOP THE SCROLL.",
+      "narration": "Folks! Has your Wi-Fi card been wasting its life, doing Wi-Fi? Then step right up!",
+      "qualification": "Actual RTL8922AE receive experiments. Dealership enthusiasm sold separately."
+    },
+    {
+      "start": 7.0,
+      "duration": 9.7,
+      "title": "160",
+      "narration": "Introducing the R T L eighty nine twenty two! One hundred and sixty million complex samples, every second! That's a lot of radio!",
+      "qualification": "Experimental PAXI RX. 80 / 160 MS/s passed bounded 60-second application trials."
+    },
+    {
+      "start": 16.7,
+      "duration": 7.8,
+      "title": "LOOK AT THAT WATERFALL.",
+      "narration": "Real I Q! Real spectrum! Two hundred and forty F F Ts a second! Look at that waterfall!",
+      "qualification": "240 FFT/s target; screen refresh limits redraws. Recorded passive RX; Pluto TX off."
+    },
+    {
+      "start": 24.5,
+      "duration": 9.166666666666666,
+      "title": "ONE BURST. ALL 160 MHz.",
+      "narration": "And this beauty? One, one hundred and sixty megahertz Wi-Fi six burst! Eight slices! Eight valid header checksums!",
+      "qualification": "Same HE-SU PHY header in eight 20 MHz sections. Two-stream payload not decoded."
+    },
+    {
+      "start": 33.666666666666664,
+      "duration": 7.8,
+      "title": "THE CHECKSUMS CHECK OUT.",
+      "narration": "Want receipts? We decoded a four hundred and forty one byte beacon, all the way to a matching frame checksum!",
+      "qualification": "Legacy 20 MHz OFDM extracted from 160 MS/s I/Q. Independent FCS: a232c556."
+    },
+    {
+      "start": 41.46666666666666,
+      "duration": 8.366666666666667,
+      "title": "BUT WAIT! THERE'S MORE!",
+      "narration": "But wait! There's more! Two point four! Five! Six gigahertz! A stitched tour of the neighborhood!",
+      "qualification": "Sequentially stitched survey, not simultaneous full-band RX. Above 6 GHz RF unqualified."
+    },
+    {
+      "start": 49.83333333333333,
+      "duration": 8.033333333333333,
+      "title": "OVERFLOW? GET BACK UP.",
+      "narration": "Tune while streaming! And if the receiver overflows? It marks the gap, reloads, and gets back in the game!",
+      "qualification": "Retunes mark brief gaps without reload. Fault recovery reloads the isolated driver."
+    },
+    {
+      "start": 57.86666666666666,
+      "duration": 11.166666666666666,
+      "title": "RTL8922 SDR",
+      "narration": "R T L eighty nine twenty two S D R! Open source! Unreasonably entertaining! Experimental! Some assembly, and quite a lot of debugging, required!",
+      "qualification": "One receive path. Firmware held. Indefinite continuity, full-band EVM / sensitivity unqualified."
+    }
+  ],
+  "sha256": "4a10a329d69fc1d793c7d5673e019a2fb82a10748386338fd0acf6c5183967c9"
+}

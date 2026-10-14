@@ -1,0 +1,34 @@
+{
+  "upstream_commit": "8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356",
+  "kernel_release": "6.8.0-124-generic",
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "parallel_test_build": {
+    "generated_source_sha256": "8d1d60157bd7a890455f85716d72a931d825a7da67244edc6ed6526fc3ac4440",
+    "core_module_sha256": "bff6450c84a067add541b4565d5b8308944ef0a1acd29193beca952289f5142f",
+    "note": "After the measured trial, the tracked source additionally rejects a destination crossing an MMIO aperture boundary. The measured module predates that guard."
+  },
+  "paxi_prepared_build": {
+    "generated_source_sha256": "c5fc9f17cb456ff1e760a7a871181a7f5772031107386a9f5b4bdd55de28b485",
+    "core_module_sha256": "7b658638ae5aecea75e84353d0c20f7c0fced43aa47aefdbad2168d2e5c2fbf3",
+    "hardware_executed": false
+  },
+  "source_sha256": {
+    "research/streaming/analyze-matrix.py": "f97be6c36b14995a512f6ec43861f3c4aca115f2c1573c7581702abd0f24472e",
+    "research/streaming/copybench.c": "202e5e22e6cb3c22613da89af0357e4eccdface1ed767157bbf1e4b2f71b1a47",
+    "research/streaming/copybench.py": "f1a4951bef1d19a0455b0823357d862aee4582d8e1d46aa7062b37fd080fabbe",
+    "research/streaming/endurance.py": "93c6777cce947e7394e4933c38832b3b997ded231e18703098cef14777d6bed5",
+    "research/streaming/hardware.py": "2c000e627f7788d99659e3b988609154eb3f88848ab7921bcc15a50db7d7bc2d",
+    "research/streaming/inspect-firmware.py": "705ab374d14bfb85a5d9a7d7d54d8fcd44ecc3f15002587b71be7b482613ccad",
+    "research/streaming/inspect-paxi-descriptors.py": "a4dab68e5cda87d9be7cb8c1bca0d87fb6f1a871ab7a65ccce9f1e444520ea8c",
+    "research/streaming/parallel-copybench.c": "44556ec6134d7f77229bbd94447138dd775e7136b840351edb232d55bc9d5f37",
+    "research/streaming/parallel-copybench.py": "a559ad6eff217aba0d9d9af48aa53c953d085291d72c302896192379f0619e6e",
+    "research/streaming/paxi-frozen.c": "c5fc9f17cb456ff1e760a7a871181a7f5772031107386a9f5b4bdd55de28b485",
+    "research/streaming/paxi-frozen.py": "8a909a89324ca106bb9e168f8d8f4161b8b0fe1250d3ab3ab89ce122675067d1",
+    "research/streaming/prepare-experiment.py": "4397be33743b36446b7b4002b5fcb09006fd50b08ded5bf1403c4cf4f0ef7081",
+    "research/streaming/prepare-parallel.py": "43333e4ece3fd0635670c8c3891cfa5cf51f9d933661c1fa0bc5265e4f08a29c",
+    "research/streaming/prepare-paxi.py": "2d49d74f37635de5696bda65ee5898689b4757f411816908d88c4285d82199e6",
+    "research/streaming/run-session.py": "d396d1a6d4eeba76b6245a9300fb73076c9e68ae584bd3296b90a5765883aa87",
+    "research/streaming/stream-matrix.py": "1bed760de44be8932e068f17db1d44f4335b634856e3b9a8888d6d158464e1eb",
+    "research/streaming/summarize.py": "158f4e9bf8b0d70b45b4f4bc35199f02ff289540dab2475a76986ccda3886820"
+  }
+}

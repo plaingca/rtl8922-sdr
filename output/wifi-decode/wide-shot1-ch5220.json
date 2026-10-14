@@ -1,0 +1,253 @@
+{
+  "source_report": "output/rtl8922-wifi-wide-shot1-20261013.json",
+  "source_capture": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-wifi-wide-shot1-20261013.bin",
+  "source_report_sha256": "d0ac0e787f7f9e290e3e4815596b0d0bd5c265a938e9395094370e9eabca9402",
+  "source_interval_sha256": "cb24b726a2d8b8fd9d352e5b2b8ad0ffc0e7c11a2cf4b5d0fc90c964a63e5c63",
+  "source_rate": 160000000,
+  "source_center_mhz": 5250,
+  "channel_mhz": 5220.0,
+  "source_start_sample": 0,
+  "source_samples": 40000000,
+  "channel_rate": 20000000,
+  "channel_samples": 5000000,
+  "channelizer": "complex mixing then scipy.signal.resample_poly(up=1, down=8), default Kaiser FIR",
+  "phase_removed": false,
+  "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+  "reference_modification": "retain received FCS in PDU; CRC gate and PHY algorithms unchanged",
+  "equalized_symbols": 2041,
+  "equalizer_tags": 189,
+  "frame_count": 11,
+  "crc_pass_count": 11,
+  "frames": [
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 441,
+      "frame_sha256": "ab633274b561ec2660850c5de99991b4a9746179d55b2fa7633cb16ec09434c9",
+      "fcs_received": "2ac3ac8f",
+      "fcs_computed": "2ac3ac8f",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 441,
+        "encoding": 4,
+        "snr": 23.76754968473691,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152302.3802165235,
+        "beta": -1.2621479034423828
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 441,
+      "frame_sha256": "98ccb1206bed0cf2e5b1e1a0cc3a50ed0a779b60cbcaa5893d26cf14b0c8f217",
+      "fcs_received": "27d8b919",
+      "fcs_computed": "27d8b919",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 441,
+        "encoding": 4,
+        "snr": 23.040067533163455,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153435.5187717412,
+        "beta": -2.365950584411621
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 84,
+      "frame_sha256": "12ef0370bc1d2a2c3b5f594c1c3723d8a773db070e2ce5dac6362e247adcb0ed",
+      "fcs_received": "1876ebfb",
+      "fcs_computed": "1876ebfb",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 84,
+        "encoding": 4,
+        "snr": 22.947284537627972,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153121.77919043245,
+        "beta": -0.9266551733016968
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 130,
+      "frame_sha256": "3f59ef3f3359d499399ed8851932da1f8153d4f73822633d49a26195e0214114",
+      "fcs_received": "12a89a64",
+      "fcs_computed": "12a89a64",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 130,
+        "encoding": 4,
+        "snr": 22.833066487149445,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152594.47780316844,
+        "beta": -0.862197756767273
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 84,
+      "frame_sha256": "b67d2d074c5613a4259fc090ddf35de0f3a83b4c32b514c6761238c4e749d1ba",
+      "fcs_received": "2c98cdc2",
+      "fcs_computed": "2c98cdc2",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 84,
+        "encoding": 0,
+        "snr": 23.52563170658218,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153332.7051925918,
+        "beta": -1.479720950126648
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 130,
+      "frame_sha256": "9b6248e52a6726fd080cfa50d07a502cf06c6dd88421afbc865b49ad58ab2c00",
+      "fcs_received": "bbffde1f",
+      "fcs_computed": "bbffde1f",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 130,
+        "encoding": 0,
+        "snr": 24.78323484893731,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153051.67859331612,
+        "beta": -0.4664655327796936
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "92dcd8bb780dfdc294765987f780f1267771ddeff657876bcf9656d9f67b2965",
+      "fcs_received": "161f044b",
+      "fcs_computed": "161f044b",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 17.602945402813774,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152785.7255085784,
+        "beta": -1.7148514986038208
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "bb654fc8776d94c0d079916ede7f6c779261086ea3374575189b2be32ea55efd",
+      "fcs_received": "63d80e47",
+      "fcs_computed": "63d80e47",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 16.999952420362188,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153179.02204537098,
+        "beta": 0.20203107595443726
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "1804aa8c96cc120d87b225ceabba30668c66f763c9c9e1dd05cc66608aede3f6",
+      "fcs_received": "0b2b8c7f",
+      "fcs_computed": "0b2b8c7f",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 16.716556185535804,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152179.2608874014,
+        "beta": -2.2042198181152344
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 441,
+      "frame_sha256": "a27f8d82d3d0f6a53aaa4a927610d3df1457b8e52e620b8797458a5e178f5e89",
+      "fcs_received": "ec7e3b88",
+      "fcs_computed": "ec7e3b88",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 441,
+        "encoding": 4,
+        "snr": 22.98788345539283,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152995.11090139125,
+        "beta": -2.1122801303863525
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 115,
+      "frame_sha256": "b38b463e81f1b31d6e7675601d5bd22db24780d6b7026a2abe4ec47a4826239c",
+      "fcs_received": "15c79fb8",
+      "fcs_computed": "15c79fb8",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 115,
+        "encoding": 4,
+        "snr": 25.3570641006041,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152636.75794145107,
+        "beta": 0.14228850603103638
+      }
+    }
+  ],
+  "selected_frame": {
+    "kind": "beacon",
+    "type": 0,
+    "subtype": 8,
+    "bytes_including_fcs": 441,
+    "frame_sha256": "ab633274b561ec2660850c5de99991b4a9746179d55b2fa7633cb16ec09434c9",
+    "fcs_received": "2ac3ac8f",
+    "fcs_computed": "2ac3ac8f",
+    "crc_pass": true,
+    "metadata": {
+      "dlt": 105,
+      "frame bytes": 441,
+      "encoding": 4,
+      "snr": 23.76754968473691,
+      "nominal frequency": 5220000000.0,
+      "frequency offset": -152302.3802165235,
+      "beta": -1.2621479034423828
+    }
+  },
+  "selected_equalizer_symbol_offset": 0,
+  "selected_ofdm_symbols": 37
+}

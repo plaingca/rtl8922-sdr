@@ -1,0 +1,38 @@
+{
+  "scope": "Sequential native-i8 20 MS/s survey; supported center windows only, RF above 6 GHz unqualified",
+  "capture_report": "output/rtl8922-full-band-survey-20261013.json",
+  "tile_count": 164,
+  "all_tiles_passed": true,
+  "all_host_drops_zero": true,
+  "all_producer_loss_registers_zero": true,
+  "supported_windows_mhz": [
+    [
+      2312,
+      2382
+    ],
+    [
+      2412,
+      2484
+    ],
+    [
+      2500,
+      2515
+    ],
+    [
+      4900,
+      7115
+    ]
+  ],
+  "summed_window_width_mhz": 2372,
+  "sample_rate": 20000000,
+  "seconds_per_tile": 0.2,
+  "native_bytes_per_tile": 8000000,
+  "raw_bytes_total": 1312000000,
+  "first_tile_started_unix_ns": 1791949865645091790,
+  "last_tile_started_unix_ns": 1791949914282369017,
+  "first_to_last_tile_start_seconds": 48.637277227,
+  "raw_files_not_committed": true,
+  "mosaic_manifest": "output/full-band-survey/manifest.json",
+  "restoration_report": "output/rtl8922-full-survey-restoration-20261013.json",
+  "restoration_passed": true
+}

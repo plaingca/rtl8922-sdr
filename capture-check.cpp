@@ -12,7 +12,7 @@ int main() {
     if(seconds<.001||seconds>2) { std::cerr<<"capture duration out of bounds"<<std::endl; return 1; }
     const uint64_t count=static_cast<uint64_t>(rate*seconds);
     const std::string file=std::getenv("RTL8922_CAPTURE_FILE")?std::getenv("RTL8922_CAPTURE_FILE"):"/home/plaing/rtl8922-iq-research/soapy/coded-cf32.bin";
-    auto *dev=SoapySDR::Device::make(rate==40000000?"driver=rtl8922,experimental40=1":"driver=rtl8922");
+    auto *dev=SoapySDR::Device::make(rate==40000000?"driver=rtl8922,experimental40=1":"driver=rtl8922,capture_mode=legacy");
     if(!dev) return 1;
     auto *s=dev->setupStream(SOAPY_SDR_RX,SOAPY_SDR_CF32);
     dev->setSampleRate(SOAPY_SDR_RX,0,rate);

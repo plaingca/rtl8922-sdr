@@ -1,7 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
-driver=${RTL8922_DRIVER_DIR:-$root/vendor/rtw89}
+mode=${RTL8922_CAPTURE_MODE:-paxi160}
+case "$mode" in
+    paxi160) default_driver=$root/vendor/rtw89-paxi-wide ;;
+    legacy40) default_driver=$root/vendor/rtw89 ;;
+    *) echo 'RTL8922_CAPTURE_MODE must be paxi160 or legacy40' >&2; exit 2 ;;
+esac
+driver=${RTL8922_DRIVER_DIR:-$default_driver}
 pci=${RTL8922_PCI:-0000:0d:00.0}
 iw=${RTL8922_IW:-$(command -v iw || true)}
 firmware=${RTL8922_FIRMWARE:-$driver/firmware/rtw8922a_fw-4.bin}
@@ -12,7 +18,7 @@ if test "$#" -eq 0; then
     exit 2
 fi
 test "$EUID" -eq 0 || fail 'Run with sudo; debugfs and temporary module loading require root.'
-test -f "$firmware" || fail "Firmware not found: $firmware. Run driver/prepare.sh or set RTL8922_FIRMWARE."
+test -f "$firmware" || fail "Firmware not found: $firmware. Run driver/prepare-default.sh (PAXI), driver/prepare.sh (legacy), or set RTL8922_FIRMWARE."
 test -x "$iw" || fail 'iw was not found; install it or set RTL8922_IW to its executable path.'
 for tool in ip nmcli setpci lspci modprobe insmod rmmod install find; do
     command -v "$tool" >/dev/null || fail "Required command not found: $tool"
@@ -46,8 +52,16 @@ cleanup() {
     ip route show default
 }
 trap cleanup EXIT
-trap 'exit 130' INT
-trap 'exit 143' TERM
+stop_receiver() {
+    trap '' INT TERM
+    if test -n "${receiver_pid:-}" && kill -0 "$receiver_pid" 2>/dev/null; then
+        kill -TERM "$receiver_pid"
+        wait "$receiver_pid" || true
+    fi
+    exit "$1"
+}
+trap 'stop_receiver 130' INT
+trap 'stop_receiver 143' TERM
 printf '[device-rtl8922-iq-test]\nmatch-device=driver:rtw89_8922ae_git\nmanaged=0\n' > "$conf"
 nmcli general reload conf
 install -m 644 "$firmware" "$fw"
@@ -73,6 +87,10 @@ dbg=$(find /sys/kernel/debug/ieee80211 -path '*/rtw89/read_reg' -print -quit)
 test -n "$dbg"
 echo "DEBUGFS=$dbg"
 test "$#" -gt 0
-export RTL8922_IW="$iw" RTL8922_PCI="$pci"
+export RTL8922_IW="$iw" RTL8922_PCI="$pci" RTL8922_CAPTURE_MODE="$mode"
+export SOAPY_SDR_ROOT="${SOAPY_SDR_ROOT:-$root/build/soapy-root}"
+export SOAPY_SDR_PLUGIN_PATH="${SOAPY_SDR_PLUGIN_PATH:-$root/build}"
 cd "$root"
-"$@"
+"$@" &
+receiver_pid=$!
+wait "$receiver_pid"

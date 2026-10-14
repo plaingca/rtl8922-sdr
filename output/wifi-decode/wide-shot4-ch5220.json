@@ -1,0 +1,3198 @@
+{
+  "source_report": "output/rtl8922-wifi-wide-shot4-20261013.json",
+  "source_capture": "/home/plaing/rtl8922-sdr/build-streaming/rtl8922-wifi-wide-shot4-20261013.bin",
+  "source_report_sha256": "fa51ec19c840a82a409c9841ead62579065d01acc6a7aff9dd30e002b4bfe7b8",
+  "source_interval_sha256": "d57025d070f6af46d82bc111ec874235049388d66c5880d1272c550ec42b671a",
+  "source_rate": 160000000,
+  "source_center_mhz": 5250,
+  "channel_mhz": 5220.0,
+  "source_start_sample": 0,
+  "source_samples": 40000000,
+  "channel_rate": 20000000,
+  "channel_samples": 5000000,
+  "channelizer": "complex mixing then scipy.signal.resample_poly(up=1, down=8), default Kaiser FIR",
+  "phase_removed": false,
+  "reference_commit": "ad0598e4a874f4b8e1f391a1e0323e80df2b34ff",
+  "reference_modification": "retain received FCS in PDU; CRC gate and PHY algorithms unchanged",
+  "equalized_symbols": 5588,
+  "equalizer_tags": 2786,
+  "frame_count": 166,
+  "crc_pass_count": 166,
+  "frames": [
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.706791525943165,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153904.36640179562,
+        "beta": -2.572967529296875
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.410584534274966,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152651.03863970595,
+        "beta": 2.29713773727417
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.39459168746522,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154229.29555014675,
+        "beta": 2.3141589164733887
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.42675491493512,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152933.0700164303,
+        "beta": -0.09449473023414612
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.723525964698734,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150614.44609458986,
+        "beta": -1.9647895097732544
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.98705557698174,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151942.61699223687,
+        "beta": -0.0853518545627594
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 449,
+      "frame_sha256": "e6624e7cbaa89b766417cfeaf16f998c5a7f438dbbfabbd666a99569f4fba235",
+      "fcs_received": "ca19b68e",
+      "fcs_computed": "ca19b68e",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 449,
+        "encoding": 4,
+        "snr": 23.207172840043793,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152420.75617344124,
+        "beta": 0.42454060912132263
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.521835355065631,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152166.20637707858,
+        "beta": 0.6714234948158264
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.5027488894255,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149711.47670646483,
+        "beta": 0.9024339914321899
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "1a404fd9928a0b2a9b10a2a7b2d6b0493b1632a2442a80be3c34a5cf8dd6eb63",
+      "fcs_received": "c1b4a9ee",
+      "fcs_computed": "c1b4a9ee",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.631240289463868,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153433.00340042578,
+        "beta": 0.29385846853256226
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "eafa21aad7f1c5dc7e44422fef9512a74892c2282e329d1c45a02f5babf63079",
+      "fcs_received": "99dfe359",
+      "fcs_computed": "99dfe359",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 14.989338415431291,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152232.01364890605,
+        "beta": 1.5498186349868774
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.966134556181927,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152720.29213328264,
+        "beta": 1.988297939300537
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "00d37e5ed1073876668b24aea358d0b4f0a96a17192cdce1d226daaa754e36f1",
+      "fcs_received": "8f42c472",
+      "fcs_computed": "8f42c472",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 13.145182716566477,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151863.2997900296,
+        "beta": -0.2649918794631958
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.18022764394513,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152424.61631236182,
+        "beta": -2.8264336585998535
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.436179126348799,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155012.59729668064,
+        "beta": -1.5253324508666992
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 11.771067576309168,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152540.69511235473,
+        "beta": -0.8429045081138611
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.74322091639075,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153377.82827853676,
+        "beta": 2.973466396331787
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.78791670736075,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149716.52523604667,
+        "beta": -1.9121893644332886
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.702012055815432,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152950.5167919567,
+        "beta": -2.1243231296539307
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.15205514431446,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152461.82994883094,
+        "beta": 2.0135750770568848
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.194265050667155,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150256.31361872933,
+        "beta": 2.246253252029419
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.653062125091669,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151728.0678252224,
+        "beta": -2.9137401580810547
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.628899889921207,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -156234.03833619368,
+        "beta": 2.6302478313446045
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.68019764218372,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152597.3798553866,
+        "beta": 2.6088929176330566
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.956062379891005,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154274.59594975915,
+        "beta": -1.5327950716018677
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.610515381043921,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151049.40411727686,
+        "beta": -1.5149314403533936
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.370815240545763,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151875.3334034794,
+        "beta": -0.4272801876068115
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.015541559761102,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152755.53178875626,
+        "beta": -1.6721081733703613
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.276091971947206,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151718.5021512188,
+        "beta": -2.518101215362549
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.489468170392916,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151787.75453311103,
+        "beta": -0.4211606979370117
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.781167396175478,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152772.59206866068,
+        "beta": -0.5943509340286255
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.645256257948123,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149032.34831442538,
+        "beta": 0.3244503438472748
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.163318732033654,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151868.39945709545,
+        "beta": 2.610185384750366
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.738648042332528,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152078.72422325605,
+        "beta": 2.804952383041382
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.10144500739868,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152039.96052812279,
+        "beta": -1.8557369709014893
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.602719550804824,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153949.96037873928,
+        "beta": -0.17970116436481476
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.790099235154637,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150885.60593866068,
+        "beta": 1.6165355443954468
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.20815500302809,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154242.5831436395,
+        "beta": -2.1990272998809814
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.327556074693671,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154151.4894976484,
+        "beta": -2.232473373413086
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.877276154253924,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152957.65047097753,
+        "beta": -0.5214101672172546
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "342ddac0eedaddd612dd0b03be5d0f21e7cf1e3033c2bb42229809c25133a849",
+      "fcs_received": "cceedc79",
+      "fcs_computed": "cceedc79",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 14.285623579105968,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153013.37661778493,
+        "beta": -1.9515904188156128
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.593008273440542,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150654.72464504687,
+        "beta": -2.419839382171631
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.420350497930304,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154370.91303034985,
+        "beta": -0.32557055354118347
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.638860652029157,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154467.93417774956,
+        "beta": -1.0582517385482788
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.818113041489854,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151874.46237556433,
+        "beta": -2.3764142990112305
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 11,
+      "bytes_including_fcs": 20,
+      "frame_sha256": "1f42bfdf018efce42a451feab55ee12f7757077e6bdc6b15c3ef029fc63be0a6",
+      "fcs_received": "f6dbf539",
+      "fcs_computed": "f6dbf539",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 20,
+        "encoding": 0,
+        "snr": 15.759841622800263,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150567.40702052077,
+        "beta": 1.9685438871383667
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.158904315978404,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152885.70744219059,
+        "beta": -0.2938261330127716
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.822888375437751,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149980.5421370597,
+        "beta": -3.1144983768463135
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "d86c8e651b12b31b59706be7c2bc70b8c4fa0b3d48fb528fa3bd6f7a54102a74",
+      "fcs_received": "2aebd578",
+      "fcs_computed": "2aebd578",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 15.251254407465746,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154042.12457684148,
+        "beta": -1.6102699041366577
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.146485314713196,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155999.3521173196,
+        "beta": 3.021402597427368
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.71969065802461,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153424.55471451854,
+        "beta": -1.756367564201355
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.185032718934767,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154712.18153124917,
+        "beta": 0.25184184312820435
+      }
+    },
+    {
+      "kind": "data",
+      "type": 2,
+      "subtype": 0,
+      "bytes_including_fcs": 217,
+      "frame_sha256": "cb0c5e12fd3933b2589deb5e7fcbbda4d211fe01356c883622dc09a9e0ff4775",
+      "fcs_received": "27fe025d",
+      "fcs_computed": "27fe025d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 217,
+        "encoding": 0,
+        "snr": 22.420921617672217,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153484.81919723228,
+        "beta": -1.8928383588790894
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 11.628367138568155,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152956.94362495746,
+        "beta": 1.45208740234375
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.562535203295047,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151615.4660499016,
+        "beta": 1.3669809103012085
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.386801432375723,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153040.00664786925,
+        "beta": 0.6602419018745422
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.859077884084131,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153240.22027353002,
+        "beta": 2.7868223190307617
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.915031959350491,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150343.99921080348,
+        "beta": 1.2185571193695068
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.400023867731162,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154086.19137729227,
+        "beta": 1.8410457372665405
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.742249956621754,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154024.80008660295,
+        "beta": 2.0807666778564453
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.920995607751845,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150974.85122399745,
+        "beta": -0.7735024094581604
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.986467484444601,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150639.8073221721,
+        "beta": 1.0935118198394775
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.139500981031492,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151271.27261461283,
+        "beta": -0.992538332939148
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 11,
+      "bytes_including_fcs": 20,
+      "frame_sha256": "1f42bfdf018efce42a451feab55ee12f7757077e6bdc6b15c3ef029fc63be0a6",
+      "fcs_received": "f6dbf539",
+      "fcs_computed": "f6dbf539",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 20,
+        "encoding": 0,
+        "snr": 14.095518892937037,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152626.41557058872,
+        "beta": -0.877485454082489
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.880186113961582,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151474.5415196631,
+        "beta": 1.7231751680374146
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 449,
+      "frame_sha256": "c73e36492f969fdc340ec452ce3fd3644621065e6a280b2f6fa39558529fa984",
+      "fcs_received": "e073e708",
+      "fcs_computed": "e073e708",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 449,
+        "encoding": 4,
+        "snr": 22.741722718290653,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152016.95644210468,
+        "beta": 2.019287109375
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.546543493722364,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154560.54379074878,
+        "beta": -0.8611689805984497
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "06e411089b7bcd7efc04aecb93ceda4fcc5c1d7215d46b2f21f5839d3ddb529a",
+      "fcs_received": "5193192b",
+      "fcs_computed": "5193192b",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 2,
+        "snr": 22.473130361880422,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153032.38456881986,
+        "beta": 0.061656273901462555
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.100656432148742,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150344.7558973424,
+        "beta": 2.742060661315918
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.378995558009803,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152094.14291581113,
+        "beta": -1.6966607570648193
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.962240360823788,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153492.53484305495,
+        "beta": -2.844297170639038
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.832864392747132,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152781.83646586252,
+        "beta": 1.2099701166152954
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.48349682017168,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151301.82874356085,
+        "beta": 0.2928580641746521
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.53121464764735,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152259.54784899767,
+        "beta": 2.239413261413574
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.594080129863357,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151156.2477377847,
+        "beta": 0.694198489189148
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.862065544436247,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153456.68894900265,
+        "beta": 0.5743556618690491
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "1a404fd9928a0b2a9b10a2a7b2d6b0493b1632a2442a80be3c34a5cf8dd6eb63",
+      "fcs_received": "c1b4a9ee",
+      "fcs_computed": "c1b4a9ee",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.090726221398576,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152361.59603341346,
+        "beta": -1.330710768699646
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.07274444249197,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154130.55870310203,
+        "beta": 1.1604468822479248
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.23438545810258,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153872.62271594966,
+        "beta": -2.2256741523742676
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.491405412745063,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150098.61339980183,
+        "beta": -0.9450262188911438
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "4d496cd476b1cf98e5fca112407df6912c838e5374f387e51008f367ae788225",
+      "fcs_received": "45fea714",
+      "fcs_computed": "45fea714",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.850418394755845,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152555.19328387725,
+        "beta": -0.3782483637332916
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "6465aea5e2b0236be01166143943bd7ac3af068c2063650a3fb6270f02535bf6",
+      "fcs_received": "1bd873bb",
+      "fcs_computed": "1bd873bb",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 13.248115458498999,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153602.74946133187,
+        "beta": -1.2637813091278076
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.367773309395663,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150693.94561304452,
+        "beta": 0.927926778793335
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.000820012179279,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152305.69164653492,
+        "beta": 2.496516227722168
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "ea4f8bafcc0f13aea02a942db2ed31337f1b0e138145bb8bef0c525a2a4b25b5",
+      "fcs_received": "fddd7aba",
+      "fcs_computed": "fddd7aba",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 14.259412621102523,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152673.47317273173,
+        "beta": 0.09514769166707993
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.269050771919503,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154708.77486693778,
+        "beta": -0.34077000617980957
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.29631432898609,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150795.0444189526,
+        "beta": -2.1963958740234375
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.455317787445747,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154114.78834770396,
+        "beta": -2.991549015045166
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.578118998250943,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150586.33678308377,
+        "beta": 1.8397105932235718
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.20563499493138,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153573.68113671965,
+        "beta": -0.20874974131584167
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.803553768736869,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155213.9907900887,
+        "beta": 2.356367588043213
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.030443868726852,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154084.2548230061,
+        "beta": -2.0102882385253906
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.968020203369505,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154501.5277991361,
+        "beta": 0.9447926878929138
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.858801778210879,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151662.8560456907,
+        "beta": -0.5297850370407104
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.989499114802687,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152575.21990841633,
+        "beta": -2.977841854095459
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.916249575035053,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152715.3418024926,
+        "beta": 1.165874719619751
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.599317502455502,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153118.12174864055,
+        "beta": 2.1516201496124268
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.979228247546095,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151161.27551592374,
+        "beta": 1.712025761604309
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.219665065882202,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152597.7948842424,
+        "beta": -2.3853845596313477
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.629418609589518,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154241.13128376708,
+        "beta": 1.6215001344680786
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.246380824849448,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153652.37283115136,
+        "beta": 1.0929838418960571
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.60714468397432,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153494.387650447,
+        "beta": -1.6500694751739502
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.75352770184918,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153366.36189048996,
+        "beta": 0.14028429985046387
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.544488105351247,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153194.9528538892,
+        "beta": -2.6280524730682373
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.407549347313807,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150804.25620674435,
+        "beta": -0.13675782084465027
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "ba6f3e0f4cbb50a5caf0f8b88d78c938042f7058b6cd5cb36ecefef2dce5f075",
+      "fcs_received": "023397cc",
+      "fcs_computed": "023397cc",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 13.661065078868441,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154158.704329633,
+        "beta": 0.39129534363746643
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.800003843988863,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149082.18975967492,
+        "beta": 2.7839951515197754
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.953375049269008,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153732.02650318103,
+        "beta": 2.201687812805176
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.975662768886172,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153440.6823606621,
+        "beta": -1.5559465885162354
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.287053888830185,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154802.51080155064,
+        "beta": -1.5789694786071777
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.045351159830147,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152057.0771333719,
+        "beta": 2.802729368209839
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.897487724381206,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151357.32106607538,
+        "beta": 0.16001223027706146
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.612901545054065,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151812.61513213592,
+        "beta": -2.3731141090393066
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.974090083082466,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152570.248455622,
+        "beta": 0.6855885982513428
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "97bc707e9927bda24f448cebf5fa05f10ca9925f667082cf400eb0c0a554b0b4",
+      "fcs_received": "d968167f",
+      "fcs_computed": "d968167f",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 14.806780126225853,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153305.58917112855,
+        "beta": -1.0856926441192627
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.664128697526705,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149634.90981155031,
+        "beta": -0.3662095069885254
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.210792566796242,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150570.55364331466,
+        "beta": -0.821986198425293
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.79450184730539,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -148599.56243048442,
+        "beta": 0.9557525515556335
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.884175615076986,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154363.2876162472,
+        "beta": -2.4892046451568604
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.720102424872307,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154925.06659930447,
+        "beta": 2.6307778358459473
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.702435889273545,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151056.50296351872,
+        "beta": 2.360353708267212
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.537202054467379,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153332.48341154694,
+        "beta": -2.096000909805298
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.81308159567822,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155750.5586229625,
+        "beta": 2.1898434162139893
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.953050728036121,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151399.69625337725,
+        "beta": -2.7598624229431152
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.18142669010202,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152548.70197317924,
+        "beta": -0.08848161995410919
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 11,
+      "bytes_including_fcs": 20,
+      "frame_sha256": "d4651992fff005d38ffc22db2528bdb345e3d41bc40e86e924663924e44c38bf",
+      "fcs_received": "77f820a0",
+      "fcs_computed": "77f820a0",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 20,
+        "encoding": 0,
+        "snr": 15.322243714076713,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -149659.74928857095,
+        "beta": 2.5882503986358643
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.17465874682551,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152374.92508347158,
+        "beta": -0.9239802360534668
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.683487964999298,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153355.50491395453,
+        "beta": -2.0028750896453857
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.946172407104521,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151101.35989368183,
+        "beta": 2.3427560329437256
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.986444262781625,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151841.16800573168,
+        "beta": -1.9950166940689087
+      }
+    },
+    {
+      "kind": "beacon",
+      "type": 0,
+      "subtype": 8,
+      "bytes_including_fcs": 449,
+      "frame_sha256": "1dd9460a95bc20b7bc5a75213fc2db7f1ccb1f3b244f00d6818675762013a8ec",
+      "fcs_received": "480eff6c",
+      "fcs_computed": "480eff6c",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 449,
+        "encoding": 4,
+        "snr": 21.835419763581005,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151814.7667973603,
+        "beta": 1.6907243728637695
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "06e411089b7bcd7efc04aecb93ceda4fcc5c1d7215d46b2f21f5839d3ddb529a",
+      "fcs_received": "5193192b",
+      "fcs_computed": "5193192b",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 2,
+        "snr": 22.91259303840585,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152052.18775994505,
+        "beta": 2.967711925506592
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.966263838314163,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151454.57714945238,
+        "beta": 0.8841846585273743
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.956347045903692,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153599.3860600731,
+        "beta": 2.9224555492401123
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.503609770628788,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155022.86555524735,
+        "beta": -0.6537525057792664
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.145020191425944,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153336.5173438009,
+        "beta": -1.9582018852233887
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 11,
+      "bytes_including_fcs": 20,
+      "frame_sha256": "d4651992fff005d38ffc22db2528bdb345e3d41bc40e86e924663924e44c38bf",
+      "fcs_received": "77f820a0",
+      "fcs_computed": "77f820a0",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 20,
+        "encoding": 0,
+        "snr": 15.302815957921176,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -155778.1550773825,
+        "beta": 1.0422217845916748
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.852399277750227,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153705.80316431928,
+        "beta": 0.2468365579843521
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.488849853761149,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153204.0831181557,
+        "beta": 1.3473507165908813
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "5bdd970831430617f7402e8ba55a0b88367a933a8021875119a96817ab8172cf",
+      "fcs_received": "0c5ca678",
+      "fcs_computed": "0c5ca678",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 15.21621043423179,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -156969.2658451686,
+        "beta": 2.1522762775421143
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.48491630226405,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152758.0775461129,
+        "beta": 1.2152471542358398
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.81413979434617,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153892.55540315397,
+        "beta": -3.0904393196105957
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.946389791832171,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153693.82457924902,
+        "beta": -1.9273099899291992
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.028018667375632,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151167.59877699128,
+        "beta": 1.9690144062042236
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 15.465493084486592,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150210.68527220853,
+        "beta": 0.6709448099136353
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.810560094846066,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154736.15250480478,
+        "beta": 2.839294672012329
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.902862822093843,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -156191.4195047198,
+        "beta": -1.0765892267227173
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.343702951045467,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152419.06863646858,
+        "beta": 2.35905122756958
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.093349822492714,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152149.13535089127,
+        "beta": -2.36340594291687
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.097755745020164,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153348.61765831683,
+        "beta": -1.6018964052200317
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 11,
+      "bytes_including_fcs": 20,
+      "frame_sha256": "1f42bfdf018efce42a451feab55ee12f7757077e6bdc6b15c3ef029fc63be0a6",
+      "fcs_received": "f6dbf539",
+      "fcs_computed": "f6dbf539",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 20,
+        "encoding": 0,
+        "snr": 14.916303681393908,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150105.47953343525,
+        "beta": 1.4608910083770752
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.012142832666193,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152465.7089863869,
+        "beta": 2.6727240085601807
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.285084836214887,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -151337.57717994435,
+        "beta": -1.5454344749450684
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.292057872650425,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152870.5051575389,
+        "beta": 0.49398136138916016
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "2161d1c5bd3405b048dd8bf1e27959ce38ce937771451c700e6a21d7088cba7c",
+      "fcs_received": "07dba069",
+      "fcs_computed": "07dba069",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.494495266148864,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153564.85992072616,
+        "beta": 1.056607961654663
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.101856307590904,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153745.2470250462,
+        "beta": 0.8101760745048523
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.243912797711806,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152411.61590401485,
+        "beta": 1.843610405921936
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.706964852201107,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154489.87915274216,
+        "beta": -0.17948666214942932
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "53288c48e28af41a1aa7ff51e9b4bec17c920af140a8f0a26dbb1437f577366e",
+      "fcs_received": "2ccf840d",
+      "fcs_computed": "2ccf840d",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.123465598362005,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -154819.16939281247,
+        "beta": -1.0055745840072632
+      }
+    },
+    {
+      "kind": "block ACK",
+      "type": 1,
+      "subtype": 9,
+      "bytes_including_fcs": 32,
+      "frame_sha256": "487161b30c8c0ac2345bb6f12a774041aa892b2cb1b995b2500108a8302ee61b",
+      "fcs_received": "5098ff89",
+      "fcs_computed": "5098ff89",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 32,
+        "encoding": 4,
+        "snr": 14.271008097914022,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153504.2257797776,
+        "beta": 3.0093581676483154
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.50804414825786,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -150752.04001826042,
+        "beta": -1.633725881576538
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.664621346005436,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152321.86294945265,
+        "beta": 0.41969022154808044
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 13.611073876214324,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -152845.74794516648,
+        "beta": 0.5717468857765198
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.012722053523545,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153652.16265331284,
+        "beta": 2.571168899536133
+      }
+    },
+    {
+      "kind": "control",
+      "type": 1,
+      "subtype": 12,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "92515a65650a875c01c7a695014cd4c6d9e7c49ac3495021aa95748e4a27dd66",
+      "fcs_received": "a8858af7",
+      "fcs_computed": "a8858af7",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 14.561147513447853,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153006.54272300014,
+        "beta": -1.726838231086731
+      }
+    },
+    {
+      "kind": "ACK",
+      "type": 1,
+      "subtype": 13,
+      "bytes_including_fcs": 14,
+      "frame_sha256": "97a9a66afe5fdedc8c154f455eca58cf3a088715f1068761943b41c107d34d2a",
+      "fcs_received": "8bbf9b8a",
+      "fcs_computed": "8bbf9b8a",
+      "crc_pass": true,
+      "metadata": {
+        "dlt": 105,
+        "frame bytes": 14,
+        "encoding": 4,
+        "snr": 12.03009339892331,
+        "nominal frequency": 5220000000.0,
+        "frequency offset": -153108.34522515573,
+        "beta": 0.8352373838424683
+      }
+    }
+  ],
+  "selected_frame": {
+    "kind": "beacon",
+    "type": 0,
+    "subtype": 8,
+    "bytes_including_fcs": 449,
+    "frame_sha256": "e6624e7cbaa89b766417cfeaf16f998c5a7f438dbbfabbd666a99569f4fba235",
+    "fcs_received": "ca19b68e",
+    "fcs_computed": "ca19b68e",
+    "crc_pass": true,
+    "metadata": {
+      "dlt": 105,
+      "frame bytes": 449,
+      "encoding": 4,
+      "snr": 23.207172840043793,
+      "nominal frequency": 5220000000.0,
+      "frequency offset": -152420.75617344124,
+      "beta": 0.42454060912132263
+    }
+  },
+  "selected_equalizer_symbol_offset": 65,
+  "selected_ofdm_symbols": 38
+}

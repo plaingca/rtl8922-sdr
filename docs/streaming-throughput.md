@@ -1,14 +1,17 @@
 # Streaming throughput investigation — 2026-10-12
 
-The present copy path supports bounded 40 MS/s runs, but cannot keep up with
-80 or 160 MS/s. The strongest next lead is a firmware-coordinated packet AXI
-DMA (PAXI) path that avoids IDDMA. It has **not** delivered an LA payload to
-the host yet. No new rate is promoted to the working driver or Soapy plugin.
+Follow-up: [2026-10-13 high-rate investigation](highrate-reception.md) now
+records passing **60-second PAXI transport trials at both 80 and 160 MS/s**,
+a 382.07 MB/s fully verified frozen transfer, and the watchdog/credit fixes.
+The older IDDMA results below remain valid for that path. The separate PAXI
+experiment adds an explicit Soapy opt-in; the working kernel patch and default
+plugin rates are unchanged. Indefinite and sample-level continuity remain
+unqualified.
 
 All rates below count **complex samples**, with signed 8-bit I and 8-bit Q.
 An LA record holds four consecutive complex samples in eight bytes.
 
-| Requested rate | Payload to host | 320 KiB source-ring retention | Current evidence |
+| Requested rate | Payload to host | 320 KiB source-ring retention | Historical IDDMA evidence |
 |---|---:|---:|---|
 | 40 MS/s | 80 MB/s | 4.096 ms | 900 s / 71.999 GB passed transport checks, plus two 60 s trials |
 | 80 MS/s | 160 MB/s | 2.048 ms | Source overwrite after 4.14 ms; 327,680 bytes delivered |
@@ -103,7 +106,7 @@ Candidate transport:
 
 ```text
 LA SRAM -> PAXI scatter/gather reader -> packet/PLE routing -> PCIe RX -> host
-           ^ direct LA access unverified
+           ^ frozen access verified in follow-up; sustained delivery stalls
 ```
 
 The new offline ROM/RAM-firmware trace identifies these entry points in the

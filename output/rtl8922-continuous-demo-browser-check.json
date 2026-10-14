@@ -1,0 +1,24 @@
+{
+  "scope": "Hardware-free browser with a synthetic bridge and mocked Pluto",
+  "viewports": [
+    {
+      "width": 1440,
+      "title": "RTL8922 \u00b7 160 MS/s radio canvas",
+      "live": "\u25cf Live \u00b7 160 MS/s",
+      "full_span": "160 MS/s / 160 MHz",
+      "fixed_tuning_disabled": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    },
+    {
+      "width": 680,
+      "title": "RTL8922 \u00b7 160 MS/s radio canvas",
+      "live": "\u25cf Live \u00b7 160 MS/s",
+      "full_span": "160 MS/s / 160 MHz",
+      "fixed_tuning_disabled": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    }
+  ],
+  "passed": true
+}

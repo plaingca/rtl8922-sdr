@@ -13,9 +13,10 @@ to be unprocessed ADC output. The plugin supplies CF32 and CS16.
 | Mode | Result | Limit |
 | --- | --- | --- |
 | Free tuning, 20 MS/s capture | Requested windows 2312–2382, 2412–2484, 2500–2515 and 4900–7115 MHz; filtered output at 1.25, 2.5, 5, 10 and 20 MS/s | Subject to enabled channels; external tone evidence ends at 6 GHz; sensitivity and whole-band fidelity uncharacterized |
-| Browser demo, 40 MS/s | 2422–2462 MHz centers, overview and waterfall close-up | Experimental; retunes cause gaps; display skips do not measure sample loss |
+| Explicit legacy browser demo, 40 MS/s | 2422–2462 MHz centers, overview and waterfall close-up | Experimental; retunes cause gaps; display skips do not measure sample loss |
 | Bounded 40-MS/s raw transport | Fifteen-minute transport check passed its counters | Does not establish sample-level continuity or indefinite operation |
-| 80/160 MS/s | Source ring overflow in bounded trials | No continuous mode qualified |
+| Default browser demo, 160 MS/s | Continuous capture at 5250 MHz, full 5170–5330 MHz waterfall; three-minute demo trial passed its guards | Live band retuning with marked gaps and no module reload; firmware held until teardown; stops on receive faults |
+| PAXI 80/160 MS/s | 60-second raw transport and CF32 application trials pass at 5210/5250 MHz | Sample-level continuity, full-band fidelity and indefinite reliability remain unqualified; see [PAXI findings](highrate-reception.md) |
 
 Read the [synthesizer findings](../synthesizer-findings.md),
 [validation summary](../validation-summary.json), [throughput report](streaming-throughput.md)

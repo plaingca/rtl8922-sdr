@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-10-14T07:25:19Z",
+  "tx_powerdown": "1",
+  "settings": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  }
+}

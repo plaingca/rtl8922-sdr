@@ -1,0 +1,66 @@
+{
+  "tests": [
+    {
+      "ret": 0,
+      "mode": 0,
+      "held": 1,
+      "platform": 3175,
+      "platform_before": 1127,
+      "dcpu": 3735928559,
+      "base": 540017544,
+      "index": 1048592,
+      "next": 16,
+      "count": 32,
+      "busy": 0,
+      "physical": 410456832,
+      "source": 410457344,
+      "submitted": 1,
+      "completed": 1,
+      "elapsed_ns": 5470,
+      "guard_errors": 0,
+      "base_changed": 0,
+      "descriptors_changed": 0,
+      "error": 3735928559,
+      "host_bytes": 280,
+      "host_packets": 1,
+      "host_drops": 0,
+      "host_header": [
+        256,
+        4207804416,
+        0,
+        256,
+        15469652,
+        2086601
+      ],
+      "payload_matches": true,
+      "payload_sha256": "2a69899be800e9ef0854cea7155f35b9e0ce3edbf415238d563e7ad370554607",
+      "error_register_available": false,
+      "all_device_cpus_quiesced": false,
+      "passed": true
+    }
+  ],
+  "started_utc": "2026-10-13T23:55:02Z",
+  "original_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "original_tx_powerdown": "1",
+  "original_country": "00",
+  "scope": "One frozen host-target PAXI TX0 packet; CPUs held until driver teardown",
+  "expected_sha256": "2a69899be800e9ef0854cea7155f35b9e0ce3edbf415238d563e7ad370554607",
+  "restored_pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "cleanup_errors": [],
+  "exception": null
+}

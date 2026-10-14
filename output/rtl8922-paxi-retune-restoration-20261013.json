@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-14T06:13:31Z",
+  "demo_service": "inactive",
+  "card_bound": false,
+  "loaded_test_modules": [],
+  "pluto": {
+    "sample_rate": 4000000,
+    "rx_lo": 2399999996,
+    "tx_lo": 2312000000,
+    "rx_rf_bandwidth": 18000000,
+    "tx_rf_bandwidth": 3000000,
+    "tx_hardwaregain_chan0": -89.75
+  },
+  "tx_powerdown": "1",
+  "loopback_ports_listening": {
+    "8732": false,
+    "18732": false
+  },
+  "temporary_firmware": false,
+  "temporary_nm_config": false,
+  "regulatory": "global\ncountry 00: DFS-UNSET\n\t(755 - 928 @ 2), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(2402 - 2472 @ 40), (N/A, 20), (N/A)\n\t(2457 - 2482 @ 20), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(2474 - 2494 @ 20), (N/A, 20), (N/A), NO-OFDM, PASSIVE-SCAN\n\t(5170 - 5250 @ 80), (N/A, 20), (N/A), AUTO-BW, PASSIVE-SCAN\n\t(5250 - 5330 @ 80), (N/A, 20), (0 ms), DFS, AUTO-BW, PASSIVE-SCAN\n\t(5490 - 5730 @ 160), (N/A, 20), (0 ms), DFS, PASSIVE-SCAN\n\t(5735 - 5835 @ 80), (N/A, 20), (N/A), PASSIVE-SCAN\n\t(57240 - 63720 @ 2160), (N/A, 0), (N/A)\n\n",
+  "default_route": "default via 10.0.10.1 dev enp14s0 proto dhcp metric 104",
+  "working_patch_sha256": "69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+  "pluto_matches_fresh_snapshot": true,
+  "passed": true
+}

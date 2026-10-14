@@ -1,0 +1,13 @@
+{
+  "scope": "Continuous demo restart; passive receiver; forwarded Host/Origin and SSE read checks",
+  "rate": 160000000,
+  "center_hz": 5250000000,
+  "fft_fps": 239.955962802,
+  "backend_fps": 239.94242321234643,
+  "samples": 14275575808,
+  "errors": 0,
+  "recoveries": 0,
+  "tx_enabled": false,
+  "sse_frames_received": 4,
+  "passed": true
+}
