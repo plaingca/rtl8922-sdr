@@ -5,3 +5,7 @@
 *.hpp text eol=lf
 *.patch text eol=lf
 *.json text eol=lf
+
+# Generated demonstration movies remain available in Git, not source archives.
+docs/media/*.mp4 export-ignore
+docs/media/*.webm export-ignore

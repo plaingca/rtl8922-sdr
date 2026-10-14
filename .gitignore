@@ -1,6 +1,7 @@
 /vendor/
 /build*/
 /.venv/
+/.venv-*/
 __pycache__/
 *.pyc
 *.ko
@@ -17,6 +18,14 @@ __pycache__/
 *.mp3
 *.flac
 *.sys
+*.exe
+*.dll
+*.pcap
+*.pcapng
+*.pem
+*.key
+*.7z
+*.rar
 *.zip
 *.tar.gz
 *.log

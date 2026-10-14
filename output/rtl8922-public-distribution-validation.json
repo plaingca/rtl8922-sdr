@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-14",
+  "base_commit": "b04506a",
+  "scope": "Offline public-distribution review; no hardware, service or RF changes",
+  "history_review": {
+    "reachable_commits": 14,
+    "blobs_checked_for_executable_and_archive_signatures": 2227,
+    "unexpected_signatures": 0,
+    "prohibited_capture_firmware_or_compiled_artifact_paths": [],
+    "gitleaks_version": "8.30.1",
+    "gitleaks_scope": "All reachable Git history, plus a clean tracked-file checkout",
+    "gitleaks_findings": 0,
+    "releases": 0,
+    "actions_artifacts": 0,
+    "review_limit": "Automated scans do not prove absence of every secret or embedded identifier. Historical lab paths, private network addresses and the lab card MAC remain in old reports and history. Decoded Wi-Fi reports omit SSIDs and packet addresses."
+  },
+  "media": {
+    "owner_confirmed_redistribution_permission": true,
+    "third_party_material_excluded_from_project_code_license": true,
+    "generated_movies_excluded_from_source_archives": true
+  },
+  "local_tests": {
+    "receiver_demo_and_distribution": {"run": 32, "skipped": 0},
+    "tx": {"run": 91, "skipped": 5},
+    "firmware": {"run": 61, "skipped": 0},
+    "all_suites_passed": true,
+    "skip_reason": "Optional separately built pinned GNU Radio LoRa modem absent"
+  },
+  "clean_checkout_without_private_inputs": {
+    "receiver_demo_and_distribution": {"run": 32, "reported_skips": 0},
+    "tx": {"run": 91, "reported_skips": 5},
+    "firmware": {"run": 56, "reported_skips": 7},
+    "all_suites_passed": true,
+    "note": "Unittest reports include class-level skips for absent firmware/ROM inputs; counts differ from the local checkout. No skipped check is claimed as passed."
+  },
+  "other_checks": {
+    "tracked_distribution_policy_json_and_markdown_links": true,
+    "working_driver_patch_hash_unchanged": true,
+    "research_dependency_imports": true,
+    "cmake_receiver_and_bridge_build": true,
+    "strict_c_tx_compiler_build": true,
+    "shell_syntax": true,
+    "diff_whitespace": true
+  },
+  "hosted_ci": "Verified separately on the publication pull request; local checks are not a substitute for its result",
+  "rf_qualification_changed": false
+}

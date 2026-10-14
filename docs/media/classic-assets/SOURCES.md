@@ -29,6 +29,8 @@ The mirror does not provide a blanket license for these third-party recordings.
 Original recording and music rights remain with their respective owners;
 the repository's code license does not relicense the excerpts. Inclusion here
 is as brief excerpts in the requested montage parody, not a royalty-free pack.
+The repository owner confirmed redistribution permission before public release;
+see [NOTICE](../../../NOTICE.md) for the limits of that confirmation.
 
 ## Graphics
 

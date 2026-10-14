@@ -10,11 +10,11 @@ radio. Testing one, two, three.” Both runs consumed all 63 audio buffers witho
 an underrun. This is a finite mono FM experiment, with brief firmware-service
 pauses; it does not establish a gapless transmitter or arbitrary I/Q output.
 
-Local audio artifacts (ignored by Git):
+Local audio artifacts (ignored by Git and absent from public downloads):
 
-- [Received speech, impulse blanking enabled](../output/audio/rtl8922-bb-fm-received.wav)
-- [Unblanked demodulation of the same RF capture](../output/audio/rtl8922-bb-fm-unblanked.wav)
-- [Original synthesized source](../output/audio/rtl8922-bb-fm-source.wav)
+- Received speech, impulse blanking enabled: `output/audio/rtl8922-bb-fm-received.wav`
+- Unblanked demodulation: `output/audio/rtl8922-bb-fm-unblanked.wav`
+- Original synthesized source: `output/audio/rtl8922-bb-fm-source.wav`
 
 The [evidence summary](../output/rtl8922-bb-fm-analysis.json) hashes its inputs
 and audio artifacts. Raw I/Q remains under ignored `vendor/local-rf-captures/`.

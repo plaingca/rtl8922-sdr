@@ -1,5 +1,7 @@
 # RTL8922 SDR research
 
+[![Offline checks](https://github.com/plaingca/rtl8922-sdr/actions/workflows/offline.yml/badge.svg)](https://github.com/plaingca/rtl8922-sdr/actions/workflows/offline.yml)
+
 Experimental raw I/Q reception from a Realtek RTL8922AE Wi-Fi card: patched
 Linux driver, SoapySDR plugin, live FFT/waterfall demo and timed ADALM-Pluto
 waterfall text and reference tone generation.
@@ -29,6 +31,7 @@ No TTS. Sound on.
 make help
 make doctor PYTHON=.venv/bin/python
 make check PYTHON=.venv/bin/python
+make check-distribution
 ```
 
 These commands never open a radio. Launching the demo is a separate, explicit action.
@@ -70,6 +73,14 @@ RF bandwidth are different quantities; see the [capability guide](docs/capabilit
 - `examples/beastmode/`: original host-specific launchers for reference.
 
 ## Build on Linux
+
+```sh
+git clone --depth 1 https://github.com/plaingca/rtl8922-sdr.git
+cd rtl8922-sdr
+```
+
+The repository includes demonstration movies and their source assets. GitHub
+source archives omit the generated movies; use a Git checkout to watch them.
 
 Dependencies: matching running-kernel headers, GCC/G++, make, git, CMake,
 SoapySDR development files, recent `iw`, `pciutils`, NetworkManager,
@@ -187,3 +198,9 @@ Driver patches modify upstream GPL-2.0/BSD-3-Clause rtw89 files; preserve their
 notices. Original project code and tooling are GPL-2.0-only; see `LICENSE`.
 Windows drivers and firmware images are not redistributed here. Historical
 disassembly notes document interoperability research, not a vendor source release.
+See [NOTICE](NOTICE.md) for third-party material and demo media rights.
+
+Contributions: [workflow and evidence requirements](CONTRIBUTING.md).
+Report ordinary bugs through [GitHub issues](https://github.com/plaingca/rtl8922-sdr/issues),
+including the commit, kernel, mode and sanitized logs. Use
+[private security reporting](SECURITY.md) for vulnerabilities or sensitive data.

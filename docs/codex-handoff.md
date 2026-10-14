@@ -1,5 +1,11 @@
 # Codex handoff: direct execution on beastmode
 
+> Historical migration handoff from 2026-10-12. Paths, visibility, live-service
+> observations and qualification below describe that date. For installation
+> and current capabilities, use [getting started](getting-started.md),
+> [capabilities](capabilities.md) and the root validation summary. Refresh live
+> state before taking hardware; this document does not authorize a restart.
+
 Use `/home/plaing/rtl8922-sdr` as the project working directory. Repository:
 `git@github.com:plaingca/rtl8922-sdr.git` (private). Read AGENTS.md, README.md,
 synthesizer-findings.md, validation-summary.json and docs/migration-validation.md.
