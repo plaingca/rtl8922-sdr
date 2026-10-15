@@ -38,6 +38,7 @@ source = source.replace(
     + '\n    debugfs_create_file("iq_paxi_retune", 0600, debugfs_topdir, rtwdev, &iq_paxi_retune_fops);'
     + '\n    debugfs_create_bool("iq_paxi_static_ring", 0600, debugfs_topdir, &iq_paxi_static_ring);'
     + '\n    debugfs_create_bool("iq_paxi_disable_watchdog", 0600, debugfs_topdir, &iq_paxi_disable_watchdog);'
+    + '\n    debugfs_create_bool("iq_paxi_quiesce_pd", 0600, debugfs_topdir, &iq_paxi_quiesce_pd);'
     + '\n    debugfs_create_u32("iq_paxi_burst", 0600, debugfs_topdir, &iq_paxi_burst);',
 )
 shutil.copyfile(ROOT / "research/streaming/paxi-frozen.c", target / "iq-paxi-frozen.c")

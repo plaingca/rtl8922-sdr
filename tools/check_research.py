@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run hardware-free TX/firmware tests with a freshly built temporary compiler."""
+"""Run hardware-free TX/firmware/streaming tests with a temporary compiler."""
 import argparse
 import os
 from pathlib import Path
@@ -24,10 +24,10 @@ def main():
         # inspect.py would otherwise shadow it during NumPy/SciPy imports.
         bootstrap = (
             'import inspect,sys,unittest; '
-            'sys.path.extend(["research/tx", "research/firmware"]); '
+            'sys.path.extend(["research/tx", "research/firmware", "research/streaming"]); '
             'unittest.main(module=None)'
         )
-        for suite in ('research/tx', 'research/firmware'):
+        for suite in ('research/tx', 'research/firmware', 'research/streaming'):
             print(f'\nOffline suite: {suite}', flush=True)
             subprocess.run([sys.executable, '-c', bootstrap, 'discover', '-s', suite, '-v'],
                            cwd=ROOT, env=env, check=True)

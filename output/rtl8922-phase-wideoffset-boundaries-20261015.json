@@ -1,0 +1,802 @@
+{
+  "analyzer_sha256": "76032ea97850b147e62fb8bae3d53d25c17cced1e2ffee8358d3152ad2e72277",
+  "scope": "Bounded native PAXI 160 MS/s RF phase check; no indefinite or all-gap-size qualification",
+  "method": "Independent one-sided dual-tone/DC/image least squares with local linear drift; empirical interior noise and actual-IQ fault injections",
+  "movement_error_hz": [
+    230.65807478129864,
+    229.57430858910084
+  ],
+  "moving_reference_pass": true,
+  "tests": [
+    {
+      "boundary_samples": 4096,
+      "window_samples_per_side": 2048,
+      "analyzed_samples": 33554432,
+      "analyzed_seconds": 0.2097152,
+      "tone_frequencies_hz": [
+        39262841.62689796,
+        40727681.36076405
+      ],
+      "one_sample_phase_rad": [
+        1.5418481851765269,
+        1.5993723070090287
+      ],
+      "empirical_interior_sigma_rad": [
+        0.08021684061410866,
+        0.08208129275655951
+      ],
+      "threshold_rad": [
+        0.481301043684652,
+        0.49248775653935706
+      ],
+      "interior_bias_rad": [
+        0.001103099323467827,
+        0.00026368940849036144
+      ],
+      "interior_control_count": 8190,
+      "interior_control_outliers": 216,
+      "packet_boundaries": {
+        "count": 8191,
+        "outliers": 207,
+        "max_abs_phase_rad": [
+          3.070678215802795,
+          3.127024700727511
+        ]
+      },
+      "source_origin_samples": 9523200,
+      "source_ring_boundaries": {
+        "count": 204,
+        "outliers": 7,
+        "max_abs_phase_rad": [
+          2.7366624760464715,
+          2.91629821912656
+        ]
+      },
+      "nominal_128_packet_grid": {
+        "count": 63,
+        "outliers": 2,
+        "max_abs_phase_rad": [
+          2.875310398877763,
+          2.912262608156989
+        ]
+      },
+      "median_tone_amplitudes": [
+        2.2578930739745253,
+        2.1479520961635448
+      ],
+      "injected_controls": [
+        {
+          "samples_removed": 1,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            1.5418481851765269,
+            1.5993723070090287
+          ],
+          "median_added_phase_rad": [
+            1.5418912783174432,
+            1.5998408618391053
+          ]
+        },
+        {
+          "samples_removed": -1,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            -1.5418481851765269,
+            -1.5993723070090287
+          ],
+          "median_added_phase_rad": [
+            -1.5415650062063344,
+            -1.5988473871867779
+          ]
+        },
+        {
+          "samples_removed": 4096,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            0.8089327675697174,
+            -2.333305879327305
+          ],
+          "median_added_phase_rad": [
+            0.80666870553606,
+            -2.325427923421147
+          ]
+        },
+        {
+          "samples_removed": 163840,
+          "trials": 127,
+          "detected": 127,
+          "expected_phase_rad": [
+            0.9413841669053163,
+            0.9155444346306993
+          ],
+          "median_added_phase_rad": [
+            0.9694361816237369,
+            0.9753732075136806
+          ]
+        }
+      ],
+      "one_sample_resolved": true,
+      "bounded_phase_check_pass": false,
+      "worst_boundaries": [
+        {
+          "sample": 19861504,
+          "phase_rad": [
+            3.070678215802795,
+            -3.0586512429022963
+          ]
+        },
+        {
+          "sample": 2691072,
+          "phase_rad": [
+            2.861798246755487,
+            -3.127024700727511
+          ]
+        },
+        {
+          "sample": 22519808,
+          "phase_rad": [
+            2.9053157182225844,
+            -3.12537334040374
+          ]
+        },
+        {
+          "sample": 22605824,
+          "phase_rad": [
+            2.723261755140306,
+            -3.099819823058799
+          ]
+        },
+        {
+          "sample": 21524480,
+          "phase_rad": [
+            2.873382276100371,
+            -3.0987928655002572
+          ]
+        },
+        {
+          "sample": 8187904,
+          "phase_rad": [
+            -2.831106265355801,
+            3.0901530568442057
+          ]
+        },
+        {
+          "sample": 15454208,
+          "phase_rad": [
+            2.668913660944834,
+            -3.0888421215654334
+          ]
+        },
+        {
+          "sample": 19542016,
+          "phase_rad": [
+            2.8256630441439494,
+            -3.085873006084341
+          ]
+        },
+        {
+          "sample": 24412160,
+          "phase_rad": [
+            2.892469833361121,
+            -3.0734246236647036
+          ]
+        },
+        {
+          "sample": 33153024,
+          "phase_rad": [
+            2.6129942695089152,
+            3.0680215159926303
+          ]
+        },
+        {
+          "sample": 22925312,
+          "phase_rad": [
+            2.6827962685786884,
+            -3.0665655699322807
+          ]
+        },
+        {
+          "sample": 32120832,
+          "phase_rad": [
+            2.9195938362106872,
+            -3.066349394046024
+          ]
+        }
+      ],
+      "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+      "application_read_boundaries": {
+        "boundary_samples": 4096,
+        "window_samples_per_side": 2048,
+        "analyzed_samples": 33554432,
+        "analyzed_seconds": 0.2097152,
+        "tone_frequencies_hz": [
+          39262841.62689796,
+          40727681.36076405
+        ],
+        "one_sample_phase_rad": [
+          1.5418481851765269,
+          1.5993723070090287
+        ],
+        "empirical_interior_sigma_rad": [
+          0.08021684061410866,
+          0.08208129275655951
+        ],
+        "threshold_rad": [
+          0.481301043684652,
+          0.49248775653935706
+        ],
+        "interior_bias_rad": [
+          0.001103099323467827,
+          0.00026368940849036144
+        ],
+        "interior_control_count": 8190,
+        "interior_control_outliers": 216,
+        "source_origin_samples": 9523200,
+        "median_tone_amplitudes": [
+          2.2574904730484264,
+          2.147060577704666
+        ],
+        "injected_controls": [
+          {
+            "samples_removed": 1,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              1.5418481851765269,
+              1.5993723070090287
+            ],
+            "median_added_phase_rad": [
+              1.5420985976219748,
+              1.599248834553253
+            ]
+          },
+          {
+            "samples_removed": -1,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              -1.5418481851765269,
+              -1.5993723070090287
+            ],
+            "median_added_phase_rad": [
+              -1.542219592526879,
+              -1.599595960573514
+            ]
+          },
+          {
+            "samples_removed": 4096,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              0.8089327675697174,
+              -2.333305879327305
+            ],
+            "median_added_phase_rad": [
+              0.8051697180432962,
+              -2.316391726664182
+            ]
+          },
+          {
+            "samples_removed": 163840,
+            "trials": 127,
+            "detected": 127,
+            "expected_phase_rad": [
+              0.9413841669053163,
+              0.9155444346306993
+            ],
+            "median_added_phase_rad": [
+              1.0013575669688948,
+              0.9762682583705834
+            ]
+          }
+        ],
+        "one_sample_resolved": true,
+        "bounded_phase_check_pass": false,
+        "worst_boundaries": [
+          {
+            "sample": 6644993,
+            "phase_rad": [
+              3.0714883576736125,
+              -3.05170496923284
+            ]
+          },
+          {
+            "sample": 19861504,
+            "phase_rad": [
+              3.070678215802795,
+              -3.0586512429022963
+            ]
+          },
+          {
+            "sample": 5316865,
+            "phase_rad": [
+              -2.7576708002070753,
+              -3.1415246148682625
+            ]
+          },
+          {
+            "sample": 9004289,
+            "phase_rad": [
+              2.8451443920169344,
+              -3.136203282240291
+            ]
+          },
+          {
+            "sample": 26607873,
+            "phase_rad": [
+              -2.8670536789679155,
+              3.1319990936898443
+            ]
+          },
+          {
+            "sample": 2691072,
+            "phase_rad": [
+              2.861798246755487,
+              -3.127024700727511
+            ]
+          },
+          {
+            "sample": 24372481,
+            "phase_rad": [
+              2.431779236448922,
+              -3.126977221283736
+            ]
+          },
+          {
+            "sample": 22519808,
+            "phase_rad": [
+              2.9053157182225844,
+              -3.12537334040374
+            ]
+          },
+          {
+            "sample": 17031425,
+            "phase_rad": [
+              2.4672862282203085,
+              3.1226711054357543
+            ]
+          },
+          {
+            "sample": 15524097,
+            "phase_rad": [
+              3.047744892224879,
+              3.0853221576492436
+            ]
+          },
+          {
+            "sample": 27731201,
+            "phase_rad": [
+              2.516121091247962,
+              3.118370433891723
+            ]
+          },
+          {
+            "sample": 26248449,
+            "phase_rad": [
+              -2.780153155063066,
+              3.1134683561914005
+            ]
+          }
+        ],
+        "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+        "read_boundaries": {
+          "count": 16382,
+          "outliers": 440,
+          "max_abs_phase_rad": [
+            3.0714883576736125,
+            3.1415246148682625
+          ]
+        }
+      },
+      "input_report": "output/rtl8922-phase-soapy-offset40-20261015.json",
+      "input_sha256": "2589bec87a7b97161f17446c938b03307992906c731132be0f876af2fd7cc4ca",
+      "nominal_tone_offsets_hz": [
+        39267822.265625,
+        40732666.015625
+      ],
+      "transport_pass": true,
+      "restored": true
+    },
+    {
+      "boundary_samples": 4096,
+      "window_samples_per_side": 2048,
+      "analyzed_samples": 33554432,
+      "analyzed_seconds": 0.2097152,
+      "tone_frequencies_hz": [
+        49262610.96882318,
+        50727451.78645546
+      ],
+      "one_sample_phase_rad": [
+        1.9345382089538359,
+        1.9920623733457363
+      ],
+      "empirical_interior_sigma_rad": [
+        0.09806060010369075,
+        0.10181855395344813
+      ],
+      "threshold_rad": [
+        0.5883636006221444,
+        0.6109113237206888
+      ],
+      "interior_bias_rad": [
+        0.0004905759092116906,
+        -0.0025270836456053993
+      ],
+      "interior_control_count": 8190,
+      "interior_control_outliers": 31,
+      "packet_boundaries": {
+        "count": 8191,
+        "outliers": 31,
+        "max_abs_phase_rad": [
+          0.7908557829727503,
+          1.183943427410504
+        ]
+      },
+      "source_origin_samples": 9535488,
+      "source_ring_boundaries": {
+        "count": 204,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          0.2632033629861927,
+          0.2561585291343826
+        ]
+      },
+      "nominal_128_packet_grid": {
+        "count": 63,
+        "outliers": 1,
+        "max_abs_phase_rad": [
+          0.317836266960828,
+          0.6739288605249983
+        ]
+      },
+      "median_tone_amplitudes": [
+        2.0575933797526664,
+        1.9286695189084555
+      ],
+      "injected_controls": [
+        {
+          "samples_removed": 1,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            1.9345382089538359,
+            1.9920623733457363
+          ],
+          "median_added_phase_rad": [
+            1.9343234083823746,
+            1.991533931916885
+          ]
+        },
+        {
+          "samples_removed": -1,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            -1.9345382089538359,
+            -1.9920623733457363
+          ],
+          "median_added_phase_rad": [
+            -1.9343760155459802,
+            -1.9924821253097824
+          ]
+        },
+        {
+          "samples_removed": 4096,
+          "trials": 128,
+          "detected": 128,
+          "expected_phase_rad": [
+            0.7718315214532192,
+            -2.370232802146843
+          ],
+          "median_added_phase_rad": [
+            0.7783246225081316,
+            -2.3726582754203234
+          ]
+        },
+        {
+          "samples_removed": 163840,
+          "trials": 127,
+          "detected": 33,
+          "expected_phase_rad": [
+            -0.5426656777837158,
+            -0.5615324782090282
+          ],
+          "median_added_phase_rad": [
+            -0.467666659460684,
+            -0.48973700954182753
+          ]
+        }
+      ],
+      "one_sample_resolved": true,
+      "bounded_phase_check_pass": false,
+      "worst_boundaries": [
+        {
+          "sample": 3391488,
+          "phase_rad": [
+            0.5468704894979091,
+            1.183943427410504
+          ]
+        },
+        {
+          "sample": 733184,
+          "phase_rad": [
+            0.15284731149059055,
+            1.1267531154497283
+          ]
+        },
+        {
+          "sample": 24858624,
+          "phase_rad": [
+            0.6011334518788591,
+            1.1167082946797364
+          ]
+        },
+        {
+          "sample": 5558272,
+          "phase_rad": [
+            -0.37923563380101,
+            -1.0823127280027247
+          ]
+        },
+        {
+          "sample": 24055808,
+          "phase_rad": [
+            -0.24731721808382728,
+            -1.0218178505460975
+          ]
+        },
+        {
+          "sample": 7639040,
+          "phase_rad": [
+            0.6429561617923958,
+            0.9618586534591643
+          ]
+        },
+        {
+          "sample": 19374080,
+          "phase_rad": [
+            0.3868420109263089,
+            0.933192826628339
+          ]
+        },
+        {
+          "sample": 25530368,
+          "phase_rad": [
+            0.7908557829727503,
+            0.9129215467831523
+          ]
+        },
+        {
+          "sample": 3452928,
+          "phase_rad": [
+            0.2823182357759371,
+            0.8906782791241158
+          ]
+        },
+        {
+          "sample": 14004224,
+          "phase_rad": [
+            0.6354235208301505,
+            0.879234545547462
+          ]
+        },
+        {
+          "sample": 5357568,
+          "phase_rad": [
+            -0.46419538266916105,
+            -0.8777170324837527
+          ]
+        },
+        {
+          "sample": 20418560,
+          "phase_rad": [
+            0.3339809308116322,
+            0.8712571448870923
+          ]
+        }
+      ],
+      "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+      "application_read_boundaries": {
+        "boundary_samples": 4096,
+        "window_samples_per_side": 2048,
+        "analyzed_samples": 33554432,
+        "analyzed_seconds": 0.2097152,
+        "tone_frequencies_hz": [
+          49262610.96882318,
+          50727451.78645546
+        ],
+        "one_sample_phase_rad": [
+          1.9345382089538359,
+          1.9920623733457363
+        ],
+        "empirical_interior_sigma_rad": [
+          0.09806060010369075,
+          0.10181855395344813
+        ],
+        "threshold_rad": [
+          0.5883636006221444,
+          0.6109113237206888
+        ],
+        "interior_bias_rad": [
+          0.0004905759092116906,
+          -0.0025270836456053993
+        ],
+        "interior_control_count": 8190,
+        "interior_control_outliers": 31,
+        "source_origin_samples": 9535488,
+        "median_tone_amplitudes": [
+          2.0576083244300705,
+          1.9293826494642958
+        ],
+        "injected_controls": [
+          {
+            "samples_removed": 1,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              1.9345382089538359,
+              1.9920623733457363
+            ],
+            "median_added_phase_rad": [
+              1.9345509283713354,
+              1.9920996593702012
+            ]
+          },
+          {
+            "samples_removed": -1,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              -1.9345382089538359,
+              -1.9920623733457363
+            ],
+            "median_added_phase_rad": [
+              -1.9345674311402155,
+              -1.9915319922435915
+            ]
+          },
+          {
+            "samples_removed": 4096,
+            "trials": 128,
+            "detected": 128,
+            "expected_phase_rad": [
+              0.7718315214532192,
+              -2.370232802146843
+            ],
+            "median_added_phase_rad": [
+              0.7620412510075397,
+              -2.395169372871777
+            ]
+          },
+          {
+            "samples_removed": 163840,
+            "trials": 127,
+            "detected": 36,
+            "expected_phase_rad": [
+              -0.5426656777837158,
+              -0.5615324782090282
+            ],
+            "median_added_phase_rad": [
+              -0.4593308400412657,
+              -0.49989525423010084
+            ]
+          }
+        ],
+        "one_sample_resolved": true,
+        "bounded_phase_check_pass": false,
+        "worst_boundaries": [
+          {
+            "sample": 5366017,
+            "phase_rad": [
+              0.31553400177879676,
+              1.2188423639337185
+            ]
+          },
+          {
+            "sample": 19374337,
+            "phase_rad": [
+              0.33868817962413317,
+              1.189089369241779
+            ]
+          },
+          {
+            "sample": 3391488,
+            "phase_rad": [
+              0.5468704894979091,
+              1.183943427410504
+            ]
+          },
+          {
+            "sample": 733184,
+            "phase_rad": [
+              0.15284731149059055,
+              1.1267531154497283
+            ]
+          },
+          {
+            "sample": 24858624,
+            "phase_rad": [
+              0.6011334518788591,
+              1.1167082946797364
+            ]
+          },
+          {
+            "sample": 5292289,
+            "phase_rad": [
+              -0.333712295845219,
+              -1.1020335473109981
+            ]
+          },
+          {
+            "sample": 5558272,
+            "phase_rad": [
+              -0.37923563380101,
+              -1.0823127280027247
+            ]
+          },
+          {
+            "sample": 3687681,
+            "phase_rad": [
+              -0.4051165222429825,
+              -1.0389395309554874
+            ]
+          },
+          {
+            "sample": 24055808,
+            "phase_rad": [
+              -0.2473172180838273,
+              -1.0218178505460975
+            ]
+          },
+          {
+            "sample": 14722305,
+            "phase_rad": [
+              0.4286754676839441,
+              0.9991093378907612
+            ]
+          },
+          {
+            "sample": 5357825,
+            "phase_rad": [
+              -0.49743462651543296,
+              -0.9684265776519538
+            ]
+          },
+          {
+            "sample": 7639040,
+            "phase_rad": [
+              0.6429561617923958,
+              0.9618586534591643
+            ]
+          }
+        ],
+        "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+        "read_boundaries": {
+          "count": 16383,
+          "outliers": 54,
+          "max_abs_phase_rad": [
+            0.7908557829727503,
+            1.2188423639337185
+          ]
+        }
+      },
+      "input_report": "output/rtl8922-phase-soapy-offset50-20261015.json",
+      "input_sha256": "7c073c1bb89f0b6d3f7180f7930703c50ae0636cc38e4b2190eb57d3ed1b72bf",
+      "nominal_tone_offsets_hz": [
+        49267822.265625,
+        50732666.015625
+      ],
+      "transport_pass": true,
+      "restored": true
+    }
+  ],
+  "unqualified": [
+    "Modulo-cycle gaps below the phase/noise discrimination limit",
+    "Gaps outside captured prefixes",
+    "Indefinite reception and full-band RF fidelity"
+  ],
+  "bounded_phase_check_pass": false
+}

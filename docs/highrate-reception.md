@@ -268,7 +268,16 @@ Pluto is muted and its saved settings restored before any receiver retune.
 The [HTTP trial](../output/rtl8922-paxi-retune-http-20261013.json) exercises the
 same band hops through the actual demo controls without reloading the card.
 
-### RF timing qualification remains separate
+### RF timing qualification and packet-detection correction
+
+The [2026-10-15 continuity follow-up](continuity-pd-findings.md) isolates active
+packet detection as the trigger for diagnostic I/Q phase/timing excursions.
+The corrected PAXI profile inhibits it before capture and after retunes. A
+one-second 160 MS/s / 2447 MHz Pluto coded-reference capture passes all screened
+native, application and source-ring boundaries, including every injected
+single-sample fault. This is a bounded qualification at that RF setting;
+indefinite continuity and full-band fidelity remain unqualified. The
+[initial inconclusive phase check](phase-continuity-findings.md) is retained.
 
 The paired reference moves correctly, establishing received RF at both tested
 centers, but a common frequency offset fails the strict absolute-position gate.

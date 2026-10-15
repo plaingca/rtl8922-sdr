@@ -1,0 +1,642 @@
+{
+  "analyzer_sha256": "76032ea97850b147e62fb8bae3d53d25c17cced1e2ffee8358d3152ad2e72277",
+  "scope": "Bounded native PAXI 160 MS/s RF phase check; no indefinite or all-gap-size qualification",
+  "method": "Independent one-sided dual-tone/DC/image least squares with local linear drift; empirical interior noise and actual-IQ fault injections",
+  "movement_error_hz": [
+    481.71828696131706,
+    470.35923570394516
+  ],
+  "moving_reference_pass": true,
+  "tests": [
+    {
+      "boundary_samples": 4096,
+      "window_samples_per_side": 512,
+      "analyzed_samples": 33554432,
+      "analyzed_seconds": 0.2097152,
+      "tone_frequencies_hz": [
+        11743821.680966036,
+        12308270.90522052
+      ],
+      "one_sample_phase_rad": [
+        0.46117879897489295,
+        0.48334466817792227
+      ],
+      "empirical_interior_sigma_rad": [
+        1.9805200997428545,
+        1.9641461183716278
+      ],
+      "threshold_rad": [
+        11.883120598457127,
+        11.784876710229767
+      ],
+      "interior_bias_rad": [
+        -0.01805802057999881,
+        -0.05445295807264855
+      ],
+      "interior_control_count": 8191,
+      "interior_control_outliers": 0,
+      "packet_boundaries": {
+        "count": 8191,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.141486289317988,
+          3.140752182805446
+        ]
+      },
+      "source_origin_samples": 0,
+      "source_ring_boundaries": {
+        "count": 204,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.138321969124193,
+          3.1352832514578908
+        ]
+      },
+      "nominal_128_packet_grid": {
+        "count": 63,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.0931952193374,
+          3.136621005455122
+        ]
+      },
+      "median_tone_amplitudes": [
+        0.26899422017314994,
+        0.26364209906903024
+      ],
+      "injected_controls": [
+        {
+          "samples_removed": 1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            0.46117879897489295,
+            0.48334466817792227
+          ],
+          "median_added_phase_rad": [
+            0.4526461056337687,
+            0.47799391003252284
+          ]
+        },
+        {
+          "samples_removed": -1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            -0.46117879897489295,
+            -0.48334466817792227
+          ],
+          "median_added_phase_rad": [
+            -0.45023326515409656,
+            -0.47343412716900013
+          ]
+        },
+        {
+          "samples_removed": 4096,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            -2.2504168598940266,
+            0.5763890951998586
+          ],
+          "median_added_phase_rad": [
+            -0.31883781956012125,
+            0.17428166714819956
+          ]
+        },
+        {
+          "samples_removed": 163840,
+          "trials": 127,
+          "detected": 0,
+          "expected_phase_rad": [
+            -2.0520800952450355,
+            -2.077177420736735
+          ],
+          "median_added_phase_rad": [
+            -0.03239966141733983,
+            -0.5841710018359831
+          ]
+        }
+      ],
+      "one_sample_resolved": false,
+      "bounded_phase_check_pass": false,
+      "worst_boundaries": [
+        {
+          "sample": 4337664,
+          "phase_rad": [
+            2.045046344313006,
+            -3.140752182805446
+          ]
+        },
+        {
+          "sample": 12939264,
+          "phase_rad": [
+            1.6603019502567287,
+            -3.140454318784202
+          ]
+        },
+        {
+          "sample": 22274048,
+          "phase_rad": [
+            2.193048775953399,
+            -3.1401913556784344
+          ]
+        },
+        {
+          "sample": 1634304,
+          "phase_rad": [
+            1.5116718714077064,
+            -3.139644974501283
+          ]
+        },
+        {
+          "sample": 29736960,
+          "phase_rad": [
+            -0.9605041141982068,
+            3.1395918317596223
+          ]
+        },
+        {
+          "sample": 31825920,
+          "phase_rad": [
+            1.1706665136470622,
+            3.1395000395813386
+          ]
+        },
+        {
+          "sample": 11751424,
+          "phase_rad": [
+            0.1610610460724171,
+            -3.1385481991812685
+          ]
+        },
+        {
+          "sample": 27574272,
+          "phase_rad": [
+            -1.1633946978428613,
+            3.137913443626316
+          ]
+        },
+        {
+          "sample": 31358976,
+          "phase_rad": [
+            0.5540145354439441,
+            3.1369060978812184
+          ]
+        },
+        {
+          "sample": 9961472,
+          "phase_rad": [
+            -2.908663221439854,
+            3.136621005455122
+          ]
+        },
+        {
+          "sample": 12427264,
+          "phase_rad": [
+            0.03322366165865456,
+            -3.1365546576832872
+          ]
+        },
+        {
+          "sample": 6098944,
+          "phase_rad": [
+            2.5354716420074026,
+            3.136373640201715
+          ]
+        }
+      ],
+      "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+      "input_report": "output/rtl8922-phase-positive-20261015.json",
+      "input_sha256": "e4ba4a3d013949a5835c22cbc82dccb08ddba2f10a2ff0e9d33349da349fa8a0",
+      "nominal_tone_offsets_hz": [
+        11753662.109375,
+        12318115.234375
+      ],
+      "transport_pass": true,
+      "restored": true
+    },
+    {
+      "boundary_samples": 4096,
+      "window_samples_per_side": 512,
+      "analyzed_samples": 33554432,
+      "analyzed_seconds": 0.2097152,
+      "tone_frequencies_hz": [
+        -12256660.037320927,
+        -11692199.454015182
+      ],
+      "one_sample_phase_rad": [
+        0.48131791413493785,
+        0.4591515988630086
+      ],
+      "empirical_interior_sigma_rad": [
+        1.7629896695736476,
+        1.8167601351636866
+      ],
+      "threshold_rad": [
+        10.577938017441886,
+        10.90056081098212
+      ],
+      "interior_bias_rad": [
+        0.012518699743310635,
+        -0.02523021683123092
+      ],
+      "interior_control_count": 8191,
+      "interior_control_outliers": 0,
+      "packet_boundaries": {
+        "count": 8191,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.1407531872288468,
+          3.1409339017186446
+        ]
+      },
+      "source_origin_samples": 0,
+      "source_ring_boundaries": {
+        "count": 204,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.0111710457122185,
+          3.1100163296872583
+        ]
+      },
+      "nominal_128_packet_grid": {
+        "count": 63,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.1359742402582533,
+          3.1108899565925503
+        ]
+      },
+      "median_tone_amplitudes": [
+        0.27897666980217706,
+        0.2817253096229421
+      ],
+      "injected_controls": [
+        {
+          "samples_removed": 1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            -0.48131791413493785,
+            -0.4591515988630086
+          ],
+          "median_added_phase_rad": [
+            -0.49005332676757896,
+            -0.4579462896243913
+          ]
+        },
+        {
+          "samples_removed": -1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            0.48131791413493785,
+            0.4591515988630086
+          ],
+          "median_added_phase_rad": [
+            0.49477842274156714,
+            0.46551946091823315
+          ]
+        },
+        {
+          "samples_removed": 4096,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            1.4420101576849391,
+            -2.012542096186882
+          ],
+          "median_added_phase_rad": [
+            0.8028156295475652,
+            -0.8189827332636457
+          ]
+        },
+        {
+          "samples_removed": 163840,
+          "trials": 127,
+          "detected": 0,
+          "expected_phase_rad": [
+            1.1317385427758329,
+            1.1797251458520728
+          ],
+          "median_added_phase_rad": [
+            0.03325836073738897,
+            0.507573508856796
+          ]
+        }
+      ],
+      "one_sample_resolved": false,
+      "bounded_phase_check_pass": false,
+      "worst_boundaries": [
+        {
+          "sample": 18030592,
+          "phase_rad": [
+            3.1407531872288468,
+            -2.2375974301538015
+          ]
+        },
+        {
+          "sample": 26857472,
+          "phase_rad": [
+            3.1402271558279002,
+            -0.2698945989228737
+          ]
+        },
+        {
+          "sample": 16416768,
+          "phase_rad": [
+            3.139581915752222,
+            2.2976650278322994
+          ]
+        },
+        {
+          "sample": 18145280,
+          "phase_rad": [
+            3.1389346678620207,
+            0.4837662317917043
+          ]
+        },
+        {
+          "sample": 24485888,
+          "phase_rad": [
+            3.1386752741230484,
+            2.4665052879879816
+          ]
+        },
+        {
+          "sample": 724992,
+          "phase_rad": [
+            3.1383091757165666,
+            1.3012299993063272
+          ]
+        },
+        {
+          "sample": 25493504,
+          "phase_rad": [
+            -3.1381056941134338,
+            -0.6195088798307071
+          ]
+        },
+        {
+          "sample": 16060416,
+          "phase_rad": [
+            3.1380623859870562,
+            0.5373164705132082
+          ]
+        },
+        {
+          "sample": 16277504,
+          "phase_rad": [
+            -3.13793735469428,
+            2.357869605832
+          ]
+        },
+        {
+          "sample": 21553152,
+          "phase_rad": [
+            -3.136977787602,
+            -2.1223185162618
+          ]
+        },
+        {
+          "sample": 23629824,
+          "phase_rad": [
+            3.1369056281435865,
+            0.7000084237929497
+          ]
+        },
+        {
+          "sample": 9797632,
+          "phase_rad": [
+            -3.136788596593777,
+            0.47685025002867215
+          ]
+        }
+      ],
+      "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+      "input_report": "output/rtl8922-phase-negative-20261015.json",
+      "input_sha256": "fd1ffe76533f8dc64035cd10abd1e62cdd38593a4f235b84211f8f6709789f63",
+      "nominal_tone_offsets_hz": [
+        -12246337.890625,
+        -11681884.765625
+      ],
+      "transport_pass": true,
+      "restored": true
+    },
+    {
+      "boundary_samples": 4096,
+      "window_samples_per_side": 512,
+      "analyzed_samples": 33554432,
+      "analyzed_seconds": 0.2097152,
+      "tone_frequencies_hz": [
+        11742697.51494578,
+        12307152.10386241
+      ],
+      "one_sample_phase_rad": [
+        0.46113465307850976,
+        0.4833007329513289
+      ],
+      "empirical_interior_sigma_rad": [
+        1.9474881361928706,
+        1.9243250169019896
+      ],
+      "threshold_rad": [
+        11.684928817157225,
+        11.545950101411938
+      ],
+      "interior_bias_rad": [
+        -0.01835385162767964,
+        -0.03270497078081353
+      ],
+      "interior_control_count": 8191,
+      "interior_control_outliers": 0,
+      "packet_boundaries": {
+        "count": 8191,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.1413927846293164,
+          3.1411798146404046
+        ]
+      },
+      "source_origin_samples": 0,
+      "source_ring_boundaries": {
+        "count": 204,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.138189971183088,
+          3.126470438188844
+        ]
+      },
+      "nominal_128_packet_grid": {
+        "count": 63,
+        "outliers": 0,
+        "max_abs_phase_rad": [
+          3.0095636941689468,
+          3.126550640955838
+        ]
+      },
+      "median_tone_amplitudes": [
+        0.2703986111320427,
+        0.26642911605256736
+      ],
+      "injected_controls": [
+        {
+          "samples_removed": 1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            0.46113465307850976,
+            0.4833007329513289
+          ],
+          "median_added_phase_rad": [
+            0.4650853013647504,
+            0.48161510543280456
+          ]
+        },
+        {
+          "samples_removed": -1,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            -0.46113465307850976,
+            -0.4833007329513289
+          ],
+          "median_added_phase_rad": [
+            -0.4506262138196597,
+            -0.4719938458062681
+          ]
+        },
+        {
+          "samples_removed": 4096,
+          "trials": 128,
+          "detected": 0,
+          "expected_phase_rad": [
+            -2.4312384514795538,
+            0.3964304070734964
+          ],
+          "median_added_phase_rad": [
+            -0.6932927520652676,
+            0.18408147713267078
+          ]
+        },
+        {
+          "samples_removed": 163840,
+          "trials": 127,
+          "detected": 0,
+          "expected_phase_rad": [
+            -3.001758451484715,
+            -2.9923396386025405
+          ],
+          "median_added_phase_rad": [
+            0.04578545506441101,
+            -0.2540098082434048
+          ]
+        }
+      ],
+      "one_sample_resolved": false,
+      "bounded_phase_check_pass": false,
+      "worst_boundaries": [
+        {
+          "sample": 32739328,
+          "phase_rad": [
+            -1.4623178918715132,
+            3.1411798146404046
+          ]
+        },
+        {
+          "sample": 532480,
+          "phase_rad": [
+            2.7382886000542053,
+            -3.140005474791529
+          ]
+        },
+        {
+          "sample": 31838208,
+          "phase_rad": [
+            -0.23968748815288102,
+            3.1392021394574052
+          ]
+        },
+        {
+          "sample": 6586368,
+          "phase_rad": [
+            -0.43126299543700236,
+            -3.139045966248779
+          ]
+        },
+        {
+          "sample": 8433664,
+          "phase_rad": [
+            -1.5883745455007785,
+            3.1386319688308553
+          ]
+        },
+        {
+          "sample": 10600448,
+          "phase_rad": [
+            -0.0984115982886772,
+            -3.1385362578802716
+          ]
+        },
+        {
+          "sample": 21073920,
+          "phase_rad": [
+            0.5547433905068107,
+            3.137714791266404
+          ]
+        },
+        {
+          "sample": 18120704,
+          "phase_rad": [
+            2.5706801441052534,
+            -3.136849030613828
+          ]
+        },
+        {
+          "sample": 3084288,
+          "phase_rad": [
+            0.18247670554021211,
+            -3.13664692349463
+          ]
+        },
+        {
+          "sample": 13012992,
+          "phase_rad": [
+            1.9851961587450784,
+            -3.1366312839830877
+          ]
+        },
+        {
+          "sample": 14249984,
+          "phase_rad": [
+            0.9843631129314437,
+            -3.136256902980015
+          ]
+        },
+        {
+          "sample": 31191040,
+          "phase_rad": [
+            1.282814698404892,
+            -3.136220912281575
+          ]
+        }
+      ],
+      "phase_noise_model": "Empirical robust MAD; RF tails are not assumed Gaussian",
+      "input_report": "output/rtl8922-phase-repeat-20261015.json",
+      "input_sha256": "85fb1d1d43d6512676a6ecfd9c6a62b9f70ec25ab542700c8b46c454ecf54b85",
+      "nominal_tone_offsets_hz": [
+        11753662.109375,
+        12318115.234375
+      ],
+      "transport_pass": true,
+      "restored": true
+    }
+  ],
+  "unqualified": [
+    "Modulo-cycle gaps below the phase/noise discrimination limit",
+    "Gaps outside captured prefixes",
+    "Indefinite reception and full-band RF fidelity"
+  ],
+  "bounded_phase_check_pass": false
+}

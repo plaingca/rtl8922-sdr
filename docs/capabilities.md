@@ -16,7 +16,8 @@ to be unprocessed ADC output. The plugin supplies CF32 and CS16.
 | Explicit legacy browser demo, 40 MS/s | 2422–2462 MHz centers, overview and waterfall close-up | Experimental; retunes cause gaps; display skips do not measure sample loss |
 | Bounded 40-MS/s raw transport | Fifteen-minute transport check passed its counters | Does not establish sample-level continuity or indefinite operation |
 | Default browser demo, 160 MS/s | Continuous capture at 5250 MHz, full 5170–5330 MHz waterfall; three-minute demo trial passed its guards | Live band retuning with marked gaps and no module reload; firmware held until teardown; stops on receive faults |
-| PAXI 80/160 MS/s | 60-second raw transport and CF32 application trials pass at 5210/5250 MHz | Sample-level continuity, full-band fidelity and indefinite reliability remain unqualified; see [PAXI findings](highrate-reception.md) |
+| PAXI 80/160 MS/s | 60-second raw transport and CF32 application trials pass at 5210/5250 MHz | Full-band fidelity and indefinite reliability remain unqualified; see [PAXI findings](highrate-reception.md) |
+| Corrected PAXI 160 MS/s continuity | One-second Pluto coded-reference capture passes at 2447 MHz, with every tested single-sample fault detected | Packet detection inhibited; bounded interval only; see [continuity findings](continuity-pd-findings.md) |
 
 Read the [synthesizer findings](../synthesizer-findings.md),
 [validation summary](../validation-summary.json), [throughput report](streaming-throughput.md)
