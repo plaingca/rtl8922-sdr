@@ -1,0 +1,158 @@
+{
+  "input_report": "output/rtl8922-phase-coded-fixed-b-20261015.json",
+  "input_sha256": "fae0fb565aab104ce7b72b88b7e2fc9ad597a97714dcd0d03287d3f151959fda",
+  "analyzer_sha256": {
+    "analyze-coded-continuity.py": "4e49918954f0f3e609753226ae950941b98b97eea5d8b789419a59aeb76eff1f",
+    "coded_timing.py": "5ae119df1014374f3cbace52e6e62b46eb61475960e9cf6e882cdf5e32bfc1c9",
+    "continuity_reference.py": "9bc617d9a3e9d8c8d44abb21c6e289a24cad29b03dad8a17ec1bd5f37a135871"
+  },
+  "method": "Known wideband QPSK code; one fixed 257-tap channel; common complex gain per side; quadratic timing model; no I/Q filtering across tested boundaries",
+  "sample_rate": 160000000,
+  "center_hz": 2447000000,
+  "received_samples": 33554432,
+  "analyzed_start_sample": 16384,
+  "analyzed_stop_sample": 33538048,
+  "analyzed_seconds": 0.2095104,
+  "pilot_observed_hz": 63994414.2052827,
+  "cfo_hz": -5217.583779796958,
+  "clock_error_ppm": -2.0752924274690834,
+  "coarse_timeline_residual_max_samples": 0.6323820624384098,
+  "window_samples_per_side": 16384,
+  "channel_training_periods": 32,
+  "tests": [
+    {
+      "kind": "native_packets",
+      "boundaries": 8184,
+      "max_abs_timing_step_samples": 0.23457101769916922,
+      "unresolved_or_failed": 650
+    },
+    {
+      "kind": "application_reads",
+      "boundaries": 16368,
+      "max_abs_timing_step_samples": 0.23457101769916922,
+      "unresolved_or_failed": 1304
+    },
+    {
+      "kind": "interior_controls",
+      "boundaries": 8184,
+      "max_abs_timing_step_samples": 0.223286942227094,
+      "unresolved_or_failed": 649
+    },
+    {
+      "kind": "source_ring",
+      "boundaries": 205,
+      "max_abs_timing_step_samples": 0.13665867440707105,
+      "unresolved_or_failed": 17
+    }
+  ],
+  "controls": [
+    {
+      "samples_removed": 1,
+      "trials": 24552,
+      "detected": 24552,
+      "min_abs_step": 0.7545104383863599,
+      "median_added_step": 0.9858417178560824
+    },
+    {
+      "samples_removed": -1,
+      "trials": 24552,
+      "detected": 24552,
+      "min_abs_step": 0.7722714104199592,
+      "median_added_step": -0.9859134659817208
+    },
+    {
+      "samples_removed": 2048,
+      "trials": 128,
+      "detected": 128,
+      "detector": "Timing step or failed fixed-code projection"
+    },
+    {
+      "samples_removed": 4096,
+      "trials": 128,
+      "detected": 128,
+      "detector": "Timing step or failed fixed-code projection"
+    },
+    {
+      "samples_removed": -4096,
+      "trials": 128,
+      "detected": 128,
+      "detector": "Timing step or failed fixed-code projection"
+    },
+    {
+      "samples_removed": 163840,
+      "trials": 128,
+      "detected": 128,
+      "detector": "Timing step or failed fixed-code projection"
+    },
+    {
+      "samples_removed": -163840,
+      "trials": 128,
+      "detected": 128,
+      "detector": "Timing step or failed fixed-code projection"
+    }
+  ],
+  "checks": {
+    "transport": true,
+    "restored": true,
+    "coarse_timeline_no_jump": true,
+    "all_boundaries_resolved": false,
+    "all_single_sample_faults_detected": true
+  },
+  "passed": false,
+  "worst_boundaries": [
+    {
+      "sample": 15159296,
+      "step_samples": -0.23457101769916922
+    },
+    {
+      "sample": 15156481,
+      "step_samples": -0.22612066270604897
+    },
+    {
+      "sample": 15157248,
+      "step_samples": -0.223286942227094
+    },
+    {
+      "sample": 11507712,
+      "step_samples": -0.22110358708111005
+    },
+    {
+      "sample": 30966017,
+      "step_samples": 0.2177471506908546
+    },
+    {
+      "sample": 30965760,
+      "step_samples": 0.2124613444355798
+    },
+    {
+      "sample": 30967041,
+      "step_samples": 0.20672185786424446
+    },
+    {
+      "sample": 11501825,
+      "step_samples": -0.20089124626430493
+    },
+    {
+      "sample": 30967808,
+      "step_samples": 0.2005934550555033
+    },
+    {
+      "sample": 15181824,
+      "step_samples": 0.2000393158733727
+    },
+    {
+      "sample": 15180033,
+      "step_samples": 0.1981618248284067
+    },
+    {
+      "sample": 3346432,
+      "step_samples": -0.19705937204295135
+    }
+  ],
+  "limits": [
+    "Bounded received interval only",
+    "RF reference at 2447 MHz center; not full-band fidelity",
+    "Periodic-code whole-cycle ambiguity beyond the source-ring guard bound",
+    "Single deletions/duplications at tested boundaries; no universal claim for cancelling paired edits within a window"
+  ]
+}

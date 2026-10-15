@@ -1,0 +1,90 @@
+{
+  "hardware_access": false,
+  "required_checks_pass": true,
+  "checks": [
+    {
+      "name": "Working driver patch",
+      "ok": true,
+      "detail": "Pinned upstream 8bbbacadf6fa73c3a3195aefbd4b2ec2422ae356; patch SHA256 69f722ce636bb6fda541bd4be3d787fbc30b9db88b54d731dc66fe4a15036fc6",
+      "required": true
+    },
+    {
+      "name": "Python: numpy",
+      "ok": true,
+      "detail": "2.2.6; interpreter: /home/plaing/.cache/uv/builds-v0/.tmp4KbH1J/bin/python",
+      "required": true
+    },
+    {
+      "name": "Python: scipy",
+      "ok": true,
+      "detail": "1.15.3; interpreter: /home/plaing/.cache/uv/builds-v0/.tmp4KbH1J/bin/python",
+      "required": true
+    },
+    {
+      "name": "Python: capstone",
+      "ok": true,
+      "detail": "5.0.7; interpreter: /home/plaing/.cache/uv/builds-v0/.tmp4KbH1J/bin/python",
+      "required": true
+    },
+    {
+      "name": "Python: pefile",
+      "ok": true,
+      "detail": "2024.8.26; interpreter: /home/plaing/.cache/uv/builds-v0/.tmp4KbH1J/bin/python",
+      "required": true
+    },
+    {
+      "name": "Python: unicorn",
+      "ok": true,
+      "detail": "2.1.4; interpreter: /home/plaing/.cache/uv/builds-v0/.tmp4KbH1J/bin/python",
+      "required": true
+    },
+    {
+      "name": "Tool: cc",
+      "ok": true,
+      "detail": "/usr/bin/cc",
+      "required": true
+    },
+    {
+      "name": "Tool: cmake",
+      "ok": true,
+      "detail": "/usr/bin/cmake",
+      "required": true
+    },
+    {
+      "name": "Tool: make",
+      "ok": true,
+      "detail": "/usr/bin/make",
+      "required": true
+    },
+    {
+      "name": "Tool: git",
+      "ok": true,
+      "detail": "/usr/bin/git",
+      "required": true
+    },
+    {
+      "name": "Receiver bridge",
+      "ok": true,
+      "detail": "/home/plaing/rtl8922-sdr/build/live-bridge",
+      "required": false
+    },
+    {
+      "name": "Soapy plugin",
+      "ok": true,
+      "detail": "/home/plaing/rtl8922-sdr/build/libRTL8922Support.so",
+      "required": false
+    },
+    {
+      "name": "Offline TX compiler",
+      "ok": true,
+      "detail": "/home/plaing/rtl8922-sdr/build/nco-compiler.so",
+      "required": false
+    },
+    {
+      "name": "Pluto Python (optional)",
+      "ok": false,
+      "detail": "Needed only for Pluto transmission in the demo",
+      "required": false
+    }
+  ]
+}

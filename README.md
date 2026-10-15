@@ -41,7 +41,7 @@ These commands never open a radio. Launching the demo is a separate, explicit ac
 | Path | Demonstrated result | Main limit |
 | --- | --- | --- |
 | RTL8922 receive | One PATH1 diagnostic I/Q path, CF32/CS16; 20 MS/s free tuning and explicit legacy 40 MS/s mode | Retune gaps; indefinite sample continuity is unqualified |
-| RTL8922 PAXI reception | Default continuous 160 MS/s at 5250 MHz; bounded 80/160 MS/s CF32 passes | Firmware held; mandatory reload; sample-level and indefinite continuity unqualified |
+| RTL8922 PAXI reception | Default continuous 160 MS/s at 5250 MHz; bounded 80/160 MS/s transport and 160 MS/s sample continuity at 2447 MHz | Firmware held; mandatory reload; indefinite continuity and full-band fidelity unqualified |
 | Pluto transmit | Timed waterfall text or reference tone in the browser demo | External Pluto hardware, separate from RTL8922 TX |
 | RTL8922 experimental transmit | Bounded 200-kHz OFDM from causally compiled 533.333 kS/s I/Q; 2027/2048 exact CRC frames in two runs | Constrained NCO commands, distortion and host refill deadlines; no Soapy TX stream |
 | RTL8922 LoRa experiment | Selected presets decoded on Pluto, including 10/10 Short Turbo at 1.625 MHz | SF11/SF12 failures; commercial-node interoperability unqualified |
@@ -54,6 +54,9 @@ restore Pluto, reload the isolated driver and reconnect the browser automaticall
 The separate [PAXI experiment](docs/highrate-reception.md) has passed 60-second
 transport and CF32 application trials at 80/160 MS/s; the default continuous
 160 MS/s demo also passed a three-minute run beyond the former counter rollover.
+The [sample-continuity follow-up](docs/continuity-pd-findings.md) inhibits active
+packet detection and passes a bounded one-second coded-reference check at
+160 MS/s / 2447 MHz, with single-sample fault controls at every tested boundary.
 Indefinite sample continuity,
 raw DAC replay, indefinite arbitrary-I/Q TX and emission masks remain unresolved. Command rate, I/Q input rate and occupied
 RF bandwidth are different quantities; see the [capability guide](docs/capabilities.md).

@@ -1,0 +1,128 @@
+{
+  "input_report": "output/rtl8922-phase-coded-pd-off-a-20261015.json",
+  "input_sha256": "c51f3a07d098759d9a5cc55813ba2f7283818ae1868bf9493621eff354628d4e",
+  "analyzer_sha256": {
+    "analyze-coded-continuity.py": "4e49918954f0f3e609753226ae950941b98b97eea5d8b789419a59aeb76eff1f",
+    "coded_timing.py": "0e5b43643871d6d023a5e8080453ec73c8491808baaf21894f57696d85c73527",
+    "continuity_reference.py": "9bc617d9a3e9d8c8d44abb21c6e289a24cad29b03dad8a17ec1bd5f37a135871"
+  },
+  "method": "Known wideband QPSK code; one fixed 257-tap channel; common complex gain per side; quadratic timing model; no I/Q filtering across tested boundaries",
+  "sample_rate": 160000000,
+  "center_hz": 2447000000,
+  "received_samples": 33554432,
+  "analyzed_start_sample": 16384,
+  "analyzed_stop_sample": 33538048,
+  "analyzed_seconds": 0.2095104,
+  "pilot_observed_hz": 53994825.26713714,
+  "cfo_hz": -4806.521925359964,
+  "clock_error_ppm": -1.924677124450749,
+  "coarse_timeline_residual_max_samples": 0.6308218020276399,
+  "window_samples_per_side": 16384,
+  "channel_training_periods": 32,
+  "tests": [
+    {
+      "kind": "native_packets",
+      "boundaries": 8184,
+      "max_abs_timing_step_samples": 0.2575953521649275,
+      "unresolved_or_failed": 0
+    },
+    {
+      "kind": "application_reads",
+      "boundaries": 16368,
+      "max_abs_timing_step_samples": 0.2575953521649275,
+      "unresolved_or_failed": 0
+    },
+    {
+      "kind": "interior_controls",
+      "boundaries": 8184,
+      "max_abs_timing_step_samples": 0.23735275533728742,
+      "unresolved_or_failed": 0
+    },
+    {
+      "kind": "source_ring",
+      "boundaries": 205,
+      "max_abs_timing_step_samples": 0.1330744664658672,
+      "unresolved_or_failed": 0
+    }
+  ],
+  "controls": [
+    {
+      "samples_removed": 1,
+      "trials": 24552,
+      "detected": 24552,
+      "min_abs_step": 0.725327881206404,
+      "median_added_step": 0.9859587381715533
+    },
+    {
+      "samples_removed": -1,
+      "trials": 24552,
+      "detected": 24552,
+      "min_abs_step": 0.8216080870123821,
+      "median_added_step": -0.9858677333264643
+    }
+  ],
+  "checks": {
+    "transport": true,
+    "restored": true,
+    "coarse_timeline_no_jump": true,
+    "all_boundaries_resolved": true,
+    "all_single_sample_faults_detected": true
+  },
+  "passed": true,
+  "worst_boundaries": [
+    {
+      "sample": 10264576,
+      "step_samples": -0.2575953521649275
+    },
+    {
+      "sample": 10261761,
+      "step_samples": -0.24232057137851198
+    },
+    {
+      "sample": 10262528,
+      "step_samples": -0.23735275533728742
+    },
+    {
+      "sample": 10266624,
+      "step_samples": -0.21904132690403472
+    },
+    {
+      "sample": 10268672,
+      "step_samples": -0.19331604152805276
+    },
+    {
+      "sample": 16384,
+      "step_samples": -0.1767604069244866
+    },
+    {
+      "sample": 794624,
+      "step_samples": 0.17276185476338743
+    },
+    {
+      "sample": 796672,
+      "step_samples": 0.1658152941616449
+    },
+    {
+      "sample": 12963840,
+      "step_samples": 0.16563095311863768
+    },
+    {
+      "sample": 33010945,
+      "step_samples": -0.16453611069917715
+    },
+    {
+      "sample": 5734400,
+      "step_samples": -0.16340400047363857
+    },
+    {
+      "sample": 4420865,
+      "step_samples": -0.16323422682263655
+    }
+  ],
+  "limits": [
+    "Bounded received interval only",
+    "RF reference at 2447 MHz center; not full-band fidelity",
+    "Periodic-code whole-cycle ambiguity beyond the source-ring guard bound",
+    "Single deletions/duplications at tested boundaries; no universal claim for cancelling paired edits within a window"
+  ]
+}

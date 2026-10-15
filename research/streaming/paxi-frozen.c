@@ -10,6 +10,26 @@ static bool iq_paxi_cpu_held;
 static bool iq_paxi_static_ring;
 static u32 iq_paxi_burst = 1;
 static bool iq_paxi_disable_watchdog;
+static bool iq_paxi_quiesce_pd = true;
+static bool iq_paxi_pd_quiesced;
+
+static int iq_paxi_quiesce_packet_detection(struct rtw89_dev *d)
+{
+    iq_paxi_pd_quiesced = false;
+    if (!READ_ONCE(iq_paxi_quiesce_pd)) return 0;
+    /* Pinned rtw8922a_bb_reset_en() inhibits CCK and OFDM detection with
+     * these fields before reset. Keep reset and ADC clocks unchanged. Live
+     * diagnostic I/Q must not follow packet-triggered receive corrections.
+     * set_channel_help() re-enables detection, so repeat after every retune.
+     * Mandatory module teardown restores normal Wi-Fi operation afterward. */
+    rtw89_phy_write32_idx(d, R_RXCCA_BE1, B_RXCCA_BE1_DIS, 1, RTW89_PHY_0);
+    rtw89_phy_write32_idx(d, R_PD_CTRL, B_PD_HIT_DIS, 1, RTW89_PHY_0);
+    if (rtw89_phy_read32_idx(d, R_RXCCA_BE1, B_RXCCA_BE1_DIS, RTW89_PHY_0) != 1 ||
+        rtw89_phy_read32_idx(d, R_PD_CTRL, B_PD_HIT_DIS, RTW89_PHY_0) != 1)
+        return -EIO;
+    iq_paxi_pd_quiesced = true;
+    return 0;
+}
 static bool iq_paxi_mmio_valid(u32 value)
 {
     return value != 0xeaeaeaea && value != 0xdeadbeef && value != 0xffffffff;
@@ -264,6 +284,8 @@ static int iq_paxi_retune_live(struct rtw89_dev *d, struct iq_paxi_source *s,
     s->origin = s->consumed;
     s->produced = s->consumed;
     s->last = 0;
+    ret = iq_paxi_quiesce_packet_detection(d);
+    if (ret) return ret;
     rtw89_write32(d, 0x80004, stop & ~BIT(0));
     rtw89_write32_set(d, 0x21090, BIT(0));
     rtw89_write32(d, 0x9668, 0);
@@ -567,6 +589,8 @@ static ssize_t iq_paxi_run(struct rtw89_dev *d, const char *text, size_t n,
     started = ktime_get_ns(); yield_at = started + 2000000;
     hold_to_dma_ns = started - held_at;
     if (live) {
+        ret = iq_paxi_quiesce_packet_detection(d);
+        if (ret) goto out;
         rtw89_write32_set(d, 0x21090, BIT(0));
         rtw89_write32(d, 0x9668, 0);
         rtw89_write32(d, 0x9660, (4 << 16) | (11 << 8) | 1);
@@ -843,7 +867,8 @@ out:
              "live_ms=%u record_rate=%u allocation_bytes=%u header_offset=%u count_before=%u watchdog_disabled=%u burst=%u "
              "produced=%llu consumed=%llu max_backlog=%llu source_state=%x source_loss=%x "
              "source_guard=%u max_poll_gap_ns=%llu poll_limit_ns=%llu "
-             "tracking_quiesced=%u max_gap_from=%u max_gap_to=%u host_seen=%llu continuous=%u counter_bits=64\n",
+             "tracking_quiesced=%u max_gap_from=%u max_gap_to=%u host_seen=%llu continuous=%u counter_bits=64 "
+             "packet_detection_quiesced=%u\n",
              ret, mode, held, platform, platform_before, dcpu, base, index, next, count, busy,
              physical, source, submitted, completed, elapsed, guard_errors, changed, error,
              rounds, bytes, active, ple_quota, wde_quota, fc710, fc714,
@@ -855,7 +880,8 @@ out:
              live_source->produced, live_source->consumed, live_source->max_backlog,
              live_source->state, live_source->loss, live_source->reason,
              live_source->max_poll_gap, live_source->poll_limit, tracking_quiesced,
-             live_source->max_gap_from, live_source->max_gap_to, READ_ONCE(iq_scope_packets), live && !live_ms);
+             live_source->max_gap_from, live_source->max_gap_to, READ_ONCE(iq_scope_packets), live && !live_ms,
+             iq_paxi_pd_quiesced);
     for (k = 0; k < nsnap; k++) {
         struct iq_paxi_snapshot *s = &snapshots[k];
         unsigned int j, type, addr;
